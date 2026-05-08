@@ -504,6 +504,12 @@
     </button>
   </div>
   <div class="divider"></div>
+  <div class="controls-row">
+    <span class="controls-label">Show</span>
+    <button class="pill-btn active" data-format="prob" onclick="setFormat(this,'prob')">%</button>
+    <button class="pill-btn" data-format="odds" onclick="setFormat(this,'odds')">Odds</button>
+  </div>
+  <div class="divider"></div>
   <div class="search-wrap">
     <span class="search-icon">⌕</span>
     <input type="text" id="search-input" placeholder="Search…" oninput="applyFilters()">
@@ -1000,7 +1006,7 @@ function applyLiveOdds(events) {
         const edgeTd = tr.querySelector('.edge-td');
 
         if (mktTd) {
-          mktTd.textContent = newMarket.toFixed(1) + '%';
+          mktTd.textContent = formatProb(newMarket);
           mktTd.classList.add('live-updated');
           setTimeout(() => mktTd.classList.remove('live-updated'), 3000);
         }
@@ -1042,6 +1048,29 @@ rows.forEach((r, idx) => {
 });
 
 let activeFilter = 'all', activeCats = new Set(), activeSort = 'card', activeFight = 'all';
+let displayFormat = (() => {
+  try { return localStorage.getItem('displayFormat') || 'prob'; } catch (e) { return 'prob'; }
+})();
+
+function probToAmerican(p) {
+  if (typeof p !== 'number' || isNaN(p)) return '—';
+  if (p >= 99.95) return '−10000';
+  if (p <= 0.05) return '+10000';
+  if (Math.abs(p - 50) < 0.05) return '+100';
+  if (p > 50) return Math.round(-100 * p / (100 - p)).toString();
+  return '+' + Math.round(100 * (100 - p) / p);
+}
+function formatProb(p) {
+  if (displayFormat === 'odds') return probToAmerican(p);
+  return p.toFixed(1) + '%';
+}
+function setFormat(btn, fmt) {
+  document.querySelectorAll('[data-format]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  displayFormat = fmt;
+  try { localStorage.setItem('displayFormat', fmt); } catch (e) {}
+  render();
+}
 
 function edgeStyle(edge) {
   if (edge >= 20)   return ['edge-pos-4','bar-green-4'];
@@ -1305,8 +1334,8 @@ function buildPropRow(i) {
   propRow.innerHTML = `
     <div class="prop-cat">${row.cat}</div>
     <div class="prop-name">${row.prop}</div>
-    <div class="prop-prob" data-label="Yang">${row.prob.toFixed(1)}%</div>
-    <div class="prop-market market-odds" data-label="Market">${row.market.toFixed(1)}%</div>
+    <div class="prop-prob" data-label="Yang">${formatProb(row.prob)}</div>
+    <div class="prop-market market-odds" data-label="Market">${formatProb(row.market)}</div>
     <div class="edge-td" data-label="Edge"><div class="edge-cell ${edgeCls}">${sign}${edge.toFixed(1)}%</div></div>`;
   return propRow;
 }
@@ -1332,6 +1361,9 @@ function render() {
 if (window.innerWidth <= 720) {
   document.getElementById('top-edges').classList.add('collapsed');
 }
+document.querySelectorAll('[data-format]').forEach(b => {
+  b.classList.toggle('active', b.dataset.format === displayFormat);
+});
 populateFightSelect();
 render();
 fetchLiveOdds(); // fetch on load
