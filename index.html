@@ -162,8 +162,9 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%23a0a6c5' d='M5 6L0 0h10z'/></svg>");
     background-repeat: no-repeat;
     background-position: right 9px center;
-    max-width: 180px;
+    width: 130px;
     text-overflow: ellipsis;
+    overflow: hidden;
     outline: none;
   }
   .fight-select:hover { border-color: var(--text-secondary); color: var(--text-primary); }
@@ -493,11 +494,6 @@
 
 <div class="controls">
   <div class="controls-row">
-    <span class="controls-label">Sort</span>
-    <select id="fight-select" class="fight-select" onchange="setFightFilter(this.value)"></select>
-  </div>
-  <div class="divider"></div>
-  <div class="controls-row">
     <button class="pill-btn filter-btn" id="filter-btn" onclick="toggleFilterPanel(event)">
       Filters <span class="filter-count" id="filter-count"></span>
       <span class="filter-caret">▾</span>
@@ -505,7 +501,12 @@
   </div>
   <div class="divider"></div>
   <div class="controls-row">
-    <span class="controls-label">Show</span>
+    <span class="controls-label">Sort</span>
+    <select id="fight-select" class="fight-select" onchange="setFightFilter(this.value)"></select>
+  </div>
+  <div class="divider"></div>
+  <div class="controls-row">
+    <span class="controls-label">Odds</span>
     <button class="pill-btn active" data-format="prob" onclick="setFormat(this,'prob')">%</button>
     <button class="pill-btn" data-format="odds" onclick="setFormat(this,'odds')">Odds</button>
   </div>
