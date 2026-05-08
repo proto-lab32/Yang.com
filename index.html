@@ -99,13 +99,13 @@
   .top-edges-header {
     display: flex; align-items: center; justify-content: space-between;
     padding: 12px 16px;
-    background: var(--surface-2);
+    background: linear-gradient(180deg, rgba(240,180,41,0.10), rgba(240,180,41,0.02));
     border-bottom: 1px solid var(--border);
     cursor: pointer;
     user-select: none;
   }
   .top-edges.collapsed .top-edges-header { border-bottom: none; }
-  .top-edges-title { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-secondary); }
+  .top-edges-title { font-size: var(--text-xs); font-weight: 800; letter-spacing: 0.10em; text-transform: uppercase; color: var(--brand); }
   .top-edges-toggle { color: var(--text-muted); font-size: 11px; transition: transform 0.2s; }
   .top-edges.collapsed .top-edges-toggle { transform: rotate(-90deg); }
   .top-edges.collapsed .top-edges-list { display: none; }
@@ -337,8 +337,6 @@
     <div class="event-date">Edge Report · Yang's Model</div>
   </div>
   <div class="header-right">
-    <span class="badge badge-yang">Yang</span>
-    <span class="badge badge-count" id="total-count">— props</span>
     <button class="refresh-btn" id="refresh-btn" onclick="fetchLiveOdds()">
       <span id="refresh-icon">↻</span><span class="label">Refresh</span>
     </button>
@@ -364,12 +362,6 @@
 </div>
 
 <div class="controls">
-  <div class="controls-row">
-    <span class="controls-label">Sort</span>
-    <button class="pill-btn active" data-sort="card" onclick="setSort(this,'card')">Card</button>
-    <button class="pill-btn" data-sort="maxEdge" onclick="setSort(this,'maxEdge')">Max Edge</button>
-  </div>
-  <div class="divider"></div>
   <div class="controls-row">
     <span class="controls-label">Fight</span>
     <select id="fight-select" class="fight-select" onchange="setFightFilter(this.value)"></select>
@@ -1067,7 +1059,6 @@ function applyFilters() {
     if (block) block.classList.toggle('hidden', fightHiddenByFilter || fv === 0);
     updateFightChips(fight);
   });
-  document.getElementById('total-count').textContent = visibleTotal + ' props';
   renderTopEdges();
 }
 
