@@ -1133,6 +1133,31 @@ async function loadData() {
     };
   });
 
+  // Detect when a single fid covers multiple logical fights (e.g. F00167 holds
+  // both Sabatini/Gomis and Miller/Gordon). Walk rows in order; when a Moneyline
+  // selection introduces a 3rd+ fighter under the same fid, split into a synthetic
+  // fid (F00167_2, _3, …) so each logical fight renders separately.
+  let currentRawFid = null;
+  let currentFighters = [];
+  let activeFid = null;
+  let suffix = 0;
+  for (const r of parsedRows) {
+    if (r.fid !== currentRawFid) {
+      currentRawFid = r.fid;
+      activeFid = r.fid;
+      currentFighters = [];
+      suffix = 0;
+    } else if (r.cat === 'Moneyline' && currentFighters.length >= 2 && !currentFighters.includes(r.prop)) {
+      suffix++;
+      activeFid = currentRawFid + '_' + suffix;
+      currentFighters = [];
+    }
+    if (r.cat === 'Moneyline' && currentFighters.length < 2 && !currentFighters.includes(r.prop)) {
+      currentFighters.push(r.prop);
+    }
+    r.fid = activeFid;
+  }
+
   // If f1/f2 were not in the CSV, derive them from each fight's two Moneyline rows.
   // Selection on a Moneyline row is the fighter's name.
   if (idx.f1 === undefined || idx.f2 === undefined) {
