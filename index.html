@@ -91,16 +91,16 @@
   /* TOP EDGES PANEL */
   .top-edges {
     margin: 14px 16px 0;
-    background: var(--surface);
-    border: 1px solid var(--border);
+    background: rgba(240, 180, 41, 0.07);
+    border: 1px solid rgba(240, 180, 41, 0.22);
     border-radius: 8px;
     overflow: hidden;
   }
   .top-edges-header {
     display: flex; align-items: center; justify-content: space-between;
     padding: 12px 16px;
-    background: linear-gradient(180deg, rgba(240,180,41,0.10), rgba(240,180,41,0.02));
-    border-bottom: 1px solid var(--border);
+    background: transparent;
+    border-bottom: 1px solid rgba(240, 180, 41, 0.15);
     cursor: pointer;
     user-select: none;
   }
@@ -485,7 +485,7 @@
 
 <div class="top-edges" id="top-edges">
   <div class="top-edges-header" onclick="toggleTopEdges()">
-    <span class="top-edges-title">⚡ Top Edges Across Card</span>
+    <span class="top-edges-title">⚡ Top Edges</span>
     <span class="top-edges-toggle">▾</span>
   </div>
   <div class="top-edges-list" id="top-edges-list"></div>
