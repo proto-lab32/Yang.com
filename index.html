@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UFC Edge Sheet — UFC 328</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #08090f; --surface: #0f1119; --surface-2: #14172380; --surface-3: #1a1d2c;
+    --border: #1d2030; --border-bright: #2a2e42;
+    --text-primary: #eef0f8; --text-secondary: #9aa0c2; --text-muted: #5b6088;
+    --accent: #f0b429; --accent-soft: rgba(240, 180, 41, 0.10);
+    --neutral: #4a5080; --green: #22d07a; --green-dim: #1aaa62; --red: #f05252;
+    --header-h: 56px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text-primary); font-family: 'Barlow', sans-serif; font-size: 13px; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+
+  /* HEADER */
+  header { height: var(--header-h); background: var(--surface); border-bottom: 1px solid var(--border-bright); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; position: sticky; top: 0; z-index: 100; }
+  .header-left { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+  .event-title { font-family: 'Barlow Condensed', sans-serif; font-size: 17px; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .event-date { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--text-secondary); letter-spacing: 0.06em; }
+  .header-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+  .badge { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
+  .badge-yang { background: var(--accent-soft); color: var(--accent); border: 1px solid #f0b42940; }
+  .badge-count { background: #1e2030; color: var(--text-secondary); border: 1px solid var(--border); }
+  .refresh-btn {
+    font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 5px 10px; border-radius: 3px; cursor: pointer;
+    background: transparent; color: var(--text-secondary);
+    border: 1px solid var(--border-bright); display: flex; align-items: center; gap: 6px;
+    transition: all 0.15s;
+  }
+  .refresh-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .refresh-btn.loading { opacity: 0.5; pointer-events: none; }
+  .refresh-btn .spin { display: inline-block; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* LIVE BAR */
+  .live-bar {
+    display: flex; align-items: center; gap: 14px;
+    padding: 7px 16px;
+    background: rgba(0,0,0,0.25);
+    border-bottom: 1px solid var(--border);
+    font-family: 'DM Mono', monospace; font-size: 10.5px;
+    flex-wrap: wrap;
+  }
+  .live-status { display: flex; align-items: center; gap: 7px; }
+  .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
+  .live-dot.ok { background: var(--green); box-shadow: 0 0 8px rgba(34, 208, 122, 0.45); }
+  .live-dot.err { background: var(--red); }
+  .live-dot.fetching { background: var(--accent); animation: pulse 1s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .live-label { color: var(--text-secondary); }
+  .live-time, .live-book, .live-note { color: var(--text-muted); }
+  .live-calls { color: var(--text-muted); margin-left: auto; }
+
+  /* SUMMARY BAR */
+  .summary-bar {
+    display: flex; gap: 24px;
+    padding: 14px 16px;
+    background: rgba(0,0,0,0.25);
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .summary-bar::-webkit-scrollbar { display: none; }
+  .stat-item { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; }
+  .stat-value { font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 800; line-height: 1; }
+  .stat-label { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+
+  /* TOP EDGES PANEL */
+  .top-edges {
+    margin: 14px 16px 0;
+    background: var(--surface);
+    border: 1px solid var(--border-bright);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .top-edges-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 11px 16px;
+    background: linear-gradient(180deg, rgba(240,180,41,0.08), rgba(240,180,41,0.02));
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+  }
+  .top-edges.collapsed .top-edges-header { border-bottom: none; }
+  .top-edges-title { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+  .top-edges-toggle { color: var(--text-muted); font-size: 11px; transition: transform 0.2s; }
+  .top-edges.collapsed .top-edges-toggle { transform: rotate(-90deg); }
+  .top-edges.collapsed .top-edges-list { display: none; }
+  .top-edges-list { padding: 4px 0; }
+  .top-edge-item {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 9px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255,255,255,0.02);
+    transition: background 0.1s;
+  }
+  .top-edge-item:last-child { border-bottom: none; }
+  .top-edge-item:hover { background: var(--surface-3); }
+  .top-edge-rank { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-muted); text-align: center; }
+  .top-edge-prop-name { color: var(--text-primary); font-size: 12.5px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .top-edge-fight { font-family: 'DM Mono', monospace; font-size: 10.5px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 3px; }
+  .top-edge-value { font-family: 'DM Mono', monospace; font-size: 15px; font-weight: 700; text-align: right; padding-left: 8px; letter-spacing: -0.01em; }
+
+  /* CONTROLS */
+  .controls {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+  .controls::-webkit-scrollbar { height: 4px; }
+  .controls::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 2px; }
+  .controls-row { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+  .controls-label { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-right: 2px; flex-shrink: 0; }
+  .pill-btn {
+    font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+    padding: 5px 10px; border-radius: 3px; border: 1px solid var(--border-bright);
+    background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.15s;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .pill-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .pill-btn.active { background: var(--accent); color: #07080d; border-color: var(--accent); }
+  .divider { width: 1px; height: 18px; background: var(--border); margin: 0 4px; flex-shrink: 0; }
+  .search-wrap { position: relative; flex-shrink: 0; }
+  .search-wrap input { font-family: 'DM Mono', monospace; font-size: 11px; background: var(--bg); border: 1px solid var(--border-bright); border-radius: 3px; color: var(--text-primary); padding: 5px 10px 5px 26px; width: 160px; outline: none; }
+  .search-wrap input:focus { border-color: var(--accent); }
+  .search-wrap input::placeholder { color: var(--text-muted); }
+  .search-icon { position: absolute; left: 8px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 12px; pointer-events: none; }
+
+  /* LEGEND */
+  .legend { display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .legend-label { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-family: 'DM Mono', monospace; font-size: 10px; }
+  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+  /* CONTENT */
+  .content { padding: 14px 16px 32px; display: flex; flex-direction: column; gap: 12px; }
+  .empty-state { padding: 40px 20px; text-align: center; color: var(--text-muted); font-size: 13px; }
+
+  /* FIGHT BLOCK */
+  .fight-block { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
+  .fight-block.collapsed .fight-body { display: none; }
+
+  .fight-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0));
+    border-bottom: 1px solid var(--border-bright);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.12s;
+  }
+  .fight-header:hover { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)); }
+  .fight-block.collapsed .fight-header { border-bottom: none; }
+
+  .fight-matchup { min-width: 0; }
+  .fight-matchup-line { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .fighter-name { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; line-height: 1.2; }
+  .vs { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.18em; }
+  .live-badge { font-family: 'Barlow Condensed', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; background: rgba(34, 208, 122, 0.15); color: var(--green); border: 1px solid rgba(34, 208, 122, 0.3); margin-left: 6px; }
+
+  .fight-summary { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .summary-chip {
+    display: flex; align-items: center; gap: 7px;
+    padding: 6px 11px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: 'DM Mono', monospace;
+    white-space: nowrap;
+  }
+  .summary-chip-label { font-family: 'Barlow Condensed', sans-serif; font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+  .summary-chip-value { font-size: 12.5px; font-weight: 700; color: var(--text-primary); }
+  .fight-toggle { color: var(--text-muted); font-size: 12px; transition: transform 0.2s; flex-shrink: 0; padding-left: 2px; }
+  .fight-block.collapsed .fight-toggle { transform: rotate(-90deg); }
+
+  /* PROP LIST */
+  .prop-list { display: flex; flex-direction: column; }
+  .prop-list-header,
+  .prop-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 70px 70px 200px;
+    gap: 14px;
+    align-items: center;
+    padding: 10px 18px;
+  }
+  .prop-list-header {
+    background: rgba(0,0,0,0.2);
+    border-bottom: 1px solid var(--border);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 8px 18px;
+  }
+  .prop-list-header .num { text-align: right; }
+  .prop-row {
+    border-bottom: 1px solid rgba(255,255,255,0.025);
+    transition: background 0.12s;
+    font-size: 12.5px;
+  }
+  .prop-row:last-child { border-bottom: none; }
+  .prop-row:hover { background: rgba(255,255,255,0.025); }
+
+  .prop-cat {
+    font-family: 'Barlow Condensed', sans-serif; font-size: 9.5px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted);
+    width: fit-content;
+  }
+  .prop-name { color: var(--text-primary); white-space: normal; word-break: break-word; line-height: 1.4; font-weight: 500; }
+  .prop-prob, .prop-market { font-family: 'DM Mono', monospace; font-size: 12.5px; text-align: right; font-variant-numeric: tabular-nums; }
+  .prop-prob { color: var(--text-primary); font-weight: 600; }
+  .prop-market { color: var(--text-secondary); transition: color 0.3s; font-weight: 500; }
+  .prop-market.live-updated { color: var(--green); }
+
+  .edge-cell {
+    display: flex; align-items: center; justify-content: flex-end; gap: 10px;
+    font-family: 'DM Mono', monospace; font-size: 14px; font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .edge-bar-wrap { width: 80px; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; flex-shrink: 0; }
+  .edge-bar { height: 100%; border-radius: 3px; transition: width 0.3s; }
+
+  .edge-pos-4 { color: var(--green); } .bar-green-4 { background: var(--green); }
+  .edge-pos-3 { color: #1fbd6e; } .bar-green-3 { background: #1fbd6e; }
+  .edge-pos-2 { color: var(--green-dim); } .bar-green-2 { background: var(--green-dim); }
+  .edge-pos-1 { color: #179055; } .bar-green-1 { background: #179055; }
+  .edge-zero  { color: var(--neutral); } .bar-neutral { background: var(--neutral); }
+  .edge-neg-1 { color: #c75050; } .bar-red-1 { background: #c75050; }
+  .edge-neg-2 { color: var(--red); } .bar-red-2 { background: var(--red); }
+
+  .hidden { display: none !important; }
+
+  @keyframes flash { 0%{background:rgba(34, 208, 122, 0.12)} 100%{background:transparent} }
+  .flash-update { animation: flash 1.2s ease-out; }
+
+  /* MOBILE — switch prop rows to stacked card layout */
+  @media (max-width: 720px) {
+    header { padding: 0 14px; }
+    .event-title { font-size: 15px; }
+    .refresh-btn .label { display: none; }
+    .live-bar { padding: 7px 14px; gap: 10px; }
+    .live-note { display: none; }
+    .live-calls { margin-left: 0; }
+    .summary-bar { padding: 11px 14px; gap: 18px; }
+    .stat-value { font-size: 19px; }
+    .top-edges { margin: 12px 14px 0; }
+    .top-edge-item { padding: 9px 14px; }
+    .top-edge-value { font-size: 14px; }
+    .legend { padding: 7px 14px; gap: 10px; }
+    .controls { padding: 9px 14px; }
+    .content { padding: 12px 14px 32px; gap: 10px; }
+    .fight-header { padding: 12px 14px; gap: 10px; }
+    .fighter-name { font-size: 14px; }
+    .vs { font-size: 9px; }
+    .summary-chip { padding: 5px 9px; gap: 5px; }
+    .summary-chip-label { display: none; }
+    .summary-chip-value { font-size: 12px; }
+    .search-wrap input { width: 130px; }
+
+    .prop-list-header { display: none; }
+    .prop-row {
+      grid-template-columns: auto 1fr 1fr 1.4fr;
+      grid-template-areas:
+        "cat  name name name"
+        ".    yang mkt  edge";
+      gap: 6px 12px;
+      padding: 12px 14px;
+    }
+    .prop-row > .prop-cat { grid-area: cat; align-self: start; }
+    .prop-row > .prop-name { grid-area: name; }
+    .prop-row > .prop-prob {
+      grid-area: yang; text-align: left;
+      padding-top: 8px; margin-top: 4px;
+      border-top: 1px dashed rgba(255,255,255,0.05);
+    }
+    .prop-row > .prop-market {
+      grid-area: mkt; text-align: left;
+      padding-top: 8px; margin-top: 4px;
+      border-top: 1px dashed rgba(255,255,255,0.05);
+    }
+    .prop-row > .edge-td {
+      grid-area: edge;
+      padding-top: 8px; margin-top: 4px;
+      border-top: 1px dashed rgba(255,255,255,0.05);
+    }
+    .prop-row > .prop-prob::before,
+    .prop-row > .prop-market::before,
+    .prop-row > .edge-td::before {
+      content: attr(data-label);
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 9px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .edge-cell { justify-content: flex-start; gap: 7px; font-size: 13px; }
+    .edge-bar-wrap { width: 100%; min-width: 30px; max-width: 80px; height: 5px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="event-title">UFC 328: Chimaev vs Strickland</div>
+    <div class="event-date">Edge Report · Yang's Model</div>
+  </div>
+  <div class="header-right">
+    <span class="badge badge-yang">Yang</span>
+    <span class="badge badge-count" id="total-count">— props</span>
+    <button class="refresh-btn" id="refresh-btn" onclick="fetchLiveOdds()">
+      <span id="refresh-icon">↻</span><span class="label">Refresh</span>
+    </button>
+  </div>
+</header>
+
+<div class="live-bar">
+  <div class="live-status">
+    <div class="live-dot" id="live-dot"></div>
+    <span class="live-label" id="live-label">Not yet fetched</span>
+  </div>
+  <span class="live-time" id="live-time"></span>
+  <span class="live-book" id="live-book"></span>
+  <span class="live-note">ML &amp; Totals auto · Method/Round/ITD/2-Way manual</span>
+  <span class="live-calls" id="live-calls"></span>
+</div>
+
+<div class="summary-bar" id="summary-bar"></div>
+
+<div class="top-edges" id="top-edges">
+  <div class="top-edges-header" onclick="toggleTopEdges()">
+    <span class="top-edges-title">⚡ Top Edges Across Card</span>
+    <span class="top-edges-toggle">▾</span>
+  </div>
+  <div class="top-edges-list" id="top-edges-list"></div>
+</div>
+
+<div class="controls">
+  <div class="controls-row">
+    <span class="controls-label">Sort</span>
+    <button class="pill-btn active" data-sort="card" onclick="setSort(this,'card')">Card</button>
+    <button class="pill-btn" data-sort="maxEdge" onclick="setSort(this,'maxEdge')">Max Edge</button>
+  </div>
+  <div class="divider"></div>
+  <div class="controls-row">
+    <span class="controls-label">Edge</span>
+    <button class="pill-btn active" data-filter="all" onclick="setFilter(this,'all')">All</button>
+    <button class="pill-btn" data-filter="pos" onclick="setFilter(this,'pos')">+Edge</button>
+    <button class="pill-btn" data-filter="strong" onclick="setFilter(this,'strong')">+10%</button>
+    <button class="pill-btn" data-filter="monster" onclick="setFilter(this,'monster')">+20%</button>
+  </div>
+  <div class="divider"></div>
+  <div class="controls-row">
+    <span class="controls-label">Cat</span>
+    <button class="pill-btn active" data-cat="all" onclick="setCat(this,'all')">All</button>
+    <button class="pill-btn" data-cat="Moneyline" onclick="setCat(this,'Moneyline')">ML</button>
+    <button class="pill-btn" data-cat="Method of Victory" onclick="setCat(this,'Method of Victory')">Method</button>
+    <button class="pill-btn" data-cat="Fight Outcome" onclick="setCat(this,'Fight Outcome')">Outcome</button>
+    <button class="pill-btn" data-cat="Total Rounds" onclick="setCat(this,'Total Rounds')">Totals</button>
+    <button class="pill-btn" data-cat="Round Betting" onclick="setCat(this,'Round Betting')">Round</button>
+    <button class="pill-btn" data-cat="Fighter ITD" onclick="setCat(this,'Fighter ITD')">ITD</button>
+    <button class="pill-btn" data-cat="Double Chance" onclick="setCat(this,'Double Chance')">2-Way</button>
+  </div>
+  <div class="divider"></div>
+  <div class="search-wrap">
+    <span class="search-icon">⌕</span>
+    <input type="text" id="search-input" placeholder="Search…" oninput="applyFilters()">
+  </div>
+</div>
+
+<div class="legend">
+  <span class="legend-label">Edge</span>
+  <div class="legend-item"><div class="legend-dot" style="background:#22d07a"></div><span style="color:#22d07a">&gt;+20</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1fbd6e"></div><span style="color:#1fbd6e">+10–20</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#1aaa62"></div><span style="color:#1aaa62">+5–10</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#179055"></div><span style="color:#179055">0–+5</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#c75050"></div><span style="color:#c75050">−5–0</span></div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f05252"></div><span style="color:#f05252">&lt;−5</span></div>
+</div>
+
+<div class="content" id="content"></div>
+
+<script>
+// ─── CONFIG ──────────────────────────────────────────────────────────────────
+const API_KEY       = '28a532c686697ab88ff079576c733e35';
+const BOOK          = 'draftkings';   // change to: fanduel, betmgm, pointsbetus, etc.
+const AUTO_REFRESH  = 10 * 60 * 1000; // 10 minutes in ms
+const SPORT         = 'mma_mixed_martial_arts';
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Rows that can be live-updated (ML and Totals only)
+const LIVE_CATS = new Set(['Moneyline', 'Total Rounds']);
+
+// null = Yang prob not available
+const rows = [
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Moneyline",prop:"Khamzat Chimaev",prob:84.0,market:86.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Moneyline",prop:"Sean Strickland",prob:16.0,market:19.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Khamzat Chimaev by KO/TKO",prob:37.38,market:22.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Khamzat Chimaev by Submission",prob:21.95,market:51.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Khamzat Chimaev by Decision",prob:24.67,market:25.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Sean Strickland by KO/TKO",prob:6.4,market:10.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Sean Strickland by Submission",prob:0.72,market:2.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Sean Strickland by Decision",prob:8.88,market:11.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Over 1.5",prob:59.0,market:70.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Under 1.5",prob:41.0,market:36.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Over 2.5",prob:47.0,market:56.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Under 2.5",prob:53.0,market:52.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Over 3.5",prob:40.0,market:44.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Under 3.5",prob:60.0,market:60.5},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Over 4.5",prob:36.0,market:36.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Under 4.5",prob:64.0,market:71.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fight Outcome",prop:"Goes to Decision",prob:33.55,market:33.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fight Outcome",prop:"Inside the Distance",prob:66.45,market:72.5},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fight Outcome",prop:"KO/TKO",prob:43.78,market:29.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fight Outcome",prop:"Submission",prob:22.67,market:52.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 1 Finish",prob:22.1,market:29.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 2 Finish",prob:17.3,market:20.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 3 Finish",prob:12.3,market:14.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 4 Finish",prob:8.5,market:12.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 5 Finish",prob:5.4,market:9.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fighter ITD",prop:"Khamzat Chimaev ITD",prob:59.33,market:67.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fighter ITD",prop:"Sean Strickland ITD",prob:7.12,market:11.0},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Double Chance",prop:"Khamzat Chimaev KO/TKO or Dec",prob:62.05,market:41.5},
+  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Double Chance",prop:"Sean Strickland KO/TKO or Dec",prob:15.28,market:17.5},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Moneyline",prop:"Tatsuro Taira",prob:70.0,market:62.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Moneyline",prop:"Joshua Van",prob:30.0,market:42.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Tatsuro Taira by KO/TKO",prob:22.0,market:12.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Tatsuro Taira by Submission",prob:25.5,market:34.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Tatsuro Taira by Decision",prob:22.5,market:26.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Joshua Van by KO/TKO",prob:12.0,market:25.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Joshua Van by Submission",prob:1.0,market:4.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Joshua Van by Decision",prob:17.0,market:20.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Over 1.5",prob:73.0,market:79.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Under 1.5",prob:27.0,market:28.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Over 2.5",prob:62.0,market:65.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Under 2.5",prob:38.0,market:42.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Over 3.5",prob:51.5,market:55.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Under 3.5",prob:48.5,market:50.5},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Over 4.5",prob:45.0,market:45.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Under 4.5",prob:55.0,market:61.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fight Outcome",prop:"Goes to Decision",prob:39.5,market:42.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fight Outcome",prop:"Inside the Distance",prob:60.5,market:65.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fight Outcome",prop:"KO/TKO",prob:34.0,market:35.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fight Outcome",prop:"Submission",prob:26.5,market:37.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 1 Finish",prob:21.3,market:20.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 2 Finish",prob:16.4,market:17.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 3 Finish",prob:11.5,market:14.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 4 Finish",prob:7.0,market:13.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 5 Finish",prob:4.2,market:11.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fighter ITD",prop:"Tatsuro Taira ITD",prob:47.5,market:42.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fighter ITD",prop:"Joshua Van ITD",prob:13.0,market:27.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Double Chance",prop:"Tatsuro Taira KO/TKO or Dec",prob:44.5,market:36.0},
+  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Double Chance",prop:"Joshua Van KO/TKO or Dec",prob:29.0,market:40.5},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Moneyline",prop:"Waldo Cortes Acosta",prob:46.0,market:43.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Moneyline",prop:"Alexander Volkov",prob:54.0,market:61.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Waldo Cortes Acosta by KO/TKO",prob:14.77,market:18.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Waldo Cortes Acosta by Submission",prob:1.15,market:4.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Waldo Cortes Acosta by Decision",prob:16.98,market:27.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Alexander Volkov by KO/TKO",prob:8.76,market:22.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Alexander Volkov by Submission",prob:1.94,market:5.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Alexander Volkov by Decision",prob:42.34,market:43.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Total Rounds",prop:"Over 1.5",prob:78.5,market:82.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Total Rounds",prop:"Under 1.5",prob:31.5,market:25.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Total Rounds",prop:"Over 2.5",prob:68.0,market:69.5},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Total Rounds",prop:"Under 2.5",prob:32.0,market:36.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fight Outcome",prop:"Goes to Decision",prob:63.0,market:66.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fight Outcome",prop:"Inside the Distance",prob:37.0,market:42.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fight Outcome",prop:"KO/TKO",prob:23.53,market:38.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fight Outcome",prop:"Submission",prob:3.09,market:9.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Round Betting",prop:"Round 1 Finish",prob:26.6,market:18.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Round Betting",prop:"Round 2 Finish",prob:16.3,market:17.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Round Betting",prop:"Round 3 Finish",prob:7.9,market:11.5},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fighter ITD",prop:"Waldo Cortes Acosta ITD",prob:15.92,market:20.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fighter ITD",prop:"Alexander Volkov ITD",prob:10.7,market:26.0},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Double Chance",prop:"Waldo Cortes Acosta KO/TKO or Dec",prob:31.75,market:42.5},
+  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Double Chance",prop:"Alexander Volkov KO/TKO or Dec",prob:51.1,market:61.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Moneyline",prop:"Sean Brady",prob:61.0,market:62.5},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Moneyline",prop:"Joaquin Buckley",prob:39.0,market:41.5},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Sean Brady by KO/TKO",prob:4.07,market:11.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Sean Brady by Submission",prob:17.04,market:23.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Sean Brady by Decision",prob:39.89,market:38.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Joaquin Buckley by KO/TKO",prob:26.66,market:29.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Joaquin Buckley by Submission",prob:0.23,market:3.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Joaquin Buckley by Decision",prob:12.11,market:16.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Total Rounds",prop:"Over 1.5",prob:69.0,market:72.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Total Rounds",prop:"Under 1.5",prob:31.0,market:34.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Total Rounds",prop:"Over 2.5",prob:56.0,market:57.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Total Rounds",prop:"Under 2.5",prob:44.0,market:49.5},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fight Outcome",prop:"Goes to Decision",prob:52.0,market:50.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fight Outcome",prop:"Inside the Distance",prob:48.0,market:57.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fight Outcome",prop:"KO/TKO",prob:30.73,market:38.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fight Outcome",prop:"Submission",prob:17.27,market:25.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Round Betting",prop:"Round 1 Finish",prob:34.2,market:26.5},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Round Betting",prop:"Round 2 Finish",prob:17.8,market:21.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Round Betting",prop:"Round 3 Finish",prob:7.9,market:14.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fighter ITD",prop:"Sean Brady ITD",prob:21.11,market:31.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fighter ITD",prop:"Joaquin Buckley ITD",prob:26.89,market:29.0},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Double Chance",prop:"Sean Brady KO/TKO or Dec",prob:43.96,market:46.5},
+  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Double Chance",prop:"Joaquin Buckley KO/TKO or Dec",prob:38.77,market:40.5},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Moneyline",prop:"King Green",prob:75.5,market:79.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Moneyline",prop:"Jeremy Stephens",prob:24.5,market:25.5},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"King Green by KO/TKO",prob:15.9,market:30.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"King Green by Submission",prob:11.3,market:11.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"King Green by Decision",prob:48.2,market:45.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"Jeremy Stephens by KO/TKO",prob:13.8,market:17.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"Jeremy Stephens by Submission",prob:1.1,market:3.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"Jeremy Stephens by Decision",prob:9.6,market:13.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Total Rounds",prop:"Over 1.5",prob:75.0,market:75.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Total Rounds",prop:"Under 1.5",prob:25.0,market:31.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Total Rounds",prop:"Over 2.5",prob:64.0,market:61.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Total Rounds",prop:"Under 2.5",prob:36.0,market:44.5},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fight Outcome",prop:"Goes to Decision",prob:57.8,market:56.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fight Outcome",prop:"Inside the Distance",prob:42.2,market:51.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fight Outcome",prop:"KO/TKO",prob:29.8,market:44.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fight Outcome",prop:"Submission",prob:12.4,market:13.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Round Betting",prop:"Round 1 Finish",prob:20.4,market:22.5},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Round Betting",prop:"Round 2 Finish",prob:14.3,market:20.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Round Betting",prop:"Round 3 Finish",prob:7.5,market:14.5},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fighter ITD",prop:"King Green ITD",prob:27.2,market:36.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fighter ITD",prop:"Jeremy Stephens ITD",prob:14.9,market:17.0},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Double Chance",prop:"King Green KO/TKO or Dec",prob:64.1,market:73.5},
+  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Double Chance",prop:"Jeremy Stephens KO/TKO or Dec",prob:23.4,market:27.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Moneyline",prop:"Ateba Gautier",prob:90.0,market:93.5},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Moneyline",prop:"Ozzy Diaz",prob:10.0,market:11.5},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ateba Gautier by KO/TKO",prob:69.92,market:85.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ateba Gautier by Submission",prob:8.43,market:11.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ateba Gautier by Decision",prob:13.05,market:9.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ozzy Diaz by KO/TKO",prob:0.59,market:6.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ozzy Diaz by Submission",prob:6.06,market:3.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ozzy Diaz by Decision",prob:1.95,market:7.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Total Rounds",prop:"Over 1.5",prob:32.0,market:31.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Total Rounds",prop:"Under 1.5",prob:58.0,market:75.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Total Rounds",prop:"Over 2.5",prob:19.0,market:19.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Total Rounds",prop:"Under 2.5",prob:81.0,market:88.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fight Outcome",prop:"Goes to Decision",prob:15.0,market:14.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fight Outcome",prop:"Inside the Distance",prob:85.0,market:92.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fight Outcome",prop:"KO/TKO",prob:70.51,market:89.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fight Outcome",prop:"Submission",prob:14.49,market:12.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Round Betting",prop:"Round 1 Finish",prob:31.3,market:66.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Round Betting",prop:"Round 2 Finish",prob:18.1,market:21.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Round Betting",prop:"Round 3 Finish",prob:8.1,market:10.5},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fighter ITD",prop:"Ateba Gautier ITD",prob:78.35,market:89.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fighter ITD",prop:"Ozzy Diaz ITD",prob:6.65,market:8.0},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Double Chance",prop:"Ateba Gautier KO/TKO or Dec",prob:82.97,market:88.5},
+  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Double Chance",prop:"Ozzy Diaz KO/TKO or Dec",prob:2.54,market:11.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Moneyline",prop:"Roman Kopylov",prob:37.0,market:39.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Moneyline",prop:"Marco Tulio",prob:63.0,market:66.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Roman Kopylov by KO/TKO",prob:18.83,market:18.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Roman Kopylov by Submission",prob:0.39,market:3.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Roman Kopylov by Decision",prob:17.78,market:22.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Marco Tulio by KO/TKO",prob:25.1,market:38.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Marco Tulio by Submission",prob:10.68,market:14.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Marco Tulio by Decision",prob:27.22,market:24.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Total Rounds",prop:"Over 1.5",prob:63.0,market:69.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Total Rounds",prop:"Under 1.5",prob:37.0,market:38.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Total Rounds",prop:"Over 2.5",prob:50.0,market:51.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Total Rounds",prop:"Under 2.5",prob:50.0,market:55.5},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fight Outcome",prop:"Goes to Decision",prob:45.0,market:43.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fight Outcome",prop:"Inside the Distance",prob:55.0,market:62.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fight Outcome",prop:"KO/TKO",prob:43.93,market:51.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fight Outcome",prop:"Submission",prob:11.07,market:15.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Round Betting",prop:"Round 1 Finish",prob:36.1,market:29.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Round Betting",prop:"Round 2 Finish",prob:17.3,market:23.5},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Round Betting",prop:"Round 3 Finish",prob:7.6,market:14.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fighter ITD",prop:"Roman Kopylov ITD",prob:19.22,market:21.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fighter ITD",prop:"Marco Tulio ITD",prob:35.78,market:45.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Double Chance",prop:"Roman Kopylov KO/TKO or Dec",prob:36.61,market:37.0},
+  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Double Chance",prop:"Marco Tulio KO/TKO or Dec",prob:52.32,market:58.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Moneyline",prop:"Clayton Carpenter",prob:54.0,market:41.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Moneyline",prop:"Jose Ochoa",prob:46.0,market:64.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Clayton Carpenter by KO/TKO",prob:3.0,market:8.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Clayton Carpenter by Submission",prob:3.0,market:12.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Clayton Carpenter by Decision",prob:48.0,market:27.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Jose Ochoa by KO/TKO",prob:22.75,market:27.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Jose Ochoa by Submission",prob:6.25,market:8.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Jose Ochoa by Decision",prob:17.0,market:40.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Total Rounds",prop:"Over 1.5",prob:81.5,market:79.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Total Rounds",prop:"Under 1.5",prob:18.5,market:27.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Total Rounds",prop:"Over 2.5",prob:69.0,market:66.5},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Total Rounds",prop:"Under 2.5",prob:31.0,market:39.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fight Outcome",prop:"Goes to Decision",prob:65.0,market:62.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fight Outcome",prop:"Inside the Distance",prob:35.0,market:43.5},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fight Outcome",prop:"KO/TKO",prob:25.75,market:31.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fight Outcome",prop:"Submission",prob:9.25,market:18.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Round Betting",prop:"Round 1 Finish",prob:23.9,market:21.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Round Betting",prop:"Round 2 Finish",prob:14.9,market:17.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Round Betting",prop:"Round 3 Finish",prob:6.4,market:12.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fighter ITD",prop:"Clayton Carpenter ITD",prob:6.0,market:17.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fighter ITD",prop:"Jose Ochoa ITD",prob:29.0,market:31.0},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Double Chance",prop:"Clayton Carpenter KO/TKO or Dec",prob:51.0,market:32.5},
+  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Double Chance",prop:"Jose Ochoa KO/TKO or Dec",prob:39.75,market:62.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Moneyline",prop:"Baisangur Susurkaev",prob:73.0,market:87.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Moneyline",prop:"Djorden Santos",prob:27.0,market:17.5},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Baisangur Susurkaev by KO/TKO",prob:29.14,market:48.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Baisangur Susurkaev by Submission",prob:11.24,market:18.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Baisangur Susurkaev by Decision",prob:32.62,market:33.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Djorden Santos by KO/TKO",prob:4.25,market:10.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Djorden Santos by Submission",prob:0.37,market:4.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Djorden Santos by Decision",prob:22.38,market:10.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Total Rounds",prop:"Over 1.5",prob:71.3,market:62.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Total Rounds",prop:"Under 1.5",prob:28.7,market:43.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Total Rounds",prop:"Over 2.5",prob:59.0,market:44.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Total Rounds",prop:"Under 2.5",prob:41.0,market:62.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fight Outcome",prop:"Goes to Decision",prob:55.0,market:38.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fight Outcome",prop:"Inside the Distance",prob:45.0,market:68.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fight Outcome",prop:"KO/TKO",prob:33.39,market:54.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fight Outcome",prop:"Submission",prob:11.61,market:19.5},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Round Betting",prop:"Round 1 Finish",prob:24.9,market:33.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Round Betting",prop:"Round 2 Finish",prob:17.7,market:25.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Round Betting",prop:"Round 3 Finish",prob:8.7,market:14.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fighter ITD",prop:"Baisangur Susurkaev ITD",prob:40.38,market:60.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fighter ITD",prop:"Djorden Santos ITD",prob:4.62,market:10.0},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Double Chance",prop:"Baisangur Susurkaev KO/TKO or Dec",prob:61.76,market:77.5},
+  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Double Chance",prop:"Djorden Santos KO/TKO or Dec",prob:26.63,market:16.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Moneyline",prop:"Mateusz Rebecki",prob:33.0,market:41.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Moneyline",prop:"Grant Dawson",prob:67.0,market:62.5},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Mateusz Rebecki by KO/TKO",prob:17.54,market:27.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Mateusz Rebecki by Submission",prob:5.0,market:5.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Mateusz Rebecki by Decision",prob:10.46,market:15.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Grant Dawson by KO/TKO",prob:6.46,market:10.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Grant Dawson by Submission",prob:21.0,market:17.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Grant Dawson by Decision",prob:39.54,market:44.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Total Rounds",prop:"Over 1.5",prob:67.0,market:75.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Total Rounds",prop:"Under 1.5",prob:33.0,market:31.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Total Rounds",prop:"Over 2.5",prob:54.0,market:60.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Total Rounds",prop:"Under 2.5",prob:46.0,market:45.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fight Outcome",prop:"Goes to Decision",prob:50.0,market:55.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fight Outcome",prop:"Inside the Distance",prob:50.0,market:52.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fight Outcome",prop:"KO/TKO",prob:24.0,market:35.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fight Outcome",prop:"Submission",prob:26.0,market:21.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Round Betting",prop:"Round 1 Finish",prob:29.1,market:23.5},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Round Betting",prop:"Round 2 Finish",prob:19.9,market:18.5},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Round Betting",prop:"Round 3 Finish",prob:9.4,market:13.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fighter ITD",prop:"Mateusz Rebecki ITD",prob:22.54,market:31.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fighter ITD",prop:"Grant Dawson ITD",prob:27.46,market:23.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Double Chance",prop:"Mateusz Rebecki KO/TKO or Dec",prob:28.0,market:38.0},
+  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Double Chance",prop:"Grant Dawson KO/TKO or Dec",prob:46.0,market:54.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Moneyline",prop:"Pat Sabatini",prob:64.0,market:68.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Moneyline",prop:"William Gomis",prob:36.0,market:36.5},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"Pat Sabatini by KO/TKO",prob:4.4,market:10.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"Pat Sabatini by Submission",prob:19.8,market:31.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"Pat Sabatini by Decision",prob:39.8,market:38.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"William Gomis by KO/TKO",prob:19.6,market:14.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"William Gomis by Submission",prob:0.8,market:4.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"William Gomis by Decision",prob:15.7,market:25.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Total Rounds",prop:"Over 1.5",prob:73.0,market:76.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Total Rounds",prop:"Under 1.5",prob:27.0,market:30.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Total Rounds",prop:"Over 2.5",prob:62.0,market:62.5},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Total Rounds",prop:"Under 2.5",prob:48.0,market:43.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fight Outcome",prop:"Goes to Decision",prob:55.5,market:57.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fight Outcome",prop:"Inside the Distance",prob:44.5,market:49.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fight Outcome",prop:"KO/TKO",prob:24.0,market:21.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fight Outcome",prop:"Submission",prob:20.6,market:33.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Round Betting",prop:"Round 1 Finish",prob:21.5,market:22.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Round Betting",prop:"Round 2 Finish",prob:15.4,market:18.5},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Round Betting",prop:"Round 3 Finish",prob:7.6,market:13.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fighter ITD",prop:"Pat Sabatini ITD",prob:24.2,market:36.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fighter ITD",prop:"William Gomis ITD",prob:20.3,market:15.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Double Chance",prop:"Pat Sabatini KO/TKO or Dec",prob:44.2,market:44.0},
+  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Double Chance",prop:"William Gomis KO/TKO or Dec",prob:35.2,market:35.5},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Moneyline",prop:"Jim Miller",prob:32.0,market:29.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Moneyline",prop:"Jared Gordon",prob:68.0,market:76.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jim Miller by KO/TKO",prob:9.05,market:12.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jim Miller by Submission",prob:20.73,market:8.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jim Miller by Decision",prob:2.22,market:15.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jared Gordon by KO/TKO",prob:18.32,market:23.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jared Gordon by Submission",prob:0.35,market:11.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jared Gordon by Decision",prob:49.33,market:53.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Total Rounds",prop:"Over 1.5",prob:70.0,market:80.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Total Rounds",prop:"Under 1.5",prob:30.0,market:26.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Total Rounds",prop:"Over 2.5",prob:58.0,market:66.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Total Rounds",prop:"Under 2.5",prob:42.0,market:39.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fight Outcome",prop:"Goes to Decision",prob:51.55,market:62.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fight Outcome",prop:"Inside the Distance",prob:48.45,market:43.5},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fight Outcome",prop:"KO/TKO",prob:27.37,market:32.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fight Outcome",prop:"Submission",prob:21.08,market:18.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Round Betting",prop:"Round 1 Finish",prob:28.6,market:20.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Round Betting",prop:"Round 2 Finish",prob:19.2,market:17.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Round Betting",prop:"Round 3 Finish",prob:9.9,market:13.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fighter ITD",prop:"Jim Miller ITD",prob:29.78,market:17.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fighter ITD",prop:"Jared Gordon ITD",prob:18.67,market:31.0},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Double Chance",prop:"Jim Miller KO/TKO or Dec",prob:11.27,market:23.5},
+  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Double Chance",prop:"Jared Gordon KO/TKO or Dec",prob:67.65,market:72.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Moneyline",prop:"Yaroslav Amosov",prob:66.1,market:65.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Moneyline",prop:"Joel Alvarez",prob:33.9,market:40.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Yaroslav Amosov by KO/TKO",prob:4.0,market:18.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Yaroslav Amosov by Submission",prob:24.5,market:18.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Yaroslav Amosov by Decision",prob:42.5,market:40.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Joel Alvarez by KO/TKO",prob:23.18,market:14.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Joel Alvarez by Submission",prob:2.32,market:18.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Joel Alvarez by Decision",prob:3.5,market:15.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Total Rounds",prop:"Over 1.5",prob:64.0,market:69.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Total Rounds",prop:"Under 1.5",prob:36.0,market:37.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Total Rounds",prop:"Over 2.5",prob:51.0,market:56.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Total Rounds",prop:"Under 2.5",prob:49.0,market:50.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fight Outcome",prop:"Goes to Decision",prob:46.0,market:50.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fight Outcome",prop:"Inside the Distance",prob:54.0,market:56.5},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fight Outcome",prop:"KO/TKO",prob:27.18,market:29.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fight Outcome",prop:"Submission",prob:26.82,market:32.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Round Betting",prop:"Round 1 Finish",prob:34.7,market:27.5},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Round Betting",prop:"Round 2 Finish",prob:21.2,market:21.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Round Betting",prop:"Round 3 Finish",prob:9.7,market:14.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fighter ITD",prop:"Yaroslav Amosov ITD",prob:28.5,market:31.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fighter ITD",prop:"Joel Alvarez ITD",prob:25.5,market:29.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Double Chance",prop:"Yaroslav Amosov KO/TKO or Dec",prob:46.5,market:53.0},
+  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Double Chance",prop:"Joel Alvarez KO/TKO or Dec",prob:26.68,market:27.0},
+];
+
+// ─── LIVE ODDS ENGINE ─────────────────────────────────────────────────────────
+
+function americanToImplied(price) {
+  return price > 0
+    ? (100 / (price + 100)) * 100
+    : (Math.abs(price) / (Math.abs(price) + 100)) * 100;
+}
+const NAME_ALIASES = {
+  'waldo cortes acosta': 'waldo cortesacosta',
+  'baisangur susurkaev': 'baysangur susurkaev',
+  'marco tulio': 'marco tulio silva',
+};
+function normName(n) {
+  const s = n.toLowerCase().replace(/[^a-z\s]/g,'').replace(/\s+/g,' ').trim();
+  return NAME_ALIASES[s] || s;
+}
+
+function namesMatch(a, b) {
+  const na = normName(a), nb = normName(b);
+  if (na === nb) return true;
+  const wordsA = na.split(' '), wordsB = nb.split(' ');
+  // last name match (min 4 chars to avoid false positives)
+  const lastA = wordsA[wordsA.length-1], lastB = wordsB[wordsB.length-1];
+  if (lastA === lastB && lastA.length >= 4) return true;
+  // one name contains the other fully
+  if (na.includes(nb) || nb.includes(na)) return true;
+  return false;
+}
+
+let liveUpdatedFids = new Set();
+
+async function fetchLiveOdds() {
+  const btn = document.getElementById('refresh-btn');
+  const icon = document.getElementById('refresh-icon');
+  const dot = document.getElementById('live-dot');
+  const label = document.getElementById('live-label');
+  const timeEl = document.getElementById('live-time');
+  const bookEl = document.getElementById('live-book');
+  const callsEl = document.getElementById('live-calls');
+
+  btn.classList.add('loading');
+  icon.textContent = '⟳';
+  icon.classList.add('spin');
+  dot.className = 'live-dot fetching';
+  label.textContent = 'Fetching…';
+
+  const url = `https://api.the-odds-api.com/v4/sports/${SPORT}/odds/?apiKey=${API_KEY}&regions=us&markets=h2h,totals&oddsFormat=american&bookmakers=${BOOK}`;
+
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    const remaining = res.headers.get('x-requests-remaining');
+    const used      = res.headers.get('x-requests-used');
+    if (remaining) callsEl.textContent = `API: ${remaining} calls remaining`;
+    if (used)      bookEl.textContent  = `Book: ${BOOK.toUpperCase()} · ${used} used`;
+
+    const events = await res.json();
+    let updatedCount = applyLiveOdds(events);
+
+    dot.className = 'live-dot ok';
+    label.textContent = updatedCount > 0 ? `Live · ${updatedCount} rows updated` : 'Live · no matching events yet';
+    timeEl.textContent = 'Updated ' + new Date().toLocaleTimeString();
+
+  } catch(err) {
+    dot.className = 'live-dot err';
+    label.textContent = 'Fetch failed — ' + err.message;
+    timeEl.textContent = '';
+    console.error('Odds API error:', err);
+  }
+
+  btn.classList.remove('loading');
+  icon.textContent = '↻';
+  icon.classList.remove('spin');
+}
+
+function applyLiveOdds(events) {
+  let updatedCount = 0;
+ console.log(events.map(e => e.home_team + ' vs ' + e.away_team).join('\n'));
+  // Build lookup: normName → {f1, f2, h2h: [{name,price}], totals: [{name,point,price}]}
+  const eventMap = {};
+  for (const ev of events) {
+    const bk = ev.bookmakers.find(b => b.key === BOOK) || ev.bookmakers[0];
+    if (!bk) continue;
+    const h2h    = bk.markets.find(m => m.key === 'h2h');
+    const totals = bk.markets.find(m => m.key === 'totals');
+    const key = normName(ev.home_team) + '|' + normName(ev.away_team);
+    eventMap[key] = { home: ev.home_team, away: ev.away_team, h2h, totals };
+  }
+
+  rows.forEach((row, i) => {
+    if (!LIVE_CATS.has(row.cat)) return;
+
+    // Find matching event
+    let matchedEvent = null;
+    for (const [, ev] of Object.entries(eventMap)) {
+      if ((namesMatch(ev.home, row.f1) && namesMatch(ev.away, row.f2)) ||
+          (namesMatch(ev.home, row.f2) && namesMatch(ev.away, row.f1))) {
+        matchedEvent = ev;
+        break;
+      }
+    }
+    if (!matchedEvent) return;
+
+    let newMarket = null;
+
+    if (row.cat === 'Moneyline' && matchedEvent.h2h) {
+      const outcome = matchedEvent.h2h.outcomes.find(o => namesMatch(o.name, row.prop));
+      if (outcome) newMarket = parseFloat(americanToImplied(outcome.price).toFixed(1));
+    }
+
+    if (row.cat === 'Total Rounds' && matchedEvent.totals) {
+      const isOver  = row.prop.startsWith('Over');
+      const isUnder = row.prop.startsWith('Under');
+      const point   = parseFloat(row.prop.replace('Over ','').replace('Under ',''));
+      const outcome = matchedEvent.totals.outcomes.find(o => {
+        if (Math.abs(o.point - point) > 0.1) return false;
+        return (isOver && o.name === 'Over') || (isUnder && o.name === 'Under');
+      });
+      if (outcome) newMarket = parseFloat(americanToImplied(outcome.price).toFixed(1));
+    }
+
+    if (newMarket !== null && Math.abs(newMarket - row.market) > 0.05) {
+      row.market = newMarket;
+      updatedCount++;
+      liveUpdatedFids.add(row.fid);
+
+      // Update DOM cell directly
+      const tr = document.getElementById(`tr-${i}`);
+      if (tr) {
+        const edge = row.prob !== null ? row.prob - newMarket : null;
+        row.edge = edge; // update in-place so filters work correctly
+
+        const mktTd  = tr.querySelector('.market-odds');
+        const edgeTd = tr.querySelector('.edge-td');
+
+        if (mktTd) {
+          mktTd.textContent = newMarket.toFixed(1) + '%';
+          mktTd.classList.add('live-updated');
+          setTimeout(() => mktTd.classList.remove('live-updated'), 3000);
+        }
+
+        if (edgeTd && edge !== null) {
+          const [edgeCls, barCls] = edgeStyle(edge);
+          const sign = edge >= 0 ? '+' : '';
+          const bw = Math.min(100, (Math.abs(edge) / 30) * 100);
+          edgeTd.innerHTML = `<div class="edge-cell ${edgeCls}">
+            <div class="edge-bar-wrap"><div class="edge-bar ${barCls}" style="width:${bw}%"></div></div>
+            ${sign}${edge.toFixed(1)}%
+          </div>`;
+        }
+
+        tr.classList.remove('flash-update');
+        void tr.offsetWidth; // force reflow
+        tr.classList.add('flash-update');
+
+        // Mark fight header as live
+        const block = document.getElementById('block-' + row.fid);
+        if (block && !block.querySelector('.live-badge')) {
+          const hdr = block.querySelector('.fighter-name');
+          if (hdr) hdr.insertAdjacentHTML('beforeend', '<span class="live-badge">Live</span>');
+        }
+      }
+    }
+  });
+
+  // Update summary counts after all changes
+  applyFilters();
+  return updatedCount;
+}
+
+// ─── CORE RENDER ─────────────────────────────────────────────────────────────
+
+const fights = {};
+rows.forEach((r, idx) => {
+  if (!fights[r.fid]) {
+    fights[r.fid] = { fid: r.fid, f1: r.f1, f2: r.f2, indices: [], cardOrder: Object.keys(fights).length };
+  }
+  r.edge = (typeof r.prob === 'number' && typeof r.market === 'number') ? r.prob - r.market : null;
+  fights[r.fid].indices.push(idx);
+});
+
+let activeFilter = 'all', activeCat = 'all', activeSort = 'card';
+
+function edgeStyle(edge) {
+  if (edge >= 20)   return ['edge-pos-4','bar-green-4'];
+  if (edge >= 10)   return ['edge-pos-3','bar-green-3'];
+  if (edge >= 5)    return ['edge-pos-2','bar-green-2'];
+  if (edge > 0)     return ['edge-pos-1','bar-green-1'];
+  if (edge === 0)   return ['edge-zero', 'bar-neutral'];
+  if (edge >= -5)   return ['edge-neg-1','bar-red-1'];
+  return                   ['edge-neg-2','bar-red-2'];
+}
+
+function rowPassesFilter(row) {
+  const e = (typeof row.edge === 'number') ? row.edge : -Infinity;
+  if (activeFilter === 'pos'     && e <= 0)  return false;
+  if (activeFilter === 'strong'  && e < 10)  return false;
+  if (activeFilter === 'monster' && e < 20)  return false;
+  if (activeCat !== 'all' && row.cat !== activeCat) return false;
+  const q = document.getElementById('search-input').value.toLowerCase();
+  if (q && !row.prop.toLowerCase().includes(q) && !row.f1.toLowerCase().includes(q) && !row.f2.toLowerCase().includes(q)) return false;
+  return true;
+}
+
+function fightSummary(fight) {
+  let maxEdge = -Infinity, posCount = 0, strongCount = 0, monsterCount = 0;
+  fight.indices.forEach(i => {
+    const e = rows[i].edge;
+    if (typeof e !== 'number' || isNaN(e)) return;
+    if (e > maxEdge) maxEdge = e;
+    if (e > 0) posCount++;
+    if (e >= 10) strongCount++;
+    if (e >= 20) monsterCount++;
+  });
+  if (!isFinite(maxEdge)) maxEdge = 0;
+  return { maxEdge, posCount, strongCount, monsterCount };
+}
+
+function getSortedFights() {
+  const list = Object.values(fights).slice();
+  if (activeSort === 'maxEdge') {
+    return list.sort((a, b) => fightSummary(b).maxEdge - fightSummary(a).maxEdge);
+  }
+  return list.sort((a, b) => a.cardOrder - b.cardOrder);
+}
+
+function getSortedPropIndices(fight) {
+  return fight.indices.slice().sort((a, b) => {
+    const ea = (typeof rows[a].edge === 'number') ? rows[a].edge : -Infinity;
+    const eb = (typeof rows[b].edge === 'number') ? rows[b].edge : -Infinity;
+    return eb - ea;
+  });
+}
+
+function setFilter(btn, val) {
+  document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active'); activeFilter = val; applyFilters();
+}
+function setCat(btn, val) {
+  document.querySelectorAll('[data-cat]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active'); activeCat = val; applyFilters();
+}
+function setSort(btn, val) {
+  document.querySelectorAll('[data-sort]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active'); activeSort = val; render();
+}
+function toggleFight(fid)     { document.getElementById('block-' + fid).classList.toggle('collapsed'); }
+function toggleTopEdges()     { document.getElementById('top-edges').classList.toggle('collapsed'); }
+function scrollToFight(fid) {
+  const block = document.getElementById('block-' + fid);
+  if (!block) return;
+  block.classList.remove('collapsed');
+  block.classList.remove('hidden');
+  block.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function lastName(n) { const p = n.trim().split(/\s+/); return p[p.length-1]; }
+
+function renderTopEdges() {
+  const list = document.getElementById('top-edges-list');
+  const top = rows
+    .map((r, i) => ({ row: r, idx: i }))
+    .filter(x => typeof x.row.edge === 'number' && x.row.edge > 0)
+    .sort((a, b) => b.row.edge - a.row.edge)
+    .slice(0, 8);
+  if (top.length === 0) {
+    list.innerHTML = '<div class="empty-state" style="padding:18px">No positive edges found</div>';
+    return;
+  }
+  list.innerHTML = top.map(({row}, i) => {
+    const [edgeCls] = edgeStyle(row.edge);
+    return `
+      <div class="top-edge-item" onclick="scrollToFight('${row.fid}')">
+        <div class="top-edge-rank">#${i+1}</div>
+        <div style="min-width:0">
+          <div class="top-edge-prop-name">${row.prop}</div>
+          <div class="top-edge-fight">${lastName(row.f1)} vs ${lastName(row.f2)} · ${row.cat}</div>
+        </div>
+        <div class="top-edge-value ${edgeCls}">+${row.edge.toFixed(1)}%</div>
+      </div>`;
+  }).join('');
+}
+
+function updateFightChips(fight) {
+  const block = document.getElementById('block-' + fight.fid);
+  if (!block) return;
+  const sum = fightSummary(fight);
+  const posEl = block.querySelector('.pos-count-value');
+  if (posEl) posEl.textContent = sum.posCount;
+}
+
+function applyFilters() {
+  let visibleTotal = 0, posCount = 0, strongCount = 0, monsterCount = 0;
+  rows.forEach(r => {
+    const e = r.edge;
+    if (typeof e !== 'number' || isNaN(e)) return;
+    if (e > 0) posCount++;
+    if (e >= 10) strongCount++;
+    if (e >= 20) monsterCount++;
+  });
+  Object.values(fights).forEach(fight => {
+    const block = document.getElementById('block-' + fight.fid);
+    let fv = 0;
+    fight.indices.forEach(i => {
+      const tr = document.getElementById('tr-' + i);
+      if (!tr) return;
+      const pass = rowPassesFilter(rows[i]);
+      tr.classList.toggle('hidden', !pass);
+      if (pass) { fv++; visibleTotal++; }
+    });
+    if (block) block.classList.toggle('hidden', fv === 0);
+    updateFightChips(fight);
+  });
+  document.getElementById('total-count').textContent = visibleTotal + ' props';
+  document.getElementById('summary-bar').innerHTML = `
+    <div class="stat-item"><span class="stat-value" style="color:var(--accent)">${visibleTotal}</span><span class="stat-label">Showing</span></div>
+    <div class="stat-item"><span class="stat-value" style="color:var(--green)">${posCount}</span><span class="stat-label">+Edge</span></div>
+    <div class="stat-item"><span class="stat-value" style="color:#1fbd6e">${strongCount}</span><span class="stat-label">+10% Strong</span></div>
+    <div class="stat-item"><span class="stat-value" style="color:var(--green)">${monsterCount}</span><span class="stat-label">+20% Monster</span></div>
+    <div class="stat-item" style="margin-left:auto"><span class="stat-value" style="color:var(--text-secondary);font-size:16px">${rows.length}</span><span class="stat-label">Total</span></div>
+  `;
+  renderTopEdges();
+}
+
+function buildFightBlock(fight) {
+  const block = document.createElement('div');
+  block.className = 'fight-block';
+  block.id = 'block-' + fight.fid;
+  const sum = fightSummary(fight);
+  block.innerHTML = `
+    <div class="fight-header" onclick="toggleFight('${fight.fid}')">
+      <div class="fight-matchup">
+        <div class="fight-matchup-line">
+          <span class="fighter-name">${fight.f1}</span>
+          <span class="vs">vs</span>
+          <span class="fighter-name">${fight.f2}</span>
+        </div>
+      </div>
+      <div class="fight-summary">
+        <div class="summary-chip">
+          <span class="summary-chip-label">+Edges</span>
+          <span class="summary-chip-value pos-count-value">${sum.posCount}</span>
+        </div>
+        <span class="fight-toggle">▾</span>
+      </div>
+    </div>
+    <div class="fight-body">
+      <div class="prop-list">
+        <div class="prop-list-header">
+          <div>Category</div>
+          <div>Prop / Outcome</div>
+          <div class="num">Yang</div>
+          <div class="num">Market</div>
+          <div class="num">Edge</div>
+        </div>
+        <div id="props-${fight.fid}"></div>
+      </div>
+    </div>`;
+  return block;
+}
+
+function buildPropRow(i) {
+  const row = rows[i];
+  const propRow = document.createElement('div');
+  propRow.className = 'prop-row';
+  propRow.id = 'tr-' + i;
+  const edge = (typeof row.edge === 'number') ? row.edge : 0;
+  const [edgeCls, barCls] = edgeStyle(edge);
+  const sign = edge >= 0 ? '+' : '';
+  const bw = Math.min(100, (Math.abs(edge) / 30) * 100);
+  propRow.innerHTML = `
+    <div class="prop-cat">${row.cat}</div>
+    <div class="prop-name">${row.prop}</div>
+    <div class="prop-prob" data-label="Yang">${row.prob.toFixed(1)}%</div>
+    <div class="prop-market market-odds" data-label="Market">${row.market.toFixed(1)}%</div>
+    <div class="edge-td" data-label="Edge"><div class="edge-cell ${edgeCls}">
+      <div class="edge-bar-wrap"><div class="edge-bar ${barCls}" style="width:${bw}%"></div></div>
+      <span>${sign}${edge.toFixed(1)}%</span>
+    </div></div>`;
+  return propRow;
+}
+
+function render() {
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+  const sortedFights = getSortedFights();
+  if (sortedFights.length === 0) {
+    content.innerHTML = '<div class="empty-state">No fights to display.</div>';
+    return;
+  }
+  sortedFights.forEach(fight => {
+    const block = buildFightBlock(fight);
+    content.appendChild(block);
+    const propsContainer = document.getElementById('props-' + fight.fid);
+    getSortedPropIndices(fight).forEach(i => propsContainer.appendChild(buildPropRow(i)));
+  });
+  applyFilters();
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+if (window.innerWidth <= 720) {
+  document.getElementById('top-edges').classList.add('collapsed');
+}
+render();
+fetchLiveOdds(); // fetch on load
+setInterval(fetchLiveOdds, AUTO_REFRESH); // then every 10 min
+</script>
+</body>
+</html>
