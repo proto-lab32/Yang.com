@@ -41,13 +41,17 @@
 
   /* LIVE BAR */
   .live-bar {
-    display: flex; align-items: center; gap: 14px;
-    padding: 7px 16px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 6px 16px;
     background: rgba(0,0,0,0.25);
     border-bottom: 1px solid var(--border);
     font-family: 'DM Mono', monospace; font-size: 10.5px;
-    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
   }
+  .live-bar::-webkit-scrollbar { display: none; }
+  .live-bar > * { flex-shrink: 0; }
   .live-status { display: flex; align-items: center; gap: 7px; }
   .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--text-muted); flex-shrink: 0; }
   .live-dot.ok { background: var(--green); box-shadow: 0 0 8px rgba(34, 208, 122, 0.45); }
@@ -57,20 +61,6 @@
   .live-label { color: var(--text-secondary); }
   .live-time, .live-book, .live-note { color: var(--text-muted); }
   .live-calls { color: var(--text-muted); margin-left: auto; }
-
-  /* SUMMARY BAR */
-  .summary-bar {
-    display: flex; gap: 24px;
-    padding: 14px 16px;
-    background: rgba(0,0,0,0.25);
-    border-bottom: 1px solid var(--border);
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .summary-bar::-webkit-scrollbar { display: none; }
-  .stat-item { display: flex; flex-direction: column; gap: 2px; flex-shrink: 0; }
-  .stat-value { font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 800; line-height: 1; }
-  .stat-label { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
 
   /* TOP EDGES PANEL */
   .top-edges {
@@ -134,17 +124,30 @@
   .pill-btn:hover { border-color: var(--accent); color: var(--accent); }
   .pill-btn.active { background: var(--accent); color: #07080d; border-color: var(--accent); }
   .divider { width: 1px; height: 18px; background: var(--border); margin: 0 4px; flex-shrink: 0; }
+  .fight-select {
+    font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.04em; text-transform: uppercase;
+    padding: 5px 28px 5px 10px; border-radius: 3px;
+    border: 1px solid var(--border-bright);
+    background: transparent; color: var(--text-secondary);
+    cursor: pointer; flex-shrink: 0;
+    appearance: none; -webkit-appearance: none; -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%239aa0c2' d='M5 6L0 0h10z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 9px center;
+    max-width: 180px;
+    text-overflow: ellipsis;
+    outline: none;
+  }
+  .fight-select:hover { border-color: var(--accent); color: var(--accent); }
+  .fight-select.active-pin { border-color: var(--accent); color: var(--accent); }
+  .fight-select option { background: var(--surface); color: var(--text-primary); }
+
   .search-wrap { position: relative; flex-shrink: 0; }
   .search-wrap input { font-family: 'DM Mono', monospace; font-size: 11px; background: var(--bg); border: 1px solid var(--border-bright); border-radius: 3px; color: var(--text-primary); padding: 5px 10px 5px 26px; width: 160px; outline: none; }
   .search-wrap input:focus { border-color: var(--accent); }
   .search-wrap input::placeholder { color: var(--text-muted); }
   .search-icon { position: absolute; left: 8px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 12px; pointer-events: none; }
-
-  /* LEGEND */
-  .legend { display: flex; align-items: center; gap: 12px; padding: 8px 16px; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
-  .legend-label { font-family: 'Barlow Condensed', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
-  .legend-item { display: flex; align-items: center; gap: 5px; font-family: 'DM Mono', monospace; font-size: 10px; }
-  .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
 
   /* CONTENT */
   .content { padding: 14px 16px 32px; display: flex; flex-direction: column; gap: 12px; }
@@ -195,7 +198,7 @@
   .prop-list-header,
   .prop-row {
     display: grid;
-    grid-template-columns: 100px 1fr 70px 70px 200px;
+    grid-template-columns: 90px 1fr 70px 70px 140px;
     gap: 14px;
     align-items: center;
     padding: 10px 18px;
@@ -235,7 +238,7 @@
     font-variant-numeric: tabular-nums;
     letter-spacing: -0.01em;
   }
-  .edge-bar-wrap { width: 80px; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; flex-shrink: 0; }
+  .edge-bar-wrap { width: 50px; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; flex-shrink: 0; }
   .edge-bar { height: 100%; border-radius: 3px; transition: width 0.3s; }
 
   .edge-pos-4 { color: var(--green); } .bar-green-4 { background: var(--green); }
@@ -270,36 +273,30 @@
     .fight-header { padding: 12px 14px; gap: 10px; }
     .fighter-name { font-size: 14px; }
     .vs { font-size: 9px; }
-    .summary-chip { padding: 5px 9px; gap: 5px; }
-    .summary-chip-label { display: none; }
+    .summary-chip { padding: 4px 8px; gap: 5px; }
+    .summary-chip-label { display: inline; font-size: 9px; }
     .summary-chip-value { font-size: 12px; }
     .search-wrap input { width: 130px; }
 
     .prop-list-header { display: none; }
     .prop-row {
-      grid-template-columns: auto 1fr 1fr 1.4fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
-        "cat  name name name"
-        ".    yang mkt  edge";
-      gap: 6px 12px;
-      padding: 12px 14px;
+        "cat  name name"
+        "yang mkt  edge";
+      gap: 7px 10px;
+      padding: 10px 14px;
     }
-    .prop-row > .prop-cat { grid-area: cat; align-self: start; }
-    .prop-row > .prop-name { grid-area: name; }
+    .prop-row > .prop-cat { grid-area: cat; align-self: center; }
+    .prop-row > .prop-name { grid-area: name; align-self: center; font-size: 13px; }
     .prop-row > .prop-prob {
-      grid-area: yang; text-align: left;
-      padding-top: 8px; margin-top: 4px;
-      border-top: 1px dashed rgba(255,255,255,0.05);
+      grid-area: yang; text-align: left; font-size: 13.5px;
     }
     .prop-row > .prop-market {
-      grid-area: mkt; text-align: left;
-      padding-top: 8px; margin-top: 4px;
-      border-top: 1px dashed rgba(255,255,255,0.05);
+      grid-area: mkt; text-align: left; font-size: 13.5px;
     }
     .prop-row > .edge-td {
-      grid-area: edge;
-      padding-top: 8px; margin-top: 4px;
-      border-top: 1px dashed rgba(255,255,255,0.05);
+      grid-area: edge; font-size: 14px;
     }
     .prop-row > .prop-prob::before,
     .prop-row > .prop-market::before,
@@ -310,10 +307,11 @@
       font-size: 9px; font-weight: 700;
       letter-spacing: 0.1em; text-transform: uppercase;
       color: var(--text-muted);
-      margin-bottom: 4px;
+      margin-bottom: 2px;
     }
-    .edge-cell { justify-content: flex-start; gap: 7px; font-size: 13px; }
-    .edge-bar-wrap { width: 100%; min-width: 30px; max-width: 80px; height: 5px; }
+    /* Drop the bar on mobile — color tier conveys magnitude */
+    .edge-cell { justify-content: flex-start; gap: 0; }
+    .edge-bar-wrap { display: none; }
   }
 </style>
 </head>
@@ -340,11 +338,8 @@
   </div>
   <span class="live-time" id="live-time"></span>
   <span class="live-book" id="live-book"></span>
-  <span class="live-note">ML &amp; Totals auto · Method/Round/ITD/2-Way manual</span>
   <span class="live-calls" id="live-calls"></span>
 </div>
-
-<div class="summary-bar" id="summary-bar"></div>
 
 <div class="top-edges" id="top-edges">
   <div class="top-edges-header" onclick="toggleTopEdges()">
@@ -359,6 +354,11 @@
     <span class="controls-label">Sort</span>
     <button class="pill-btn active" data-sort="card" onclick="setSort(this,'card')">Card</button>
     <button class="pill-btn" data-sort="maxEdge" onclick="setSort(this,'maxEdge')">Max Edge</button>
+  </div>
+  <div class="divider"></div>
+  <div class="controls-row">
+    <span class="controls-label">Fight</span>
+    <select id="fight-select" class="fight-select" onchange="setFightFilter(this.value)"></select>
   </div>
   <div class="divider"></div>
   <div class="controls-row">
@@ -385,16 +385,6 @@
     <span class="search-icon">⌕</span>
     <input type="text" id="search-input" placeholder="Search…" oninput="applyFilters()">
   </div>
-</div>
-
-<div class="legend">
-  <span class="legend-label">Edge</span>
-  <div class="legend-item"><div class="legend-dot" style="background:#22d07a"></div><span style="color:#22d07a">&gt;+20</span></div>
-  <div class="legend-item"><div class="legend-dot" style="background:#1fbd6e"></div><span style="color:#1fbd6e">+10–20</span></div>
-  <div class="legend-item"><div class="legend-dot" style="background:#1aaa62"></div><span style="color:#1aaa62">+5–10</span></div>
-  <div class="legend-item"><div class="legend-dot" style="background:#179055"></div><span style="color:#179055">0–+5</span></div>
-  <div class="legend-item"><div class="legend-dot" style="background:#c75050"></div><span style="color:#c75050">−5–0</span></div>
-  <div class="legend-item"><div class="legend-dot" style="background:#f05252"></div><span style="color:#f05252">&lt;−5</span></div>
 </div>
 
 <div class="content" id="content"></div>
@@ -907,7 +897,7 @@ rows.forEach((r, idx) => {
   fights[r.fid].indices.push(idx);
 });
 
-let activeFilter = 'all', activeCat = 'all', activeSort = 'card';
+let activeFilter = 'all', activeCat = 'all', activeSort = 'card', activeFight = 'all';
 
 function edgeStyle(edge) {
   if (edge >= 20)   return ['edge-pos-4','bar-green-4'];
@@ -972,6 +962,33 @@ function setSort(btn, val) {
   document.querySelectorAll('[data-sort]').forEach(b => b.classList.remove('active'));
   btn.classList.add('active'); activeSort = val; render();
 }
+function setFightFilter(val) {
+  activeFight = val;
+  const sel = document.getElementById('fight-select');
+  if (sel) sel.classList.toggle('active-pin', val !== 'all');
+  applyFilters();
+  if (val !== 'all') {
+    const block = document.getElementById('block-' + val);
+    if (block) {
+      block.classList.remove('collapsed');
+      block.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
+function populateFightSelect() {
+  const sel = document.getElementById('fight-select');
+  if (!sel) return;
+  const opts = ['<option value="all">All Fights</option>'];
+  Object.values(fights)
+    .slice()
+    .sort((a, b) => a.cardOrder - b.cardOrder)
+    .forEach(f => {
+      const label = `${f.f1} vs ${f.f2}`;
+      opts.push(`<option value="${f.fid}">${label}</option>`);
+    });
+  sel.innerHTML = opts.join('');
+  sel.value = activeFight;
+}
 function toggleFight(fid)     { document.getElementById('block-' + fid).classList.toggle('collapsed'); }
 function toggleTopEdges()     { document.getElementById('top-edges').classList.toggle('collapsed'); }
 function scrollToFight(fid) {
@@ -1028,6 +1045,7 @@ function applyFilters() {
   });
   Object.values(fights).forEach(fight => {
     const block = document.getElementById('block-' + fight.fid);
+    const fightHiddenByFilter = activeFight !== 'all' && activeFight !== fight.fid;
     let fv = 0;
     fight.indices.forEach(i => {
       const tr = document.getElementById('tr-' + i);
@@ -1036,17 +1054,10 @@ function applyFilters() {
       tr.classList.toggle('hidden', !pass);
       if (pass) { fv++; visibleTotal++; }
     });
-    if (block) block.classList.toggle('hidden', fv === 0);
+    if (block) block.classList.toggle('hidden', fightHiddenByFilter || fv === 0);
     updateFightChips(fight);
   });
   document.getElementById('total-count').textContent = visibleTotal + ' props';
-  document.getElementById('summary-bar').innerHTML = `
-    <div class="stat-item"><span class="stat-value" style="color:var(--accent)">${visibleTotal}</span><span class="stat-label">Showing</span></div>
-    <div class="stat-item"><span class="stat-value" style="color:var(--green)">${posCount}</span><span class="stat-label">+Edge</span></div>
-    <div class="stat-item"><span class="stat-value" style="color:#1fbd6e">${strongCount}</span><span class="stat-label">+10% Strong</span></div>
-    <div class="stat-item"><span class="stat-value" style="color:var(--green)">${monsterCount}</span><span class="stat-label">+20% Monster</span></div>
-    <div class="stat-item" style="margin-left:auto"><span class="stat-value" style="color:var(--text-secondary);font-size:16px">${rows.length}</span><span class="stat-label">Total</span></div>
-  `;
   renderTopEdges();
 }
 
@@ -1129,6 +1140,7 @@ function render() {
 if (window.innerWidth <= 720) {
   document.getElementById('top-edges').classList.add('collapsed');
 }
+populateFightSelect();
 render();
 fetchLiveOdds(); // fetch on load
 setInterval(fetchLiveOdds, AUTO_REFRESH); // then every 10 min
