@@ -129,8 +129,8 @@
 
   /* CONTROLS */
   .controls {
-    display: flex; align-items: center; gap: 8px;
-    padding: 10px 16px;
+    display: flex; align-items: center; gap: 6px;
+    padding: 10px 14px;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
     overflow-x: auto;
@@ -139,18 +139,18 @@
   }
   .controls::-webkit-scrollbar { height: 4px; }
   .controls::-webkit-scrollbar-thumb { background: var(--border-bright); border-radius: 2px; }
-  .controls-row { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
-  .controls-label { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); margin-right: 2px; flex-shrink: 0; }
+  .controls-row { display: flex; align-items: center; gap: 5px; flex-shrink: 0; }
+  .controls-label { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); margin-right: 1px; flex-shrink: 0; }
   .pill-btn {
     font-size: var(--text-xs); font-weight: 600;
     letter-spacing: 0.02em;
-    padding: 6px 11px; border-radius: 4px; border: 1px solid var(--border-bright);
+    padding: 5px 9px; border-radius: 4px; border: 1px solid var(--border-bright);
     background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.15s;
     white-space: nowrap; flex-shrink: 0;
   }
   .pill-btn:hover { border-color: var(--text-secondary); color: var(--text-primary); }
   .pill-btn.active { background: var(--text-primary); color: var(--bg); border-color: var(--text-primary); }
-  .divider { width: 1px; height: 18px; background: var(--border); margin: 0 4px; flex-shrink: 0; }
+  .divider { width: 1px; height: 18px; background: var(--border); margin: 0 2px; flex-shrink: 0; }
   .fight-select {
     font-size: var(--text-xs); font-weight: 600;
     letter-spacing: 0.02em;
@@ -161,8 +161,8 @@
     appearance: none; -webkit-appearance: none; -moz-appearance: none;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='%23a0a6c5' d='M5 6L0 0h10z'/></svg>");
     background-repeat: no-repeat;
-    background-position: right 9px center;
-    width: 130px;
+    background-position: right 8px center;
+    width: 120px;
     text-overflow: ellipsis;
     overflow: hidden;
     outline: none;
@@ -421,7 +421,9 @@
     .top-edges { margin: 12px 14px 0; }
     .top-edge-item { padding: 10px 14px; }
     .top-edge-value { font-size: var(--text-sm); }
-    .controls { padding: 9px 14px; }
+    .controls { padding: 8px 12px; gap: 5px; }
+    .controls-row { gap: 4px; }
+    .divider { margin: 0 1px; }
     .content { padding: 12px 14px 32px; gap: 10px; }
     .fight-header { padding: 11px 14px; gap: 8px; }
     .fighter-name { font-size: 12.5px; }
