@@ -1,313 +1,313 @@
 # UFC 328: Chimaev vs Strickland
-fid,f1,f2,cat,prop,prob,market
-F00157,Khamzat Chimaev,Sean Strickland,Moneyline,Khamzat Chimaev,84,86
-F00157,Khamzat Chimaev,Sean Strickland,Moneyline,Sean Strickland,16,19
-F00157,Khamzat Chimaev,Sean Strickland,Method of Victory,Khamzat Chimaev by KO/TKO,37.38,22
-F00157,Khamzat Chimaev,Sean Strickland,Method of Victory,Khamzat Chimaev by Submission,21.95,51
-F00157,Khamzat Chimaev,Sean Strickland,Method of Victory,Khamzat Chimaev by Decision,24.67,25
-F00157,Khamzat Chimaev,Sean Strickland,Method of Victory,Sean Strickland by KO/TKO,6.4,10
-F00157,Khamzat Chimaev,Sean Strickland,Method of Victory,Sean Strickland by Submission,0.72,2
-F00157,Khamzat Chimaev,Sean Strickland,Method of Victory,Sean Strickland by Decision,8.88,11
-F00157,Khamzat Chimaev,Sean Strickland,Total Rounds,Over 1.5,59,70
-F00157,Khamzat Chimaev,Sean Strickland,Total Rounds,Under 1.5,41,36
-F00157,Khamzat Chimaev,Sean Strickland,Total Rounds,Over 2.5,47,56
-F00157,Khamzat Chimaev,Sean Strickland,Total Rounds,Under 2.5,53,52
-F00157,Khamzat Chimaev,Sean Strickland,Total Rounds,Over 3.5,40,44
-F00157,Khamzat Chimaev,Sean Strickland,Total Rounds,Under 3.5,60,60.5
-F00157,Khamzat Chimaev,Sean Strickland,Total Rounds,Over 4.5,36,36
-F00157,Khamzat Chimaev,Sean Strickland,Total Rounds,Under 4.5,64,71
-F00157,Khamzat Chimaev,Sean Strickland,Fight Outcome,Goes to Decision,33.55,33
-F00157,Khamzat Chimaev,Sean Strickland,Fight Outcome,Inside the Distance,66.45,72.5
-F00157,Khamzat Chimaev,Sean Strickland,Fight Outcome,KO/TKO,43.78,29
-F00157,Khamzat Chimaev,Sean Strickland,Fight Outcome,Submission,22.67,52
-F00157,Khamzat Chimaev,Sean Strickland,Round Betting,Round 1 Finish,22.1,29
-F00157,Khamzat Chimaev,Sean Strickland,Round Betting,Round 2 Finish,17.3,20
-F00157,Khamzat Chimaev,Sean Strickland,Round Betting,Round 3 Finish,12.3,14
-F00157,Khamzat Chimaev,Sean Strickland,Round Betting,Round 4 Finish,8.5,12
-F00157,Khamzat Chimaev,Sean Strickland,Round Betting,Round 5 Finish,5.4,9
-F00157,Khamzat Chimaev,Sean Strickland,Fighter ITD,Khamzat Chimaev ITD,59.33,67
-F00157,Khamzat Chimaev,Sean Strickland,Fighter ITD,Sean Strickland ITD,7.12,11
-F00157,Khamzat Chimaev,Sean Strickland,Double Chance,Khamzat Chimaev KO/TKO or Dec,62.05,41.5
-F00157,Khamzat Chimaev,Sean Strickland,Double Chance,Sean Strickland KO/TKO or Dec,15.28,17.5
-F00158,Tatsuro Taira,Joshua Van,Moneyline,Tatsuro Taira,70,62
-F00158,Tatsuro Taira,Joshua Van,Moneyline,Joshua Van,30,42
-F00158,Tatsuro Taira,Joshua Van,Method of Victory,Tatsuro Taira by KO/TKO,22,12
-F00158,Tatsuro Taira,Joshua Van,Method of Victory,Tatsuro Taira by Submission,25.5,34
-F00158,Tatsuro Taira,Joshua Van,Method of Victory,Tatsuro Taira by Decision,22.5,26
-F00158,Tatsuro Taira,Joshua Van,Method of Victory,Joshua Van by KO/TKO,12,25
-F00158,Tatsuro Taira,Joshua Van,Method of Victory,Joshua Van by Submission,1,4
-F00158,Tatsuro Taira,Joshua Van,Method of Victory,Joshua Van by Decision,17,20
-F00158,Tatsuro Taira,Joshua Van,Total Rounds,Over 1.5,73,79
-F00158,Tatsuro Taira,Joshua Van,Total Rounds,Under 1.5,27,28
-F00158,Tatsuro Taira,Joshua Van,Total Rounds,Over 2.5,62,65
-F00158,Tatsuro Taira,Joshua Van,Total Rounds,Under 2.5,38,42
-F00158,Tatsuro Taira,Joshua Van,Total Rounds,Over 3.5,51.5,55
-F00158,Tatsuro Taira,Joshua Van,Total Rounds,Under 3.5,48.5,50.5
-F00158,Tatsuro Taira,Joshua Van,Total Rounds,Over 4.5,45,45
-F00158,Tatsuro Taira,Joshua Van,Total Rounds,Under 4.5,55,61
-F00158,Tatsuro Taira,Joshua Van,Fight Outcome,Goes to Decision,39.5,42
-F00158,Tatsuro Taira,Joshua Van,Fight Outcome,Inside the Distance,60.5,65
-F00158,Tatsuro Taira,Joshua Van,Fight Outcome,KO/TKO,34,35
-F00158,Tatsuro Taira,Joshua Van,Fight Outcome,Submission,26.5,37
-F00158,Tatsuro Taira,Joshua Van,Round Betting,Round 1 Finish,21.3,20
-F00158,Tatsuro Taira,Joshua Van,Round Betting,Round 2 Finish,16.4,17
-F00158,Tatsuro Taira,Joshua Van,Round Betting,Round 3 Finish,11.5,14
-F00158,Tatsuro Taira,Joshua Van,Round Betting,Round 4 Finish,7,13
-F00158,Tatsuro Taira,Joshua Van,Round Betting,Round 5 Finish,4.2,11
-F00158,Tatsuro Taira,Joshua Van,Fighter ITD,Tatsuro Taira ITD,47.5,42
-F00158,Tatsuro Taira,Joshua Van,Fighter ITD,Joshua Van ITD,13,27
-F00158,Tatsuro Taira,Joshua Van,Double Chance,Tatsuro Taira KO/TKO or Dec,44.5,36
-F00158,Tatsuro Taira,Joshua Van,Double Chance,Joshua Van KO/TKO or Dec,29,40.5
-F00159,Waldo Cortes Acosta,Alexander Volkov,Moneyline,Waldo Cortes Acosta,46,43
-F00159,Waldo Cortes Acosta,Alexander Volkov,Moneyline,Alexander Volkov,54,61
-F00159,Waldo Cortes Acosta,Alexander Volkov,Method of Victory,Waldo Cortes Acosta by KO/TKO,14.77,18
-F00159,Waldo Cortes Acosta,Alexander Volkov,Method of Victory,Waldo Cortes Acosta by Submission,1.15,4
-F00159,Waldo Cortes Acosta,Alexander Volkov,Method of Victory,Waldo Cortes Acosta by Decision,16.98,27
-F00159,Waldo Cortes Acosta,Alexander Volkov,Method of Victory,Alexander Volkov by KO/TKO,8.76,22
-F00159,Waldo Cortes Acosta,Alexander Volkov,Method of Victory,Alexander Volkov by Submission,1.94,5
-F00159,Waldo Cortes Acosta,Alexander Volkov,Method of Victory,Alexander Volkov by Decision,42.34,43
-F00159,Waldo Cortes Acosta,Alexander Volkov,Total Rounds,Over 1.5,78.5,82
-F00159,Waldo Cortes Acosta,Alexander Volkov,Total Rounds,Under 1.5,31.5,25
-F00159,Waldo Cortes Acosta,Alexander Volkov,Total Rounds,Over 2.5,68,69.5
-F00159,Waldo Cortes Acosta,Alexander Volkov,Total Rounds,Under 2.5,32,36
-F00159,Waldo Cortes Acosta,Alexander Volkov,Fight Outcome,Goes to Decision,63,66
-F00159,Waldo Cortes Acosta,Alexander Volkov,Fight Outcome,Inside the Distance,37,42
-F00159,Waldo Cortes Acosta,Alexander Volkov,Fight Outcome,KO/TKO,23.53,38
-F00159,Waldo Cortes Acosta,Alexander Volkov,Fight Outcome,Submission,3.09,9
-F00159,Waldo Cortes Acosta,Alexander Volkov,Round Betting,Round 1 Finish,26.6,18
-F00159,Waldo Cortes Acosta,Alexander Volkov,Round Betting,Round 2 Finish,16.3,17
-F00159,Waldo Cortes Acosta,Alexander Volkov,Round Betting,Round 3 Finish,7.9,11.5
-F00159,Waldo Cortes Acosta,Alexander Volkov,Fighter ITD,Waldo Cortes Acosta ITD,15.92,20
-F00159,Waldo Cortes Acosta,Alexander Volkov,Fighter ITD,Alexander Volkov ITD,10.7,26
-F00159,Waldo Cortes Acosta,Alexander Volkov,Double Chance,Waldo Cortes Acosta KO/TKO or Dec,31.75,42.5
-F00159,Waldo Cortes Acosta,Alexander Volkov,Double Chance,Alexander Volkov KO/TKO or Dec,51.1,61
-F00160,Sean Brady,Joaquin Buckley,Moneyline,Sean Brady,61,62.5
-F00160,Sean Brady,Joaquin Buckley,Moneyline,Joaquin Buckley,39,41.5
-F00160,Sean Brady,Joaquin Buckley,Method of Victory,Sean Brady by KO/TKO,4.07,11
-F00160,Sean Brady,Joaquin Buckley,Method of Victory,Sean Brady by Submission,17.04,23
-F00160,Sean Brady,Joaquin Buckley,Method of Victory,Sean Brady by Decision,39.89,38
-F00160,Sean Brady,Joaquin Buckley,Method of Victory,Joaquin Buckley by KO/TKO,26.66,29
-F00160,Sean Brady,Joaquin Buckley,Method of Victory,Joaquin Buckley by Submission,0.23,3
-F00160,Sean Brady,Joaquin Buckley,Method of Victory,Joaquin Buckley by Decision,12.11,16
-F00160,Sean Brady,Joaquin Buckley,Total Rounds,Over 1.5,69,72
-F00160,Sean Brady,Joaquin Buckley,Total Rounds,Under 1.5,31,34
-F00160,Sean Brady,Joaquin Buckley,Total Rounds,Over 2.5,56,57
-F00160,Sean Brady,Joaquin Buckley,Total Rounds,Under 2.5,44,49.5
-F00160,Sean Brady,Joaquin Buckley,Fight Outcome,Goes to Decision,52,50
-F00160,Sean Brady,Joaquin Buckley,Fight Outcome,Inside the Distance,48,57
-F00160,Sean Brady,Joaquin Buckley,Fight Outcome,KO/TKO,30.73,38
-F00160,Sean Brady,Joaquin Buckley,Fight Outcome,Submission,17.27,25
-F00160,Sean Brady,Joaquin Buckley,Round Betting,Round 1 Finish,34.2,26.5
-F00160,Sean Brady,Joaquin Buckley,Round Betting,Round 2 Finish,17.8,21
-F00160,Sean Brady,Joaquin Buckley,Round Betting,Round 3 Finish,7.9,14
-F00160,Sean Brady,Joaquin Buckley,Fighter ITD,Sean Brady ITD,21.11,31
-F00160,Sean Brady,Joaquin Buckley,Fighter ITD,Joaquin Buckley ITD,26.89,29
-F00160,Sean Brady,Joaquin Buckley,Double Chance,Sean Brady KO/TKO or Dec,43.96,46.5
-F00160,Sean Brady,Joaquin Buckley,Double Chance,Joaquin Buckley KO/TKO or Dec,38.77,40.5
-F00161,King Green,Jeremy Stephens,Moneyline,King Green,75.5,79
-F00161,King Green,Jeremy Stephens,Moneyline,Jeremy Stephens,24.5,25.5
-F00161,King Green,Jeremy Stephens,Method of Victory,King Green by KO/TKO,15.9,30
-F00161,King Green,Jeremy Stephens,Method of Victory,King Green by Submission,11.3,11
-F00161,King Green,Jeremy Stephens,Method of Victory,King Green by Decision,48.2,45
-F00161,King Green,Jeremy Stephens,Method of Victory,Jeremy Stephens by KO/TKO,13.8,17
-F00161,King Green,Jeremy Stephens,Method of Victory,Jeremy Stephens by Submission,1.1,3
-F00161,King Green,Jeremy Stephens,Method of Victory,Jeremy Stephens by Decision,9.6,13
-F00161,King Green,Jeremy Stephens,Total Rounds,Over 1.5,75,75
-F00161,King Green,Jeremy Stephens,Total Rounds,Under 1.5,25,31
-F00161,King Green,Jeremy Stephens,Total Rounds,Over 2.5,64,61
-F00161,King Green,Jeremy Stephens,Total Rounds,Under 2.5,36,44.5
-F00161,King Green,Jeremy Stephens,Fight Outcome,Goes to Decision,57.8,56
-F00161,King Green,Jeremy Stephens,Fight Outcome,Inside the Distance,42.2,51
-F00161,King Green,Jeremy Stephens,Fight Outcome,KO/TKO,29.8,44
-F00161,King Green,Jeremy Stephens,Fight Outcome,Submission,12.4,13
-F00161,King Green,Jeremy Stephens,Round Betting,Round 1 Finish,20.4,22.5
-F00161,King Green,Jeremy Stephens,Round Betting,Round 2 Finish,14.3,20
-F00161,King Green,Jeremy Stephens,Round Betting,Round 3 Finish,7.5,14.5
-F00161,King Green,Jeremy Stephens,Fighter ITD,King Green ITD,27.2,36
-F00161,King Green,Jeremy Stephens,Fighter ITD,Jeremy Stephens ITD,14.9,17
-F00161,King Green,Jeremy Stephens,Double Chance,King Green KO/TKO or Dec,64.1,73.5
-F00161,King Green,Jeremy Stephens,Double Chance,Jeremy Stephens KO/TKO or Dec,23.4,27
-F00162,Ateba Gautier,Ozzy Diaz,Moneyline,Ateba Gautier,90,93.5
-F00162,Ateba Gautier,Ozzy Diaz,Moneyline,Ozzy Diaz,10,11.5
-F00162,Ateba Gautier,Ozzy Diaz,Method of Victory,Ateba Gautier by KO/TKO,69.92,85
-F00162,Ateba Gautier,Ozzy Diaz,Method of Victory,Ateba Gautier by Submission,8.43,11
-F00162,Ateba Gautier,Ozzy Diaz,Method of Victory,Ateba Gautier by Decision,13.05,9
-F00162,Ateba Gautier,Ozzy Diaz,Method of Victory,Ozzy Diaz by KO/TKO,0.59,6
-F00162,Ateba Gautier,Ozzy Diaz,Method of Victory,Ozzy Diaz by Submission,6.06,3
-F00162,Ateba Gautier,Ozzy Diaz,Method of Victory,Ozzy Diaz by Decision,1.95,7
-F00162,Ateba Gautier,Ozzy Diaz,Total Rounds,Over 1.5,32,31
-F00162,Ateba Gautier,Ozzy Diaz,Total Rounds,Under 1.5,58,75
-F00162,Ateba Gautier,Ozzy Diaz,Total Rounds,Over 2.5,19,19
-F00162,Ateba Gautier,Ozzy Diaz,Total Rounds,Under 2.5,81,88
-F00162,Ateba Gautier,Ozzy Diaz,Fight Outcome,Goes to Decision,15,14
-F00162,Ateba Gautier,Ozzy Diaz,Fight Outcome,Inside the Distance,85,92
-F00162,Ateba Gautier,Ozzy Diaz,Fight Outcome,KO/TKO,70.51,89
-F00162,Ateba Gautier,Ozzy Diaz,Fight Outcome,Submission,14.49,12
-F00162,Ateba Gautier,Ozzy Diaz,Round Betting,Round 1 Finish,31.3,66
-F00162,Ateba Gautier,Ozzy Diaz,Round Betting,Round 2 Finish,18.1,21
-F00162,Ateba Gautier,Ozzy Diaz,Round Betting,Round 3 Finish,8.1,10.5
-F00162,Ateba Gautier,Ozzy Diaz,Fighter ITD,Ateba Gautier ITD,78.35,89
-F00162,Ateba Gautier,Ozzy Diaz,Fighter ITD,Ozzy Diaz ITD,6.65,8
-F00162,Ateba Gautier,Ozzy Diaz,Double Chance,Ateba Gautier KO/TKO or Dec,82.97,88.5
-F00162,Ateba Gautier,Ozzy Diaz,Double Chance,Ozzy Diaz KO/TKO or Dec,2.54,11
-F00163,Roman Kopylov,Marco Tulio,Moneyline,Roman Kopylov,37,39
-F00163,Roman Kopylov,Marco Tulio,Moneyline,Marco Tulio,63,66
-F00163,Roman Kopylov,Marco Tulio,Method of Victory,Roman Kopylov by KO/TKO,18.83,18
-F00163,Roman Kopylov,Marco Tulio,Method of Victory,Roman Kopylov by Submission,0.39,3
-F00163,Roman Kopylov,Marco Tulio,Method of Victory,Roman Kopylov by Decision,17.78,22
-F00163,Roman Kopylov,Marco Tulio,Method of Victory,Marco Tulio by KO/TKO,25.1,38
-F00163,Roman Kopylov,Marco Tulio,Method of Victory,Marco Tulio by Submission,10.68,14
-F00163,Roman Kopylov,Marco Tulio,Method of Victory,Marco Tulio by Decision,27.22,24
-F00163,Roman Kopylov,Marco Tulio,Total Rounds,Over 1.5,63,69
-F00163,Roman Kopylov,Marco Tulio,Total Rounds,Under 1.5,37,38
-F00163,Roman Kopylov,Marco Tulio,Total Rounds,Over 2.5,50,51
-F00163,Roman Kopylov,Marco Tulio,Total Rounds,Under 2.5,50,55.5
-F00163,Roman Kopylov,Marco Tulio,Fight Outcome,Goes to Decision,45,43
-F00163,Roman Kopylov,Marco Tulio,Fight Outcome,Inside the Distance,55,62
-F00163,Roman Kopylov,Marco Tulio,Fight Outcome,KO/TKO,43.93,51
-F00163,Roman Kopylov,Marco Tulio,Fight Outcome,Submission,11.07,15
-F00163,Roman Kopylov,Marco Tulio,Round Betting,Round 1 Finish,36.1,29
-F00163,Roman Kopylov,Marco Tulio,Round Betting,Round 2 Finish,17.3,23.5
-F00163,Roman Kopylov,Marco Tulio,Round Betting,Round 3 Finish,7.6,14
-F00163,Roman Kopylov,Marco Tulio,Fighter ITD,Roman Kopylov ITD,19.22,21
-F00163,Roman Kopylov,Marco Tulio,Fighter ITD,Marco Tulio ITD,35.78,45
-F00163,Roman Kopylov,Marco Tulio,Double Chance,Roman Kopylov KO/TKO or Dec,36.61,37
-F00163,Roman Kopylov,Marco Tulio,Double Chance,Marco Tulio KO/TKO or Dec,52.32,58
-F00164,Clayton Carpenter,Jose Ochoa,Moneyline,Clayton Carpenter,54,41
-F00164,Clayton Carpenter,Jose Ochoa,Moneyline,Jose Ochoa,46,64
-F00164,Clayton Carpenter,Jose Ochoa,Method of Victory,Clayton Carpenter by KO/TKO,3,8
-F00164,Clayton Carpenter,Jose Ochoa,Method of Victory,Clayton Carpenter by Submission,3,12
-F00164,Clayton Carpenter,Jose Ochoa,Method of Victory,Clayton Carpenter by Decision,48,27
-F00164,Clayton Carpenter,Jose Ochoa,Method of Victory,Jose Ochoa by KO/TKO,22.75,27
-F00164,Clayton Carpenter,Jose Ochoa,Method of Victory,Jose Ochoa by Submission,6.25,8
-F00164,Clayton Carpenter,Jose Ochoa,Method of Victory,Jose Ochoa by Decision,17,40
-F00164,Clayton Carpenter,Jose Ochoa,Total Rounds,Over 1.5,81.5,79
-F00164,Clayton Carpenter,Jose Ochoa,Total Rounds,Under 1.5,18.5,27
-F00164,Clayton Carpenter,Jose Ochoa,Total Rounds,Over 2.5,69,66.5
-F00164,Clayton Carpenter,Jose Ochoa,Total Rounds,Under 2.5,31,39
-F00164,Clayton Carpenter,Jose Ochoa,Fight Outcome,Goes to Decision,65,62
-F00164,Clayton Carpenter,Jose Ochoa,Fight Outcome,Inside the Distance,35,43.5
-F00164,Clayton Carpenter,Jose Ochoa,Fight Outcome,KO/TKO,25.75,31
-F00164,Clayton Carpenter,Jose Ochoa,Fight Outcome,Submission,9.25,18
-F00164,Clayton Carpenter,Jose Ochoa,Round Betting,Round 1 Finish,23.9,21
-F00164,Clayton Carpenter,Jose Ochoa,Round Betting,Round 2 Finish,14.9,17
-F00164,Clayton Carpenter,Jose Ochoa,Round Betting,Round 3 Finish,6.4,12
-F00164,Clayton Carpenter,Jose Ochoa,Fighter ITD,Clayton Carpenter ITD,6,17
-F00164,Clayton Carpenter,Jose Ochoa,Fighter ITD,Jose Ochoa ITD,29,31
-F00164,Clayton Carpenter,Jose Ochoa,Double Chance,Clayton Carpenter KO/TKO or Dec,51,32.5
-F00164,Clayton Carpenter,Jose Ochoa,Double Chance,Jose Ochoa KO/TKO or Dec,39.75,62
-F00165,Baisangur Susurkaev,Djorden Santos,Moneyline,Baisangur Susurkaev,73,87
-F00165,Baisangur Susurkaev,Djorden Santos,Moneyline,Djorden Santos,27,17.5
-F00165,Baisangur Susurkaev,Djorden Santos,Method of Victory,Baisangur Susurkaev by KO/TKO,29.14,48
-F00165,Baisangur Susurkaev,Djorden Santos,Method of Victory,Baisangur Susurkaev by Submission,11.24,18
-F00165,Baisangur Susurkaev,Djorden Santos,Method of Victory,Baisangur Susurkaev by Decision,32.62,33
-F00165,Baisangur Susurkaev,Djorden Santos,Method of Victory,Djorden Santos by KO/TKO,4.25,10
-F00165,Baisangur Susurkaev,Djorden Santos,Method of Victory,Djorden Santos by Submission,0.37,4
-F00165,Baisangur Susurkaev,Djorden Santos,Method of Victory,Djorden Santos by Decision,22.38,10
-F00165,Baisangur Susurkaev,Djorden Santos,Total Rounds,Over 1.5,71.3,62
-F00165,Baisangur Susurkaev,Djorden Santos,Total Rounds,Under 1.5,28.7,43
-F00165,Baisangur Susurkaev,Djorden Santos,Total Rounds,Over 2.5,59,44
-F00165,Baisangur Susurkaev,Djorden Santos,Total Rounds,Under 2.5,41,62
-F00165,Baisangur Susurkaev,Djorden Santos,Fight Outcome,Goes to Decision,55,38
-F00165,Baisangur Susurkaev,Djorden Santos,Fight Outcome,Inside the Distance,45,68
-F00165,Baisangur Susurkaev,Djorden Santos,Fight Outcome,KO/TKO,33.39,54
-F00165,Baisangur Susurkaev,Djorden Santos,Fight Outcome,Submission,11.61,19.5
-F00165,Baisangur Susurkaev,Djorden Santos,Round Betting,Round 1 Finish,24.9,33
-F00165,Baisangur Susurkaev,Djorden Santos,Round Betting,Round 2 Finish,17.7,25
-F00165,Baisangur Susurkaev,Djorden Santos,Round Betting,Round 3 Finish,8.7,14
-F00165,Baisangur Susurkaev,Djorden Santos,Fighter ITD,Baisangur Susurkaev ITD,40.38,60
-F00165,Baisangur Susurkaev,Djorden Santos,Fighter ITD,Djorden Santos ITD,4.62,10
-F00165,Baisangur Susurkaev,Djorden Santos,Double Chance,Baisangur Susurkaev KO/TKO or Dec,61.76,77.5
-F00165,Baisangur Susurkaev,Djorden Santos,Double Chance,Djorden Santos KO/TKO or Dec,26.63,16
-F00166,Mateusz Rebecki,Grant Dawson,Moneyline,Mateusz Rebecki,33,41
-F00166,Mateusz Rebecki,Grant Dawson,Moneyline,Grant Dawson,67,62.5
-F00166,Mateusz Rebecki,Grant Dawson,Method of Victory,Mateusz Rebecki by KO/TKO,17.54,27
-F00166,Mateusz Rebecki,Grant Dawson,Method of Victory,Mateusz Rebecki by Submission,5,5
-F00166,Mateusz Rebecki,Grant Dawson,Method of Victory,Mateusz Rebecki by Decision,10.46,15
-F00166,Mateusz Rebecki,Grant Dawson,Method of Victory,Grant Dawson by KO/TKO,6.46,10
-F00166,Mateusz Rebecki,Grant Dawson,Method of Victory,Grant Dawson by Submission,21,17
-F00166,Mateusz Rebecki,Grant Dawson,Method of Victory,Grant Dawson by Decision,39.54,44
-F00166,Mateusz Rebecki,Grant Dawson,Total Rounds,Over 1.5,67,75
-F00166,Mateusz Rebecki,Grant Dawson,Total Rounds,Under 1.5,33,31
-F00166,Mateusz Rebecki,Grant Dawson,Total Rounds,Over 2.5,54,60
-F00166,Mateusz Rebecki,Grant Dawson,Total Rounds,Under 2.5,46,45
-F00166,Mateusz Rebecki,Grant Dawson,Fight Outcome,Goes to Decision,50,55
-F00166,Mateusz Rebecki,Grant Dawson,Fight Outcome,Inside the Distance,50,52
-F00166,Mateusz Rebecki,Grant Dawson,Fight Outcome,KO/TKO,24,35
-F00166,Mateusz Rebecki,Grant Dawson,Fight Outcome,Submission,26,21
-F00166,Mateusz Rebecki,Grant Dawson,Round Betting,Round 1 Finish,29.1,23.5
-F00166,Mateusz Rebecki,Grant Dawson,Round Betting,Round 2 Finish,19.9,18.5
-F00166,Mateusz Rebecki,Grant Dawson,Round Betting,Round 3 Finish,9.4,13
-F00166,Mateusz Rebecki,Grant Dawson,Fighter ITD,Mateusz Rebecki ITD,22.54,31
-F00166,Mateusz Rebecki,Grant Dawson,Fighter ITD,Grant Dawson ITD,27.46,23
-F00166,Mateusz Rebecki,Grant Dawson,Double Chance,Mateusz Rebecki KO/TKO or Dec,28,38
-F00166,Mateusz Rebecki,Grant Dawson,Double Chance,Grant Dawson KO/TKO or Dec,46,54
-F00167,Pat Sabatini,William Gomis,Moneyline,Pat Sabatini,64,68
-F00167,Pat Sabatini,William Gomis,Moneyline,William Gomis,36,36.5
-F00167,Pat Sabatini,William Gomis,Method of Victory,Pat Sabatini by KO/TKO,4.4,10
-F00167,Pat Sabatini,William Gomis,Method of Victory,Pat Sabatini by Submission,19.8,31
-F00167,Pat Sabatini,William Gomis,Method of Victory,Pat Sabatini by Decision,39.8,38
-F00167,Pat Sabatini,William Gomis,Method of Victory,William Gomis by KO/TKO,19.6,14
-F00167,Pat Sabatini,William Gomis,Method of Victory,William Gomis by Submission,0.8,4
-F00167,Pat Sabatini,William Gomis,Method of Victory,William Gomis by Decision,15.7,25
-F00167,Pat Sabatini,William Gomis,Total Rounds,Over 1.5,73,76
-F00167,Pat Sabatini,William Gomis,Total Rounds,Under 1.5,27,30
-F00167,Pat Sabatini,William Gomis,Total Rounds,Over 2.5,62,62.5
-F00167,Pat Sabatini,William Gomis,Total Rounds,Under 2.5,48,43
-F00167,Pat Sabatini,William Gomis,Fight Outcome,Goes to Decision,55.5,57
-F00167,Pat Sabatini,William Gomis,Fight Outcome,Inside the Distance,44.5,49
-F00167,Pat Sabatini,William Gomis,Fight Outcome,KO/TKO,24,21
-F00167,Pat Sabatini,William Gomis,Fight Outcome,Submission,20.6,33
-F00167,Pat Sabatini,William Gomis,Round Betting,Round 1 Finish,21.5,22
-F00167,Pat Sabatini,William Gomis,Round Betting,Round 2 Finish,15.4,18.5
-F00167,Pat Sabatini,William Gomis,Round Betting,Round 3 Finish,7.6,13
-F00167,Pat Sabatini,William Gomis,Fighter ITD,Pat Sabatini ITD,24.2,36
-F00167,Pat Sabatini,William Gomis,Fighter ITD,William Gomis ITD,20.3,15
-F00167,Pat Sabatini,William Gomis,Double Chance,Pat Sabatini KO/TKO or Dec,44.2,44
-F00167,Pat Sabatini,William Gomis,Double Chance,William Gomis KO/TKO or Dec,35.2,35.5
-F00169,Jim Miller,Jared Gordon,Moneyline,Jim Miller,32,29
-F00169,Jim Miller,Jared Gordon,Moneyline,Jared Gordon,68,76
-F00169,Jim Miller,Jared Gordon,Method of Victory,Jim Miller by KO/TKO,9.05,12
-F00169,Jim Miller,Jared Gordon,Method of Victory,Jim Miller by Submission,20.73,8
-F00169,Jim Miller,Jared Gordon,Method of Victory,Jim Miller by Decision,2.22,15
-F00169,Jim Miller,Jared Gordon,Method of Victory,Jared Gordon by KO/TKO,18.32,23
-F00169,Jim Miller,Jared Gordon,Method of Victory,Jared Gordon by Submission,0.35,11
-F00169,Jim Miller,Jared Gordon,Method of Victory,Jared Gordon by Decision,49.33,53
-F00169,Jim Miller,Jared Gordon,Total Rounds,Over 1.5,70,80
-F00169,Jim Miller,Jared Gordon,Total Rounds,Under 1.5,30,26
-F00169,Jim Miller,Jared Gordon,Total Rounds,Over 2.5,58,66
-F00169,Jim Miller,Jared Gordon,Total Rounds,Under 2.5,42,39
-F00169,Jim Miller,Jared Gordon,Fight Outcome,Goes to Decision,51.55,62
-F00169,Jim Miller,Jared Gordon,Fight Outcome,Inside the Distance,48.45,43.5
-F00169,Jim Miller,Jared Gordon,Fight Outcome,KO/TKO,27.37,32
-F00169,Jim Miller,Jared Gordon,Fight Outcome,Submission,21.08,18
-F00169,Jim Miller,Jared Gordon,Round Betting,Round 1 Finish,28.6,20
-F00169,Jim Miller,Jared Gordon,Round Betting,Round 2 Finish,19.2,17
-F00169,Jim Miller,Jared Gordon,Round Betting,Round 3 Finish,9.9,13
-F00169,Jim Miller,Jared Gordon,Fighter ITD,Jim Miller ITD,29.78,17
-F00169,Jim Miller,Jared Gordon,Fighter ITD,Jared Gordon ITD,18.67,31
-F00169,Jim Miller,Jared Gordon,Double Chance,Jim Miller KO/TKO or Dec,11.27,23.5
-F00169,Jim Miller,Jared Gordon,Double Chance,Jared Gordon KO/TKO or Dec,67.65,72
-F00168,Yaroslav Amosov,Joel Alvarez,Moneyline,Yaroslav Amosov,66.1,65
-F00168,Yaroslav Amosov,Joel Alvarez,Moneyline,Joel Alvarez,33.9,40
-F00168,Yaroslav Amosov,Joel Alvarez,Method of Victory,Yaroslav Amosov by KO/TKO,4,18
-F00168,Yaroslav Amosov,Joel Alvarez,Method of Victory,Yaroslav Amosov by Submission,24.5,18
-F00168,Yaroslav Amosov,Joel Alvarez,Method of Victory,Yaroslav Amosov by Decision,42.5,40
-F00168,Yaroslav Amosov,Joel Alvarez,Method of Victory,Joel Alvarez by KO/TKO,23.18,14
-F00168,Yaroslav Amosov,Joel Alvarez,Method of Victory,Joel Alvarez by Submission,2.32,18
-F00168,Yaroslav Amosov,Joel Alvarez,Method of Victory,Joel Alvarez by Decision,3.5,15
-F00168,Yaroslav Amosov,Joel Alvarez,Total Rounds,Over 1.5,64,69
-F00168,Yaroslav Amosov,Joel Alvarez,Total Rounds,Under 1.5,36,37
-F00168,Yaroslav Amosov,Joel Alvarez,Total Rounds,Over 2.5,51,56
-F00168,Yaroslav Amosov,Joel Alvarez,Total Rounds,Under 2.5,49,50
-F00168,Yaroslav Amosov,Joel Alvarez,Fight Outcome,Goes to Decision,46,50
-F00168,Yaroslav Amosov,Joel Alvarez,Fight Outcome,Inside the Distance,54,56.5
-F00168,Yaroslav Amosov,Joel Alvarez,Fight Outcome,KO/TKO,27.18,29
-F00168,Yaroslav Amosov,Joel Alvarez,Fight Outcome,Submission,26.82,32
-F00168,Yaroslav Amosov,Joel Alvarez,Round Betting,Round 1 Finish,34.7,27.5
-F00168,Yaroslav Amosov,Joel Alvarez,Round Betting,Round 2 Finish,21.2,21
-F00168,Yaroslav Amosov,Joel Alvarez,Round Betting,Round 3 Finish,9.7,14
-F00168,Yaroslav Amosov,Joel Alvarez,Fighter ITD,Yaroslav Amosov ITD,28.5,31
-F00168,Yaroslav Amosov,Joel Alvarez,Fighter ITD,Joel Alvarez ITD,25.5,29
-F00168,Yaroslav Amosov,Joel Alvarez,Double Chance,Yaroslav Amosov KO/TKO or Dec,46.5,53
-F00168,Yaroslav Amosov,Joel Alvarez,Double Chance,Joel Alvarez KO/TKO or Dec,26.68,27
+﻿FightID,Market,Selection,Yang Probability,Market Probability
+F00157,Moneyline,Khamzat Chimaev,84.00%,86.00%
+F00157,Moneyline,Sean Strickland,16.00%,19.00%
+F00157,Method of Victory,Khamzat Chimaev by KO/TKO,37.38%,22.00%
+F00157,Method of Victory,Khamzat Chimaev by Submission,21.95%,51.00%
+F00157,Method of Victory,Khamzat Chimaev by Decision,24.67%,25.00%
+F00157,Method of Victory,Sean Strickland by KO/TKO,6.40%,10.00%
+F00157,Method of Victory,Sean Strickland by Submission,0.72%,2.00%
+F00157,Method of Victory,Sean Strickland by Decision,8.88%,11.00%
+F00157,Total Rounds,Over 1.5,59.00%,70.00%
+F00157,Total Rounds,Under 1.5,41.00%,36.00%
+F00157,Total Rounds,Over 2.5,47.00%,56.00%
+F00157,Total Rounds,Under 2.5,53.00%,52.00%
+F00157,Total Rounds,Over 3.5,40.00%,44.00%
+F00157,Total Rounds,Under 3.5,60.00%,60.50%
+F00157,Total Rounds,Over 4.5,36.00%,36.00%
+F00157,Total Rounds,Under 4.5,64.00%,71.00%
+F00157,Fight Outcome,Goes to Decision,33.55%,33.00%
+F00157,Fight Outcome,Inside the Distance,66.45%,72.50%
+F00157,Fight Outcome,KO/TKO,43.78%,29.00%
+F00157,Fight Outcome,Submission,22.67%,52.00%
+F00157,Round Betting,Round 1 Finish,22.10%,29.00%
+F00157,Round Betting,Round 2 Finish,17.30%,20.00%
+F00157,Round Betting,Round 3 Finish,12.30%,14.00%
+F00157,Round Betting,Round 4 Finish,8.50%,12.00%
+F00157,Round Betting,Round 5 Finish,5.40%,9.00%
+F00157,Fighter ITD,Khamzat Chimaev ITD,59.33%,67.00%
+F00157,Fighter ITD,Sean Strickland ITD,7.12%,11.00%
+F00157,Double Chance,Khamzat Chimaev KO/TKO or Dec,62.05%,41.50%
+F00157,Double Chance,Sean Strickland KO/TKO or Dec,15.28%,17.50%
+F00158,Moneyline,Tatsuro Taira,69.00%,62.00%
+F00158,Moneyline,Joshua Van,31.00%,42.00%
+F00158,Method of Victory,Tatsuro Taira by KO/TKO,21.00%,12.00%
+F00158,Method of Victory,Tatsuro Taira by Submission,25.50%,34.00%
+F00158,Method of Victory,Tatsuro Taira by Decision,22.50%,26.00%
+F00158,Method of Victory,Joshua Van by KO/TKO,13.00%,25.00%
+F00158,Method of Victory,Joshua Van by Submission,1.00%,4.00%
+F00158,Method of Victory,Joshua Van by Decision,17.00%,20.00%
+F00158,Total Rounds,Over 1.5,73.00%,79.00%
+F00158,Total Rounds,Under 1.5,27.00%,28.00%
+F00158,Total Rounds,Over 2.5,62.00%,65.00%
+F00158,Total Rounds,Under 2.5,38.00%,42.00%
+F00158,Total Rounds,Over 3.5,51.50%,55.00%
+F00158,Total Rounds,Under 3.5,48.50%,50.50%
+F00158,Total Rounds,Over 4.5,45.00%,45.00%
+F00158,Total Rounds,Under 4.5,55.00%,61.00%
+F00158,Fight Outcome,Goes to Decision,39.50%,42.00%
+F00158,Fight Outcome,Inside the Distance,60.50%,65.00%
+F00158,Fight Outcome,KO/TKO,34.00%,35.00%
+F00158,Fight Outcome,Submission,26.50%,37.00%
+F00158,Round Betting,Round 1 Finish,21.30%,20.00%
+F00158,Round Betting,Round 2 Finish,16.40%,17.00%
+F00158,Round Betting,Round 3 Finish,11.50%,14.00%
+F00158,Round Betting,Round 4 Finish,7.00%,13.00%
+F00158,Round Betting,Round 5 Finish,4.20%,11.00%
+F00158,Fighter ITD,Tatsuro Taira ITD,47.50%,42.00%
+F00158,Fighter ITD,Joshua Van ITD,13.00%,27.00%
+F00158,Double Chance,Tatsuro Taira KO/TKO or Dec,44.50%,36.00%
+F00158,Double Chance,Joshua Van KO/TKO or Dec,29.00%,40.50%
+F00159,Moneyline,Waldo Cortes Acosta,46.00%,43.00%
+F00159,Moneyline,Alexander Volkov,54.00%,61.00%
+F00159,Method of Victory,Waldo Cortes Acosta by KO/TKO,14.77%,18.00%
+F00159,Method of Victory,Waldo Cortes Acosta by Submission,1.15%,4.00%
+F00159,Method of Victory,Waldo Cortes Acosta by Decision,16.98%,27.00%
+F00159,Method of Victory,Alexander Volkov by KO/TKO,8.76%,22.00%
+F00159,Method of Victory,Alexander Volkov by Submission,1.94%,5.00%
+F00159,Method of Victory,Alexander Volkov by Decision,42.34%,43.00%
+F00159,Total Rounds,Over 1.5,78.50%,82.00%
+F00159,Total Rounds,Under 1.5,31.50%,25.00%
+F00159,Total Rounds,Over 2.5,68.00%,69.50%
+F00159,Total Rounds,Under 2.5,32.00%,36.00%
+F00159,Fight Outcome,Goes to Decision,63.00%,66.00%
+F00159,Fight Outcome,Inside the Distance,37.00%,42.00%
+F00159,Fight Outcome,KO/TKO,23.53%,38.00%
+F00159,Fight Outcome,Submission,3.09%,9.00%
+F00159,Round Betting,Round 1 Finish,26.60%,18.00%
+F00159,Round Betting,Round 2 Finish,16.30%,17.00%
+F00159,Round Betting,Round 3 Finish,7.90%,11.50%
+F00159,Fighter ITD,Waldo Cortes Acosta ITD,15.92%,20.00%
+F00159,Fighter ITD,Alexander Volkov ITD,10.70%,26.00%
+F00159,Double Chance,Waldo Cortes Acosta KO/TKO or Dec,31.75%,42.50%
+F00159,Double Chance,Alexander Volkov KO/TKO or Dec,51.10%,61.00%
+F00160,Moneyline,Sean Brady,61.00%,62.50%
+F00160,Moneyline,Joaquin Buckley,39.00%,41.50%
+F00160,Method of Victory,Sean Brady by KO/TKO,4.07%,11.00%
+F00160,Method of Victory,Sean Brady by Submission,17.04%,23.00%
+F00160,Method of Victory,Sean Brady by Decision,39.89%,38.00%
+F00160,Method of Victory,Joaquin Buckley by KO/TKO,26.66%,29.00%
+F00160,Method of Victory,Joaquin Buckley by Submission,0.23%,3.00%
+F00160,Method of Victory,Joaquin Buckley by Decision,12.11%,16.00%
+F00160,Total Rounds,Over 1.5,69.00%,72.00%
+F00160,Total Rounds,Under 1.5,31.00%,34.00%
+F00160,Total Rounds,Over 2.5,56.00%,57.00%
+F00160,Total Rounds,Under 2.5,44.00%,49.50%
+F00160,Fight Outcome,Goes to Decision,52.00%,50.00%
+F00160,Fight Outcome,Inside the Distance,48.00%,57.00%
+F00160,Fight Outcome,KO/TKO,30.73%,38.00%
+F00160,Fight Outcome,Submission,17.27%,25.00%
+F00160,Round Betting,Round 1 Finish,34.20%,26.50%
+F00160,Round Betting,Round 2 Finish,17.80%,21.00%
+F00160,Round Betting,Round 3 Finish,7.90%,14.00%
+F00160,Fighter ITD,Sean Brady ITD,21.11%,31.00%
+F00160,Fighter ITD,Joaquin Buckley ITD,26.89%,29.00%
+F00160,Double Chance,Sean Brady KO/TKO or Dec,43.96%,46.50%
+F00160,Double Chance,Joaquin Buckley KO/TKO or Dec,38.77%,40.50%
+F00161,Moneyline,King Green,75.50%,79.00%
+F00161,Moneyline,Jeremy Stephens,24.50%,25.50%
+F00161,Method of Victory,King Green by KO/TKO,15.90%,30.00%
+F00161,Method of Victory,King Green by Submission,11.30%,11.00%
+F00161,Method of Victory,King Green by Decision,48.20%,45.00%
+F00161,Method of Victory,Jeremy Stephens by KO/TKO,13.80%,17.00%
+F00161,Method of Victory,Jeremy Stephens by Submission,1.10%,3.00%
+F00161,Method of Victory,Jeremy Stephens by Decision,9.60%,13.00%
+F00161,Total Rounds,Over 1.5,75.00%,75.00%
+F00161,Total Rounds,Under 1.5,25.00%,31.00%
+F00161,Total Rounds,Over 2.5,64.00%,61.00%
+F00161,Total Rounds,Under 2.5,36.00%,44.50%
+F00161,Fight Outcome,Goes to Decision,57.80%,56.00%
+F00161,Fight Outcome,Inside the Distance,42.20%,51.00%
+F00161,Fight Outcome,KO/TKO,29.80%,44.00%
+F00161,Fight Outcome,Submission,12.40%,13.00%
+F00161,Round Betting,Round 1 Finish,20.40%,22.50%
+F00161,Round Betting,Round 2 Finish,14.30%,20.00%
+F00161,Round Betting,Round 3 Finish,7.50%,14.50%
+F00161,Fighter ITD,King Green ITD,27.20%,36.00%
+F00161,Fighter ITD,Jeremy Stephens ITD,14.90%,17.00%
+F00161,Double Chance,King Green KO/TKO or Dec,64.10%,73.50%
+F00161,Double Chance,Jeremy Stephens KO/TKO or Dec,23.40%,27.00%
+F00162,Moneyline,Ateba Gautier,90.00%,93.50%
+F00162,Moneyline,Ozzy Diaz,10.00%,11.50%
+F00162,Method of Victory,Ateba Gautier by KO/TKO,69.92%,85.00%
+F00162,Method of Victory,Ateba Gautier by Submission,8.43%,11.00%
+F00162,Method of Victory,Ateba Gautier by Decision,13.05%,9.00%
+F00162,Method of Victory,Ozzy Diaz by KO/TKO,0.59%,6.00%
+F00162,Method of Victory,Ozzy Diaz by Submission,6.06%,3.00%
+F00162,Method of Victory,Ozzy Diaz by Decision,1.95%,7.00%
+F00162,Total Rounds,Over 1.5,32.00%,31.00%
+F00162,Total Rounds,Under 1.5,58.00%,75.00%
+F00162,Total Rounds,Over 2.5,19.00%,19.00%
+F00162,Total Rounds,Under 2.5,81.00%,88.00%
+F00162,Fight Outcome,Goes to Decision,15.00%,14.00%
+F00162,Fight Outcome,Inside the Distance,85.00%,92.00%
+F00162,Fight Outcome,KO/TKO,70.51%,89.00%
+F00162,Fight Outcome,Submission,14.49%,12.00%
+F00162,Round Betting,Round 1 Finish,31.30%,66.00%
+F00162,Round Betting,Round 2 Finish,18.10%,21.00%
+F00162,Round Betting,Round 3 Finish,8.10%,10.50%
+F00162,Fighter ITD,Ateba Gautier ITD,78.35%,89.00%
+F00162,Fighter ITD,Ozzy Diaz ITD,6.65%,8.00%
+F00162,Double Chance,Ateba Gautier KO/TKO or Dec,82.97%,88.50%
+F00162,Double Chance,Ozzy Diaz KO/TKO or Dec,2.54%,11.00%
+F00163,Moneyline,Roman Kopylov,37.00%,39.00%
+F00163,Moneyline,Marco Tulio,63.00%,66.00%
+F00163,Method of Victory,Roman Kopylov by KO/TKO,18.83%,18.00%
+F00163,Method of Victory,Roman Kopylov by Submission,0.39%,3.00%
+F00163,Method of Victory,Roman Kopylov by Decision,17.78%,22.00%
+F00163,Method of Victory,Marco Tulio by KO/TKO,25.10%,38.00%
+F00163,Method of Victory,Marco Tulio by Submission,10.68%,14.00%
+F00163,Method of Victory,Marco Tulio by Decision,27.22%,24.00%
+F00163,Total Rounds,Over 1.5,63.00%,69.00%
+F00163,Total Rounds,Under 1.5,37.00%,38.00%
+F00163,Total Rounds,Over 2.5,50.00%,51.00%
+F00163,Total Rounds,Under 2.5,50.00%,55.50%
+F00163,Fight Outcome,Goes to Decision,45.00%,43.00%
+F00163,Fight Outcome,Inside the Distance,55.00%,62.00%
+F00163,Fight Outcome,KO/TKO,43.93%,51.00%
+F00163,Fight Outcome,Submission,11.07%,15.00%
+F00163,Round Betting,Round 1 Finish,36.10%,29.00%
+F00163,Round Betting,Round 2 Finish,17.30%,23.50%
+F00163,Round Betting,Round 3 Finish,7.60%,14.00%
+F00163,Fighter ITD,Roman Kopylov ITD,19.22%,21.00%
+F00163,Fighter ITD,Marco Tulio ITD,35.78%,45.00%
+F00163,Double Chance,Roman Kopylov KO/TKO or Dec,36.61%,37.00%
+F00163,Double Chance,Marco Tulio KO/TKO or Dec,52.32%,58.00%
+F00164,Moneyline,Clayton Carpenter,54.00%,41.00%
+F00164,Moneyline,Jose Ochoa,46.00%,64.00%
+F00164,Method of Victory,Clayton Carpenter by KO/TKO,3.00%,8.00%
+F00164,Method of Victory,Clayton Carpenter by Submission,3.00%,12.00%
+F00164,Method of Victory,Clayton Carpenter by Decision,48.00%,27.00%
+F00164,Method of Victory,Jose Ochoa by KO/TKO,22.75%,27.00%
+F00164,Method of Victory,Jose Ochoa by Submission,6.25%,8.00%
+F00164,Method of Victory,Jose Ochoa by Decision,17.00%,40.00%
+F00164,Total Rounds,Over 1.5,81.50%,79.00%
+F00164,Total Rounds,Under 1.5,18.50%,27.00%
+F00164,Total Rounds,Over 2.5,69.00%,66.50%
+F00164,Total Rounds,Under 2.5,31.00%,39.00%
+F00164,Fight Outcome,Goes to Decision,65.00%,62.00%
+F00164,Fight Outcome,Inside the Distance,35.00%,43.50%
+F00164,Fight Outcome,KO/TKO,25.75%,31.00%
+F00164,Fight Outcome,Submission,9.25%,18.00%
+F00164,Round Betting,Round 1 Finish,23.90%,21.00%
+F00164,Round Betting,Round 2 Finish,14.90%,17.00%
+F00164,Round Betting,Round 3 Finish,6.40%,12.00%
+F00164,Fighter ITD,Clayton Carpenter ITD,6.00%,17.00%
+F00164,Fighter ITD,Jose Ochoa ITD,29.00%,31.00%
+F00164,Double Chance,Clayton Carpenter KO/TKO or Dec,51.00%,32.50%
+F00164,Double Chance,Jose Ochoa KO/TKO or Dec,39.75%,62.00%
+F00165,Moneyline,Baisangur Susurkaev,73.00%,87.00%
+F00165,Moneyline,Djorden Santos,27.00%,17.50%
+F00165,Method of Victory,Baisangur Susurkaev by KO/TKO,29.14%,48.00%
+F00165,Method of Victory,Baisangur Susurkaev by Submission,11.24%,18.00%
+F00165,Method of Victory,Baisangur Susurkaev by Decision,32.62%,33.00%
+F00165,Method of Victory,Djorden Santos by KO/TKO,4.25%,10.00%
+F00165,Method of Victory,Djorden Santos by Submission,0.37%,4.00%
+F00165,Method of Victory,Djorden Santos by Decision,22.38%,10.00%
+F00165,Total Rounds,Over 1.5,71.30%,62.00%
+F00165,Total Rounds,Under 1.5,28.70%,43.00%
+F00165,Total Rounds,Over 2.5,59.00%,44.00%
+F00165,Total Rounds,Under 2.5,41.00%,62.00%
+F00165,Fight Outcome,Goes to Decision,55.00%,38.00%
+F00165,Fight Outcome,Inside the Distance,45.00%,68.00%
+F00165,Fight Outcome,KO/TKO,33.39%,54.00%
+F00165,Fight Outcome,Submission,11.61%,19.50%
+F00165,Round Betting,Round 1 Finish,24.90%,33.00%
+F00165,Round Betting,Round 2 Finish,17.70%,25.00%
+F00165,Round Betting,Round 3 Finish,8.70%,14.00%
+F00165,Fighter ITD,Baisangur Susurkaev ITD,40.38%,60.00%
+F00165,Fighter ITD,Djorden Santos ITD,4.62%,10.00%
+F00165,Double Chance,Baisangur Susurkaev KO/TKO or Dec,61.76%,77.50%
+F00165,Double Chance,Djorden Santos KO/TKO or Dec,26.63%,16.00%
+F00166,Moneyline,Mateusz Rebecki,33.00%,41.00%
+F00166,Moneyline,Grant Dawson,67.00%,62.50%
+F00166,Method of Victory,Mateusz Rebecki by KO/TKO,17.54%,27.00%
+F00166,Method of Victory,Mateusz Rebecki by Submission,5.00%,5.00%
+F00166,Method of Victory,Mateusz Rebecki by Decision,10.46%,15.00%
+F00166,Method of Victory,Grant Dawson by KO/TKO,6.46%,10.00%
+F00166,Method of Victory,Grant Dawson by Submission,21.00%,17.00%
+F00166,Method of Victory,Grant Dawson by Decision,39.54%,44.00%
+F00166,Total Rounds,Over 1.5,67.00%,75.00%
+F00166,Total Rounds,Under 1.5,33.00%,31.00%
+F00166,Total Rounds,Over 2.5,54.00%,60.00%
+F00166,Total Rounds,Under 2.5,46.00%,45.00%
+F00166,Fight Outcome,Goes to Decision,50.00%,55.00%
+F00166,Fight Outcome,Inside the Distance,50.00%,52.00%
+F00166,Fight Outcome,KO/TKO,24.00%,35.00%
+F00166,Fight Outcome,Submission,26.00%,21.00%
+F00166,Round Betting,Round 1 Finish,29.10%,23.50%
+F00166,Round Betting,Round 2 Finish,19.90%,18.50%
+F00166,Round Betting,Round 3 Finish,9.40%,13.00%
+F00166,Fighter ITD,Mateusz Rebecki ITD,22.54%,31.00%
+F00166,Fighter ITD,Grant Dawson ITD,27.46%,23.00%
+F00166,Double Chance,Mateusz Rebecki KO/TKO or Dec,28.00%,38.00%
+F00166,Double Chance,Grant Dawson KO/TKO or Dec,46.00%,54.00%
+F00167,Moneyline,Pat Sabatini,63.00%,68.00%
+F00167,Moneyline,William Gomis,37.00%,36.50%
+F00167,Method of Victory,Pat Sabatini by KO/TKO,3.40%,10.00%
+F00167,Method of Victory,Pat Sabatini by Submission,19.80%,31.00%
+F00167,Method of Victory,Pat Sabatini by Decision,39.80%,38.00%
+F00167,Method of Victory,William Gomis by KO/TKO,19.60%,14.00%
+F00167,Method of Victory,William Gomis by Submission,0.80%,4.00%
+F00167,Method of Victory,William Gomis by Decision,16.70%,25.00%
+F00167,Total Rounds,Over 1.5,73.00%,76.00%
+F00167,Total Rounds,Under 1.5,27.00%,30.00%
+F00167,Total Rounds,Over 2.5,62.00%,62.50%
+F00167,Total Rounds,Under 2.5,48.00%,43.00%
+F00167,Fight Outcome,Goes to Decision,55.50%,57.00%
+F00167,Fight Outcome,Inside the Distance,44.50%,49.00%
+F00167,Fight Outcome,KO/TKO,24.00%,21.00%
+F00167,Fight Outcome,Submission,20.60%,33.00%
+F00167,Round Betting,Round 1 Finish,21.50%,22.00%
+F00167,Round Betting,Round 2 Finish,15.40%,18.50%
+F00167,Round Betting,Round 3 Finish,7.60%,13.00%
+F00167,Fighter ITD,Pat Sabatini ITD,24.20%,36.00%
+F00167,Fighter ITD,William Gomis ITD,20.30%,15.00%
+F00167,Double Chance,Pat Sabatini KO/TKO or Dec,44.20%,44.00%
+F00167,Double Chance,William Gomis KO/TKO or Dec,35.20%,35.50%
+F00167,Moneyline,Jim Miller,32.00%,29.00%
+F00167,Moneyline,Jared Gordon,68.00%,76.00%
+F00167,Method of Victory,Jim Miller by KO/TKO,9.05%,12.00%
+F00167,Method of Victory,Jim Miller by Submission,20.73%,8.00%
+F00167,Method of Victory,Jim Miller by Decision,2.22%,15.00%
+F00167,Method of Victory,Jared Gordon by KO/TKO,18.32%,23.00%
+F00167,Method of Victory,Jared Gordon by Submission,0.35%,11.00%
+F00167,Method of Victory,Jared Gordon by Decision,49.33%,53.00%
+F00167,Total Rounds,Over 1.5,70.00%,80.00%
+F00167,Total Rounds,Under 1.5,30.00%,26.00%
+F00167,Total Rounds,Over 2.5,58.00%,66.00%
+F00167,Total Rounds,Under 2.5,42.00%,39.00%
+F00167,Fight Outcome,Goes to Decision,51.55%,62.00%
+F00167,Fight Outcome,Inside the Distance,48.45%,43.50%
+F00167,Fight Outcome,KO/TKO,27.37%,32.00%
+F00167,Fight Outcome,Submission,21.08%,18.00%
+F00167,Round Betting,Round 1 Finish,28.60%,20.00%
+F00167,Round Betting,Round 2 Finish,19.20%,17.00%
+F00167,Round Betting,Round 3 Finish,9.90%,13.00%
+F00167,Fighter ITD,Jim Miller ITD,29.78%,17.00%
+F00167,Fighter ITD,Jared Gordon ITD,18.67%,31.00%
+F00167,Double Chance,Jim Miller KO/TKO or Dec,11.27%,23.50%
+F00167,Double Chance,Jared Gordon KO/TKO or Dec,67.65%,72.00%
+F00168,Moneyline,Yaroslav Amosov,66.10%,65.00%
+F00168,Moneyline,Joel Alvarez,33.90%,40.00%
+F00168,Method of Victory,Yaroslav Amosov by KO/TKO,4.00%,18.00%
+F00168,Method of Victory,Yaroslav Amosov by Submission,24.50%,18.00%
+F00168,Method of Victory,Yaroslav Amosov by Decision,42.50%,40.00%
+F00168,Method of Victory,Joel Alvarez by KO/TKO,23.18%,14.00%
+F00168,Method of Victory,Joel Alvarez by Submission,2.32%,18.00%
+F00168,Method of Victory,Joel Alvarez by Decision,3.50%,15.00%
+F00168,Total Rounds,Over 1.5,64.00%,69.00%
+F00168,Total Rounds,Under 1.5,36.00%,37.00%
+F00168,Total Rounds,Over 2.5,51.00%,56.00%
+F00168,Total Rounds,Under 2.5,49.00%,50.00%
+F00168,Fight Outcome,Goes to Decision,46.00%,50.00%
+F00168,Fight Outcome,Inside the Distance,54.00%,56.50%
+F00168,Fight Outcome,KO/TKO,27.18%,29.00%
+F00168,Fight Outcome,Submission,26.82%,32.00%
+F00168,Round Betting,Round 1 Finish,34.70%,27.50%
+F00168,Round Betting,Round 2 Finish,21.20%,21.00%
+F00168,Round Betting,Round 3 Finish,9.70%,14.00%
+F00168,Fighter ITD,Yaroslav Amosov ITD,28.50%,31.00%
+F00168,Fighter ITD,Joel Alvarez ITD,25.50%,29.00%
+F00168,Double Chance,Yaroslav Amosov KO/TKO or Dec,46.50%,53.00%
+F00168,Double Chance,Joel Alvarez KO/TKO or Dec,26.68%,27.00%

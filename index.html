@@ -1075,7 +1075,9 @@ async function loadData() {
   const url = 'data.csv?_=' + Date.now(); // cache-bust so weekly updates land immediately
   const res = await fetch(url);
   if (!res.ok) throw new Error('HTTP ' + res.status + ' fetching data.csv');
-  const text = await res.text();
+  let text = await res.text();
+  // Strip UTF-8 BOM that Excel/Windows may prepend
+  if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
   const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
   if (lines.length < 2) throw new Error('data.csv has fewer than 2 lines');
 
@@ -1088,15 +1090,66 @@ async function loadData() {
   const header = parseCSVLine(lines[startIdx]).map(h => h.trim());
   const dataLines = lines.slice(startIdx + 1);
 
+  // Map external column names → internal field names. Supports both Yang's
+  // export format ("FightID, Market, Selection, Yang Probability, Market Probability")
+  // and the compact internal format ("fid, f1, f2, cat, prop, prob, market").
+  const aliases = {
+    fid:    ['fid', 'FightID', 'Fight ID', 'fight_id'],
+    f1:     ['f1', 'Fighter 1', 'Fighter1'],
+    f2:     ['f2', 'Fighter 2', 'Fighter2'],
+    cat:    ['cat', 'Market', 'Category'],
+    prop:   ['prop', 'Selection', 'Prop'],
+    prob:   ['prob', 'Yang Probability', 'Yang Prob', 'YangProbability'],
+    market: ['market', 'Market Probability', 'MarketProbability', 'Market Prob']
+  };
+  const idx = {};
+  for (const key of Object.keys(aliases)) {
+    for (const alias of aliases[key]) {
+      const i = header.indexOf(alias);
+      if (i >= 0) { idx[key] = i; break; }
+    }
+  }
+  for (const must of ['fid', 'cat', 'prop', 'prob', 'market']) {
+    if (idx[must] === undefined) {
+      throw new Error('CSV missing required column for "' + must + '". Header was: ' + header.join(', '));
+    }
+  }
+
+  const parseProb = raw => {
+    const cleaned = String(raw ?? '').replace(/%/g, '').trim();
+    return parseFloat(cleaned);
+  };
+
   const parsedRows = dataLines.map(line => {
     const cells = parseCSVLine(line);
-    const obj = {};
-    header.forEach((key, i) => {
-      const raw = (cells[i] ?? '').trim();
-      obj[key] = (key === 'prob' || key === 'market') ? parseFloat(raw) : raw;
-    });
-    return obj;
+    return {
+      fid:    (cells[idx.fid]    ?? '').trim(),
+      f1:     idx.f1 !== undefined ? (cells[idx.f1] ?? '').trim() : '',
+      f2:     idx.f2 !== undefined ? (cells[idx.f2] ?? '').trim() : '',
+      cat:    (cells[idx.cat]    ?? '').trim(),
+      prop:   (cells[idx.prop]   ?? '').trim(),
+      prob:   parseProb(cells[idx.prob]),
+      market: parseProb(cells[idx.market]),
+    };
   });
+
+  // If f1/f2 were not in the CSV, derive them from each fight's two Moneyline rows.
+  // Selection on a Moneyline row is the fighter's name.
+  if (idx.f1 === undefined || idx.f2 === undefined) {
+    const fighterMap = {}; // fid → [name1, name2]
+    for (const r of parsedRows) {
+      if (r.cat === 'Moneyline') {
+        if (!fighterMap[r.fid]) fighterMap[r.fid] = [];
+        if (fighterMap[r.fid].length < 2 && !fighterMap[r.fid].includes(r.prop)) {
+          fighterMap[r.fid].push(r.prop);
+        }
+      }
+    }
+    for (const r of parsedRows) {
+      const pair = fighterMap[r.fid];
+      if (pair && pair.length === 2) { r.f1 = pair[0]; r.f2 = pair[1]; }
+    }
+  }
 
   return { eventTitle, rows: parsedRows };
 }
