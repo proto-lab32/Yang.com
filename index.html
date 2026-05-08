@@ -558,319 +558,7 @@ const SPORT         = 'mma_mixed_martial_arts';
 const LIVE_CATS = new Set(['Moneyline', 'Total Rounds']);
 
 // null = Yang prob not available
-const rows = [
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Moneyline",prop:"Khamzat Chimaev",prob:84.0,market:86.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Moneyline",prop:"Sean Strickland",prob:16.0,market:19.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Khamzat Chimaev by KO/TKO",prob:37.38,market:22.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Khamzat Chimaev by Submission",prob:21.95,market:51.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Khamzat Chimaev by Decision",prob:24.67,market:25.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Sean Strickland by KO/TKO",prob:6.4,market:10.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Sean Strickland by Submission",prob:0.72,market:2.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Method of Victory",prop:"Sean Strickland by Decision",prob:8.88,market:11.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Over 1.5",prob:59.0,market:70.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Under 1.5",prob:41.0,market:36.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Over 2.5",prob:47.0,market:56.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Under 2.5",prob:53.0,market:52.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Over 3.5",prob:40.0,market:44.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Under 3.5",prob:60.0,market:60.5},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Over 4.5",prob:36.0,market:36.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Total Rounds",prop:"Under 4.5",prob:64.0,market:71.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fight Outcome",prop:"Goes to Decision",prob:33.55,market:33.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fight Outcome",prop:"Inside the Distance",prob:66.45,market:72.5},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fight Outcome",prop:"KO/TKO",prob:43.78,market:29.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fight Outcome",prop:"Submission",prob:22.67,market:52.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 1 Finish",prob:22.1,market:29.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 2 Finish",prob:17.3,market:20.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 3 Finish",prob:12.3,market:14.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 4 Finish",prob:8.5,market:12.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Round Betting",prop:"Round 5 Finish",prob:5.4,market:9.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fighter ITD",prop:"Khamzat Chimaev ITD",prob:59.33,market:67.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Fighter ITD",prop:"Sean Strickland ITD",prob:7.12,market:11.0},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Double Chance",prop:"Khamzat Chimaev KO/TKO or Dec",prob:62.05,market:41.5},
-  {fid:"F00157",f1:"Khamzat Chimaev",f2:"Sean Strickland",cat:"Double Chance",prop:"Sean Strickland KO/TKO or Dec",prob:15.28,market:17.5},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Moneyline",prop:"Tatsuro Taira",prob:70.0,market:62.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Moneyline",prop:"Joshua Van",prob:30.0,market:42.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Tatsuro Taira by KO/TKO",prob:22.0,market:12.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Tatsuro Taira by Submission",prob:25.5,market:34.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Tatsuro Taira by Decision",prob:22.5,market:26.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Joshua Van by KO/TKO",prob:12.0,market:25.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Joshua Van by Submission",prob:1.0,market:4.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Method of Victory",prop:"Joshua Van by Decision",prob:17.0,market:20.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Over 1.5",prob:73.0,market:79.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Under 1.5",prob:27.0,market:28.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Over 2.5",prob:62.0,market:65.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Under 2.5",prob:38.0,market:42.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Over 3.5",prob:51.5,market:55.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Under 3.5",prob:48.5,market:50.5},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Over 4.5",prob:45.0,market:45.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Total Rounds",prop:"Under 4.5",prob:55.0,market:61.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fight Outcome",prop:"Goes to Decision",prob:39.5,market:42.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fight Outcome",prop:"Inside the Distance",prob:60.5,market:65.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fight Outcome",prop:"KO/TKO",prob:34.0,market:35.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fight Outcome",prop:"Submission",prob:26.5,market:37.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 1 Finish",prob:21.3,market:20.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 2 Finish",prob:16.4,market:17.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 3 Finish",prob:11.5,market:14.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 4 Finish",prob:7.0,market:13.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Round Betting",prop:"Round 5 Finish",prob:4.2,market:11.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fighter ITD",prop:"Tatsuro Taira ITD",prob:47.5,market:42.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Fighter ITD",prop:"Joshua Van ITD",prob:13.0,market:27.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Double Chance",prop:"Tatsuro Taira KO/TKO or Dec",prob:44.5,market:36.0},
-  {fid:"F00158",f1:"Tatsuro Taira",f2:"Joshua Van",cat:"Double Chance",prop:"Joshua Van KO/TKO or Dec",prob:29.0,market:40.5},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Moneyline",prop:"Waldo Cortes Acosta",prob:46.0,market:43.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Moneyline",prop:"Alexander Volkov",prob:54.0,market:61.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Waldo Cortes Acosta by KO/TKO",prob:14.77,market:18.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Waldo Cortes Acosta by Submission",prob:1.15,market:4.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Waldo Cortes Acosta by Decision",prob:16.98,market:27.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Alexander Volkov by KO/TKO",prob:8.76,market:22.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Alexander Volkov by Submission",prob:1.94,market:5.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Method of Victory",prop:"Alexander Volkov by Decision",prob:42.34,market:43.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Total Rounds",prop:"Over 1.5",prob:78.5,market:82.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Total Rounds",prop:"Under 1.5",prob:31.5,market:25.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Total Rounds",prop:"Over 2.5",prob:68.0,market:69.5},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Total Rounds",prop:"Under 2.5",prob:32.0,market:36.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fight Outcome",prop:"Goes to Decision",prob:63.0,market:66.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fight Outcome",prop:"Inside the Distance",prob:37.0,market:42.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fight Outcome",prop:"KO/TKO",prob:23.53,market:38.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fight Outcome",prop:"Submission",prob:3.09,market:9.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Round Betting",prop:"Round 1 Finish",prob:26.6,market:18.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Round Betting",prop:"Round 2 Finish",prob:16.3,market:17.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Round Betting",prop:"Round 3 Finish",prob:7.9,market:11.5},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fighter ITD",prop:"Waldo Cortes Acosta ITD",prob:15.92,market:20.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Fighter ITD",prop:"Alexander Volkov ITD",prob:10.7,market:26.0},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Double Chance",prop:"Waldo Cortes Acosta KO/TKO or Dec",prob:31.75,market:42.5},
-  {fid:"F00159",f1:"Waldo Cortes Acosta",f2:"Alexander Volkov",cat:"Double Chance",prop:"Alexander Volkov KO/TKO or Dec",prob:51.1,market:61.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Moneyline",prop:"Sean Brady",prob:61.0,market:62.5},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Moneyline",prop:"Joaquin Buckley",prob:39.0,market:41.5},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Sean Brady by KO/TKO",prob:4.07,market:11.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Sean Brady by Submission",prob:17.04,market:23.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Sean Brady by Decision",prob:39.89,market:38.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Joaquin Buckley by KO/TKO",prob:26.66,market:29.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Joaquin Buckley by Submission",prob:0.23,market:3.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Method of Victory",prop:"Joaquin Buckley by Decision",prob:12.11,market:16.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Total Rounds",prop:"Over 1.5",prob:69.0,market:72.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Total Rounds",prop:"Under 1.5",prob:31.0,market:34.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Total Rounds",prop:"Over 2.5",prob:56.0,market:57.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Total Rounds",prop:"Under 2.5",prob:44.0,market:49.5},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fight Outcome",prop:"Goes to Decision",prob:52.0,market:50.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fight Outcome",prop:"Inside the Distance",prob:48.0,market:57.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fight Outcome",prop:"KO/TKO",prob:30.73,market:38.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fight Outcome",prop:"Submission",prob:17.27,market:25.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Round Betting",prop:"Round 1 Finish",prob:34.2,market:26.5},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Round Betting",prop:"Round 2 Finish",prob:17.8,market:21.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Round Betting",prop:"Round 3 Finish",prob:7.9,market:14.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fighter ITD",prop:"Sean Brady ITD",prob:21.11,market:31.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Fighter ITD",prop:"Joaquin Buckley ITD",prob:26.89,market:29.0},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Double Chance",prop:"Sean Brady KO/TKO or Dec",prob:43.96,market:46.5},
-  {fid:"F00160",f1:"Sean Brady",f2:"Joaquin Buckley",cat:"Double Chance",prop:"Joaquin Buckley KO/TKO or Dec",prob:38.77,market:40.5},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Moneyline",prop:"King Green",prob:75.5,market:79.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Moneyline",prop:"Jeremy Stephens",prob:24.5,market:25.5},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"King Green by KO/TKO",prob:15.9,market:30.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"King Green by Submission",prob:11.3,market:11.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"King Green by Decision",prob:48.2,market:45.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"Jeremy Stephens by KO/TKO",prob:13.8,market:17.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"Jeremy Stephens by Submission",prob:1.1,market:3.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Method of Victory",prop:"Jeremy Stephens by Decision",prob:9.6,market:13.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Total Rounds",prop:"Over 1.5",prob:75.0,market:75.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Total Rounds",prop:"Under 1.5",prob:25.0,market:31.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Total Rounds",prop:"Over 2.5",prob:64.0,market:61.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Total Rounds",prop:"Under 2.5",prob:36.0,market:44.5},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fight Outcome",prop:"Goes to Decision",prob:57.8,market:56.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fight Outcome",prop:"Inside the Distance",prob:42.2,market:51.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fight Outcome",prop:"KO/TKO",prob:29.8,market:44.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fight Outcome",prop:"Submission",prob:12.4,market:13.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Round Betting",prop:"Round 1 Finish",prob:20.4,market:22.5},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Round Betting",prop:"Round 2 Finish",prob:14.3,market:20.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Round Betting",prop:"Round 3 Finish",prob:7.5,market:14.5},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fighter ITD",prop:"King Green ITD",prob:27.2,market:36.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Fighter ITD",prop:"Jeremy Stephens ITD",prob:14.9,market:17.0},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Double Chance",prop:"King Green KO/TKO or Dec",prob:64.1,market:73.5},
-  {fid:"F00161",f1:"King Green",f2:"Jeremy Stephens",cat:"Double Chance",prop:"Jeremy Stephens KO/TKO or Dec",prob:23.4,market:27.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Moneyline",prop:"Ateba Gautier",prob:90.0,market:93.5},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Moneyline",prop:"Ozzy Diaz",prob:10.0,market:11.5},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ateba Gautier by KO/TKO",prob:69.92,market:85.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ateba Gautier by Submission",prob:8.43,market:11.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ateba Gautier by Decision",prob:13.05,market:9.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ozzy Diaz by KO/TKO",prob:0.59,market:6.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ozzy Diaz by Submission",prob:6.06,market:3.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Method of Victory",prop:"Ozzy Diaz by Decision",prob:1.95,market:7.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Total Rounds",prop:"Over 1.5",prob:32.0,market:31.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Total Rounds",prop:"Under 1.5",prob:58.0,market:75.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Total Rounds",prop:"Over 2.5",prob:19.0,market:19.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Total Rounds",prop:"Under 2.5",prob:81.0,market:88.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fight Outcome",prop:"Goes to Decision",prob:15.0,market:14.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fight Outcome",prop:"Inside the Distance",prob:85.0,market:92.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fight Outcome",prop:"KO/TKO",prob:70.51,market:89.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fight Outcome",prop:"Submission",prob:14.49,market:12.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Round Betting",prop:"Round 1 Finish",prob:31.3,market:66.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Round Betting",prop:"Round 2 Finish",prob:18.1,market:21.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Round Betting",prop:"Round 3 Finish",prob:8.1,market:10.5},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fighter ITD",prop:"Ateba Gautier ITD",prob:78.35,market:89.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Fighter ITD",prop:"Ozzy Diaz ITD",prob:6.65,market:8.0},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Double Chance",prop:"Ateba Gautier KO/TKO or Dec",prob:82.97,market:88.5},
-  {fid:"F00162",f1:"Ateba Gautier",f2:"Ozzy Diaz",cat:"Double Chance",prop:"Ozzy Diaz KO/TKO or Dec",prob:2.54,market:11.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Moneyline",prop:"Roman Kopylov",prob:37.0,market:39.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Moneyline",prop:"Marco Tulio",prob:63.0,market:66.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Roman Kopylov by KO/TKO",prob:18.83,market:18.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Roman Kopylov by Submission",prob:0.39,market:3.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Roman Kopylov by Decision",prob:17.78,market:22.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Marco Tulio by KO/TKO",prob:25.1,market:38.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Marco Tulio by Submission",prob:10.68,market:14.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Method of Victory",prop:"Marco Tulio by Decision",prob:27.22,market:24.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Total Rounds",prop:"Over 1.5",prob:63.0,market:69.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Total Rounds",prop:"Under 1.5",prob:37.0,market:38.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Total Rounds",prop:"Over 2.5",prob:50.0,market:51.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Total Rounds",prop:"Under 2.5",prob:50.0,market:55.5},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fight Outcome",prop:"Goes to Decision",prob:45.0,market:43.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fight Outcome",prop:"Inside the Distance",prob:55.0,market:62.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fight Outcome",prop:"KO/TKO",prob:43.93,market:51.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fight Outcome",prop:"Submission",prob:11.07,market:15.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Round Betting",prop:"Round 1 Finish",prob:36.1,market:29.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Round Betting",prop:"Round 2 Finish",prob:17.3,market:23.5},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Round Betting",prop:"Round 3 Finish",prob:7.6,market:14.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fighter ITD",prop:"Roman Kopylov ITD",prob:19.22,market:21.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Fighter ITD",prop:"Marco Tulio ITD",prob:35.78,market:45.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Double Chance",prop:"Roman Kopylov KO/TKO or Dec",prob:36.61,market:37.0},
-  {fid:"F00163",f1:"Roman Kopylov",f2:"Marco Tulio",cat:"Double Chance",prop:"Marco Tulio KO/TKO or Dec",prob:52.32,market:58.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Moneyline",prop:"Clayton Carpenter",prob:54.0,market:41.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Moneyline",prop:"Jose Ochoa",prob:46.0,market:64.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Clayton Carpenter by KO/TKO",prob:3.0,market:8.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Clayton Carpenter by Submission",prob:3.0,market:12.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Clayton Carpenter by Decision",prob:48.0,market:27.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Jose Ochoa by KO/TKO",prob:22.75,market:27.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Jose Ochoa by Submission",prob:6.25,market:8.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Method of Victory",prop:"Jose Ochoa by Decision",prob:17.0,market:40.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Total Rounds",prop:"Over 1.5",prob:81.5,market:79.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Total Rounds",prop:"Under 1.5",prob:18.5,market:27.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Total Rounds",prop:"Over 2.5",prob:69.0,market:66.5},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Total Rounds",prop:"Under 2.5",prob:31.0,market:39.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fight Outcome",prop:"Goes to Decision",prob:65.0,market:62.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fight Outcome",prop:"Inside the Distance",prob:35.0,market:43.5},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fight Outcome",prop:"KO/TKO",prob:25.75,market:31.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fight Outcome",prop:"Submission",prob:9.25,market:18.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Round Betting",prop:"Round 1 Finish",prob:23.9,market:21.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Round Betting",prop:"Round 2 Finish",prob:14.9,market:17.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Round Betting",prop:"Round 3 Finish",prob:6.4,market:12.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fighter ITD",prop:"Clayton Carpenter ITD",prob:6.0,market:17.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Fighter ITD",prop:"Jose Ochoa ITD",prob:29.0,market:31.0},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Double Chance",prop:"Clayton Carpenter KO/TKO or Dec",prob:51.0,market:32.5},
-  {fid:"F00164",f1:"Clayton Carpenter",f2:"Jose Ochoa",cat:"Double Chance",prop:"Jose Ochoa KO/TKO or Dec",prob:39.75,market:62.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Moneyline",prop:"Baisangur Susurkaev",prob:73.0,market:87.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Moneyline",prop:"Djorden Santos",prob:27.0,market:17.5},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Baisangur Susurkaev by KO/TKO",prob:29.14,market:48.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Baisangur Susurkaev by Submission",prob:11.24,market:18.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Baisangur Susurkaev by Decision",prob:32.62,market:33.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Djorden Santos by KO/TKO",prob:4.25,market:10.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Djorden Santos by Submission",prob:0.37,market:4.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Method of Victory",prop:"Djorden Santos by Decision",prob:22.38,market:10.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Total Rounds",prop:"Over 1.5",prob:71.3,market:62.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Total Rounds",prop:"Under 1.5",prob:28.7,market:43.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Total Rounds",prop:"Over 2.5",prob:59.0,market:44.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Total Rounds",prop:"Under 2.5",prob:41.0,market:62.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fight Outcome",prop:"Goes to Decision",prob:55.0,market:38.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fight Outcome",prop:"Inside the Distance",prob:45.0,market:68.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fight Outcome",prop:"KO/TKO",prob:33.39,market:54.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fight Outcome",prop:"Submission",prob:11.61,market:19.5},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Round Betting",prop:"Round 1 Finish",prob:24.9,market:33.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Round Betting",prop:"Round 2 Finish",prob:17.7,market:25.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Round Betting",prop:"Round 3 Finish",prob:8.7,market:14.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fighter ITD",prop:"Baisangur Susurkaev ITD",prob:40.38,market:60.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Fighter ITD",prop:"Djorden Santos ITD",prob:4.62,market:10.0},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Double Chance",prop:"Baisangur Susurkaev KO/TKO or Dec",prob:61.76,market:77.5},
-  {fid:"F00165",f1:"Baisangur Susurkaev",f2:"Djorden Santos",cat:"Double Chance",prop:"Djorden Santos KO/TKO or Dec",prob:26.63,market:16.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Moneyline",prop:"Mateusz Rebecki",prob:33.0,market:41.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Moneyline",prop:"Grant Dawson",prob:67.0,market:62.5},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Mateusz Rebecki by KO/TKO",prob:17.54,market:27.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Mateusz Rebecki by Submission",prob:5.0,market:5.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Mateusz Rebecki by Decision",prob:10.46,market:15.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Grant Dawson by KO/TKO",prob:6.46,market:10.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Grant Dawson by Submission",prob:21.0,market:17.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Method of Victory",prop:"Grant Dawson by Decision",prob:39.54,market:44.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Total Rounds",prop:"Over 1.5",prob:67.0,market:75.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Total Rounds",prop:"Under 1.5",prob:33.0,market:31.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Total Rounds",prop:"Over 2.5",prob:54.0,market:60.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Total Rounds",prop:"Under 2.5",prob:46.0,market:45.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fight Outcome",prop:"Goes to Decision",prob:50.0,market:55.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fight Outcome",prop:"Inside the Distance",prob:50.0,market:52.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fight Outcome",prop:"KO/TKO",prob:24.0,market:35.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fight Outcome",prop:"Submission",prob:26.0,market:21.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Round Betting",prop:"Round 1 Finish",prob:29.1,market:23.5},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Round Betting",prop:"Round 2 Finish",prob:19.9,market:18.5},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Round Betting",prop:"Round 3 Finish",prob:9.4,market:13.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fighter ITD",prop:"Mateusz Rebecki ITD",prob:22.54,market:31.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Fighter ITD",prop:"Grant Dawson ITD",prob:27.46,market:23.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Double Chance",prop:"Mateusz Rebecki KO/TKO or Dec",prob:28.0,market:38.0},
-  {fid:"F00166",f1:"Mateusz Rebecki",f2:"Grant Dawson",cat:"Double Chance",prop:"Grant Dawson KO/TKO or Dec",prob:46.0,market:54.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Moneyline",prop:"Pat Sabatini",prob:64.0,market:68.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Moneyline",prop:"William Gomis",prob:36.0,market:36.5},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"Pat Sabatini by KO/TKO",prob:4.4,market:10.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"Pat Sabatini by Submission",prob:19.8,market:31.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"Pat Sabatini by Decision",prob:39.8,market:38.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"William Gomis by KO/TKO",prob:19.6,market:14.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"William Gomis by Submission",prob:0.8,market:4.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Method of Victory",prop:"William Gomis by Decision",prob:15.7,market:25.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Total Rounds",prop:"Over 1.5",prob:73.0,market:76.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Total Rounds",prop:"Under 1.5",prob:27.0,market:30.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Total Rounds",prop:"Over 2.5",prob:62.0,market:62.5},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Total Rounds",prop:"Under 2.5",prob:48.0,market:43.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fight Outcome",prop:"Goes to Decision",prob:55.5,market:57.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fight Outcome",prop:"Inside the Distance",prob:44.5,market:49.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fight Outcome",prop:"KO/TKO",prob:24.0,market:21.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fight Outcome",prop:"Submission",prob:20.6,market:33.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Round Betting",prop:"Round 1 Finish",prob:21.5,market:22.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Round Betting",prop:"Round 2 Finish",prob:15.4,market:18.5},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Round Betting",prop:"Round 3 Finish",prob:7.6,market:13.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fighter ITD",prop:"Pat Sabatini ITD",prob:24.2,market:36.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Fighter ITD",prop:"William Gomis ITD",prob:20.3,market:15.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Double Chance",prop:"Pat Sabatini KO/TKO or Dec",prob:44.2,market:44.0},
-  {fid:"F00167",f1:"Pat Sabatini",f2:"William Gomis",cat:"Double Chance",prop:"William Gomis KO/TKO or Dec",prob:35.2,market:35.5},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Moneyline",prop:"Jim Miller",prob:32.0,market:29.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Moneyline",prop:"Jared Gordon",prob:68.0,market:76.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jim Miller by KO/TKO",prob:9.05,market:12.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jim Miller by Submission",prob:20.73,market:8.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jim Miller by Decision",prob:2.22,market:15.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jared Gordon by KO/TKO",prob:18.32,market:23.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jared Gordon by Submission",prob:0.35,market:11.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Method of Victory",prop:"Jared Gordon by Decision",prob:49.33,market:53.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Total Rounds",prop:"Over 1.5",prob:70.0,market:80.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Total Rounds",prop:"Under 1.5",prob:30.0,market:26.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Total Rounds",prop:"Over 2.5",prob:58.0,market:66.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Total Rounds",prop:"Under 2.5",prob:42.0,market:39.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fight Outcome",prop:"Goes to Decision",prob:51.55,market:62.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fight Outcome",prop:"Inside the Distance",prob:48.45,market:43.5},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fight Outcome",prop:"KO/TKO",prob:27.37,market:32.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fight Outcome",prop:"Submission",prob:21.08,market:18.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Round Betting",prop:"Round 1 Finish",prob:28.6,market:20.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Round Betting",prop:"Round 2 Finish",prob:19.2,market:17.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Round Betting",prop:"Round 3 Finish",prob:9.9,market:13.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fighter ITD",prop:"Jim Miller ITD",prob:29.78,market:17.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Fighter ITD",prop:"Jared Gordon ITD",prob:18.67,market:31.0},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Double Chance",prop:"Jim Miller KO/TKO or Dec",prob:11.27,market:23.5},
-  {fid:"F00169",f1:"Jim Miller",f2:"Jared Gordon",cat:"Double Chance",prop:"Jared Gordon KO/TKO or Dec",prob:67.65,market:72.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Moneyline",prop:"Yaroslav Amosov",prob:66.1,market:65.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Moneyline",prop:"Joel Alvarez",prob:33.9,market:40.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Yaroslav Amosov by KO/TKO",prob:4.0,market:18.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Yaroslav Amosov by Submission",prob:24.5,market:18.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Yaroslav Amosov by Decision",prob:42.5,market:40.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Joel Alvarez by KO/TKO",prob:23.18,market:14.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Joel Alvarez by Submission",prob:2.32,market:18.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Method of Victory",prop:"Joel Alvarez by Decision",prob:3.5,market:15.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Total Rounds",prop:"Over 1.5",prob:64.0,market:69.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Total Rounds",prop:"Under 1.5",prob:36.0,market:37.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Total Rounds",prop:"Over 2.5",prob:51.0,market:56.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Total Rounds",prop:"Under 2.5",prob:49.0,market:50.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fight Outcome",prop:"Goes to Decision",prob:46.0,market:50.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fight Outcome",prop:"Inside the Distance",prob:54.0,market:56.5},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fight Outcome",prop:"KO/TKO",prob:27.18,market:29.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fight Outcome",prop:"Submission",prob:26.82,market:32.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Round Betting",prop:"Round 1 Finish",prob:34.7,market:27.5},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Round Betting",prop:"Round 2 Finish",prob:21.2,market:21.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Round Betting",prop:"Round 3 Finish",prob:9.7,market:14.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fighter ITD",prop:"Yaroslav Amosov ITD",prob:28.5,market:31.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Fighter ITD",prop:"Joel Alvarez ITD",prob:25.5,market:29.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Double Chance",prop:"Yaroslav Amosov KO/TKO or Dec",prob:46.5,market:53.0},
-  {fid:"F00168",f1:"Yaroslav Amosov",f2:"Joel Alvarez",cat:"Double Chance",prop:"Joel Alvarez KO/TKO or Dec",prob:26.68,market:27.0},
-];
+let rows = [];
 
 // ─── LIVE ODDS ENGINE ─────────────────────────────────────────────────────────
 
@@ -1041,14 +729,17 @@ function applyLiveOdds(events) {
 
 // ─── CORE RENDER ─────────────────────────────────────────────────────────────
 
-const fights = {};
-rows.forEach((r, idx) => {
-  if (!fights[r.fid]) {
-    fights[r.fid] = { fid: r.fid, f1: r.f1, f2: r.f2, indices: [], cardOrder: Object.keys(fights).length };
-  }
-  r.edge = (typeof r.prob === 'number' && typeof r.market === 'number') ? r.prob - r.market : null;
-  fights[r.fid].indices.push(idx);
-});
+let fights = {};
+function buildFightsIndex() {
+  fights = {};
+  rows.forEach((r, idx) => {
+    if (!fights[r.fid]) {
+      fights[r.fid] = { fid: r.fid, f1: r.f1, f2: r.f2, indices: [], cardOrder: Object.keys(fights).length };
+    }
+    r.edge = (typeof r.prob === 'number' && typeof r.market === 'number') ? r.prob - r.market : null;
+    fights[r.fid].indices.push(idx);
+  });
+}
 
 let activeFilter = 'all', activeCats = new Set(), activeSort = 'card', activeFight = 'all';
 let displayFormat = (() => {
@@ -1360,17 +1051,95 @@ function render() {
   applyFilters();
 }
 
-// ─── INIT ─────────────────────────────────────────────────────────────────────
-if (window.innerWidth <= 720) {
-  document.getElementById('top-edges').classList.add('collapsed');
+// ─── CSV DATA LOADER ──────────────────────────────────────────────────────────
+
+function parseCSVLine(line) {
+  const result = [];
+  let cur = '', inQuote = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (c === '"') {
+      if (inQuote && line[i+1] === '"') { cur += '"'; i++; }
+      else inQuote = !inQuote;
+    } else if (c === ',' && !inQuote) {
+      result.push(cur); cur = '';
+    } else {
+      cur += c;
+    }
+  }
+  result.push(cur);
+  return result;
 }
-document.querySelectorAll('[data-format]').forEach(b => {
-  b.classList.toggle('active', b.dataset.format === displayFormat);
-});
-populateFightSelect();
-render();
-fetchLiveOdds(); // fetch on load
-setInterval(fetchLiveOdds, AUTO_REFRESH); // then every 10 min
+
+async function loadData() {
+  const url = 'data.csv?_=' + Date.now(); // cache-bust so weekly updates land immediately
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('HTTP ' + res.status + ' fetching data.csv');
+  const text = await res.text();
+  const lines = text.split(/\r?\n/).filter(l => l.trim().length > 0);
+  if (lines.length < 2) throw new Error('data.csv has fewer than 2 lines');
+
+  let eventTitle = '';
+  let startIdx = 0;
+  if (lines[0].startsWith('#')) {
+    eventTitle = lines[0].replace(/^#\s*/, '').trim();
+    startIdx = 1;
+  }
+  const header = parseCSVLine(lines[startIdx]).map(h => h.trim());
+  const dataLines = lines.slice(startIdx + 1);
+
+  const parsedRows = dataLines.map(line => {
+    const cells = parseCSVLine(line);
+    const obj = {};
+    header.forEach((key, i) => {
+      const raw = (cells[i] ?? '').trim();
+      obj[key] = (key === 'prob' || key === 'market') ? parseFloat(raw) : raw;
+    });
+    return obj;
+  });
+
+  return { eventTitle, rows: parsedRows };
+}
+
+function showLoadError(msg) {
+  const content = document.getElementById('content');
+  if (content) {
+    content.innerHTML = '<div class="empty-state" style="padding:40px;color:#ef4444">' +
+      '<strong>Failed to load fight data.</strong><br><br>' +
+      msg +
+      '<br><br>Confirm that <code>data.csv</code> exists in the site root.</div>';
+  }
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+
+(async function init() {
+  try {
+    const data = await loadData();
+    rows = data.rows;
+    if (data.eventTitle) {
+      const titleEl = document.querySelector('.event-title');
+      if (titleEl) titleEl.textContent = data.eventTitle;
+      document.title = data.eventTitle + ' — Edge Sheet';
+    }
+    buildFightsIndex();
+  } catch (err) {
+    console.error(err);
+    showLoadError(err.message || String(err));
+    return;
+  }
+
+  if (window.innerWidth <= 720) {
+    document.getElementById('top-edges').classList.add('collapsed');
+  }
+  document.querySelectorAll('[data-format]').forEach(b => {
+    b.classList.toggle('active', b.dataset.format === displayFormat);
+  });
+  populateFightSelect();
+  render();
+  fetchLiveOdds(); // fetch on load
+  setInterval(fetchLiveOdds, AUTO_REFRESH); // then every 10 min
+})();
 </script>
 </body>
 </html>
