@@ -4,168 +4,241 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UFC Synopses — Yang's Model</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0a0c14;
-    --surface: #11141d;
-    --surface-2: #161a26;
-    --surface-3: #1d2230;
-    --border: #1f2434;
-    --border-bright: #2c3147;
-    --text-primary: #eef0f8;
-    --text-secondary: #a0a6c5;
-    --text-muted: #5b6088;
-    --brand: #f0b429;
-    --brand-soft: rgba(240, 180, 41, 0.10);
-    --edge-strong: #22c55e;
-    --edge-neg-2: #ef4444;
+    /* iOS Light surfaces */
+    --bg: #f2f2f7;
+    --surface: #ffffff;
+    --surface-2: #f9f9fb;
+    --surface-3: #efeff4;
+    --separator: #e5e5ea;
+    --separator-strong: #c6c6c8;
+    /* iOS Text */
+    --text-primary: #1c1c1e;
+    --text-secondary: #3c3c43;
+    --text-muted: #8e8e93;
+    /* iOS Accents */
+    --brand: #007aff;
+    --brand-soft: rgba(0, 122, 255, 0.10);
+    --green: #34c759;
+    --green-strong: #248a3d;
+    --red: #ff3b30;
+    --orange: #ff9500;
+    /* Type scale */
     --text-xs: 11px;
     --text-sm: 13px;
     --text-md: 15px;
-    --text-lg: 18px;
+    --text-lg: 17px;
+    --text-xl: 22px;
+    /* Layout */
     --header-h: 56px;
+    --radius: 12px;
+    --radius-sm: 8px;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { background: var(--bg); color: var(--text-primary); font-family: 'Inter', system-ui, -apple-system, sans-serif; font-size: 13px; min-height: 100vh; -webkit-font-smoothing: antialiased; }
-  body { padding-bottom: 80px; }
+  html, body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+    font-size: 14px;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body { padding-bottom: 120px; }
 
   /* HEADER */
-  header { height: var(--header-h); background: var(--surface); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; position: sticky; top: 0; z-index: 100; }
-  .header-left { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-  .event-title { font-size: var(--text-lg); font-weight: 700; letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .event-date { font-family: 'IBM Plex Mono', monospace; font-size: var(--text-xs); color: var(--text-muted); letter-spacing: 0.02em; }
+  header {
+    height: var(--header-h); background: var(--surface);
+    border-bottom: 0.5px solid var(--separator);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 16px; position: sticky; top: 0; z-index: 100;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    background: rgba(255,255,255,0.85);
+  }
+  .header-left { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+  .event-title { font-size: var(--text-lg); font-weight: 700; letter-spacing: -0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .event-date { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xs); color: var(--text-muted); letter-spacing: 0.01em; }
 
   /* NAV */
-  .primary-nav { display: flex; align-items: stretch; height: 100%; gap: 4px; flex-shrink: 0; }
-  .nav-tab { position: relative; display: flex; align-items: center; gap: 4px; padding: 0 14px; height: 100%; font-size: var(--text-sm); font-weight: 600; letter-spacing: 0.01em; color: var(--text-secondary); text-decoration: none; cursor: pointer; border-bottom: 2px solid transparent; transition: color 0.12s, border-color 0.12s; user-select: none; }
+  .primary-nav { display: flex; align-items: stretch; height: 100%; gap: 2px; flex-shrink: 0; }
+  .nav-tab {
+    position: relative; display: flex; align-items: center; gap: 4px;
+    padding: 0 12px; height: 100%;
+    font-size: var(--text-sm); font-weight: 600; letter-spacing: -0.01em;
+    color: var(--text-secondary); text-decoration: none; cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.12s, border-color 0.12s;
+    user-select: none;
+  }
   .nav-tab:hover { color: var(--text-primary); }
   .nav-tab.active { color: var(--brand); border-bottom-color: var(--brand); }
-  .nav-tab .caret { font-size: 9px; opacity: 0.7; }
+  .nav-tab .caret { font-size: 9px; opacity: 0.65; }
 
   .nav-dropdown-menu {
     position: absolute; top: 100%; right: 0;
     min-width: 320px; max-width: 380px; max-height: 70vh;
-    background: var(--surface); border: 1px solid var(--border-bright);
-    border-top: none; border-radius: 0 0 6px 6px;
-    box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+    background: var(--surface);
+    border: 1px solid var(--separator);
+    border-radius: 14px;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.12);
     overflow-y: auto;
     opacity: 0; visibility: hidden; transform: translateY(-4px);
-    transition: opacity 0.12s, transform 0.12s, visibility 0.12s;
-    padding: 6px 0;
+    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s;
+    padding: 6px 0; margin-top: 6px;
     z-index: 200;
   }
   .nav-dropdown:hover .nav-dropdown-menu,
   .nav-dropdown.open .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
   .nav-dropdown-item {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 12px;
-    align-items: center;
-    padding: 8px 14px;
-    color: var(--text-primary);
-    text-decoration: none;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 12px; align-items: center;
+    padding: 9px 14px;
+    color: var(--text-primary); text-decoration: none;
     font-size: var(--text-sm);
-    border-left: 2px solid transparent;
-    cursor: pointer;
+    border-radius: 6px;
+    margin: 0 4px;
   }
-  .nav-dropdown-item:hover { background: var(--surface-2); border-left-color: var(--brand); }
+  .nav-dropdown-item:hover { background: var(--surface-3); }
+  .nav-dropdown-item.current { background: var(--brand-soft); color: var(--brand); }
   .nav-dropdown-item .names { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
   .nav-dropdown-item .matchup-line { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .nav-dropdown-item .meta-line { font-family: 'IBM Plex Mono', monospace; font-size: var(--text-xs); color: var(--text-muted); }
-  .nav-dropdown-item .pct { font-family: 'IBM Plex Mono', monospace; font-size: var(--text-xs); color: var(--text-secondary); white-space: nowrap; }
+  .nav-dropdown-item .meta-line { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xs); color: var(--text-muted); }
+  .nav-dropdown-item.current .meta-line { color: var(--brand); opacity: 0.85; }
+  .nav-dropdown-item .pct { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xs); color: var(--text-secondary); white-space: nowrap; }
 
   /* MAIN */
-  main { padding: 16px; max-width: 960px; margin: 0 auto; }
-  .meta-bar { font-family: 'IBM Plex Mono', monospace; font-size: var(--text-xs); color: var(--text-muted); margin-bottom: 14px; text-align: center; letter-spacing: 0.03em; }
+  main { padding: 16px; max-width: 760px; margin: 0 auto; }
 
-  /* FIGHT CARD */
-  .fight-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; scroll-margin-top: calc(var(--header-h) + 8px); overflow: hidden; }
-  .fight-card.expanded { border-color: var(--border-bright); }
-
-  .fight-card-header {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: center;
-    gap: 14px;
-    padding: 12px 14px;
-    background: transparent;
-    border: none;
-    text-align: left;
-    width: 100%;
-    cursor: pointer;
-    color: inherit;
-    font: inherit;
+  /* FIGHT NAVIGATION BAR */
+  .fight-pager {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 8px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 8px 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    border: 0.5px solid var(--separator);
   }
-  .fight-card-header:hover { background: var(--surface-2); }
-  .fight-card-header .matchup { font-size: var(--text-md); font-weight: 700; letter-spacing: -0.01em; }
-  .fight-card-header .matchup .vs { color: var(--text-muted); font-weight: 500; margin: 0 6px; font-size: var(--text-sm); }
-  .fight-card-header .meta { font-family: 'IBM Plex Mono', monospace; font-size: var(--text-xs); color: var(--text-muted); margin-top: 2px; letter-spacing: 0.02em; }
-  .fight-card-header .probs { font-family: 'IBM Plex Mono', monospace; font-size: var(--text-sm); color: var(--text-secondary); white-space: nowrap; }
-  .fight-card-header .probs .fav { color: var(--text-primary); font-weight: 600; }
-  .fight-card-header .expand-icon { font-size: 11px; color: var(--text-muted); transition: transform 0.18s; width: 14px; text-align: center; }
-  .fight-card.expanded .expand-icon { transform: rotate(180deg); color: var(--text-secondary); }
+  .fight-pager-btn {
+    background: var(--surface-3); border: none;
+    color: var(--text-primary);
+    font: inherit; font-weight: 600; font-size: var(--text-sm);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: 4px;
+    transition: background 0.12s;
+  }
+  .fight-pager-btn:hover { background: var(--separator); }
+  .fight-pager-btn:disabled { opacity: 0.35; cursor: default; }
+  .fight-pager-btn:disabled:hover { background: var(--surface-3); }
+  .fight-pager-current { flex: 1; text-align: center; font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xs); color: var(--text-muted); letter-spacing: 0.04em; }
 
-  .fight-card-body { padding: 0 14px 16px; border-top: 1px solid var(--border); display: none; }
-  .fight-card.expanded .fight-card-body { display: block; }
+  /* FIGHT CARD (single, expanded) */
+  .fight-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    border: 0.5px solid var(--separator);
+    overflow: hidden;
+  }
+  .fight-hero {
+    padding: 20px 18px 18px;
+    border-bottom: 0.5px solid var(--separator);
+  }
+  .fight-hero .matchup {
+    font-size: var(--text-xl); font-weight: 700;
+    letter-spacing: -0.022em; line-height: 1.2;
+  }
+  .fight-hero .matchup .vs { color: var(--text-muted); font-weight: 500; margin: 0 8px; font-size: var(--text-md); }
+  .fight-hero .meta {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: var(--text-xs); color: var(--text-muted);
+    margin-top: 6px; letter-spacing: 0.02em;
+  }
+
+  .fight-card-body { padding: 4px 18px 20px; }
 
   /* BLOCKS */
-  .block { margin-top: 14px; }
-  .block-title { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; padding-bottom: 5px; border-bottom: 1px solid var(--border); }
-  .block-note { font-size: var(--text-xs); color: var(--text-muted); font-style: italic; margin-bottom: 8px; }
+  .block { margin-top: 18px; }
+  .block-title {
+    font-size: var(--text-xs); font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-muted); margin-bottom: 10px;
+    padding-left: 4px;
+  }
+  .block-note { font-size: var(--text-xs); color: var(--text-muted); margin-bottom: 10px; padding-left: 4px; }
+  .block-content {
+    background: var(--surface-3);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+  }
 
-  .ml-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; padding: 8px 0; }
-  .ml-row .name { font-weight: 600; }
-  .ml-row .name.right { text-align: right; }
-  .ml-row .pct { font-family: 'IBM Plex Mono', monospace; font-size: var(--text-md); font-weight: 700; color: var(--text-primary); }
-  .ml-row .pct.right { text-align: right; }
-  .ml-row .vs { color: var(--text-muted); font-size: var(--text-xs); padding: 0 8px; }
+  /* Model projection: probability bar */
+  .ml-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: end; padding: 6px 0 10px; }
+  .ml-row .col { display: flex; flex-direction: column; gap: 2px; }
+  .ml-row .col.right { text-align: right; }
+  .ml-row .name { font-weight: 600; font-size: var(--text-sm); color: var(--text-secondary); letter-spacing: -0.01em; }
+  .ml-row .pct { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xl); font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; }
+  .ml-row .pct.fav { color: var(--brand); }
+  .ml-row .vs { color: var(--text-muted); font-size: var(--text-sm); padding: 0 6px 2px; }
 
-  .pbar { height: 6px; background: var(--surface-3); border-radius: 3px; overflow: hidden; display: flex; margin: 4px 0 8px; }
+  .pbar { height: 8px; background: var(--separator); border-radius: 4px; overflow: hidden; display: flex; margin: 4px 0 12px; }
   .pbar .bar-f1 { background: var(--brand); }
-  .pbar .bar-f2 { background: var(--text-secondary); opacity: 0.6; }
+  .pbar .bar-f2 { background: var(--text-muted); opacity: 0.5; }
 
   table.stat { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
-  table.stat th, table.stat td { padding: 6px 8px; text-align: right; border-bottom: 1px solid var(--border); }
-  table.stat th { font-size: var(--text-xs); font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+  table.stat th, table.stat td { padding: 8px 6px; text-align: right; border-bottom: 0.5px solid var(--separator); }
+  table.stat th { font-size: 10px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; padding-top: 0; }
   table.stat th:first-child, table.stat td:first-child { text-align: left; }
-  table.stat td.label { color: var(--text-secondary); }
+  table.stat td.label { color: var(--text-secondary); font-weight: 500; }
   table.stat tbody tr:last-child td { border-bottom: none; }
-  table.stat .num { font-family: 'IBM Plex Mono', monospace; }
-  table.stat .pos { color: var(--edge-strong); }
-  table.stat .neg { color: var(--edge-neg-2); }
+  table.stat .num { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-variant-numeric: tabular-nums; }
+  table.stat .pos { color: var(--green-strong); font-weight: 600; }
+  table.stat .neg { color: var(--red); font-weight: 600; }
 
-  .rounds-line { font-family: 'IBM Plex Mono', monospace; font-size: var(--text-xs); color: var(--text-secondary); padding-top: 8px; line-height: 1.6; }
-  .rounds-line strong { color: var(--text-primary); }
+  .rounds-line {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: var(--text-xs); color: var(--text-secondary);
+    margin-top: 10px; padding-top: 10px;
+    border-top: 0.5px solid var(--separator);
+    line-height: 1.6; letter-spacing: 0.01em;
+  }
+  .rounds-line strong { color: var(--text-primary); font-weight: 700; }
 
-  .profile-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; margin-top: 8px; }
-  .profile-card .pname { font-weight: 700; font-size: var(--text-md); margin-bottom: 4px; }
-  .profile-card .pline { font-size: var(--text-xs); color: var(--text-secondary); line-height: 1.55; margin-top: 2px; }
-  .profile-card .pline.recent { font-family: 'IBM Plex Mono', monospace; color: var(--text-muted); }
+  /* Profiles */
+  .profile-card {
+    background: var(--surface);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    border: 0.5px solid var(--separator);
+  }
+  .profile-card + .profile-card { margin-top: 10px; }
+  .profile-card .pname { font-weight: 700; font-size: var(--text-md); letter-spacing: -0.01em; margin-bottom: 6px; }
+  .profile-card .pline { font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.5; margin-top: 4px; }
+  .profile-card .pline.recent { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xs); color: var(--text-muted); }
 
-  /* JUMP BUTTONS */
-  .actions { display: flex; gap: 8px; justify-content: space-between; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
-  .actions button { background: transparent; border: 1px solid var(--border-bright); color: var(--text-secondary); padding: 6px 10px; border-radius: 4px; font-size: var(--text-xs); font-weight: 600; cursor: pointer; letter-spacing: 0.02em; }
-  .actions button:hover { color: var(--text-primary); border-color: var(--text-secondary); }
-
-  /* MOBILE */
+  /* Mobile */
   @media (max-width: 720px) {
-    header { padding: 0 10px; }
-    .event-title { font-size: 14px; }
+    header { padding: 0 12px; }
+    .event-title { font-size: 15px; }
     .nav-tab { padding: 0 10px; font-size: var(--text-xs); }
     .nav-dropdown-menu { right: 8px; min-width: 280px; max-width: calc(100vw - 16px); }
     main { padding: 12px; }
-    .fight-card-header { grid-template-columns: 1fr auto; padding: 10px 12px; gap: 8px; }
-    .fight-card-header .probs { grid-column: 1; grid-row: 2; font-size: var(--text-xs); }
-    .fight-card-header .meta { font-size: 10px; }
-    .fight-card-header .expand-icon { grid-column: 2; grid-row: 1 / span 2; }
-    table.stat th, table.stat td { padding: 5px 6px; font-size: var(--text-xs); }
-    .ml-row .pct { font-size: var(--text-sm); }
+    .fight-hero { padding: 16px 14px 14px; }
+    .fight-hero .matchup { font-size: 18px; }
+    .fight-hero .matchup .vs { display: block; margin: 4px 0; font-size: 12px; }
+    .fight-card-body { padding: 4px 14px 16px; }
+    .block-content { padding: 10px 12px; }
+    .ml-row .pct { font-size: 18px; }
+    table.stat th, table.stat td { padding: 7px 4px; font-size: var(--text-xs); }
+    .fight-pager-btn { padding: 7px 10px; font-size: var(--text-xs); }
   }
 
-  .loading { padding: 40px 16px; text-align: center; color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; }
+  .loading { padding: 60px 16px; text-align: center; color: var(--text-muted); font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-sm); }
 </style>
 </head>
 <body>
@@ -187,7 +260,7 @@
 </header>
 
 <main>
-  <div id="fight-list">
+  <div id="fight-content">
     <div class="loading">Loading synopses…</div>
   </div>
 </main>
@@ -210,6 +283,8 @@ function escape(s) {
   return (s == null ? '' : String(s)).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
+let SYNOPSES = null;
+
 function renderModelProjections(mp) {
   if (!mp) return '';
   const f1Fav = mp.modelProb && mp.modelProb.f1 >= mp.modelProb.f2;
@@ -218,33 +293,35 @@ function renderModelProjections(mp) {
   return `
     <div class="block">
       <div class="block-title">Model Projection</div>
-      <div class="ml-row">
-        <div>
-          <div class="name">${escape(mp.f1Short)}</div>
-          <div class="pct ${f1Fav ? 'fav' : ''}">${fmtPct(f1P)}</div>
+      <div class="block-content">
+        <div class="ml-row">
+          <div class="col">
+            <span class="name">${escape(mp.f1Short)}</span>
+            <span class="pct ${f1Fav ? 'fav' : ''}">${fmtPct(f1P)}</span>
+          </div>
+          <div class="vs">vs</div>
+          <div class="col right">
+            <span class="name">${escape(mp.f2Short)}</span>
+            <span class="pct ${!f1Fav ? 'fav' : ''}">${fmtPct(f2P)}</span>
+          </div>
         </div>
-        <div class="vs">vs</div>
-        <div style="text-align:right">
-          <div class="name right">${escape(mp.f2Short)}</div>
-          <div class="pct right ${!f1Fav ? 'fav' : ''}">${fmtPct(f2P)}</div>
+        <div class="pbar">
+          <div class="bar-f1" style="width:${f1P}%"></div>
+          <div class="bar-f2" style="width:${f2P}%"></div>
         </div>
+        <table class="stat">
+          <thead><tr><th>Method</th><th>${escape(mp.f1Short)}</th><th>${escape(mp.f2Short)}</th></tr></thead>
+          <tbody>
+            ${mp.method.map(m => `<tr><td class="label">${escape(m.name)}</td><td class="num">${fmtPct(m.f1)}</td><td class="num">${fmtPct(m.f2)}</td></tr>`).join('')}
+          </tbody>
+        </table>
+        ${mp.decisionPct != null || mp.roundsFinish.length ? `
+          <div class="rounds-line">
+            ${mp.decisionPct != null ? `Goes to decision: <strong>${fmtPct(mp.decisionPct)}</strong>` : ''}
+            ${mp.roundsFinish.length ? '<br>Finish by round: ' + mp.roundsFinish.map(r => `R${r.r} <strong>${fmtPct(r.pct)}</strong>`).join('  ·  ') : ''}
+          </div>
+        ` : ''}
       </div>
-      <div class="pbar">
-        <div class="bar-f1" style="width:${f1P}%"></div>
-        <div class="bar-f2" style="width:${f2P}%"></div>
-      </div>
-      <table class="stat">
-        <thead><tr><th>Method</th><th>${escape(mp.f1Short)}</th><th>${escape(mp.f2Short)}</th></tr></thead>
-        <tbody>
-          ${mp.method.map(m => `<tr><td class="label">${escape(m.name)}</td><td class="num">${fmtPct(m.f1)}</td><td class="num">${fmtPct(m.f2)}</td></tr>`).join('')}
-        </tbody>
-      </table>
-      ${mp.decisionPct != null || mp.roundsFinish.length ? `
-        <div class="rounds-line">
-          ${mp.decisionPct != null ? `Goes to decision: <strong>${fmtPct(mp.decisionPct)}</strong>` : ''}
-          ${mp.roundsFinish.length ? ' · Finish by round: ' + mp.roundsFinish.map(r => `R${r.r} <strong>${fmtPct(r.pct)}</strong>`).join('  ') : ''}
-        </div>
-      ` : ''}
     </div>
   `;
 }
@@ -253,13 +330,15 @@ function renderOverUnder(rows) {
   if (!rows || !rows.length) return '';
   return `
     <div class="block">
-      <div class="block-title">Over/Under (Total Rounds)</div>
-      <table class="stat">
-        <thead><tr><th>Line</th><th>Under</th><th>Over</th></tr></thead>
-        <tbody>
-          ${rows.map(r => `<tr><td class="label">${r.line.toFixed(1)}</td><td class="num">${fmtPct(r.under)}</td><td class="num">${fmtPct(r.over)}</td></tr>`).join('')}
-        </tbody>
-      </table>
+      <div class="block-title">Over / Under — Total Rounds</div>
+      <div class="block-content">
+        <table class="stat">
+          <thead><tr><th>Line</th><th>Under</th><th>Over</th></tr></thead>
+          <tbody>
+            ${rows.map(r => `<tr><td class="label">${r.line.toFixed(1)}</td><td class="num">${fmtPct(r.under)}</td><td class="num">${fmtPct(r.over)}</td></tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
     </div>
   `;
 }
@@ -275,21 +354,23 @@ function renderComposites(comp, f1Short, f2Short) {
   if (!comp || !comp.rows || !comp.rows.length) return '';
   return `
     <div class="block">
-      <div class="block-title">Composites (Z-scores vs Weight Class)</div>
+      <div class="block-title">Composites — Z-scores vs Weight Class</div>
       ${comp.note ? `<div class="block-note">${escape(comp.note)}</div>` : ''}
-      <table class="stat">
-        <thead><tr><th>Composite</th><th>${escape(f1Short)}</th><th>${escape(f2Short)}</th><th>Δ</th></tr></thead>
-        <tbody>
-          ${comp.rows.map(r => `
-            <tr>
-              <td class="label">${escape(r.name)}</td>
-              <td class="num ${colorClass(r.f1)}">${fmtSignedNum(r.f1)}</td>
-              <td class="num ${colorClass(r.f2)}">${fmtSignedNum(r.f2)}</td>
-              <td class="num ${colorClass(r.delta)}">${fmtSignedNum(r.delta)}</td>
-            </tr>
-          `).join('')}
-        </tbody>
-      </table>
+      <div class="block-content">
+        <table class="stat">
+          <thead><tr><th>Composite</th><th>${escape(f1Short)}</th><th>${escape(f2Short)}</th><th>Δ</th></tr></thead>
+          <tbody>
+            ${comp.rows.map(r => `
+              <tr>
+                <td class="label">${escape(r.name)}</td>
+                <td class="num ${colorClass(r.f1)}">${fmtSignedNum(r.f1)}</td>
+                <td class="num ${colorClass(r.f2)}">${fmtSignedNum(r.f2)}</td>
+                <td class="num ${colorClass(r.delta)}">${fmtSignedNum(r.delta)}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
     </div>
   `;
 }
@@ -299,12 +380,14 @@ function renderStyleProfiles(rows, f1Short, f2Short) {
   return `
     <div class="block">
       <div class="block-title">Style Profiles</div>
-      <table class="stat">
-        <thead><tr><th>Style</th><th>${escape(f1Short)}</th><th>${escape(f2Short)}</th></tr></thead>
-        <tbody>
-          ${rows.map(r => `<tr><td class="label">${escape(r.name)}</td><td class="num">${r.f1.toFixed(2)}</td><td class="num">${r.f2.toFixed(2)}</td></tr>`).join('')}
-        </tbody>
-      </table>
+      <div class="block-content">
+        <table class="stat">
+          <thead><tr><th>Style</th><th>${escape(f1Short)}</th><th>${escape(f2Short)}</th></tr></thead>
+          <tbody>
+            ${rows.map(r => `<tr><td class="label">${escape(r.name)}</td><td class="num">${r.f1.toFixed(2)}</td><td class="num">${r.f2.toFixed(2)}</td></tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
     </div>
   `;
 }
@@ -314,27 +397,34 @@ function renderModifiers(rows, f1Short, f2Short) {
   return `
     <div class="block">
       <div class="block-title">Modifiers & Trust</div>
-      <table class="stat">
-        <thead><tr><th>Factor</th><th>${escape(f1Short)}</th><th>${escape(f2Short)}</th></tr></thead>
-        <tbody>
-          ${rows.map(r => `<tr><td class="label">${escape(r.name)}</td><td class="num">${escape(r.f1)}</td><td class="num">${escape(r.f2)}</td></tr>`).join('')}
-        </tbody>
-      </table>
+      <div class="block-content">
+        <table class="stat">
+          <thead><tr><th>Factor</th><th>${escape(f1Short)}</th><th>${escape(f2Short)}</th></tr></thead>
+          <tbody>
+            ${rows.map(r => `<tr><td class="label">${escape(r.name)}</td><td class="num">${escape(r.f1)}</td><td class="num">${escape(r.f2)}</td></tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
     </div>
   `;
 }
 
 function renderMatchupEdges(rows) {
   if (!rows || !rows.length) return '';
+  // Filter out GBM P line per user preference
+  const filtered = rows.filter(r => !/^GBM P\(/.test(r.name));
+  if (!filtered.length) return '';
   return `
     <div class="block">
       <div class="block-title">Matchup Edges</div>
-      <table class="stat">
-        <thead><tr><th>Edge</th><th>Value</th><th>Reads As</th></tr></thead>
-        <tbody>
-          ${rows.map(r => `<tr><td class="label">${escape(r.name)}</td><td class="num">${escape(r.value)}</td><td>${escape(r.reads)}</td></tr>`).join('')}
-        </tbody>
-      </table>
+      <div class="block-content">
+        <table class="stat">
+          <thead><tr><th>Edge</th><th>Value</th><th>Reads As</th></tr></thead>
+          <tbody>
+            ${filtered.map(r => `<tr><td class="label">${escape(r.name)}</td><td class="num">${escape(r.value)}</td><td>${escape(r.reads)}</td></tr>`).join('')}
+          </tbody>
+        </table>
+      </div>
     </div>
   `;
 }
@@ -343,7 +433,7 @@ function renderProfiles(profiles) {
   if (!profiles || !profiles.length) return '';
   return `
     <div class="block">
-      <div class="block-title">Fighter Profiles (UFC + DWCS/RTUF Only)</div>
+      <div class="block-title">Fighter Profiles</div>
       ${profiles.map(p => `
         <div class="profile-card">
           <div class="pname">${escape(p.name)}</div>
@@ -354,27 +444,35 @@ function renderProfiles(profiles) {
   `;
 }
 
-function renderFightCard(fight, idx) {
+function renderFight(fight, idx, total) {
   const id = slugify(`${fight.f1}-vs-${fight.f2}`);
   const mp = fight.sections.modelProjections;
   const f1Short = mp ? mp.f1Short : shortName(fight.f1);
   const f2Short = mp ? mp.f2Short : shortName(fight.f2);
-  const f1P = mp && mp.modelProb ? mp.modelProb.f1 : null;
-  const f2P = mp && mp.modelProb ? mp.modelProb.f2 : null;
-  const f1Fav = f1P != null && f2P != null && f1P >= f2P;
+
+  const prevFight = idx > 0 ? SYNOPSES.fights[idx - 1] : null;
+  const nextFight = idx < total - 1 ? SYNOPSES.fights[idx + 1] : null;
+  const prevId = prevFight ? slugify(`${prevFight.f1}-vs-${prevFight.f2}`) : '';
+  const nextId = nextFight ? slugify(`${nextFight.f1}-vs-${nextFight.f2}`) : '';
+  const prevLabel = prevFight ? `${shortName(prevFight.f1)} vs ${shortName(prevFight.f2)}` : '';
+  const nextLabel = nextFight ? `${shortName(nextFight.f1)} vs ${shortName(nextFight.f2)}` : '';
 
   return `
-    <div class="fight-card" id="${id}" data-idx="${idx}">
-      <button class="fight-card-header" onclick="toggleFight('${id}')" aria-expanded="false">
-        <div>
-          <div class="matchup">${escape(fight.f1)} <span class="vs">vs</span> ${escape(fight.f2)}</div>
-          <div class="meta">${fight.rounds}R · ${escape(fight.division)}${fight.dataMode ? ' · ' + escape(fight.dataMode) : ''}</div>
-        </div>
-        <div class="probs">
-          ${f1P != null ? `<span class="${f1Fav ? 'fav' : ''}">${fmtPct(f1P)}</span> / <span class="${!f1Fav ? 'fav' : ''}">${fmtPct(f2P)}</span>` : ''}
-        </div>
-        <div class="expand-icon">▾</div>
+    <div class="fight-pager">
+      <button class="fight-pager-btn" ${prevFight ? `onclick="goToFight('${prevId}')"` : 'disabled'} title="${escape(prevLabel)}">
+        ←  ${escape(prevLabel || 'Prev')}
       </button>
+      <div class="fight-pager-current">Fight ${idx + 1} of ${total}</div>
+      <button class="fight-pager-btn" ${nextFight ? `onclick="goToFight('${nextId}')"` : 'disabled'} title="${escape(nextLabel)}">
+        ${escape(nextLabel || 'Next')}  →
+      </button>
+    </div>
+
+    <div class="fight-card" id="${id}">
+      <div class="fight-hero">
+        <div class="matchup">${escape(fight.f1)} <span class="vs">vs</span> ${escape(fight.f2)}</div>
+        <div class="meta">${fight.rounds} rounds  ·  ${escape(fight.division)}${fight.dataMode ? '  ·  ' + escape(fight.dataMode) + ' data mode' : ''}</div>
+      </div>
       <div class="fight-card-body">
         ${renderModelProjections(mp)}
         ${renderOverUnder(fight.sections.overUnder)}
@@ -383,49 +481,32 @@ function renderFightCard(fight, idx) {
         ${renderModifiers(fight.sections.modifiers, f1Short, f2Short)}
         ${renderMatchupEdges(fight.sections.matchupEdges)}
         ${renderProfiles(fight.sections.profiles)}
-        <div class="actions">
-          <button onclick="prevFight(${idx})">← Prev</button>
-          <button onclick="collapseAll()">Collapse all</button>
-          <button onclick="nextFight(${idx})">Next →</button>
-        </div>
       </div>
     </div>
   `;
 }
 
-function toggleFight(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  const wasExpanded = el.classList.contains('expanded');
-  el.classList.toggle('expanded');
-  const btn = el.querySelector('.fight-card-header');
-  if (btn) btn.setAttribute('aria-expanded', String(!wasExpanded));
-  if (!wasExpanded) {
-    history.replaceState(null, '', '#' + id);
+function goToFight(id) {
+  location.hash = id;
+}
+
+function renderCurrentFight() {
+  if (!SYNOPSES) return;
+  const hash = location.hash.slice(1);
+  let idx = 0;
+  if (hash) {
+    const foundIdx = SYNOPSES.fights.findIndex(f => slugify(`${f.f1}-vs-${f.f2}`) === hash);
+    if (foundIdx >= 0) idx = foundIdx;
   }
-}
-function expandFight(id) {
-  const el = document.getElementById(id);
-  if (!el) return;
-  el.classList.add('expanded');
-  const btn = el.querySelector('.fight-card-header');
-  if (btn) btn.setAttribute('aria-expanded', 'true');
-  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-function collapseAll() {
-  document.querySelectorAll('.fight-card.expanded').forEach(el => {
-    el.classList.remove('expanded');
-    const btn = el.querySelector('.fight-card-header');
-    if (btn) btn.setAttribute('aria-expanded', 'false');
+  const fight = SYNOPSES.fights[idx];
+  if (!fight) return;
+  document.getElementById('fight-content').innerHTML = renderFight(fight, idx, SYNOPSES.fights.length);
+  // Update dropdown highlighting
+  document.querySelectorAll('.nav-dropdown-item').forEach(a => {
+    const href = a.getAttribute('href') || '';
+    a.classList.toggle('current', href === '#' + slugify(`${fight.f1}-vs-${fight.f2}`));
   });
-}
-function prevFight(idx) {
-  const next = document.querySelector(`.fight-card[data-idx="${idx-1}"]`);
-  if (next) { collapseAll(); expandFight(next.id); }
-}
-function nextFight(idx) {
-  const next = document.querySelector(`.fight-card[data-idx="${idx+1}"]`);
-  if (next) { collapseAll(); expandFight(next.id); }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderNavDropdown(fights) {
@@ -451,12 +532,10 @@ function closeNavDropdown() {
   tab.classList.remove('open');
 }
 
-// Mobile: tap to toggle
 document.addEventListener('DOMContentLoaded', () => {
   const tab = document.getElementById('synopsis-tab');
   tab.addEventListener('click', (e) => {
     if (window.matchMedia('(hover: none)').matches || window.innerWidth <= 720) {
-      // tap toggles
       if (!e.target.closest('.nav-dropdown-menu')) {
         e.preventDefault();
         tab.classList.toggle('open');
@@ -472,40 +551,24 @@ async function loadSynopses() {
   try {
     const res = await fetch('synopses.json?_=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
+    SYNOPSES = await res.json();
+    // Title from data.csv first line
+    try {
+      const csvRes = await fetch('data.csv?_=' + Date.now());
+      const csv = await csvRes.text();
+      const firstLine = csv.split('\n')[0].replace(/^#\s*/, '').trim();
+      if (firstLine) document.getElementById('event-title').textContent = firstLine;
+    } catch (e) { /* keep default */ }
+    document.getElementById('event-meta').textContent = SYNOPSES.generated ? SYNOPSES.generated.replace(/^Generated\s+/, '') : 'Synopses · Yang\'s Model';
 
-    // Header — derive event title from first cardList entry context, or fallback
-    if (data.fights.length) {
-      const titleEl = document.getElementById('event-title');
-      // Pull event title from edge sheet's data.csv header if available, else use generic
-      try {
-        const csvRes = await fetch('data.csv?_=' + Date.now());
-        const csv = await csvRes.text();
-        const firstLine = csv.split('\n')[0].replace(/^#\s*/, '').trim();
-        if (firstLine) titleEl.textContent = firstLine;
-      } catch (e) { /* keep default */ }
-    }
-    document.getElementById('event-meta').textContent = data.generated ? data.generated.replace(/^Generated\s+/, '') : 'Synopses · Yang\'s Model';
-
-    const list = document.getElementById('fight-list');
-    list.innerHTML = data.fights.map((f, idx) => renderFightCard(f, idx)).join('');
-
-    renderNavDropdown(data.fights);
-
-    // Auto-expand fight if hash present
-    if (location.hash) {
-      const id = location.hash.slice(1);
-      setTimeout(() => expandFight(id), 50);
-    }
+    renderNavDropdown(SYNOPSES.fights);
+    renderCurrentFight();
   } catch (e) {
-    document.getElementById('fight-list').innerHTML = `<div class="loading">Failed to load synopses.json — ${escape(e.message)}</div>`;
+    document.getElementById('fight-content').innerHTML = `<div class="loading">Failed to load synopses.json — ${escape(e.message)}</div>`;
   }
 }
 
-window.addEventListener('hashchange', () => {
-  if (location.hash) expandFight(location.hash.slice(1));
-});
-
+window.addEventListener('hashchange', renderCurrentFight);
 loadSynopses();
 </script>
 </body>
