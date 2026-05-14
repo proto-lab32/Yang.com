@@ -665,10 +665,35 @@
 
 <script>
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const API_KEY       = '28a532c686697ab88ff079576c733e35';
+const API_KEY       = 'f375971d6a879485126f8bea70c3027c';
 const BOOK          = 'draftkings';   // change to: fanduel, betmgm, pointsbetus, etc.
-const AUTO_REFRESH  = 10 * 60 * 1000; // 10 minutes in ms
 const SPORT         = 'mma_mixed_martial_arts';
+// Smart schedule: 30 min cadence during fight-night window (Fri 4pm ET → Sat 1am ET,
+// Sat 4pm ET → Sun 1am ET), else 4 hours. Only fires while a tab is open.
+const TIGHT_INTERVAL_MS = 30 * 60 * 1000;
+const RELAX_INTERVAL_MS = 4 * 60 * 60 * 1000;
+function nextRefreshDelayMs() {
+  try {
+    const parts = new Intl.DateTimeFormat('en-US', {
+      timeZone: 'America/New_York',
+      weekday: 'short', hour: 'numeric', hour12: false
+    }).formatToParts(new Date());
+    const day = parts.find(p => p.type === 'weekday').value;
+    let hour = parseInt(parts.find(p => p.type === 'hour').value, 10);
+    if (hour === 24) hour = 0; // some locales emit 24
+    const inFriEve  = (day === 'Fri' && hour >= 16);
+    const inSatEarly = (day === 'Sat' && hour < 1);
+    const inSatEve  = (day === 'Sat' && hour >= 16);
+    const inSunEarly = (day === 'Sun' && hour < 1);
+    return (inFriEve || inSatEarly || inSatEve || inSunEarly) ? TIGHT_INTERVAL_MS : RELAX_INTERVAL_MS;
+  } catch (e) {
+    return RELAX_INTERVAL_MS;
+  }
+}
+function scheduleNextLiveFetch() {
+  const delay = nextRefreshDelayMs();
+  setTimeout(() => { fetchLiveOdds(); scheduleNextLiveFetch(); }, delay);
+}
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Rows that can be live-updated (ML and Totals only)
@@ -1343,7 +1368,7 @@ function showLoadError(msg) {
   populateFightSelect();
   render();
   fetchLiveOdds(); // fetch on load
-  setInterval(fetchLiveOdds, AUTO_REFRESH); // then every 10 min
+  scheduleNextLiveFetch(); // then on smart schedule (30 min on fight nights, 4 hr otherwise)
   initSynopsisNav();
 })();
 
