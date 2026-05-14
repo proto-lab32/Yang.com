@@ -831,12 +831,12 @@ function renderModelProjections(mp, overUnder) {
                 <div class="ou-card">
                   <div class="ou-line">${r.line.toFixed(1)}</div>
                   <div class="ou-split">
-                    <div class="under" style="width:${r.under}%"></div>
                     <div class="over" style="width:${r.over}%"></div>
+                    <div class="under" style="width:${r.under}%"></div>
                   </div>
                   <div class="ou-stats">
-                    <span class="u">U ${fmtPct(r.under)}</span>
                     <span class="o">O ${fmtPct(r.over)}</span>
+                    <span class="u">U ${fmtPct(r.under)}</span>
                   </div>
                 </div>
               `).join('')}
