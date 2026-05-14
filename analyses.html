@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UFC Synopses — Yang's Model</title>
+<script>
+  // Password gate — bounce to landing if not authed (client-side only, not real security)
+  try { if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html'); } catch (e) {}
+</script>
 <style>
   :root {
     /* iOS Light surfaces */

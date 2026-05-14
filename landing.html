@@ -246,11 +246,103 @@
     .top-pick-prop { font-size: 13px; }
     .top-pick-edge { font-size: 17px; }
   }
+
+  /* LOCK SCREEN */
+  .lock-screen {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px 16px;
+  }
+  .lock-card {
+    background: var(--surface);
+    border-radius: 18px;
+    border: 0.5px solid var(--separator);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    padding: 40px 32px 32px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+  }
+  .lock-card .wordmark { font-size: 64px; margin-bottom: 4px; }
+  .lock-card .tagline { font-size: 13px; color: var(--text-secondary); margin-bottom: 28px; }
+  .lock-form { display: flex; flex-direction: column; gap: 10px; }
+  .lock-form input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--separator);
+    background: var(--surface-3);
+    color: var(--text-primary);
+    font: inherit;
+    font-size: 15px;
+    outline: none;
+    text-align: center;
+    letter-spacing: 0.04em;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .lock-form input:focus { border-color: var(--brand); background: var(--surface); }
+  .lock-form input.shake { animation: shake 0.36s; border-color: var(--red); }
+  @keyframes shake {
+    10%, 90% { transform: translateX(-1px); }
+    20%, 80% { transform: translateX(2px); }
+    30%, 50%, 70% { transform: translateX(-4px); }
+    40%, 60% { transform: translateX(4px); }
+  }
+  .lock-form button {
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 10px;
+    border: none;
+    background: var(--brand);
+    color: #ffffff;
+    font: inherit;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.12s, transform 0.12s;
+  }
+  .lock-form button:hover { background: var(--brand-dark); transform: translateY(-1px); }
+  .lock-error {
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--red);
+    visibility: hidden;
+    height: 16px;
+    letter-spacing: 0.01em;
+  }
+  .lock-error.visible { visibility: visible; }
+  .sign-out {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  .sign-out:hover { color: var(--brand); }
+  @media (max-width: 720px) {
+    .lock-card { padding: 32px 22px 24px; }
+    .lock-card .wordmark { font-size: 52px; }
+  }
 </style>
 </head>
 <body>
 
-<main>
+<div class="lock-screen" id="lock-screen" hidden>
+  <div class="lock-card">
+    <h1 class="wordmark">Yang</h1>
+    <div class="tagline">Enter password to continue</div>
+    <form class="lock-form" id="lock-form" autocomplete="off">
+      <input type="password" id="lock-pw" placeholder="Password" autofocus aria-label="Password">
+      <button type="submit">Unlock</button>
+    </form>
+    <div class="lock-error" id="lock-error">Incorrect password</div>
+  </div>
+</div>
+
+<main id="site-content" hidden>
   <div class="hero">
     <h1 class="wordmark">Yang</h1>
     <div class="tagline">UFC fight betting edges, weekly</div>
@@ -279,9 +371,53 @@
   </div>
 
   <div class="footer-note">
-    Updated weekly · <a href="https://github.com/proto-lab32/Yang.com">source</a>
+    Updated weekly · <a href="#" id="sign-out" class="sign-out">Sign out</a>
   </div>
 </main>
+
+<script>
+// ─── PASSWORD GATE ────────────────────────────────────────────────────────────
+const APP_PW = 'yang32';
+const AUTH_KEY = 'yangmma_auth';
+function isAuthed() { return localStorage.getItem(AUTH_KEY) === '1'; }
+function setAuthed(v) {
+  if (v) localStorage.setItem(AUTH_KEY, '1');
+  else localStorage.removeItem(AUTH_KEY);
+}
+function showSite() {
+  document.getElementById('lock-screen').hidden = true;
+  document.getElementById('site-content').hidden = false;
+  load();
+}
+function showLock() {
+  document.getElementById('lock-screen').hidden = false;
+  document.getElementById('site-content').hidden = true;
+  setTimeout(() => { const i = document.getElementById('lock-pw'); if (i) i.focus(); }, 0);
+}
+document.getElementById('lock-form').addEventListener('submit', e => {
+  e.preventDefault();
+  const inp = document.getElementById('lock-pw');
+  const err = document.getElementById('lock-error');
+  if (inp.value === APP_PW) {
+    setAuthed(true);
+    err.classList.remove('visible');
+    showSite();
+  } else {
+    err.classList.add('visible');
+    inp.classList.add('shake');
+    setTimeout(() => inp.classList.remove('shake'), 360);
+    inp.select();
+  }
+});
+document.getElementById('sign-out').addEventListener('click', e => {
+  e.preventDefault();
+  setAuthed(false);
+  document.getElementById('lock-pw').value = '';
+  showLock();
+});
+if (isAuthed()) showSite(); else showLock();
+
+</script>
 
 <script>
 function parseCSVLine(line) {
