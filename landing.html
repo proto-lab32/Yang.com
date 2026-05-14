@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>yangmma — UFC Edge Reports</title>
+<title>Yang — UFC Edge Reports</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #f2f2f7;
@@ -36,12 +39,14 @@
   main { max-width: 760px; margin: 0 auto; padding: 28px 16px 80px; }
 
   /* HERO */
-  .hero { text-align: center; padding: 32px 8px 36px; }
+  .hero { text-align: center; padding: 40px 8px 40px; }
   .wordmark {
-    font-size: 56px;
-    font-weight: 800;
-    letter-spacing: -0.045em;
+    font-family: 'Orbitron', 'Eurostile', 'Bank Gothic', sans-serif;
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
     line-height: 1;
+    text-transform: uppercase;
     background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -93,7 +98,7 @@
 
   .stats-row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1px;
     background: var(--separator);
   }
@@ -232,7 +237,7 @@
   @media (max-width: 720px) {
     main { padding: 18px 12px 60px; }
     .hero { padding: 18px 8px 28px; }
-    .wordmark { font-size: 42px; }
+    .wordmark { font-size: 72px; letter-spacing: 0.03em; }
     .tagline { font-size: 14px; }
     .event-name { font-size: 18px; }
     .stat-value { font-size: 22px; }
@@ -247,7 +252,7 @@
 
 <main>
   <div class="hero">
-    <h1 class="wordmark">yangmma</h1>
+    <h1 class="wordmark">Yang</h1>
     <div class="tagline">UFC fight betting edges, weekly</div>
     <div class="tagline-sub">Yang's Model · Live Odds · Per-Fight Synopses</div>
   </div>
@@ -258,10 +263,6 @@
       <div class="event-meta" id="event-meta">—</div>
     </div>
     <div class="stats-row">
-      <div class="stat-cell">
-        <div class="stat-value" id="stat-fights">—</div>
-        <div class="stat-label">Fights</div>
-      </div>
       <div class="stat-cell">
         <div class="stat-value green" id="stat-edges">—</div>
         <div class="stat-label">+Edges</div>
@@ -274,13 +275,6 @@
     <div class="cta-row">
       <a href="./" class="cta-btn primary">View Edges <span class="arrow">→</span></a>
       <a href="analyses.html" class="cta-btn secondary">Read Synopses <span class="arrow">→</span></a>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-title">⚡ Top Picks This Week</div>
-    <div class="top-picks-list" id="top-picks">
-      <div class="loading-mini">Loading…</div>
     </div>
   </div>
 
@@ -324,7 +318,6 @@ async function load() {
     csv = await res.text();
   } catch (e) {
     document.getElementById('event-name').textContent = 'No event data';
-    document.getElementById('top-picks').innerHTML = '<div class="loading-mini">data.csv unavailable</div>';
     return;
   }
 
@@ -381,32 +374,8 @@ async function load() {
   const bestEdge = rows.reduce((m, r) => (typeof r.edge === 'number' && r.edge > m) ? r.edge : m, 0);
 
   document.getElementById('event-meta').textContent = `${fightCount} fights · Yang's Model`;
-  document.getElementById('stat-fights').textContent = fightCount;
   document.getElementById('stat-edges').textContent = posEdges;
   document.getElementById('stat-best').textContent = bestEdge ? '+' + bestEdge.toFixed(1) + '%' : '—';
-
-  // Top picks (top 5 edges)
-  const top = rows
-    .filter(r => typeof r.edge === 'number' && r.edge > 0 && r.f1)
-    .sort((a, b) => b.edge - a.edge)
-    .slice(0, 5);
-
-  const tp = document.getElementById('top-picks');
-  if (!top.length) {
-    tp.innerHTML = '<div class="loading-mini">No positive edges</div>';
-    return;
-  }
-  tp.innerHTML = top.map((r, idx) => {
-    const slug = slugify(`${r.f1}-vs-${r.f2}`);
-    return `<a class="top-pick" href="analyses.html#${slug}">
-      <div class="top-pick-rank">#${idx + 1}</div>
-      <div class="top-pick-body">
-        <div class="top-pick-prop">${escapeHtml(r.prop)}</div>
-        <div class="top-pick-meta">${escapeHtml(lastName(r.f1))} vs ${escapeHtml(lastName(r.f2))} · ${escapeHtml(r.cat)}</div>
-      </div>
-      <div class="top-pick-edge ${tierClass(r.edge)}">+${r.edge.toFixed(1)}%</div>
-    </a>`;
-  }).join('');
 }
 
 load();
