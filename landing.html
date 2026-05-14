@@ -3,27 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yang — UFC Edge Reports</title>
+<title>Yang</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
+<script>
+  // If ?signout=1 → clear auth and stay on the lock screen.
+  // Otherwise, if already authed → go straight to the Edges page.
+  try {
+    const params = new URLSearchParams(location.search);
+    if (params.get('signout') === '1') {
+      localStorage.removeItem('yangmma_auth');
+      history.replaceState(null, '', location.pathname);
+    } else if (localStorage.getItem('yangmma_auth') === '1') {
+      location.replace('./');
+    }
+  } catch (e) {}
+</script>
 <style>
   :root {
     --bg: #f2f2f7;
     --surface: #ffffff;
-    --surface-2: #f9f9fb;
     --surface-3: #efeff4;
     --separator: #e5e5ea;
     --text-primary: #1c1c1e;
     --text-secondary: #3c3c43;
     --text-muted: #8e8e93;
     --brand: #007aff;
-    --brand-soft: rgba(0, 122, 255, 0.10);
     --brand-dark: #0056b3;
-    --green: #34c759;
-    --green-strong: #248a3d;
     --red: #ff3b30;
-    --orange: #ff9500;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body {
@@ -36,218 +44,6 @@
     text-rendering: optimizeLegibility;
   }
 
-  main { max-width: 760px; margin: 0 auto; padding: 28px 16px 80px; }
-
-  /* HERO */
-  .hero { text-align: center; padding: 40px 8px 40px; }
-  .wordmark {
-    font-family: 'Orbitron', 'Eurostile', 'Bank Gothic', sans-serif;
-    font-size: 96px;
-    font-weight: 900;
-    letter-spacing: 0.04em;
-    line-height: 1;
-    text-transform: uppercase;
-    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--brand);
-  }
-  .tagline {
-    font-size: 16px;
-    color: var(--text-secondary);
-    margin-top: 10px;
-    letter-spacing: -0.01em;
-  }
-  .tagline-sub {
-    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-    letter-spacing: 0.06em;
-    margin-top: 6px;
-    text-transform: uppercase;
-  }
-
-  /* EVENT CARD */
-  .event-card {
-    background: var(--surface);
-    border-radius: 16px;
-    border: 0.5px solid var(--separator);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    overflow: hidden;
-  }
-  .event-card-header {
-    padding: 20px 22px 18px;
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.08), rgba(0, 122, 255, 0.02));
-    border-bottom: 0.5px solid var(--separator);
-  }
-  .event-name {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 1.2;
-  }
-  .event-meta {
-    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-    letter-spacing: 0.04em;
-    margin-top: 6px;
-    text-transform: uppercase;
-  }
-
-  .stats-row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    background: var(--separator);
-  }
-  .stat-cell {
-    background: var(--surface);
-    padding: 18px 12px 16px;
-    text-align: center;
-  }
-  .stat-value {
-    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    font-variant-numeric: tabular-nums;
-    line-height: 1;
-  }
-  .stat-value.brand { color: var(--brand); }
-  .stat-value.green { color: var(--green-strong); }
-  .stat-label {
-    font-size: 10px;
-    font-weight: 600;
-    color: var(--text-muted);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-top: 6px;
-  }
-
-  .cta-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 14px 16px 16px;
-  }
-  .cta-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    padding: 14px 16px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    transition: transform 0.12s, box-shadow 0.12s, opacity 0.12s;
-  }
-  .cta-btn:hover { transform: translateY(-1px); }
-  .cta-btn.primary { background: var(--brand); color: #ffffff; box-shadow: 0 2px 8px rgba(0, 122, 255, 0.25); }
-  .cta-btn.primary:hover { box-shadow: 0 4px 14px rgba(0, 122, 255, 0.32); }
-  .cta-btn.secondary { background: var(--surface-3); color: var(--text-primary); }
-  .cta-btn.secondary:hover { background: var(--separator); }
-  .cta-btn .arrow { display: inline-block; transition: transform 0.12s; }
-  .cta-btn:hover .arrow { transform: translateX(2px); }
-
-  /* TOP PICKS */
-  .section { margin-top: 36px; }
-  .section-title {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--text-muted);
-    margin-bottom: 12px;
-    padding: 0 4px;
-  }
-  .top-picks-list {
-    background: var(--surface);
-    border-radius: 14px;
-    border: 0.5px solid var(--separator);
-    overflow: hidden;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-  }
-  .top-pick {
-    display: grid;
-    grid-template-columns: 30px 1fr auto;
-    align-items: center;
-    gap: 14px;
-    padding: 14px 18px;
-    border-bottom: 0.5px solid var(--separator);
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    transition: background 0.12s;
-  }
-  .top-pick:last-child { border-bottom: none; }
-  .top-pick:hover { background: var(--surface-3); }
-  .top-pick-rank {
-    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--text-muted);
-    letter-spacing: 0.04em;
-    text-align: center;
-  }
-  .top-pick-body { min-width: 0; }
-  .top-pick-prop {
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .top-pick-meta {
-    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-    margin-top: 3px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .top-pick-edge {
-    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-    font-size: 19px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    font-variant-numeric: tabular-nums;
-  }
-  .top-pick-edge.tier-3 { color: var(--green-strong); }
-  .top-pick-edge.tier-2 { color: var(--green); }
-  .top-pick-edge.tier-1 { color: #5cc46d; }
-
-  .footer-note {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 11px;
-    color: var(--text-muted);
-    letter-spacing: 0.04em;
-    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-  }
-  .footer-note a { color: var(--brand); text-decoration: none; }
-
-  .loading-mini { padding: 24px; text-align: center; color: var(--text-muted); font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 12px; }
-
-  @media (max-width: 720px) {
-    main { padding: 18px 12px 60px; }
-    .hero { padding: 18px 8px 28px; }
-    .wordmark { font-size: 72px; letter-spacing: 0.03em; }
-    .tagline { font-size: 14px; }
-    .event-name { font-size: 18px; }
-    .stat-value { font-size: 22px; }
-    .cta-btn { padding: 12px 14px; font-size: 14px; }
-    .top-pick { padding: 12px 14px; gap: 10px; }
-    .top-pick-prop { font-size: 13px; }
-    .top-pick-edge { font-size: 17px; }
-  }
-
-  /* LOCK SCREEN */
   .lock-screen {
     min-height: 100vh;
     display: flex; align-items: center; justify-content: center;
@@ -258,13 +54,31 @@
     border-radius: 18px;
     border: 0.5px solid var(--separator);
     box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    padding: 40px 32px 32px;
+    padding: 48px 32px 36px;
     width: 100%;
     max-width: 380px;
     text-align: center;
   }
-  .lock-card .wordmark { font-size: 64px; margin-bottom: 4px; }
-  .lock-card .tagline { font-size: 13px; color: var(--text-secondary); margin-bottom: 28px; }
+  .wordmark {
+    font-family: 'Orbitron', 'Eurostile', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--brand);
+    margin-bottom: 4px;
+  }
+  .tagline {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
+  }
   .lock-form { display: flex; flex-direction: column; gap: 10px; }
   .lock-form input {
     width: 100%;
@@ -311,26 +125,16 @@
     letter-spacing: 0.01em;
   }
   .lock-error.visible { visibility: visible; }
-  .sign-out {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 11px;
-    color: var(--text-muted);
-    text-decoration: none;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
-  }
-  .sign-out:hover { color: var(--brand); }
+
   @media (max-width: 720px) {
-    .lock-card { padding: 32px 22px 24px; }
-    .lock-card .wordmark { font-size: 52px; }
+    .lock-card { padding: 36px 22px 26px; }
+    .wordmark { font-size: 64px; }
   }
 </style>
 </head>
 <body>
 
-<div class="lock-screen" id="lock-screen" hidden>
+<div class="lock-screen">
   <div class="lock-card">
     <h1 class="wordmark">Yang</h1>
     <div class="tagline">Enter password to continue</div>
@@ -342,66 +146,15 @@
   </div>
 </div>
 
-<main id="site-content" hidden>
-  <div class="hero">
-    <h1 class="wordmark">Yang</h1>
-    <div class="tagline">UFC fight betting edges, weekly</div>
-    <div class="tagline-sub">Yang's Model · Live Odds · Per-Fight Synopses</div>
-  </div>
-
-  <div class="event-card">
-    <div class="event-card-header">
-      <div class="event-name" id="event-name">Loading event…</div>
-      <div class="event-meta" id="event-meta">—</div>
-    </div>
-    <div class="stats-row">
-      <div class="stat-cell">
-        <div class="stat-value green" id="stat-edges">—</div>
-        <div class="stat-label">+Edges</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-value brand" id="stat-best">—</div>
-        <div class="stat-label">Best Edge</div>
-      </div>
-    </div>
-    <div class="cta-row">
-      <a href="./" class="cta-btn primary">View Edges <span class="arrow">→</span></a>
-      <a href="analyses.html" class="cta-btn secondary">Read Synopses <span class="arrow">→</span></a>
-    </div>
-  </div>
-
-  <div class="footer-note">
-    Updated weekly · <a href="#" id="sign-out" class="sign-out">Sign out</a>
-  </div>
-</main>
-
 <script>
-// ─── PASSWORD GATE ────────────────────────────────────────────────────────────
 const APP_PW = 'yang32';
-const AUTH_KEY = 'yangmma_auth';
-function isAuthed() { return localStorage.getItem(AUTH_KEY) === '1'; }
-function setAuthed(v) {
-  if (v) localStorage.setItem(AUTH_KEY, '1');
-  else localStorage.removeItem(AUTH_KEY);
-}
-function showSite() {
-  document.getElementById('lock-screen').hidden = true;
-  document.getElementById('site-content').hidden = false;
-  load();
-}
-function showLock() {
-  document.getElementById('lock-screen').hidden = false;
-  document.getElementById('site-content').hidden = true;
-  setTimeout(() => { const i = document.getElementById('lock-pw'); if (i) i.focus(); }, 0);
-}
 document.getElementById('lock-form').addEventListener('submit', e => {
   e.preventDefault();
   const inp = document.getElementById('lock-pw');
   const err = document.getElementById('lock-error');
   if (inp.value === APP_PW) {
-    setAuthed(true);
-    err.classList.remove('visible');
-    showSite();
+    try { localStorage.setItem('yangmma_auth', '1'); } catch (_) {}
+    location.replace('./');
   } else {
     err.classList.add('visible');
     inp.classList.add('shake');
@@ -409,117 +162,6 @@ document.getElementById('lock-form').addEventListener('submit', e => {
     inp.select();
   }
 });
-document.getElementById('sign-out').addEventListener('click', e => {
-  e.preventDefault();
-  setAuthed(false);
-  document.getElementById('lock-pw').value = '';
-  showLock();
-});
-if (isAuthed()) showSite(); else showLock();
-
-</script>
-
-<script>
-function parseCSVLine(line) {
-  const out = []; let cur = '', q = false;
-  for (let i = 0; i < line.length; i++) {
-    const c = line[i];
-    if (c === '"') {
-      if (q && line[i+1] === '"') { cur += '"'; i++; }
-      else q = !q;
-    } else if (c === ',' && !q) { out.push(cur); cur = ''; }
-    else cur += c;
-  }
-  out.push(cur);
-  return out;
-}
-function escapeHtml(s) {
-  return (s == null ? '' : String(s)).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-function slugify(s) {
-  return s.toLowerCase().replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'-');
-}
-function lastName(n) { const p = n.trim().split(/\s+/); return p[p.length-1]; }
-function tierClass(edge) {
-  if (edge >= 20) return 'tier-3';
-  if (edge >= 10) return 'tier-2';
-  return 'tier-1';
-}
-
-async function load() {
-  let csv;
-  try {
-    const res = await fetch('data.csv?_=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    csv = await res.text();
-  } catch (e) {
-    document.getElementById('event-name').textContent = 'No event data';
-    return;
-  }
-
-  csv = csv.replace(/^﻿/, '');
-  const lines = csv.split(/\r?\n/).filter(Boolean);
-  let i = 0;
-  if (lines[i].startsWith('#')) {
-    document.getElementById('event-name').textContent = lines[i].replace(/^#\s*/, '').trim();
-    i++;
-  } else {
-    document.getElementById('event-name').textContent = 'Current event';
-  }
-  const headers = parseCSVLine(lines[i++]).map(h => h.replace(/^﻿/, '').trim().toLowerCase());
-  const HEADERS = {
-    fid:    ['fightid', 'fid', 'fight id', 'fight_id'],
-    cat:    ['market', 'cat', 'category'],
-    prop:   ['selection', 'prop'],
-    prob:   ['yang probability', 'prob', 'model_prob', 'model prob', 'yang prob'],
-    market: ['market probability', 'market_prob', 'market prob']
-  };
-  const colIdx = {};
-  for (const field of Object.keys(HEADERS)) {
-    for (const name of HEADERS[field]) {
-      const j = headers.indexOf(name);
-      if (j >= 0) { colIdx[field] = j; break; }
-    }
-  }
-  const stripPct = v => v == null ? null : parseFloat(String(v).replace(/%/g, '').trim());
-
-  const rows = [];
-  for (; i < lines.length; i++) {
-    const c = parseCSVLine(lines[i]);
-    rows.push({
-      fid: c[colIdx.fid] || '',
-      cat: c[colIdx.cat] || '',
-      prop: c[colIdx.prop] || '',
-      prob: stripPct(c[colIdx.prob]),
-      market: stripPct(c[colIdx.market])
-    });
-  }
-  // Compute edges + Moneyline fighters per fid
-  const fighters = {};
-  for (const r of rows) {
-    if (r.cat === 'Moneyline' && r.prop) {
-      if (!fighters[r.fid]) fighters[r.fid] = [];
-      if (fighters[r.fid].length < 2 && !fighters[r.fid].includes(r.prop)) fighters[r.fid].push(r.prop);
-    }
-  }
-  rows.forEach(r => {
-    r.edge = (r.prob != null && r.market != null) ? r.prob - r.market : null;
-    const fs = fighters[r.fid] || [];
-    r.f1 = fs[0] || '';
-    r.f2 = fs[1] || '';
-  });
-
-  // Stats
-  const fightCount = Object.keys(fighters).length;
-  const posEdges = rows.filter(r => typeof r.edge === 'number' && r.edge > 0).length;
-  const bestEdge = rows.reduce((m, r) => (typeof r.edge === 'number' && r.edge > m) ? r.edge : m, 0);
-
-  document.getElementById('event-meta').textContent = `${fightCount} fights · Yang's Model`;
-  document.getElementById('stat-edges').textContent = posEdges;
-  document.getElementById('stat-best').textContent = bestEdge ? '+' + bestEdge.toFixed(1) + '%' : '—';
-}
-
-load();
 </script>
 </body>
 </html>
