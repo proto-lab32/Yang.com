@@ -554,7 +554,7 @@ function parseDataCsv(text) {
   return byFight;
 }
 
-function renderModelProjections(mp) {
+function renderModelProjections(mp, overUnder) {
   if (!mp) return '';
   const f1Fav = mp.modelProb && mp.modelProb.f1 >= mp.modelProb.f2;
   const f1P = mp.modelProb ? mp.modelProb.f1 : 50;
@@ -579,34 +579,25 @@ function renderModelProjections(mp) {
           <div class="bar-f2" style="width:${f2P}%"></div>
         </div>
         <table class="stat">
-          <thead><tr><th>Method</th><th>${escape(mp.f1Short)}</th><th>${escape(mp.f2Short)}</th></tr></thead>
+          <thead><tr><th>Method of Victory</th><th>${escape(mp.f1Short)}</th><th>${escape(mp.f2Short)}</th></tr></thead>
           <tbody>
             ${mp.method.map(m => `<tr><td class="label">${escape(m.name)}</td><td class="num">${fmtPct(m.f1)}</td><td class="num">${fmtPct(m.f2)}</td></tr>`).join('')}
           </tbody>
         </table>
+        ${overUnder && overUnder.length ? `
+          <table class="stat" style="margin-top:10px">
+            <thead><tr><th>Total Rounds</th><th>Under</th><th>Over</th></tr></thead>
+            <tbody>
+              ${overUnder.map(r => `<tr><td class="label">${r.line.toFixed(1)}</td><td class="num">${fmtPct(r.under)}</td><td class="num">${fmtPct(r.over)}</td></tr>`).join('')}
+            </tbody>
+          </table>
+        ` : ''}
         ${mp.decisionPct != null || mp.roundsFinish.length ? `
           <div class="rounds-line">
             ${mp.decisionPct != null ? `Goes to decision: <strong>${fmtPct(mp.decisionPct)}</strong>` : ''}
             ${mp.roundsFinish.length ? '<br>Finish by round: ' + mp.roundsFinish.map(r => `R${r.r} <strong>${fmtPct(r.pct)}</strong>`).join('  ·  ') : ''}
           </div>
         ` : ''}
-      </div>
-    </div>
-  `;
-}
-
-function renderOverUnder(rows) {
-  if (!rows || !rows.length) return '';
-  return `
-    <div class="block">
-      <div class="block-title">Over / Under — Total Rounds</div>
-      <div class="block-content">
-        <table class="stat">
-          <thead><tr><th>Line</th><th>Under</th><th>Over</th></tr></thead>
-          <tbody>
-            ${rows.map(r => `<tr><td class="label">${r.line.toFixed(1)}</td><td class="num">${fmtPct(r.under)}</td><td class="num">${fmtPct(r.over)}</td></tr>`).join('')}
-          </tbody>
-        </table>
       </div>
     </div>
   `;
@@ -841,8 +832,7 @@ function renderProfiles(profiles) {
 
 function renderTechnical(fight, f1Short, f2Short) {
   const mods = fight.sections.modifiers;
-  const ou = fight.sections.overUnder;
-  if ((!mods || !mods.length) && (!ou || !ou.length)) return '';
+  if (!mods || !mods.length) return '';
   return `
     <div class="technical" id="technical-${slugify(`${fight.f1}-vs-${fight.f2}`)}">
       <button class="technical-header" onclick="toggleTechnical(this)">
@@ -851,7 +841,6 @@ function renderTechnical(fight, f1Short, f2Short) {
       </button>
       <div class="technical-body">
         ${renderModifiers(mods, f1Short, f2Short)}
-        ${renderOverUnder(ou)}
       </div>
     </div>
   `;
@@ -888,7 +877,7 @@ function renderFight(fight, idx, total) {
         <div class="meta">${fight.rounds} rounds  ·  ${escape(fight.division)}${fight.dataMode ? '  ·  ' + escape(fight.dataMode) + ' data mode' : ''}</div>
       </div>
       <div class="fight-card-body">
-        ${renderModelProjections(mp)}
+        ${renderModelProjections(mp, fight.sections.overUnder)}
         ${renderPropEdges(fight)}
         ${renderMatchupEdges(fight.sections.matchupEdges)}
         ${renderComposites(fight.sections.composites, f1Short, f2Short)}
