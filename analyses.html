@@ -951,12 +951,17 @@ function renderPropEdges(fight) {
       <div class="prop-edges-empty">No prop edges available for this fight in data.csv.</div>
     </div>`;
   }
-  // Top 6 positive edges by magnitude
+  // Top positive edges only (largest first, max 6)
   const top = edges
-    .filter(e => e.edge != null && !isNaN(e.edge))
-    .sort((a, b) => (b.edge ?? -Infinity) - (a.edge ?? -Infinity))
+    .filter(e => typeof e.edge === 'number' && !isNaN(e.edge) && e.edge > 0)
+    .sort((a, b) => b.edge - a.edge)
     .slice(0, 6);
-  if (!top.length) return '';
+  if (!top.length) {
+    return `<div class="block">
+      <div class="block-title">Prop Edges (Yang vs Market)</div>
+      <div class="prop-edges-empty">No positive edges for this fight.</div>
+    </div>`;
+  }
   return `
     <div class="block">
       <div class="block-title">Prop Edges (Yang vs Market)</div>
