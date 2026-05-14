@@ -220,6 +220,196 @@
   .profile-card .pname { font-weight: 700; font-size: var(--text-md); letter-spacing: -0.01em; margin-bottom: 6px; }
   .profile-card .pline { font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.5; margin-top: 4px; }
   .profile-card .pline.recent { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xs); color: var(--text-muted); }
+  .profile-card .recent-label { font-size: 10px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-top: 8px; margin-bottom: 6px; }
+  .recent-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+  .recent-chip {
+    display: inline-flex; align-items: center; gap: 4px;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 10.5px; font-weight: 600;
+    padding: 3px 8px; border-radius: 6px;
+    letter-spacing: 0.01em;
+    border: 0.5px solid transparent;
+    white-space: nowrap;
+  }
+  .recent-chip.win { background: rgba(52, 199, 89, 0.14); color: var(--green-strong); border-color: rgba(52, 199, 89, 0.30); }
+  .recent-chip.loss { background: rgba(255, 59, 48, 0.10); color: var(--red); border-color: rgba(255, 59, 48, 0.28); }
+  .recent-chip.draw { background: var(--surface-3); color: var(--text-muted); border-color: var(--separator); }
+  .recent-chip .vs-name { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif; font-weight: 500; opacity: 0.85; }
+
+  /* PROP EDGES — top-bets card grid for the current fight */
+  .prop-edges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 8px;
+  }
+  .prop-edge-card {
+    background: var(--surface);
+    border: 0.5px solid var(--separator);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    display: flex; flex-direction: column;
+  }
+  .prop-edge-cat {
+    font-size: 9px; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--brand);
+    background: var(--brand-soft);
+    padding: 1px 6px;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-bottom: 5px;
+  }
+  .prop-edge-name {
+    font-size: var(--text-sm); font-weight: 600;
+    line-height: 1.3; letter-spacing: -0.01em;
+    margin-bottom: 6px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 34px;
+  }
+  .prop-edge-bar { height: 5px; background: var(--surface-3); border-radius: 3px; overflow: hidden; margin-bottom: 6px; }
+  .prop-edge-bar-fill { height: 100%; border-radius: 3px; }
+  .prop-edge-bar-fill.tier-3 { background: var(--green-strong); }
+  .prop-edge-bar-fill.tier-2 { background: var(--green); }
+  .prop-edge-bar-fill.tier-1 { background: #5cc46d; }
+  .prop-edge-bar-fill.tier-neg-2 { background: var(--red); }
+  .prop-edge-bar-fill.tier-neg-1 { background: #ffb1a8; }
+  .prop-edge-stats { display: flex; justify-content: space-between; align-items: baseline; margin-top: auto; }
+  .prop-edge-probs {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 10.5px; color: var(--text-muted);
+  }
+  .prop-edge-probs strong { color: var(--text-primary); font-weight: 600; }
+  .prop-edge-value {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 17px; font-weight: 700;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+  }
+  .prop-edge-value.tier-3 { color: var(--green-strong); }
+  .prop-edge-value.tier-2 { color: var(--green); }
+  .prop-edge-value.tier-1 { color: #5cc46d; }
+  .prop-edge-value.tier-neg-2 { color: var(--red); }
+  .prop-edge-value.tier-neg-1 { color: #b87a73; }
+  .prop-edges-empty { padding: 14px; text-align: center; color: var(--text-muted); font-size: var(--text-xs); }
+
+  /* COMPOSITES BAR-PAIR (diverging from center, signed z) */
+  .composites-list { display: flex; flex-direction: column; gap: 10px; }
+  .comp-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr 50px;
+    gap: 10px;
+    align-items: center;
+    font-size: var(--text-xs);
+  }
+  .comp-label { color: var(--text-secondary); font-weight: 500; }
+  .comp-axis {
+    position: relative;
+    height: 14px;
+    background: linear-gradient(to right, transparent calc(50% - 0.5px), var(--separator-strong) calc(50% - 0.5px), var(--separator-strong) calc(50% + 0.5px), transparent calc(50% + 0.5px));
+  }
+  .comp-bar {
+    position: absolute; top: 3px; height: 8px;
+    border-radius: 2px;
+  }
+  .comp-bar.pos { background: var(--green); left: 50%; }
+  .comp-bar.neg { background: var(--red); right: 50%; }
+  .comp-val {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 11px;
+  }
+  .comp-delta {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    font-weight: 700;
+    font-size: var(--text-xs);
+  }
+  .comp-delta.pos { color: var(--green-strong); }
+  .comp-delta.neg { color: var(--red); }
+  .comp-header {
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr 50px;
+    gap: 10px;
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 0.5px solid var(--separator);
+  }
+  .comp-header div:nth-child(2), .comp-header div:nth-child(3) { text-align: center; }
+  .comp-header div:last-child { text-align: right; }
+
+  /* STYLE PROFILES — side-by-side bars (0–1 values, no center) */
+  .style-list { display: flex; flex-direction: column; gap: 9px; }
+  .style-row {
+    display: grid;
+    grid-template-columns: 110px 1fr 32px 1fr 32px;
+    gap: 8px;
+    align-items: center;
+    font-size: var(--text-xs);
+  }
+  .style-label { color: var(--text-secondary); font-weight: 500; }
+  .style-bar-wrap { height: 8px; background: var(--surface); border-radius: 2px; overflow: hidden; border: 0.5px solid var(--separator); }
+  .style-bar-wrap.right { display: flex; justify-content: flex-end; }
+  .style-bar { height: 100%; border-radius: 1px; }
+  .style-bar.f1 { background: var(--brand); }
+  .style-bar.f2 { background: var(--text-muted); }
+  .style-val {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 10.5px;
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  .style-val.left { text-align: right; }
+  .style-val.right { text-align: left; }
+  .style-header {
+    display: grid;
+    grid-template-columns: 110px 1fr auto 1fr;
+    gap: 8px;
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 0.5px solid var(--separator);
+  }
+  .style-header .l { text-align: right; }
+  .style-header .r { text-align: left; }
+  .style-header .c { padding: 0 4px; }
+
+  /* TECHNICAL EXPANDER */
+  .technical {
+    margin-top: 18px;
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 0.5px solid var(--separator);
+    overflow: hidden;
+  }
+  .technical-header {
+    padding: 12px 14px;
+    background: var(--surface);
+    border: none;
+    width: 100%; text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: var(--text-primary);
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: var(--text-xs); font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .technical-header:hover { background: var(--surface-3); }
+  .technical-header .caret { font-size: 11px; transition: transform 0.2s; }
+  .technical.open .technical-header .caret { transform: rotate(180deg); }
+  .technical-body { display: none; padding: 4px 14px 14px; }
+  .technical.open .technical-body { display: block; }
 
   /* Mobile */
   @media (max-width: 720px) {
@@ -236,6 +426,13 @@
     .ml-row .pct { font-size: 18px; }
     table.stat th, table.stat td { padding: 7px 4px; font-size: var(--text-xs); }
     .fight-pager-btn { padding: 7px 10px; font-size: var(--text-xs); }
+    .prop-edges-grid { grid-template-columns: 1fr; gap: 6px; }
+    .comp-row { grid-template-columns: 80px 1fr 1fr 44px; gap: 8px; font-size: 10.5px; }
+    .comp-header { grid-template-columns: 80px 1fr 1fr 44px; gap: 8px; }
+    .style-row { grid-template-columns: 90px 1fr 28px 1fr 28px; gap: 6px; }
+    .style-header { grid-template-columns: 90px 1fr auto 1fr; gap: 6px; }
+    .recent-chip { font-size: 9.5px; padding: 2px 6px; }
+    .recent-chip .vs-name { display: none; }
   }
 
   .loading { padding: 60px 16px; text-align: center; color: var(--text-muted); font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-sm); }
@@ -284,6 +481,78 @@ function escape(s) {
 }
 
 let SYNOPSES = null;
+let PROP_EDGES = null;  // Map: lowercased "f1 vs f2" or "f2 vs f1" → [{cat, prop, prob, market, edge}, …]
+
+function normKey(a, b) {
+  return [a, b].map(s => s.toLowerCase().trim()).sort().join('::');
+}
+function parseCSVLine(line) {
+  const out = [];
+  let cur = '', q = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (c === '"') {
+      if (q && line[i+1] === '"') { cur += '"'; i++; }
+      else q = !q;
+    } else if (c === ',' && !q) { out.push(cur); cur = ''; }
+    else cur += c;
+  }
+  out.push(cur);
+  return out;
+}
+function parseDataCsv(text) {
+  // Strip BOM
+  text = text.replace(/^﻿/, '');
+  const lines = text.split(/\r?\n/).filter(Boolean);
+  // First line may be "# Event Title"
+  let i = 0;
+  if (lines[i].startsWith('#')) i++;
+  // Header row
+  const headers = parseCSVLine(lines[i++]).map(h => h.replace(/^﻿/, '').trim().toLowerCase());
+  const aliases = {
+    'fightid': 'fid', 'fid': 'fid',
+    'market': 'cat', 'cat': 'cat',
+    'selection': 'prop', 'prop': 'prop',
+    'yang probability': 'prob', 'prob': 'prob',
+    'market probability': 'market', 'market': 'market',
+    'f1': 'f1', 'f2': 'f2'
+  };
+  const colIdx = {};
+  headers.forEach((h, j) => { if (aliases[h]) colIdx[aliases[h]] = j; });
+  const stripPct = v => v == null ? null : parseFloat(String(v).replace(/%/g, '').trim());
+  const parsed = [];
+  for (; i < lines.length; i++) {
+    const cells = parseCSVLine(lines[i]);
+    parsed.push({
+      fid: cells[colIdx.fid] || '',
+      f1: colIdx.f1 != null ? cells[colIdx.f1] : '',
+      f2: colIdx.f2 != null ? cells[colIdx.f2] : '',
+      cat: cells[colIdx.cat] || '',
+      prop: cells[colIdx.prop] || '',
+      prob: stripPct(cells[colIdx.prob]),
+      market: stripPct(cells[colIdx.market])
+    });
+  }
+  // Derive f1/f2 per FightID from its two Moneyline rows when missing
+  const fightFighters = {};
+  for (const r of parsed) {
+    if (r.cat === 'Moneyline' && r.prop) {
+      if (!fightFighters[r.fid]) fightFighters[r.fid] = [];
+      if (fightFighters[r.fid].length < 2 && !fightFighters[r.fid].includes(r.prop)) fightFighters[r.fid].push(r.prop);
+    }
+  }
+  // Group rows by fid + compute edges, keyed by normalized "f1 vs f2"
+  const byFight = {};
+  for (const r of parsed) {
+    const fs = fightFighters[r.fid] || [r.f1, r.f2].filter(Boolean);
+    if (fs.length < 2) continue;
+    const key = normKey(fs[0], fs[1]);
+    if (!byFight[key]) byFight[key] = [];
+    const edge = (r.prob != null && r.market != null) ? r.prob - r.market : null;
+    byFight[key].push({ cat: r.cat, prop: r.prop, prob: r.prob, market: r.market, edge });
+  }
+  return byFight;
+}
 
 function renderModelProjections(mp) {
   if (!mp) return '';
@@ -352,24 +621,34 @@ function colorClass(v) {
 
 function renderComposites(comp, f1Short, f2Short) {
   if (!comp || !comp.rows || !comp.rows.length) return '';
+  // Each row: diverging-from-center bar for each fighter; bar length proportional to |z|, cap at 2.
+  const MAX_Z = 2;
+  const halfWidth = v => Math.min(Math.abs(v || 0) / MAX_Z, 1) * 50; // % of column width
   return `
     <div class="block">
       <div class="block-title">Composites — Z-scores vs Weight Class</div>
       ${comp.note ? `<div class="block-note">${escape(comp.note)}</div>` : ''}
       <div class="block-content">
-        <table class="stat">
-          <thead><tr><th>Composite</th><th>${escape(f1Short)}</th><th>${escape(f2Short)}</th><th>Δ</th></tr></thead>
-          <tbody>
-            ${comp.rows.map(r => `
-              <tr>
-                <td class="label">${escape(r.name)}</td>
-                <td class="num ${colorClass(r.f1)}">${fmtSignedNum(r.f1)}</td>
-                <td class="num ${colorClass(r.f2)}">${fmtSignedNum(r.f2)}</td>
-                <td class="num ${colorClass(r.delta)}">${fmtSignedNum(r.delta)}</td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
+        <div class="comp-header">
+          <div></div>
+          <div>${escape(f1Short)}</div>
+          <div>${escape(f2Short)}</div>
+          <div>Δ</div>
+        </div>
+        <div class="composites-list">
+          ${comp.rows.map(r => `
+            <div class="comp-row">
+              <div class="comp-label">${escape(r.name)}</div>
+              <div class="comp-axis">
+                <div class="comp-bar ${r.f1 >= 0 ? 'pos' : 'neg'}" style="width:${halfWidth(r.f1)}%"></div>
+              </div>
+              <div class="comp-axis">
+                <div class="comp-bar ${r.f2 >= 0 ? 'pos' : 'neg'}" style="width:${halfWidth(r.f2)}%"></div>
+              </div>
+              <div class="comp-delta ${colorClass(r.delta)}">${fmtSignedNum(r.delta)}</div>
+            </div>
+          `).join('')}
+        </div>
       </div>
     </div>
   `;
@@ -381,12 +660,87 @@ function renderStyleProfiles(rows, f1Short, f2Short) {
     <div class="block">
       <div class="block-title">Style Profiles</div>
       <div class="block-content">
-        <table class="stat">
-          <thead><tr><th>Style</th><th>${escape(f1Short)}</th><th>${escape(f2Short)}</th></tr></thead>
-          <tbody>
-            ${rows.map(r => `<tr><td class="label">${escape(r.name)}</td><td class="num">${r.f1.toFixed(2)}</td><td class="num">${r.f2.toFixed(2)}</td></tr>`).join('')}
-          </tbody>
-        </table>
+        <div class="style-header">
+          <div></div>
+          <div class="l">${escape(f1Short)}</div>
+          <div class="c">Style</div>
+          <div class="r">${escape(f2Short)}</div>
+        </div>
+        <div class="style-list">
+          ${rows.map(r => {
+            // Bars 0..1 scaled to full width
+            const w1 = Math.max(0, Math.min(1, r.f1)) * 100;
+            const w2 = Math.max(0, Math.min(1, r.f2)) * 100;
+            return `
+              <div class="style-row">
+                <div class="style-label">${escape(r.name)}</div>
+                <div class="style-bar-wrap right"><div class="style-bar f1" style="width:${w1}%"></div></div>
+                <div class="style-val left">${r.f1.toFixed(2)}</div>
+                <div class="style-bar-wrap"><div class="style-bar f2" style="width:${w2}%"></div></div>
+                <div class="style-val right">${r.f2.toFixed(2)}</div>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function propEdgeTier(edge) {
+  if (edge == null || isNaN(edge)) return '';
+  if (edge >= 20) return 'tier-3';
+  if (edge >= 10) return 'tier-2';
+  if (edge >= 0)  return 'tier-1';
+  if (edge >= -10) return 'tier-neg-1';
+  return 'tier-neg-2';
+}
+
+function renderPropEdges(fight) {
+  if (!PROP_EDGES) return '';
+  const key = normKey(fight.f1, fight.f2);
+  let edges = PROP_EDGES[key];
+  if (!edges) {
+    // Try matching by last names too — Yang's CSV sometimes uses different forms than synopses
+    const keyShort = normKey(shortName(fight.f1), shortName(fight.f2));
+    for (const k of Object.keys(PROP_EDGES)) {
+      const parts = k.split('::');
+      const altShort = normKey(shortName(parts[0]), shortName(parts[1]));
+      if (altShort === keyShort) { edges = PROP_EDGES[k]; break; }
+    }
+  }
+  if (!edges || !edges.length) {
+    return `<div class="block">
+      <div class="block-title">Prop Edges (Yang vs Market)</div>
+      <div class="prop-edges-empty">No prop edges available for this fight in data.csv.</div>
+    </div>`;
+  }
+  // Top 6 positive edges by magnitude
+  const top = edges
+    .filter(e => e.edge != null && !isNaN(e.edge))
+    .sort((a, b) => (b.edge ?? -Infinity) - (a.edge ?? -Infinity))
+    .slice(0, 6);
+  if (!top.length) return '';
+  return `
+    <div class="block">
+      <div class="block-title">Prop Edges (Yang vs Market)</div>
+      <div class="prop-edges-grid">
+        ${top.map(e => {
+          const tier = propEdgeTier(e.edge);
+          const barWidth = Math.min(Math.max(e.edge, 0) / 25 * 100, 100);
+          const sign = e.edge >= 0 ? '+' : '';
+          return `
+            <div class="prop-edge-card">
+              <div class="prop-edge-cat">${escape(e.cat)}</div>
+              <div class="prop-edge-name">${escape(e.prop)}</div>
+              <div class="prop-edge-bar"><div class="prop-edge-bar-fill ${tier}" style="width:${barWidth}%"></div></div>
+              <div class="prop-edge-stats">
+                <div class="prop-edge-probs"><strong>${fmtPct(e.prob)}</strong> / ${fmtPct(e.market)}</div>
+                <div class="prop-edge-value ${tier}">${sign}${e.edge.toFixed(1)}%</div>
+              </div>
+            </div>
+          `;
+        }).join('')}
       </div>
     </div>
   `;
@@ -429,20 +783,80 @@ function renderMatchupEdges(rows) {
   `;
 }
 
+function methodAbbr(method) {
+  if (!method) return '';
+  const m = method.toUpperCase();
+  if (m.includes('KO') || m.includes('TKO')) return 'KO';
+  if (m.includes('SUB')) return 'SUB';
+  if (m.includes('DEC')) return 'DEC';
+  if (m.includes('DQ')) return 'DQ';
+  if (m.includes('NC')) return 'NC';
+  return method.slice(0, 4).toUpperCase();
+}
+
+function parseRecentChips(recentLine) {
+  // "Recent: W vs Dan Ige (KO/TKO R1, 2026-02-21) | W vs Morgan Charriere (KO/TKO R1, 2025-12-13) | …"
+  const stripped = recentLine.replace(/^Recent:\s*/i, '').trim();
+  if (!stripped) return [];
+  return stripped.split('|').map(part => {
+    const m = part.trim().match(/^([WLDN]C?)\s+vs\s+(.+?)\s+\(([^,]+?)\s+(R\d+|N\/A|None)(?:,\s*([^\)]+))?\)$/i);
+    if (!m) return null;
+    return { result: m[1].toUpperCase(), opponent: m[2].trim(), method: m[3].trim(), round: m[4].trim(), date: m[5] ? m[5].trim() : '' };
+  }).filter(Boolean);
+}
+
 function renderProfiles(profiles) {
   if (!profiles || !profiles.length) return '';
   return `
     <div class="block">
       <div class="block-title">Fighter Profiles</div>
-      ${profiles.map(p => `
-        <div class="profile-card">
-          <div class="pname">${escape(p.name)}</div>
-          ${p.lines.map(l => `<div class="pline ${/^Recent:/i.test(l) ? 'recent' : ''}">${escape(l)}</div>`).join('')}
-        </div>
-      `).join('')}
+      ${profiles.map(p => {
+        const lines = p.lines || [];
+        const recentLine = lines.find(l => /^Recent:/i.test(l));
+        const otherLines = lines.filter(l => !/^Recent:/i.test(l));
+        const chips = recentLine ? parseRecentChips(recentLine) : [];
+        return `
+          <div class="profile-card">
+            <div class="pname">${escape(p.name)}</div>
+            ${otherLines.map(l => `<div class="pline">${escape(l)}</div>`).join('')}
+            ${chips.length ? `
+              <div class="recent-label">Recent</div>
+              <div class="recent-chips">
+                ${chips.map(c => {
+                  const cls = c.result === 'W' ? 'win' : (c.result === 'L' ? 'loss' : 'draw');
+                  const title = `${c.result} vs ${c.opponent} — ${c.method} ${c.round}${c.date ? ' · ' + c.date : ''}`;
+                  return `<span class="recent-chip ${cls}" title="${escape(title)}">
+                    ${c.result} ${methodAbbr(c.method)} ${c.round}
+                    <span class="vs-name">${escape(c.opponent)}</span>
+                  </span>`;
+                }).join('')}
+              </div>
+            ` : (recentLine ? `<div class="pline recent">${escape(recentLine)}</div>` : '')}
+          </div>
+        `;
+      }).join('')}
     </div>
   `;
 }
+
+function renderTechnical(fight, f1Short, f2Short) {
+  const mods = fight.sections.modifiers;
+  const ou = fight.sections.overUnder;
+  if ((!mods || !mods.length) && (!ou || !ou.length)) return '';
+  return `
+    <div class="technical" id="technical-${slugify(`${fight.f1}-vs-${fight.f2}`)}">
+      <button class="technical-header" onclick="toggleTechnical(this)">
+        <span>Technical Details</span>
+        <span class="caret">▾</span>
+      </button>
+      <div class="technical-body">
+        ${renderModifiers(mods, f1Short, f2Short)}
+        ${renderOverUnder(ou)}
+      </div>
+    </div>
+  `;
+}
+function toggleTechnical(btn) { btn.parentElement.classList.toggle('open'); }
 
 function renderFight(fight, idx, total) {
   const id = slugify(`${fight.f1}-vs-${fight.f2}`);
@@ -475,12 +889,12 @@ function renderFight(fight, idx, total) {
       </div>
       <div class="fight-card-body">
         ${renderModelProjections(mp)}
-        ${renderOverUnder(fight.sections.overUnder)}
+        ${renderPropEdges(fight)}
+        ${renderMatchupEdges(fight.sections.matchupEdges)}
         ${renderComposites(fight.sections.composites, f1Short, f2Short)}
         ${renderStyleProfiles(fight.sections.styleProfiles, f1Short, f2Short)}
-        ${renderModifiers(fight.sections.modifiers, f1Short, f2Short)}
-        ${renderMatchupEdges(fight.sections.matchupEdges)}
         ${renderProfiles(fight.sections.profiles)}
+        ${renderTechnical(fight, f1Short, f2Short)}
       </div>
     </div>
   `;
@@ -549,16 +963,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function loadSynopses() {
   try {
-    const res = await fetch('synopses.json?_=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    SYNOPSES = await res.json();
-    // Title from data.csv first line
-    try {
-      const csvRes = await fetch('data.csv?_=' + Date.now());
+    const [synRes, csvRes] = await Promise.all([
+      fetch('synopses.json?_=' + Date.now()),
+      fetch('data.csv?_=' + Date.now())
+    ]);
+    if (!synRes.ok) throw new Error('synopses.json HTTP ' + synRes.status);
+    SYNOPSES = await synRes.json();
+    if (csvRes.ok) {
       const csv = await csvRes.text();
       const firstLine = csv.split('\n')[0].replace(/^#\s*/, '').trim();
       if (firstLine) document.getElementById('event-title').textContent = firstLine;
-    } catch (e) { /* keep default */ }
+      try { PROP_EDGES = parseDataCsv(csv); } catch (e) { console.warn('CSV parse failed:', e); PROP_EDGES = null; }
+    }
     document.getElementById('event-meta').textContent = SYNOPSES.generated ? SYNOPSES.generated.replace(/^Generated\s+/, '') : 'Synopses · Yang\'s Model';
 
     renderNavDropdown(SYNOPSES.fights);
