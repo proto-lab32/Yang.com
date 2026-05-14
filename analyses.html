@@ -676,16 +676,24 @@ function parseDataCsv(text) {
   if (lines[i].startsWith('#')) i++;
   // Header row
   const headers = parseCSVLine(lines[i++]).map(h => h.replace(/^﻿/, '').trim().toLowerCase());
-  const aliases = {
-    'fightid': 'fid', 'fid': 'fid',
-    'market': 'cat', 'cat': 'cat',
-    'selection': 'prop', 'prop': 'prop',
-    'yang probability': 'prob', 'prob': 'prob',
-    'market probability': 'market', 'market': 'market',
-    'f1': 'f1', 'f2': 'f2'
+  // Per-field accepted header names (first match wins). Avoids JS-object
+  // duplicate-key collisions (e.g. "market" → cat vs. "market" → market).
+  const HEADERS = {
+    fid:    ['fightid', 'fid', 'fight id', 'fight_id'],
+    cat:    ['market', 'cat', 'category'],
+    prop:   ['selection', 'prop'],
+    prob:   ['yang probability', 'prob', 'model_prob', 'model prob', 'yang prob'],
+    market: ['market probability', 'market_prob', 'market prob'],
+    f1:     ['f1', 'fighter 1', 'fighter1'],
+    f2:     ['f2', 'fighter 2', 'fighter2']
   };
   const colIdx = {};
-  headers.forEach((h, j) => { if (aliases[h]) colIdx[aliases[h]] = j; });
+  for (const field of Object.keys(HEADERS)) {
+    for (const name of HEADERS[field]) {
+      const j = headers.indexOf(name);
+      if (j >= 0) { colIdx[field] = j; break; }
+    }
+  }
   const stripPct = v => v == null ? null : parseFloat(String(v).replace(/%/g, '').trim());
   const parsed = [];
   for (; i < lines.length; i++) {

@@ -331,15 +331,20 @@ async function load() {
     document.getElementById('event-name').textContent = 'Current event';
   }
   const headers = parseCSVLine(lines[i++]).map(h => h.replace(/^﻿/, '').trim().toLowerCase());
-  const aliases = {
-    'fightid': 'fid', 'fid': 'fid',
-    'market': 'cat', 'cat': 'cat',
-    'selection': 'prop', 'prop': 'prop',
-    'yang probability': 'prob', 'prob': 'prob',
-    'market probability': 'market', 'market': 'market'
+  const HEADERS = {
+    fid:    ['fightid', 'fid', 'fight id', 'fight_id'],
+    cat:    ['market', 'cat', 'category'],
+    prop:   ['selection', 'prop'],
+    prob:   ['yang probability', 'prob', 'model_prob', 'model prob', 'yang prob'],
+    market: ['market probability', 'market_prob', 'market prob']
   };
   const colIdx = {};
-  headers.forEach((h, j) => { if (aliases[h]) colIdx[aliases[h]] = j; });
+  for (const field of Object.keys(HEADERS)) {
+    for (const name of HEADERS[field]) {
+      const j = headers.indexOf(name);
+      if (j >= 0) { colIdx[field] = j; break; }
+    }
+  }
   const stripPct = v => v == null ? null : parseFloat(String(v).replace(/%/g, '').trim());
 
   const rows = [];
