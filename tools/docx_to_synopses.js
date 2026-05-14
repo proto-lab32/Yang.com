@@ -24,6 +24,7 @@ const paragraphs = (xml.match(/<w:p[^>]*>[\s\S]*?<\/w:p>/g) || []).map(p => {
 let i = 0;
 const peek = (n = 0) => paragraphs[i + n] || '';
 const consume = () => paragraphs[i++];
+const skipBlanks = () => { while (i < paragraphs.length && paragraphs[i].trim() === '') i++; };
 
 const event = { title: '', generated: '', model: '', cardList: [], fights: [] };
 
@@ -56,7 +57,7 @@ while (i < paragraphs.length) {
   else break;
 }
 
-const SECTION_HEADERS = new Set(['MODEL PROJECTIONS', 'OVER/UNDER (TOTAL ROUNDS)', 'COMPOSITES (Z-SCORES VS WEIGHT CLASS)', 'STYLE PROFILES', 'MODIFIERS & TRUST', 'MATCHUP EDGES', 'FIGHTER PROFILES (UFC + DWCS/RTUF ONLY)']);
+const SECTION_HEADERS = new Set(['MODEL PROJECTIONS', 'OVER/UNDER (TOTAL ROUNDS)', 'COMPOSITES (Z-SCORES VS WEIGHT CLASS)', 'STYLE PROFILES', 'MODIFIERS & TRUST', 'MATCHUP EDGES', 'FIGHTER PROFILES (UFC + DWCS/RTUF ONLY)', 'MATCHUP ANALYSIS', 'SYNOPSIS']);
 const isFightHeader = (s) => / {2}vs {2}/.test(s);
 const isSection = (s) => SECTION_HEADERS.has(s);
 const isBoundary = (s) => isFightHeader(s) || isSection(s);
@@ -101,12 +102,16 @@ while (i < paragraphs.length) {
       const f1Short = pm ? pm[1] : f1.split(' ').pop();
       const f2Short = pm ? pm[3] : f2.split(' ').pop();
       const modelProb = pm ? { f1: parseFloat(pm[2]), f2: parseFloat(pm[4]) } : null;
+      skipBlanks();
       consume(); consume(); // f1 / f2 column headers
       const method = [];
       for (let k = 0; k < 3 && i < paragraphs.length; k++) {
         if (isBoundary(peek())) break;
+        if (peek().trim() === '') { consume(); k--; continue; }
         const name = consume();
+        if (isBoundary(peek())) break;
         const v1 = consume();
+        if (isBoundary(peek())) break;
         const v2 = consume();
         method.push({ name, f1: parseFloat(v1), f2: parseFloat(v2) });
       }
@@ -122,6 +127,7 @@ while (i < paragraphs.length) {
       fight.sections.modelProjections = { f1Short, f2Short, modelProb, method, decisionPct, roundsFinish };
     } else if (cur === 'OVER/UNDER (TOTAL ROUNDS)') {
       consume();
+      skipBlanks();
       consume(); consume(); consume();
       const overUnder = [];
       while (i < paragraphs.length && /^\d+(?:\.\d+)?$/.test(peek())) {
@@ -133,46 +139,59 @@ while (i < paragraphs.length) {
       fight.sections.overUnder = overUnder;
     } else if (cur === 'COMPOSITES (Z-SCORES VS WEIGHT CLASS)') {
       consume();
+      skipBlanks();
       const note = consume();
+      skipBlanks();
       consume(); consume(); consume(); consume();
       const composites = [];
       while (i < paragraphs.length && !isBoundary(peek()) && peek().trim() !== '') {
         const name = consume();
+        if (isBoundary(peek())) break;
         const f1v = consume();
+        if (isBoundary(peek())) break;
         const f2v = consume();
+        if (isBoundary(peek())) break;
         const dv = consume();
         composites.push({ name, f1: parseFloat(f1v), f2: parseFloat(f2v), delta: parseFloat(dv) });
       }
       fight.sections.composites = { note, rows: composites };
     } else if (cur === 'STYLE PROFILES') {
       consume();
+      skipBlanks();
       consume(); consume(); consume();
       const styles = [];
       while (i < paragraphs.length && !isBoundary(peek()) && peek().trim() !== '') {
         const name = consume();
+        if (isBoundary(peek())) break;
         const f1v = consume();
+        if (isBoundary(peek())) break;
         const f2v = consume();
         styles.push({ name, f1: parseFloat(f1v), f2: parseFloat(f2v) });
       }
       fight.sections.styleProfiles = styles;
     } else if (cur === 'MODIFIERS & TRUST') {
       consume();
-      consume(); consume(); // F1, F2 headers
+      while (i < paragraphs.length && peek().trim() === '') consume(); // skip blanks
+      consume(); consume(); // F1, F2 column headers
       const modifiers = [];
       while (i < paragraphs.length && !isBoundary(peek()) && peek().trim() !== '') {
         const name = consume();
+        if (isBoundary(peek())) break;
         const f1v = consume();
+        if (isBoundary(peek())) break;
         const f2v = consume();
         modifiers.push({ name, f1: f1v, f2: f2v });
       }
       fight.sections.modifiers = modifiers;
     } else if (cur === 'MATCHUP EDGES') {
       consume();
+      skipBlanks();
       consume(); consume(); consume(); // Edge / Value / Reads as headers
       // Known edge-name patterns. Anything that doesn't match is a value or reads-as cell.
       const isEdgeName = (s) => /^(Decision edge|KO threat|Sub threat|Ground % of fight|Standing % of fight|Elo \(WC-specific\)|GBM P\(.+? wins\))/.test(s);
       const cells = [];
-      while (i < paragraphs.length && !isBoundary(peek()) && peek().trim() !== '') {
+      while (i < paragraphs.length && !isBoundary(peek())) {
+        if (peek().trim() === '') { consume(); continue; } // tolerate blanks within edges
         cells.push(consume());
       }
       const edges = [];
@@ -190,23 +209,45 @@ while (i < paragraphs.length) {
       fight.sections.matchupEdges = edges;
     } else if (cur === 'FIGHTER PROFILES (UFC + DWCS/RTUF ONLY)') {
       consume();
+      skipBlanks();
       const profiles = [];
-      // Two profiles: each begins with a fighter name (matches f1 or f2), followed by lines until empty or next name.
+      // Two profiles: each begins with a fighter name (matches f1 or f2), followed by lines until empty / boundary / other-name.
       const namesNorm = [f1, f2].map(n => n.toLowerCase());
-      while (i < paragraphs.length && !isFightHeader(peek()) && profiles.length < 2) {
+      while (i < paragraphs.length && !isBoundary(peek()) && profiles.length < 2) {
         if (peek().trim() === '') { consume(); continue; }
         const name = consume();
         const lines = [];
-        while (i < paragraphs.length && !isFightHeader(peek())) {
+        while (i < paragraphs.length && !isBoundary(peek())) {
           const nxt = peek().trim();
           if (nxt === '') break;
-          // Stop when we see the other fighter's name as a standalone line
           if (namesNorm.includes(nxt.toLowerCase()) && nxt.toLowerCase() !== name.toLowerCase()) break;
           lines.push(consume());
         }
         profiles.push({ name, lines });
       }
       fight.sections.profiles = profiles;
+    } else if (cur === 'MATCHUP ANALYSIS') {
+      consume();
+      const paras = [];
+      while (i < paragraphs.length && !isBoundary(peek())) {
+        const t = consume().trim();
+        if (t) paras.push(t);
+      }
+      fight.sections.matchupAnalysis = paras;
+    } else if (cur === 'SYNOPSIS') {
+      consume();
+      const paras = [];
+      while (i < paragraphs.length && !isBoundary(peek())) {
+        const t = consume().trim();
+        if (t) paras.push(t);
+      }
+      // First paragraph starts with "Lean: <Name>." — parse it out for prominence.
+      const body = paras.join(' ');
+      const leanMatch = body.match(/^Lean:\s+([^.]+)\.\s*/);
+      fight.sections.synopsis = {
+        lean: leanMatch ? leanMatch[1].trim() : null,
+        body: leanMatch ? body.slice(leanMatch[0].length).trim() : body
+      };
     } else {
       consume();
     }

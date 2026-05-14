@@ -213,6 +213,66 @@
   }
   .rounds-line strong { color: var(--text-primary); font-weight: 700; }
 
+  /* LEAN CALLOUT — the tl;dr at the top of each fight */
+  .lean-card {
+    background: linear-gradient(135deg, rgba(0, 122, 255, 0.06), rgba(0, 122, 255, 0.02));
+    border: 0.5px solid rgba(0, 122, 255, 0.20);
+    border-radius: var(--radius);
+    padding: 14px 16px 16px;
+    margin-top: 14px;
+    position: relative;
+  }
+  .lean-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--brand);
+    margin-bottom: 4px;
+  }
+  .lean-headline {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  .lean-headline .qualifier { font-weight: 500; color: var(--text-secondary); font-size: 15px; letter-spacing: -0.01em; }
+  .lean-body {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    letter-spacing: -0.005em;
+  }
+
+  /* MATCHUP ANALYSIS — editorial-style prose block */
+  .analysis-block {
+    background: var(--surface);
+    border: 0.5px solid var(--separator);
+    border-radius: var(--radius);
+    padding: 16px 20px 18px;
+    margin-top: 14px;
+  }
+  .analysis-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid var(--separator);
+  }
+  .analysis-para {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: var(--text-primary);
+    letter-spacing: -0.003em;
+    max-width: 640px;
+  }
+  .analysis-para + .analysis-para { margin-top: 12px; }
+
   /* MODEL PROJECTION — restructured */
   .proj-hero {
     display: grid;
@@ -600,6 +660,11 @@
     .style-header { grid-template-columns: 90px 1fr auto 1fr; gap: 6px; }
     .recent-chip { font-size: 9.5px; padding: 2px 6px; }
     .recent-chip .vs-name { display: none; }
+    .lean-headline { font-size: 19px; }
+    .lean-headline .qualifier { font-size: 13px; }
+    .lean-body { font-size: 13.5px; }
+    .analysis-block { padding: 14px 16px 16px; }
+    .analysis-para { font-size: 13.5px; line-height: 1.6; }
     .proj-pct { font-size: 26px; }
     .method-table { grid-template-columns: 76px 1fr 1fr; gap: 6px 8px; }
     .method-val { font-size: 10.5px; min-width: 32px; }
@@ -733,6 +798,36 @@ function parseDataCsv(text) {
   return byFight;
 }
 
+function renderLean(synopsis) {
+  if (!synopsis || (!synopsis.lean && !synopsis.body)) return '';
+  // Lean text often has a qualifier after the fighter name, separated by a comma.
+  // e.g. "Tokkos, submission modal" → bold "Tokkos", muted ", submission modal"
+  let headline = '';
+  if (synopsis.lean) {
+    const idx = synopsis.lean.indexOf(',');
+    const name = idx >= 0 ? synopsis.lean.slice(0, idx).trim() : synopsis.lean.trim();
+    const qual = idx >= 0 ? synopsis.lean.slice(idx).trim() : '';
+    headline = `<div class="lean-headline">${escape(name)}${qual ? ` <span class="qualifier">${escape(qual)}</span>` : ''}</div>`;
+  }
+  return `
+    <div class="lean-card">
+      <div class="lean-label">Lean</div>
+      ${headline}
+      ${synopsis.body ? `<div class="lean-body">${escape(synopsis.body)}</div>` : ''}
+    </div>
+  `;
+}
+
+function renderMatchupAnalysis(paras) {
+  if (!paras || !paras.length) return '';
+  return `
+    <div class="analysis-block">
+      <div class="analysis-title">Matchup Analysis</div>
+      ${paras.map(p => `<div class="analysis-para">${escape(p)}</div>`).join('')}
+    </div>
+  `;
+}
+
 function methodBarClass(name) {
   const n = (name || '').toLowerCase();
   if (n.includes('ko') || n.includes('tko')) return 'ko';
@@ -805,8 +900,8 @@ function renderModelProjections(mp, overUnder) {
             <div class="proj-section-title">Fight Distance</div>
             ${mp.decisionPct != null ? `
               <div class="distance-bar">
+                <div class="distance-seg dec" style="width:${mp.decisionPct}%">Goes the Distance <span class="seg-pct">${fmtPct(mp.decisionPct)}</span></div>
                 <div class="distance-seg itd" style="width:${itdPct}%">Inside <span class="seg-pct">${fmtPct(itdPct)}</span></div>
-                <div class="distance-seg dec" style="width:${mp.decisionPct}%">Decision <span class="seg-pct">${fmtPct(mp.decisionPct)}</span></div>
               </div>
             ` : ''}
             ${mp.roundsFinish.length ? `
@@ -1127,6 +1222,8 @@ function renderFight(fight, idx, total) {
         <div class="meta">${fight.rounds} rounds  ·  ${escape(fight.division)}${fight.dataMode ? '  ·  ' + escape(fight.dataMode) + ' data mode' : ''}</div>
       </div>
       <div class="fight-card-body">
+        ${renderLean(fight.sections.synopsis)}
+        ${renderMatchupAnalysis(fight.sections.matchupAnalysis)}
         ${renderModelProjections(mp, fight.sections.overUnder)}
         ${renderPropEdges(fight)}
         ${renderMatchupEdges(fight.sections.matchupEdges)}

@@ -360,7 +360,16 @@
               "Recent: W vs Kwon Wonil (KO/TKO R2, None)"
             ]
           }
-        ]
+        ],
+        "matchupAnalysis": [
+          "Thinnest-sample fight in the batch. Wellmaker has 3 division fights and only 7 minutes of UFC fight time; Diaz has 1 fight and 10 minutes. Trust factors are 0.32 and 0.14 — the model is operating mostly on pre-UFC career signal (Wellmaker 10-1 with 100% KO finish rate, Diaz 15-1-1 with 100% KO finish rate) rather than on stable UFC composites. Both fighters look essentially identical on chin (+0.10 vs +0.05), output (+0.15 vs +0.08), wrestling defense, and cardio.",
+          "Two composites separate them: power (Wellmaker +1.15 vs Diaz +0.27, a 0.88z gap) and reach (Wellmaker +0.94 vs Diaz −0.02, a 0.96z gap). Those two — power plus reach — drive the entire 65/35 split. The KO threat differential is +1.08 in Wellmaker's direction, and his 25.1% KO/TKO win share is the bulk of his finish equity. The decision edge of +0.42 is moderate.",
+          "This is the sample-warning fight on the card. The composite picture is internally consistent (the GBM lands at 66.4% calibrated, slightly above the 64.6% sim) and the structural read is clean, but the underlying data is genuinely thin. The pre-UFC win rates (Wellmaker 0.90 vs Diaz 0.94) are essentially identical; the model is weighting Wellmaker's structural striking advantage to break the tie."
+        ],
+        "synopsis": {
+          "lean": "Wellmaker",
+          "body": "Modal terminal state is Wellmaker decision (31.1%) followed closely by Wellmaker KO/TKO (25.1%). Reach + power are the entire structural read. Confidence is low-to-moderate — both fighters have <15 minutes of UFC tape and the call is largely pre-UFC career projection. Realistic upset path is Diaz catching Wellmaker on the way in, where the reach advantage doesn't apply."
+        }
       }
     },
     {
@@ -597,7 +606,16 @@
               "Recent: L vs Andreas Gustafsson (Decision R3, 2025-06-07) | L vs Gabriel Bonfim (Submission R2, 2025-02-15) | W vs Carlston Harris (KO/TKO R1, 2024-05-18)"
             ]
           }
-        ]
+        ],
+        "matchupAnalysis": [
+          "Williams owns the geometry and the power. Reach +1.92 against Veretennikov's +0.33 is a 1.59z gap; power +0.72 vs −0.09 is the second-largest power-side advantage in the batch; chin +0.57 vs +0.13 means Williams wins both the punching exchanges and the absorbing trades. The KO threat differential (+1.23 in Williams's direction) plus his career 67% KO finish rate point to the most likely path.",
+          "Veretennikov's only positive composites are reach (still 1.59z below Williams) and a marginal wrestling defense edge (−0.24 vs −0.59). His grappling −1.26 is one of the worst on the card, his output −0.52 is in the bottom quartile, and his cardio −0.71 means he can't sustain whatever offense he generates. His path is to either survive long enough for Williams's 341-day layoff to expose any cardio decay (Williams's cardio composite is −0.03 — neutral, not a structural concern) or to land a single clean counter.",
+          "The simulation reflects the picture cleanly: Williams's KO/TKO 27.7% and decision 27.7% are tied as the largest single buckets, and his combined finish equity (29.5%) plus decision equity make up his 57.3% column. The 341-day layoff is the only factor softening the read; without it, this would project as a more lopsided call."
+        ],
+        "synopsis": {
+          "lean": "Williams",
+          "body": "Modal terminal state is split between Williams KO/TKO (27.7%) and Williams decision (27.7%); his reach + power are the entire structural read. Realistic upset path for Veretennikov is the long Williams layoff exposing rust early — but his own composite profile lacks an active win-it path beyond surviving. Moderate confidence Williams via KO from the reach window."
+        }
       }
     },
     {
@@ -834,7 +852,16 @@
               "Recent: L vs Jimmy Crute (Submission R1, 2025-09-27) | L vs Navajo Stirling (Decision R3, 2025-05-10) | L vs Ion Cutelaba (Decision R3, 2024-09-28)"
             ]
           }
-        ]
+        ],
+        "matchupAnalysis": [
+          "Tokkos's +1.81 reach differential is the largest single geometric advantage in the entire batch. Combined with his +0.42 grappling (vs Erslan's −0.29) and the resulting +0.67 sub threat z, the model identifies a specific path: long-arm range control to grappling control to submission. His 36.1% submission win share is the largest single-method bucket in the batch, and his career profile (100% finish rate on his wins, all by submission) supports it.",
+          "Erslan's structural pluses are chin (+0.25 vs −0.19) and cardio (+0.36 vs −0.05). His path requires absorbing early striking damage and grinding into the championship rounds — but in a 3R fight, with a 1.81z reach disadvantage, he doesn't have the runway. His own power (−0.46) and output (−0.88) are both in the bottom quartile of the LHW WC, so his KO threat — his only credible upset weapon — is unfueled by structural striking signals.",
+          "Sample warning: both fighters have trust factors around 0.47 (Tokkos 4 division fights / 32 min, Erslan 3 / 33 min). The +1.81 reach gap and the +0.71 grappling differential are stable structural anchors regardless of sample size, but the call's exact magnitude (66.5%) is more sensitive to the pre-UFC career signal than the headline number suggests. Cumulative finish probability is 75.0% — one of the highest in the batch."
+        ],
+        "synopsis": {
+          "lean": "Tokkos, submission modal",
+          "body": "Most likely terminal state is a Tokkos submission (36.1%, the largest single-method bucket on the card). Realistic upset path is Erslan catching Tokkos on the way in before the reach + grappling sequence establishes — his 22.4% KO/TKO equity is his largest single bucket and his entire credible win path."
+        }
       }
     },
     {
@@ -1071,7 +1098,16 @@
               "Recent: L vs Norma Dumont (Decision R3, 2025-11-01) | W vs Macy Chiasson (Decision R3, 2025-05-31) | L vs Kayla Harrison (Decision R3, 2024-10-05)"
             ]
           }
-        ]
+        ],
+        "matchupAnalysis": [
+          "The largest output differential in the batch and one of the larger composite mismatches overall. Cavalcanti's output composite of +2.23 is the highest single composite in the matchup; Vieira's −0.81 is in the bottom quartile of the W-BW WC. The 3.04z gap drives the decision edge to +2.93 — the largest decision-edge number in the batch — and Cavalcanti's reach advantage (+1.51 vs +0.36) plus chin advantage (+1.02 vs +0.19) layer in on top.",
+          "The veteran-vs-prospect read superficially favors Vieira (13 division fights and 199 minutes vs Cavalcanti's 4 and 60), but the composite signals invert what experience would suggest. Vieira's career finish rate of 12% (1 of 8 wins by finish) and her −0.81 output read as structural decline, not as sample noise. The GBM agrees with the sim almost exactly (67.8% calibrated vs 67.8% sim) — when those two anchors converge it reflects a low-parameter-sensitivity read.",
+          "Vieira's only credible win path is grappling. Her +0.20 grappling and elite +2.01 wrestling defense (both fighters are top-end at preventing takedowns) give her a +0.81 sub threat zone, and her 10.9% submission win share is her largest single bucket. But Cavalcanti's wrestling defense of +1.67 is also elite, meaning Vieira can't reliably force the fight into her preferred range. The cumulative finish rate of 32.6% is the lowest in the batch — this fight goes the distance more often than any other."
+        ],
+        "synopsis": {
+          "lean": "Cavalcanti, strongly",
+          "body": "Most likely terminal state is a Cavalcanti unanimous decision (53.5%, the second-largest single bucket on the card). Volume + reach + chin all compound across 3R. Realistic upset path is a Vieira sub catch in a scramble — her 10.9% sub equity encodes it — but Cavalcanti's +1.67 wrestling defense argues against the path materializing."
+        }
       }
     },
     {
@@ -1308,7 +1344,16 @@
               "Recent: L vs Donte Johnson (Decision R3, 2026-03-07) | L vs Cam Rowston (KO/TKO R2, 2026-01-31) | L vs Eric McConico (Decision R3, 2025-08-09)"
             ]
           }
-        ]
+        ],
+        "matchupAnalysis": [
+          "Clean style mismatch with both fighters bringing one premium weapon to their preferred range. Petroski's grappling (+1.16 vs Brundage's −0.55) is a 1.71z gap, one of the larger composite differentials on the card. His wrestling defense (+1.23 vs +0.35) and cardio (+0.84 vs +0.18) compound it. He can take the fight to the mat and stay there for 15 minutes; the decision edge of +1.95 reflects this.",
+          "The live counter-signal is Brundage's power (+0.37 vs Petroski's −0.53) and the +1.38 KO threat differential into Petroski's chin liability (−1.02, one of the lowest chin composites on the card). Brundage's career finish rate of 80% (60% by KO) is the only data point that argues for him, and the sim respects it: his 21.8% KO/TKO win share is his largest single bucket and his entire credible upset window.",
+          "The simulation captures both readings cleanly. Petroski's submission win share is 27.1%, his decision win share is 28.0%, and the two paths together account for 55% of all sims — both his grappling-to-sub and his grappling-to-decision tracks contribute. Brundage's 5R-style power-puncher profile collapses against Petroski's structural ground game, but his single-shot equity stays live because of Petroski's chin number. Cumulative finish probability is 67.2% — middle-of-the-card."
+        ],
+        "synopsis": {
+          "lean": "Petroski",
+          "body": "Submission (27.1%) and decision (28.0%) are his twin victory paths and together account for 55% of all sims. Realistic upset path is Brundage landing one clean power shot on Petroski's −1.02 chin before the grappling exchange establishes — his 21.8% KO/TKO equity is his single credible win path. Moderate-to-high confidence Petroski."
+        }
       }
     },
     {
@@ -1545,7 +1590,16 @@
               "Recent: L vs Alden Coria (Decision R3, 2026-02-21) | L vs Jesus Aguilar (Decision R3, 2025-09-13) | L vs Ode Osbourne (KO/TKO R2, 2025-04-05)"
             ]
           }
-        ]
+        ],
+        "matchupAnalysis": [
+          "Composite split that should produce a closer fight than 75/25, but two specific numbers turn it into a structural mismatch. Gurule's cardio +0.72 against Barez's −0.68 is a 1.40z gap, one of the larger cardio splits in the batch; Gurule's output −0.05 against Barez's −1.16 is a 1.11z gap. Both lever into the decision edge of −1.56 toward Gurule, and his 4.5/min volume against Barez's 3.7/min widens with every minute of round time.",
+          "Barez owns power (+0.22 vs −0.38), chin (+0.12 vs −0.44), and wrestling defense (+0.47 vs −0.13). The KO threat differential is +1.32 in his direction and his 10.1% KO/TKO win share is a real but constrained upset window. The problem is that these are all defensive numbers; his −1.16 output means he can't translate the structural advantages into damage rate. Reach is a wash with a small Barez edge (−0.52 vs −1.00).",
+          "Barez's 425-day layoff is the second-longest in the batch, and his age (36) compounds it. The model reads him as a structurally defensive fighter against an opponent with structural workrate. Cumulative finish probability is only 36.9% — second-lowest in the batch — meaning the fight goes the distance more than 60% of the time, and the decision edge is heavily directional."
+        ],
+        "synopsis": {
+          "lean": "Gurule, strongly",
+          "body": "Most likely terminal state is a Gurule unanimous decision (54.8%, the largest single bucket in this fight). Realistic upset path is Barez's single asset — a clean power shot before the volume/cardio gap establishes — and his 10.1% KO/TKO equity is his entire credible window. The +1.40z cardio gap and 425-day layoff are the structural anchors."
+        }
       }
     },
     {
@@ -1782,7 +1836,16 @@
               "Recent: L vs Carli Judice (KO/TKO R3, 2025-07-19) | L vs Ernesta Kareckaite (Decision R3, 2025-01-11) | W vs Corinne Laframboise (Submission R1, None)"
             ]
           }
-        ]
+        ],
+        "matchupAnalysis": [
+          "The structural advantage table favors Bannon on 5 of 7 composites: output (+1.04 differential), reach (+1.56 differential — the largest single edge in this fight), chin (+0.71 differential), and a small cardio edge. Power is essentially equal (−0.29 vs −0.21). Caliari's only positive composite is grappling (+0.10 vs −0.72, a 0.81z gap in her direction). The decision edge +0.54 is moderate; the GBM lands at 59.7% calibrated, just above the 56.8% sim.",
+          "Caliari's career profile is sub-specialist (100% sub finish rate on her wins, sub_rate 1.00). The sim recognizes it — her 24.8% submission win share is her largest single bucket and the entire realistic upset path. Her sub threat z of +0.35 stays positive even against Bannon's defensive profile, which is a real warning sign: Bannon's −0.72 grappling means she is vulnerable on the ground despite winning the standup picture decisively.",
+          "Bannon's KO threat z of +0.83 is meaningful — her chin/output/reach advantages compound into a workrate-with-power picture that has both a KO win path (11.1%) and a control-the-fight decision path (28.5%). Her unusually high sub equity (17.2%) for a striker reflects the WC's small population and a positive grappling-rate signal in her limited UFC tape (4 fights / 45 min). Cumulative finish probability is 57.3% — moderate."
+        ],
+        "synopsis": {
+          "lean": "Bannon",
+          "body": "Most likely terminal state is a Bannon unanimous decision (28.5%, the largest single bucket — but the smallest 'favorite-most-likely-state' bucket on the card). Reach + output drive the call. Realistic upset path is Caliari's career sub specialty — her 24.8% sub equity is her largest single bucket. Moderate confidence; both fighters have thin samples (4 and 3 fights)."
+        }
       }
     }
   ]
