@@ -44,7 +44,8 @@
   /* HEADER */
   header { height: var(--header-h); background: rgba(255,255,255,0.85); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 0.5px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; position: sticky; top: 0; z-index: 100; }
   .header-left { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-  .event-title { font-size: var(--text-lg); font-weight: 700; letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .event-title { font-size: var(--text-lg); font-weight: 700; letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text-primary); text-decoration: none; transition: color 0.12s; display: block; }
+  a.event-title:hover { color: var(--brand); }
   .event-date { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xs); color: var(--text-muted); letter-spacing: 0.02em; }
   .header-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 
@@ -67,7 +68,7 @@
   }
   .nav-dropdown:hover .nav-dropdown-menu,
   .nav-dropdown.open .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
-  .nav-dropdown-item { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 8px 14px; color: var(--text-primary); text-decoration: none; font-size: var(--text-sm); border-left: 2px solid transparent; cursor: pointer; }
+  .nav-dropdown-item { display: block; padding: 8px 14px; color: var(--text-primary); text-decoration: none; font-size: var(--text-sm); border-left: 2px solid transparent; cursor: pointer; }
   .nav-dropdown-item:hover { background: var(--surface-2); border-left-color: var(--brand); }
   .nav-dropdown-item .names { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
   .nav-dropdown-item .matchup-line { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -573,7 +574,7 @@
 
 <header>
   <div class="header-left">
-    <div class="event-title">UFC 328: Chimaev vs Strickland</div>
+    <a class="event-title" href="landing.html" title="Home">UFC 328: Chimaev vs Strickland</a>
     <div class="event-date">Edge Report · Yang's Model</div>
   </div>
   <div class="header-right">
@@ -1366,16 +1367,11 @@ async function initSynopsisNav() {
     }
     menu.innerHTML = data.fights.map(f => {
       const id = slugifyNav(`${f.f1}-vs-${f.f2}`);
-      const mp = f.sections && f.sections.modelProjections;
-      const f1P = mp && mp.modelProb ? mp.modelProb.f1 : null;
-      const f2P = mp && mp.modelProb ? mp.modelProb.f2 : null;
-      const probStr = f1P != null ? `${Math.round(f1P)}% / ${Math.round(f2P)}%` : '';
       return `<a class="nav-dropdown-item" href="analyses.html#${id}">
         <div class="names">
           <div class="matchup-line">${escapeNav(f.f1)} vs ${escapeNav(f.f2)}</div>
           <div class="meta-line">${f.rounds}R · ${escapeNav(f.division)}</div>
         </div>
-        <div class="pct">${probStr}</div>
       </a>`;
     }).join('');
   } catch (e) {
