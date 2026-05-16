@@ -10,24 +10,25 @@
 </script>
 <style>
   :root {
-    /* iOS Light surfaces */
-    --bg: #f2f2f7;
-    --surface: #ffffff;
-    --surface-2: #f9f9fb;
-    --surface-3: #efeff4;
-    --separator: #e5e5ea;
-    --separator-strong: #c6c6c8;
+    color-scheme: dark;
+    /* iOS Dark surfaces */
+    --bg: #000000;
+    --surface: #1c1c1e;
+    --surface-2: #2c2c2e;
+    --surface-3: #3a3a3c;
+    --separator: #38383a;
+    --separator-strong: #545458;
     /* iOS Text */
-    --text-primary: #1c1c1e;
-    --text-secondary: #3c3c43;
+    --text-primary: #ffffff;
+    --text-secondary: #aeaeb2;
     --text-muted: #8e8e93;
-    /* iOS Accents */
-    --brand: #007aff;
-    --brand-soft: rgba(0, 122, 255, 0.10);
-    --green: #34c759;
-    --green-strong: #248a3d;
-    --red: #ff3b30;
-    --orange: #ff9500;
+    /* iOS Accents — dark mode variants */
+    --brand: #0a84ff;
+    --brand-soft: rgba(10, 132, 255, 0.16);
+    --green: #30d158;
+    --green-strong: #30d158;
+    --red: #ff453a;
+    --orange: #ff9f0a;
     /* Type scale */
     --text-xs: 11px;
     --text-sm: 13px;
@@ -59,7 +60,7 @@
     padding: 0 16px; position: sticky; top: 0; z-index: 100;
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    background: rgba(255,255,255,0.85);
+    background: rgba(28,28,30,0.85);
   }
   .header-left { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
   .event-title { font-size: var(--text-lg); font-weight: 700; letter-spacing: -0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text-primary); text-decoration: none; transition: color 0.12s; display: block; }
@@ -215,8 +216,8 @@
 
   /* LEAN CALLOUT — the tl;dr at the top of each fight */
   .lean-card {
-    background: linear-gradient(135deg, rgba(0, 122, 255, 0.06), rgba(0, 122, 255, 0.02));
-    border: 0.5px solid rgba(0, 122, 255, 0.20);
+    background: linear-gradient(135deg, rgba(10, 132, 255, 0.14), rgba(10, 132, 255, 0.04));
+    border: 0.5px solid rgba(10, 132, 255, 0.32);
     border-radius: var(--radius);
     padding: 14px 16px 16px;
     margin-top: 14px;
@@ -344,7 +345,7 @@
   }
   .method-bar { height: 100%; border-radius: 1px; }
   .method-bar.ko { background: var(--red); }
-  .method-bar.sub { background: #af52de; }
+  .method-bar.sub { background: #bf5af2; }
   .method-bar.dec { background: var(--brand); }
   .method-val {
     font-family: ui-monospace, 'SF Mono', Menlo, monospace;

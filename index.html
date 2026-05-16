@@ -10,30 +10,31 @@
 </script>
 <style>
   :root {
-    /* iOS Light Mode surfaces */
-    --bg: #f2f2f7;
-    --surface: #ffffff;
-    --surface-2: #f9f9fb;
-    --surface-3: #efeff4;
+    color-scheme: dark;
+    /* iOS Dark Mode surfaces */
+    --bg: #000000;
+    --surface: #1c1c1e;
+    --surface-2: #2c2c2e;
+    --surface-3: #3a3a3c;
     /* Borders / separators */
-    --border: #e5e5ea;
-    --border-bright: #c6c6c8;
+    --border: #38383a;
+    --border-bright: #545458;
     /* Text */
-    --text-primary: #1c1c1e;
-    --text-secondary: #3c3c43;
+    --text-primary: #ffffff;
+    --text-secondary: #aeaeb2;
     --text-muted: #8e8e93;
-    /* Brand — iOS blue */
-    --brand: #007aff;
-    --brand-soft: rgba(0, 122, 255, 0.10);
-    --green-strong: #248a3d;
-    /* Edge tiers — light-mode greens/reds with good contrast on white */
-    --edge-monster: #248a3d;   /* >+20% — deep green */
-    --edge-strong:  #34c759;   /* +10–20% — iOS green */
-    --edge-mild:    #5cc46d;   /* +5–10% — lighter green */
-    --edge-slight:  #8ed79d;   /* 0–+5% — soft green */
-    --edge-zero:    #c7c7cc;   /* 0% — neutral gray */
-    --edge-neg-1:   #ffb1a8;   /* -5–0% — soft red */
-    --edge-neg-2:   #ff3b30;   /* <-5% — iOS red */
+    /* Brand — iOS dark-mode blue */
+    --brand: #0a84ff;
+    --brand-soft: rgba(10, 132, 255, 0.16);
+    --green-strong: #30d158;
+    /* Edge tiers — dark-mode greens/reds with good contrast on black */
+    --edge-monster: #30d158;   /* >+20% — iOS dark green */
+    --edge-strong:  #32d74b;   /* +10–20% — bright green */
+    --edge-mild:    #69db8a;   /* +5–10% — lighter green */
+    --edge-slight:  #7dbb95;   /* 0–+5% — muted green */
+    --edge-zero:    #48484a;   /* 0% — neutral gray */
+    --edge-neg-1:   #ff8a80;   /* -5–0% — soft red */
+    --edge-neg-2:   #ff453a;   /* <-5% — iOS dark red */
     /* Type scale */
     --text-xs: 11px;
     --text-sm: 13px;
@@ -46,7 +47,7 @@
   html, body { background: var(--bg); color: var(--text-primary); font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', system-ui, sans-serif; font-size: 14px; min-height: 100vh; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 
   /* HEADER */
-  header { height: var(--header-h); background: rgba(255,255,255,0.85); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 0.5px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; position: sticky; top: 0; z-index: 100; }
+  header { height: var(--header-h); background: rgba(28,28,30,0.85); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 0.5px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 16px; position: sticky; top: 0; z-index: 100; }
   .header-left { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
   .event-title { font-size: var(--text-lg); font-weight: 700; letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text-primary); text-decoration: none; transition: color 0.12s; display: block; }
   a.event-title:hover { color: var(--brand); }
@@ -80,7 +81,7 @@
   .nav-dropdown-item .pct { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: var(--text-xs); color: var(--text-secondary); white-space: nowrap; }
   .nav-dropdown-empty { padding: 12px 14px; font-size: var(--text-xs); color: var(--text-muted); font-style: italic; text-align: center; }
   .badge { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.02em; padding: 4px 9px; border-radius: 4px; white-space: nowrap; }
-  .badge-yang { background: var(--brand-soft); color: var(--brand); border: 1px solid rgba(0, 122, 255, 0.20); }
+  .badge-yang { background: var(--brand-soft); color: var(--brand); border: 1px solid rgba(10, 132, 255, 0.32); }
   .badge-count { background: var(--surface-2); color: var(--text-secondary); border: 1px solid var(--border); }
   .refresh-btn {
     font-size: var(--text-xs); font-weight: 600;
@@ -429,7 +430,7 @@
     white-space: nowrap;
     transition: background 0.12s;
   }
-  .synopsis-link:hover { background: rgba(0, 122, 255, 0.18); }
+  .synopsis-link:hover { background: rgba(10, 132, 255, 0.24); }
   .synopsis-link .synopsis-arrow { display: inline-block; margin-left: 1px; transition: transform 0.12s; }
   .synopsis-link:hover .synopsis-arrow { transform: translateX(2px); }
 
