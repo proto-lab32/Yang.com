@@ -869,6 +869,10 @@ function applyLiveOdds(events) {
     }
   });
 
+  // Re-sort rows within each fight that got a live update so edges stay
+  // ordered biggest → smallest after the market values shift.
+  liveUpdatedFids.forEach(fid => resortFightRows(fid));
+
   // Update summary counts after all changes
   applyFilters();
   return updatedCount;
@@ -957,11 +961,31 @@ function getSortedFights() {
 }
 
 function getSortedPropIndices(fight) {
+  const edgeVal = i => {
+    const e = rows[i].edge;
+    return (typeof e === 'number' && !isNaN(e)) ? e : -Infinity;
+  };
   return fight.indices.slice().sort((a, b) => {
-    const ea = (typeof rows[a].edge === 'number') ? rows[a].edge : -Infinity;
-    const eb = (typeof rows[b].edge === 'number') ? rows[b].edge : -Infinity;
-    return eb - ea;
+    const diff = edgeVal(b) - edgeVal(a);
+    if (diff !== 0) return diff;
+    // Stable tiebreaker: keep original CSV order
+    return a - b;
   });
+}
+
+function resortFightRows(fid) {
+  const fight = fights[fid];
+  if (!fight) return;
+  const container = document.getElementById('props-' + fid);
+  if (!container) return;
+  const sorted = getSortedPropIndices(fight);
+  // Reorder DOM nodes in place to match sorted indices
+  const frag = document.createDocumentFragment();
+  sorted.forEach(i => {
+    const node = document.getElementById('tr-' + i);
+    if (node) frag.appendChild(node); // appendChild moves the node
+  });
+  container.appendChild(frag);
 }
 
 function setEdgeFilter(val) {
