@@ -1,163 +1,238 @@
 # UFC Vegas 117: Veretennikov vs Williams
 FightID,Market,Selection,Yang Probability,Market Probability
-F001,Moneyline,Malcolm Wellmaker,71.00%,73.50%
-F001,Moneyline,Juan Diaz,29.00%,31.00%
-F001,Method of Victory,Malcolm Wellmaker by KO/TKO,32.67%,44.00%
-F001,Method of Victory,Malcolm Wellmaker by Submission,10.18%,11.00%
-F001,Method of Victory,Malcolm Wellmaker by Decision,28.15%,29.00%
-F001,Method of Victory,Juan Diaz by KO/TKO,12.49%,15.00%
-F001,Method of Victory,Juan Diaz by Submission,6.66%,8.00%
-F001,Method of Victory,Juan Diaz by Decision,9.85%,15.00%
-F001,Total Rounds,Over 1.5,56.00%,63.00%
-F001,Total Rounds,Under 1.5,44.00%,43.00%
-F001,Total Rounds,Over 2.5,42.00%,47.00%
-F001,Total Rounds,Under 2.5,58.00%,59.00%
-F001,Fight Outcome,Goes to Decision,38.00%,40.00%
-F001,Fight Outcome,Inside the Distance,62.00%,66.00%
-F001,Fight Outcome,KO/TKO,45.16%,57.00%
-F001,Fight Outcome,Submission,16.84%,19.00%
-F001,Round Betting,Round 1 Finish,32.52%,32.50%
-F001,Round Betting,Round 2 Finish,19.80%,25.00%
-F001,Round Betting,Round 3 Finish,9.68%,16.00%
-F001,Fighter ITD,Malcolm Wellmaker ITD,42.85%,50.00%
-F001,Fighter ITD,Juan Diaz ITD,19.15%,20.00%
-F001,Double Chance,Malcolm Wellmaker KO/TKO or Dec,60.82%,70.00%
-F001,Double Chance,Juan Diaz KO/TKO or Dec,22.34%,27.00%
-F002,Moneyline,Nikolay Veretennikov,46.00%,50.00%
-F002,Moneyline,Khaos Williams,54.00%,55.00%
-F002,Method of Victory,Nikolay Veretennikov by KO/TKO,11.66%,29.00%
-F002,Method of Victory,Nikolay Veretennikov by Submission,12.04%,5.00%
-F002,Method of Victory,Nikolay Veretennikov by Decision,22.31%,22.00%
-F002,Method of Victory,Khaos Williams by KO/TKO,27.47%,32.00%
-F002,Method of Victory,Khaos Williams by Submission,1.83%,5.00%
-F002,Method of Victory,Khaos Williams by Decision,24.69%,27.00%
-F002,Total Rounds,Over 1.5,66.00%,69.00%
-F002,Total Rounds,Under 1.5,34.00%,36.00%
-F002,Total Rounds,Over 2.5,52.00%,50.00%
-F002,Total Rounds,Under 2.5,48.00%,55.00%
-F002,Fight Outcome,Goes to Decision,47.00%,44.00%
-F002,Fight Outcome,Inside the Distance,53.00%,62.00%
-F002,Fight Outcome,KO/TKO,39.13%,58.00%
-F002,Fight Outcome,Submission,13.87%,9.00%
-F002,Round Betting,Round 1 Finish,25.83%,28.50%
-F002,Round Betting,Round 2 Finish,18.04%,22.00%
-F002,Round Betting,Round 3 Finish,9.13%,15.50%
-F002,Fighter ITD,Nikolay Veretennikov ITD,23.69%,32.00%
-F002,Fighter ITD,Khaos Williams ITD,29.31%,33.00%
-F002,Double Chance,Nikolay Veretennikov KO/TKO or Dec,33.96%,47.50%
-F002,Double Chance,Khaos Williams KO/TKO or Dec,52.17%,54.00%
-F003,Moneyline,Tuco Tokkos,43.00%,41.00%
-F003,Moneyline,Ivan Erslan,57.00%,64.00%
-F003,Method of Victory,Tuco Tokkos by KO/TKO,5.24%,11.00%
-F003,Method of Victory,Tuco Tokkos by Submission,14.75%,17.00%
-F003,Method of Victory,Tuco Tokkos by Decision,23.01%,20.00%
-F003,Method of Victory,Ivan Erslan by KO/TKO,27.00%,46.00%
-F003,Method of Victory,Ivan Erslan by Submission,4.01%,8.00%
-F003,Method of Victory,Ivan Erslan by Decision,25.99%,18.00%
-F003,Total Rounds,Over 1.5,65.00%,61.00%
-F003,Total Rounds,Under 1.5,35.00%,45.00%
-F003,Total Rounds,Over 2.5,54.00%,43.00%
-F003,Total Rounds,Under 2.5,46.00%,63.00%
-F003,Fight Outcome,Goes to Decision,49.00%,36.00%
-F003,Fight Outcome,Inside the Distance,51.00%,68.50%
-F003,Fight Outcome,KO/TKO,32.24%,53.00%
-F003,Fight Outcome,Submission,18.76%,23.00%
-F003,Round Betting,Round 1 Finish,28.45%,34.00%
-F003,Round Betting,Round 2 Finish,15.42%,26.00%
-F003,Round Betting,Round 3 Finish,7.13%,17.00%
-F003,Fighter ITD,Tuco Tokkos ITD,19.99%,25.00%
-F003,Fighter ITD,Ivan Erslan ITD,31.01%,50.00%
-F003,Double Chance,Tuco Tokkos KO/TKO or Dec,28.25%,29.50%
-F003,Double Chance,Ivan Erslan KO/TKO or Dec,52.99%,61.00%
-F004,Moneyline,Jacqueline Cavalcanti,54.00%,63.00%
-F004,Moneyline,Ketlen Vieira,46.00%,42.00%
-F004,Method of Victory,Jacqueline Cavalcanti by KO/TKO,4.66%,15.00%
-F004,Method of Victory,Jacqueline Cavalcanti by Submission,0.61%,4.00%
-F004,Method of Victory,Jacqueline Cavalcanti by Decision,48.72%,51.00%
-F004,Method of Victory,Ketlen Vieira by KO/TKO,9.02%,5.00%
-F004,Method of Victory,Ketlen Vieira by Submission,15.71%,8.00%
-F004,Method of Victory,Ketlen Vieira by Decision,21.28%,35.00%
-F004,Total Rounds,Over 1.5,86.00%,90.00%
-F004,Total Rounds,Under 1.5,14.00%,17.00%
-F004,Total Rounds,Over 2.5,76.00%,85.00%
-F004,Total Rounds,Under 2.5,24.00%,20.50%
-F004,Fight Outcome,Goes to Decision,70.00%,80.00%
-F004,Fight Outcome,Inside the Distance,30.00%,26.00%
-F004,Fight Outcome,KO/TKO,13.68%,19.00%
-F004,Fight Outcome,Submission,16.32%,11.00%
-F004,Round Betting,Round 1 Finish,9.21%,11.50%
-F004,Round Betting,Round 2 Finish,9.49%,10.50%
-F004,Round Betting,Round 3 Finish,11.30%,8.00%
-F004,Fighter ITD,Jacqueline Cavalcanti ITD,5.28%,17.00%
-F004,Fighter ITD,Ketlen Vieira ITD,24.72%,12.00%
-F004,Double Chance,Jacqueline Cavalcanti KO/TKO or Dec,53.39%,63.00%
-F004,Double Chance,Ketlen Vieira KO/TKO or Dec,30.29%,39.00%
-F005,Moneyline,Andre Petroski,64.00%,67.50%
-F005,Moneyline,Cody Brundage,36.00%,36.50%
-F005,Method of Victory,Andre Petroski by KO/TKO,9.11%,14.00%
-F005,Method of Victory,Andre Petroski by Submission,18.22%,27.00%
-F005,Method of Victory,Andre Petroski by Decision,36.67%,38.00%
-F005,Method of Victory,Cody Brundage by KO/TKO,25.29%,22.00%
-F005,Method of Victory,Cody Brundage by Submission,5.37%,9.00%
-F005,Method of Victory,Cody Brundage by Decision,5.33%,11.00%
-F005,Total Rounds,Over 1.5,60.00%,67.00%
-F005,Total Rounds,Under 1.5,40.00%,38.00%
-F005,Total Rounds,Over 2.5,49.00%,52.00%
-F005,Total Rounds,Under 2.5,51.00%,53.50%
-F005,Fight Outcome,Goes to Decision,42.00%,45.00%
-F005,Fight Outcome,Inside the Distance,58.00%,62.00%
-F005,Fight Outcome,KO/TKO,34.40%,33.00%
-F005,Fight Outcome,Submission,23.60%,35.00%
-F005,Round Betting,Round 1 Finish,30.54%,27.00%
-F005,Round Betting,Round 2 Finish,18.85%,23.50%
-F005,Round Betting,Round 3 Finish,8.61%,16.50%
-F005,Fighter ITD,Andre Petroski ITD,27.33%,36.00%
-F005,Fighter ITD,Cody Brundage ITD,30.67%,29.00%
-F005,Double Chance,Andre Petroski KO/TKO or Dec,45.78%,49.50%
-F005,Double Chance,Cody Brundage KO/TKO or Dec,30.63%,31.00%
-F006,Moneyline,Daniel Barez,38.00%,45.00%
-F006,Moneyline,Luis Gurule,62.00%,59.00%
-F006,Method of Victory,Daniel Barez by KO/TKO,15.33%,19.00%
-F006,Method of Victory,Daniel Barez by Submission,9.81%,10.00%
-F006,Method of Victory,Daniel Barez by Decision,12.86%,29.50%
-F006,Method of Victory,Luis Gurule by KO/TKO,8.31%,21.50%
-F006,Method of Victory,Luis Gurule by Submission,6.56%,11.00%
-F006,Method of Victory,Luis Gurule by Decision,47.14%,31.50%
-F006,Total Rounds,Over 1.5,77.00%,76.00%
-F006,Total Rounds,Under 1.5,23.00%,30.00%
-F006,Total Rounds,Over 2.5,66.00%,62.00%
-F006,Total Rounds,Under 2.5,34.00%,42.50%
-F006,Fight Outcome,Goes to Decision,60.00%,59.00%
-F006,Fight Outcome,Inside the Distance,40.00%,48.00%
-F006,Fight Outcome,KO/TKO,23.63%,35.00%
-F006,Fight Outcome,Submission,16.37%,18.00%
-F006,Round Betting,Round 1 Finish,18.04%,23.00%
-F006,Round Betting,Round 2 Finish,13.59%,18.00%
-F006,Round Betting,Round 3 Finish,8.37%,13.00%
-F006,Fighter ITD,Daniel Barez ITD,25.14%,24.00%
-F006,Fighter ITD,Luis Gurule ITD,14.86%,27.50%
-F006,Double Chance,Daniel Barez KO/TKO or Dec,28.19%,43.00%
-F006,Double Chance,Luis Gurule KO/TKO or Dec,55.44%,52.00%
-F007,Moneyline,Shauna Bannon,44.00%,30.50%
-F007,Moneyline,Nicolle Caliari,56.00%,73.50%
-F007,Method of Victory,Shauna Bannon by KO/TKO,2.21%,4.50%
-F007,Method of Victory,Shauna Bannon by Submission,3.30%,8.00%
-F007,Method of Victory,Shauna Bannon by Decision,38.49%,28.50%
-F007,Method of Victory,Nicolle Caliari by KO/TKO,4.03%,8.00%
-F007,Method of Victory,Nicolle Caliari by Submission,25.46%,18.00%
-F007,Method of Victory,Nicolle Caliari by Decision,26.51%,55.00%
-F007,Total Rounds,Over 1.5,83.00%,88.00%
-F007,Total Rounds,Under 1.5,17.00%,18.00%
-F007,Total Rounds,Over 2.5,71.00%,78.00%
-F007,Total Rounds,Under 2.5,29.00%,26.50%
-F007,Fight Outcome,Goes to Decision,65.00%,77.00%
-F007,Fight Outcome,Inside the Distance,35.00%,29.00%
-F007,Fight Outcome,KO/TKO,6.24%,11.00%
-F007,Fight Outcome,Submission,28.76%,24.50%
-F007,Round Betting,Round 1 Finish,16.09%,13.00%
-F007,Round Betting,Round 2 Finish,12.96%,12.00%
-F007,Round Betting,Round 3 Finish,5.96%,8.00%
-F007,Fighter ITD,Shauna Bannon ITD,5.51%,10.00%
-F007,Fighter ITD,Nicolle Caliari ITD,29.49%,24.50%
-F007,Double Chance,Shauna Bannon KO/TKO or Dec,40.70%,31.00%
-F007,Double Chance,Nicolle Caliari KO/TKO or Dec,30.54%,60.00%
+F001,Moneyline,Arnold Allen,51.00%,55.50%
+F001,Moneyline,Melquizael Costa,49.00%,49.00%
+F001,Method of Victory,Arnold Allen by KO/TKO,24.25%,23.00%
+F001,Method of Victory,Arnold Allen by Submission,13.25%,9.00%
+F001,Method of Victory,Arnold Allen by Decision,13.51%,38.00%
+F001,Method of Victory,Melquizael Costa by KO/TKO,12.84%,15.00%
+F001,Method of Victory,Melquizael Costa by Submission,6.27%,13.00%
+F001,Method of Victory,Melquizael Costa by Decision,29.89%,24.00%
+F001,Total Rounds,Over 1.5,80.00%,86.00%
+F001,Total Rounds,Under 1.5,20.00%,21.00%
+F001,Total Rounds,Over 2.5,70.00%,76.00%
+F001,Total Rounds,Under 2.5,30.00%,30.00%
+F001,Total Rounds,Over 3.5,63.00%,67.00%
+F001,Total Rounds,Under 3.5,37.00%,39.00%
+F001,Total Rounds,Over 4.5,59.00%,58.00%
+F001,Total Rounds,Under 4.5,41.00%,47.00%
+F001,Fight Outcome,Goes to Decision,43.40%,57.00%
+F001,Fight Outcome,Inside the Distance,56.60%,50.00%
+F001,Fight Outcome,KO/TKO,37.09%,36.00%
+F001,Fight Outcome,Submission,19.51%,20.00%
+F001,Round Betting,Round 1 Finish,18.80%,15.00%
+F001,Round Betting,Round 2 Finish,14.40%,14.00%
+F001,Round Betting,Round 3 Finish,11.10%,11.00%
+F001,Round Betting,Round 4 Finish,7.30%,10.00%
+F001,Round Betting,Round 5 Finish,5.00%,8.00%
+F001,Fighter ITD,Arnold Allen ITD,37.49%,29.00%
+F001,Fighter ITD,Melquizael Costa ITD,19.11%,24.00%
+F001,Double Chance,Arnold Allen KO/TKO or Dec,37.75%,58.00%
+F001,Double Chance,Melquizael Costa KO/TKO or Dec,42.73%,35.50%
+F002,Moneyline,Malcolm Wellmaker,71.00%,73.50%
+F002,Moneyline,Juan Diaz,29.00%,31.00%
+F002,Method of Victory,Malcolm Wellmaker by KO/TKO,32.67%,44.00%
+F002,Method of Victory,Malcolm Wellmaker by Submission,10.18%,11.00%
+F002,Method of Victory,Malcolm Wellmaker by Decision,28.15%,29.00%
+F002,Method of Victory,Juan Diaz by KO/TKO,12.49%,15.00%
+F002,Method of Victory,Juan Diaz by Submission,6.66%,8.00%
+F002,Method of Victory,Juan Diaz by Decision,9.85%,15.00%
+F002,Total Rounds,Over 1.5,56.00%,63.00%
+F002,Total Rounds,Under 1.5,44.00%,43.00%
+F002,Total Rounds,Over 2.5,42.00%,47.00%
+F002,Total Rounds,Under 2.5,58.00%,59.00%
+F002,Fight Outcome,Goes to Decision,38.00%,40.00%
+F002,Fight Outcome,Inside the Distance,62.00%,66.00%
+F002,Fight Outcome,KO/TKO,45.16%,57.00%
+F002,Fight Outcome,Submission,16.84%,19.00%
+F002,Round Betting,Round 1 Finish,32.52%,32.50%
+F002,Round Betting,Round 2 Finish,19.80%,25.00%
+F002,Round Betting,Round 3 Finish,9.68%,16.00%
+F002,Fighter ITD,Malcolm Wellmaker ITD,42.85%,50.00%
+F002,Fighter ITD,Juan Diaz ITD,19.15%,20.00%
+F002,Double Chance,Malcolm Wellmaker KO/TKO or Dec,60.82%,70.00%
+F002,Double Chance,Juan Diaz KO/TKO or Dec,22.34%,27.00%
+F003,Moneyline,Timmy Cuamba,54.00%,47.50%
+F003,Moneyline,Benardo Sopaj,46.00%,57.00%
+F003,Method of Victory,Timmy Cuamba by KO/TKO,19.19%,17.00%
+F003,Method of Victory,Timmy Cuamba by Submission,12.42%,5.00%
+F003,Method of Victory,Timmy Cuamba by Decision,22.39%,31.00%
+F003,Method of Victory,Benardo Sopaj by KO/TKO,4.89%,20.00%
+F003,Method of Victory,Benardo Sopaj by Submission,4.59%,10.00%
+F003,Method of Victory,Benardo Sopaj by Decision,36.51%,39.00%
+F003,Total Rounds,Over 1.5,82.00%,83.00%
+F003,Total Rounds,Under 1.5,18.00%,24.00%
+F003,Total Rounds,Over 2.5,73.00%,69.50%
+F003,Total Rounds,Under 2.5,27.00%,36.00%
+F003,Fight Outcome,Goes to Decision,58.90%,66.00%
+F003,Fight Outcome,Inside the Distance,41.10%,40.00%
+F003,Fight Outcome,KO/TKO,24.08%,35.00%
+F003,Fight Outcome,Submission,17.02%,13.00%
+F003,Round Betting,Round 1 Finish,18.90%,19.00%
+F003,Round Betting,Round 2 Finish,14.30%,16.00%
+F003,Round Betting,Round 3 Finish,7.90%,11.00%
+F003,Fighter ITD,Timmy Cuamba ITD,31.61%,19.00%
+F003,Fighter ITD,Benardo Sopaj ITD,9.49%,27.00%
+F003,Double Chance,Timmy Cuamba KO/TKO or Dec,41.58%,43.00%
+F003,Double Chance,Benardo Sopaj KO/TKO or Dec,41.41%,56.50%
+F004,Moneyline,Nikolay Veretennikov,46.00%,50.00%
+F004,Moneyline,Khaos Williams,54.00%,55.00%
+F004,Method of Victory,Nikolay Veretennikov by KO/TKO,11.66%,29.00%
+F004,Method of Victory,Nikolay Veretennikov by Submission,12.04%,5.00%
+F004,Method of Victory,Nikolay Veretennikov by Decision,22.31%,22.00%
+F004,Method of Victory,Khaos Williams by KO/TKO,27.47%,32.00%
+F004,Method of Victory,Khaos Williams by Submission,1.83%,5.00%
+F004,Method of Victory,Khaos Williams by Decision,24.69%,27.00%
+F004,Total Rounds,Over 1.5,66.00%,69.00%
+F004,Total Rounds,Under 1.5,34.00%,36.00%
+F004,Total Rounds,Over 2.5,52.00%,50.00%
+F004,Total Rounds,Under 2.5,48.00%,55.00%
+F004,Fight Outcome,Goes to Decision,47.00%,44.00%
+F004,Fight Outcome,Inside the Distance,53.00%,62.00%
+F004,Fight Outcome,KO/TKO,39.13%,58.00%
+F004,Fight Outcome,Submission,13.87%,9.00%
+F004,Round Betting,Round 1 Finish,25.83%,28.50%
+F004,Round Betting,Round 2 Finish,18.04%,22.00%
+F004,Round Betting,Round 3 Finish,9.13%,15.50%
+F004,Fighter ITD,Nikolay Veretennikov ITD,23.69%,32.00%
+F004,Fighter ITD,Khaos Williams ITD,29.31%,33.00%
+F004,Double Chance,Nikolay Veretennikov KO/TKO or Dec,33.96%,47.50%
+F004,Double Chance,Khaos Williams KO/TKO or Dec,52.17%,54.00%
+F005,Moneyline,Tuco Tokkos,43.00%,41.00%
+F005,Moneyline,Ivan Erslan,57.00%,64.00%
+F005,Method of Victory,Tuco Tokkos by KO/TKO,5.24%,11.00%
+F005,Method of Victory,Tuco Tokkos by Submission,14.75%,17.00%
+F005,Method of Victory,Tuco Tokkos by Decision,23.01%,20.00%
+F005,Method of Victory,Ivan Erslan by KO/TKO,27.00%,46.00%
+F005,Method of Victory,Ivan Erslan by Submission,4.01%,8.00%
+F005,Method of Victory,Ivan Erslan by Decision,25.99%,18.00%
+F005,Total Rounds,Over 1.5,65.00%,61.00%
+F005,Total Rounds,Under 1.5,35.00%,45.00%
+F005,Total Rounds,Over 2.5,54.00%,43.00%
+F005,Total Rounds,Under 2.5,46.00%,63.00%
+F005,Fight Outcome,Goes to Decision,49.00%,36.00%
+F005,Fight Outcome,Inside the Distance,51.00%,68.50%
+F005,Fight Outcome,KO/TKO,32.24%,53.00%
+F005,Fight Outcome,Submission,18.76%,23.00%
+F005,Round Betting,Round 1 Finish,28.45%,34.00%
+F005,Round Betting,Round 2 Finish,15.42%,26.00%
+F005,Round Betting,Round 3 Finish,7.13%,17.00%
+F005,Fighter ITD,Tuco Tokkos ITD,19.99%,25.00%
+F005,Fighter ITD,Ivan Erslan ITD,31.01%,50.00%
+F005,Double Chance,Tuco Tokkos KO/TKO or Dec,28.25%,29.50%
+F005,Double Chance,Ivan Erslan KO/TKO or Dec,52.99%,61.00%
+F006,Moneyline,Jacqueline Cavalcanti,54.00%,63.00%
+F006,Moneyline,Ketlen Vieira,46.00%,42.00%
+F006,Method of Victory,Jacqueline Cavalcanti by KO/TKO,4.66%,15.00%
+F006,Method of Victory,Jacqueline Cavalcanti by Submission,0.61%,4.00%
+F006,Method of Victory,Jacqueline Cavalcanti by Decision,48.72%,51.00%
+F006,Method of Victory,Ketlen Vieira by KO/TKO,9.02%,5.00%
+F006,Method of Victory,Ketlen Vieira by Submission,15.71%,8.00%
+F006,Method of Victory,Ketlen Vieira by Decision,21.28%,35.00%
+F006,Total Rounds,Over 1.5,86.00%,90.00%
+F006,Total Rounds,Under 1.5,14.00%,17.00%
+F006,Total Rounds,Over 2.5,76.00%,85.00%
+F006,Total Rounds,Under 2.5,24.00%,20.50%
+F006,Fight Outcome,Goes to Decision,70.00%,80.00%
+F006,Fight Outcome,Inside the Distance,30.00%,26.00%
+F006,Fight Outcome,KO/TKO,13.68%,19.00%
+F006,Fight Outcome,Submission,16.32%,11.00%
+F006,Round Betting,Round 1 Finish,9.21%,11.50%
+F006,Round Betting,Round 2 Finish,9.49%,10.50%
+F006,Round Betting,Round 3 Finish,11.30%,8.00%
+F006,Fighter ITD,Jacqueline Cavalcanti ITD,5.28%,17.00%
+F006,Fighter ITD,Ketlen Vieira ITD,24.72%,12.00%
+F006,Double Chance,Jacqueline Cavalcanti KO/TKO or Dec,53.39%,63.00%
+F006,Double Chance,Ketlen Vieira KO/TKO or Dec,30.29%,39.00%
+F007,Moneyline,Andre Petroski,64.00%,67.50%
+F007,Moneyline,Cody Brundage,36.00%,36.50%
+F007,Method of Victory,Andre Petroski by KO/TKO,9.11%,14.00%
+F007,Method of Victory,Andre Petroski by Submission,18.22%,27.00%
+F007,Method of Victory,Andre Petroski by Decision,36.67%,38.00%
+F007,Method of Victory,Cody Brundage by KO/TKO,25.29%,22.00%
+F007,Method of Victory,Cody Brundage by Submission,5.37%,9.00%
+F007,Method of Victory,Cody Brundage by Decision,5.33%,11.00%
+F007,Total Rounds,Over 1.5,60.00%,67.00%
+F007,Total Rounds,Under 1.5,40.00%,38.00%
+F007,Total Rounds,Over 2.5,49.00%,52.00%
+F007,Total Rounds,Under 2.5,51.00%,53.50%
+F007,Fight Outcome,Goes to Decision,42.00%,45.00%
+F007,Fight Outcome,Inside the Distance,58.00%,62.00%
+F007,Fight Outcome,KO/TKO,34.40%,33.00%
+F007,Fight Outcome,Submission,23.60%,35.00%
+F007,Round Betting,Round 1 Finish,30.54%,27.00%
+F007,Round Betting,Round 2 Finish,18.85%,23.50%
+F007,Round Betting,Round 3 Finish,8.61%,16.50%
+F007,Fighter ITD,Andre Petroski ITD,27.33%,36.00%
+F007,Fighter ITD,Cody Brundage ITD,30.67%,29.00%
+F007,Double Chance,Andre Petroski KO/TKO or Dec,45.78%,49.50%
+F007,Double Chance,Cody Brundage KO/TKO or Dec,30.63%,31.00%
+F008,Moneyline,Alice Ardelean,68.00%,67.00%
+F008,Moneyline,Polyana Viana,32.00%,37.00%
+F008,Method of Victory,Alice Ardelean by KO/TKO,9.45%,10.00%
+F008,Method of Victory,Alice Ardelean by Submission,2.14%,15.00%
+F008,Method of Victory,Alice Ardelean by Decision,56.42%,52.00%
+F008,Method of Victory,Polyana Viana by KO/TKO,5.72%,8.00%
+F008,Method of Victory,Polyana Viana by Submission,20.90%,15.00%
+F008,Method of Victory,Polyana Viana by Decision,5.38%,20.00%
+F008,Total Rounds,Over 1.5,78.00%,82.00%
+F008,Total Rounds,Under 1.5,22.00%,25.00%
+F008,Total Rounds,Over 2.5,64.00%,68.00%
+F008,Total Rounds,Under 2.5,36.00%,37.00%
+F008,Fight Outcome,Goes to Decision,61.80%,66.00%
+F008,Fight Outcome,Inside the Distance,38.20%,40.00%
+F008,Fight Outcome,KO/TKO,15.17%,17.00%
+F008,Fight Outcome,Submission,23.03%,28.00%
+F008,Round Betting,Round 1 Finish,14.54%,18.00%
+F008,Round Betting,Round 2 Finish,16.04%,16.00%
+F008,Round Betting,Round 3 Finish,7.62%,11.00%
+F008,Fighter ITD,Alice Ardelean ITD,11.58%,22.00%
+F008,Fighter ITD,Polyana Viana ITD,26.62%,20.00%
+F008,Double Chance,Alice Ardelean KO/TKO or Dec,65.86%,58.50%
+F008,Double Chance,Polyana Viana KO/TKO or Dec,11.10%,27.50%
+F009,Moneyline,Daniel Barez,38.00%,45.00%
+F009,Moneyline,Luis Gurule,62.00%,59.00%
+F009,Method of Victory,Daniel Barez by KO/TKO,15.33%,19.00%
+F009,Method of Victory,Daniel Barez by Submission,9.81%,10.00%
+F009,Method of Victory,Daniel Barez by Decision,12.86%,29.50%
+F009,Method of Victory,Luis Gurule by KO/TKO,8.31%,21.50%
+F009,Method of Victory,Luis Gurule by Submission,6.56%,11.00%
+F009,Method of Victory,Luis Gurule by Decision,47.14%,31.50%
+F009,Total Rounds,Over 1.5,77.00%,76.00%
+F009,Total Rounds,Under 1.5,23.00%,30.00%
+F009,Total Rounds,Over 2.5,66.00%,62.00%
+F009,Total Rounds,Under 2.5,34.00%,42.50%
+F009,Fight Outcome,Goes to Decision,60.00%,59.00%
+F009,Fight Outcome,Inside the Distance,40.00%,48.00%
+F009,Fight Outcome,KO/TKO,23.63%,35.00%
+F009,Fight Outcome,Submission,16.37%,18.00%
+F009,Round Betting,Round 1 Finish,18.04%,23.00%
+F009,Round Betting,Round 2 Finish,13.59%,18.00%
+F009,Round Betting,Round 3 Finish,8.37%,13.00%
+F009,Fighter ITD,Daniel Barez ITD,25.14%,24.00%
+F009,Fighter ITD,Luis Gurule ITD,14.86%,27.50%
+F009,Double Chance,Daniel Barez KO/TKO or Dec,28.19%,43.00%
+F009,Double Chance,Luis Gurule KO/TKO or Dec,55.44%,52.00%
+F010,Moneyline,Shauna Bannon,44.00%,30.50%
+F010,Moneyline,Nicolle Caliari,56.00%,73.50%
+F010,Method of Victory,Shauna Bannon by KO/TKO,2.21%,4.50%
+F010,Method of Victory,Shauna Bannon by Submission,3.30%,8.00%
+F010,Method of Victory,Shauna Bannon by Decision,38.49%,28.50%
+F010,Method of Victory,Nicolle Caliari by KO/TKO,4.03%,8.00%
+F010,Method of Victory,Nicolle Caliari by Submission,25.46%,18.00%
+F010,Method of Victory,Nicolle Caliari by Decision,26.51%,55.00%
+F010,Total Rounds,Over 1.5,83.00%,88.00%
+F010,Total Rounds,Under 1.5,17.00%,18.00%
+F010,Total Rounds,Over 2.5,71.00%,78.00%
+F010,Total Rounds,Under 2.5,29.00%,26.50%
+F010,Fight Outcome,Goes to Decision,65.00%,77.00%
+F010,Fight Outcome,Inside the Distance,35.00%,29.00%
+F010,Fight Outcome,KO/TKO,6.24%,11.00%
+F010,Fight Outcome,Submission,28.76%,24.50%
+F010,Round Betting,Round 1 Finish,16.09%,13.00%
+F010,Round Betting,Round 2 Finish,12.96%,12.00%
+F010,Round Betting,Round 3 Finish,5.96%,8.00%
+F010,Fighter ITD,Shauna Bannon ITD,5.51%,10.00%
+F010,Fighter ITD,Nicolle Caliari ITD,29.49%,24.50%
+F010,Double Chance,Shauna Bannon KO/TKO or Dec,40.70%,31.00%
+F010,Double Chance,Nicolle Caliari KO/TKO or Dec,30.54%,60.00%
