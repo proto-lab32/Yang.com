@@ -1042,10 +1042,10 @@ function renderPropEdges(fight) {
     }
   }
   if (!edges || !edges.length) {
-    return `<div class="block">
-      <div class="block-title">Prop Edges (Yang vs Market)</div>
-      <div class="prop-edges-empty">No prop edges available for this fight in data.csv.</div>
-    </div>`;
+    // No matching fight in data.csv (e.g. a synopses-only event whose edge sheet is
+    // intentionally not published). Omit the block entirely rather than showing a
+    // placeholder, so no edge UI appears for this event.
+    return '';
   }
   // Top positive edges only (largest first, max 6)
   const top = edges
@@ -1301,10 +1301,16 @@ async function loadSynopses() {
     ]);
     if (!synRes.ok) throw new Error('synopses.json HTTP ' + synRes.status);
     SYNOPSES = await synRes.json();
+    // Prefer the synopses' own event title. Only fall back to the data.csv comment
+    // line when synopses.json has no title — this keeps the Synopses page on the
+    // correct event even when the edge-sheet CSV is intentionally a different event.
+    if (SYNOPSES.title) document.getElementById('event-title').textContent = SYNOPSES.title;
     if (csvRes.ok) {
       const csv = await csvRes.text();
-      const firstLine = csv.split('\n')[0].replace(/^#\s*/, '').trim();
-      if (firstLine) document.getElementById('event-title').textContent = firstLine;
+      if (!SYNOPSES.title) {
+        const firstLine = csv.split('\n')[0].replace(/^#\s*/, '').trim();
+        if (firstLine) document.getElementById('event-title').textContent = firstLine;
+      }
       try { PROP_EDGES = parseDataCsv(csv); } catch (e) { console.warn('CSV parse failed:', e); PROP_EDGES = null; }
     }
     document.getElementById('event-meta').textContent = SYNOPSES.generated ? SYNOPSES.generated.replace(/^Generated\s+/, '') : 'Synopses · Yang\'s Model';
