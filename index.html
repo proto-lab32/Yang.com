@@ -8,6 +8,9 @@
   // Password gate — bounce to landing if not authed (client-side only, not real security)
   try { if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html'); } catch (e) {}
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: dark;
@@ -696,6 +699,46 @@
     background-position: center top, center top; }
   .fight-header:hover {
     background-image: linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.82)), var(--usflag-url) !important; }
+
+  /* ============================================================
+     USA 250 — designer polish pass (banner serif, hairline, flags)
+     ============================================================ */
+  .flag-title-text {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 800; font-size: 30px; letter-spacing: 0.01em; position: relative; }
+  .flag-title-text::after {
+    content: ""; position: absolute; left: 14%; right: 14%; bottom: -9px; height: 2px;
+    background: linear-gradient(90deg, transparent, #f0c860, transparent); }
+  .flag-title-banner { height: 96px; }
+  header::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; z-index: 1;
+    background: linear-gradient(90deg, #b22234 0%, #b22234 34%, #ffffff 50%, #1f44c4 66%, #1f44c4 100%); }
+  @media (max-width: 560px) {
+    .flag-title-text { font-size: 22px; }
+    .flag-title-banner { height: 76px; }
+  }
+
+  /* commemorative serif for fighter names */
+  .fighter-name { font-family: 'Playfair Display', Georgia, serif; font-weight: 800; letter-spacing: 0; }
+  /* stronger flag wash behind each fight header */
+  .fight-header { background-image: linear-gradient(rgba(255,255,255,0.66), rgba(255,255,255,0.80)), var(--usflag-url) !important; }
+  .fight-header:hover { background-image: linear-gradient(rgba(255,255,255,0.58), rgba(255,255,255,0.72)), var(--usflag-url) !important; }
+  /* Top Edges — patriotic */
+  .top-edges { position: relative; overflow: hidden; border: 1px solid var(--border); }
+  .top-edges::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; z-index: 2;
+    background: linear-gradient(90deg, #b22234 0 33.3%, #ffffff 33.3% 66.6%, #1f44c4 66.6% 100%); }
+  .top-edges-title { display: inline-flex; align-items: center; color: var(--brand); }
+  .te-flag { display: inline-block; width: 22px; height: 13px; border-radius: 2px; margin-right: 8px;
+    background-image: var(--usflag-url); background-size: cover; background-position: center;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.14); }
+  /* best-bet cards become little flag medals */
+  .best-bet-card { position: relative; overflow: hidden; }
+  .best-bet-card::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #b22234, #b22234 45%, #1f44c4 55%, #1f44c4); }
+  .best-bet-card:first-child::before { background: linear-gradient(90deg, #e0a93a, #f5d784, #e0a93a); }
+  .best-bet-card:first-child { box-shadow: 0 0 0 1px rgba(224,169,58,0.55), 0 3px 12px rgba(224,169,58,0.20); }
+  .best-bet-rank::before { content: "°5"; color: #e0a93a; margin-right: 5px; }
+  .best-bet-cat { color: var(--brand) !important; background: var(--brand-soft) !important; }
 </style>
 </head>
 <body>
@@ -735,7 +778,7 @@
 
 <div class="top-edges" id="top-edges">
   <div class="top-edges-header" onclick="toggleTopEdges()">
-    <span class="top-edges-title">⚡ Top Edges</span>
+    <span class="top-edges-title"><span class="te-flag"></span>Top Edges</span>
     <span class="top-edges-toggle">▾</span>
   </div>
   <div class="top-edges-list" id="top-edges-list"></div>

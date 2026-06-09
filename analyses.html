@@ -8,6 +8,9 @@
   // Password gate — bounce to landing if not authed (client-side only, not real security)
   try { if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html'); } catch (e) {}
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: dark;
@@ -775,6 +778,30 @@
     background-position: center top, center top; }
   .fight-header:hover {
     background-image: linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.82)), var(--usflag-url) !important; }
+
+  /* ============================================================
+     USA 250 — designer polish pass (banner serif, hairline, flags)
+     ============================================================ */
+  .flag-title-text {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 800; font-size: 30px; letter-spacing: 0.01em; position: relative; }
+  .flag-title-text::after {
+    content: ""; position: absolute; left: 14%; right: 14%; bottom: -9px; height: 2px;
+    background: linear-gradient(90deg, transparent, #f0c860, transparent); }
+  .flag-title-banner { height: 96px; }
+  header::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; z-index: 1;
+    background: linear-gradient(90deg, #b22234 0%, #b22234 34%, #ffffff 50%, #1f44c4 66%, #1f44c4 100%); }
+  @media (max-width: 560px) {
+    .flag-title-text { font-size: 22px; }
+    .flag-title-banner { height: 76px; }
+  }
+
+  /* synopsis fight header — SAME flag treatment as the Edges page */
+  .fight-hero { position: relative;
+    background-image: linear-gradient(rgba(255,255,255,0.66), rgba(255,255,255,0.80)), var(--usflag-url);
+    background-size: cover, cover; background-position: center top, center top; }
+  .fight-hero .matchup { font-family: 'Playfair Display', Georgia, serif; font-weight: 800; color: var(--text-primary); }
 </style>
 </head>
 <body>
