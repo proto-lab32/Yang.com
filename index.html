@@ -573,9 +573,100 @@
     }
     .edge-cell { justify-content: flex-start; }
   }
+  /* ============================================================
+     USA 250 — Patriotic theme (Freedom 250). Appended overrides;
+     overrides earlier rules via cascade. Delete this block to revert.
+     ============================================================ */
+  :root {
+    --bg: #0a0f2c;
+    --brand: #5a78ff;
+    --brand-soft: rgba(90, 120, 255, 0.18);
+    --usa-red: #e23b4e;
+    --usa-blue: #3c5aff;
+    --usa-gold: #ffcf4d;
+    /* Edge tiers recolored RED/BLUE: positive edges = blue, negative = red */
+    --edge-monster: #2ec5ff;   /* >+20%  — bright azure */
+    --edge-strong:  #3a9bff;   /* +10–20% */
+    --edge-mild:    #6fb4ff;   /* +5–10% */
+    --edge-slight:  #9ed3ff;   /* 0–+5%  — light blue */
+    --edge-zero:    #6a6a72;   /* 0%     — neutral gray */
+    --edge-neg-1:   #ff8a80;   /* -5–0%  — soft red */
+    --edge-neg-2:   #ff453a;   /* <-5%   — bright red */
+    --green-strong: #3a9bff;   /* repurpose stray green usage to blue */
+  }
+  html { background: #070a22; }
+  body { background: transparent; }
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none;
+    background:
+      radial-gradient(ellipse 55% 45% at 12% -5%, rgba(60,90,255,0.26), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 88% -5%, rgba(226,59,78,0.20), transparent 60%),
+      radial-gradient(ellipse 90% 60% at 50% 112%, rgba(60,90,255,0.18), transparent 60%),
+      #070a22;
+  }
+  body::after {
+    content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    opacity: 0.55;
+    background-image:
+      radial-gradient(1.5px 1.5px at 30px 40px, #fff, transparent),
+      radial-gradient(1.5px 1.5px at 200px 150px, #fff, transparent),
+      radial-gradient(1.2px 1.2px at 160px 30px, rgba(255,255,255,0.95), transparent),
+      radial-gradient(1px 1px at 120px 90px, rgba(255,255,255,0.8), transparent),
+      radial-gradient(1px 1px at 80px 200px, rgba(255,255,255,0.75), transparent),
+      radial-gradient(1px 1px at 250px 80px, rgba(255,255,255,0.7), transparent),
+      radial-gradient(1.2px 1.2px at 240px 220px, rgba(255,255,255,0.85), transparent);
+    background-size: 280px 280px;
+    background-repeat: repeat;
+    animation: usaTwinkle 6s ease-in-out infinite;
+  }
+  @keyframes usaTwinkle { 0%, 100% { opacity: 0.5; } 50% { opacity: 0.68; } }
+  /* Flag-stripe ribbon across the very top of the sticky header */
+  header { background: rgba(10, 15, 44, 0.82) !important; }
+  header::before {
+    content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px;
+    background:
+      linear-gradient(90deg, #3c3b6e 0 90px, transparent 90px),
+      repeating-linear-gradient(90deg, #b22234 0 26px, #ffffff 26px 52px);
+    z-index: 1;
+  }
+  /* Gold milestone accent on the event title */
+  .event-title {
+    background-image: linear-gradient(90deg, #ffffff 0%, #ffe7a0 100%);
+    background-color: transparent;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* American flag graphics + 250-years celebration banner */
+  .usflag-svg { display: inline-block; width: 26px; height: 13.7px; border-radius: 1.5px;
+    box-shadow: 0 0 0 0.5px rgba(255,255,255,0.25), 0 1px 3px rgba(0,0,0,0.4);
+    flex: 0 0 auto; vertical-align: middle; }
+  .usa250-banner { display: flex; align-items: center; justify-content: center; gap: 12px;
+    padding: 7px 14px; text-align: center;
+    background: linear-gradient(90deg, rgba(178,34,52,0.20), rgba(60,59,110,0.36) 50%, rgba(178,34,52,0.20));
+    border-bottom: 1px solid rgba(120,150,255,0.22);
+    color: #ffe7a0; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; }
+  .usa250-banner .usflag-svg:last-of-type { transform: scaleX(-1); }
+  @media (max-width: 560px) {
+    .usa250-banner { font-size: 9px; letter-spacing: 0.04em; gap: 8px; padding: 6px 10px; }
+    .usflag-svg { width: 22px; height: 11.6px; }
+  }
 </style>
 </head>
 <body>
+
+<!-- Reusable US flag (inline SVG; flag emoji don't render on Windows) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="usFlag" viewBox="0 0 76 40" preserveAspectRatio="xMidYMid meet">
+  <rect width="76" height="40" fill="#b22234"/>
+  <g fill="#fff"><rect y="3.08" width="76" height="3.08"/><rect y="9.23" width="76" height="3.08"/><rect y="15.38" width="76" height="3.08"/><rect y="21.54" width="76" height="3.08"/><rect y="27.69" width="76" height="3.08"/><rect y="33.85" width="76" height="3.08"/></g>
+  <rect width="30.4" height="21.54" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <circle cx="2.9" cy="2.6" r="0.9"/><circle cx="7.9" cy="2.6" r="0.9"/><circle cx="12.9" cy="2.6" r="0.9"/><circle cx="17.9" cy="2.6" r="0.9"/><circle cx="22.9" cy="2.6" r="0.9"/><circle cx="27.9" cy="2.6" r="0.9"/>
+    <circle cx="5.4" cy="6.9" r="0.9"/><circle cx="10.4" cy="6.9" r="0.9"/><circle cx="15.4" cy="6.9" r="0.9"/><circle cx="20.4" cy="6.9" r="0.9"/><circle cx="25.4" cy="6.9" r="0.9"/>
+    <circle cx="2.9" cy="11.1" r="0.9"/><circle cx="7.9" cy="11.1" r="0.9"/><circle cx="12.9" cy="11.1" r="0.9"/><circle cx="17.9" cy="11.1" r="0.9"/><circle cx="22.9" cy="11.1" r="0.9"/><circle cx="27.9" cy="11.1" r="0.9"/>
+    <circle cx="5.4" cy="15.4" r="0.9"/><circle cx="10.4" cy="15.4" r="0.9"/><circle cx="15.4" cy="15.4" r="0.9"/><circle cx="20.4" cy="15.4" r="0.9"/><circle cx="25.4" cy="15.4" r="0.9"/>
+    <circle cx="2.9" cy="19.6" r="0.9"/><circle cx="7.9" cy="19.6" r="0.9"/><circle cx="12.9" cy="19.6" r="0.9"/><circle cx="17.9" cy="19.6" r="0.9"/><circle cx="22.9" cy="19.6" r="0.9"/><circle cx="27.9" cy="19.6" r="0.9"/>
+  </g>
+</symbol></svg>
 
 <header>
   <div class="header-left">
@@ -597,6 +688,12 @@
     </button>
   </div>
 </header>
+
+<div class="usa250-banner">
+  <svg class="usflag-svg"><use href="#usFlag"/></svg>
+  <span>Celebrating 250 Years of American Independence&nbsp;·&nbsp;1776–2026</span>
+  <svg class="usflag-svg"><use href="#usFlag"/></svg>
+</div>
 
 <div class="live-bar">
   <div class="live-status">
