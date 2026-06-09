@@ -180,14 +180,17 @@
     -webkit-text-fill-color: transparent;
   }
   .wordmark::after {
-    content: "\2605 \2605 \2605";
-    display: block; margin-top: 12px;
-    font-size: 16px; letter-spacing: 0.55em; text-indent: 0.55em;
+    content: "\2605  250 Years of Freedom  \2605";
+    display: block; margin-top: 14px;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.20em; text-transform: uppercase;
     color: #ffcf4d; -webkit-text-fill-color: #ffcf4d;
   }
   .tagline::before { content: "1776 \2014 2026  \00B7  "; color: #ffcf4d; font-weight: 600; }
-  .landing-flag { display: block; width: 92px; height: 48.4px; margin: 0 auto 20px;
-    border-radius: 3px; box-shadow: 0 3px 14px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.18); }
+  .landing-flag { display: block; width: 132px; height: 69.5px; margin: 0 auto 22px;
+    border-radius: 3px; box-shadow: 0 4px 18px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.22),
+      0 0 36px rgba(60,90,255,0.30);
+    transform-origin: center bottom; animation: usaWave 3.6s ease-in-out infinite; }
+  @keyframes usaWave { 0%,100% { transform: rotate(-2.2deg); } 50% { transform: rotate(2.2deg); } }
 </style>
 </head>
 <body>

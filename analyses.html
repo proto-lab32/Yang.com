@@ -719,19 +719,32 @@
       repeating-linear-gradient(90deg, #b22234 0 26px, #ffffff 26px 52px);
     z-index: 1;
   }
-  /* American flag graphics + 250-years celebration banner */
-  .usflag-svg { display: inline-block; width: 26px; height: 13.7px; border-radius: 1.5px;
-    box-shadow: 0 0 0 0.5px rgba(255,255,255,0.25), 0 1px 3px rgba(0,0,0,0.4);
-    flex: 0 0 auto; vertical-align: middle; }
-  .usa250-banner { display: flex; align-items: center; justify-content: center; gap: 12px;
-    padding: 7px 14px; text-align: center;
-    background: linear-gradient(90deg, rgba(178,34,52,0.20), rgba(60,59,110,0.36) 50%, rgba(178,34,52,0.20));
-    border-bottom: 1px solid rgba(120,150,255,0.22);
-    color: #ffe7a0; font-size: 11px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; }
-  .usa250-banner .usflag-svg:last-of-type { transform: scaleX(-1); }
+  /* American flags + 250-years celebration banner */
+  .usa250-banner { position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center; padding: 14px 16px;
+    background: linear-gradient(90deg, rgba(178,34,52,0.34), rgba(60,59,110,0.48) 50%, rgba(178,34,52,0.34));
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, #b22234, #ffffff, #3c5aff) 1; }
+  .usa250-inner { display: flex; align-items: center; justify-content: center; gap: 20px;
+    position: relative; z-index: 1; max-width: 100%; }
+  .usa250-flag-lg { width: 60px; height: 31.6px; flex: 0 0 auto; overflow: visible;
+    border-radius: 2px; box-shadow: 0 2px 10px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.30);
+    transform-origin: center; animation: usaWave 3.4s ease-in-out infinite; }
+  .usa250-flag-lg:last-of-type { animation-delay: -1.7s; }
+  .usa250-text { text-align: center; line-height: 1.28; }
+  .usa250-line1 { font-size: 13.5px; font-weight: 800; letter-spacing: 0.07em; text-transform: uppercase; color: #ffffff; }
+  .usa250-num { color: #ffcf4d; font-size: 1.4em; font-weight: 900; text-shadow: 0 0 12px rgba(255,207,77,0.6); }
+  .usa250-line2 { font-size: 12px; font-weight: 800; letter-spacing: 0.20em; text-transform: uppercase; color: #ffcf4d; margin-top: 4px; }
+  .usa250-banner::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(110deg, transparent 35%, rgba(255,255,255,0.13) 50%, transparent 65%);
+    transform: translateX(-110%); animation: usaShimmer 5.5s ease-in-out infinite; }
+  @keyframes usaWave { 0%,100% { transform: rotate(-2deg); } 50% { transform: rotate(2deg); } }
+  @keyframes usaShimmer { 0% { transform: translateX(-110%); } 55%,100% { transform: translateX(110%); } }
   @media (max-width: 560px) {
-    .usa250-banner { font-size: 9px; letter-spacing: 0.04em; gap: 8px; padding: 6px 10px; }
-    .usflag-svg { width: 22px; height: 11.6px; }
+    .usa250-inner { gap: 12px; }
+    .usa250-flag-lg { width: 44px; height: 23.2px; }
+    .usa250-line1 { font-size: 10.5px; letter-spacing: 0.03em; }
+    .usa250-line2 { font-size: 10px; letter-spacing: 0.12em; }
   }
 </style>
 </head>
@@ -768,9 +781,14 @@
 </header>
 
 <div class="usa250-banner">
-  <svg class="usflag-svg"><use href="#usFlag"/></svg>
-  <span>Celebrating 250 Years of American Independence&nbsp;·&nbsp;1776–2026</span>
-  <svg class="usflag-svg"><use href="#usFlag"/></svg>
+  <div class="usa250-inner">
+    <svg class="usa250-flag-lg"><use href="#usFlag"/></svg>
+    <div class="usa250-text">
+      <div class="usa250-line1">Celebrating <span class="usa250-num">250</span> Years of American Independence</div>
+      <div class="usa250-line2">1776 ★ 2026 · Land of the Free</div>
+    </div>
+    <svg class="usa250-flag-lg"><use href="#usFlag"/></svg>
+  </div>
 </div>
 
 <main>
