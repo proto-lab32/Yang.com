@@ -140,6 +140,7 @@
     --brand: #5a78ff;
     --brand-dark: #8aa0ff;
     --red: #e23b4e;
+    --usflag-url: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2076%2040'%20preserveAspectRatio='xMidYMid%20slice'%3E%3Crect%20width='76'%20height='40'%20fill='%23b22234'/%3E%3Cg%20fill='%23fff'%3E%3Crect%20y='3.08'%20width='76'%20height='3.08'/%3E%3Crect%20y='9.23'%20width='76'%20height='3.08'/%3E%3Crect%20y='15.38'%20width='76'%20height='3.08'/%3E%3Crect%20y='21.54'%20width='76'%20height='3.08'/%3E%3Crect%20y='27.69'%20width='76'%20height='3.08'/%3E%3Crect%20y='33.85'%20width='76'%20height='3.08'/%3E%3C/g%3E%3Crect%20width='30.4'%20height='21.54'%20fill='%233c3b6e'/%3E%3Cg%20fill='%23fff'%3E%3Ccircle%20cx='2.9'%20cy='2.6'%20r='0.9'/%3E%3Ccircle%20cx='7.9'%20cy='2.6'%20r='0.9'/%3E%3Ccircle%20cx='12.9'%20cy='2.6'%20r='0.9'/%3E%3Ccircle%20cx='17.9'%20cy='2.6'%20r='0.9'/%3E%3Ccircle%20cx='22.9'%20cy='2.6'%20r='0.9'/%3E%3Ccircle%20cx='27.9'%20cy='2.6'%20r='0.9'/%3E%3Ccircle%20cx='5.4'%20cy='6.9'%20r='0.9'/%3E%3Ccircle%20cx='10.4'%20cy='6.9'%20r='0.9'/%3E%3Ccircle%20cx='15.4'%20cy='6.9'%20r='0.9'/%3E%3Ccircle%20cx='20.4'%20cy='6.9'%20r='0.9'/%3E%3Ccircle%20cx='25.4'%20cy='6.9'%20r='0.9'/%3E%3Ccircle%20cx='2.9'%20cy='11.1'%20r='0.9'/%3E%3Ccircle%20cx='7.9'%20cy='11.1'%20r='0.9'/%3E%3Ccircle%20cx='12.9'%20cy='11.1'%20r='0.9'/%3E%3Ccircle%20cx='17.9'%20cy='11.1'%20r='0.9'/%3E%3Ccircle%20cx='22.9'%20cy='11.1'%20r='0.9'/%3E%3Ccircle%20cx='27.9'%20cy='11.1'%20r='0.9'/%3E%3Ccircle%20cx='5.4'%20cy='15.4'%20r='0.9'/%3E%3Ccircle%20cx='10.4'%20cy='15.4'%20r='0.9'/%3E%3Ccircle%20cx='15.4'%20cy='15.4'%20r='0.9'/%3E%3Ccircle%20cx='20.4'%20cy='15.4'%20r='0.9'/%3E%3Ccircle%20cx='25.4'%20cy='15.4'%20r='0.9'/%3E%3Ccircle%20cx='2.9'%20cy='19.6'%20r='0.9'/%3E%3Ccircle%20cx='7.9'%20cy='19.6'%20r='0.9'/%3E%3Ccircle%20cx='12.9'%20cy='19.6'%20r='0.9'/%3E%3Ccircle%20cx='17.9'%20cy='19.6'%20r='0.9'/%3E%3Ccircle%20cx='22.9'%20cy='19.6'%20r='0.9'/%3E%3Ccircle%20cx='27.9'%20cy='19.6'%20r='0.9'/%3E%3C/g%3E%3C/svg%3E");
   }
   html { background: #070a22; }
   body { background: transparent; }
@@ -187,6 +188,7 @@
   }
   .tagline::before { content: "1776 \2014 2026  \00B7  "; color: #ffcf4d; font-weight: 600; }
   .landing-flag { display: block; width: 132px; height: 69.5px; margin: 0 auto 22px;
+    background-image: var(--usflag-url); background-size: cover; background-position: center;
     border-radius: 3px; box-shadow: 0 4px 18px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.22),
       0 0 36px rgba(60,90,255,0.30);
     transform-origin: center bottom; animation: usaWave 3.6s ease-in-out infinite; }
@@ -195,23 +197,9 @@
 </head>
 <body>
 
-<!-- Reusable US flag (inline SVG; flag emoji don't render on Windows) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="usFlag" viewBox="0 0 76 40" preserveAspectRatio="xMidYMid meet">
-  <rect width="76" height="40" fill="#b22234"/>
-  <g fill="#fff"><rect y="3.08" width="76" height="3.08"/><rect y="9.23" width="76" height="3.08"/><rect y="15.38" width="76" height="3.08"/><rect y="21.54" width="76" height="3.08"/><rect y="27.69" width="76" height="3.08"/><rect y="33.85" width="76" height="3.08"/></g>
-  <rect width="30.4" height="21.54" fill="#3c3b6e"/>
-  <g fill="#fff">
-    <circle cx="2.9" cy="2.6" r="0.9"/><circle cx="7.9" cy="2.6" r="0.9"/><circle cx="12.9" cy="2.6" r="0.9"/><circle cx="17.9" cy="2.6" r="0.9"/><circle cx="22.9" cy="2.6" r="0.9"/><circle cx="27.9" cy="2.6" r="0.9"/>
-    <circle cx="5.4" cy="6.9" r="0.9"/><circle cx="10.4" cy="6.9" r="0.9"/><circle cx="15.4" cy="6.9" r="0.9"/><circle cx="20.4" cy="6.9" r="0.9"/><circle cx="25.4" cy="6.9" r="0.9"/>
-    <circle cx="2.9" cy="11.1" r="0.9"/><circle cx="7.9" cy="11.1" r="0.9"/><circle cx="12.9" cy="11.1" r="0.9"/><circle cx="17.9" cy="11.1" r="0.9"/><circle cx="22.9" cy="11.1" r="0.9"/><circle cx="27.9" cy="11.1" r="0.9"/>
-    <circle cx="5.4" cy="15.4" r="0.9"/><circle cx="10.4" cy="15.4" r="0.9"/><circle cx="15.4" cy="15.4" r="0.9"/><circle cx="20.4" cy="15.4" r="0.9"/><circle cx="25.4" cy="15.4" r="0.9"/>
-    <circle cx="2.9" cy="19.6" r="0.9"/><circle cx="7.9" cy="19.6" r="0.9"/><circle cx="12.9" cy="19.6" r="0.9"/><circle cx="17.9" cy="19.6" r="0.9"/><circle cx="22.9" cy="19.6" r="0.9"/><circle cx="27.9" cy="19.6" r="0.9"/>
-  </g>
-</symbol></svg>
-
 <div class="lock-screen">
   <div class="lock-card">
-    <svg class="landing-flag"><use href="#usFlag"/></svg>
+    <div class="landing-flag"></div>
     <h1 class="wordmark">Yang</h1>
     <div class="tagline">Enter password to continue</div>
     <form class="lock-form" id="lock-form" autocomplete="off">
