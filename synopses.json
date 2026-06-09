@@ -65,9 +65,9 @@
       "division": "Middleweight",
       "dataMode": null,
       "f1Short": "Nickal",
-      "f1Pct": 64,
+      "f1Pct": 68,
       "f2Short": "Daukaus",
-      "f2Pct": 36
+      "f2Pct": 32
     },
     {
       "f1": "Steve Garcia",
@@ -1359,52 +1359,52 @@
           "f1Short": "Nickal",
           "f2Short": "Daukaus",
           "modelProb": {
-            "f1": 64.0,
-            "f2": 36.0
+            "f1": 68.0,
+            "f2": 32.0
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 30.1,
-              "f2": 11.3
+              "f1": 30.0,
+              "f2": 12.5
             },
             {
               "name": "Submission",
-              "f1": 7.3,
-              "f2": 5.8
+              "f1": 10.5,
+              "f2": 4.3
             },
             {
               "name": "Decision",
-              "f1": 26.6,
-              "f2": 18.9
+              "f1": 27.4,
+              "f2": 15.2
             }
           ],
-          "decisionPct": 45.5,
+          "decisionPct": 42.7,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 31.3
+              "pct": 33.1
             },
             {
               "r": 2,
-              "pct": 16.2
+              "pct": 17.1
             },
             {
               "r": 3,
-              "pct": 7.0
+              "pct": 7.1
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 45.2,
-            "over": 54.8
+            "under": 46.3,
+            "over": 53.7
           },
           {
             "line": 2.5,
-            "under": 56.8,
-            "over": 43.2
+            "under": 58.0,
+            "over": 42.0
           }
         ],
         "composites": {
@@ -1521,37 +1521,37 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "+0.052",
+            "value": "+0.592",
             "reads": "Toward Nickal"
           },
           {
             "name": "KO threat — Nickal",
-            "value": "+1.235",
+            "value": "+1.420",
             "reads": "Above-avg"
           },
           {
             "name": "KO threat — Daukaus",
-            "value": "+0.477",
+            "value": "+0.554",
             "reads": "Above-avg"
           },
           {
             "name": "Sub threat — Nickal",
-            "value": "-0.275",
-            "reads": "Below-avg"
+            "value": "-0.010",
+            "reads": "Near avg"
           },
           {
             "name": "Sub threat — Daukaus",
-            "value": "-0.220",
+            "value": "-0.658",
             "reads": "Below-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "9.8%",
+            "value": "13.1%",
             "reads": "Mostly standing"
           },
           {
             "name": "Standing % of fight",
-            "value": "90.2%",
+            "value": "86.9%",
             "reads": ""
           },
           {
@@ -1561,7 +1561,7 @@
           },
           {
             "name": "GBM P(Nickal wins)",
-            "value": "61.2% calibrated  (HT 63.1%)",
+            "value": "64.8% calibrated  (HT 79.0%)",
             "reads": ""
           }
         ],
@@ -1584,13 +1584,13 @@
           }
         ],
         "matchupAnalysis": [
-          "One of the two closest fights on the card: Nickal 64.0% / Daukaus 36.0%, with the GBM (61.2%) and hand-tuned model (63.1%) in tight agreement. Tellingly, the decision edge is a near-dead-even +0.05 — this is competitive on the cards, and Nickal's margin comes from his finishing tools and Elo (1863 vs 1656), not from control he can take for granted. He wins wrestling defense (+1.20), output (+0.84), and brings a +1.23 KO threat plus a strong submission game (57% career sub rate).",
+          "With full trust applied to Nickal's thin-but-dominant sample (the user's trust=1.0 on 9 pro fights and ~48 UFC minutes), the model firms him to 68.0% / 32.0%. The trust override is the swing: it lifts the decision edge from near-dead-even to +0.59 and sharpens his finishing profile, so this reads less like a coin flip than the raw composites alone would. Nickal wins wrestling defense (+1.20) and output (+0.84), carries a +1.42 KO threat and Elo (1863 vs 1656), and his grappling (+0.50, 57% career sub rate) drives a submission share that climbs to 10.5% at full trust.",
           "Daukaus is a live, well-matched grappler, and the composites say so: he edges Nickal in grappling (+0.65 vs +0.50) and cardio (+1.33 vs −0.04), and matches him on reach. He arrives on a two-fight tear — a submission of Gerald Meerschaert and a KO of Michel Pereira — that rebuilt his stock after consecutive knockout losses. His path is real: drag Nickal into deep water where the cardio edge bites, or hit a scramble submission (his sub finish rate is 0.40).",
-          "The fight hinges on Nickal's chin and Daukaus's gas. Both men carry suspect chins (Nickal −0.48, Daukaus −0.86), and Nickal's lone loss — a knockout by Reinier de Ridder — proved the −0.48 is not cosmetic. Nickal's win equity is balanced (KO 30.1%, decision 26.6%, sub 7.3%); Daukaus's is broader than most underdogs' (decision 18.9%, KO 11.3%, sub 5.8%) precisely because the decision edge is even. 45.5% reach the judges. The model leans Nickal on tools and pedigree, but this is the underdog with the clearest live path on the main card."
+          "The model layers split on how much to credit the trust-boosted profile: the hand-tuned model rewards it at 79.0%, the GBM stays cautious at 64.8%, and the sim settles between. The fight still hinges on Nickal's chin and Daukaus's gas — both men carry suspect chins (Nickal −0.48, Daukaus −0.86), and Nickal's lone loss, a knockout by Reinier de Ridder, proved the −0.48 is not cosmetic. Nickal's win equity is balanced (KO 30.0%, decision 27.4%, sub 10.5%); Daukaus's stays broad for an underdog (decision 15.2%, KO 12.5%, sub 4.3%). 42.7% reach the judges. The model leans Nickal on tools and pedigree, but Daukaus remains the most live underdog on the main card."
         ],
         "synopsis": {
           "lean": "Bo Nickal — moderate",
-          "body": "Modal terminal state is a Nickal KO/TKO (30.1%) or decision (26.6%); the decision edge is essentially even (+0.05), so the margin is finishing tools, not control. Realistic upset path is Daukaus's cardio (+1.33) and grappling dragging Nickal deep, or a scramble submission catching the suspect chin (−0.48) de Ridder already exposed. Moderate confidence: Daukaus is the most live underdog on the main card."
+          "body": "Modal terminal state is a Nickal KO/TKO (30.0%) or decision (27.4%), with a submission dimension (10.5%) his grappling opens at full trust. Realistic upset path is Daukaus's cardio (+1.33) and grappling dragging Nickal deep, or a scramble submission catching the suspect chin (−0.48) de Ridder already exposed. Moderate confidence: the trust=1.0 override firms Nickal to 68%, but the HT/GBM split (79% vs 65%) and Daukaus's live grappling keep real uncertainty here."
         }
       }
     },
