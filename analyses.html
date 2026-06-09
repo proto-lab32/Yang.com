@@ -802,6 +802,25 @@
     background-image: linear-gradient(rgba(255,255,255,0.66), rgba(255,255,255,0.80)), var(--usflag-url);
     background-size: cover, cover; background-position: center top, center top; }
   .fight-hero .matchup { font-family: 'Playfair Display', Georgia, serif; font-weight: 800; color: var(--text-primary); }
+
+  /* ============================================================
+     Desktop: stop the flag background from over-zooming/cropping.
+     Show the flag at full height and tile it (mobile keeps cover).
+     ============================================================ */
+  @media (min-width: 561px) {
+    .flag-title-banner {
+      background-size: cover, auto 100%;
+      background-repeat: no-repeat, repeat-x;
+      background-position: center, center; }
+    .fight-header {
+      background-size: cover, auto 100%;
+      background-repeat: no-repeat, repeat-x;
+      background-position: center, center; }
+    .fight-hero {
+      background-size: cover, auto 100%;
+      background-repeat: no-repeat, repeat-x;
+      background-position: center, center; }
+  }
 </style>
 </head>
 <body>
