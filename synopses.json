@@ -76,9 +76,9 @@
       "division": "Featherweight",
       "dataMode": null,
       "f1Short": "Aswell",
-      "f1Pct": 69,
+      "f1Pct": 40,
       "f2Short": "Bolanos",
-      "f2Pct": 31
+      "f2Pct": 60
     },
     {
       "f1": "Karol Rosa",
@@ -1598,52 +1598,52 @@
           "f1Short": "Aswell",
           "f2Short": "Bolanos",
           "modelProb": {
-            "f1": 68.9,
-            "f2": 31.1
+            "f1": 40.1,
+            "f2": 59.9
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 16,
-              "f2": 7
+              "f1": 6,
+              "f2": 14.3
             },
             {
               "name": "Submission",
-              "f1": 7.6,
-              "f2": 4.4
+              "f1": 5.7,
+              "f2": 5.4
             },
             {
               "name": "Decision",
-              "f1": 45.4,
-              "f2": 19.7
+              "f1": 28.4,
+              "f2": 40.2
             }
           ],
-          "decisionPct": 65.1,
+          "decisionPct": 68.6,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 18.5
+              "pct": 14.5
             },
             {
               "r": 2,
-              "pct": 11.2
+              "pct": 10.9
             },
             {
               "r": 3,
-              "pct": 5.2
+              "pct": 5.9
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 27.4,
-            "over": 72.6
+            "under": 21.5,
+            "over": 78.5
           },
           {
             "line": 2.5,
-            "under": 38.1,
-            "over": 61.9
+            "under": 29.6,
+            "over": 70.4
           }
         ],
         "composites": {
@@ -1651,39 +1651,39 @@
           "rows": [
             {
               "name": "Power",
-              "f1": 0.96,
+              "f1": -0.47,
               "f2": -0.34,
-              "delta": 1.3
+              "delta": -0.13
             },
             {
               "name": "Chin",
-              "f1": 0.18,
+              "f1": 0.16,
               "f2": -0.39,
-              "delta": 0.57
+              "delta": 0.55
             },
             {
               "name": "Output",
-              "f1": 0.29,
+              "f1": 0.02,
               "f2": 0.39,
-              "delta": -0.1
+              "delta": -0.37
             },
             {
               "name": "Grappling",
-              "f1": -0.12,
+              "f1": -0.26,
               "f2": -0.26,
-              "delta": 0.13
+              "delta": -0.01
             },
             {
               "name": "Wrestling Def",
-              "f1": 0.21,
+              "f1": 0.2,
               "f2": -0.55,
-              "delta": 0.76
+              "delta": 0.74
             },
             {
               "name": "Cardio",
-              "f1": 0.21,
+              "f1": 0.15,
               "f2": 0.31,
-              "delta": -0.09
+              "delta": -0.16
             },
             {
               "name": "Reach",
@@ -1696,39 +1696,39 @@
         "styleProfiles": [
           {
             "name": "Pressure",
-            "f1": 0.55,
+            "f1": 0.51,
             "f2": 0.57
           },
           {
             "name": "Counter",
-            "f1": 0.66,
+            "f1": 0.45,
             "f2": 0.48
           },
           {
             "name": "Wrestler",
-            "f1": 0.5,
+            "f1": 0.48,
             "f2": 0.44
           },
           {
             "name": "Finisher",
-            "f1": 0.73,
+            "f1": 0.31,
             "f2": 0.37
           },
           {
             "name": "Early-Finish Score",
-            "f1": 0.94,
+            "f1": 0.25,
             "f2": 0.1
           },
           {
             "name": "Early Vulnerability",
-            "f1": 0.12,
+            "f1": 0.13,
             "f2": 0.55
           }
         ],
         "modifiers": [
           {
             "name": "Trust factor (minutes-based)",
-            "f1": "0.667 (46.7 min)",
+            "f1": "0.643 (45.0 min)",
             "f2": "0.648 (45.4 min)"
           },
           {
@@ -1760,47 +1760,47 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "+0.267",
-            "reads": "Toward Jr."
+            "value": "-0.243",
+            "reads": "Toward Bolanos"
           },
           {
-            "name": "KO threat — Jr.",
-            "value": "+1.364",
-            "reads": "Above-avg"
+            "name": "KO threat — Aswell",
+            "value": "-0.073",
+            "reads": "Near avg"
           },
           {
             "name": "KO threat — Bolanos",
-            "value": "-0.585",
+            "value": "-0.403",
             "reads": "Below-avg"
           },
           {
-            "name": "Sub threat — Jr.",
-            "value": "+0.393",
-            "reads": "Above-avg"
+            "name": "Sub threat — Aswell",
+            "value": "+0.106",
+            "reads": "Near avg"
           },
           {
             "name": "Sub threat — Bolanos",
-            "value": "-0.480",
+            "value": "-0.372",
             "reads": "Below-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "28.1%",
+            "value": "22.2%",
             "reads": "Mostly standing"
           },
           {
             "name": "Standing % of fight",
-            "value": "71.9%",
+            "value": "77.8%",
             "reads": ""
           },
           {
             "name": "Elo (WC-specific)",
-            "value": "Jr. 1408 (4 fts) / Bolanos 1409 (4 fts)",
-            "reads": "Δ -1"
+            "value": "Aswell 1290 (3 fts) / Bolanos 1409 (4 fts)",
+            "reads": "Δ -119"
           },
           {
-            "name": "GBM P(Jr. wins)",
-            "value": "68.1% calibrated  (HT 72.8%)",
+            "name": "GBM P(Aswell wins)",
+            "value": "39.3% calibrated  (HT 39.9%)",
             "reads": ""
           }
         ],
@@ -1809,8 +1809,8 @@
             "name": "Michael Aswell Jr.",
             "lines": [
               "26, Orthodox, 5'8\" / 69\" reach. Record 11-4-0.",
-              "Sample: 4 division fights, 46.7 minutes total. Career WR 25%. Layoff 88 days.",
-              "Recent: L vs Luke Riley (Decision R3, 2026-03-21) | W vs Lucas Almeida (KO/TKO R1, 2025-10-11) | L vs Bolaji Oki (Decision R3, 2025-05-31)"
+              "Sample: 3 division fights, 45.0 minutes total. Career WR 0%. Layoff 88 days.",
+              "Recent: L vs Luke Riley (Decision R3, 2026-03-21) | L vs Bolaji Oki (Decision R3, 2025-05-31) | L vs Bogdan Grad (Decision - Split R3, None)"
             ]
           },
           {
@@ -1823,13 +1823,13 @@
           }
         ],
         "matchupAnalysis": [
-          "The model leans the younger puncher: Aswell 68.9% / Bolanos 31.1%. The driver is power — Aswell's +0.96 composite against Bolanos's −0.34 produces a +1.36 KO threat — paired with a chin (+0.18 vs −0.39) and wrestling defense (+0.21 vs −0.55) that both belong to him. At 25, Aswell is the live finisher here: a 1.00 KO finish rate on his stoppages and a recent first-round knockout of Lucas Almeida. The Elo is dead even (1408 vs 1409), so this is a profile-driven read rather than a résumé one.",
-          "Bolanos's case rests on activity and experience, but the composites are unkind. His chin (−0.39) and wrestling defense (−0.55) are both negatives, he carries a long 410-day layoff into this, and the model flags a high finished-rate — durability is the question mark over his whole game. His output (+0.39 vs +0.29) is a hair better than Aswell's, and he is the more seasoned man at 33, but his offensive threat is thin (KO share 7.0%, sub 4.4%) against a younger fighter who hits harder.",
-          "Despite the power gap, this projects as a decision-heavy fight (65.1% reach the judges), and Aswell's modal outcome is actually a decision (45.4%) rather than the knockout (16.0%) his power threatens — his output is only modestly above average, so the volume to force a finish isn't fully there. Aswell's short reach (−0.80) is his one structural soft spot, the lever Bolanos can pull to keep range and bank rounds. But coming off a long layoff with a suspect chin against the harder hitter, Bolanos's path is a tightrope the model gives less than one chance in three."
+          "The model leans the more active, more seasoned man: Bolanos 59.9% / Aswell 40.1%. This is a fight between two thin, modestly-rated featherweight profiles, and Bolanos's edges are volume and experience — his output composite (+0.39 vs +0.02) is the clearest separator, his cardio (+0.31 vs +0.15) is a touch better, and his Elo (1409) sits above Aswell's (1290). The decision edge (−0.24) and both KO threats tilt his way — Aswell's matchup KO threat is a flat −0.07 — making this a points fight Bolanos is favored to control.",
+          "Aswell, 25, is the younger man and owns the one durability edge in the fight: a chin composite of +0.16 against Bolanos's −0.39. But the model credits him almost no offense here — his power reads −0.47 and his output is essentially neutral (+0.02), so his KO share collapses to 6.0% and his game becomes out-pointing from a short reach (−0.80). His best path is to weather Bolanos's volume, lean on the better chin, and grind out a close one — but he gives up exactly the activity that decides decision-heavy fights.",
+          "Bolanos is far from a clean favorite, though. His chin (−0.39) and wrestling defense (−0.55) are both negatives, he carries a 410-day layoff into this, and he has been finished in every one of his losses (a 1.00 finished-rate) — so his durability is the live question if Aswell's hands prove better than the composites say. This projects as a decision-heavy fight (68.6% reach the judges): Bolanos's modal outcome is a decision (40.2%), with a knockout (14.3%) the upside his volume earns, while Aswell's equity is spread thin across a decision (28.4%) and little else. The model leans Bolanos on output, cardio and Elo, but with both profiles this modest, it is a low-confidence call."
         ],
         "synopsis": {
-          "lean": "Michael Aswell Jr. — moderate",
-          "body": "Modal terminal state is an Aswell decision (45.4%) in a 65%-decision fight, with his +1.36 KO threat (16.0% KO) the upside on a 1.00 career KO rate. Realistic upset path is Bolanos using his reach edge over Aswell's short frame (−0.80) to keep range and out-point him. Moderate confidence: dead-even Elo makes this a profile call, and Aswell's power, chin and youth outweigh Bolanos's activity and a 410-day layoff."
+          "lean": "Gaston Bolanos — narrow",
+          "body": "Modal terminal state is a Bolanos decision (40.2%) his output (+0.39) and cardio earn in a 69%-decision fight, with a KO (14.3%) the upside. Realistic upset path is Aswell's lone clear edge — the better chin (+0.16 vs −0.39) — holding up while he steals a close one against a fighter on a 410-day layoff. Low confidence: two thin featherweight profiles and a near coin-flip; Bolanos's activity and higher Elo are the only real separators."
         }
       }
     },
