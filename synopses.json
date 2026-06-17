@@ -26,6 +26,17 @@
       "f2Pct": 82
     },
     {
+      "f1": "Vinicius Oliveira",
+      "f2": "Andre Fili",
+      "rounds": 3,
+      "division": "Featherweight",
+      "dataMode": null,
+      "f1Short": "Oliveira",
+      "f1Pct": 75,
+      "f2Short": "Fili",
+      "f2Pct": 25
+    },
+    {
       "f1": "Christian Rodriguez",
       "f2": "Hyder Amil",
       "rounds": 3,
@@ -600,6 +611,252 @@
         "synopsis": {
           "lean": "Navajo Stirling, strong",
           "body": "Modal terminal states are a Stirling decision (38.6%) or KO/TKO (35.9%) — his +2.28 output and reach overwhelming a chinny veteran, with 32% of sims ending in round one. Realistic upset path is Cutelaba's lone edge, grappling (+0.97), landing a takedown and scramble before the prospect's pace takes over. High confidence Stirling: he wins striking, reach, chin and cardio; Cutelaba needs the fight on the mat to have a case."
+        }
+      }
+    },
+    {
+      "f1": "Vinicius Oliveira",
+      "f2": "Andre Fili",
+      "rounds": 3,
+      "division": "Featherweight",
+      "dataMode": null,
+      "sections": {
+        "modelProjections": {
+          "f1Short": "Oliveira",
+          "f2Short": "Fili",
+          "modelProb": {
+            "f1": 75,
+            "f2": 25
+          },
+          "method": [
+            {
+              "name": "KO/TKO",
+              "f1": 27.3,
+              "f2": 3.6
+            },
+            {
+              "name": "Submission",
+              "f1": 4.5,
+              "f2": 7.3
+            },
+            {
+              "name": "Decision",
+              "f1": 43.5,
+              "f2": 13.8
+            }
+          ],
+          "decisionPct": 57.3,
+          "roundsFinish": [
+            {
+              "r": 1,
+              "pct": 22.0
+            },
+            {
+              "r": 2,
+              "pct": 13.7
+            },
+            {
+              "r": 3,
+              "pct": 7.0
+            }
+          ]
+        },
+        "overUnder": [
+          {
+            "line": 1.5,
+            "under": 25.8,
+            "over": 74.2
+          },
+          {
+            "line": 2.5,
+            "under": 34.5,
+            "over": 65.5
+          }
+        ],
+        "composites": {
+          "note": "Positive = above weight-class avg. ±0.5 = clear edge, ±1.0 = elite/poor.",
+          "rows": [
+            {
+              "name": "Power",
+              "f1": 0.04,
+              "f2": -0.09,
+              "delta": 0.14
+            },
+            {
+              "name": "Chin",
+              "f1": 1.01,
+              "f2": -0.55,
+              "delta": 1.56
+            },
+            {
+              "name": "Output",
+              "f1": 1.85,
+              "f2": -0.3,
+              "delta": 2.16
+            },
+            {
+              "name": "Grappling",
+              "f1": 0.25,
+              "f2": 0.09,
+              "delta": 0.17
+            },
+            {
+              "name": "Wrestling Def",
+              "f1": 0.16,
+              "f2": 0.5,
+              "delta": -0.34
+            },
+            {
+              "name": "Cardio",
+              "f1": 2.98,
+              "f2": -0.33,
+              "delta": 3.32
+            },
+            {
+              "name": "Reach",
+              "f1": -0.32,
+              "f2": 1.74,
+              "delta": -2.06
+            }
+          ]
+        },
+        "styleProfiles": [
+          {
+            "name": "Pressure",
+            "f1": 0.84,
+            "f2": 0.44
+          },
+          {
+            "name": "Counter",
+            "f1": 0.62,
+            "f2": 0.63
+          },
+          {
+            "name": "Wrestler",
+            "f1": 0.54,
+            "f2": 0.52
+          },
+          {
+            "name": "Finisher",
+            "f1": 0.38,
+            "f2": 0.41
+          },
+          {
+            "name": "Early-Finish Score",
+            "f1": 0.21,
+            "f2": 0.31
+          },
+          {
+            "name": "Early Vulnerability",
+            "f1": 0.17,
+            "f2": 0.45
+          }
+        ],
+        "modifiers": [
+          {
+            "name": "Trust factor (minutes-based)",
+            "f1": "0.992 (69.5 min)",
+            "f2": "1.000 (278.6 min)"
+          },
+          {
+            "name": "Decision trust",
+            "f1": "0.500",
+            "f2": "1.000"
+          },
+          {
+            "name": "Layoff factor",
+            "f1": "1.000",
+            "f2": "1.000"
+          },
+          {
+            "name": "Age factor",
+            "f1": "1.000",
+            "f2": "0.900"
+          },
+          {
+            "name": "Chin damage factor",
+            "f1": "0.995",
+            "f2": "0.640"
+          },
+          {
+            "name": "SoS multiplier",
+            "f1": "1.230",
+            "f2": "1.148"
+          }
+        ],
+        "matchupEdges": [
+          {
+            "name": "Decision edge",
+            "value": "+2.705",
+            "reads": "Toward Oliveira"
+          },
+          {
+            "name": "KO threat — Oliveira",
+            "value": "+0.207",
+            "reads": "Above-avg"
+          },
+          {
+            "name": "KO threat — Fili",
+            "value": "-0.828",
+            "reads": "Below-avg"
+          },
+          {
+            "name": "Sub threat — Oliveira",
+            "value": "-0.086",
+            "reads": "Below-avg"
+          },
+          {
+            "name": "Sub threat — Fili",
+            "value": "-0.023",
+            "reads": "Below-avg"
+          },
+          {
+            "name": "Ground % of fight",
+            "value": "16.9%",
+            "reads": "Mostly standing"
+          },
+          {
+            "name": "Standing % of fight",
+            "value": "83.1%",
+            "reads": ""
+          },
+          {
+            "name": "Elo (WC-specific)",
+            "value": "Oliveira 1895 (5 fts) / Fili 1582 (25 fts)",
+            "reads": "Δ +313"
+          },
+          {
+            "name": "GBM P(Oliveira wins)",
+            "value": "75.9% calibrated  (HT 87.3%)",
+            "reads": ""
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Vinicius Oliveira",
+            "lines": [
+              "30, Switch, 5'9\" / 70\" reach. Record 23-3-0.",
+              "Sample: 5 division fights, 69.5 minutes total. Career WR 80%. Layoff 130 days.",
+              "Recent: L vs Mario Bautista (Submission R2, 2026-02-07) | W vs Kyler Phillips (Decision R3, 2025-07-19) | W vs Said Nurmagomedov (Decision R3, 2025-02-01)"
+            ]
+          },
+          {
+            "name": "Andre Fili",
+            "lines": [
+              "36, Orthodox, 5'11\" / 74\" reach. Record 25-12-0.",
+              "Sample: 26 division fights, 278.6 minutes total. Career WR 50%. Layoff 95 days.",
+              "Recent: L vs Jose Delgado (Decision R3, 2026-03-14) | W vs Christian Rodriguez (Decision R3, 2025-08-09) | L vs Melquizael Costa (Submission R1, 2025-02-22)"
+            ]
+          }
+        ],
+        "matchupAnalysis": [
+          "The model makes Oliveira a clear favorite at 75.4% / 24.6%, and the composite sheet shows why: he is the markedly higher-output, fresher, more durable man. His output (+1.85) and cardio (+2.98 — the highest mark in the fight by a distance) tower over Fili's −0.30 and −0.33, and his chin (+1.01) reads far sturdier than Fili's −0.55. Oliveira moves up from bantamweight on the back of decision wins over Said Nurmagomedov, Ricky Simon and Kyler Phillips, and the engine treats that pace and granite as portable to 145.",
+          "Fili's case is built almost entirely on length. His reach (+1.74 vs −0.32) is a real and rare edge here, and at featherweight he carries the depth of sample the model trusts most — 26 fights and 278 minutes of cage time vs Oliveira's thin 5-fight, 69-minute book (trust 0.992 vs 1.000, but decision trust just 0.500 for Oliveira). If he can keep the fight long and at the end of his jab, his wrestling defense (+0.50 vs +0.16) gives him a way to stay vertical and bank rounds.",
+          "The problem is everything that happens inside that reach. Oliveira's volume and motor are exactly the profile that has historically worn Fili down, and Fili's −0.55 chin plus a 46% finished-rate make him live to be stopped: the model finds Oliveira KO/TKO in 27.3% of sims (16.1% inside round one) on top of a dominant 43.5% decision share. Fili's realistic routes are a flush counter from range or a submission in a scramble (7.3%), but with the fight projected 83% standing and Oliveira owning the pace, the engine gives the veteran less than one chance in four."
+        ],
+        "synopsis": {
+          "lean": "Vinicius Oliveira, strong",
+          "body": "Modal outcomes are an Oliveira decision (43.5%) or KO/TKO (27.3%) — his +1.85 output and elite +2.98 cardio overwhelming a longer but chinny, lower-volume veteran, with 16% of sims ending in round one. Fili's path is his +1.74 reach: keep it long, jab from the outside and steal rounds, with a counter KO or scramble submission the upset equity. Confident lean Oliveira — he wins output, cardio, chin and durability; Fili needs distance and the clock."
         }
       }
     },
