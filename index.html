@@ -6,14 +6,7 @@
 <title>UFC Edge Sheet — UFC Vegas 119</title>
 <script>
   // Password gate — bounce to landing if not authed (client-side only, not real security)
-  // TEMP (Vegas 119): edge sheet disabled while the card is still being built — authed
-  // visitors are sent to the Synopses page, which is the temporary home page. Remove this
-  // TEMP block (restore the single-line gate below) when the edge sheet is ready to publish.
-  try {
-    if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html');
-    else location.replace('analyses.html');
-  } catch (e) {}
-  // try { if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html'); } catch (e) {}
+  try { if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html'); } catch (e) {}
 </script>
 <style>
   :root {
