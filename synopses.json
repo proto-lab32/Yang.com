@@ -1,6 +1,6 @@
 {
   "title": "UFC Baku — Fiziev vs. Torres",
-  "generated": "Generated 2026-06-25  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode",
+  "generated": "Generated 2026-06-26  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode",
   "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
   "cardList": [
     {
@@ -21,9 +21,9 @@
       "division": "Middleweight",
       "dataMode": null,
       "f1Short": "Magomedov",
-      "f1Pct": 78,
+      "f1Pct": 79,
       "f2Short": "Pereira",
-      "f2Pct": 22
+      "f2Pct": 21
     },
     {
       "f1": "Brunno Ferreira",
@@ -32,9 +32,9 @@
       "division": "Middleweight",
       "dataMode": null,
       "f1Short": "Ferreira",
-      "f1Pct": 28,
+      "f1Pct": 27,
       "f2Short": "Aliskerov",
-      "f2Pct": 72
+      "f2Pct": 73
     },
     {
       "f1": "Asu Almabayev",
@@ -43,9 +43,9 @@
       "division": "Flyweight",
       "dataMode": null,
       "f1Short": "Almabayev",
-      "f1Pct": 77,
+      "f1Pct": 79,
       "f2Short": "Johnson",
-      "f2Pct": 23
+      "f2Pct": 21
     },
     {
       "f1": "Abus Magomedov",
@@ -54,9 +54,9 @@
       "division": "Middleweight",
       "dataMode": null,
       "f1Short": "Magomedov",
-      "f1Pct": 33,
+      "f1Pct": 32,
       "f2Short": "Oleksiejczuk",
-      "f2Pct": 67
+      "f2Pct": 68
     },
     {
       "f1": "Nursulton Ruziboev",
@@ -76,9 +76,9 @@
       "division": "Lightweight",
       "dataMode": null,
       "f1Short": "Sadykhov",
-      "f1Pct": 59,
+      "f1Pct": 58,
       "f2Short": "Camilo",
-      "f2Pct": 41
+      "f2Pct": 42
     },
     {
       "f1": "Abdul Rakhman Yakhyaev",
@@ -87,9 +87,9 @@
       "division": "Light Heavyweight",
       "dataMode": null,
       "f1Short": "Yakhyaev",
-      "f1Pct": 74,
+      "f1Pct": 75,
       "f2Short": "Walker",
-      "f2Pct": 26
+      "f2Pct": 25
     },
     {
       "f1": "Kaan Ofli",
@@ -98,9 +98,9 @@
       "division": "Featherweight",
       "dataMode": null,
       "f1Short": "Ofli",
-      "f1Pct": 10,
+      "f1Pct": 9,
       "f2Short": "Reyes",
-      "f2Pct": 90
+      "f2Pct": 91
     },
     {
       "f1": "Jean Matsumoto",
@@ -109,9 +109,9 @@
       "division": "Bantamweight",
       "dataMode": null,
       "f1Short": "Matsumoto",
-      "f1Pct": 80,
+      "f1Pct": 78,
       "f2Short": "Almakhan",
-      "f2Pct": 20
+      "f2Pct": 22
     }
   ],
   "fights": [
@@ -126,19 +126,19 @@
           "f1Short": "Fiziev",
           "f2Short": "Torres",
           "modelProb": {
-            "f1": 37.7,
-            "f2": 62.3
+            "f1": 37.6,
+            "f2": 62.4
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 19.7,
-              "f2": 39.1
+              "f1": 19.5,
+              "f2": 39.0
             },
             {
               "name": "Submission",
-              "f1": 1.4,
-              "f2": 4.9
+              "f1": 1.6,
+              "f2": 5.0
             },
             {
               "name": "Decision",
@@ -150,11 +150,11 @@
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 28.3
+              "pct": 28.6
             },
             {
               "r": 2,
-              "pct": 18.7
+              "pct": 18.2
             },
             {
               "r": 3,
@@ -162,34 +162,34 @@
             },
             {
               "r": 4,
-              "pct": 5.1
+              "pct": 5.0
             },
             {
               "r": 5,
-              "pct": 3.2
+              "pct": 3.3
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 44.9,
-            "over": 55.1
+            "under": 45.0,
+            "over": 55.0
           },
           {
             "line": 2.5,
-            "under": 58.8,
-            "over": 41.2
+            "under": 58.7,
+            "over": 41.3
           },
           {
             "line": 3.5,
-            "under": 65.2,
-            "over": 34.8
+            "under": 65.1,
+            "over": 34.9
           },
           {
             "line": 4.5,
-            "under": 68.2,
-            "over": 31.8
+            "under": 65.1,
+            "over": 34.9
           }
         ],
         "composites": {
@@ -390,52 +390,52 @@
           "f1Short": "Magomedov",
           "f2Short": "Pereira",
           "modelProb": {
-            "f1": 78.2,
-            "f2": 21.8
+            "f1": 78.8,
+            "f2": 21.1
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 36.9,
-              "f2": 4.7
+              "f1": 36.6,
+              "f2": 4.5
             },
             {
               "name": "Submission",
-              "f1": 1.3,
-              "f2": 7.8
+              "f1": 1.4,
+              "f2": 7.5
             },
             {
               "name": "Decision",
-              "f1": 40,
+              "f1": 40.9,
               "f2": 9.2
             }
           ],
-          "decisionPct": 49.2,
+          "decisionPct": 50.1,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 24.3
+              "pct": 23.9
             },
             {
               "r": 2,
-              "pct": 17.5
+              "pct": 17.2
             },
             {
               "r": 3,
-              "pct": 9
+              "pct": 8.8
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 26.5,
-            "over": 73.5
+            "under": 26.3,
+            "over": 73.7
           },
           {
             "line": 2.5,
-            "under": 36,
-            "over": 64
+            "under": 35.7,
+            "over": 64.3
           }
         ],
         "composites": {
@@ -636,47 +636,47 @@
           "f1Short": "Ferreira",
           "f2Short": "Aliskerov",
           "modelProb": {
-            "f1": 28,
-            "f2": 72
+            "f1": 27.1,
+            "f2": 72.9
           },
           "method": [
             {
               "name": "KO/TKO",
               "f1": 14.5,
-              "f2": 32.1
+              "f2": 31.8
             },
             {
               "name": "Submission",
-              "f1": 5.2,
-              "f2": 14.7
+              "f1": 5.4,
+              "f2": 14.8
             },
             {
               "name": "Decision",
-              "f1": 8.4,
-              "f2": 25.2
+              "f1": 7.2,
+              "f2": 26.4
             }
           ],
           "decisionPct": 33.6,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 40.2
+              "pct": 40.6
             },
             {
               "r": 2,
-              "pct": 19.1
+              "pct": 18.8
             },
             {
               "r": 3,
-              "pct": 7.2
+              "pct": 7.0
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 51.1,
-            "over": 48.9
+            "under": 51.2,
+            "over": 48.8
           },
           {
             "line": 2.5,
@@ -882,52 +882,52 @@
           "f1Short": "Almabayev",
           "f2Short": "Johnson",
           "modelProb": {
-            "f1": 77.5,
-            "f2": 22.5
+            "f1": 78.8,
+            "f2": 21.2
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 8.8,
+              "f1": 8.5,
               "f2": 12.3
             },
             {
               "name": "Submission",
-              "f1": 24.5,
-              "f2": 1.1
+              "f1": 24.4,
+              "f2": 1.0
             },
             {
               "name": "Decision",
-              "f1": 44.1,
-              "f2": 9.1
+              "f1": 45.9,
+              "f2": 7.9
             }
           ],
-          "decisionPct": 53.2,
+          "decisionPct": 53.8,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 23.2
+              "pct": 22.7
             },
             {
               "r": 2,
-              "pct": 15.7
+              "pct": 15.8
             },
             {
               "r": 3,
-              "pct": 7.9
+              "pct": 7.8
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 27.2,
-            "over": 72.8
+            "under": 27.0,
+            "over": 73.0
           },
           {
             "line": 2.5,
-            "under": 38.3,
-            "over": 61.7
+            "under": 38.1,
+            "over": 61.9
           }
         ],
         "composites": {
@@ -1128,14 +1128,14 @@
           "f1Short": "Magomedov",
           "f2Short": "Oleksiejczuk",
           "modelProb": {
-            "f1": 33.3,
-            "f2": 66.7
+            "f1": 32.1,
+            "f2": 67.9
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 5.9,
-              "f2": 41.3
+              "f1": 6.1,
+              "f2": 41.7
             },
             {
               "name": "Submission",
@@ -1144,36 +1144,36 @@
             },
             {
               "name": "Decision",
-              "f1": 11.9,
-              "f2": 24.4
+              "f1": 10.4,
+              "f2": 25.4
             }
           ],
-          "decisionPct": 36.4,
+          "decisionPct": 35.8,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 35.4
+              "pct": 36.1
             },
             {
               "r": 2,
-              "pct": 19.6
+              "pct": 19.4
             },
             {
               "r": 3,
-              "pct": 8.6
+              "pct": 8.7
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 39.5,
-            "over": 60.5
+            "under": 39.8,
+            "over": 60.2
           },
           {
             "line": 2.5,
-            "under": 52,
-            "over": 48
+            "under": 52.2,
+            "over": 47.8
           }
         ],
         "composites": {
@@ -1374,35 +1374,35 @@
           "f1Short": "Ruziboev",
           "f2Short": "Pulyaev",
           "modelProb": {
-            "f1": 51.7,
-            "f2": 48.3
+            "f1": 52.3,
+            "f2": 47.7
           },
           "method": [
             {
               "name": "KO/TKO",
               "f1": 25.9,
-              "f2": 12.3
+              "f2": 12.7
             },
             {
               "name": "Submission",
-              "f1": 4.9,
-              "f2": 7
+              "f1": 4.8,
+              "f2": 6.6
             },
             {
               "name": "Decision",
-              "f1": 20.8,
-              "f2": 29.1
+              "f1": 21.6,
+              "f2": 28.4
             }
           ],
-          "decisionPct": 49.9,
+          "decisionPct": 50.0,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 24.5
+              "pct": 24.2
             },
             {
               "r": 2,
-              "pct": 16.8
+              "pct": 17.0
             },
             {
               "r": 3,
@@ -1413,8 +1413,8 @@
         "overUnder": [
           {
             "line": 1.5,
-            "under": 30.8,
-            "over": 69.2
+            "under": 30.7,
+            "over": 69.3
           },
           {
             "line": 2.5,
@@ -1620,52 +1620,52 @@
           "f1Short": "Sadykhov",
           "f2Short": "Camilo",
           "modelProb": {
-            "f1": 58.6,
-            "f2": 41.4
+            "f1": 58.5,
+            "f2": 41.5
           },
           "method": [
             {
               "name": "KO/TKO",
               "f1": 21.9,
-              "f2": 13.6
+              "f2": 13.0
             },
             {
               "name": "Submission",
-              "f1": 11.1,
+              "f1": 11.2,
               "f2": 4.7
             },
             {
               "name": "Decision",
-              "f1": 25.7,
-              "f2": 23
+              "f1": 25.5,
+              "f2": 23.8
             }
           ],
-          "decisionPct": 48.7,
+          "decisionPct": 49.3,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 27.6
+              "pct": 27.5
             },
             {
               "r": 2,
-              "pct": 16.3
+              "pct": 16.0
             },
             {
               "r": 3,
-              "pct": 7.4
+              "pct": 7.3
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 34.9,
-            "over": 65.1
+            "under": 34.7,
+            "over": 65.3
           },
           {
             "line": 2.5,
-            "under": 48.4,
-            "over": 51.6
+            "under": 48.2,
+            "over": 51.8
           }
         ],
         "composites": {
@@ -1866,52 +1866,52 @@
           "f1Short": "Yakhyaev",
           "f2Short": "Walker",
           "modelProb": {
-            "f1": 74.4,
-            "f2": 25.6
+            "f1": 75.2,
+            "f2": 24.8
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 23.5,
+              "f1": 23.7,
               "f2": 12.2
             },
             {
               "name": "Submission",
-              "f1": 22.3,
-              "f2": 1.3
+              "f1": 22.4,
+              "f2": 1.2
             },
             {
               "name": "Decision",
-              "f1": 28.6,
-              "f2": 12.1
+              "f1": 29.1,
+              "f2": 11.4
             }
           ],
-          "decisionPct": 40.7,
+          "decisionPct": 40.5,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 34
+              "pct": 34.0
             },
             {
               "r": 2,
-              "pct": 17.5
+              "pct": 17.9
             },
             {
               "r": 3,
-              "pct": 7.8
+              "pct": 7.7
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 38.9,
-            "over": 61.1
+            "under": 39.0,
+            "over": 61.0
           },
           {
             "line": 2.5,
-            "under": 51.4,
-            "over": 48.6
+            "under": 51.5,
+            "over": 48.5
           }
         ],
         "composites": {
@@ -2112,39 +2112,39 @@
           "f1Short": "Ofli",
           "f2Short": "Reyes",
           "modelProb": {
-            "f1": 9.8,
-            "f2": 90.2
+            "f1": 8.7,
+            "f2": 91.3
           },
           "method": [
             {
               "name": "KO/TKO",
               "f1": 1.7,
-              "f2": 39.9
+              "f2": 39.7
             },
             {
               "name": "Submission",
-              "f1": 4,
-              "f2": 5.6
+              "f1": 4.0,
+              "f2": 5.5
             },
             {
               "name": "Decision",
-              "f1": 4.1,
-              "f2": 44.8
+              "f1": 3.0,
+              "f2": 46.2
             }
           ],
-          "decisionPct": 48.9,
+          "decisionPct": 49.2,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 27.2
+              "pct": 27.3
             },
             {
               "r": 2,
-              "pct": 16.3
+              "pct": 15.9
             },
             {
               "r": 3,
-              "pct": 7.7
+              "pct": 7.6
             }
           ]
         },
@@ -2156,8 +2156,8 @@
           },
           {
             "line": 2.5,
-            "under": 51.6,
-            "over": 48.4
+            "under": 47.7,
+            "over": 52.3
           }
         ],
         "composites": {
@@ -2358,35 +2358,35 @@
           "f1Short": "Matsumoto",
           "f2Short": "Almakhan",
           "modelProb": {
-            "f1": 80.1,
-            "f2": 19.9
+            "f1": 78.4,
+            "f2": 21.6
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 11.5,
-              "f2": 11.9
+              "f1": 11.4,
+              "f2": 12.2
             },
             {
               "name": "Submission",
-              "f1": 23,
-              "f2": 0.7
+              "f1": 22.9,
+              "f2": 0.6
             },
             {
               "name": "Decision",
-              "f1": 45.6,
-              "f2": 7.2
+              "f1": 44.1,
+              "f2": 8.7
             }
           ],
           "decisionPct": 52.8,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 21.7
+              "pct": 21.5
             },
             {
               "r": 2,
-              "pct": 16.4
+              "pct": 16.6
             },
             {
               "r": 3,
@@ -2402,8 +2402,8 @@
           },
           {
             "line": 2.5,
-            "under": 43.7,
-            "over": 56.3
+            "under": 43.6,
+            "over": 56.4
           }
         ],
         "composites": {
