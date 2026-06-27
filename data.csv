@@ -1,15 +1,15 @@
 # UFC Baku: Fiziev vs Torres
 FightID,Market,Selection,Yang Probability,Market Probability
-F00216,Moneyline,Rafael Fiziev,48.00%,51.50%
-F00216,Moneyline,Manuel Torres,52.00%,53.00%
+F00216,Moneyline,Rafael Fiziev,47.00%,51.50%
+F00216,Moneyline,Manuel Torres,53.00%,53.00%
 F00216,Method of Victory,Rafael Fiziev by KO/TKO,21.90%,37.00%
 F00216,Method of Victory,Rafael Fiziev by Submission,2.10%,6.00%
 F00216,Method of Victory,Rafael Fiziev by Decision,24.00%,17.00%
 F00216,Method of Victory,Manuel Torres by KO/TKO,28.90%,43.00%
 F00216,Method of Victory,Manuel Torres by Submission,5.10%,8.00%
 F00216,Method of Victory,Manuel Torres by Decision,18.10%,8.00%
-F00216,Total Rounds,Over 1.5,56.00%,59.50%
-F00216,Total Rounds,Under 1.5,44.00%,45.50%
+F00216,Total Rounds,Over 1.5,55.00%,59.50%
+F00216,Total Rounds,Under 1.5,45.00%,45.50%
 F00216,Fight Outcome,Goes to Decision,42.10%,23.00%
 F00216,Fight Outcome,Inside the Distance,57.90%,83.00%
 F00216,Fight Outcome,KO/TKO,50.70%,78.00%
@@ -73,8 +73,8 @@ F00219,Method of Victory,Asu Almabayev by Decision,44.10%,50.00%
 F00219,Method of Victory,Charles Johnson by KO/TKO,12.90%,10.00%
 F00219,Method of Victory,Charles Johnson by Submission,1.30%,5.00%
 F00219,Method of Victory,Charles Johnson by Decision,10.80%,22.00%
-F00219,Total Rounds,Over 2.5,67.00%,71.00%
-F00219,Total Rounds,Under 2.5,33.00%,34.00%
+F00219,Total Rounds,Over 2.5,66.00%,71.00%
+F00219,Total Rounds,Under 2.5,34.00%,34.00%
 F00219,Fight Outcome,Goes to Decision,54.90%,67.00%
 F00219,Fight Outcome,Inside the Distance,45.10%,39.50%
 F00219,Fight Outcome,KO/TKO,21.10%,21.00%
@@ -107,27 +107,27 @@ F00221,Fighter ITD,Abus Magomedov ITD,31.20%,45.00%
 F00221,Fighter ITD,Michal Oleksiejczuk ITD,30.60%,36.00%
 F00221,Double Chance,Abus Magomedov KO/TKO or Dec,25.40%,28.00%
 F00221,Double Chance,Michal Oleksiejczuk KO/TKO or Dec,51.20%,50.00%
-F00222,Moneyline,Nursulton Ruziboev,60.00%,69.00%
-F00222,Moneyline,Andrey Pulyaev,40.00%,34.50%
-F00222,Method of Victory,Nursulton Ruziboev by KO/TKO,28.60%,38.00%
-F00222,Method of Victory,Nursulton Ruziboev by Submission,5.70%,10.00%
-F00222,Method of Victory,Nursulton Ruziboev by Decision,25.70%,29.00%
-F00222,Method of Victory,Andrey Pulyaev by KO/TKO,9.90%,19.00%
-F00222,Method of Victory,Andrey Pulyaev by Submission,5.60%,4.00%
-F00222,Method of Victory,Andrey Pulyaev by Decision,24.50%,17.00%
-F00222,Total Rounds,Over 2.5,55.00%,49.00%
-F00222,Total Rounds,Under 2.5,45.00%,56.50%
-F00222,Fight Outcome,Goes to Decision,50.20%,43.00%
-F00222,Fight Outcome,Inside the Distance,49.80%,63.00%
-F00222,Fight Outcome,KO/TKO,38.50%,57.00%
+F00222,Moneyline,Nursulton Ruziboev,63.00%,69.00%
+F00222,Moneyline,Andrey Pulyaev,37.00%,34.50%
+F00222,Method of Victory,Nursulton Ruziboev by KO/TKO,30.00%,38.00%
+F00222,Method of Victory,Nursulton Ruziboev by Submission,6.00%,10.00%
+F00222,Method of Victory,Nursulton Ruziboev by Decision,27.00%,29.00%
+F00222,Method of Victory,Andrey Pulyaev by KO/TKO,9.20%,19.00%
+F00222,Method of Victory,Andrey Pulyaev by Submission,5.20%,4.00%
+F00222,Method of Victory,Andrey Pulyaev by Decision,22.70%,17.00%
+F00222,Total Rounds,Over 2.5,54.00%,49.00%
+F00222,Total Rounds,Under 2.5,46.00%,56.50%
+F00222,Fight Outcome,Goes to Decision,49.60%,43.00%
+F00222,Fight Outcome,Inside the Distance,50.40%,63.00%
+F00222,Fight Outcome,KO/TKO,39.20%,57.00%
 F00222,Fight Outcome,Submission,11.20%,13.00%
-F00222,Round Betting,Round 1 Finish,25.00%,30.00%
-F00222,Round Betting,Round 2 Finish,16.50%,23.00%
-F00222,Round Betting,Round 3 Finish,8.30%,16.00%
-F00222,Fighter ITD,Nursulton Ruziboev ITD,34.30%,50.00%
-F00222,Fighter ITD,Andrey Pulyaev ITD,15.50%,21.00%
-F00222,Double Chance,Nursulton Ruziboev KO/TKO or Dec,54.30%,65.50%
-F00222,Double Chance,Andrey Pulyaev KO/TKO or Dec,34.40%,33.50%
+F00222,Round Betting,Round 1 Finish,25.30%,30.00%
+F00222,Round Betting,Round 2 Finish,16.70%,23.00%
+F00222,Round Betting,Round 3 Finish,8.40%,16.00%
+F00222,Fighter ITD,Nursulton Ruziboev ITD,36.00%,50.00%
+F00222,Fighter ITD,Andrey Pulyaev ITD,14.30%,21.00%
+F00222,Double Chance,Nursulton Ruziboev KO/TKO or Dec,57.00%,65.50%
+F00222,Double Chance,Andrey Pulyaev KO/TKO or Dec,31.80%,33.50%
 F00220,Moneyline,Nazim Sadykhov,69.00%,66.00%
 F00220,Moneyline,Matheus Camilo,31.00%,38.00%
 F00220,Method of Victory,Nazim Sadykhov by KO/TKO,23.80%,38.00%
