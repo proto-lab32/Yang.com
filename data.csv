@@ -2,25 +2,27 @@
 FightID,Market,Selection,Yang Probability,Market Probability
 F00229,Moneyline,Uros Medic,70.00%,81.00%
 F00229,Moneyline,Daniel Rodriguez,30.00%,24.00%
-F00229,Method of Victory,Uros Medic by KO/TKO,48.20%,71.00%
+F00229,Method of Victory,Uros Medic by KO/TKO,58.70%,71.00%
 F00229,Method of Victory,Uros Medic by Submission,0.90%,13.00%
-F00229,Method of Victory,Uros Medic by Decision,20.90%,7.00%
-F00229,Method of Victory,Daniel Rodriguez by KO/TKO,8.10%,17.00%
-F00229,Method of Victory,Daniel Rodriguez by Submission,6.80%,7.00%
-F00229,Method of Victory,Daniel Rodriguez by Decision,15.10%,5.00%
+F00229,Method of Victory,Uros Medic by Decision,10.40%,7.00%
+F00229,Method of Victory,Daniel Rodriguez by KO/TKO,12.10%,17.00%
+F00229,Method of Victory,Daniel Rodriguez by Submission,6.40%,7.00%
+F00229,Method of Victory,Daniel Rodriguez by Decision,11.50%,5.00%
 F00229,Total Rounds,Over 1.5,43.00%,39.50%
 F00229,Total Rounds,Under 1.5,57.00%,65.50%
-F00229,Fight Outcome,Goes to Decision,36.00%,11.50%
-F00229,Fight Outcome,Inside the Distance,64.00%,94.00%
-F00229,Fight Outcome,KO/TKO,56.30%,85.50%
-F00229,Fight Outcome,Submission,7.70%,17.00%
-F00229,Round Betting,Round 1 Finish,37.90%,56.00%
-F00229,Round Betting,Round 2 Finish,18.80%,23.00%
-F00229,Round Betting,Round 3 Finish,7.30%,11.00%
-F00229,Fighter ITD,Uros Medic ITD,49.00%,77.00%
-F00229,Fighter ITD,Daniel Rodriguez ITD,15.00%,23.00%
+F00229,Fight Outcome,Goes to Decision,21.90%,11.50%
+F00229,Fight Outcome,Inside the Distance,78.10%,94.00%
+F00229,Fight Outcome,KO/TKO,70.80%,85.50%
+F00229,Fight Outcome,Submission,7.30%,17.00%
+F00229,Round Betting,Round 1 Finish,34.20%,56.00%
+F00229,Round Betting,Round 2 Finish,22.30%,23.00%
+F00229,Round Betting,Round 3 Finish,11.90%,11.00%
+F00229,Round Betting,Round 4 Finish,6.00%,8.00%
+F00229,Round Betting,Round 5 Finish,3.70%,5.00%
+F00229,Fighter ITD,Uros Medic ITD,59.60%,77.00%
+F00229,Fighter ITD,Daniel Rodriguez ITD,18.50%,23.00%
 F00229,Double Chance,Uros Medic KO/TKO or Dec,69.10%,75.00%
-F00229,Double Chance,Daniel Rodriguez KO/TKO or Dec,23.20%,21.50%
+F00229,Double Chance,Daniel Rodriguez KO/TKO or Dec,23.60%,21.50%
 F00230,Moneyline,Jan Blachowicz,22.00%,29.00%
 F00230,Moneyline,Navajo Stirling,78.00%,76.00%
 F00230,Method of Victory,Jan Blachowicz by KO/TKO,6.80%,11.00%
