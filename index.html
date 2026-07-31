@@ -670,9 +670,14 @@
 
 <script>
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const API_KEY       = 'f375971d6a879485126f8bea70c3027c';
-const BOOK          = 'draftkings';   // change to: fanduel, betmgm, pointsbetus, etc.
-const SPORT         = 'mma_mixed_martial_arts';
+// Live odds come from a static live_odds.json refreshed server-side by
+// refresh_live_odds.py (mma-model repo), NOT from a browser call to The Odds API.
+// The old client-side design shipped the API key in this public file and spent 2
+// credits per page load, which exhausted the monthly quota. Reading a static file
+// costs nothing, so visitors and timers are free.
+const ODDS_FILE     = 'live_odds.json';
+const STALE_HOURS   = 12;             // older than this and we say so in the status pill
+let   BOOK          = 'draftkings';   // overridden by whatever book the feed was built with
 // Smart schedule: 30 min cadence during fight-night window (Fri 4pm ET → Sat 1am ET,
 // Sat 4pm ET → Sun 1am ET), else 4 hours. Only fires while a tab is open.
 const TIGHT_INTERVAL_MS = 30 * 60 * 1000;
@@ -754,29 +759,45 @@ async function fetchLiveOdds() {
   dot.className = 'live-dot fetching';
   label.textContent = 'Fetching…';
 
-  const url = `https://api.the-odds-api.com/v4/sports/${SPORT}/odds/?apiKey=${API_KEY}&regions=us&markets=h2h,totals&oddsFormat=american&bookmakers=${BOOK}`;
+  // Cache-bust: GitHub Pages' CDN would otherwise serve a stale copy for minutes.
+  const url = `${ODDS_FILE}?_=${Date.now()}`;
 
   try {
     const res = await fetch(url);
+    if (res.status === 404) throw new Error('no odds feed published yet');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-    const remaining = res.headers.get('x-requests-remaining');
-    const used      = res.headers.get('x-requests-used');
-    if (remaining) callsEl.textContent = `API: ${remaining} calls remaining`;
-    if (used)      bookEl.textContent  = `Book: ${BOOK.toUpperCase()} · ${used} used`;
+    const payload = await res.json();
+    const events = payload.events || [];
+    if (payload.book) BOOK = payload.book;
 
-    const events = await res.json();
+    const fetchedAt = payload.fetched_at ? new Date(payload.fetched_at) : null;
+    const ageHours = fetchedAt ? (Date.now() - fetchedAt.getTime()) / 3.6e6 : null;
+
+    if (payload.credits_remaining != null) {
+      callsEl.textContent = `Feed: ${payload.credits_remaining} API credits left`;
+    }
+    bookEl.textContent = `Book: ${BOOK.toUpperCase()} · ${events.length} events`;
+
     let updatedCount = applyLiveOdds(events);
 
-    dot.className = 'live-dot ok';
-    label.textContent = updatedCount > 0 ? `Live · ${updatedCount} rows updated` : 'Live · no matching events yet';
-    timeEl.textContent = 'Updated ' + new Date().toLocaleTimeString();
+    const stale = ageHours !== null && ageHours > STALE_HOURS;
+    dot.className = stale ? 'live-dot err' : 'live-dot ok';
+    if (stale) {
+      label.textContent = `Odds ${Math.round(ageHours)}h old — may be out of date`;
+    } else {
+      label.textContent = updatedCount > 0 ? `Live · ${updatedCount} rows updated` : 'Live · no matching events yet';
+    }
+    timeEl.textContent = fetchedAt
+      ? 'Odds as of ' + fetchedAt.toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'})
+      : 'Checked ' + new Date().toLocaleTimeString();
 
   } catch(err) {
+    // Non-fatal: the market probabilities from data.csv are already rendered.
     dot.className = 'live-dot err';
-    label.textContent = 'Fetch failed — ' + err.message;
+    label.textContent = 'Live odds unavailable — showing filed market';
     timeEl.textContent = '';
-    console.error('Odds API error:', err);
+    console.error('Live odds error:', err);
   }
 
   btn.classList.remove('loading');
