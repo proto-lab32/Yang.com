@@ -724,6 +724,7 @@ const NAME_ALIASES = {
   'baisangur susurkaev': 'baysangur susurkaev',
   'marco tulio': 'marco tulio silva',
   'bruno silva fly': 'bruno silva',  // FLY suffix disambiguates from MW Bruno Silva; odds feed sends plain "Bruno Silva"
+  'yadier delvalle': 'yadier del valle',  // odds feed squashes the particle; last-name rule sees "delvalle" vs "valle" and misses
 };
 function normName(n) {
   const s = n.toLowerCase().replace(/[^a-z\s]/g,'').replace(/\s+/g,' ').trim();
