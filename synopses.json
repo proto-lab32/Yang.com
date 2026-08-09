@@ -98,9 +98,9 @@
       "division": "Flyweight",
       "dataMode": null,
       "f1Short": "Johnson",
-      "f1Pct": 28,
+      "f1Pct": 25,
       "f2Short": "Ochoa",
-      "f2Pct": 72
+      "f2Pct": 75
     },
     {
       "f1": "Rafael Tobias",
@@ -120,9 +120,9 @@
       "division": "Middleweight",
       "dataMode": null,
       "f1Short": "Luque",
-      "f1Pct": 56,
+      "f1Pct": 62,
       "f2Short": "Gore",
-      "f2Pct": 44
+      "f2Pct": 38
     },
     {
       "f1": "Jeremiah Wells",
@@ -922,27 +922,27 @@
           "f1Short": "Abdul-Malik",
           "f2Short": "Stoltzfus",
           "modelProb": {
-            "f1": 77.4,
-            "f2": 22.6
+            "f1": 77,
+            "f2": 23
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 32.8,
-              "f2": 8.8
+              "f1": 32,
+              "f2": 9.2
             },
             {
               "name": "Submission",
-              "f1": 13.4,
-              "f2": 4.3
+              "f1": 14.3,
+              "f2": 4.1
             },
             {
               "name": "Decision",
-              "f1": 31.2,
-              "f2": 9.5
+              "f1": 30.6,
+              "f2": 9.7
             }
           ],
-          "decisionPct": 40.7,
+          "decisionPct": 40.4,
           "roundsFinish": [
             {
               "r": 1,
@@ -950,7 +950,7 @@
             },
             {
               "r": 2,
-              "pct": 18.3
+              "pct": 18.4
             },
             {
               "r": 3,
@@ -961,13 +961,13 @@
         "overUnder": [
           {
             "line": 1.5,
-            "under": 42.4,
-            "over": 57.6
+            "under": 43.4,
+            "over": 56.6
           },
           {
             "line": 2.5,
-            "under": 56.8,
-            "over": 43.2
+            "under": 57.7,
+            "over": 42.3
           }
         ],
         "composites": {
@@ -975,33 +975,33 @@
           "rows": [
             {
               "name": "Power",
-              "f1": 0.28,
+              "f1": 0.39,
               "f2": -0.23,
-              "delta": 0.51
+              "delta": 0.62
             },
             {
               "name": "Chin",
-              "f1": -0.55,
+              "f1": -0.65,
               "f2": -0.39,
-              "delta": -0.16
+              "delta": -0.26
             },
             {
               "name": "Output",
-              "f1": -0.58,
+              "f1": -0.81,
               "f2": 0.13,
-              "delta": -0.71
+              "delta": -0.94
             },
             {
               "name": "Grappling",
-              "f1": 0.42,
+              "f1": 0.58,
               "f2": 0.18,
-              "delta": 0.24
+              "delta": 0.4
             },
             {
               "name": "Wrestling Def",
-              "f1": 0.58,
+              "f1": 0.81,
               "f2": -0.18,
-              "delta": 0.76
+              "delta": 0.99
             },
             {
               "name": "Cardio",
@@ -1020,39 +1020,39 @@
         "styleProfiles": [
           {
             "name": "Pressure",
-            "f1": 0.44,
+            "f1": 0.42,
             "f2": 0.52
           },
           {
             "name": "Counter",
-            "f1": 0.63,
+            "f1": 0.68,
             "f2": 0.59
           },
           {
             "name": "Wrestler",
-            "f1": 0.56,
+            "f1": 0.58,
             "f2": 0.55
           },
           {
             "name": "Finisher",
-            "f1": 0.64,
+            "f1": 0.69,
             "f2": 0.63
           },
           {
             "name": "Early-Finish Score",
-            "f1": 0.67,
+            "f1": 0.68,
             "f2": 0.44
           },
           {
             "name": "Early Vulnerability",
-            "f1": 0.43,
+            "f1": 0.44,
             "f2": 0.41
           }
         ],
         "modifiers": [
           {
             "name": "Trust factor (minutes-based)",
-            "f1": "0.649 (45.5 min)",
+            "f1": "0.900 (45.5 min)",
             "f2": "1.000 (108.0 min)"
           },
           {
@@ -1084,37 +1084,37 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "+0.275",
+            "value": "+0.258",
             "reads": "Toward Abdul-Malik"
           },
           {
             "name": "KO threat — Abdul-Malik",
-            "value": "+0.936",
+            "value": "+1.045",
             "reads": "Above-avg"
           },
           {
             "name": "KO threat — Stoltzfus",
-            "value": "-0.112",
+            "value": "-0.015",
             "reads": "Near avg"
           },
           {
             "name": "Sub threat — Abdul-Malik",
-            "value": "+0.544",
+            "value": "+0.706",
             "reads": "Above-avg"
           },
           {
             "name": "Sub threat — Stoltzfus",
-            "value": "-0.240",
+            "value": "-0.407",
             "reads": "Below-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "27.0%",
+            "value": "29.4%",
             "reads": "Mostly standing"
           },
           {
             "name": "Standing % of fight",
-            "value": "73.0%",
+            "value": "70.6%",
             "reads": ""
           },
           {
@@ -1124,7 +1124,7 @@
           },
           {
             "name": "GBM P(Abdul-Malik wins)",
-            "value": "77.0% calibrated  (HT 61.9%)",
+            "value": "76.7% calibrated  (HT 61.7%)",
             "reads": ""
           }
         ],
@@ -1147,13 +1147,13 @@
           }
         ],
         "matchupAnalysis": [
-          "Mansur Abdul-Malik 77.4% / Dustin Stoltzfus 22.6%, with the GBM (77.0%) well ahead of the hand-tuned model (61.9%) and the Elo gap in the same direction (1644 across six divisional fights to 1487 across eleven). The projection survives a meaningful handicap: Abdul-Malik's computed trust is 0.649 against Stoltzfus's 1.00, so his composites are shrunk roughly a third of the way toward the divisional mean before anything else happens, and he still projects as a heavy favorite.",
-          "The structural edge is physical. Abdul-Malik's reach composite reads +2.15 — 203.2cm against Stoltzfus's 190.5cm — with power +0.28 against -0.23 and wrestling defense +0.59 against -0.18, backed by a takedown-defense rate of 83.3% against Stoltzfus's 46.7%. His raw finish rate is 1.000: every one of his four wins has been a stoppage, three by knockout. That converts to a 32.8% Abdul-Malik KO as the modal terminal state, a 13.4% submission, and the card's second-highest round-one finish rate at 34.6%, with 59.3% of sims ending inside the distance.",
-          "Two things argue for caution. Abdul-Malik's strike differential is -1.210 and his output composite -0.58 — he has been out-landed on volume even in fights he won, so the profile is finish-dependent rather than dominant. And his recent form is not clean: he was stopped by Yousri Belgaroui in round three in March, and his June 2025 bout with Cody Brundage was overturned, which is the no-contest sitting in the draw column of his 9-1-1. Stoltzfus's counter-case is thin — 1-3 across his last four, a 330-day layoff, 34.7 years old to 28.8, a 0.571 career finished-rate and 46.7% takedown defense — and his 22.6% splits almost evenly across a 8.8% KO, a 4.3% submission and a 9.5% decision. At 43.2%, the Over 2.5 here is one of only two on the card priced below even."
+          "Mansur Abdul-Malik 77.0% / Dustin Stoltzfus 23.0%, with the GBM (76.7%) well ahead of the hand-tuned model (61.7%) and the Elo gap in the same direction (1644 across six divisional fights to 1487 across eleven). Abdul-Malik carries a trust override of 0.900 here against a computed 0.649, so his six-fight, 45.5-minute sample is taken at close to face value rather than being shrunk a third of the way toward the divisional mean. The instructive part is how little that changes: the projection moves four tenths of a point. Lifting trust sharpens a profile in both directions, and his gets better and worse at the same time — wrestling defense rises from +0.59 to +0.81 and grappling from +0.42 to +0.58, while his output composite falls from -0.58 to -0.81 and his chin from -0.55 to -0.65.",
+          "The structural edge is physical. Abdul-Malik's reach composite reads +2.15 — 203.2cm against Stoltzfus's 190.5cm — with power +0.39 against -0.23 and wrestling defense +0.81 against -0.18, backed by a takedown-defense rate of 83.3% against Stoltzfus's 46.7%. His raw finish rate is 1.000: every one of his four wins has been a stoppage, three by knockout. That converts to a 32.0% Abdul-Malik KO as the modal terminal state — the largest single finish share belonging to any fighter on this card — plus a 14.3% submission, and the card's second-highest round-one finish rate at 34.6%, with 59.6% of sims ending inside the distance.",
+          "Two things argue for caution. Abdul-Malik's strike differential is -1.210 and his output composite -0.81, the worse figure now that trust is not pulling it toward the divisional mean — he has been out-landed on volume even in fights he won, so the profile is finish-dependent rather than dominant. And his recent form is not clean: he was stopped by Yousri Belgaroui in round three in March, and his June 2025 bout with Cody Brundage was overturned, which is the no-contest sitting in the draw column of his 9-1-1. Stoltzfus's counter-case is thin — 1-3 across his last four, a 330-day layoff, 34.7 years old to 28.8, a 0.571 career finished-rate and 46.7% takedown defense — and his 23.0% splits almost evenly across a 9.2% KO, a 4.1% submission and a 9.7% decision. At 42.3% this is the lowest Over 2.5 on the card, one of four priced below even money."
         ],
         "synopsis": {
           "lean": "Mansur Abdul-Malik",
-          "body": "Modal terminal state is an Abdul-Malik KO/TKO at 32.8%; 34.6% of sims end in round one and 59.3% end inside the distance, making this one of only two fights on the card where the Over 2.5 sits below even money (43.2%). His edge is structural — +2.15 reach (203.2cm), 83.3% takedown defense against 46.7%, and a 1.000 raw finish rate. Moderate confidence: he holds up at only 0.649 trust, which is a point in the projection's favor, but his strike differential is negative (-1.210), he was knocked out by Belgaroui in March, and Stoltzfus's 22.6% is spread thin rather than concentrated in one live path."
+          "body": "Modal terminal state is an Abdul-Malik KO/TKO at 32.0% — the largest single finish share on the card; 34.6% of sims end in round one and 59.6% end inside the distance, giving the card's lowest Over 2.5 at 42.3%. His edge is structural — +2.15 reach (203.2cm), 83.3% takedown defense against 46.7%, and a 1.000 raw finish rate. Moderate confidence. He is run at a 0.900 trust override rather than his computed 0.649, and the projection barely moves (77.4% -> 77.0%) because the extra weight sharpens his weaknesses too — output drops to -0.81, chin to -0.65. Against him: a -1.210 strike differential, the Belgaroui knockout in March, and a Stoltzfus 23.0% that is spread thin rather than concentrated in one live path."
         }
       }
     },
@@ -1395,7 +1395,7 @@
         "matchupAnalysis": [
           "Joel Alvarez 64.3% / Chidi Njokuani 35.7%, and the two engines disagree sharply about why: the hand-tuned model reads the fight as a coin flip (50.1% for Njokuani) while the GBM gives him 36.9%. The separating input is Elo, where the -282 gap (1586 to 1868) is the widest measured differential on this card. Both men are changing divisions to some degree — Alvarez has nine of eleven UFC fights at lightweight, Njokuani splits six middleweight and five welterweight — and both are read against the welterweight population here.",
           "The paradox is that Njokuani wins the round-winning argument outright. His decision edge is +0.601, and he leads on output (+2.31 to +1.80), power (+0.98 to +0.32), reach (+3.23 — 203.2cm, the longest on the card — to +1.86), volume (5.666 to 4.528), strike differential (+2.10 to +1.50) and takedown defense (75.0% to 46.4%). If this fight stays standing for fifteen minutes, the model thinks he is the favorite. The problem is that only 43.1% of sims get there, and 34.0% of them end in round one.",
-          "Alvarez's margin is finish equity and nothing else: a 22.9% knockout plus a 19.1% submission gives him 42.1% of terminal states inside the distance against Njokuani's 14.8%. His raw finish rate is 0.875, his submission finish rate 0.375, his pre-UFC finish rate 1.000, and he attempts 0.071 submissions per minute to Njokuani's 0.010. Njokuani offers exactly that target: he was submitted by Jake Matthews in round one in July 2025, his career finished-rate is 0.600, his chin reads -0.41, and he is 37.6 years old to Alvarez's 33.4 and 1-3 across his last four. Worth flagging that the hand-tuned submission-threat index actually reads the other way here (+0.101 Njokuani, -0.906 Alvarez); the method GBM overrides it on the raw career finishing rates, and the published split follows the GBM. Alvarez beat Vicente Luque, who fights later on this card, in October."
+          "Alvarez's margin is finish equity and nothing else: a 22.9% knockout plus a 19.1% submission gives him 42.1% of terminal states inside the distance against Njokuani's 14.8%. His raw finish rate is 0.875, his submission finish rate 0.375, his pre-UFC finish rate 1.000, and he attempts 0.071 submissions per minute to Njokuani's 0.010. Njokuani offers exactly that target: he was submitted by Jake Matthews in round one in July 2025, his career finished-rate is 0.600, his chin reads -0.41, and he is 37.6 years old to Alvarez's 33.4 and 1-3 across his last four. Worth flagging that the hand-tuned submission-threat index actually reads the other way here (+0.101 Njokuani, -0.906 Alvarez); the method GBM overrides it on the raw career finishing rates, and the published split follows the GBM. Alvarez beat Vicente Luque, who fights earlier on this card, in October."
         ],
         "synopsis": {
           "lean": "Joel Alvarez",
@@ -1639,13 +1639,13 @@
           }
         ],
         "matchupAnalysis": [
-          "Jalin Turner 62.8% / Kaue Fernandes 37.2%, with the hand-tuned model more bullish on Turner (70.9%) than the GBM (61.9%) and the Elo gap supporting him (1841 across fourteen divisional fights to 1703 across four). Trust is the asymmetry to keep in mind: Turner sits at 1.00 against Fernandes's 0.544, so the challenger's four-fight, thirty-eight-minute sample is shrunk nearly halfway to the divisional mean before the comparison starts.",
+          "Jalin Turner 62.8% / Kaue Fernandes 37.2%, with the hand-tuned model more bullish on Turner (70.9%) than the GBM (61.9%) and the Elo gap supporting him (1841 across fourteen divisional fights to 1703 across four). Trust is the asymmetry to keep in mind: Turner sits at 1.00 against Fernandes's computed 0.544, so the challenger's four-fight, 38.1-minute sample is shrunk nearly halfway to the divisional mean before the comparison starts. That shrinkage is doing real work — a 0.800 trust override on Fernandes was tested and withdrawn, and it had flipped the fight to Fernandes 53.4%. Treat the 62.8% as conditional on believing his observation time rather than his rates.",
           "Turner's physical numbers are the most extreme on the card. His power composite reads +2.45, the highest of any fighter here, his reach +3.01 (195.58cm to 185.42cm) and his output +1.40, producing a +2.274 knockout-threat index against Fernandes's +1.131. What is striking is how little of that converts: his knockout share is only 16.8%, essentially level with Fernandes's 16.5%, and his modal outcome is a decision at 31.5%. The reason is on the other side of the ledger — Fernandes's chin reads +0.43 and his career finished-rate is 0.000, so the model does not believe the biggest power number on the card lands on a chin that breaks.",
-          "Fernandes's case is form and defense. His momentum (0.793) is the highest on the card, his recent-three win rate is 1.000, his strike differential +2.861 against Turner's +1.246, and he absorbs 0.919 head strikes per minute against Turner's 2.713 — the better defensive rate by a factor of three. Turner is the fragile one here: chin -0.61, a 0.500 career finished-rate, and 1-2 across his last three with a submission loss to Ignacio Bahamondes and a knockout loss to Renato Moicano. His most recent outing was a first-round knockout of Edson Barboza, who fights earlier on this card. Against Fernandes: a 337-day layoff and a sample the model only half-believes."
+          "Fernandes's case is form and defense. His momentum (0.793) is the highest on the card, his recent-three win rate is 1.000, his strike differential +2.861 against Turner's +1.246, and he absorbs 0.919 head strikes per minute against Turner's 2.713 — the better defensive rate by a factor of three. Turner is the fragile one here: chin -0.61, a 0.500 career finished-rate, and 1-2 across his last three with a submission loss to Ignacio Bahamondes and a knockout loss to Renato Moicano. His most recent outing was a first-round knockout of Edson Barboza, who fights later on this card. Against Fernandes: a 337-day layoff, a strength-of-schedule multiplier of 0.851 against Turner's 1.196, and a sample the model only half-believes. Note that the published Over 2.5 (53.8%) is not the raw blend — the coherence guardrail lifted it from 45.8% to clear the 51.3% decision rate."
         ],
         "synopsis": {
           "lean": "Jalin Turner",
-          "body": "Modal outcome is a Turner decision (31.5%) with 51.3% of sims reaching the judges; his card-high +2.45 power and +3.01 reach produce only a 16.8% KO, level with Fernandes's 16.5%, because Fernandes's +0.43 chin and 0.000 finished-rate blunt it. Low-to-moderate confidence. Fernandes carries 0.544 trust on a four-fight sample, so half his profile is divisional prior — but what is measured favors him defensively (0.919 head strikes absorbed per minute to Turner's 2.713, +2.861 strike differential, card-high 0.793 momentum), while Turner is 1-2 in his last three with a -0.61 chin and a 0.500 finished-rate."
+          "body": "Modal outcome is a Turner decision (31.5%) with 51.3% of sims reaching the judges; his card-high +2.45 power and +3.01 reach produce only a 16.8% KO, level with Fernandes's 16.5%, because Fernandes's +0.43 chin and 0.000 finished-rate blunt it. Low confidence, and this is the most trust-sensitive fight on the card. Fernandes carries computed trust of 0.544 on a four-fight sample, so half his profile is divisional prior — a 0.800 override was tested and withdrawn, and at that setting the fight flipped to Fernandes 53.4%. What is measured favors Fernandes defensively (0.919 head strikes absorbed per minute to Turner's 2.713, +2.861 strike differential, card-high 0.793 momentum) against a Turner who is 1-2 in his last three with a -0.61 chin and a 0.500 finished-rate; what argues against reading too much into it is his 0.851 strength-of-schedule multiplier to Turner's 1.196."
         }
       }
     },
@@ -2152,31 +2152,31 @@
           "f1Short": "Johnson",
           "f2Short": "Ochoa",
           "modelProb": {
-            "f1": 27.8,
-            "f2": 72.2
+            "f1": 24.7,
+            "f2": 75.3
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 8.4,
-              "f2": 18.6
+              "f1": 8,
+              "f2": 19.4
             },
             {
               "name": "Submission",
-              "f1": 2.5,
-              "f2": 10.1
+              "f1": 2.4,
+              "f2": 10
             },
             {
               "name": "Decision",
-              "f1": 16.9,
-              "f2": 43.5
+              "f1": 14.3,
+              "f2": 46
             }
           ],
-          "decisionPct": 60.4,
+          "decisionPct": 60.3,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 19.9
+              "pct": 19.8
             },
             {
               "r": 2,
@@ -2184,20 +2184,20 @@
             },
             {
               "r": 3,
-              "pct": 7.6
+              "pct": 7.7
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 23.4,
-            "over": 76.6
+            "under": 23.1,
+            "over": 76.9
           },
           {
             "line": 2.5,
-            "under": 32.1,
-            "over": 67.9
+            "under": 31.9,
+            "over": 68.1
           }
         ],
         "composites": {
@@ -2206,32 +2206,32 @@
             {
               "name": "Power",
               "f1": 0.24,
-              "f2": 0.6,
-              "delta": -0.36
+              "f2": 0.76,
+              "delta": -0.51
             },
             {
               "name": "Chin",
               "f1": -0.19,
-              "f2": 0.61,
-              "delta": -0.79
+              "f2": 0.76,
+              "delta": -0.95
             },
             {
               "name": "Output",
               "f1": 0.71,
-              "f2": 1.5,
-              "delta": -0.79
+              "f2": 1.88,
+              "delta": -1.17
             },
             {
               "name": "Grappling",
               "f1": -1.05,
-              "f2": -0.75,
-              "delta": -0.3
+              "f2": -0.95,
+              "delta": -0.1
             },
             {
               "name": "Wrestling Def",
               "f1": -0.14,
-              "f2": -0.1,
-              "delta": -0.04
+              "f2": -0.13,
+              "delta": -0.02
             },
             {
               "name": "Cardio",
@@ -2251,39 +2251,39 @@
           {
             "name": "Pressure",
             "f1": 0.59,
-            "f2": 0.69
+            "f2": 0.73
           },
           {
             "name": "Counter",
             "f1": 0.63,
-            "f2": 0.64
+            "f2": 0.68
           },
           {
             "name": "Wrestler",
             "f1": 0.33,
-            "f2": 0.38
+            "f2": 0.35
           },
           {
             "name": "Finisher",
             "f1": 0.48,
-            "f2": 0.6
+            "f2": 0.62
           },
           {
             "name": "Early-Finish Score",
             "f1": 0.35,
-            "f2": 0.5
+            "f2": 0.53
           },
           {
             "name": "Early Vulnerability",
             "f1": 0.27,
-            "f2": 0.06
+            "f2": 0.04
           }
         ],
         "modifiers": [
           {
             "name": "Trust factor (minutes-based)",
             "f1": "1.000 (191.3 min)",
-            "f2": "0.717 (50.2 min)"
+            "f2": "0.900 (50.2 min)"
           },
           {
             "name": "Decision trust",
@@ -2314,37 +2314,37 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "-0.900",
+            "value": "-1.278",
             "reads": "Toward Ochoa"
           },
           {
             "name": "KO threat — Johnson",
-            "value": "-0.187",
-            "reads": "Near avg"
+            "value": "-0.342",
+            "reads": "Below-avg"
           },
           {
             "name": "KO threat — Ochoa",
-            "value": "+0.514",
+            "value": "+0.667",
             "reads": "Above-avg"
           },
           {
             "name": "Sub threat — Johnson",
-            "value": "-0.853",
+            "value": "-0.837",
             "reads": "Below-avg"
           },
           {
             "name": "Sub threat — Ochoa",
-            "value": "-0.636",
+            "value": "-0.818",
             "reads": "Below-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "8.9%",
+            "value": "6.0%",
             "reads": "Mostly standing"
           },
           {
             "name": "Standing % of fight",
-            "value": "91.1%",
+            "value": "94.0%",
             "reads": ""
           },
           {
@@ -2354,7 +2354,7 @@
           },
           {
             "name": "GBM P(Johnson wins)",
-            "value": "26.2% calibrated  (HT 15.4%)",
+            "value": "23.5% calibrated  (HT 10.9%)",
             "reads": ""
           }
         ],
@@ -2377,13 +2377,13 @@
           }
         ],
         "matchupAnalysis": [
-          "Jose Ochoa 72.2% / Charles Johnson 27.8%, with the GBM at 26.2% for Johnson and the hand-tuned model harsher at 15.4%. As with Barboza earlier on the card, the ratings argue the other way: Johnson holds the higher divisional Elo at 1677 across fourteen fights to Ochoa's 1611 across four, and Ochoa carries reduced trust at 0.717. The composites override both.",
-          "Ochoa leads the columns that decide rounds — output +1.50 to +0.71, chin +0.61 to -0.19, power +0.60 to +0.24 — and the underlying rates back it: a strike differential of +2.172 against Johnson's +0.659, and 1.315 head strikes absorbed per minute against 2.107. The decision edge is -0.900 in his favor, and his modal outcome is a decision at 43.5%. At 60.4% this is the second-highest go-the-distance rate on the card, and the Over 2.5 sits at 67.9%.",
-          "Johnson's case rests on reach (+1.34, 177.8cm to 170.18cm) and on being the far more experienced fighter at fifteen UFC bouts to four, but the flags around him are heavy. He is 35.6 years old to Ochoa's 25.6, his momentum reads -0.339 and his recent-three win rate 0.333, and he is on a 43-day turnaround — the shortest layoff on this card — after a round-three submission loss to Asu Almabayev on 27 June. Almabayev is also the closest thing to a common opponent: Ochoa took him to a decision in July 2025 where Johnson was finished. Johnson's routes are an 8.4% knockout and a 16.9% decision."
+          "Jose Ochoa 75.3% / Charles Johnson 24.7%, with the GBM at 23.5% for Johnson and the hand-tuned model harsher at 10.9%. Ochoa runs at a trust override of 0.900 against a computed 0.717, which is worth three points of win probability here — at computed trust the same run reads 72.2%. As with Barboza earlier on the card, the ratings argue the other way: Johnson holds the higher divisional Elo at 1677 across fourteen fights to Ochoa's 1611 across four. The composites override it.",
+          "Ochoa leads the columns that decide rounds — output +1.88 to +0.71, chin +0.76 to -0.19, power +0.76 to +0.24 — and the underlying rates back it: a strike differential of +2.172 against Johnson's +0.659, and 1.315 head strikes absorbed per minute against 2.107. Taking his sample at 90% weight rather than 72% pushes his output composite from +1.50 to +1.88 and widens the decision edge from -0.900 to -1.278, which is where the three points come from; almost all of it lands in the decision column, with an Ochoa decision now the modal outcome at 46.0%. At 60.3% this is the second-highest go-the-distance rate on the card, and the Over 2.5 sits at 68.1%.",
+          "Johnson's case rests on reach (+1.34, 177.8cm to 170.18cm) and on being the far more experienced fighter at fifteen UFC bouts to four, but the flags around him are heavy. He is 35.6 years old to Ochoa's 25.6, his momentum reads -0.339 and his recent-three win rate 0.333, and he is on a 43-day turnaround — the shortest layoff on this card — after a round-three submission loss to Asu Almabayev on 27 June. Almabayev is also the closest thing to a common opponent: Ochoa took him to a decision in July 2025 where Johnson was finished. Johnson's routes are an 8.0% knockout and a 14.3% decision, the latter down from 16.9% before the override."
         ],
         "synopsis": {
           "lean": "Jose Ochoa",
-          "body": "Modal outcome is an Ochoa decision (43.5%) with 60.4% of sims reaching the judges — the card's second-longest projected fight, Over 2.5 at 67.9%. He leads on output (+1.50 to +0.71), chin (+0.61 to -0.19) and strike differential (+2.172 to +0.659). Moderate confidence. Johnson holds the higher Elo (1677 to 1611) and four times the divisional experience, and Ochoa is only at 0.717 trust — but Johnson is 35.6 to 25.6, on a 43-day turnaround after being submitted by Almabayev, whom Ochoa took the distance."
+          "body": "Modal outcome is an Ochoa decision (46.0%) with 60.3% of sims reaching the judges — the card's second-longest projected fight, Over 2.5 at 68.1%. He leads on output (+1.88 to +0.71), chin (+0.76 to -0.19) and strike differential (+2.172 to +0.659). Moderate confidence. Ochoa is run at a 0.900 trust override rather than his computed 0.717, worth three points (72.2% -> 75.3%) and almost all of it in the decision column. Johnson holds the higher Elo (1677 to 1611) and four times the divisional experience — but he is 35.6 to 25.6, on a 43-day turnaround after being submitted by Almabayev, whom Ochoa took the distance."
         }
       }
     },
@@ -2644,52 +2644,52 @@
           "f1Short": "Luque",
           "f2Short": "Gore",
           "modelProb": {
-            "f1": 56.3,
-            "f2": 43.7
+            "f1": 61.5,
+            "f2": 38.5
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 26.6,
-              "f2": 2.9
+              "f1": 30.6,
+              "f2": 2.4
             },
             {
               "name": "Submission",
               "f1": 6.1,
-              "f2": 29.5
+              "f2": 26.1
             },
             {
               "name": "Decision",
-              "f1": 23.6,
-              "f2": 11.3
+              "f1": 24.9,
+              "f2": 9.9
             }
           ],
-          "decisionPct": 34.9,
+          "decisionPct": 34.8,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 36.6
+              "pct": 37.3
             },
             {
               "r": 2,
-              "pct": 20.4
+              "pct": 20.5
             },
             {
               "r": 3,
-              "pct": 9
+              "pct": 8.9
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 35.8,
-            "over": 64.2
+            "under": 37.3,
+            "over": 62.7
           },
           {
             "line": 2.5,
-            "under": 49.5,
-            "over": 50.5
+            "under": 51.2,
+            "over": 48.8
           }
         ],
         "composites": {
@@ -2698,32 +2698,32 @@
             {
               "name": "Power",
               "f1": 0.6,
-              "f2": -0.84,
-              "delta": 1.44
+              "f2": -0.93,
+              "delta": 1.53
             },
             {
               "name": "Chin",
               "f1": -0.61,
-              "f2": -1.61,
-              "delta": 0.99
+              "f2": -1.73,
+              "delta": 1.12
             },
             {
               "name": "Output",
               "f1": -0.36,
-              "f2": -2.93,
-              "delta": 2.57
+              "f2": -3.26,
+              "delta": 2.91
             },
             {
               "name": "Grappling",
               "f1": -0.43,
-              "f2": -0.23,
-              "delta": -0.2
+              "f2": -0.26,
+              "delta": -0.17
             },
             {
               "name": "Wrestling Def",
               "f1": 0.16,
-              "f2": 0.91,
-              "delta": -0.75
+              "f2": 1.02,
+              "delta": -0.86
             },
             {
               "name": "Cardio",
@@ -2743,7 +2743,7 @@
           {
             "name": "Pressure",
             "f1": 0.46,
-            "f2": 0.2
+            "f2": 0.17
           },
           {
             "name": "Counter",
@@ -2753,17 +2753,17 @@
           {
             "name": "Wrestler",
             "f1": 0.44,
-            "f2": 0.47
+            "f2": 0.46
           },
           {
             "name": "Finisher",
             "f1": 0.69,
-            "f2": 0.66
+            "f2": 0.67
           },
           {
             "name": "Early-Finish Score",
             "f1": 0.59,
-            "f2": 0.29
+            "f2": 0.28
           },
           {
             "name": "Early Vulnerability",
@@ -2775,7 +2775,7 @@
           {
             "name": "Trust factor (minutes-based)",
             "f1": "1.000 (236.7 min)",
-            "f2": "0.896 (62.8 min)"
+            "f2": "1.000 (62.8 min)"
           },
           {
             "name": "Decision trust",
@@ -2806,37 +2806,37 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "+2.115",
+            "value": "+2.366",
             "reads": "Toward Luque"
           },
           {
             "name": "KO threat — Luque",
-            "value": "+2.210",
+            "value": "+2.333",
             "reads": "Above-avg"
           },
           {
             "name": "KO threat — Gore",
-            "value": "-0.220",
+            "value": "-0.317",
             "reads": "Below-avg"
           },
           {
             "name": "Sub threat — Luque",
-            "value": "-1.219",
+            "value": "-1.303",
             "reads": "Below-avg"
           },
           {
             "name": "Sub threat — Gore",
-            "value": "-0.471",
+            "value": "-0.524",
             "reads": "Below-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "12.1%",
+            "value": "11.7%",
             "reads": "Mostly standing"
           },
           {
             "name": "Standing % of fight",
-            "value": "87.9%",
+            "value": "88.3%",
             "reads": ""
           },
           {
@@ -2846,7 +2846,7 @@
           },
           {
             "name": "GBM P(Luque wins)",
-            "value": "53.2% calibrated  (HT 64.1%)",
+            "value": "60.8% calibrated  (HT 63.4%)",
             "reads": ""
           }
         ],
@@ -2869,13 +2869,13 @@
           }
         ],
         "matchupAnalysis": [
-          "The narrowest projection on the card: Vicente Luque 56.3% / Tresean Gore 43.7%, with the hand-tuned model more confident (64.1%) than the GBM (53.2%). What makes it interesting is the mismatch between the decision edge and the win probability. Luque's decision edge is +2.115, the second-widest on the card, and his Elo advantage is decisive at 1885 across twenty-five divisional fights to 1576 across seven — and he still only projects at 56%. Luque is also moving up: twenty-four of his twenty-five UFC fights were at welterweight, though his most recent, a first-round submission of Kelvin Gastelum, was at middleweight.",
-          "The reason the decision edge does not translate is that only 34.9% of sims reach the judges. This is the most finish-heavy fight on the card at 65.1%, with 36.6% of all sims ending in round one. On any round-winning basis Gore is badly beaten: his output composite reads -2.93, the most extreme single value anywhere on this card, with chin -1.61 and power -0.84. Luque's +0.60 power against that chin produces a 26.6% knockout, the modal terminal state.",
-          "But Gore's 43.7% is almost entirely one number, and it is the largest single method share belonging to any fighter on this card: a 29.5% submission. His raw submission finish rate is 1.000 — every career finish he owns is a submission, including a round-three finish of Azamat Bekoev in April and a round-one finish of Antonio Trocoli — and his wrestling defense (+0.91) is the best figure in the fight. Luque is a live target for it: chin -0.61, chin-damage factor 0.753, a 0.375 career finished-rate, and two submission losses in recent memory including Kevin Holland in round two. Luque's October decision loss was to Joel Alvarez, who fights earlier on this card."
+          "Vicente Luque 61.5% / Tresean Gore 38.5%, with the hand-tuned model (63.4%) and the GBM (60.8%) close together. Gore is run at a trust override of 1.000 against a computed 0.896, and it costs him five points — at computed trust this was the closest fight on the card at 56.3%. That is the override working against the fighter it credits: Gore's profile is dominated by a card-extreme negative, so removing the last of the shrinkage toward the divisional mean makes it worse rather than better. Luque's Elo advantage is decisive at 1885 across twenty-five divisional fights to 1576 across seven, and he is moving up: twenty-four of his twenty-five UFC fights were at welterweight, though his most recent, a first-round submission of Kelvin Gastelum, was at middleweight.",
+          "What makes the fight interesting is the mismatch between the decision edge and the win probability. Luque's decision edge is +2.366, now the widest on the card, and he still projects only in the low sixties — because just 34.8% of sims reach the judges. This is the most finish-heavy fight on the card at 65.2%, with 37.3% of all sims ending in round one, the highest round-one rate of the twelve. On any round-winning basis Gore is badly beaten: his output composite reads -3.27 at full trust, the most extreme single value anywhere on this card, with chin -1.73 and power -0.93, against a raw strike differential of -3.586. Luque's +0.60 power against that chin produces a 30.6% knockout, the modal terminal state and the second-largest finish share on the card.",
+          "But Gore's 38.5% is almost entirely one number: a 26.1% submission, the second-largest submission share on this card behind Orolbai's. His raw submission finish rate is 1.000 — every career finish he owns is a submission, including a round-three finish of Azamat Bekoev in April and a round-one finish of Antonio Trocoli — and his wrestling defense (+1.02) is the best figure in the fight. Luque is a live target for it: chin -0.61, chin-damage factor 0.753, a 0.375 career finished-rate, and two submission losses in recent memory including Kevin Holland in round two. Luque's October decision loss was to Joel Alvarez, who fights later on this card."
         ],
         "synopsis": {
-          "lean": "Vicente Luque, but barely",
-          "body": "He projects at 56.3%. The most finish-heavy fight on the card (65.1% inside the distance, 36.6% ending in round one) and the closest projection. Luque's 26.6% KO is the modal outcome against Gore's card-extreme -2.93 output and -1.61 chin. Low confidence — and the reason is Gore's 29.5% submission, the largest single method share of any fighter on this card, off a 1.000 raw submission finish rate against a Luque who reads -0.61 chin, 0.375 finished-rate and has two recent submission losses. Luque's +2.115 decision edge is the second-widest here and barely matters, because only 34.9% of sims reach the judges."
+          "lean": "Vicente Luque",
+          "body": "He projects at 61.5%, up from 56.3% before Gore's trust override — the most finish-heavy fight on the card (65.2% inside the distance, a card-high 37.3% ending in round one). Luque's 30.6% KO is the modal outcome against Gore's -3.27 output, the most extreme composite value on the card, and a -1.73 chin. Low-to-moderate confidence, for two reasons. First, the five-point move comes from taking Gore at full trust, which sharpens a profile built around a card-extreme negative — the number is more override-sensitive than it looks. Second, Gore's 26.1% submission is a real path off a 1.000 raw submission finish rate against a Luque who reads -0.61 chin, 0.375 finished-rate and has two recent submission losses. Luque's card-widest +2.366 decision edge barely matters, because only 34.8% of sims reach the judges."
         }
       }
     },
@@ -2890,31 +2890,31 @@
           "f1Short": "Wells",
           "f2Short": "Orolbai",
           "modelProb": {
-            "f1": 16.2,
-            "f2": 83.8
+            "f1": 15.9,
+            "f2": 84.1
           },
           "method": [
             {
               "name": "KO/TKO",
               "f1": 5.3,
-              "f2": 15.9
+              "f2": 16.1
             },
             {
               "name": "Submission",
-              "f1": 2.4,
-              "f2": 27.7
+              "f1": 2.5,
+              "f2": 27.6
             },
             {
               "name": "Decision",
-              "f1": 8.5,
-              "f2": 40.1
+              "f1": 8.1,
+              "f2": 40.3
             }
           ],
-          "decisionPct": 48.6,
+          "decisionPct": 48.4,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 24.9
+              "pct": 25
             },
             {
               "r": 2,
@@ -2929,13 +2929,13 @@
         "overUnder": [
           {
             "line": 1.5,
-            "under": 30.9,
-            "over": 69.1
+            "under": 30.4,
+            "over": 69.6
           },
           {
             "line": 2.5,
-            "under": 41.2,
-            "over": 58.8
+            "under": 40.7,
+            "over": 59.3
           }
         ],
         "composites": {
@@ -2943,33 +2943,33 @@
           "rows": [
             {
               "name": "Power",
-              "f1": 0.31,
-              "f2": 0.27,
-              "delta": 0.04
+              "f1": 0.32,
+              "f2": 0.31,
+              "delta": 0.01
             },
             {
               "name": "Chin",
-              "f1": 0.35,
-              "f2": 0.69,
-              "delta": -0.34
+              "f1": 0.36,
+              "f2": 0.78,
+              "delta": -0.43
             },
             {
               "name": "Output",
-              "f1": 1.14,
-              "f2": 0.21,
+              "f1": 1.16,
+              "f2": 0.23,
               "delta": 0.93
             },
             {
               "name": "Grappling",
-              "f1": 1.72,
-              "f2": 2.31,
-              "delta": -0.59
+              "f1": 1.76,
+              "f2": 2.5,
+              "delta": -0.74
             },
             {
               "name": "Wrestling Def",
               "f1": -0.18,
-              "f2": -0.3,
-              "delta": 0.13
+              "f2": -0.35,
+              "delta": 0.17
             },
             {
               "name": "Cardio",
@@ -2988,18 +2988,18 @@
         "styleProfiles": [
           {
             "name": "Pressure",
-            "f1": 0.63,
+            "f1": 0.64,
             "f2": 0.54
           },
           {
             "name": "Counter",
             "f1": 0.67,
-            "f2": 0.65
+            "f2": 0.67
           },
           {
             "name": "Wrestler",
             "f1": 0.76,
-            "f2": 0.82
+            "f2": 0.84
           },
           {
             "name": "Finisher",
@@ -3009,19 +3009,19 @@
           {
             "name": "Early-Finish Score",
             "f1": 0.5,
-            "f2": 0.42
+            "f2": 0.43
           },
           {
             "name": "Early Vulnerability",
             "f1": 0.15,
-            "f2": 0.05
+            "f2": 0.03
           }
         ],
         "modifiers": [
           {
             "name": "Trust factor (minutes-based)",
-            "f1": "0.979 (68.5 min)",
-            "f2": "0.879 (61.5 min)"
+            "f1": "1.000 (68.5 min)",
+            "f2": "1.000 (61.5 min)"
           },
           {
             "name": "Decision trust",
@@ -3052,37 +3052,37 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "-0.543",
+            "value": "-0.711",
             "reads": "Toward Orolbai"
           },
           {
             "name": "KO threat — Wells",
-            "value": "-0.406",
+            "value": "-0.494",
             "reads": "Below-avg"
           },
           {
             "name": "KO threat — Orolbai",
-            "value": "-0.090",
+            "value": "-0.064",
             "reads": "Near avg"
           },
           {
             "name": "Sub threat — Wells",
-            "value": "+2.052",
+            "value": "+2.125",
             "reads": "Above-avg"
           },
           {
             "name": "Sub threat — Orolbai",
-            "value": "+2.763",
+            "value": "+3.027",
             "reads": "Above-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "55.4%",
+            "value": "58.2%",
             "reads": "Ground-heavy"
           },
           {
             "name": "Standing % of fight",
-            "value": "44.6%",
+            "value": "41.8%",
             "reads": ""
           },
           {
@@ -3092,7 +3092,7 @@
           },
           {
             "name": "GBM P(Wells wins)",
-            "value": "16.4% calibrated  (HT 28.2%)",
+            "value": "15.8% calibrated  (HT 24.8%)",
             "reads": ""
           }
         ],
@@ -3115,13 +3115,13 @@
           }
         ],
         "matchupAnalysis": [
-          "Myktybek Orolbai 83.8% / Jeremiah Wells 16.3%, with the GBM at 16.4% for Wells and the hand-tuned model more generous at 28.2%. The Elo gap is -212 (1788 across seven divisional fights to 2000 across four) and both men carry near-full trust (0.979 and 0.879), so this is a well-sampled read on both sides by the standards of this card.",
-          "This is the card's grappling fight — 55.4% of simulated fight time is spent on the ground, the highest of the twelve — and both men are genuinely good there. Wells reads +1.72 grappling; Orolbai reads +2.31, the highest composite of its kind on this card. Orolbai separates on the underlying rates: 0.585 landed takedowns per minute, roughly three times any other figure here, a +0.444 control differential, and a +0.69 chin against Wells's +0.35. His +2.764 submission-threat index is the largest on the card and converts to a 27.8% submission, his best single route, with a 15.9% knockout and a 40.1% decision behind it.",
-          "Wells is the better striker on paper and it is not close in isolation: output +1.14 to +0.21, strike differential +1.065 to +0.081, and 0.700 head strikes absorbed per minute — the best defensive rate on this card. The problem is everything around it. He is 39.8 years old to Orolbai's 28.5, with an age factor of 0.805, a 281-day layoff and a recent-three win rate of 0.333 against Orolbai's 1.000, who has won three straight including a first-round knockout of Jack Hermansson. Wells's career finished-rate is 0.500 against Orolbai's 0.000. His paths are an 8.5% decision and a 5.3% knockout."
+          "Myktybek Orolbai 84.1% / Jeremiah Wells 15.9%, with the GBM at 15.8% for Wells and the hand-tuned model more generous at 24.8%. The Elo gap is -212 (1788 across seven divisional fights to 2000 across four). Both men are run at a trust override of 1.000 against computed figures of 0.979 and 0.879, which is the smallest override on the card and moves the fight only three tenths of a point — their samples were already close to fully credited, so this is a well-sampled read on both sides by the standards of this card either way.",
+          "This is the card's grappling fight — 58.2% of simulated fight time is spent on the ground, the highest of the twelve — and both men are genuinely good there. Wells reads +1.76 grappling; Orolbai reads +2.50, the highest composite of its kind on this card. Orolbai separates on the underlying rates: 0.585 landed takedowns per minute, roughly three times any other figure here, a +0.444 control differential, and a +0.78 chin against Wells's +0.36. His +3.027 submission-threat index is the largest on the card and converts to a 27.6% submission — also the largest submission share of any fighter here — with a 16.1% knockout and a 40.3% decision behind it.",
+          "Wells is the better striker on paper and it is not close in isolation: output +1.16 to +0.23, strike differential +1.065 to +0.081, and 0.700 head strikes absorbed per minute — the best defensive rate on this card. The problem is everything around it. He is 39.8 years old to Orolbai's 28.5, with an age factor of 0.805, a 281-day layoff and a recent-three win rate of 0.333 against Orolbai's 1.000, who has won three straight including a first-round knockout of Jack Hermansson. Wells's career finished-rate is 0.500 against Orolbai's 0.000. His paths are an 8.1% decision and a 5.3% knockout."
         ],
         "synopsis": {
           "lean": "Myktybek Orolbai, strongly",
-          "body": "The card's grappling fight (55.4% of simulated time on the ground) and Orolbai owns it — +2.31 grappling, the card's highest, on 0.585 landed takedowns per minute and a +0.444 control differential. His 27.8% submission is his best route, with a 40.1% decision behind it. Reasonably high confidence: near-full trust on both sides, a -212 Elo gap, and an 11.3-year age difference running the right way. Wells is the better striker on the measured rates (+1.065 strike differential, card-best 0.700 head strikes absorbed per minute) but is 39.8 years old off a 281-day layoff."
+          "body": "The card's grappling fight (58.2% of simulated time on the ground) and Orolbai owns it — +2.50 grappling, the card's highest, on 0.585 landed takedowns per minute and a +0.444 control differential. His 27.6% submission is his best route and the largest submission share on the card, with a 40.3% decision behind it. Reasonably high confidence: both men are run at a 1.000 trust override, but their computed figures were already 0.979 and 0.879 so the fight barely moves (83.8% -> 84.1%). A -212 Elo gap and an 11.3-year age difference both run the right way. Wells is the better striker on the measured rates (+1.065 strike differential, card-best 0.700 head strikes absorbed per minute) but is 39.8 years old off a 281-day layoff."
         }
       }
     }
