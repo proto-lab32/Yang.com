@@ -1,6 +1,6 @@
 {
   "title": "UFC Fight Night — Hernandez vs. Rodrigues",
-  "generated": "Generated 2026-08-17  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode except Spivac/Petrino and de Ridder/Dolidze (WC-only)",
+  "generated": "Generated 2026-08-17  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode",
   "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
   "cardList": [
     {
@@ -21,9 +21,9 @@
       "division": "Heavyweight",
       "dataMode": null,
       "f1Short": "Spivac",
-      "f1Pct": 34,
+      "f1Pct": 44,
       "f2Short": "Petrino",
-      "f2Pct": 66
+      "f2Pct": 56
     },
     {
       "f1": "Reinier de Ridder",
@@ -32,9 +32,9 @@
       "division": "Middleweight",
       "dataMode": null,
       "f1Short": "Ridder",
-      "f1Pct": 66,
+      "f1Pct": 59,
       "f2Short": "Dolidze",
-      "f2Pct": 34
+      "f2Pct": 41
     },
     {
       "f1": "Marquel Mederos",
@@ -54,9 +54,9 @@
       "division": "Women's Flyweight",
       "dataMode": null,
       "f1Short": "Judice",
-      "f1Pct": 65,
+      "f1Pct": 66,
       "f2Short": "Chaves",
-      "f2Pct": 35
+      "f2Pct": 34
     },
     {
       "f1": "Jamall Emmers",
@@ -383,59 +383,59 @@
       "f1": "Serghei Spivac",
       "f2": "Vitor Petrino",
       "rounds": 3,
-      "division": "Heavyweight  •  WC-only  •  Petrino trust 1.00 (override)",
+      "division": "Heavyweight  •  all-fights",
       "dataMode": null,
       "sections": {
         "modelProjections": {
           "f1Short": "Spivac",
           "f2Short": "Petrino",
           "modelProb": {
-            "f1": 33.5,
-            "f2": 66.5
+            "f1": 43.7,
+            "f2": 56.3
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 13.8,
-              "f2": 31.9
+              "f1": 13.4,
+              "f2": 28.3
             },
             {
               "name": "Submission",
-              "f1": 6.4,
-              "f2": 5.2
+              "f1": 11.1,
+              "f2": 3.2
             },
             {
               "name": "Decision",
-              "f1": 13.3,
-              "f2": 29.4
+              "f1": 19.1,
+              "f2": 24.8
             }
           ],
-          "decisionPct": 42.7,
+          "decisionPct": 43.9,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 33.2
+              "pct": 34.8
             },
             {
               "r": 2,
-              "pct": 18.2
+              "pct": 15.9
             },
             {
               "r": 3,
-              "pct": 8.2
+              "pct": 6.2
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 37.6,
-            "over": 62.4
+            "under": 37.1,
+            "over": 62.9
           },
           {
             "line": 2.5,
-            "under": 50.7,
-            "over": 49.3
+            "under": 49.3,
+            "over": 50.7
           }
         ],
         "composites": {
@@ -444,32 +444,32 @@
             {
               "name": "Power",
               "f1": -0.41,
-              "f2": 0.5,
-              "delta": -0.92
+              "f2": 0.05,
+              "delta": -0.46
             },
             {
               "name": "Chin",
               "f1": -1.02,
-              "f2": 0.54,
-              "delta": -1.56
+              "f2": -0.01,
+              "delta": -1.01
             },
             {
               "name": "Output",
               "f1": -0.43,
-              "f2": 1.08,
-              "delta": -1.51
+              "f2": 0.41,
+              "delta": -0.84
             },
             {
               "name": "Grappling",
               "f1": 1.36,
-              "f2": 0.12,
-              "delta": 1.24
+              "f2": 0.59,
+              "delta": 0.78
             },
             {
               "name": "Wrestling Def",
               "f1": 0.48,
-              "f2": 1.38,
-              "delta": -0.9
+              "f2": 0.6,
+              "delta": -0.13
             },
             {
               "name": "Cardio",
@@ -489,44 +489,44 @@
           {
             "name": "Pressure",
             "f1": 0.46,
-            "f2": 0.65
+            "f2": 0.57
           },
           {
             "name": "Counter",
             "f1": 0.57,
-            "f2": 0.7
+            "f2": 0.63
           },
           {
             "name": "Wrestler",
             "f1": 0.7,
-            "f2": 0.54
+            "f2": 0.61
           },
           {
             "name": "Finisher",
             "f1": 0.57,
-            "f2": 0.58
+            "f2": 0.54
           },
           {
             "name": "Early-Finish Score",
             "f1": 0.36,
-            "f2": 0.46
+            "f2": 0.36
           },
           {
             "name": "Early Vulnerability",
             "f1": 0.67,
-            "f2": 0.24
+            "f2": 0.49
           }
         ],
         "modifiers": [
           {
             "name": "Trust factor (minutes-based)",
             "f1": "1.000 (125.5 min)",
-            "f2": "1.000 (29.7 min)"
+            "f2": "1.000 (103.8 min)"
           },
           {
             "name": "Decision trust",
             "f1": "0.833",
-            "f2": "0.167"
+            "f2": "0.500"
           },
           {
             "name": "Layoff factor",
@@ -541,7 +541,7 @@
           {
             "name": "Chin damage factor",
             "f1": "0.534",
-            "f2": "1.000"
+            "f2": "0.900"
           },
           {
             "name": "SoS multiplier",
@@ -552,37 +552,37 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "-1.469",
+            "value": "-0.511",
             "reads": "Toward Petrino"
           },
           {
             "name": "KO threat — Spivac",
-            "value": "-0.892",
+            "value": "-0.346",
             "reads": "Below-avg"
           },
           {
             "name": "KO threat — Petrino",
-            "value": "+1.447",
+            "value": "+0.991",
             "reads": "Above-avg"
           },
           {
             "name": "Sub threat — Spivac",
-            "value": "+0.463",
+            "value": "+1.091",
             "reads": "Above-avg"
           },
           {
             "name": "Sub threat — Petrino",
-            "value": "-0.245",
-            "reads": "Below-avg"
+            "value": "+0.276",
+            "reads": "Above-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "17.8%",
+            "value": "29.4%",
             "reads": "Mostly standing"
           },
           {
             "name": "Standing % of fight",
-            "value": "82.2%",
+            "value": "70.6%",
             "reads": ""
           },
           {
@@ -592,7 +592,7 @@
           },
           {
             "name": "GBM P(Spivac wins)",
-            "value": "32.9% calibrated  (HT 15.0%)",
+            "value": "41.5% calibrated  (HT 31.6%)",
             "reads": ""
           }
         ],
@@ -609,19 +609,19 @@
             "name": "Vitor Petrino",
             "lines": [
               "29, Orthodox, 6'2\" / 77\" reach. Record 14-2-0.",
-              "Sample: 3 division fights, 29.7 minutes total. Career WR 100%. Layoff 156 days.",
+              "Sample: 10 division fights, 103.8 minutes total. Career WR 80%. Layoff 156 days.",
               "Recent: W vs Steven Asplund (Decision R3, 2026-03-14) | W vs Thomas Petersen (KO/TKO R3, 2025-10-11) | W vs Austen Lane (Submission R1, 2025-07-12)"
             ]
           }
         ],
         "matchupAnalysis": [
-          "Vitor Petrino 66.5% / Serghei Spivac 33.5%, and this is the most settings-dependent projection on the card. It is run WC ONLY with Petrino's trust forced to 1.000. Both choices cut the same way: wc_only discards Petrino's seven light-heavyweight bouts and keeps only his three heavyweight fights — all wins, a decision over Steven Asplund, a round-three knockout of Thomas Petersen and a round-one submission of Austen Lane — while the trust override removes the shrinkage his 29.7 minutes would otherwise attract (computed trust 0.424). At computed trust the same run reads Petrino 53.8%; the override is worth nearly thirteen points. What it also removes from view is the round-three knockout loss to Dustin Jacoby in December 2024, which happened at light heavyweight and is therefore outside the sample.",
-          "Inside that frame Petrino's profile is close to spotless. His wrestling defense reads +1.38, his output +1.08, his chin +0.54 and his power +0.50; his chin-damage factor is 1.000, his getting-finished index 0.000, his early-vulnerability 0.236 and his takedown defense 100%. He has not been finished, has not been taken down, and absorbs 1.852 head strikes per minute against Spivac's 2.773. That yields a +1.45 knockout-threat index against Spivac's -0.89 and a -1.47 decision edge, and it makes a Petrino knockout the largest single bucket at 31.9% with a Petrino decision close behind at 29.4%.",
-          "Spivac's case is the one the ratings prefer — he carries 1858 across fifteen division fights to Petrino's 1779 across ten — and it is not empty. His grappling composite reads +1.36 to Petrino's +0.12, he lands 0.255 takedowns per minute to 0.067, his control differential is +0.206 to +0.171, and his reach is the longer of the two at 198.12cm (+0.32 to -0.11). His route is a 6.4% submission or a 13.3% decision. The problems are structural: a chin of -1.02 with a chin-damage factor of 0.534, a strike differential of -0.661, an output composite of -0.43, and a recent-three win rate of 0.333 — a decision over Ante Delija sandwiched by a decision loss to Waldo Cortes Acosta and a first-round knockout by Jailton Almeida. Against a fighter the model believes has never been hurt, that is a thin platform. One genuine asset does survive: his r3-vs-r1 ratio of 2.497 is the highest on the card, so if this reaches the third round it is his round."
+          "Vitor Petrino 56.3% / Serghei Spivac 43.7%, and this is the fight the settings change reshaped most. It was previously run WC-only with Petrino's trust forced to 1.000, which built his profile from three heavyweight wins and 29.7 minutes and read Petrino 66.5%. Pooling his whole career instead drops him to 56.3% — a ten-point swing — because the divisional filter had been hiding the one thing the model most wants to know about him: the round-three knockout loss to Dustin Jacoby in December 2024, which happened at light heavyweight. With it back in the sample his getting-finished index goes from 0.000 to 1.000 and his chin from +0.54 to -0.01. He is no longer a man who has never been hurt; he is a man whose only stoppage loss is now visible.",
+          "What survives the change is a still-solid profile across ten fights and 103.8 minutes, at genuinely earned full trust rather than an asserted one. Petrino reads +0.60 wrestling defense, +0.59 grappling, +0.41 output and +0.05 power, with 79.3% takedown defense, a control differential of +0.223 and the lowest absorption rate in the fight at 1.455 head strikes per minute against Spivac's 2.773. He is 29.0 to Spivac's 31.6, carries a +0.594 momentum against +0.077, and is 3-0 in his last three. That yields a +0.99 knockout-threat index against Spivac's -0.35 and a -0.51 decision edge, and makes a Petrino knockout the largest single bucket at 28.3% with a Petrino decision behind it at 24.8%.",
+          "Spivac's case is the one the ratings prefer — he carries 1858 across fifteen division fights to Petrino's 1779 across ten — and pooling the samples has strengthened it. His grappling composite reads +1.36 to Petrino's +0.59, he lands 0.255 takedowns per minute to 0.173, and his submission-threat index is now the higher of the two at +1.09 against +0.28, which is why a Spivac submission (11.1%) has become a real route rather than a footnote. His r3-vs-r1 ratio of 2.497 is the highest on the card: if this reaches the third round it is his round, and 43.9% of sims reach the judges. The problems remain structural — a -1.02 chin with a 0.534 chin-damage factor, a -0.661 strike differential, a -0.43 output composite and a 0.333 recent-three win rate, with 34.8% of sims ending in round one, the phase that suits him least."
         ],
         "synopsis": {
-          "lean": "Vitor Petrino",
-          "body": "Largest bucket is a Petrino KO/TKO at 31.9% with a Petrino decision behind it at 29.4%; 42.7% of sims reach the judges and 33.2% end in round one. His heavyweight-only profile reads +1.38 wrestling defense, +1.08 output, 100% takedown defense, a 1.000 chin-damage factor and a 0.000 getting-finished index. Low-to-moderate confidence, and read the settings first. This fight is run WC ONLY with Petrino's trust forced to 1.000 against a computed 0.424 — at computed trust it reads Petrino 53.8%, so the override alone is worth nearly thirteen points. Between them the two settings build his profile from three heavyweight wins and 29.7 minutes while excluding the light-heavyweight knockout loss to Jacoby. Spivac holds the higher divisional Elo (1858 to 1779), fifteen division fights to ten, a +1.36 grappling edge and the card's best late-round ratio (2.497); his problem is a -1.02 chin and a 0.333 recent-three win rate."
+          "lean": "Vitor Petrino, but by far less than before",
+          "body": "Largest bucket is a Petrino KO/TKO at 28.3% with a Petrino decision at 24.8%; 43.9% of sims reach the judges and 34.8% end in round one. He leads on wrestling defense (+0.60), grappling (+0.59) and output (+0.41), with 79.3% takedown defense and the lower absorption rate (1.455 to 2.773). Low-to-moderate confidence, and note what changed: this fight was previously run WC-only with Petrino's trust forced to 1.000, which read 66.5%. Pooling his full record costs him ten points, because it re-admits the light-heavyweight knockout loss to Jacoby — his getting-finished index moves 0.000 to 1.000 and his chin +0.54 to -0.01. Spivac holds the higher divisional Elo (1858 to 1779), the bigger grappling edge (+1.36 to +0.59), the higher submission threat (+1.09 to +0.28) and the card's best late-round ratio (2.497); his problem is a -1.02 chin and a 0.333 recent-three win rate."
         }
       }
     },
@@ -629,59 +629,59 @@
       "f1": "Reinier de Ridder",
       "f2": "Roman Dolidze",
       "rounds": 3,
-      "division": "Middleweight  •  WC-only",
+      "division": "Middleweight  •  all-fights",
       "dataMode": null,
       "sections": {
         "modelProjections": {
           "f1Short": "Ridder",
           "f2Short": "Dolidze",
           "modelProb": {
-            "f1": 66.4,
-            "f2": 33.6
+            "f1": 59.3,
+            "f2": 40.7
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 13.3,
-              "f2": 20.1
+              "f1": 11.3,
+              "f2": 21.1
             },
             {
               "name": "Submission",
-              "f1": 23.7,
-              "f2": 2.2
+              "f1": 20.9,
+              "f2": 2.3
             },
             {
               "name": "Decision",
-              "f1": 29.5,
-              "f2": 11.2
+              "f1": 27.1,
+              "f2": 17.3
             }
           ],
-          "decisionPct": 40.7,
+          "decisionPct": 44.4,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 30.5
+              "pct": 28.1
             },
             {
               "r": 2,
-              "pct": 19.5
+              "pct": 18.5
             },
             {
               "r": 3,
-              "pct": 9.7
+              "pct": 9.4
             }
           ]
         },
         "overUnder": [
           {
             "line": 1.5,
-            "under": 27.6,
-            "over": 72.4
+            "under": 25.4,
+            "over": 74.6
           },
           {
             "line": 2.5,
-            "under": 38.1,
-            "over": 61.9
+            "under": 35.1,
+            "over": 64.9
           }
         ],
         "composites": {
@@ -690,32 +690,32 @@
             {
               "name": "Power",
               "f1": -0.17,
-              "f2": -0.08,
-              "delta": -0.09
+              "f2": -0.07,
+              "delta": -0.1
             },
             {
               "name": "Chin",
               "f1": -0.2,
-              "f2": 0.55,
-              "delta": -0.75
+              "f2": 0.62,
+              "delta": -0.82
             },
             {
               "name": "Output",
               "f1": 0.15,
-              "f2": -1.12,
-              "delta": 1.27
+              "f2": -0.46,
+              "delta": 0.61
             },
             {
               "name": "Grappling",
               "f1": 0.24,
-              "f2": -0.02,
-              "delta": 0.26
+              "f2": 0.23,
+              "delta": 0.01
             },
             {
               "name": "Wrestling Def",
               "f1": -0.01,
-              "f2": -0.56,
-              "delta": 0.55
+              "f2": -0.51,
+              "delta": 0.5
             },
             {
               "name": "Cardio",
@@ -735,39 +735,39 @@
           {
             "name": "Pressure",
             "f1": 0.52,
-            "f2": 0.36
+            "f2": 0.44
           },
           {
             "name": "Counter",
             "f1": 0.63,
-            "f2": 0.6
+            "f2": 0.59
           },
           {
             "name": "Wrestler",
             "f1": 0.55,
-            "f2": 0.53
+            "f2": 0.56
           },
           {
             "name": "Finisher",
             "f1": 0.59,
-            "f2": 0.54
+            "f2": 0.47
           },
           {
             "name": "Early-Finish Score",
             "f1": 0.28,
-            "f2": 0.44
+            "f2": 0.4
           },
           {
             "name": "Early Vulnerability",
             "f1": 0.28,
-            "f2": 0.07
+            "f2": 0.06
           }
         ],
         "modifiers": [
           {
             "name": "Trust factor (minutes-based)",
             "f1": "1.000 (82.1 min)",
-            "f2": "1.000 (147.2 min)"
+            "f2": "1.000 (181.5 min)"
           },
           {
             "name": "Decision trust",
@@ -798,37 +798,37 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "+1.354",
+            "value": "+0.745",
             "reads": "Toward Ridder"
           },
           {
             "name": "KO threat — Ridder",
-            "value": "-0.623",
+            "value": "-0.694",
             "reads": "Below-avg"
           },
           {
             "name": "KO threat — Dolidze",
-            "value": "-0.144",
+            "value": "-0.137",
             "reads": "Near avg"
           },
           {
             "name": "Sub threat — Ridder",
-            "value": "+0.735",
+            "value": "+0.690",
             "reads": "Above-avg"
           },
           {
             "name": "Sub threat — Dolidze",
-            "value": "-0.011",
-            "reads": "Near avg"
+            "value": "+0.202",
+            "reads": "Above-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "30.0%",
-            "reads": "Ground-heavy"
+            "value": "29.2%",
+            "reads": "Mostly standing"
           },
           {
             "name": "Standing % of fight",
-            "value": "70.0%",
+            "value": "70.8%",
             "reads": ""
           },
           {
@@ -838,7 +838,7 @@
           },
           {
             "name": "GBM P(Ridder wins)",
-            "value": "65.9% calibrated  (HT 70.8%)",
+            "value": "60.6% calibrated  (HT 67.3%)",
             "reads": ""
           }
         ],
@@ -855,19 +855,19 @@
             "name": "Roman Dolidze",
             "lines": [
               "38, Orthodox, 6'2\" / 76\" reach. Record 15-5-0.",
-              "Sample: 11 division fights, 147.2 minutes total. Career WR 55%. Layoff 149 days.",
+              "Sample: 14 division fights, 181.5 minutes total. Career WR 64%. Layoff 149 days.",
               "Recent: L vs Christian Leroy Duncan (Decision R3, 2026-03-21) | L vs Anthony Hernandez (Submission R4, 2025-08-09) | W vs Marvin Vettori (Decision R5, 2025-03-15)"
             ]
           }
         ],
         "matchupAnalysis": [
-          "Reinier de Ridder 66.4% / Roman Dolidze 33.6%, with both engines on the same side for once — GBM 65.9%, hand-tuned 70.8% — and the ratings agreeing too, 1909 across six division fights to 1885 across fourteen. Both men carry full trust. It is also the rare fight on this card where neither man is trending upward: de Ridder's recent-three win rate is 0.333 and his momentum -0.345, Dolidze's are 0.333 and -0.339. Two fighters coming off losses, and the model is separating them on structure rather than form.",
-          "Read the WC-only setting before anything else here, because it is worth seven points and it lands entirely on one man. De Ridder is unaffected — all six of his UFC fights are at middleweight, so restricting the sample changes nothing for him. For Dolidze it removes three light-heavyweight bouts, and all three are WINS: a first-round knockout of Khadis Ibragimov, a decision over John Allan and a decision over Anthony Smith. His observed record inside the frame drops from 9-5 to 6-5, his career win rate to 0.545, and the composites move hard — output from -0.46 to -1.12, grappling from +0.22 to -0.02. At all-fights the same run reads de Ridder 59.3%. The honest framing is that this setting asks what Dolidze looks like as a middleweight only, and the answer is a low-volume fighter with a 2.771 output and a -1.236 strike differential.",
-          "De Ridder's edge is the submission, and it is the largest share of his 66.4%: a 23.7% submission against a 29.5% decision and only a 13.3% knockout. The supporting numbers are his +0.74 submission-threat index against Dolidze's -0.01, a 0.500 raw submission finish rate, a 0.750 finishing ability, and a +1.63 reach composite (198.12cm to 193.04cm) that is the fight's clearest physical gap. What he is attacking is specific: Dolidze's wrestling defense reads -0.56 and his takedown defense 33.3%, against de Ridder's own 40.0%. Dolidze has already lost this exact way once — a round-four submission to Anthony Hernandez in August 2025, and Hernandez headlines this card. Dolidze's own path runs through durability and power: his chin reads +0.55 to de Ridder's -0.20, his chin-damage factor 0.919 to 0.791, his getting-finished index 0.200 to 0.500, and his raw knockout finish rate is 0.667, which funds his 20.1% knockout against de Ridder's 13.3%. De Ridder was himself knocked out by Brendan Allen in round four last October. Age is the thumb on the scale — Dolidze is 38.1 with an age factor of 0.847 against 35.9 and 0.903 — and neither man is busy, de Ridder's 2.472 volume being the lowest on the card, which is why 40.7% of sims reach the judges and the O/U GBM pushes Over 2.5 up to 61.9% from the simulation's own 54.1%."
+          "Reinier de Ridder 59.3% / Roman Dolidze 40.7%, with both engines on the same side — GBM 60.6%, hand-tuned 67.3% — and the ratings agreeing too, 1909 across six division fights to 1885 across fourteen. Both men carry full trust. This fight was previously run WC-only, which read de Ridder 66.4%; dropping that filter costs him seven points, and the entire effect lands on Dolidze. De Ridder is unaffected either way — all six of his UFC fights are at middleweight — while for Dolidze the filter had been stripping three light-heavyweight bouts, and all three are WINS: a first-round knockout of Khadis Ibragimov and decisions over John Allan and Anthony Smith. Restoring them lifts his observed record from 6-5 to 9-5, his career win rate to 0.643, and his output composite from -1.12 to -0.46.",
+          "De Ridder's edge is still the submission, and it is the largest share of his 59.3%: a 20.9% submission against a 27.1% decision and only an 11.3% knockout. The supporting numbers are a +0.69 submission-threat index against Dolidze's +0.20, a 0.500 raw submission finish rate, a 0.750 finishing ability, and a +1.63 reach composite (198.12cm to 193.04cm) that is the fight's clearest physical gap. What he is attacking is specific: Dolidze's takedown defense is 32.0%, the lowest of any fighter on this card, against a wrestling defense composite of -0.51. Dolidze has already lost this exact way once — a round-four submission to Anthony Hernandez in August 2025, and Hernandez headlines this event.",
+          "Dolidze's case is durability and power, and the wider sample has improved it. His chin reads +0.62 to de Ridder's -0.20, his chin-damage factor 0.919 to 0.791, his getting-finished index 0.200 to 0.500 and his early-vulnerability 0.057 — the lowest on the card. His raw knockout finish rate is 0.556, which funds his 21.1% knockout against de Ridder's 11.3%, and de Ridder was himself knocked out by Brendan Allen in round four last October. Neither man is trending: both carry a 0.333 recent-three win rate and negative momentum, and both are coming off losses. Age is the thumb on the scale — Dolidze is 38.1 with an age factor of 0.847 against 35.9 and 0.903 — and neither is busy, de Ridder's 2.472 volume being the lowest on the card against Dolidze's 3.185. That is why 44.4% of sims reach the judges and the O/U GBM pushes Over 2.5 up to 64.9% from the simulation's own 58.8%."
         ],
         "synopsis": {
           "lean": "Reinier de Ridder",
-          "body": "His single largest finish route is the submission at 23.7%, against a 29.5% decision; the target is Dolidze's -0.56 wrestling defense and 33.3% takedown defense, and Dolidze has already been submitted in round four by Anthony Hernandez, who headlines this event. De Ridder's +1.63 reach composite is the clearest physical gap. Moderate confidence, but read the setting: this fight is run WC ONLY, worth +7.1 points (all-fights reads de Ridder 59.3%), and it lands entirely on Dolidze — it strips three light-heavyweight WINS from his sample and drops his output composite from -0.46 to -1.12. Both men are 1-2 in their last three with negative momentum, de Ridder's own takedown defense is only 40.0% and he was knocked out by Brendan Allen in October, and Dolidze is the more durable fighter by every measure the model has — +0.55 chin, 0.919 chin-damage factor, a 0.200 getting-finished index and a 0.667 knockout finish rate behind his 20.1% KO. Age is the thumb on the scale: 38.1 against 35.9."
+          "body": "His single largest finish route is the submission at 20.9%, against a 27.1% decision; the target is Dolidze's 32.0% takedown defense — the lowest on the card — and Dolidze has already been submitted in round four by Anthony Hernandez, who headlines this event. De Ridder's +1.63 reach composite is the clearest physical gap. Moderate confidence, and note the setting change: this was previously run WC-only and read 66.4%. Dropping the filter costs seven points and lands entirely on Dolidze, restoring three light-heavyweight WINS to his sample and lifting his output composite from -1.12 to -0.46. Both men are 1-2 in their last three with negative momentum, de Ridder's own takedown defense is only 40.0% and he was knocked out by Brendan Allen in October, and Dolidze is the more durable fighter by every measure — +0.62 chin, 0.919 chin-damage factor, a 0.200 getting-finished index, the card's lowest early-vulnerability (0.057) and a 0.556 knockout finish rate behind his 21.1% KO. Age is the thumb on the scale: 38.1 against 35.9."
         }
       }
     },
@@ -1121,42 +1121,42 @@
       "f1": "Carli Judice",
       "f2": "Jeisla Chaves",
       "rounds": 3,
-      "division": "Women's Flyweight  •  all-fights",
+      "division": "Women's Flyweight  •  all-fights  •  Judice trust 1.00, Chaves trust 0.60 (override)",
       "dataMode": null,
       "sections": {
         "modelProjections": {
           "f1Short": "Judice",
           "f2Short": "Chaves",
           "modelProb": {
-            "f1": 65.3,
-            "f2": 34.7
+            "f1": 66.1,
+            "f2": 33.9
           },
           "method": [
             {
               "name": "KO/TKO",
-              "f1": 17,
-              "f2": 3.8
+              "f1": 17.5,
+              "f2": 3.3
             },
             {
               "name": "Submission",
-              "f1": 3.7,
-              "f2": 11
+              "f1": 3.4,
+              "f2": 11.6
             },
             {
               "name": "Decision",
-              "f1": 44.7,
-              "f2": 19.9
+              "f1": 45.3,
+              "f2": 19
             }
           ],
-          "decisionPct": 64.6,
+          "decisionPct": 64.2,
           "roundsFinish": [
             {
               "r": 1,
-              "pct": 12
+              "pct": 12.2
             },
             {
               "r": 2,
-              "pct": 17.2
+              "pct": 17.6
             },
             {
               "r": 3,
@@ -1167,13 +1167,13 @@
         "overUnder": [
           {
             "line": 1.5,
-            "under": 20.9,
-            "over": 79.1
+            "under": 21,
+            "over": 79
           },
           {
             "line": 2.5,
-            "under": 32.8,
-            "over": 67.2
+            "under": 33,
+            "over": 67
           }
         ],
         "composites": {
@@ -1181,33 +1181,33 @@
           "rows": [
             {
               "name": "Power",
-              "f1": 1.42,
-              "f2": -0.11,
-              "delta": 1.53
+              "f1": 1.71,
+              "f2": -0.15,
+              "delta": 1.86
             },
             {
               "name": "Chin",
-              "f1": 0.05,
-              "f2": -0.24,
-              "delta": 0.29
+              "f1": 0.07,
+              "f2": -0.34,
+              "delta": 0.4
             },
             {
               "name": "Output",
-              "f1": 1.42,
-              "f2": 0.16,
-              "delta": 1.26
+              "f1": 1.71,
+              "f2": 0.23,
+              "delta": 1.48
             },
             {
               "name": "Grappling",
-              "f1": -0.47,
-              "f2": 0.08,
-              "delta": -0.55
+              "f1": -0.56,
+              "f2": 0.11,
+              "delta": -0.68
             },
             {
               "name": "Wrestling Def",
-              "f1": 0.46,
-              "f2": 0.07,
-              "delta": 0.39
+              "f1": 0.56,
+              "f2": 0.1,
+              "delta": 0.46
             },
             {
               "name": "Cardio",
@@ -1226,23 +1226,23 @@
         "styleProfiles": [
           {
             "name": "Pressure",
-            "f1": 0.68,
+            "f1": 0.71,
             "f2": 0.54
           },
           {
             "name": "Counter",
-            "f1": 0.71,
-            "f2": 0.52
+            "f1": 0.75,
+            "f2": 0.53
           },
           {
             "name": "Wrestler",
-            "f1": 0.44,
-            "f2": 0.51
+            "f1": 0.42,
+            "f2": 0.52
           },
           {
             "name": "Finisher",
-            "f1": 0.65,
-            "f2": 0.44
+            "f1": 0.68,
+            "f2": 0.41
           },
           {
             "name": "Early-Finish Score",
@@ -1252,14 +1252,14 @@
           {
             "name": "Early Vulnerability",
             "f1": 0.14,
-            "f2": 0.35
+            "f2": 0.37
           }
         ],
         "modifiers": [
           {
             "name": "Trust factor (minutes-based)",
-            "f1": "0.831 (58.2 min)",
-            "f2": "0.429 (30.0 min)"
+            "f1": "1.000 (58.2 min)",
+            "f2": "0.600 (30.0 min)"
           },
           {
             "name": "Decision trust",
@@ -1290,37 +1290,37 @@
         "matchupEdges": [
           {
             "name": "Decision edge",
-            "value": "+1.540",
+            "value": "+1.822",
             "reads": "Toward Judice"
           },
           {
             "name": "KO threat — Judice",
-            "value": "+1.633",
+            "value": "+2.018",
             "reads": "Above-avg"
           },
           {
             "name": "KO threat — Chaves",
-            "value": "-0.215",
+            "value": "-0.269",
             "reads": "Below-avg"
           },
           {
             "name": "Sub threat — Judice",
-            "value": "-0.464",
+            "value": "-0.553",
             "reads": "Below-avg"
           },
           {
             "name": "Sub threat — Chaves",
-            "value": "-0.240",
+            "value": "-0.271",
             "reads": "Below-avg"
           },
           {
             "name": "Ground % of fight",
-            "value": "12.2%",
+            "value": "11.3%",
             "reads": "Mostly standing"
           },
           {
             "name": "Standing % of fight",
-            "value": "87.8%",
+            "value": "88.7%",
             "reads": ""
           },
           {
@@ -1330,7 +1330,7 @@
           },
           {
             "name": "GBM P(Judice wins)",
-            "value": "72.8% calibrated  (HT 87.1%)",
+            "value": "74.3% calibrated  (HT 88.0%)",
             "reads": ""
           }
         ],
@@ -1353,13 +1353,13 @@
           }
         ],
         "matchupAnalysis": [
-          "Carli Judice 65.3% / Jeisla Chaves 34.7%, and this projection moved on new data rather than on any change of settings. The hidden-event backfill added a Contender Series bout to each woman's record: Judice's September 2023 decision LOSS to Ernesta Kareckaite, and Chaves's September 2025 decision WIN over Sofia Montenegro. The fight moved TOWARD Judice, from 60.4% to 65.3%, which is the opposite of what those two results suggest. The explanation is trust. Judice went from four observed fights to five and from 0.617 trust to 0.831, and the extra fifteen minutes sharpened her power composite from +1.23 to +1.42. Chaves went from one fight to two and 0.214 to 0.429 — and what the new evidence showed was an ordinary three-round decision, so her chin fell from +0.08 to -0.24 and her power from -0.02 to -0.11. Adding evidence about an average fighter makes them look average faster.",
-          "That still leaves this as a fight between a measured profile and a partial prior. Chaves is 8-0 as a professional and the model does not dispute it — her pre-UFC record reads eight fights at a 0.875 win rate — but at 0.429 trust roughly half her composite profile is still the divisional average, and it shows: power -0.11, chin -0.24, output +0.16, wrestling defense +0.07. Her strength-of-schedule multiplier of 0.742 is the lowest on the card. The engines remain far apart, with the hand-tuned model at 87.1% for Judice against the GBM's 72.8%, and the ratings only mildly supporting it at 1642 across five fights to 1576 across two.",
-          "What Judice brings is measured and specific. Her output composite reads +1.42 and her power +1.42, off a volume of 9.318 — the highest on this card — with a raw knockout finish rate of 0.667 and a +1.63 knockout-threat index against Chaves's -0.22. That gives her a +1.54 decision edge and makes a Judice decision the modal outcome at 44.7%, with a 17.0% knockout behind it, in a fight the model expects to spend 87.8% of its time standing. There is a genuine common opponent: both women have beaten Yuneisy Duben, Judice by first-round knockout in March 2025, Chaves by decision this June. The case against Judice is that her volume comes at a price — she absorbs 4.865 head strikes per minute, the highest figure on this card, and her grappling reads -0.47 with a -0.065 control differential. Chaves's own best path is the submission at 11.0%, which is worth naming for what it is: she has no career submission wins at all and a finishing ability index of 0.000, so that share is the divisional grappling prior showing through Judice's weak mat numbers, not a demonstrated threat."
+          "Carli Judice 66.1% / Jeisla Chaves 33.9%, run with Judice's trust forced to 1.000 and Chaves's lifted to 0.600. The two overrides are not worth the same thing, and the asymmetry is the most instructive number in this fight. Run in isolation, Judice at 1.000 gives 66.1% while Chaves at 0.600 gives 65.3% — the same as computed trust. Judice's bump is the entire +0.8 point move; Chaves's is worth exactly nothing. Trust scales a fighter's DEVIATION from the divisional mean, and Chaves barely has one to scale: her power reads -0.15, her chin -0.34, her output +0.23, her grappling +0.11 and her wrestling defense +0.10. Raising confidence in a profile that is already the division average changes nothing at all.",
+          "Judice is the opposite case, which is why the same adjustment moves her. At full trust her power composite reads +1.71 and her output +1.71, both off the card's highest volume (9.318) and a +2.699 strike differential, with a raw knockout finish rate of 0.667. That produces a +2.02 knockout-threat index against Chaves's -0.27 and a +1.82 decision edge — the widest on the card — and makes a Judice decision the modal outcome at 45.3% with a 17.5% knockout behind it, in a fight the model expects to spend 88.7% of its time standing. She is also the more durable of the two on paper: a 1.000 chin-damage factor, a 0.000 getting-finished index and a 0.140 early-vulnerability.",
+          "Two things argue against the size of the number. The first is that Judice's volume comes at a price — she absorbs 4.865 head strikes per minute, the highest figure on this card by a distance, and her grappling reads -0.56 with a -0.065 control differential, which is where Chaves's 11.6% submission share comes from. That share is worth naming for what it is: Chaves has no career submission wins and a finishing ability index of 0.000, so it is the divisional grappling prior showing through Judice's weak mat numbers rather than a demonstrated threat. The second is that Chaves is 8-0 as a professional with a 0.875 pre-UFC win rate, and the engines still split fourteen points on her (hand-tuned 88.0% for Judice against the GBM's 74.3%). Her strength-of-schedule multiplier of 0.742 is the lowest on the card, which is the model's way of saying it does not rate what she has beaten. There is a genuine common opponent: both women have beaten Yuneisy Duben, Judice by first-round knockout in March 2025, Chaves by decision this June."
         ],
         "synopsis": {
           "lean": "Carli Judice",
-          "body": "Modal outcome is a Judice decision at 44.7% with a 17.0% knockout; 64.6% of sims reach the judges, Over 2.5 at 67.2%, and 87.8% of the fight projects as standing. Her edge is measured — a +1.42 output and +1.42 power composite off the card's highest volume (9.318), a 0.667 knockout finish rate and a +1.54 decision edge. Both women have beaten Yuneisy Duben, Judice by first-round knockout, Chaves by decision. Low-to-moderate confidence. This projection moved on NEW DATA: the Contender Series backfill added a loss to Judice's record and a win to Chaves's, and the fight still moved toward Judice (60.4% to 65.3%) because the extra evidence raised Judice's trust to 0.831 while showing that Chaves — now 0.429 — is an ordinary decision fighter. Half of Chaves's profile is still divisional prior, her strength-of-schedule multiplier (0.742) is the card's lowest, and the engines split fourteen points (hand-tuned 87.1% vs GBM 72.8%). Against Judice: she absorbs 4.865 head strikes per minute, the most on the card. Chaves's 11.0% submission share is prior, not record — she has no career submission wins."
+          "body": "Modal outcome is a Judice decision at 45.3% with a 17.5% knockout; 64.2% of sims reach the judges, Over 2.5 at 67.0%, and 88.7% of the fight projects as standing. At full trust her +1.71 power and +1.71 output sit on the card's highest volume (9.318) and a +2.699 strike differential, giving a +2.02 knockout-threat index and the card's widest decision edge (+1.82). Low-to-moderate confidence. The two trust overrides are NOT worth the same: Judice's 1.000 is the entire +0.8 point move and Chaves's 0.600 is worth zero, because trust scales deviation from the divisional mean and Chaves has essentially none (power -0.15, chin -0.34, output +0.23). Against the read: Judice absorbs 4.865 head strikes per minute, the most on the card, and her grappling is -0.56 — which is where Chaves's 11.6% submission share comes from, though Chaves has no career submission wins and a 0.000 finishing ability. Chaves is 8-0 as a pro, the engines split fourteen points (hand-tuned 88.0% vs GBM 74.3%), and her 0.742 strength-of-schedule multiplier is the card's lowest."
         }
       }
     },
