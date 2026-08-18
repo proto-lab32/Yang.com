@@ -1,6 +1,6 @@
 {
  "title": "UFC Fight Night — Hernandez vs. Rodrigues",
- "generated": "Generated 2026-08-18  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode",
+ "generated": "Generated 2026-08-18  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode (de Ridder vs. Dolidze: WC-only)",
  "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
  "cardList": [
   {
@@ -32,9 +32,9 @@
    "division": "Middleweight",
    "dataMode": null,
    "f1Short": "Ridder",
-   "f1Pct": 59,
+   "f1Pct": 66,
    "f2Short": "Dolidze",
-   "f2Pct": 41
+   "f2Pct": 34
   },
   {
    "f1": "Marquel Mederos",
@@ -629,59 +629,59 @@
    "f1": "Reinier de Ridder",
    "f2": "Roman Dolidze",
    "rounds": 3,
-   "division": "Middleweight  •  all-fights",
+   "division": "Middleweight  •  WC-only",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Ridder",
      "f2Short": "Dolidze",
      "modelProb": {
-      "f1": 59.3,
-      "f2": 40.7
+      "f1": 66.4,
+      "f2": 33.6
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 8.4,
-       "f2": 16.4
+       "f1": 9.6,
+       "f2": 16.6
       },
       {
        "name": "Submission",
-       "f1": 15.5,
-       "f2": 1.7
+       "f1": 17.2,
+       "f2": 1.8
       },
       {
        "name": "Decision",
-       "f1": 35.3,
-       "f2": 22.6
+       "f1": 39.6,
+       "f2": 15.1
       }
      ],
-     "decisionPct": 58,
+     "decisionPct": 54.7,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 21.1
+       "pct": 23.1
       },
       {
        "r": 2,
-       "pct": 13.9
+       "pct": 14.8
       },
       {
        "r": 3,
-       "pct": 7
+       "pct": 7.4
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 27.5,
-      "over": 72.5
+      "under": 29.9,
+      "over": 70.1
      },
      {
       "line": 2.5,
-      "under": 38.3,
-      "over": 61.7
+      "under": 41.3,
+      "over": 58.7
      }
     ],
     "composites": {
@@ -690,32 +690,32 @@
       {
        "name": "Power",
        "f1": -0.17,
-       "f2": -0.07,
-       "delta": -0.1
+       "f2": -0.08,
+       "delta": -0.09
       },
       {
        "name": "Chin",
        "f1": -0.2,
-       "f2": 0.62,
-       "delta": -0.82
+       "f2": 0.55,
+       "delta": -0.75
       },
       {
        "name": "Output",
        "f1": 0.15,
-       "f2": -0.46,
-       "delta": 0.61
+       "f2": -1.12,
+       "delta": 1.27
       },
       {
        "name": "Grappling",
        "f1": 0.24,
-       "f2": 0.23,
-       "delta": 0.01
+       "f2": -0.02,
+       "delta": 0.26
       },
       {
        "name": "Wrestling Def",
        "f1": -0.01,
-       "f2": -0.51,
-       "delta": 0.5
+       "f2": -0.56,
+       "delta": 0.55
       },
       {
        "name": "Cardio",
@@ -735,39 +735,39 @@
      {
       "name": "Pressure",
       "f1": 0.52,
-      "f2": 0.44
+      "f2": 0.36
      },
      {
       "name": "Counter",
       "f1": 0.63,
-      "f2": 0.59
+      "f2": 0.6
      },
      {
       "name": "Wrestler",
       "f1": 0.55,
-      "f2": 0.56
+      "f2": 0.53
      },
      {
       "name": "Finisher",
       "f1": 0.59,
-      "f2": 0.47
+      "f2": 0.54
      },
      {
       "name": "Early-Finish Score",
       "f1": 0.28,
-      "f2": 0.4
+      "f2": 0.44
      },
      {
       "name": "Early Vulnerability",
       "f1": 0.28,
-      "f2": 0.06
+      "f2": 0.07
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
       "f1": "1.000 (82.1 min)",
-      "f2": "1.000 (181.5 min)"
+      "f2": "1.000 (147.2 min)"
      },
      {
       "name": "Decision trust",
@@ -798,37 +798,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.745",
+      "value": "+1.354",
       "reads": "Toward Ridder"
      },
      {
       "name": "KO threat — Ridder",
-      "value": "-0.694",
+      "value": "-0.623",
       "reads": "Below-avg"
      },
      {
       "name": "KO threat — Dolidze",
-      "value": "-0.137",
+      "value": "-0.144",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Ridder",
-      "value": "+0.690",
+      "value": "+0.735",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Dolidze",
-      "value": "+0.202",
-      "reads": "Above-avg"
+      "value": "-0.011",
+      "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "29.2%",
-      "reads": "Mostly standing"
+      "value": "30.0%",
+      "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "70.8%",
+      "value": "70.0%",
       "reads": ""
      },
      {
@@ -838,7 +838,7 @@
      },
      {
       "name": "GBM P(Ridder wins)",
-      "value": "60.6% calibrated  (HT 67.3%)",
+      "value": "65.9% calibrated  (HT 70.8%)",
       "reads": ""
      }
     ],
@@ -847,7 +847,7 @@
       "name": "Reinier de Ridder",
       "lines": [
        "36, Southpaw, 6'4\" / 78\" reach. Record 21-4-0.",
-       "Sample: 6 division fights, 82.1 minutes total. Career WR 67%. Layoff 163 days.",
+       "Sample: 6 division fights, 82.1 minutes total. Career WR 67%. Layoff 164 days.",
        "Recent: L vs Caio Borralho (Decision R3, 2026-03-07) | L vs Brendan Allen (KO/TKO R4, 2025-10-18) | W vs Robert Whittaker (Decision R5, 2025-07-26)"
       ]
      },
@@ -855,19 +855,19 @@
       "name": "Roman Dolidze",
       "lines": [
        "38, Orthodox, 6'2\" / 76\" reach. Record 15-5-0.",
-       "Sample: 14 division fights, 181.5 minutes total. Career WR 64%. Layoff 149 days.",
+       "Sample: 11 division fights, 147.2 minutes total. Career WR 55%. Layoff 150 days.",
        "Recent: L vs Christian Leroy Duncan (Decision R3, 2026-03-21) | L vs Anthony Hernandez (Submission R4, 2025-08-09) | W vs Marvin Vettori (Decision R5, 2025-03-15)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Reinier de Ridder 59.3% / Roman Dolidze 40.7%, with both engines on the same side — GBM 60.6%, hand-tuned 67.3% — and the ratings agreeing too, 1909 across six division fights to 1885 across fourteen. Both men carry full trust. This fight was previously run WC-only, which read de Ridder 66.4%; dropping that filter costs him seven points, and the entire effect lands on Dolidze. De Ridder is unaffected either way — all six of his UFC fights are at middleweight — while for Dolidze the filter had been stripping three light-heavyweight bouts, and all three are WINS: a first-round knockout of Khadis Ibragimov and decisions over John Allan and Anthony Smith. Restoring them lifts his observed record from 6-5 to 9-5, his career win rate to 0.643, and his output composite from -1.12 to -0.46.",
-     "De Ridder's edge is still the submission, and it is the largest share of his 59.3%: a 15.5% submission against a 35.3% decision and only an 8.4% knockout. The supporting numbers are a +0.69 submission-threat index against Dolidze's +0.20, a 0.500 raw submission finish rate, a 0.750 finishing ability, and a +1.63 reach composite (198.12cm to 193.04cm) that is the fight's clearest physical gap. What he is attacking is specific: Dolidze's takedown defense is 32.0%, the lowest of any fighter on this card, against a wrestling defense composite of -0.51. Dolidze has already lost this exact way once — a round-four submission to Anthony Hernandez in August 2025, and Hernandez headlines this event.",
-     "Dolidze's case is durability and power, and the wider sample has improved it. His chin reads +0.62 to de Ridder's -0.20, his chin-damage factor 0.919 to 0.791, his getting-finished index 0.200 to 0.500 and his early-vulnerability 0.057 — the lowest on the card. His raw knockout finish rate is 0.556, which funds his 16.4% knockout against de Ridder's 8.4%, and de Ridder was himself knocked out by Brendan Allen in round four last October. Neither man is trending: both carry a 0.333 recent-three win rate and negative momentum, and both are coming off losses. Age is the thumb on the scale — Dolidze is 38.1 with an age factor of 0.847 against 35.9 and 0.903 — and neither is busy, de Ridder's 2.472 volume being the lowest on the card against Dolidze's 3.185. That is why 58.0% of sims reach the judges, with Over 2.5 at 61.7% — a 3.8-point gap that is the model's estimate of a finish inside the final 2:30, against a 4.1% historical rate."
+     "Reinier de Ridder 66.4% / Roman Dolidze 33.6%, with both engines on the same side — GBM 65.9%, hand-tuned 70.8% — while the ratings sit almost level, 1909 across six division fights to 1885 across fourteen. Both men carry full trust. THIS IS THE CARD'S ONE WC-ONLY FIGHT: Dolidze is read from his eleven middleweight bouts alone, and the three light-heavyweight fights an all-fights run would pool in are excluded. That filter is worth seven points, and the entire effect lands on Dolidze — de Ridder is unaffected either way, since all six of his UFC fights are at middleweight. All three excluded bouts are WINS: a first-round knockout of Khadis Ibragimov and decisions over John Allan and Anthony Smith. Removing them cuts his observed record from 9-5 to 6-5 and his career win rate from 0.643 to 0.545 — but they were also his highest-output nights, so his output composite falls from -0.46 to -1.12, his grappling from +0.23 to -0.02, his wrestling defense from -0.51 to -0.56 and his chin from +0.62 to +0.55. Read this as a middleweight-only picture of Dolidze; the all-fights reading is a genuinely different fight at de Ridder 59.3%.",
+     "De Ridder's edge is the submission, and it is his largest finish route: a 17.2% submission against a 39.6% decision and only a 9.6% knockout. The supporting numbers are a +0.73 submission-threat index against Dolidze's -0.01, a 0.500 raw submission finish rate, a 0.750 finishing ability, and a +1.63 reach composite (198.12cm to 193.04cm) that is the fight's clearest physical gap. What he is attacking is specific: Dolidze's takedown defense is 33.3% against a wrestling defense composite of -0.56, the weakest pairing on the card among fighters with a real sample. The divisional filter widens exactly this mismatch — Dolidze's grappling composite drops from +0.23 to -0.02 and his submission-threat index from +0.20 to -0.01 once the light-heavyweight bouts come out — which is why the hand-tuned decision edge nearly doubles, from +0.745 to +1.354. And Dolidze has already lost this exact way once: a round-four submission to Anthony Hernandez in August 2025, and Hernandez headlines this event.",
+     "Dolidze's case is durability and power, and the middleweight-only sample sharpens it in both directions. His chin still reads +0.55 to de Ridder's -0.20, his chin-damage factor 0.919 to 0.791, his getting-finished index 0.200 to 0.500 and his early-vulnerability 0.068 — the lowest on the card. His raw knockout finish rate rises to 0.667 with the light-heavyweight decisions removed, against a submission finish rate of 0.000: at middleweight he either knocks you out or goes to the cards. That funds his 16.6% knockout against de Ridder's 9.6%, and de Ridder was himself knocked out by Brendan Allen in round four last October. Neither man is trending: both carry a 0.333 recent-three win rate and negative momentum (-0.345 and -0.339), and both are coming off losses. Age is the thumb on the scale — Dolidze is 38.1 with an age factor of 0.847 against 35.9 and 0.903 — and neither is busy: these are the two lowest engines on the card, de Ridder at 2.472 volume and Dolidze at 2.771. Only 54.7% of sims reach the judges, three points fewer than the all-fights reading, because his more finish-heavy middleweight record lifts his finishing ability from 0.556 to 0.667 and drops his effective decision rate from 0.500 to 0.333. Over 2.5 sits at 58.7% — a 4.0-point gap over the decision rate that is the model's estimate of a finish inside the final 2:30, against a 4.1% historical rate."
     ],
     "synopsis": {
      "lean": "Reinier de Ridder",
-     "body": "His single largest finish route is the submission at 15.5%, against a 35.3% decision; the target is Dolidze's 32.0% takedown defense — the lowest on the card — and Dolidze has already been submitted in round four by Anthony Hernandez, who headlines this event. De Ridder's +1.63 reach composite is the clearest physical gap. Moderate confidence, and note the setting change: this was previously run WC-only and read 66.4%. Dropping the filter costs seven points and lands entirely on Dolidze, restoring three light-heavyweight WINS to his sample and lifting his output composite from -1.12 to -0.46. Both men are 1-2 in their last three with negative momentum, de Ridder's own takedown defense is only 40.0% and he was knocked out by Brendan Allen in October, and Dolidze is the more durable fighter by every measure — +0.62 chin, 0.919 chin-damage factor, a 0.200 getting-finished index, the card's lowest early-vulnerability (0.057) and a 0.556 knockout finish rate behind his 16.4% KO. Age is the thumb on the scale: 38.1 against 35.9."
+     "body": "His single largest finish route is the submission at 17.2%, against a 39.6% decision; the target is Dolidze's 33.3% takedown defense behind a -0.56 wrestling defense, and Dolidze has already been submitted in round four by Anthony Hernandez, who headlines this event. De Ridder's +1.63 reach composite is the clearest physical gap. Moderate confidence, and note the basis: this is the card's ONE WC-only fight, reading Dolidze from his eleven middleweight bouts alone. The three light-heavyweight fights it excludes are all WINS, so the filter cuts his observed record from 9-5 to 6-5 — but it also drops his output composite from -0.46 to -1.12 and his grappling from +0.23 to -0.02, and it is worth seven points: the all-fights reading of this same fight is de Ridder 59.3%. Against the lean: both men are 1-2 in their last three with negative momentum, de Ridder's own takedown defense is only 40.0% and he was knocked out by Brendan Allen in October, and Dolidze is the more durable fighter by every measure — +0.55 chin, 0.919 chin-damage factor, a 0.200 getting-finished index, the card's lowest early-vulnerability (0.068) and a 0.667 knockout finish rate behind his 16.6% KO. Age is the thumb on the scale: 38.1 against 35.9."
     }
    }
   },
