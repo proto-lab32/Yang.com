@@ -9,8 +9,8 @@
   try { if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html'); } catch (e) {}
 
   // TEMP hide: edge-sheet data.csv is still the previous (UFC 330: Makhachev vs. Machado Garry) card —
-  // an event that has already taken place — while the UFC Fight Night: Hernandez vs. Rodrigues
-  // market odds are pending. Send authed visitors to the fresh Synopses page.
+  // an event that has already taken place — while the UFC Shanghai (Nurmagomedov vs. Song,
+  // 2026-08-29) market odds are pending. Send authed visitors to the fresh Synopses page.
   // REMOVE this block on the full edge-sheet deploy (data.csv refreshed with the new card).
   try { if (localStorage.getItem('yangmma_auth') === '1') location.replace('analyses.html'); } catch (e) {}
 </script>
