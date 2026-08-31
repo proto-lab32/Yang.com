@@ -1,173 +1,177 @@
 {
- "title": "UFC Shanghai — Nurmagomedov vs. Song",
- "generated": "Generated 2026-08-24  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode (de Ridder vs. Dolidze: WC-only)",
+ "title": "UFC Paris — Ziam vs. Sola",
+ "generated": "Generated 2026-08-31  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  10 fights",
  "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
  "cardList": [
   {
-   "f1": "Umar Nurmagomedov",
-   "f2": "Song Yadong",
-   "rounds": 5,
-   "division": "Bantamweight",
-   "dataMode": null,
-   "f1Short": "Nurmagomedov",
-   "f1Pct": 80,
-   "f2Short": "Yadong",
-   "f2Pct": 20
-  },
-  {
-   "f1": "Yan Xiaonan",
-   "f2": "Denise Gomes",
+   "f1": "Fares Ziam",
+   "f2": "Axel Sola",
    "rounds": 3,
-   "division": "Women's Strawweight",
+   "division": "Lightweight",
    "dataMode": null,
-   "f1Short": "Xiaonan",
-   "f1Pct": 19,
-   "f2Short": "Gomes",
-   "f2Pct": 81
+   "f1Short": "Ziam",
+   "f1Pct": 67,
+   "f2Short": "Sola",
+   "f2Pct": 33
   },
   {
-   "f1": "Aoriqileng",
-   "f2": "Kai Asakura",
+   "f1": "Michael Page",
+   "f2": "Nursulton Ruziboev",
    "rounds": 3,
-   "division": "Bantamweight",
+   "division": "Middleweight",
    "dataMode": null,
-   "f1Short": "Aoriqileng",
-   "f1Pct": 28,
-   "f2Short": "Asakura",
-   "f2Pct": 72
+   "f1Short": "Page",
+   "f1Pct": 70,
+   "f2Short": "Ruziboev",
+   "f2Pct": 30
   },
   {
-   "f1": "Alex Perez",
-   "f2": "Sumudaerji",
-   "rounds": 3,
-   "division": "Flyweight",
-   "dataMode": null,
-   "f1Short": "Perez",
-   "f1Pct": 47,
-   "f2Short": "Sumudaerji",
-   "f2Pct": 53
-  },
-  {
-   "f1": "Andre Lima",
-   "f2": "Namsrai Batbayar",
-   "rounds": 3,
-   "division": "Flyweight",
-   "dataMode": null,
-   "f1Short": "Lima",
-   "f1Pct": 65,
-   "f2Short": "Batbayar",
-   "f2Pct": 35
-  },
-  {
-   "f1": "Rei Tsuruya",
-   "f2": "Kevin Borjas",
-   "rounds": 3,
-   "division": "Flyweight",
-   "dataMode": null,
-   "f1Short": "Tsuruya",
-   "f1Pct": 79,
-   "f2Short": "Borjas",
-   "f2Pct": 21
-  },
-  {
-   "f1": "Jack Jenkins",
-   "f2": "Sean Woodson",
+   "f1": "Losene Keita",
+   "f2": "Muhammad Naimov",
    "rounds": 3,
    "division": "Featherweight",
    "dataMode": null,
-   "f1Short": "Jenkins",
-   "f1Pct": 39,
-   "f2Short": "Woodson",
-   "f2Pct": 61
+   "f1Short": "Keita",
+   "f1Pct": 67,
+   "f2Short": "Naimov",
+   "f2Pct": 33
   },
   {
-   "f1": "Xiong Jingnan",
-   "f2": "Julia Polastri",
+   "f1": "Felipe Lima",
+   "f2": "Morgan Charriere",
    "rounds": 3,
-   "division": "Women's Strawweight",
+   "division": "Featherweight",
    "dataMode": null,
-   "f1Short": "Jingnan",
-   "f1Pct": 15,
-   "f2Short": "Polastri",
-   "f2Pct": 85
+   "f1Short": "Lima",
+   "f1Pct": 59,
+   "f2Short": "Charriere",
+   "f2Pct": 41
+  },
+  {
+   "f1": "Daniil Donchenko",
+   "f2": "Punahele Soriano",
+   "rounds": 3,
+   "division": "Welterweight",
+   "dataMode": null,
+   "f1Short": "Donchenko",
+   "f1Pct": 62,
+   "f2Short": "Soriano",
+   "f2Pct": 38
+  },
+  {
+   "f1": "Kurtis Campbell",
+   "f2": "Trevor Peek",
+   "rounds": 3,
+   "division": "Featherweight",
+   "dataMode": null,
+   "f1Short": "Campbell",
+   "f1Pct": 76,
+   "f2Short": "Peek",
+   "f2Pct": 24
+  },
+  {
+   "f1": "Luis Felipe Dias",
+   "f2": "Matthieu Duclos",
+   "rounds": 3,
+   "division": "Middleweight",
+   "dataMode": null,
+   "f1Short": "Dias",
+   "f1Pct": 69,
+   "f2Short": "Duclos",
+   "f2Pct": 31
+  },
+  {
+   "f1": "Klaudia Sygula",
+   "f2": "Nora Cornolle",
+   "rounds": 3,
+   "division": "Women's Bantamweight",
+   "dataMode": null,
+   "f1Short": "Sygula",
+   "f1Pct": 76,
+   "f2Short": "Cornolle",
+   "f2Pct": 24
+  },
+  {
+   "f1": "Mario Pinto",
+   "f2": "Ryan Spann",
+   "rounds": 3,
+   "division": "Heavyweight",
+   "dataMode": null,
+   "f1Short": "Pinto",
+   "f1Pct": 84,
+   "f2Short": "Spann",
+   "f2Pct": 16
+  },
+  {
+   "f1": "Oumar Sy",
+   "f2": "Modestas Bukauskas",
+   "rounds": 3,
+   "division": "Light Heavyweight",
+   "dataMode": null,
+   "f1Short": "Sy",
+   "f1Pct": 78,
+   "f2Short": "Bukauskas",
+   "f2Pct": 22
   }
  ],
  "fights": [
   {
-   "f1": "Umar Nurmagomedov",
-   "f2": "Song Yadong",
-   "rounds": 5,
-   "division": "Bantamweight  •  all-fights",
+   "f1": "Fares Ziam",
+   "f2": "Axel Sola",
+   "rounds": 3,
+   "division": "Lightweight  •  all-fights",
    "dataMode": null,
    "sections": {
     "modelProjections": {
-     "f1Short": "Nurmagomedov",
-     "f2Short": "Yadong",
+     "f1Short": "Ziam",
+     "f2Short": "Sola",
      "modelProb": {
-      "f1": 79.7,
-      "f2": 20.3
+      "f1": 67,
+      "f2": 33
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 22.4,
-       "f2": 8.8
+       "f1": 19.1,
+       "f2": 6.5
       },
       {
        "name": "Submission",
-       "f1": 12.2,
-       "f2": 4.2
+       "f1": 2.4,
+       "f2": 12.9
       },
       {
        "name": "Decision",
-       "f1": 45.1,
-       "f2": 7.2
+       "f1": 45.5,
+       "f2": 13.5
       }
      ],
-     "decisionPct": 52.3,
+     "decisionPct": 59,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 10.5
+       "pct": 19.8
       },
       {
        "r": 2,
-       "pct": 11.1
+       "pct": 13.9
       },
       {
        "r": 3,
-       "pct": 10.4
-      },
-      {
-       "r": 4,
-       "pct": 8.4
-      },
-      {
-       "r": 5,
-       "pct": 7.3
+       "pct": 7.2
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 15.6,
-      "over": 84.4
+      "under": 26.2,
+      "over": 73.8
      },
      {
       "line": 2.5,
-      "under": 26.5,
-      "over": 73.5
-     },
-     {
-      "line": 3.5,
-      "under": 35.9,
-      "over": 64.1
-     },
-     {
-      "line": 4.5,
-      "under": 43.9,
-      "over": 56.1
+      "under": 37.2,
+      "over": 62.8
      }
     ],
     "composites": {
@@ -175,33 +179,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.04,
-       "f2": 0.4,
-       "delta": -0.44
+       "f1": 0.02,
+       "f2": 0.7,
+       "delta": -0.68
       },
       {
        "name": "Chin",
-       "f1": 0.82,
-       "f2": 0.4,
-       "delta": 0.42
+       "f1": 1.2,
+       "f2": 0.26,
+       "delta": 0.94
       },
       {
        "name": "Output",
-       "f1": 1.97,
-       "f2": 0.59,
-       "delta": 1.38
+       "f1": 1.2,
+       "f2": 0.05,
+       "delta": 1.16
       },
       {
        "name": "Grappling",
-       "f1": 2.23,
-       "f2": -0.1,
-       "delta": 2.33
+       "f1": -0.06,
+       "f2": 0.17,
+       "delta": -0.23
       },
       {
        "name": "Wrestling Def",
-       "f1": 1.05,
-       "f2": 0.81,
-       "delta": 0.23
+       "f1": 0.28,
+       "f2": 0.34,
+       "delta": -0.06
       },
       {
        "name": "Cardio",
@@ -211,455 +215,209 @@
       },
       {
        "name": "Reach",
-       "f1": -0.01,
-       "f2": -1.04,
-       "delta": 1.03
+       "f1": 1.83,
+       "f2": 1.25,
+       "delta": 0.58
       }
      ]
     },
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.74,
-      "f2": 0.59
+      "f1": 0.66,
+      "f2": 0.52
      },
      {
       "name": "Counter",
-      "f1": 0.68,
-      "f2": 0.71
+      "f1": 0.66,
+      "f2": 0.66
      },
      {
       "name": "Wrestler",
-      "f1": 0.81,
-      "f2": 0.5
-     },
-     {
-      "name": "Finisher",
-      "f1": 0.45,
-      "f2": 0.6
-     },
-     {
-      "name": "Early-Finish Score",
-      "f1": 0.25,
-      "f2": 0.37
-     },
-     {
-      "name": "Early Vulnerability",
-      "f1": 0.03,
-      "f2": 0.13
-     }
-    ],
-    "modifiers": [
-     {
-      "name": "Trust factor (minutes-based)",
-      "f1": "1.000 (126.6 min)",
-      "f2": "1.000 (230.9 min)"
-     },
-     {
-      "name": "Decision trust",
-      "f1": "1.000",
-      "f2": "1.000"
-     },
-     {
-      "name": "Layoff factor",
-      "f1": "1.000",
-      "f2": "1.000"
-     },
-     {
-      "name": "Age factor",
-      "f1": "1.000",
-      "f2": "1.000"
-     },
-     {
-      "name": "Chin damage factor",
-      "f1": "0.994",
-      "f2": "0.900"
-     },
-     {
-      "name": "SoS multiplier",
-      "f1": "1.236",
-      "f2": "1.205"
-     }
-    ],
-    "matchupEdges": [
-     {
-      "name": "Decision edge",
-      "value": "+2.479",
-      "reads": "Toward Nurmagomedov"
-     },
-     {
-      "name": "KO threat — Nurmagomedov",
-      "value": "-0.229",
-      "reads": "Below-avg"
-     },
-     {
-      "name": "KO threat — Yadong",
-      "value": "-0.545",
-      "reads": "Below-avg"
-     },
-     {
-      "name": "Sub threat — Nurmagomedov",
-      "value": "+1.713",
-      "reads": "Above-avg"
-     },
-     {
-      "name": "Sub threat — Yadong",
-      "value": "-0.807",
-      "reads": "Below-avg"
-     },
-     {
-      "name": "Ground % of fight",
-      "value": "39.3%",
-      "reads": "Ground-heavy"
-     },
-     {
-      "name": "Standing % of fight",
-      "value": "60.7%",
-      "reads": ""
-     },
-     {
-      "name": "Elo (WC-specific)",
-      "value": "Nurmagomedov 2157 (9 fts) / Yadong 2062 (17 fts)",
-      "reads": "Δ +96"
-     },
-     {
-      "name": "GBM P(Nurmagomedov wins)",
-      "value": "81.1% calibrated  (HT 82.9%)",
-      "reads": ""
-     }
-    ],
-    "profiles": [
-     {
-      "name": "Umar Nurmagomedov",
-      "lines": [
-       "30, Orthodox, 5'8\" / 69\" reach. Record 20-1-0.",
-       "Sample: 9 division fights, 126.6 minutes total. Career WR 89%. Layoff 212 days.",
-       "Recent: W vs Deiveson Figueiredo (Decision R3, 2026-01-24) | W vs Mario Bautista (Decision R3, 2025-10-25) | L vs Merab Dvalishvili (Decision R5, 2025-01-18)"
-      ]
-     },
-     {
-      "name": "Song Yadong",
-      "lines": [
-       "28, Orthodox, 5'8\" / 67\" reach. Record 23-9-1.",
-       "Sample: 17 division fights, 230.9 minutes total. Career WR 71%. Layoff 86 days.",
-       "Recent: W vs Deiveson Figueiredo (Submission R2, 2026-05-30) | L vs Sean O'Malley (Decision R3, 2026-01-24) | W vs Henry Cejudo (Decision R3, 2025-02-22)"
-      ]
-     }
-    ],
-    "matchupAnalysis": [
-     "The model makes Nurmagomedov a 79.7% favourite, with the GBM at 81.1% and the hand-tuned path at 82.9% — unusually tight agreement for a five-round main event. The case rests almost entirely on two composites: grappling +2.23 and output +1.97, the two largest single-fighter readings anywhere on this card. Song is not weak on either axis so much as ordinary — grappling −0.10, output +0.59 — and the gap between those columns is what the simulation keeps converting into control time. Nurmagomedov's underlying rates support it: a +2.00 strike differential, 79.4% takedown defence and a +0.359 control differential against Song's +0.50 and +0.044.",
-     "What the numbers do not describe is a finisher. Nurmagomedov's power sits at −0.04, dead average for bantamweight, and his UFC finish rate is 37.5% with only 12.5% by knockout. Song is the more dangerous man in any single exchange — power +0.40, a 41.7% KO rate across seventeen UFC fights, and the sim still credits him 8.8% by knockout despite losing overall. The decision edge of +2.479 is the second-largest on the card and the fight's real shape: Nurmagomedov wins 45.1% of the time on the scorecards, more than double his 22.4% by KO and 12.2% by submission combined.",
-     "The five-round distance is where this becomes interesting for totals. The fight goes to a decision 52.3% of the time and clears Over 4.5 rounds at 56.1%, which is not a grinder's number — Nurmagomedov has never been finished in nine UFC fights, while Song has been finished in 20% of his. Nurmagomedov also carries a 212-day layoff against Song's 86, the largest gap in the top half of the card, and his own last defeat was a five-round decision to Dvalishvili. Song arrives on a submission win over Figueiredo; his only recent loss was a decision to O'Malley."
-    ],
-    "synopsis": {
-     "lean": "Umar Nurmagomedov",
-     "body": "Nurmagomedov 79.7% — the clearest read on the card, and a positional one rather than a violent one. His grappling (+2.23) and output (+1.97) are the two biggest composite readings of the night, but his power is exactly average and the model routes 45.1% of his wins through the judges. Song remains live as the only real knockout threat in the fight. Over 4.5 rounds at 56.1% reflects a favourite who controls rather than finishes, against an opponent who has never been stopped by anyone of this style."
-    }
-   }
-  },
-  {
-   "f1": "Yan Xiaonan",
-   "f2": "Denise Gomes",
-   "rounds": 3,
-   "division": "Women's Strawweight  •  all-fights",
-   "dataMode": null,
-   "sections": {
-    "modelProjections": {
-     "f1Short": "Xiaonan",
-     "f2Short": "Gomes",
-     "modelProb": {
-      "f1": 19.4,
-      "f2": 80.6
-     },
-     "method": [
-      {
-       "name": "KO/TKO",
-       "f1": 3.4,
-       "f2": 17.3
-      },
-      {
-       "name": "Submission",
-       "f1": 1.4,
-       "f2": 13.6
-      },
-      {
-       "name": "Decision",
-       "f1": 14.7,
-       "f2": 49.6
-      }
-     ],
-     "decisionPct": 64.3,
-     "roundsFinish": [
-      {
-       "r": 1,
-       "pct": 11.2
-      },
-      {
-       "r": 2,
-       "pct": 16.2
-      },
-      {
-       "r": 3,
-       "pct": 8.2
-      }
-     ]
-    },
-    "overUnder": [
-     {
-      "line": 1.5,
-      "under": 18.7,
-      "over": 81.3
-     },
-     {
-      "line": 2.5,
-      "under": 31.3,
-      "over": 68.7
-     }
-    ],
-    "composites": {
-     "note": "Positive = above weight-class avg. ±0.5 = clear edge, ±1.0 = elite/poor.",
-     "rows": [
-      {
-       "name": "Power",
-       "f1": 0.19,
-       "f2": 1.36,
-       "delta": -1.17
-      },
-      {
-       "name": "Chin",
-       "f1": -0.19,
-       "f2": 0.66,
-       "delta": -0.85
-      },
-      {
-       "name": "Output",
-       "f1": 1.15,
-       "f2": 0.94,
-       "delta": 0.21
-      },
-      {
-       "name": "Grappling",
-       "f1": -0.69,
-       "f2": 0.19,
-       "delta": -0.88
-      },
-      {
-       "name": "Wrestling Def",
-       "f1": 0.01,
-       "f2": 0.01,
-       "delta": 0
-      },
-      {
-       "name": "Cardio",
-       "f1": 0.03,
-       "f2": 0.2,
-       "delta": -0.17
-      },
-      {
-       "name": "Reach",
-       "f1": -0.42,
-       "f2": -0.38,
-       "delta": -0.03
-      }
-     ]
-    },
-    "styleProfiles": [
-     {
-      "name": "Pressure",
-      "f1": 0.64,
-      "f2": 0.63
-     },
-     {
-      "name": "Counter",
-      "f1": 0.64,
-      "f2": 0.78
-     },
-     {
-      "name": "Wrestler",
-      "f1": 0.38,
-      "f2": 0.53
+      "f1": 0.48,
+      "f2": 0.54
      },
      {
       "name": "Finisher",
       "f1": 0.37,
-      "f2": 0.64
+      "f2": 0.63
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.21,
-      "f2": 0.54
+      "f1": 0.23,
+      "f2": 0.58
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.23,
-      "f2": 0.05
+      "f1": 0.14,
+      "f2": 0.11
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "1.000 (195.3 min)",
-      "f2": "1.000 (103.5 min)"
+      "f1": "1.000 (145.2 min)",
+      "f2": "0.454 (31.8 min)"
      },
      {
       "name": "Decision trust",
       "f1": "1.000",
-      "f2": "1.000"
+      "f2": "0.167"
      },
      {
       "name": "Layoff factor",
-      "f1": "0.963",
+      "f1": "1.000",
       "f2": "1.000"
      },
      {
       "name": "Age factor",
-      "f1": "0.870",
-      "f2": "0.970"
+      "f1": "1.000",
+      "f2": "1.000"
      },
      {
       "name": "Chin damage factor",
-      "f1": "0.828",
+      "f1": "1.000",
       "f2": "1.000"
      },
      {
       "name": "SoS multiplier",
-      "f1": "1.060",
-      "f2": "0.941"
+      "f1": "1.149",
+      "f2": "1.111"
      }
     ],
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.569",
-      "reads": "Toward Gomes"
+      "value": "+1.070",
+      "reads": "Toward Ziam"
      },
      {
-      "name": "KO threat — Xiaonan",
-      "value": "-0.444",
+      "name": "KO threat — Ziam",
+      "value": "-0.269",
       "reads": "Below-avg"
      },
      {
-      "name": "KO threat — Gomes",
-      "value": "+1.592",
-      "reads": "Above-avg"
-     },
-     {
-      "name": "Sub threat — Xiaonan",
-      "value": "-0.584",
+      "name": "KO threat — Sola",
+      "value": "-0.712",
       "reads": "Below-avg"
      },
      {
-      "name": "Sub threat — Gomes",
-      "value": "+0.165",
+      "name": "Sub threat — Ziam",
+      "value": "-0.265",
+      "reads": "Below-avg"
+     },
+     {
+      "name": "Sub threat — Sola",
+      "value": "-0.027",
       "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "20.7%",
+      "value": "16.4%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "79.3%",
+      "value": "83.6%",
       "reads": ""
      },
      {
       "name": "Elo (WC-specific)",
-      "value": "Xiaonan 1884 (13 fts) / Gomes 1836 (9 fts)",
-      "reads": "Δ +48"
+      "value": "Ziam 1857 (11 fts) / Sola 1655 (3 fts)",
+      "reads": "Δ +202"
      },
      {
-      "name": "GBM P(Xiaonan wins)",
-      "value": "21.2% calibrated  (HT 20.4%)",
+      "name": "GBM P(Ziam wins)",
+      "value": "66.3% calibrated  (HT 68.7%)",
       "reads": ""
      }
     ],
     "profiles": [
      {
-      "name": "Yan Xiaonan",
+      "name": "Fares Ziam",
       "lines": [
-       "37, Orthodox, 5'5\" / 63\" reach. Record 19-5-0.",
-       "Sample: 13 division fights, 195.3 minutes total. Career WR 69%. Layoff 499 days.",
-       "Recent: L vs Virna Jandiroba (Decision R3, 2025-04-12) | W vs Tabatha Ricci (Decision R3, 2024-11-23) | L vs Zhang Weili (Decision R5, 2024-04-13)"
+       "29, Orthodox, 6'1\" / 75\" reach. Record 18-5-0.",
+       "Sample: 11 division fights, 145.2 minutes total. Career WR 73%. Layoff 86 days.",
+       "Recent: L vs Tom Nolan (Decision R3, 2026-06-06) | W vs Nazim Sadykhov (KO/TKO R2, 2025-12-06) | W vs Mike Davis (Decision R3, 2025-02-01)"
       ]
      },
      {
-      "name": "Denise Gomes",
+      "name": "Axel Sola",
       "lines": [
-       "26, Orthodox, 5'2\" / 63\" reach. Record 12-3-0.",
-       "Sample: 9 division fights, 103.5 minutes total. Career WR 78%. Layoff 289 days.",
-       "Recent: W vs Tecia Pennington (Decision R3, 2025-11-08) | W vs Elise Reed (KO/TKO R2, 2025-05-17) | W vs Karolina Kowalkiewicz (Decision R3, 2024-11-09)"
+       "29, Southpaw, 6'2\" / 74\" reach. Record 12-1-1.",
+       "Sample: 3 division fights, 31.8 minutes total. Career WR 67%. Layoff 37 days.",
+       "Recent: W vs Ismael Bonfim (Submission R1, 2026-07-25) | L vs Mason Jones (Decision R3, 2026-03-21) | W vs Rhys McKee (KO/TKO R3, 2025-09-06)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "This is the fight where the model most openly disagrees with itself. Elo still rates Yan Xiaonan the stronger fighter — 1884 over thirteen divisional fights against Gomes's 1836 over nine — and yet the simulation gives Yan just 19.4%, with the GBM at 21.2% and the hand-tuned path at 20.4%. The composites explain why the résumé is being overruled. Gomes reads power +1.36 against Yan's +0.19, and chin +0.66 against Yan's −0.19. On the two axes that decide whether a strawweight fight ends early, Gomes is better on both.",
-     "Yan's own profile is not poor — output +1.15 and a +1.46 strike differential are genuinely good numbers, and she has been finished in only a quarter of her UFC fights. But she is 37.2 years old, carries a 499-day layoff (the longest on the card), and her grappling reads −0.69 with a −0.213 control differential, meaning she has been losing the positional exchanges even in fights she won. Her last three appearances are a decision loss to Jandiroba, a decision win over Ricci, and a five-round decision loss to Zhang Weili. Nothing in that stretch was finished either way; her 11.1% UFC finish rate is the lowest of any fighter on this card.",
-     "Gomes, at 26.7, has never been finished in nine UFC fights and finishes 42.9% of hers, all by knockout. Her KO threat of 1.592 against Yan's −0.444 is the cleanest one-sided threat reading of the night outside the Asakura fight. The sim still sends 64.3% of outcomes to the judges — Gomes wins on the cards 49.6% of the time versus 17.3% by knockout — because Yan's durability and volume drag the fight long even when she is losing it. Over 2.5 at 68.7% is the model saying it expects a full fight that Gomes wins."
+     "The model makes Ziam a 67.0% favourite, and the two engines agree closely on it (calibrated GBM 66.3%, hand-tuned 68.7%) — an unremarkable, well-behaved projection with no internal argument to resolve. The case for Ziam is built on three things the composites like a lot: chin +1.20, output +1.20, and a reach of +1.83 (190.5 cm, the longest in the fight). He also carries the card's cleanest defensive striking line — 0.65 head strikes absorbed per minute against a +1.10 strike differential. Elo has him at 1857 over 11 divisional fights against Sola's 1655 over 3, a +202 gap, and unlike several fights on this card the ratings and the composites are pointing the same direction.",
+     "Sola is the more dangerous fighter and the less known one. He is 3 UFC fights deep (31.8 minutes), trust 0.45, so his profile is shrunk roughly halfway to the Lightweight mean and should not be read as a settled measurement. What survives the shrinkage is power +0.70 and a finisher score of +0.63 — he has finished all three of his professional wins that the model can see, split evenly between KO and submission, and he arrives off a first-round submission of Ismael Bonfim five weeks ago. The concerning number is defensive: 3.24 head strikes absorbed per minute against a slightly negative strike differential. Against Ziam's volume that is the mechanism by which this becomes a one-sided decision.",
+     "The method split is where the fight gets interesting. Ziam's 67% is mostly a decision (45.5% of all outcomes) with a 19.1% KO attached; Sola's much smaller share is weighted the other way — 12.9% submission against only 6.5% KO. That is the model saying Sola's realistic path is the grappling exchange, not the firefight, which is consistent with the sub threat edges (Sola −0.03 vs Ziam −0.27) and with how he beat Bonfim. Total decision probability is 59.0%, and the O/U ladder reads Over 1.5 at 73.8% and Over 2.5 at 62.8% — a fight the model expects to go long without expecting it to be dull."
     ],
     "synopsis": {
-     "lean": "Denise Gomes",
-     "body": "Gomes 80.6% — and the interesting part is that Elo disagrees, still rating Yan the better fighter at 1884 to 1836. The composites overrule the record: Gomes is ahead on both power (+1.36 vs +0.19) and chin (+0.66 vs −0.19), the two things that decide a strawweight fight early. Yan is 37, coming off a 499-day layoff, and owns the lowest finish rate on the card at 11.1%. Expect a decision — 64.3% — but the model thinks the younger, harder-hitting woman wins it."
+     "lean": "Fares Ziam",
+     "body": "Ziam is the more proven and much longer fighter, and the model's 67.0% is a consensus number rather than a contested one — both engines land within 2.4pp. He wins this by length and volume over three rounds, which is why 59.0% of all outcomes are a decision. Sola is genuinely live but on a thin sample (trust 0.45), and his upset path is specifically a submission (12.9%), not a knockout (6.5%). Lean Ziam, expect distance."
     }
    }
   },
   {
-   "f1": "Aoriqileng",
-   "f2": "Kai Asakura",
+   "f1": "Michael Page",
+   "f2": "Nursulton Ruziboev",
    "rounds": 3,
-   "division": "Bantamweight  •  all-fights",
+   "division": "Middleweight  •  all-fights",
    "dataMode": null,
    "sections": {
     "modelProjections": {
-     "f1Short": "Aoriqileng",
-     "f2Short": "Asakura",
+     "f1Short": "Page",
+     "f2Short": "Ruziboev",
      "modelProb": {
-      "f1": 27.7,
-      "f2": 72.3
+      "f1": 69.7,
+      "f2": 30.3
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 8.5,
-       "f2": 40.2
+       "f1": 16.6,
+       "f2": 10.5
       },
       {
        "name": "Submission",
-       "f1": 9.5,
-       "f2": 4.9
+       "f1": 3.3,
+       "f2": 6.7
       },
       {
        "name": "Decision",
-       "f1": 9.7,
-       "f2": 27.1
+       "f1": 49.8,
+       "f2": 13.1
       }
      ],
-     "decisionPct": 36.8,
+     "decisionPct": 62.9,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 36.9
+       "pct": 16.7
       },
       {
        "r": 2,
-       "pct": 18.5
+       "pct": 13.1
       },
       {
        "r": 3,
-       "pct": 7.7
+       "pct": 7.3
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 45.5,
-      "over": 54.5
+      "under": 22.8,
+      "over": 77.2
      },
      {
       "line": 2.5,
-      "under": 59.2,
-      "over": 40.8
+      "under": 33.3,
+      "over": 66.7
      }
     ],
     "composites": {
@@ -667,90 +425,90 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.6,
-       "f2": 0.33,
-       "delta": 0.27
+       "f1": -0.52,
+       "f2": 0.61,
+       "delta": -1.13
       },
       {
        "name": "Chin",
-       "f1": -1.45,
-       "f2": 0.15,
-       "delta": -1.6
+       "f1": 1.08,
+       "f2": 0.39,
+       "delta": 0.69
       },
       {
        "name": "Output",
-       "f1": -0.84,
-       "f2": -0.13,
-       "delta": -0.71
+       "f1": 0.61,
+       "f2": -0.15,
+       "delta": 0.76
       },
       {
        "name": "Grappling",
-       "f1": -0.49,
-       "f2": -0.29,
-       "delta": -0.2
+       "f1": -1.4,
+       "f2": -0.16,
+       "delta": -1.24
       },
       {
        "name": "Wrestling Def",
-       "f1": -0.26,
-       "f2": -0.39,
-       "delta": 0.14
+       "f1": 0.42,
+       "f2": -0.53,
+       "delta": 0.95
       },
       {
        "name": "Cardio",
-       "f1": 0.2,
+       "f1": -0.06,
        "f2": 0.22,
-       "delta": -0.02
+       "delta": -0.28
       },
       {
        "name": "Reach",
-       "f1": -0.01,
-       "f2": -0.01,
-       "delta": 0
+       "f1": 2.19,
+       "f2": 0.49,
+       "delta": 1.7
       }
      ]
     },
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.41,
-      "f2": 0.5
+      "f1": 0.57,
+      "f2": 0.49
      },
      {
       "name": "Counter",
-      "f1": 0.67,
-      "f2": 0.57
+      "f1": 0.61,
+      "f2": 0.66
      },
      {
       "name": "Wrestler",
-      "f1": 0.4,
-      "f2": 0.45
+      "f1": 0.29,
+      "f2": 0.47
      },
      {
       "name": "Finisher",
-      "f1": 0.55,
-      "f2": 0.59
+      "f1": 0.18,
+      "f2": 0.58
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.56,
-      "f2": 0.84
+      "f1": 0.07,
+      "f2": 0.67
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.52,
-      "f2": 0.35
+      "f1": 0,
+      "f2": 0.09
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "1.000 (94.9 min)",
-      "f2": "0.265 (18.6 min)"
+      "f1": "1.000 (75.0 min)",
+      "f2": "0.630 (44.1 min)"
      },
      {
       "name": "Decision trust",
       "f1": "0.833",
-      "f2": "0.000"
+      "f2": "0.333"
      },
      {
       "name": "Layoff factor",
@@ -759,153 +517,153 @@
      },
      {
       "name": "Age factor",
-      "f1": "0.970",
+      "f1": "0.815",
       "f2": "0.980"
      },
      {
       "name": "Chin damage factor",
-      "f1": "0.718",
+      "f1": "0.906",
       "f2": "0.972"
      },
      {
       "name": "SoS multiplier",
-      "f1": "1.041",
-      "f2": "1.031"
+      "f1": "1.294",
+      "f2": "1.233"
      }
     ],
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.863",
-      "reads": "Toward Asakura"
+      "value": "+1.160",
+      "reads": "Toward Page"
      },
      {
-      "name": "KO threat — Aoriqileng",
-      "value": "+0.451",
-      "reads": "Above-avg"
+      "name": "KO threat — Page",
+      "value": "-0.745",
+      "reads": "Below-avg"
      },
      {
-      "name": "KO threat — Asakura",
-      "value": "+1.780",
-      "reads": "Above-avg"
+      "name": "KO threat — Ruziboev",
+      "value": "-0.856",
+      "reads": "Below-avg"
      },
      {
-      "name": "Sub threat — Aoriqileng",
-      "value": "-0.194",
-      "reads": "Near avg"
+      "name": "Sub threat — Page",
+      "value": "-0.840",
+      "reads": "Below-avg"
      },
      {
-      "name": "Sub threat — Asakura",
-      "value": "-0.110",
-      "reads": "Near avg"
+      "name": "Sub threat — Ruziboev",
+      "value": "-0.448",
+      "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "17.5%",
+      "value": "9.3%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "82.5%",
+      "value": "90.7%",
       "reads": ""
      },
      {
       "name": "Elo (WC-specific)",
-      "value": "Aoriqileng 1482 (9 fts) / Asakura 1577 (3 fts)",
-      "reads": "Δ -96"
+      "value": "Page 2006 (5 fts) / Ruziboev 1834 (6 fts)",
+      "reads": "Δ +171"
      },
      {
-      "name": "GBM P(Aoriqileng wins)",
-      "value": "27.4% calibrated  (HT 21.6%)",
+      "name": "GBM P(Page wins)",
+      "value": "69.7% calibrated  (HT 70.4%)",
       "reads": ""
      }
     ],
     "profiles": [
      {
-      "name": "Aoriqileng",
+      "name": "Michael Page",
       "lines": [
-       "33, Orthodox, 5'7\" / 69\" reach. Record 26-13-0.",
-       "Sample: 10 division fights, 94.9 minutes total. Career WR 40%. Layoff 86 days.",
-       "Recent: L vs Cody Haddon (KO/TKO R2, 2026-05-30) | W vs Cody Gibson (KO/TKO R1, 2025-10-18) | L vs Raul Rosas Jr. (Decision R3, 2024-09-14)"
+       "39, Switch, 6'3\" / 79\" reach. Record 25-3-0.",
+       "Sample: 5 division fights, 75.0 minutes total. Career WR 80%. Layoff 163 days.",
+       "Recent: W vs Sam Patterson (Decision R3, 2026-03-21) | W vs Jared Cannonier (Decision R3, 2025-08-16) | W vs Shara Magomedov (Decision R3, 2025-02-01)"
       ]
      },
      {
-      "name": "Kai Asakura",
+      "name": "Nursulton Ruziboev",
       "lines": [
-       "32, Orthodox, 5'8\" / 69\" reach. Record 22-6-0.",
-       "Sample: 3 division fights, 18.6 minutes total. Career WR 33%. Layoff 86 days.",
-       "Recent: W vs Cameron Smotherman (KO/TKO R1, 2026-05-30) | L vs Tim Elliott (Submission R2, 2025-08-16) | L vs Alexandre Pantoja (Submission R2, 2024-12-07)"
+       "32, Orthodox, 6'5\" / 76\" reach. Record 37-9-2.",
+       "Sample: 6 division fights, 44.1 minutes total. Career WR 83%. Layoff 65 days.",
+       "Recent: W vs Andrey Pulyaev (Submission R1, 2026-06-27) | W vs Dustin Stoltzfus (Decision R3, 2025-05-17) | W vs Eric McConico (KO/TKO R2, 2025-02-22)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "This is the most violent fight on the card by some distance. The simulation ends it inside the distance 63.1% of the time, with 48.9% by knockout — every other bout here goes to a decision more often than not. The reason is that both men are built to finish and to be finished. Aoriqileng's chin reads −1.45, the worst single composite value on the card, and he has been stopped in a third of his ten UFC fights. Asakura has been finished in all three of his, and has finished all three of his own wins.",
-     "Asakura is favoured at 72.3%, but the profile behind that number is thin and needs reading carefully. He has three UFC fights and roughly 25 minutes of cage time, so his trust factor is 0.27 — his composites are shrunk hard toward the bantamweight mean and none of them should be read as measured. What survives the shrinkage is a KO threat of 1.780 against Aoriqileng's 0.451, and that is mostly a statement about Aoriqileng's chin rather than Asakura's power, which sits at a modest +0.33. Note too that two of Asakura's three UFC bouts were at flyweight; under the all-fights setting that sample is being read against the bantamweight population.",
-     "The hand-tuned path is more bullish on Asakura than the GBM — 21.9% for Aoriqileng against the GBM's 27.4% — and the sim lands at 27.7%, siding with the GBM. Aoriqileng's route is his power (+0.60, the better of the two) finding a chin that has held up better than his own, but everything else reads against him: output −0.84, a −1.27 strike differential, and 59.5% takedown defence. He is 33 and has lost six of ten in the UFC, most recently a second-round knockout to Haddon. Under 2.5 rounds is priced at 59.2% — the only fight on the card where the under is favoured, and comfortably so."
+     "Page projects at 69.7%, with the two engines in near-perfect agreement (GBM 69.7%, hand-tuned 70.4%). His Elo of 2006 is the highest number on this card and sits 171 points clear of Ruziboev. The composite profile is the familiar Page shape taken to an extreme: reach +2.19 (200.66 cm), chin +1.08, output +0.61, and a defensive record of 0.60 head strikes absorbed per minute against a +0.57 differential — he simply does not get hit. The countervailing entries are equally stark. Power −0.52 with a UFC finish rate of exactly zero across five fights, and an age factor of 0.815 at 39.4, the heaviest age discount on the card.",
+     "The hole in the profile is grappling −1.40, and it is the lowest grappling composite of any fighter here. Page has zero takedowns landed and zero submission attempts in five UFC appearances, and a control differential of −0.25. Ruziboev is the sort of opponent that number is warning about on paper — 80% career finish rate, power +0.61, a first-round submission of Andrey Pulyaev in June. But the model does not convert the theoretical mismatch into much, because Ruziboev's own grappling engine is quiet: 0.09 takedowns per minute, 0.02 submission attempts per minute, and a wrestling defence of −0.53. The ground share of this fight comes out at just 9.3%, the lowest on the card.",
+     "So the projection is a striking match Page is favoured to control at range, and the method table follows: 62.9% of outcomes are a decision, Page's 69.7% breaks down as 49.8% decision against 16.6% KO, and Ruziboev's best single path is a 10.5% knockout. Ruziboev is on 0.63 trust from six fights, so his power and finish rate are only partly credited. Over 1.5 sits at 77.2% and Over 2.5 at 66.7% — the longest-projected fight on the card. The honest risk is the one the composites cannot price: a 39-year-old with no finishing threat needs all fifteen minutes to go according to plan, and Ruziboev only needs one."
     ],
     "synopsis": {
-     "lean": "Kai Asakura",
-     "body": "Asakura 72.3%, and the shortest fight on the card — 48.9% ends by knockout and only 36.9% reaches the judges, both card extremes. Aoriqileng's chin (−1.45) is the worst composite reading of the night and it drives almost the whole number; Asakura's edge is threat, not proven quality, since three UFC fights leave him at 0.27 trust with everything shrunk toward the divisional mean. Both men have been stopped recently. Under 2.5 at 59.2% is the card's only favoured under."
+     "lean": "Michael Page",
+     "body": "Page at 69.7% is the model's most orthodox read of the night — highest Elo on the card, +2.19 reach, +1.08 chin, and an opponent whose grappling volume is too low to exploit Page's one glaring weakness (grappling -1.40). It projects as a range decision: 62.9% distance, Over 2.5 at 66.7%. The caveats are age (factor 0.815 at 39) and the fact that Page has finished nobody in the UFC, so a 69.7% favourite here has essentially one route to victory while Ruziboev has a live 10.5% KO."
     }
    }
   },
   {
-   "f1": "Alex Perez",
-   "f2": "Sumudaerji",
+   "f1": "Losene Keita",
+   "f2": "Muhammad Naimov",
    "rounds": 3,
-   "division": "Flyweight  •  all-fights",
+   "division": "Featherweight  •  all-fights",
    "dataMode": null,
    "sections": {
     "modelProjections": {
-     "f1Short": "Perez",
-     "f2Short": "Sumudaerji",
+     "f1Short": "Keita",
+     "f2Short": "Naimov",
      "modelProb": {
-      "f1": 46.7,
-      "f2": 53.3
+      "f1": 66.7,
+      "f2": 33.3
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 9.6,
-       "f2": 19.5
+       "f1": 13.5,
+       "f2": 11.1
       },
       {
        "name": "Submission",
-       "f1": 16.1,
-       "f2": 2.5
+       "f1": 7,
+       "f2": 3.6
       },
       {
        "name": "Decision",
-       "f1": 21,
-       "f2": 31.3
+       "f1": 46.2,
+       "f2": 18.7
       }
      ],
-     "decisionPct": 52.3,
+     "decisionPct": 64.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 25.1
+       "pct": 16.3
       },
       {
        "r": 2,
-       "pct": 15.2
+       "pct": 12.4
       },
       {
        "r": 3,
-       "pct": 7.4
+       "pct": 6.5
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 32,
-      "over": 68
+      "under": 22,
+      "over": 78
      },
      {
       "line": 2.5,
-      "under": 43.8,
-      "over": 56.2
+      "under": 31.8,
+      "over": 68.2
      }
     ],
     "composites": {
@@ -913,90 +671,90 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.84,
-       "f2": 0.16,
-       "delta": 0.68
+       "f1": -0.19,
+       "f2": -0.28,
+       "delta": 0.09
       },
       {
        "name": "Chin",
-       "f1": -0.37,
-       "f2": 0.55,
-       "delta": -0.93
+       "f1": 0.21,
+       "f2": 0.07,
+       "delta": 0.14
       },
       {
        "name": "Output",
-       "f1": 0.97,
-       "f2": 1.64,
-       "delta": -0.68
+       "f1": -0.18,
+       "f2": -0.65,
+       "delta": 0.47
       },
       {
        "name": "Grappling",
-       "f1": 0.73,
-       "f2": -0.32,
-       "delta": 1.05
+       "f1": -0.16,
+       "f2": 0.05,
+       "delta": -0.21
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.64,
-       "f2": 0.35,
-       "delta": 0.29
+       "f1": 0.43,
+       "f2": 0.26,
+       "delta": 0.17
       },
       {
        "name": "Cardio",
-       "f1": 0.15,
+       "f1": 0.25,
        "f2": 0.25,
-       "delta": -0.1
+       "delta": 0
       },
       {
        "name": "Reach",
-       "f1": -1.01,
-       "f2": 1.9,
-       "delta": -2.9
+       "f1": 0.8,
+       "f2": -0.31,
+       "delta": 1.11
       }
      ]
     },
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.63,
-      "f2": 0.71
+      "f1": 0.49,
+      "f2": 0.43
      },
      {
       "name": "Counter",
-      "f1": 0.75,
+      "f1": 0.52,
       "f2": 0.63
      },
      {
       "name": "Wrestler",
-      "f1": 0.63,
-      "f2": 0.44
+      "f1": 0.48,
+      "f2": 0.52
      },
      {
       "name": "Finisher",
-      "f1": 0.71,
-      "f2": 0.38
+      "f1": 0.43,
+      "f2": 0.47
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.64,
-      "f2": 0.29
+      "f1": 0.29,
+      "f2": 0.33
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.53,
-      "f2": 0.28
+      "f1": 0.12,
+      "f2": 0.3
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "1.000 (108.6 min)",
-      "f2": "1.000 (118.0 min)"
+      "f1": "0.214 (15.0 min)",
+      "f2": "1.000 (90.3 min)"
      },
      {
       "name": "Decision trust",
-      "f1": "0.500",
-      "f2": "1.000"
+      "f1": "0.167",
+      "f2": "0.667"
      },
      {
       "name": "Layoff factor",
@@ -1005,136 +763,136 @@
      },
      {
       "name": "Age factor",
-      "f1": "0.940",
-      "f2": "1.000"
+      "f1": "1.000",
+      "f2": "0.997"
      },
      {
       "name": "Chin damage factor",
-      "f1": "0.756",
-      "f2": "0.994"
+      "f1": "1.000",
+      "f2": "0.829"
      },
      {
       "name": "SoS multiplier",
-      "f1": "1.099",
-      "f2": "0.928"
+      "f1": "1.256",
+      "f2": "1.193"
      }
     ],
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.408",
-      "reads": "Toward Sumudaerji"
+      "value": "+0.611",
+      "reads": "Toward Keita"
      },
      {
-      "name": "KO threat — Perez",
-      "value": "-0.216",
+      "name": "KO threat — Keita",
+      "value": "-0.094",
+      "reads": "Near avg"
+     },
+     {
+      "name": "KO threat — Naimov",
+      "value": "-0.684",
       "reads": "Below-avg"
      },
      {
-      "name": "KO threat — Sumudaerji",
-      "value": "+0.963",
-      "reads": "Above-avg"
+      "name": "Sub threat — Keita",
+      "value": "-0.327",
+      "reads": "Below-avg"
      },
      {
-      "name": "Sub threat — Perez",
-      "value": "+0.529",
-      "reads": "Above-avg"
-     },
-     {
-      "name": "Sub threat — Sumudaerji",
-      "value": "-0.690",
+      "name": "Sub threat — Naimov",
+      "value": "-0.218",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "23.8%",
+      "value": "12.3%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "76.2%",
+      "value": "87.7%",
       "reads": ""
      },
      {
       "name": "Elo (WC-specific)",
-      "value": "Perez 1777 (15 fts) / Sumudaerji 1652 (10 fts)",
-      "reads": "Δ +126"
+      "value": "Keita 1487 (1 fts) / Naimov 1697 (8 fts)",
+      "reads": "Δ -211"
      },
      {
-      "name": "GBM P(Perez wins)",
-      "value": "47.2% calibrated  (HT 42.4%)",
+      "name": "GBM P(Keita wins)",
+      "value": "64.0% calibrated  (HT 69.0%)",
       "reads": ""
      }
     ],
     "profiles": [
      {
-      "name": "Alex Perez",
+      "name": "Losene Keita",
       "lines": [
-       "34, Orthodox, 5'6\" / 65\" reach. Record 26-10-0.",
-       "Sample: 16 division fights, 108.6 minutes total. Career WR 56%. Layoff 86 days.",
-       "Recent: L vs Sumudaerji (Could Not Continue R2, 2026-05-30) | W vs Charles Johnson (KO/TKO R1, 2026-01-24) | L vs Asu Almabayev (Submission R3, 2025-11-22)"
+       "28, Orthodox, 5'8\" / 72\" reach. Record 16-2-0.",
+       "Sample: 1 division fights, 15.0 minutes total. Career WR 50%. Layoff 163 days.",
+       "Recent: L vs Nathaniel Wood (Decision R3, 2026-03-21)"
       ]
      },
      {
-      "name": "Sumudaerji",
+      "name": "Muhammad Naimov",
       "lines": [
-       "30, Southpaw, 5'8\" / 72\" reach. Record 19-7-0.",
-       "Sample: 11 division fights, 118.0 minutes total. Career WR 55%. Layoff 86 days.",
-       "Recent: L vs Alex Perez (Could Not Continue R2, 2026-05-30) | W vs Jesus Aguilar (Decision R3, 2026-03-07) | W vs Kevin Borjas (Decision R3, 2025-08-23)"
+       "32, Orthodox, 5'9\" / 70\" reach. Record 13-4-0.",
+       "Sample: 8 division fights, 90.3 minutes total. Career WR 62%. Layoff 268 days.",
+       "Recent: L vs Mairon Santos (KO/TKO R3, 2025-12-06) | W vs Bogdan Grad (Decision R3, 2025-06-21) | W vs Kaan Ofli (Decision R3, 2025-02-01)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "The closest fight on the card, and a rematch — these two met on 2026-05-30 and it ended in the second round with Perez unable to continue. The model gives Sumudaerji the narrow edge at 53.3%, with the GBM at 47.2% for Perez and the hand-tuned path more sceptical of him still at 42.4%. Elo favours Perez, 1777 over fifteen divisional fights to Sumudaerji's 1652 over ten, so this is another case of the composites pulling against the résumé — though far less violently than in the Yan fight.",
-     "The two profiles are almost mirror images. Sumudaerji owns output +1.64 and reach +1.90 with a +2.11 strike differential — a long, high-volume striker who wins rounds at range. Perez counters with power +0.84 and grappling +0.73 against a −1.01 reach deficit, and a 77.8% UFC finish rate split between knockout (44.4%) and submission (33.3%). His submission threat of 0.529 against Sumudaerji's −0.690 is his clearest single advantage, and the sim reflects it: of Perez's 46.7%, more comes by submission (16.1%) than by knockout (9.6%).",
-     "Durability is the axis that decides it. Perez has been finished in 71.4% of his UFC fights and Sumudaerji in 60% — two of the three most fragile records on the card facing each other. Sumudaerji is the more likely finisher here (19.5% by knockout against Perez's 9.6%), and at 30.6 he is nearly four years younger. Perez is 34.4 and his recent form is jagged: a knockout win over Charles Johnson between a submission loss to Almabayev and the aborted first meeting with Sumudaerji. Over 2.5 sits at 56.2%, the lowest of the seven three-rounders after the Asakura fight."
+     "This is one of two fights on the card where the model backs the fighter with the Elo deficit, and it is worth stating plainly: Keita's rating is 1487 off a single divisional fight against Naimov's 1697 off eight, a 211-point gap the wrong way, and the model still makes Keita a 66.7% favourite. The engines are not fully settled on it either — calibrated GBM 64.0% against hand-tuned 69.0%, a 5pp spread. The reason is sample: Keita is 1 UFC fight, 15 minutes, trust 0.214, and that one fight was a decision loss to Nathaniel Wood. His Elo is essentially the 1500 default lightly moved, so the rating is not evidence of weakness so much as an absence of evidence.",
+     "What is carrying Keita is the pre-UFC record, which is exactly what those features were built for: 18 fights, 88.9% win rate, 62.5% finish rate on a 16-2 career. With trust at 0.21 his composites are pinned near the divisional mean (chin +0.21, output −0.18, wrestling defence +0.43) and carry almost no information — the projection is being driven by record and opposition quality (SoS 1.256), not by a measured stylistic read. Anyone reading the composite table below should treat those numbers as placeholders rather than findings.",
+     "Naimov is the fully-observed fighter and the model does not like what it observes. Output −0.65, a strike differential of −0.84, a chin damage factor of 0.829, and a finished rate of 0.667 — he has been stopped in two of his three UFC losses, most recently a third-round KO by Mairon Santos in December, and he has been out 268 days. He was also submitted by Felipe Lima, who fights on this same card. The method split gives Keita 46.2% decision and 13.5% KO; Naimov's 33.3% is 11.1% KO and 18.7% decision. Total decision probability is 64.8%, with Over 2.5 at 68.2% — though note the sim and the O/U GBM disagree there (71.8% vs 67.3%), so the blended number carries more uncertainty than usual."
     ],
     "synopsis": {
-     "lean": "Sumudaerji",
-     "body": "Sumudaerji 53.3% in a genuine coin-flip rematch — their first meeting ended in round two with Perez unable to continue. Elo still prefers Perez (1777 to 1652) but the composites favour the longer, busier man: Sumudaerji's output (+1.64) and reach (+1.90) against Perez's power (+0.84) and grappling (+0.73). Both are fragile — finished in 71% and 60% of their UFC fights respectively — so this is the fight most likely to end suddenly in either direction. Perez's path is the submission; Sumudaerji's is the knockout."
+     "lean": "Losene Keita",
+     "body": "A genuine model-vs-rating disagreement: Keita is favoured at 66.7% while carrying a 211-point Elo deficit, because his rating reflects one UFC fight rather than a verdict on him. The 66.7% is built on an 18-fight, 88.9% pre-UFC record and on Naimov's visible decline — output −0.65, strike differential −0.84, stopped in two of three UFC losses, 268 days out. Treat Keita's composites as placeholders (trust 0.21). Expect distance: 64.8% decision."
     }
    }
   },
   {
-   "f1": "Andre Lima",
-   "f2": "Namsrai Batbayar",
+   "f1": "Felipe Lima",
+   "f2": "Morgan Charriere",
    "rounds": 3,
-   "division": "Flyweight  •  all-fights",
+   "division": "Featherweight  •  all-fights",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Lima",
-     "f2Short": "Batbayar",
+     "f2Short": "Charriere",
      "modelProb": {
-      "f1": 64.9,
-      "f2": 35.1
+      "f1": 58.7,
+      "f2": 41.3
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 13.8,
-       "f2": 11.4
+       "f1": 15.3,
+       "f2": 17.6
       },
       {
        "name": "Submission",
-       "f1": 11.6,
-       "f2": 5.5
+       "f1": 11.8,
+       "f2": 1.9
       },
       {
        "name": "Decision",
-       "f1": 39.5,
-       "f2": 18.2
+       "f1": 31.6,
+       "f2": 21.9
       }
      ],
-     "decisionPct": 57.7,
+     "decisionPct": 53.5,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 20.1
+       "pct": 23.3
       },
       {
        "r": 2,
-       "pct": 14.3
+       "pct": 15.4
       },
       {
        "r": 3,
@@ -1145,13 +903,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 26.6,
-      "over": 73.4
+      "under": 30.4,
+      "over": 69.6
      },
      {
       "line": 2.5,
-      "under": 38.1,
-      "over": 61.9
+      "under": 42.4,
+      "over": 57.6
      }
     ],
     "composites": {
@@ -1159,245 +917,245 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.28,
-       "f2": 0.55,
-       "delta": -0.83
+       "f1": -0.49,
+       "f2": 1.13,
+       "delta": -1.62
       },
       {
        "name": "Chin",
-       "f1": 0.58,
-       "f2": 0.11,
-       "delta": 0.47
+       "f1": 0.56,
+       "f2": -0.58,
+       "delta": 1.14
       },
       {
        "name": "Output",
-       "f1": 0.9,
-       "f2": 0.15,
-       "delta": 0.75
+       "f1": 0.03,
+       "f2": -0.24,
+       "delta": 0.27
       },
       {
        "name": "Grappling",
-       "f1": 0.04,
-       "f2": 0.17,
-       "delta": -0.13
+       "f1": -0.16,
+       "f2": 0.16,
+       "delta": -0.31
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.62,
-       "f2": 0.29,
-       "delta": 0.33
+       "f1": 0.81,
+       "f2": 0.79,
+       "delta": 0.01
       },
       {
        "name": "Cardio",
-       "f1": 0.2,
-       "f2": 0.2,
+       "f1": 0.25,
+       "f2": 0.25,
        "delta": 0
       },
       {
        "name": "Reach",
-       "f1": -0.06,
-       "f2": 0.26,
-       "delta": -0.31
+       "f1": -1.39,
+       "f2": -0.83,
+       "delta": -0.56
       }
      ]
     },
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.62,
-      "f2": 0.53
+      "f1": 0.52,
+      "f2": 0.49
      },
      {
       "name": "Counter",
-      "f1": 0.58,
-      "f2": 0.61
+      "f1": 0.55,
+      "f2": 0.76
      },
      {
       "name": "Wrestler",
-      "f1": 0.53,
-      "f2": 0.52
+      "f1": 0.48,
+      "f2": 0.54
      },
      {
       "name": "Finisher",
-      "f1": 0.4,
-      "f2": 0.56
+      "f1": 0.5,
+      "f2": 0.76
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.17,
-      "f2": 0.69
+      "f1": 0.14,
+      "f2": 0.78
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.06,
-      "f2": 0.3
+      "f1": 0.07,
+      "f2": 0.46
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "1.000 (81.0 min)",
-      "f2": "0.225 (15.8 min)"
+      "f1": "0.589 (41.2 min)",
+      "f2": "0.728 (51.0 min)"
      },
      {
       "name": "Decision trust",
-      "f1": "0.667",
-      "f2": "0.000"
+      "f1": "0.333",
+      "f2": "0.333"
      },
      {
       "name": "Layoff factor",
-      "f1": "1.000",
+      "f1": "0.982",
       "f2": "1.000"
      },
      {
       "name": "Age factor",
-      "f1": "0.970",
-      "f2": "0.970"
-     },
-     {
-      "name": "Chin damage factor",
       "f1": "1.000",
       "f2": "1.000"
      },
      {
+      "name": "Chin damage factor",
+      "f1": "1.000",
+      "f2": "0.842"
+     },
+     {
       "name": "SoS multiplier",
-      "f1": "0.804",
-      "f2": "0.730"
+      "f1": "1.216",
+      "f2": "1.163"
      }
     ],
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.646",
+      "value": "+0.271",
       "reads": "Toward Lima"
      },
      {
       "name": "KO threat — Lima",
-      "value": "-0.447",
-      "reads": "Below-avg"
+      "value": "+0.085",
+      "reads": "Near avg"
      },
      {
-      "name": "KO threat — Batbayar",
-      "value": "+0.011",
-      "reads": "Near avg"
+      "name": "KO threat — Charriere",
+      "value": "+0.742",
+      "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Lima",
-      "value": "-0.167",
-      "reads": "Near avg"
+      "value": "-0.793",
+      "reads": "Below-avg"
      },
      {
-      "name": "Sub threat — Batbayar",
-      "value": "-0.265",
+      "name": "Sub threat — Charriere",
+      "value": "-0.380",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "14.2%",
+      "value": "8.3%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "85.8%",
+      "value": "91.7%",
       "reads": ""
      },
      {
       "name": "Elo (WC-specific)",
-      "value": "Lima 1626 (6 fts) / Batbayar 1633 (3 fts)",
-      "reads": "Δ -7"
+      "value": "Lima 1687 (3 fts) / Charriere 1675 (6 fts)",
+      "reads": "Δ +12"
      },
      {
       "name": "GBM P(Lima wins)",
-      "value": "64.0% calibrated  (HT 71.2%)",
+      "value": "61.2% calibrated  (HT 59.6%)",
       "reads": ""
      }
     ],
     "profiles": [
      {
-      "name": "Andre Lima",
+      "name": "Felipe Lima",
       "lines": [
-       "27, Orthodox, 5'7\" / 67\" reach. Record 11-1-0.",
-       "Sample: 6 division fights, 81.0 minutes total. Career WR 83%. Layoff 65 days.",
-       "Recent: L vs Kevin Borjas (Decision R3, 2026-06-20) | W vs Daniel Barez (Submission R3, 2025-03-15) | W vs Felipe dos Santos (Decision R3, 2024-09-07)"
+       "28, Orthodox, 5'6\" / 68\" reach. Record 14-2-0.",
+       "Sample: 3 division fights, 41.2 minutes total. Career WR 67%. Layoff 429 days.",
+       "Recent: L vs Payton Talbott (Decision R3, 2025-06-28) | W vs Miles Johns (Decision R3, 2024-12-14) | W vs Muhammad Naimov (Submission R3, 2024-06-22)"
       ]
      },
      {
-      "name": "Namsrai Batbayar",
+      "name": "Morgan Charriere",
       "lines": [
-       "25, Orthodox, 5'4\" / 68\" reach. Record 10-1-0.",
-       "Sample: 3 division fights, 15.8 minutes total. Career WR 100%. Layoff 87 days.",
-       "Recent: W vs Yin Shuai (KO/TKO R1, 2026-05-29) | W vs Agulali (Submission R1, 2025-08-22) | W vs Wataru Yamauchi (KO/TKO R2, 2025-05-22)"
+       "31, Orthodox, 5'8\" / 69\" reach. Record 21-12-1.",
+       "Sample: 6 division fights, 51.0 minutes total. Career WR 50%. Layoff 261 days.",
+       "Recent: L vs Melquizael Costa (KO/TKO R1, 2025-12-13) | W vs Nate Landwehr (KO/TKO R3, 2025-07-12) | L vs Nathaniel Wood (Decision R3, 2025-03-22)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Elo cannot separate these two at all — 1626 to 1633, a seven-point gap and the closest rating pairing on the card, and it marginally favours the man the model makes the underdog. The simulation gives Lima 64.9%, the GBM 64.0%, and the hand-tuned path is considerably more confident at 71.2%. The difference is sample: Lima has six UFC fights and full trust, Batbayar has three and a trust factor of 0.23, the second-thinnest on the card, so his composites are heavily shrunk and the GBM discounts them accordingly.",
-     "Lima's edge is control rather than damage. His output +0.90 and wrestling defence +0.62 pair with a +1.29 strike differential, 75.9% takedown defence and 45.3% head-strike accuracy — a tidy, low-risk profile that has never been finished in six UFC appearances. His power is −0.28, the lowest of any favourite on the card, and his UFC finish rate is 20%, all by submission. That combination produces the shape the sim settles on: of Lima's 64.9%, fully 39.5% arrives by decision against 13.8% by knockout and 11.6% by submission.",
-     "Batbayar is the more explosive fighter on paper — power +0.55, all three UFC wins by stoppage (two knockouts, one submission), 100% takedown defence — but three fights and roughly twenty minutes is not enough observation for the model to trust any of it, and one of those three was a Road to UFC tournament bout. He is also the youngest fighter in this pairing at 25.7 against Lima's 27.6. The relevant warning for Lima backers is his most recent outing: a decision loss to Kevin Borjas, who appears elsewhere on this card as a heavy underdog."
+     "The closest fight on the card. Lima 58.7%, Elo effectively level at 1687 to 1675 (+12), and the engines agreeing within 1.6pp (GBM 61.2%, hand-tuned 59.6%). It is also the cleanest stylistic contrast of the night: Charriere is power +1.13 with chin −0.58, Lima is chin +0.56 with power −0.49. One man can end it and cannot take it; the other can take it and cannot end it. The model resolves that trade narrowly in favour of durability, which is the direction it usually goes over three rounds.",
+     "Charriere's profile is a warning label. A chin damage factor of 0.842, early vulnerability +0.46, 2.96 head strikes absorbed per minute — the highest of any man on this card — and a strike differential of −0.49 despite a 4.02/min volume. He is 3-3 in the UFC with a recent-three win rate of 0.333 and comes in off a first-round KO loss to Melquizael Costa. Every one of his wins the model can see is a knockout (KO finish rate 1.000), so his 41.3% is almost entirely a 17.6% KO against a 1.9% submission — he is a one-route fighter, but it is a very real route.",
+     "Lima's route is the opposite. He is trust 0.589 on three UFC fights and a 429-day layoff, with wrestling defence +0.81 and a submission win over Muhammad Naimov — who, note, is also on this card. His 58.7% splits as 15.3% KO, 11.8% submission, 31.6% decision, and the sub threat edges (−0.79 for Lima against −0.38 for Charriere) understate how much of his edge is grappling-shaped. One flag on the totals: the O/U GBM and the simulation disagree sharply here — the sim reads Over 2.5 at 67.3%, the GBM at 48.7%, blending to 57.6%. That is the widest O/U disagreement on the card and the blended line should be trusted less than the others."
     ],
     "synopsis": {
-     "lean": "Andre Lima",
-     "body": "Lima 64.9%, though Elo actually leans the other way by seven points — 1633 to 1626, the tightest pairing of the night. The gap the model sees is evidence, not quality: Batbayar has finished all three of his UFC wins but sits at 0.23 trust on roughly twenty minutes of cage time, so his numbers are shrunk toward the mean. Lima wins by accumulation — he has the lowest power reading (−0.28) of any favourite here and 39.5% of his win comes on the scorecards. Note he lost his last fight to Kevin Borjas, who is a 20.7% underdog elsewhere on this card."
+     "lean": "Felipe Lima",
+     "body": "The card's genuine coin-flip — Lima 58.7%, Elo level, both engines agreeing. It is durability against power: Charriere is +1.13 power with -0.58 chin and a 0.842 damage factor, absorbing 2.96 head strikes per minute and coming off a first-round KO loss; Lima is +0.56 chin, +0.81 wrestling defence with a 429-day layoff. Charriere's 41.3% is almost purely a 17.6% KO; Lima's edge is spread across decision and a 11.8% submission. Note the O/U disagreement (sim 67.3% vs GBM 48.7% on Over 2.5) -- take that line lightly."
     }
    }
   },
   {
-   "f1": "Rei Tsuruya",
-   "f2": "Kevin Borjas",
+   "f1": "Daniil Donchenko",
+   "f2": "Punahele Soriano",
    "rounds": 3,
-   "division": "Flyweight  •  all-fights",
+   "division": "Welterweight  •  all-fights",
    "dataMode": null,
    "sections": {
     "modelProjections": {
-     "f1Short": "Tsuruya",
-     "f2Short": "Borjas",
+     "f1Short": "Donchenko",
+     "f2Short": "Soriano",
      "modelProb": {
-      "f1": 79.3,
-      "f2": 20.7
+      "f1": 61.8,
+      "f2": 38.2
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 14.7,
-       "f2": 4.6
+       "f1": 26.7,
+       "f2": 11.6
       },
       {
        "name": "Submission",
-       "f1": 18,
-       "f2": 1.6
+       "f1": 6.4,
+       "f2": 4.7
       },
       {
        "name": "Decision",
-       "f1": 46.6,
-       "f2": 14.5
+       "f1": 28.8,
+       "f2": 21.8
       }
      ],
-     "decisionPct": 61.1,
+     "decisionPct": 50.6,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 18.3
+       "pct": 25.2
       },
       {
        "r": 2,
-       "pct": 13.6
+       "pct": 16.4
       },
       {
        "r": 3,
-       "pct": 7
+       "pct": 7.9
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 24.5,
-      "over": 75.5
+      "under": 32.8,
+      "over": 67.2
      },
      {
       "line": 2.5,
-      "under": 35.1,
-      "over": 64.9
+      "under": 45.4,
+      "over": 54.6
      }
     ],
     "composites": {
@@ -1405,90 +1163,90 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.06,
-       "f2": -0.01,
-       "delta": 0.07
+       "f1": 1.15,
+       "f2": 0.99,
+       "delta": 0.15
       },
       {
        "name": "Chin",
-       "f1": 0.43,
-       "f2": -0.95,
-       "delta": 1.38
+       "f1": 0.31,
+       "f2": 0.2,
+       "delta": 0.11
       },
       {
        "name": "Output",
-       "f1": 0.37,
-       "f2": -1.01,
-       "delta": 1.38
+       "f1": 2.09,
+       "f2": 1.24,
+       "delta": 0.85
       },
       {
        "name": "Grappling",
-       "f1": 1.47,
-       "f2": -0.77,
-       "delta": 2.25
+       "f1": 0.15,
+       "f2": 1.43,
+       "delta": -1.28
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.19,
-       "f2": 0.65,
-       "delta": -0.47
+       "f1": 0.34,
+       "f2": -0.64,
+       "delta": 0.99
       },
       {
        "name": "Cardio",
        "f1": 0.2,
-       "f2": 0.25,
-       "delta": -0.05
+       "f2": 0.18,
+       "delta": 0.02
       },
       {
        "name": "Reach",
-       "f1": 0.31,
-       "f2": 0.36,
-       "delta": -0.05
+       "f1": -1.21,
+       "f2": -0.69,
+       "delta": -0.52
       }
      ]
     },
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.56,
-      "f2": 0.39
+      "f1": 0.75,
+      "f2": 0.66
      },
      {
       "name": "Counter",
-      "f1": 0.63,
-      "f2": 0.64
+      "f1": 0.67,
+      "f2": 0.69
      },
      {
       "name": "Wrestler",
-      "f1": 0.69,
-      "f2": 0.4
+      "f1": 0.53,
+      "f2": 0.69
      },
      {
       "name": "Finisher",
-      "f1": 0.58,
-      "f2": 0.26
+      "f1": 0.54,
+      "f2": 0.5
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.4,
-      "f2": 0.15
+      "f1": 0.64,
+      "f2": 0.59
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.08,
-      "f2": 0.51
+      "f1": 0.27,
+      "f2": 0.27
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.852 (59.6 min)",
-      "f2": "1.000 (90.9 min)"
+      "f1": "0.372 (26.0 min)",
+      "f2": "1.000 (121.5 min)"
      },
      {
       "name": "Decision trust",
-      "f1": "0.500",
-      "f2": "0.833"
+      "f1": "0.167",
+      "f2": "1.000"
      },
      {
       "name": "Layoff factor",
@@ -1498,152 +1256,152 @@
      {
       "name": "Age factor",
       "f1": "0.970",
-      "f2": "1.000"
+      "f2": "0.955"
      },
      {
       "name": "Chin damage factor",
       "f1": "1.000",
-      "f2": "0.750"
+      "f2": "0.862"
      },
      {
       "name": "SoS multiplier",
-      "f1": "0.884",
-      "f2": "1.022"
+      "f1": "1.174",
+      "f2": "1.133"
      }
     ],
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+2.167",
-      "reads": "Toward Tsuruya"
+      "value": "+0.002",
+      "reads": "Toward Donchenko"
      },
      {
-      "name": "KO threat — Tsuruya",
-      "value": "+0.971",
+      "name": "KO threat — Donchenko",
+      "value": "+0.942",
       "reads": "Above-avg"
      },
      {
-      "name": "KO threat — Borjas",
-      "value": "-0.463",
-      "reads": "Below-avg"
-     },
-     {
-      "name": "Sub threat — Tsuruya",
-      "value": "+1.126",
+      "name": "KO threat — Soriano",
+      "value": "+0.846",
       "reads": "Above-avg"
      },
      {
-      "name": "Sub threat — Borjas",
-      "value": "-0.774",
-      "reads": "Below-avg"
+      "name": "Sub threat — Donchenko",
+      "value": "+0.562",
+      "reads": "Above-avg"
+     },
+     {
+      "name": "Sub threat — Soriano",
+      "value": "+1.021",
+      "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "30.3%",
+      "value": "34.2%",
       "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "69.7%",
+      "value": "65.8%",
       "reads": ""
      },
      {
       "name": "Elo (WC-specific)",
-      "value": "Tsuruya 1658 (6 fts) / Borjas 1480 (7 fts)",
-      "reads": "Δ +178"
+      "value": "Donchenko 1779 (3 fts) / Soriano 1769 (12 fts)",
+      "reads": "Δ +10"
      },
      {
-      "name": "GBM P(Tsuruya wins)",
-      "value": "80.4% calibrated  (HT 95.1%)",
+      "name": "GBM P(Donchenko wins)",
+      "value": "63.2% calibrated  (HT 57.0%)",
       "reads": ""
      }
     ],
     "profiles": [
      {
-      "name": "Rei Tsuruya",
+      "name": "Daniil Donchenko",
       "lines": [
-       "24, Orthodox, 5'6\" / 68\" reach. Record 11-1-0.",
-       "Sample: 6 division fights, 59.6 minutes total. Career WR 83%. Layoff 86 days.",
-       "Recent: W vs Luis Gurule (Submission R1, 2026-05-30) | L vs Joshua Van (Decision R3, 2025-03-08) | W vs Carlos Hernandez (Decision R3, 2024-06-29)"
+       "25, Orthodox, 5'11\" / 71\" reach. Record 15-2-0.",
+       "Sample: 3 division fights, 26.0 minutes total. Career WR 100%. Layoff 65 days.",
+       "Recent: W vs Theodor Berggren (KO/TKO R2, 2026-06-27) | W vs Alex Morono (Decision R3, 2026-02-07) | W vs Rodrigo Sezinando (KO/TKO R1, 2025-09-13)"
       ]
      },
      {
-      "name": "Kevin Borjas",
+      "name": "Punahele Soriano",
       "lines": [
-       "28, Orthodox, 5'5\" / 68\" reach. Record 11-5-0.",
-       "Sample: 7 division fights, 90.9 minutes total. Career WR 43%. Layoff 65 days.",
-       "Recent: W vs Andre Lima (Decision R3, 2026-06-20) | L vs Imanol Rodriguez (KO/TKO R2, 2026-02-28) | L vs Sumudaerji (Decision R3, 2025-08-23)"
+       "33, Southpaw, 5'11\" / 72\" reach. Record 13-4-0.",
+       "Sample: 12 division fights, 121.5 minutes total. Career WR 67%. Layoff 191 days.",
+       "Recent: W vs Ramiz Brahimaj (Decision R3, 2026-02-21) | W vs Nikolay Veretennikov (Decision R3, 2025-10-04) | W vs Uros Medic (KO/TKO R1, 2025-01-11)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "This fight carries the largest internal disagreement on the card: the hand-tuned path reads Tsuruya at 95.1% while the GBM pulls him back to 80.4%, a 14.7-point gap where no other fight here exceeds 7.2. The published number follows the GBM at 79.3%. That divergence is worth respecting rather than rounding away — the hand-tuned engine is reading a near-lock, and the machine-learned layer is declining to go with it.",
-     "The case for Tsuruya is real regardless. His grappling +1.47 against Borjas's −0.77 is the widest single-axis gap in the fight, backed by 0.335 takedowns per minute and 0.134 submission attempts per minute — both the highest figures among the flyweights here. Borjas offers almost nothing in reply: output −1.01, chin −0.95, a −1.40 strike differential, zero takedowns landed per minute and a 0% finish rate across seven UFC fights, half of which he has been finished in. The decision edge of +2.167 is the third-largest on the card.",
-     "Two things temper it. Tsuruya has six UFC fights and roughly sixty minutes of cage time, leaving trust at 0.85 rather than full, and Borjas's one clear virtue — wrestling defence +0.65, his only positive composite — sits directly across from the grappling that constitutes Tsuruya's entire advantage. Borjas also beat Andre Lima by decision in June, and Lima is a 64.9% favourite elsewhere on this card; his losses have come to Imanol Rodriguez by knockout and to Sumudaerji on the cards. The sim still routes 46.6% of Tsuruya's win through the judges and prices Over 2.5 at 64.9%."
+     "Donchenko 61.8%, and this is the fight where the two engines diverge most in the favourite's direction: calibrated GBM 63.2% against hand-tuned 57.0%, a 6.2pp spread. Elo is dead level (1779 to 1769). What the GBM is seeing is an output composite of +2.09 — comfortably the highest single composite value on the card — built on a genuinely extreme raw line: 8.07 significant strikes landed per minute and a strike differential of +5.26 across three UFC wins. Add power +1.15 and a 25-year-old's age factor and the statistical case is loud.",
+     "It is also thin. Donchenko is 3 fights and 26 minutes, trust 0.372, so that +2.09 output is already shrunk and still comes out that high, which is either the most impressive number on the card or the least reliable one. He is 15-2 overall, 3-0 in the UFC with a decision over Alex Morono and stoppages of Berggren and Sezinando. The defensive side is less flattering — 2.27 head strikes absorbed per minute and an early vulnerability of +0.27 — and he has not yet been asked a hard question by someone who can wrestle.",
+     "Soriano is that question. Grappling +1.43 against Donchenko's +0.15, twelve UFC fights at full trust, and a four-fight win streak. His own weakness is wrestling defence −0.64, which matters less when he is the one initiating. The model gives this fight the second-highest ground share on the card (34.2%) and the sub threat edges actually favour Soriano (+1.02 against +0.56). Where he loses ground is durability: chin damage 0.862, finished in half his career losses, against a man with +1.15 power. The result is the card's second-most finish-heavy projection — 38.3% total KO, only 50.6% decision, Over 2.5 at 54.6%."
     ],
     "synopsis": {
-     "lean": "Rei Tsuruya",
-     "body": "Tsuruya 79.3% — but this is the fight where the model's two engines disagree most sharply, the hand-tuned path calling it 95.1% against the GBM's 80.4%. Treat it as a strong favourite rather than a lock. His grappling (+1.47) against Borjas's −0.77 is the fight's decisive axis, and Borjas has never finished anyone in seven UFC fights while being finished in half of them. The counter-argument is narrow but real: Borjas's only positive composite is wrestling defence (+0.65), aimed squarely at Tsuruya's one weapon, and he beat Andre Lima two months ago."
+     "lean": "Daniil Donchenko",
+     "body": "Level on Elo, split on engines (GBM 63.2% vs hand-tuned 57.0%), and resolved at Donchenko 61.8% by the loudest statistic on the card — output +2.09, 8.07 strikes landed per minute, +5.26 differential. The caveat is that it comes from three fights and 26 minutes (trust 0.372). Soriano brings the one thing that tests it, grappling +1.43, and this has the card's second-highest ground share at 34.2% — but he is finished in half his losses against +1.15 power. Volatile: 38.3% KO, only 50.6% decision."
     }
    }
   },
   {
-   "f1": "Jack Jenkins",
-   "f2": "Sean Woodson",
+   "f1": "Kurtis Campbell",
+   "f2": "Trevor Peek",
    "rounds": 3,
    "division": "Featherweight  •  all-fights",
    "dataMode": null,
    "sections": {
     "modelProjections": {
-     "f1Short": "Jenkins",
-     "f2Short": "Woodson",
+     "f1Short": "Campbell",
+     "f2Short": "Peek",
      "modelProb": {
-      "f1": 39,
-      "f2": 61
+      "f1": 75.6,
+      "f2": 24.4
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 13.2,
-       "f2": 13.2
+       "f1": 22.2,
+       "f2": 13
       },
       {
        "name": "Submission",
-       "f1": 2.4,
-       "f2": 6.8
+       "f1": 17.5,
+       "f2": 2.9
       },
       {
        "name": "Decision",
-       "f1": 23.4,
-       "f2": 41
+       "f1": 35.9,
+       "f2": 8.5
       }
      ],
-     "decisionPct": 64.4,
+     "decisionPct": 44.5,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 19
+       "pct": 31.3
       },
       {
        "r": 2,
-       "pct": 11.2
+       "pct": 16.7
       },
       {
        "r": 3,
-       "pct": 5.4
+       "pct": 7.5
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 24.2,
-      "over": 75.8
+      "under": 39,
+      "over": 61
      },
      {
       "line": 2.5,
-      "under": 32.8,
-      "over": 67.2
+      "under": 51.6,
+      "over": 48.4
      }
     ],
     "composites": {
@@ -1651,245 +1409,245 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.63,
-       "f2": 0.28,
-       "delta": 0.35
+       "f1": 0.05,
+       "f2": 0.52,
+       "delta": -0.47
       },
       {
        "name": "Chin",
-       "f1": 0.11,
-       "f2": -0.18,
-       "delta": 0.29
+       "f1": -0.66,
+       "f2": 0.55,
+       "delta": -1.22
       },
       {
        "name": "Output",
-       "f1": 1.24,
-       "f2": 1.15,
-       "delta": 0.09
+       "f1": 0.06,
+       "f2": 0.37,
+       "delta": -0.31
       },
       {
        "name": "Grappling",
-       "f1": 0.51,
-       "f2": -0.67,
-       "delta": 1.18
+       "f1": 0.15,
+       "f2": -0.24,
+       "delta": 0.39
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.31,
-       "f2": 0.91,
-       "delta": -0.6
+       "f1": -0.02,
+       "f2": -0.86,
+       "delta": 0.84
       },
       {
        "name": "Cardio",
-       "f1": 0.22,
-       "f2": 0.16,
-       "delta": 0.06
+       "f1": 0.2,
+       "f2": 0.25,
+       "delta": -0.05
       },
       {
        "name": "Reach",
-       "f1": -1.21,
-       "f2": 3.15,
-       "delta": -4.36
+       "f1": 0.55,
+       "f2": -0.22,
+       "delta": 0.76
       }
      ]
     },
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.66,
-      "f2": 0.65
+      "f1": 0.52,
+      "f2": 0.56
      },
      {
       "name": "Counter",
-      "f1": 0.69,
-      "f2": 0.65
+      "f1": 0.52,
+      "f2": 0.61
      },
      {
       "name": "Wrestler",
-      "f1": 0.56,
-      "f2": 0.4
+      "f1": 0.52,
+      "f2": 0.45
      },
      {
       "name": "Finisher",
-      "f1": 0.47,
-      "f2": 0.46
+      "f1": 0.53,
+      "f2": 0.59
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.36,
-      "f2": 0.39
+      "f1": 0.81,
+      "f2": 0.55
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.39,
-      "f2": 0.31
+      "f1": 0.77,
+      "f2": 0.07
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "1.000 (90.7 min)",
-      "f2": "1.000 (130.2 min)"
+      "f1": "0.098 (6.8 min)",
+      "f2": "1.000 (72.6 min)"
      },
      {
       "name": "Decision trust",
-      "f1": "0.500",
-      "f2": "1.000"
+      "f1": "0.000",
+      "f2": "0.667"
      },
      {
       "name": "Layoff factor",
       "f1": "1.000",
-      "f2": "0.963"
+      "f2": "0.902"
      },
      {
       "name": "Age factor",
-      "f1": "0.980",
-      "f2": "0.945"
+      "f1": "0.970",
+      "f2": "1.000"
      },
      {
       "name": "Chin damage factor",
-      "f1": "0.872",
-      "f2": "0.808"
+      "f1": "0.850",
+      "f2": "0.984"
      },
      {
       "name": "SoS multiplier",
-      "f1": "1.042",
-      "f2": "1.089"
+      "f1": "0.861",
+      "f2": "0.905"
      }
     ],
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.386",
-      "reads": "Toward Woodson"
+      "value": "+0.518",
+      "reads": "Toward Campbell"
      },
      {
-      "name": "KO threat — Jenkins",
-      "value": "+0.038",
-      "reads": "Near avg"
+      "name": "KO threat — Campbell",
+      "value": "-0.396",
+      "reads": "Below-avg"
      },
      {
-      "name": "KO threat — Woodson",
-      "value": "+0.789",
+      "name": "KO threat — Peek",
+      "value": "+1.047",
       "reads": "Above-avg"
      },
      {
-      "name": "Sub threat — Jenkins",
-      "value": "-0.110",
-      "reads": "Near avg"
+      "name": "Sub threat — Campbell",
+      "value": "+0.746",
+      "reads": "Above-avg"
      },
      {
-      "name": "Sub threat — Woodson",
-      "value": "-0.792",
+      "name": "Sub threat — Peek",
+      "value": "-0.200",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "12.0%",
-      "reads": "Mostly standing"
+      "value": "33.2%",
+      "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "88.0%",
+      "value": "66.8%",
       "reads": ""
      },
      {
       "name": "Elo (WC-specific)",
-      "value": "Jenkins 1614 (7 fts) / Woodson 1801 (10 fts)",
-      "reads": "Δ -188"
+      "value": "Campbell 1444 (2 fts) / Peek 1413 (6 fts)",
+      "reads": "Δ +31"
      },
      {
-      "name": "GBM P(Jenkins wins)",
-      "value": "39.6% calibrated  (HT 37.3%)",
+      "name": "GBM P(Campbell wins)",
+      "value": "76.0% calibrated  (HT 56.8%)",
       "reads": ""
      }
     ],
     "profiles": [
      {
-      "name": "Jack Jenkins",
+      "name": "Kurtis Campbell",
       "lines": [
-       "32, Switch, 5'7\" / 68\" reach. Record 14-4-0.",
-       "Sample: 7 division fights, 90.7 minutes total. Career WR 71%. Layoff 331 days.",
-       "Recent: W vs Ramon Taveras (Decision R3, 2025-09-27) | L vs Gabriel Santos (Submission R3, 2025-02-08) | W vs Herbert Burns (KO/TKO R3, 2024-08-17)"
+       "24, Switch, 5'9\" / 72\" reach. Record 8-1-0.",
+       "Sample: 2 division fights, 6.8 minutes total. Career WR 50%. Layoff 163 days.",
+       "Recent: L vs Danny Silva (KO/TKO R2, 2026-03-21) | W vs Demba Seck (KO/TKO R1, 2025-09-30)"
       ]
      },
      {
-      "name": "Sean Woodson",
+      "name": "Trevor Peek",
       "lines": [
-       "34, Orthodox, 6'2\" / 78\" reach. Record 13-2-1.",
-       "Sample: 11 division fights, 130.2 minutes total. Career WR 73%. Layoff 499 days.",
-       "Recent: L vs Dan Ige (KO/TKO R3, 2025-04-12) | W vs Fernando Padilla (KO/TKO R1, 2024-12-14) | W vs Alex Caceres (Decision R3, 2024-05-11)"
+       "31, Switch, 5'9\" / 70\" reach. Record 9-3-0.",
+       "Sample: 6 division fights, 72.6 minutes total. Career WR 50%. Layoff 723 days.",
+       "Recent: L vs Yanal Ashmouz (Decision R3, 2024-09-07) | L vs Charlie Campbell (Decision R3, 2024-04-06) | W vs Mohammad Yahya (Decision R3, 2023-10-21)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Woodson is favoured at 61.0% and the single number doing the most work is reach +3.15 — by a distance the most extreme composite value anywhere on this card, and a full four standard deviations clear of Jenkins's −1.21. Featherweight fights between a very long man and a very short one tend to resolve on whether the shorter fighter can close distance, and the model's answer is mostly no: Woodson adds wrestling defence +0.91 and 84.7% takedown defence to keep the fight where his reach pays.",
-     "Beyond that axis the two are close. Jenkins reads output +1.24 to Woodson's +1.15 and power +0.63 to +0.28, with a better head-strike accuracy (50.7% against 40.3%) and the superior grappling composite (+0.51 against −0.67). Elo, however, sides firmly with Woodson at 1801 over ten divisional fights against Jenkins's 1614 over seven, the second-largest rating gap on the card. The GBM and hand-tuned paths agree closely here — 39.6% and 37.3% for Jenkins against the sim's 39.0% — so there is no internal tension to arbitrate.",
-     "Both men are fragile and both are rusty. Jenkins has been finished in every one of his UFC losses and Woodson in two-thirds of his, yet the sim still sends 64.4% of outcomes to the judges, with the knockout split dead even at 13.2% each. The layoffs are the largest paired absence on the card — Jenkins 331 days, Woodson 499 — and Woodson is 34.2 to Jenkins's 32.8. Woodson's last outing was a third-round knockout loss to Dan Ige; Jenkins last appeared in September 2025, beating Ramon Taveras on the cards."
+     "Treat this projection with more caution than any other on the card. Campbell comes out at 75.6%, but the two engines disagree by 19.2 percentage points — calibrated GBM 76.0% against hand-tuned 56.8% — which is by a distance the widest internal disagreement of the night. That gap is a reliability signal in its own right: the composites-and-edges engine sees a near coin-flip, and the learned model sees a heavy favourite. When those two part company that severely, the blended number deserves less weight than its confident-looking 75.6% suggests.",
+     "The reason is that Campbell is close to a blank slate. Trust 0.098 — 6.85 minutes of UFC time across two fights (1-1) — the lowest trust value on the card by some margin. Every composite in his row is therefore shrunk almost entirely to the Featherweight mean and carries essentially no information. What is left, and what the GBM is leaning on, is his 8-1 record with an 88.9% pre-UFC win rate over nine fights. What the composites do still show is unflattering: chin −0.66, early vulnerability +0.77, finished rate 1.000 — his only UFC loss was a second-round KO by Danny Silva in March.",
+     "Peek is fully observed but on the wrong basis. All six of his UFC fights are at Lightweight and he is z-scored against Featherweight here — the largest division-basis mismatch on the card. He also carries a 723-day layoff (layoff factor 0.902), a 3-3 UFC record, and a wrestling defence of −0.86, which is what hands Campbell a 17.5% submission share and a 33.2% ground rate. Peek's own path is a 13.0% KO off power +0.52 and chin +0.55. The method table reads 22.2% Campbell KO and 17.5% Campbell submission against only 44.5% decision, and the O/U engines split again (sim 54.3% vs GBM 39.6% on Over 2.5, blending to 48.4%)."
     ],
     "synopsis": {
-     "lean": "Sean Woodson",
-     "body": "Woodson 61.0%, built almost entirely on a +3.15 reach composite — the most extreme single reading on the card — plus the wrestling defence (+0.91) to keep the fight at his range. Jenkins is the better fighter on output, power, accuracy and grappling, which is why this is 61/39 rather than a rout, but Elo backs Woodson heavily (1801 to 1614). Both are coming off very long layoffs (499 and 331 days) and both get finished when they lose. The model still expects the judges: 64.4%, with knockout chances split exactly evenly."
+     "lean": "Kurtis Campbell",
+     "body": "The least reliable projection on the card. Campbell nominally 75.6%, but the engines are 19.2pp apart (GBM 76.0% vs hand-tuned 56.8%), the favourite has trust 0.098 — 6.85 minutes of UFC time and composites that are pure divisional mean, and the underdog's entire sample is at a different weight class after a 723-day layoff. The 75.6% rests on Campbell's 8-1 record, not on anything measured, and his own composites flag chin −0.66 and a 1.000 finished rate. Low confidence in either direction; the O/U line is equally contested."
     }
    }
   },
   {
-   "f1": "Xiong Jingnan",
-   "f2": "Julia Polastri",
+   "f1": "Luis Felipe Dias",
+   "f2": "Matthieu Duclos",
    "rounds": 3,
-   "division": "Women's Strawweight  •  all-fights",
+   "division": "Middleweight  •  all-fights",
    "dataMode": null,
    "sections": {
     "modelProjections": {
-     "f1Short": "Jingnan",
-     "f2Short": "Polastri",
+     "f1Short": "Dias",
+     "f2Short": "Duclos",
      "modelProb": {
-      "f1": 14.7,
-      "f2": 85.3
+      "f1": 69.5,
+      "f2": 30.5
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 2.3,
-       "f2": 15.4
+       "f1": 29.6,
+       "f2": 9.5
       },
       {
        "name": "Submission",
-       "f1": 1.6,
-       "f2": 20
+       "f1": 13.2,
+       "f2": 3.8
       },
       {
        "name": "Decision",
-       "f1": 10.8,
-       "f2": 49.9
+       "f1": 26.7,
+       "f2": 17.2
       }
      ],
-     "decisionPct": 60.7,
+     "decisionPct": 43.9,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 13.2
+       "pct": 29.7
       },
       {
        "r": 2,
-       "pct": 17
+       "pct": 18.1
       },
       {
        "r": 3,
-       "pct": 9
+       "pct": 8.3
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 21,
-      "over": 79
+      "under": 38,
+      "over": 62
      },
      {
       "line": 2.5,
-      "under": 34.4,
-      "over": 65.6
+      "under": 51.8,
+      "over": 48.2
      }
     ],
     "composites": {
@@ -1897,89 +1655,827 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.16,
-       "f2": 0.36,
-       "delta": -0.51
+       "f1": 0.1,
+       "f2": -0.11,
+       "delta": 0.21
       },
       {
        "name": "Chin",
-       "f1": -0.17,
-       "f2": 0.37,
-       "delta": -0.54
+       "f1": 0.1,
+       "f2": -0.85,
+       "delta": 0.95
       },
       {
        "name": "Output",
-       "f1": -0.47,
-       "f2": 0.82,
-       "delta": -1.28
+       "f1": 0.02,
+       "f2": -0.27,
+       "delta": 0.29
       },
       {
        "name": "Grappling",
-       "f1": -0.18,
-       "f2": -0.26,
-       "delta": 0.07
+       "f1": 0.09,
+       "f2": -0.07,
+       "delta": 0.16
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.07,
-       "f2": -0.17,
-       "delta": 0.24
+       "f1": 0.03,
+       "f2": 0.19,
+       "delta": -0.16
       },
       {
        "name": "Cardio",
-       "f1": -0.03,
+       "f1": 0.25,
        "f2": 0.25,
-       "delta": -0.28
+       "delta": 0
       },
       {
        "name": "Reach",
-       "f1": 2.65,
-       "f2": 0,
-       "delta": 2.65
+       "f1": -0.36,
+       "f2": 0.94,
+       "delta": -1.3
       }
      ]
     },
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.44,
-      "f2": 0.62
+      "f1": 0.52,
+      "f2": 0.48
      },
      {
       "name": "Counter",
-      "f1": 0.5,
-      "f2": 0.61
+      "f1": 0.53,
+      "f2": 0.5
      },
      {
       "name": "Wrestler",
-      "f1": 0.47,
-      "f2": 0.45
+      "f1": 0.51,
+      "f2": 0.49
      },
      {
       "name": "Finisher",
-      "f1": 0.46,
-      "f2": 0.72
+      "f1": 0.53,
+      "f2": 0.46
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.29,
-      "f2": 0.36
+      "f1": 0.54,
+      "f2": 0.3
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.18,
-      "f2": 0.09
+      "f1": 0.3,
+      "f2": 0.72
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.214 (15.0 min)",
-      "f2": "1.000 (97.0 min)"
+      "f1": "0.190 (13.3 min)",
+      "f2": "0.109 (7.6 min)"
+     },
+     {
+      "name": "Decision trust",
+      "f1": "0.000",
+      "f2": "0.000"
+     },
+     {
+      "name": "Layoff factor",
+      "f1": "1.000",
+      "f2": "0.899"
+     },
+     {
+      "name": "Age factor",
+      "f1": "1.000",
+      "f2": "1.000"
+     },
+     {
+      "name": "Chin damage factor",
+      "f1": "0.984",
+      "f2": "0.836"
+     },
+     {
+      "name": "SoS multiplier",
+      "f1": "0.763",
+      "f2": "1.264"
+     }
+    ],
+    "matchupEdges": [
+     {
+      "name": "Decision edge",
+      "value": "+0.197",
+      "reads": "Toward Dias"
+     },
+     {
+      "name": "KO threat — Dias",
+      "value": "+0.718",
+      "reads": "Above-avg"
+     },
+     {
+      "name": "KO threat — Duclos",
+      "value": "-0.031",
+      "reads": "Near avg"
+     },
+     {
+      "name": "Sub threat — Dias",
+      "value": "-0.043",
+      "reads": "Near avg"
+     },
+     {
+      "name": "Sub threat — Duclos",
+      "value": "-0.093",
+      "reads": "Near avg"
+     },
+     {
+      "name": "Ground % of fight",
+      "value": "16.5%",
+      "reads": "Mostly standing"
+     },
+     {
+      "name": "Standing % of fight",
+      "value": "83.5%",
+      "reads": ""
+     },
+     {
+      "name": "Elo (WC-specific)",
+      "value": "Dias 1668 (2 fts) / Duclos 1456 (1 fts)",
+      "reads": "Δ +212"
+     },
+     {
+      "name": "GBM P(Dias wins)",
+      "value": "68.4% calibrated  (HT 74.5%)",
+      "reads": ""
+     }
+    ],
+    "profiles": [
+     {
+      "name": "Luis Felipe Dias",
+      "lines": [
+       "31, Unknown, 5'10\" / 74\" reach. Record 18-5-0.",
+       "Sample: 2 division fights, 13.3 minutes total. Career WR 50%. Layoff 93 days.",
+       "Recent: W vs Yi Sak Lee (KO/TKO R1, 2026-05-30) | W vs Donavon Hedrick (Submission R2, 2025-10-07)"
+      ]
+     },
+     {
+      "name": "Matthieu Duclos",
+      "lines": [
+       "31, Orthodox, 6'3\" / 77\" reach. Record 10-3-0.",
+       "Sample: 1 division fights, 7.6 minutes total. Career WR 50%. Layoff 734 days.",
+       "Recent: L vs Marco Tulio (KO/TKO R2, 2024-08-27)"
+      ]
+     }
+    ],
+    "matchupAnalysis": [
+     "This is the thinnest-data fight of the night on both sides, and the composite table below should be read accordingly. Dias is trust 0.190 (2 UFC fights, 13.3 minutes); Duclos is trust 0.109 (1 UFC fight, 7.6 minutes). With both profiles shrunk that hard toward the Middleweight mean, Dias's entire composite row collapses to near-zero — power +0.10, chin +0.10, output +0.02, grappling +0.09 — which is not a description of a fighter so much as an admission that the model has not seen one. Dias projects at 69.5%, with the hand-tuned engine more bullish than the learned one (74.5% vs GBM 68.4%).",
+     "What separates them is that Dias's limited sample is all good and Duclos's is all bad. Dias is 2-0 in the UFC with both wins by stoppage (a first-round KO of Yi Sak Lee in May, a second-round submission of Donavon Hedrick) on an 18-5 career; his one warning sign is the lowest strength-of-schedule multiplier on the card at 0.763, so the model is explicitly discounting who he beat. Duclos's single UFC appearance is a second-round KO loss to Marco Tulio in August 2024, and it drives everything ugly in his row: chin −0.85, early vulnerability +0.72, finished rate 1.000, chin damage factor 0.836, plus a 734-day layoff (factor 0.899).",
+     "Note that Duclos's record was stale in the dataset at 6-3 and refreshed to 10-3 immediately before this run — four wins the model was not previously crediting him with, which is a real correction in his favour even though it does not overturn the projection. His one structural advantage is size: reach +0.94 (195.58 cm against 187.96) and three inches of height. The method split is finish-heavy in Dias's favour — 29.6% KO and 13.2% submission against 43.9% total decision — and the O/U sits at Over 1.5 62.0%, Over 2.5 48.2%, one of only three fights here the model makes more likely than not to end early."
+    ],
+    "synopsis": {
+     "lean": "Luis Felipe Dias",
+     "body": "Both men are near-blank slates — Dias trust 0.190, Duclos trust 0.109 — so the composites are shrunk to the divisional mean and carry little information. Dias 69.5% rests on a 2-0 UFC start with two stoppages, discounted by the card's weakest strength of schedule (0.763), against Duclos's single UFC appearance being a KO loss that produced chin −0.85, early vulnerability +0.72 and a 1.000 finished rate, plus a 734-day layoff. Duclos does own the size edge (+0.94 reach) and was carrying a stale 6-3 record now corrected to 10-3. Finish-leaning: Over 2.5 only 48.2%."
+    }
+   }
+  },
+  {
+   "f1": "Klaudia Sygula",
+   "f2": "Nora Cornolle",
+   "rounds": 3,
+   "division": "Women's Bantamweight  •  all-fights",
+   "dataMode": null,
+   "sections": {
+    "modelProjections": {
+     "f1Short": "Sygula",
+     "f2Short": "Cornolle",
+     "modelProb": {
+      "f1": 76,
+      "f2": 24
+     },
+     "method": [
+      {
+       "name": "KO/TKO",
+       "f1": 10.6,
+       "f2": 11.1
+      },
+      {
+       "name": "Submission",
+       "f1": 21,
+       "f2": 5
+      },
+      {
+       "name": "Decision",
+       "f1": 44.4,
+       "f2": 7.8
+      }
+     ],
+     "decisionPct": 52.2,
+     "roundsFinish": [
+      {
+       "r": 1,
+       "pct": 18.4
+      },
+      {
+       "r": 2,
+       "pct": 15.1
+      },
+      {
+       "r": 3,
+       "pct": 14.3
+      }
+     ]
+    },
+    "overUnder": [
+     {
+      "line": 1.5,
+      "under": 25.2,
+      "over": 74.8
+     },
+     {
+      "line": 2.5,
+      "under": 40.1,
+      "over": 59.9
+     }
+    ],
+    "composites": {
+     "note": "Positive = above weight-class avg. ±0.5 = clear edge, ±1.0 = elite/poor.",
+     "rows": [
+      {
+       "name": "Power",
+       "f1": -0.22,
+       "f2": 0.47,
+       "delta": -0.69
+      },
+      {
+       "name": "Chin",
+       "f1": -0.72,
+       "f2": 0.65,
+       "delta": -1.38
+      },
+      {
+       "name": "Output",
+       "f1": 0.68,
+       "f2": 0.58,
+       "delta": 0.1
+      },
+      {
+       "name": "Grappling",
+       "f1": -0.26,
+       "f2": -1.35,
+       "delta": 1.09
+      },
+      {
+       "name": "Wrestling Def",
+       "f1": -0.09,
+       "f2": -1.03,
+       "delta": 0.94
+      },
+      {
+       "name": "Cardio",
+       "f1": 0.2,
+       "f2": 0.05,
+       "delta": 0.15
+      },
+      {
+       "name": "Reach",
+       "f1": 0.84,
+       "f2": -0.22,
+       "delta": 1.06
+      }
+     ]
+    },
+    "styleProfiles": [
+     {
+      "name": "Pressure",
+      "f1": 0.6,
+      "f2": 0.58
+     },
+     {
+      "name": "Counter",
+      "f1": 0.47,
+      "f2": 0.67
+     },
+     {
+      "name": "Wrestler",
+      "f1": 0.46,
+      "f2": 0.28
+     },
+     {
+      "name": "Finisher",
+      "f1": 0.36,
+      "f2": 0.62
+     },
+     {
+      "name": "Early-Finish Score",
+      "f1": 0.12,
+      "f2": 0.45
+     },
+     {
+      "name": "Early Vulnerability",
+      "f1": 0.75,
+      "f2": 0.13
+     }
+    ],
+    "modifiers": [
+     {
+      "name": "Trust factor (minutes-based)",
+      "f1": "0.519 (36.3 min)",
+      "f2": "0.967 (67.7 min)"
+     },
+     {
+      "name": "Decision trust",
+      "f1": "0.333",
+      "f2": "0.500"
+     },
+     {
+      "name": "Layoff factor",
+      "f1": "1.000",
+      "f2": "1.000"
+     },
+     {
+      "name": "Age factor",
+      "f1": "0.970",
+      "f2": "0.882"
+     },
+     {
+      "name": "Chin damage factor",
+      "f1": "0.850",
+      "f2": "0.933"
+     },
+     {
+      "name": "SoS multiplier",
+      "f1": "1.029",
+      "f2": "1.119"
+     }
+    ],
+    "matchupEdges": [
+     {
+      "name": "Decision edge",
+      "value": "+1.461",
+      "reads": "Toward Sygula"
+     },
+     {
+      "name": "KO threat — Sygula",
+      "value": "-0.730",
+      "reads": "Below-avg"
+     },
+     {
+      "name": "KO threat — Cornolle",
+      "value": "+0.995",
+      "reads": "Above-avg"
+     },
+     {
+      "name": "Sub threat — Sygula",
+      "value": "+0.426",
+      "reads": "Above-avg"
+     },
+     {
+      "name": "Sub threat — Cornolle",
+      "value": "-1.320",
+      "reads": "Below-avg"
+     },
+     {
+      "name": "Ground % of fight",
+      "value": "29.5%",
+      "reads": "Mostly standing"
+     },
+     {
+      "name": "Standing % of fight",
+      "value": "70.5%",
+      "reads": ""
+     },
+     {
+      "name": "Elo (WC-specific)",
+      "value": "Sygula 1643 (3 fts) / Cornolle 1524 (6 fts)",
+      "reads": "Δ +119"
+     },
+     {
+      "name": "GBM P(Sygula wins)",
+      "value": "74.2% calibrated  (HT 70.4%)",
+      "reads": ""
+     }
+    ],
+    "profiles": [
+     {
+      "name": "Klaudia Sygula",
+      "lines": [
+       "27, Orthodox, 5'8\" / 69\" reach. Record 8-2-0.",
+       "Sample: 3 division fights, 36.3 minutes total. Career WR 67%. Layoff 205 days.",
+       "Recent: W vs Priscila Cachoeira (Decision R3, 2026-02-07) | W vs Irina Alekseeva (Decision R3, 2025-06-21) | L vs Melissa Mullins (KO/TKO R2, 2024-11-09)"
+      ]
+     },
+     {
+      "name": "Nora Cornolle",
+      "lines": [
+       "36, Orthodox, 5'7\" / 67\" reach. Record 9-4-0.",
+       "Sample: 6 division fights, 67.7 minutes total. Career WR 50%. Layoff 191 days.",
+       "Recent: L vs Joselyne Edwards (Submission R2, 2026-02-21) | L vs Karol Rosa (Decision R3, 2025-08-02) | W vs Hailey Cowan (Submission R2, 2025-04-12)"
+      ]
+     }
+    ],
+    "matchupAnalysis": [
+     "Sygula 76.0%, with the engines reasonably aligned (GBM 74.2%, hand-tuned 70.4%) and Elo backing it at 1643 to 1524. The projection is driven less by Sygula's quality than by Cornolle's trajectory. Cornolle is 36.7 years old with the heaviest age discount of any fighter here bar Michael Page (factor 0.882), she is 1-3 in her last four with a recent-three win rate of 0.333, and she was submitted by Joselyne Edwards in February. Her structural problem is the grappling axis: grappling −1.35 and wrestling defence −1.03, both among the worst values on the card.",
+     "Sygula is on trust 0.519 from three UFC fights (36.3 minutes), so her row is half-shrunk. What survives is output +0.68 on a raw volume of 7.27 significant strikes per minute — second only to Donchenko on this card — and a +1.76 strike differential across decision wins over Priscila Cachoeira and Irina Alekseeva. Her own vulnerabilities are real and should not be lost behind the 76%: chin −0.72, early vulnerability +0.75, 3.94 head strikes absorbed per minute, finished rate 1.000 — her single UFC loss was a second-round KO by Melissa Mullins. Cornolle's 24.0% is, appropriately, weighted toward a 11.1% knockout.",
+     "The method table is the unusual part. Sygula's single largest outcome is not a decision or a KO but a 21.0% submission, against Cornolle's sub threat of −1.32, the lowest defensive submission figure on the card. The round-finish distribution is correspondingly flat — 9,207 / 7,546 / 7,164 across rounds one to three, where most fights front-load heavily — because that submission mass is spread across all fifteen minutes rather than concentrated early. Total decision probability is 52.2% and Over 2.5 is 59.9%. One standing caveat: the method model is known to over-predict knockouts in women's divisions by roughly 5pp, so the 21.8% combined KO figure here should be read as an upper bound rather than a central estimate."
+    ],
+    "synopsis": {
+     "lean": "Klaudia Sygula",
+     "body": "Sygula 76.0%, and the number is as much about Cornolle's decline as Sygula's rise — 1-3 in her last four at 36.7 (age factor 0.882) with grappling −1.35 and wrestling defence −1.03. Sygula brings the card's second-highest volume (7.27/min) but carries her own alarms: chin −0.72, early vulnerability +0.75, finished rate 1.000. The distinctive read is the method split — her biggest single outcome is a 21.0% submission against Cornolle's −1.32 sub threat, spread evenly across all three rounds. Discount the combined 21.8% KO figure slightly (known women's-division KO over-prediction)."
+    }
+   }
+  },
+  {
+   "f1": "Mario Pinto",
+   "f2": "Ryan Spann",
+   "rounds": 3,
+   "division": "Heavyweight  •  all-fights",
+   "dataMode": null,
+   "sections": {
+    "modelProjections": {
+     "f1Short": "Pinto",
+     "f2Short": "Spann",
+     "modelProb": {
+      "f1": 83.7,
+      "f2": 16.3
+     },
+     "method": [
+      {
+       "name": "KO/TKO",
+       "f1": 56,
+       "f2": 4.9
+      },
+      {
+       "name": "Submission",
+       "f1": 3.7,
+       "f2": 7
+      },
+      {
+       "name": "Decision",
+       "f1": 24,
+       "f2": 4.3
+      }
+     ],
+     "decisionPct": 28.4,
+     "roundsFinish": [
+      {
+       "r": 1,
+       "pct": 42.5
+      },
+      {
+       "r": 2,
+       "pct": 20.6
+      },
+      {
+       "r": 3,
+       "pct": 8.6
+      }
+     ]
+    },
+    "overUnder": [
+     {
+      "line": 1.5,
+      "under": 52.1,
+      "over": 47.9
+     },
+     {
+      "line": 2.5,
+      "under": 67.4,
+      "over": 32.6
+     }
+    ],
+    "composites": {
+     "note": "Positive = above weight-class avg. ±0.5 = clear edge, ±1.0 = elite/poor.",
+     "rows": [
+      {
+       "name": "Power",
+       "f1": 0.51,
+       "f2": 0.29,
+       "delta": 0.22
+      },
+      {
+       "name": "Chin",
+       "f1": 0.32,
+       "f2": -1.42,
+       "delta": 1.74
+      },
+      {
+       "name": "Output",
+       "f1": 0.29,
+       "f2": -0.52,
+       "delta": 0.8
+      },
+      {
+       "name": "Grappling",
+       "f1": 0.51,
+       "f2": 0.15,
+       "delta": 0.36
+      },
+      {
+       "name": "Wrestling Def",
+       "f1": 0.6,
+       "f2": -0.29,
+       "delta": 0.89
+      },
+      {
+       "name": "Cardio",
+       "f1": 0.25,
+       "f2": 0.13,
+       "delta": 0.12
+      },
+      {
+       "name": "Reach",
+       "f1": 0.64,
+       "f2": 0.72,
+       "delta": -0.08
+      }
+     ]
+    },
+    "styleProfiles": [
+     {
+      "name": "Pressure",
+      "f1": 0.55,
+      "f2": 0.44
+     },
+     {
+      "name": "Counter",
+      "f1": 0.65,
+      "f2": 0.64
+     },
+     {
+      "name": "Wrestler",
+      "f1": 0.59,
+      "f2": 0.53
+     },
+     {
+      "name": "Finisher",
+      "f1": 0.55,
+      "f2": 0.68
+     },
+     {
+      "name": "Early-Finish Score",
+      "f1": 0.61,
+      "f2": 0.6
+     },
+     {
+      "name": "Early Vulnerability",
+      "f1": 0.27,
+      "f2": 0.71
+     }
+    ],
+    "modifiers": [
+     {
+      "name": "Trust factor (minutes-based)",
+      "f1": "0.450 (31.5 min)",
+      "f2": "1.000 (99.4 min)"
      },
      {
       "name": "Decision trust",
       "f1": "0.167",
+      "f2": "0.500"
+     },
+     {
+      "name": "Layoff factor",
+      "f1": "1.000",
+      "f2": "1.000"
+     },
+     {
+      "name": "Age factor",
+      "f1": "1.000",
+      "f2": "0.925"
+     },
+     {
+      "name": "Chin damage factor",
+      "f1": "1.000",
+      "f2": "0.500"
+     },
+     {
+      "name": "SoS multiplier",
+      "f1": "1.048",
+      "f2": "1.178"
+     }
+    ],
+    "matchupEdges": [
+     {
+      "name": "Decision edge",
+      "value": "+0.913",
+      "reads": "Toward Pinto"
+     },
+     {
+      "name": "KO threat — Pinto",
+      "value": "+1.864",
+      "reads": "Above-avg"
+     },
+     {
+      "name": "KO threat — Spann",
+      "value": "-0.074",
+      "reads": "Near avg"
+     },
+     {
+      "name": "Sub threat — Pinto",
+      "value": "+0.704",
+      "reads": "Above-avg"
+     },
+     {
+      "name": "Sub threat — Spann",
+      "value": "-0.344",
+      "reads": "Below-avg"
+     },
+     {
+      "name": "Ground % of fight",
+      "value": "30.0%",
+      "reads": "Mostly standing"
+     },
+     {
+      "name": "Standing % of fight",
+      "value": "70.0%",
+      "reads": ""
+     },
+     {
+      "name": "Elo (WC-specific)",
+      "value": "Pinto 1839 (4 fts) / Spann 1745 (17 fts)",
+      "reads": "Δ +95"
+     },
+     {
+      "name": "GBM P(Pinto wins)",
+      "value": "82.5% calibrated  (HT 75.2%)",
+      "reads": ""
+     }
+    ],
+    "profiles": [
+     {
+      "name": "Mario Pinto",
+      "lines": [
+       "28, Orthodox, 6'5\" / 79\" reach. Record 12-0-0.",
+       "Sample: 4 division fights, 31.5 minutes total. Career WR 100%. Layoff 163 days.",
+       "Recent: W vs Felipe Franco (Decision R3, 2026-03-21) | W vs Jhonata Diniz (KO/TKO R2, 2025-10-11) | W vs Austen Lane (KO/TKO R2, 2025-03-01)"
+      ]
+     },
+     {
+      "name": "Ryan Spann",
+      "lines": [
+       "35, Orthodox, 6'5\" / 79\" reach. Record 24-11-0.",
+       "Sample: 18 division fights, 99.4 minutes total. Career WR 61%. Layoff 128 days.",
+       "Recent: W vs Marcus Buchecha (KO/TKO R2, 2026-04-25) | W vs Lukasz Brzeski (Submission R1, 2025-07-19) | L vs Waldo Cortes Acosta (KO/TKO R2, 2025-03-15)"
+      ]
+     }
+    ],
+    "matchupAnalysis": [
+     "The most lopsided and most finish-heavy projection on the card: Pinto 83.7%, with 60.9% of all outcomes a knockout. The GBM is the more confident engine (82.5% against hand-tuned 75.2%). Pinto is 12-0 overall and 4-0 in the UFC with three stoppages, and the underlying numbers are unusually clean for a heavyweight: 65.7% head strike accuracy, 0.98 head strikes absorbed per minute, 100% takedown defence, a +0.41 control differential, and a positive line in every composite — power +0.51, chin +0.32, grappling +0.51, wrestling defence +0.60. He is on trust 0.450 from four fights, so this is still a partial picture, but nothing in it is negative.",
+     "Spann is the mirror image and the reason the KO number is so high. His chin sits at -1.42, the worst composite value on the entire card, and his chin damage factor has bottomed out at 0.500 — the model's floor. He has been finished in 85.7% of his losses, carries an early vulnerability of +0.71, absorbs 2.68 head strikes per minute against a −0.81 differential, and turns 35 in a division that does not forgive it. Eighteen UFC fights at full trust means none of that is shrunk or speculative — it is the most thoroughly measured decline on the card.",
+     "The KO threat differential says the rest: +1.86 for Pinto against −0.07 for Spann, the largest such gap of the night. Pinto's 83.7% is 56.0% KO, 3.7% submission and 24.0% decision; Spann's 16.3% is interesting in that his best single route is a 7.0% submission rather than a 4.9% knockout — consistent with a career 45.5% submission finish rate and first-round submissions of Brzeski and Saint Preux. This is also the only fight on the card the model expects to end inside the first round more often than not: Over 1.5 is just 47.9% and Over 2.5 only 32.6%, with 21,227 of 50,000 sims finishing in round one."
+    ],
+    "synopsis": {
+     "lean": "Mario Pinto",
+     "body": "The card's clearest projection and its most violent: Pinto 83.7% with a 60.9% total KO rate. Undefeated at 12-0 with 100% takedown defence, 65.7% head accuracy and no negative composite, against a Spann whose chin (−1.42) is the worst value on the card and whose damage factor has hit the model's 0.500 floor after being finished in 85.7% of his losses. KO threat differential +1.86 to −0.07. Spann's live route is a submission (7.0%), not a knockout (4.9%). The only fight here more likely than not to end in round one — Over 1.5 just 47.9%."
+    }
+   }
+  },
+  {
+   "f1": "Oumar Sy",
+   "f2": "Modestas Bukauskas",
+   "rounds": 3,
+   "division": "Light Heavyweight  •  all-fights",
+   "dataMode": null,
+   "sections": {
+    "modelProjections": {
+     "f1Short": "Sy",
+     "f2Short": "Bukauskas",
+     "modelProb": {
+      "f1": 77.8,
+      "f2": 22.2
+     },
+     "method": [
+      {
+       "name": "KO/TKO",
+       "f1": 35,
+       "f2": 6.6
+      },
+      {
+       "name": "Submission",
+       "f1": 6,
+       "f2": 5.7
+      },
+      {
+       "name": "Decision",
+       "f1": 36.8,
+       "f2": 9.9
+      }
+     ],
+     "decisionPct": 46.7,
+     "roundsFinish": [
+      {
+       "r": 1,
+       "pct": 34
+      },
+      {
+       "r": 2,
+       "pct": 13.7
+      },
+      {
+       "r": 3,
+       "pct": 5.6
+      }
+     ]
+    },
+    "overUnder": [
+     {
+      "line": 1.5,
+      "under": 40.3,
+      "over": 59.7
+     },
+     {
+      "line": 2.5,
+      "under": 50.3,
+      "over": 49.7
+     }
+    ],
+    "composites": {
+     "note": "Positive = above weight-class avg. ±0.5 = clear edge, ±1.0 = elite/poor.",
+     "rows": [
+      {
+       "name": "Power",
+       "f1": -0.3,
+       "f2": -0.36,
+       "delta": 0.06
+      },
+      {
+       "name": "Chin",
+       "f1": 0.8,
+       "f2": -1.15,
+       "delta": 1.95
+      },
+      {
+       "name": "Output",
+       "f1": 0.77,
+       "f2": -0.35,
+       "delta": 1.13
+      },
+      {
+       "name": "Grappling",
+       "f1": 0.41,
+       "f2": -0.56,
+       "delta": 0.97
+      },
+      {
+       "name": "Wrestling Def",
+       "f1": 0.27,
+       "f2": 0.86,
+       "delta": -0.59
+      },
+      {
+       "name": "Cardio",
+       "f1": 0.25,
+       "f2": 0.23,
+       "delta": 0.03
+      },
+      {
+       "name": "Reach",
+       "f1": 2.97,
+       "f2": -0.01,
+       "delta": 2.97
+      }
+     ]
+    },
+    "styleProfiles": [
+     {
+      "name": "Pressure",
+      "f1": 0.61,
+      "f2": 0.47
+     },
+     {
+      "name": "Counter",
+      "f1": 0.54,
+      "f2": 0.62
+     },
+     {
+      "name": "Wrestler",
+      "f1": 0.58,
+      "f2": 0.43
+     },
+     {
+      "name": "Finisher",
+      "f1": 0.51,
+      "f2": 0.43
+     },
+     {
+      "name": "Early-Finish Score",
+      "f1": 0.41,
+      "f2": 0.31
+     },
+     {
+      "name": "Early Vulnerability",
+      "f1": 0.21,
+      "f2": 0.66
+     }
+    ],
+    "modifiers": [
+     {
+      "name": "Trust factor (minutes-based)",
+      "f1": "0.612 (42.8 min)",
+      "f2": "1.000 (130.9 min)"
+     },
+     {
+      "name": "Decision trust",
+      "f1": "0.333",
       "f2": "0.833"
      },
      {
@@ -1989,93 +2485,93 @@
      },
      {
       "name": "Age factor",
-      "f1": "0.835",
-      "f2": "1.000"
+      "f1": "1.000",
+      "f2": "0.985"
      },
      {
       "name": "Chin damage factor",
-      "f1": "0.914",
-      "f2": "1.000"
+      "f1": "0.992",
+      "f2": "0.524"
      },
      {
       "name": "SoS multiplier",
-      "f1": "0.934",
-      "f2": "0.981"
+      "f1": "1.102",
+      "f2": "1.145"
      }
     ],
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.784",
-      "reads": "Toward Polastri"
+      "value": "+1.061",
+      "reads": "Toward Sy"
      },
      {
-      "name": "KO threat — Jingnan",
-      "value": "-0.208",
+      "name": "KO threat — Sy",
+      "value": "+1.207",
+      "reads": "Above-avg"
+     },
+     {
+      "name": "KO threat — Bukauskas",
+      "value": "-1.753",
       "reads": "Below-avg"
      },
      {
-      "name": "KO threat — Polastri",
-      "value": "-0.003",
+      "name": "Sub threat — Sy",
+      "value": "-0.196",
       "reads": "Near avg"
      },
      {
-      "name": "Sub threat — Jingnan",
-      "value": "-0.061",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Sub threat — Polastri",
-      "value": "-0.324",
+      "name": "Sub threat — Bukauskas",
+      "value": "-0.702",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "17.8%",
+      "value": "11.3%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "82.2%",
+      "value": "88.7%",
       "reads": ""
      },
      {
       "name": "Elo (WC-specific)",
-      "value": "Jingnan 1418 (1 fts) / Polastri 1510 (7 fts)",
-      "reads": "Δ -91"
+      "value": "Sy 1575 (5 fts) / Bukauskas 1686 (12 fts)",
+      "reads": "Δ -111"
      },
      {
-      "name": "GBM P(Jingnan wins)",
-      "value": "15.8% calibrated  (HT 15.1%)",
+      "name": "GBM P(Sy wins)",
+      "value": "77.1% calibrated  (HT 77.6%)",
       "reads": ""
      }
     ],
     "profiles": [
      {
-      "name": "Xiong Jingnan",
+      "name": "Oumar Sy",
       "lines": [
-       "38, Unknown, ? / 0\" reach. Record 19-3-0.",
-       "Sample: 1 division fights, 15.0 minutes total. Career WR 50%. Layoff 86 days.",
-       "Recent: L vs Angela Hill (Decision R3, 2026-05-30)"
+       "30, Orthodox, 6'4\" / 83\" reach. Record 12-2-0.",
+       "Sample: 5 division fights, 42.8 minutes total. Career WR 60%. Layoff 170 days.",
+       "Recent: L vs Ion Cutelaba (Submission R1, 2026-03-14) | W vs Brendson Ribeiro (KO/TKO R1, 2025-09-06) | L vs Alonzo Menifield (Decision R3, 2025-06-14)"
       ]
      },
      {
-      "name": "Julia Polastri",
+      "name": "Modestas Bukauskas",
       "lines": [
-       "28, Orthodox, 5'2\" / 64\" reach. Record 14-6-0.",
-       "Sample: 7 division fights, 97.0 minutes total. Career WR 43%. Layoff 121 days.",
-       "Recent: L vs Talita Alencar (Decision R3, 2026-04-25) | W vs Karolina Kowalkiewicz (KO/TKO R3, 2025-10-11) | L vs Loopy Godinez (Decision R3, 2025-03-29)"
+       "32, Switch, 6'3\" / 76\" reach. Record 20-7-0.",
+       "Sample: 13 division fights, 130.9 minutes total. Career WR 62%. Layoff 107 days.",
+       "Recent: W vs Christian Edwards (Decision R3, 2026-05-16) | L vs Nikita Krylov (KO/TKO R3, 2026-01-24) | W vs Paul Craig (KO/TKO R1, 2025-09-06)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Polastri is an 85.3% favourite, the largest margin on the card, and the honest framing is that this is a statement about missing information as much as about quality. Xiong Jingnan has exactly one UFC fight and roughly fifteen minutes of octagon time, leaving her trust factor at 0.21 — the lowest of any fighter here. Every one of her composites is shrunk hard toward the strawweight mean, so the flat, slightly-negative profile the tables show (power −0.16, chin −0.17, output −0.47) is substantially an artefact of how little the model has seen, not a measured verdict on a 19-3 career built almost entirely outside the UFC.",
-     "What the model does have is unflattering. That single appearance was a decision loss to Angela Hill in which she posted a −3.60 strike differential and 22.6% head-strike accuracy — the worst figures on this card by a wide margin, and the sort of numbers that survive shrinkage because there is nothing else to average them against. Her Elo sits at 1418 from that one fight, against Polastri's 1510 over seven. At 38.6 she is also the oldest fighter on the card by more than a year.",
-     "Polastri is not a standout — 3-4 in the UFC, coming off a decision loss to Talita Alencar — but she is a known quantity with full trust and a coherent profile: output +0.82, power +0.36, chin +0.37, 47.6% head-strike accuracy and a 66.7% finish rate split evenly between knockout and submission. Her submission route is the likeliest single finishing path in the fight at 20.0%, ahead of her 15.4% by knockout. Still, 61.6% of outcomes reach the scorecards and Over 2.5 prices at 65.6% — Xiong's one measured quality, a +2.65 reach, is the thing most likely to keep her upright."
+     "The card's second Elo disagreement, and a starker one than Keita's: Sy is favoured at 77.8% while sitting 111 points BELOW Bukauskas on the ratings (1575 over five divisional fights against 1686 over twelve). Unlike the Keita fight, though, the two engines here are in near-total agreement — GBM 77.1%, hand-tuned 77.6% — so the disagreement is specifically between the outcome-based rating and everything else, not an unresolved argument inside the model. Elo is reading Sy's recent 1-2 stretch; the composites are reading the physical and durability mismatch underneath it.",
+     "That mismatch is large. Sy's reach composite is +2.97 — the single highest value of any fighter on this card (210.82 cm against Bukauskas's 193.04, a seven-inch gap), alongside chin +0.80 and output +0.77 on 0.98 head strikes absorbed per minute and a +1.54 strike differential. Bukauskas is the more experienced and more fully-trusted fighter (13 fights, trust 1.000) but the trusted picture is a bleak one: chin −1.15, a chin damage factor of 0.524 just off the model's floor, finished in 80% of his losses, early vulnerability +0.66, and a third-round KO loss to Nikita Krylov in January. The KO threat spread is the widest structural gap of the night: Sy +1.21 against Bukauskas −1.75.",
+     "Two things cut against the projection and belong in the record. First, Sy is 1-2 in his last three and lost his most recent fight by first-round submission to Ion Cutelaba in March — and Bukauskas beat that same Cutelaba by decision, a common opponent whose result points the wrong way for the favourite. Second, Sy is on trust 0.612 from five fights while Bukauskas is fully observed, so the profile driving this is the less certain of the two. The method split reads 35.0% Sy KO against a 46.7% total decision rate, and the O/U engines agree unusually tightly here (sim 49.4%, GBM 49.4% on Over 2.5) — a coin-flip on the distance at Over 2.5 49.7%."
     ],
     "synopsis": {
-     "lean": "Julia Polastri",
-     "body": "Polastri 85.3% — the card's biggest margin, and one to read with care. Xiong Jingnan has a single UFC fight behind her, leaving trust at 0.21 and every composite shrunk toward the divisional mean, so the model is expressing ignorance of a 19-3 career as much as judgement on it. What it has seen was poor: a decision loss to Angela Hill with a −3.60 strike differential. Polastri is unspectacular at 3-4 but fully observed, and her submission threat (20.0%) is the likeliest finish in the fight. Reach (+2.65) is Xiong's one real asset and it points toward the distance — 61.6% goes to the judges."
+     "lean": "Oumar Sy",
+     "body": "Sy 77.8% despite an 111-point Elo deficit — but with both engines within 0.5pp of each other, so the model is united and only the rating dissents. It is built on the card's largest physical edge (reach +2.97, seven inches) meeting the card's second-worst durability profile: Bukauskas at chin −1.15, damage factor 0.524, finished in 80% of his losses. KO threat +1.21 against −1.75. Against it: Sy is 1-2 in his last three, was submitted in round one by Cutelaba, and Bukauskas beat that same Cutelaba — a common opponent pointing the wrong way. Distance is a coin-flip (Over 2.5 at 49.7%)."
     }
    }
   }
