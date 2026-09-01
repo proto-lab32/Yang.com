@@ -3,16 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UFC Edge Sheet — UFC Shanghai</title>
+<title>UFC Edge Sheet — UFC Paris</title>
 <script>
   // Password gate — bounce to landing if not authed (client-side only, not real security)
   try { if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html'); } catch (e) {}
-
-  // TEMP hide: edge-sheet data.csv is still the previous (UFC Shanghai: Nurmagomedov vs. Song) card —
-  // an event that has already taken place — while the UFC Paris (Ziam vs. Sola,
-  // 2026-09-05) market odds are pending. Send authed visitors to the fresh Synopses page.
-  // REMOVE this block on the full edge-sheet deploy (data.csv refreshed with the new card).
-  try { if (localStorage.getItem('yangmma_auth') === '1') location.replace('analyses.html'); } catch (e) {}
 </script>
 <style>
   :root {
@@ -585,7 +579,7 @@
 
 <header>
   <div class="header-left">
-    <a class="event-title" href="./" title="Home">UFC Shanghai: Nurmagomedov vs. Song</a>
+    <a class="event-title" href="./" title="Home">UFC Paris: Ziam vs. Sola</a>
     <div class="event-date">Edge Report · Yang's Model</div>
   </div>
   <div class="header-right">
