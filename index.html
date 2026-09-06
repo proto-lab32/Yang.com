@@ -7,6 +7,12 @@
 <script>
   // Password gate — bounce to landing if not authed (client-side only, not real security)
   try { if (localStorage.getItem('yangmma_auth') !== '1') location.replace('landing.html'); } catch (e) {}
+
+  // TEMP hide: edge-sheet data.csv is still the previous (UFC Paris: Ziam vs. Sola) card —
+  // an event that has already taken place — while the Noche UFC (Silva vs. Delgado,
+  // 2026-09-12) market odds are pending. Send authed visitors to the fresh Synopses page.
+  // REMOVE this block on the full edge-sheet deploy (data.csv refreshed with the new card).
+  try { if (localStorage.getItem('yangmma_auth') === '1') location.replace('analyses.html'); } catch (e) {}
 </script>
 <style>
   :root {
