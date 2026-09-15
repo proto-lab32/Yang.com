@@ -1,7 +1,7 @@
 {
  "title": "UFC 331 — Van vs. Pantoja",
- "generated": "Generated 2026-09-15  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  13 fights",
- "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
+ "generated": "Generated 2026-09-15  •  Model v7.0 (Moneyline + Method MC + O/U GBM; recent-form 5-yr composites)  •  50,000 sims per fight  •  all-fights mode  •  13 fights",
+ "model": "v7.0 (Moneyline + Method MC + O/U GBM; recent-form 5-yr composites)",
  "cardList": [
   {
    "f1": "Joshua Van",
@@ -10,9 +10,9 @@
    "division": "Flyweight",
    "dataMode": null,
    "f1Short": "Van",
-   "f1Pct": 74,
+   "f1Pct": 73,
    "f2Short": "Pantoja",
-   "f2Pct": 26
+   "f2Pct": 27
   },
   {
    "f1": "Arman Tsarukyan",
@@ -21,9 +21,9 @@
    "division": "Lightweight",
    "dataMode": null,
    "f1Short": "Tsarukyan",
-   "f1Pct": 60,
+   "f1Pct": 68,
    "f2Short": "Ruffy",
-   "f2Pct": 40
+   "f2Pct": 32
   },
   {
    "f1": "Renato Moicano",
@@ -32,9 +32,9 @@
    "division": "Lightweight",
    "dataMode": null,
    "f1Short": "Moicano",
-   "f1Pct": 46,
+   "f1Pct": 42,
    "f2Short": "Nolan",
-   "f2Pct": 54
+   "f2Pct": 58
   },
   {
    "f1": "Doo Ho Choi",
@@ -43,9 +43,9 @@
    "division": "Featherweight",
    "dataMode": null,
    "f1Short": "Choi",
-   "f1Pct": 84,
+   "f1Pct": 82,
    "f2Short": "Freire",
-   "f2Pct": 16
+   "f2Pct": 18
   },
   {
    "f1": "Iwo Baraniewski",
@@ -54,9 +54,9 @@
    "division": "Light Heavyweight",
    "dataMode": null,
    "f1Short": "Baraniewski",
-   "f1Pct": 59,
+   "f1Pct": 58,
    "f2Short": "Menifield",
-   "f2Pct": 41
+   "f2Pct": 42
   },
   {
    "f1": "Charles Jourdain",
@@ -76,9 +76,9 @@
    "division": "Middleweight",
    "dataMode": null,
    "f1Short": "Gandra",
-   "f1Pct": 84,
+   "f1Pct": 83,
    "f2Short": "Diaz",
-   "f2Pct": 16
+   "f2Pct": 17
   },
   {
    "f1": "Casey O'Neill",
@@ -109,9 +109,9 @@
    "division": "Heavyweight",
    "dataMode": null,
    "f1Short": "Tuivasa",
-   "f1Pct": 54,
+   "f1Pct": 49,
    "f2Short": "Despaigne",
-   "f2Pct": 46
+   "f2Pct": 51
   },
   {
    "f1": "Gable Steveson",
@@ -120,9 +120,9 @@
    "division": "Heavyweight",
    "dataMode": null,
    "f1Short": "Steveson",
-   "f1Pct": 78,
+   "f1Pct": 79,
    "f2Short": "Sharaf",
-   "f2Pct": 22
+   "f2Pct": 21
   },
   {
    "f1": "Giga Chikadze",
@@ -131,9 +131,9 @@
    "division": "Featherweight",
    "dataMode": null,
    "f1Short": "Chikadze",
-   "f1Pct": 24,
+   "f1Pct": 25,
    "f2Short": "Brito",
-   "f2Pct": 76
+   "f2Pct": 75
   },
   {
    "f1": "Michael Aswell Jr",
@@ -142,9 +142,9 @@
    "division": "Featherweight",
    "dataMode": null,
    "f1Short": "Aswell",
-   "f1Pct": 47,
+   "f1Pct": 42,
    "f2Short": "Yoo",
-   "f2Pct": 53
+   "f2Pct": 58
   }
  ],
  "fights": [
@@ -159,70 +159,70 @@
      "f1Short": "Van",
      "f2Short": "Pantoja",
      "modelProb": {
-      "f1": 74.5,
-      "f2": 25.5
+      "f1": 73.1,
+      "f2": 26.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 26.3,
-       "f2": 7.6
+       "f1": 27.5,
+       "f2": 5.7
       },
       {
        "name": "Submission",
-       "f1": 1.5,
-       "f2": 9
+       "f1": 2,
+       "f2": 8.9
       },
       {
        "name": "Decision",
-       "f1": 46.7,
-       "f2": 8.9
+       "f1": 43.6,
+       "f2": 12.3
       }
      ],
-     "decisionPct": 55.7,
+     "decisionPct": 55.9,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 15.5
+       "pct": 14.3
       },
       {
        "r": 2,
-       "pct": 12.2
+       "pct": 11.9
       },
       {
        "r": 3,
-       "pct": 8.2
+       "pct": 8.5
       },
       {
        "r": 4,
-       "pct": 5
+       "pct": 5.4
       },
       {
        "r": 5,
-       "pct": 3.4
+       "pct": 3.9
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 21.2,
-      "over": 78.8
+      "under": 19.9,
+      "over": 80.1
      },
      {
       "line": 2.5,
-      "under": 31.7,
-      "over": 68.3
+      "under": 30.4,
+      "over": 69.6
      },
      {
       "line": 3.5,
-      "under": 38.3,
-      "over": 61.7
+      "under": 37.4,
+      "over": 62.6
      },
      {
       "line": 4.5,
-      "under": 42.6,
-      "over": 57.4
+      "under": 42.1,
+      "over": 57.9
      }
     ],
     "composites": {
@@ -230,33 +230,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 1.08,
-       "f2": 0.06,
-       "delta": 1.02
+       "f1": 0.9,
+       "f2": -0.11,
+       "delta": 1.01
       },
       {
        "name": "Chin",
-       "f1": -1.26,
-       "f2": 0.18,
-       "delta": -1.45
+       "f1": -1.18,
+       "f2": 0.23,
+       "delta": -1.41
       },
       {
        "name": "Output",
-       "f1": 2.3,
-       "f2": 0.57,
-       "delta": 1.72
+       "f1": 2.19,
+       "f2": 0.18,
+       "delta": 2.01
       },
       {
        "name": "Grappling",
-       "f1": -0.28,
-       "f2": 0.87,
-       "delta": -1.15
+       "f1": -0.26,
+       "f2": 1.61,
+       "delta": -1.87
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.62,
-       "f2": 0.57,
-       "delta": 0.05
+       "f1": 0.5,
+       "f2": 0.81,
+       "delta": -0.31
       },
       {
        "name": "Cardio",
@@ -275,18 +275,18 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.77,
-      "f2": 0.58
+      "f1": 0.76,
+      "f2": 0.53
      },
      {
       "name": "Counter",
-      "f1": 0.66,
-      "f2": 0.65
+      "f1": 0.63,
+      "f2": 0.64
      },
      {
       "name": "Wrestler",
       "f1": 0.45,
-      "f2": 0.66
+      "f2": 0.76
      },
      {
       "name": "Finisher",
@@ -295,13 +295,13 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.37,
-      "f2": 0.28
+      "f1": 0.35,
+      "f2": 0.26
      },
      {
       "name": "Early Vulnerability",
       "f1": 0.66,
-      "f2": 0.12
+      "f2": 0.11
      }
     ],
     "modifiers": [
@@ -339,37 +339,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.882",
+      "value": "+0.142",
       "reads": "Toward Van"
      },
      {
       "name": "KO threat — Van",
-      "value": "+0.794",
+      "value": "+0.571",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Pantoja",
-      "value": "+1.501",
+      "value": "+1.251",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Van",
-      "value": "-0.589",
+      "value": "-0.712",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Pantoja",
-      "value": "+0.505",
+      "value": "+1.459",
       "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "21.7%",
-      "reads": "Mostly standing"
+      "value": "34.7%",
+      "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "78.3%",
+      "value": "65.3%",
       "reads": ""
      },
      {
@@ -379,7 +379,7 @@
      },
      {
       "name": "GBM P(Van wins)",
-      "value": "76.1% calibrated  (HT 65.0%)",
+      "value": "72.8% calibrated  (HT 48.6%)",
       "reads": ""
      }
     ],
@@ -402,13 +402,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Van 74.5%, and that number is built without the first fight. The UFC 323 meeting (Van by TKO at 0:26 of round one after Pantoja's injury) has been removed from every input: record, Elo, trust minutes and the per-minute rates, with the derived stats rebuilt over the cut data and Pantoja's layoff held at his real 283 days. Left in, that bout counts as a title-fight knockout. It puts Van at 79.7%, gives him a 153-point Elo edge and drags Pantoja's chin to -0.41 (his only career finish loss). With it cut, the Elo differential flips to Pantoja +74 (2141 to 2067) and his chin returns to +0.18. The exclusion costs Van 5.2pp, and he is still a clear favourite.",
-     "Van is still roughly a 3-to-1 favourite because of his output. His +2.30 output composite is the best number on the card, built over 145 UFC minutes at full trust, and his power still reads +1.08 after the cut (+1.20 with the 26-second stoppage counted). Pantoja's profile is balanced rather than dominant: output +0.57, grappling +0.87, wrestling defence +0.57, power +0.06. The decision edge (+0.88) is Van's. The GBM (76.1%) sits just above the headline, while the hand-tuned layer is more cautious at 65.0%. Age is part of the gap: Pantoja is 36.4 (age factor 0.89), Van 24.9.",
-     "Van's weakness is real and the model sees it. His chin reads -1.26 and he absorbs 3.9 head strikes per minute, which is why Pantoja's KO threat (1.50) is higher than Van's own (0.79). The sim still gives Pantoja only 7.6% by knockout. His better route is the back: sub threat +0.51 against Van's -0.59, and 9.0% by submission. His last three wins came on the ground or on the cards (Kara-France and Asakura by submission, Erceg over five). Van's path is volume to a decision (46.7%) or a late stoppage (26.3% by KO; the Taira fight ended in round five). The sim sends 55.7% to the cards, and the blended O/U puts Over 3.5 at 61.7% and Over 4.5 at 57.4%: this is expected to go long."
+     "Van 73.1%, and that number is built without the first fight. The UFC 323 meeting (Van by TKO at 0:26 of round one after Pantoja's injury) has been removed from every input: record, Elo, trust minutes and the per-minute rates, with the derived stats rebuilt over the cut data and Pantoja's layoff held at his real 283 days. Left in, that bout counts as a title-fight knockout. It puts Van at 79.7%, gives him a 153-point Elo edge (2165 to 2012) and drags Pantoja's chin to -0.36 (his only career finish loss). With it cut, the Elo differential flips to Pantoja +74 (2141 to 2067) and his chin returns to +0.23. The exclusion costs Van 6.6pp, and he is still a clear favourite.",
+     "The model's two engines disagree here more than anywhere else on the card. The hand-tuned layer, which reads the composites directly, makes Pantoja a slight favourite at 51.4%. The GBM, which also weighs record, Elo and form, has Van at 72.8%, and the final number follows the GBM. The hand-tuned side moved because of Pantoja's recent-form profile. Weighted toward his last five years, his grappling composite reads +1.61 (+0.87 on the career-weighted basis), his sub threat 1.46 against Van's -0.71, and his wrestling defence +0.81. Van's edge is still output: +2.19, the best output composite on the card, built over 145 UFC minutes at full trust, with power +0.90. Pantoja's output reads +0.18, and the decision edge has shrunk to a near-neutral +0.14. Age is part of the gap: Pantoja is 36.4 (age factor 0.89), Van 24.9. In past fights where the engines split this widely, results landed nearer the middle than either end, which here is about 61% Van.",
+     "Van's weakness is real and the model sees it. His chin reads -1.18 and he absorbs 3.9 head strikes per minute, which is why Pantoja's KO threat (1.25) is higher than Van's own (0.57). The sim still gives Pantoja only 5.7% by knockout. His better route is the back: 8.9% by submission, a third of his 26.9%. That figure is capped by the moneyline rather than by the grappling read: with the GBM making Van close to a 3-to-1 favourite, Pantoja wins only about one sim in four, and one in three of those wins is a submission. His last three wins came on the ground or on the cards (Kara-France and Asakura by submission, Erceg over five). Van's path is volume to a decision (43.6%) or a stoppage (27.5% by KO; the Taira fight ended in round five). The sim sends 55.9% to the cards, and the blended O/U puts Over 3.5 at 62.6% and Over 4.5 at 57.9%: this is expected to go long."
     ],
     "synopsis": {
      "lean": "Joshua Van",
-     "body": "With the injury stoppage removed, the model scores the rematch as the fight the first one should have been: a 24-year-old volume striker with the best output profile on the card against a 36-year-old former champion whose edge is on the mat. The cut matters (it flips Elo to Pantoja and restores his chin, worth about 5pp), but Van's pace still carries him to 74.5%, most of it on the scorecards. Pantoja's live paths are the submission and Van's leaky chin (-1.26). The model gives him about one chance in four."
+     "body": "With the injury stoppage removed, the model scores the rematch as the fight the first one should have been: a 24-year-old volume striker with the best output profile on the card against a 36-year-old former champion with the best recent grappling in the fight. The cut flips Elo to Pantoja and restores his chin, and on the recent-form composites the hand-tuned layer even makes him a slight favourite. The GBM disagrees, and Van's pace carries the final number to 73.1%, most of it on the scorecards. The engines split more here than anywhere on the card, so read Van as a clear but not overwhelming favourite (nearer 61% if you split the difference). Pantoja's live paths are the submission and Van's leaky chin (-1.18)."
     }
    }
   },
@@ -423,70 +423,70 @@
      "f1Short": "Tsarukyan",
      "f2Short": "Ruffy",
      "modelProb": {
-      "f1": 60.2,
-      "f2": 39.8
+      "f1": 68.1,
+      "f2": 31.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 18.8,
-       "f2": 27.3
+       "f1": 22.4,
+       "f2": 22.2
       },
       {
        "name": "Submission",
-       "f1": 10.2,
-       "f2": 0.8
+       "f1": 12.7,
+       "f2": 0.9
       },
       {
        "name": "Decision",
-       "f1": 31.2,
-       "f2": 11.6
+       "f1": 33,
+       "f2": 8.8
       }
      ],
-     "decisionPct": 42.8,
+     "decisionPct": 41.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 17
+       "pct": 19
       },
       {
        "r": 2,
-       "pct": 15
+       "pct": 15.5
       },
       {
        "r": 3,
-       "pct": 11.4
+       "pct": 11.2
       },
       {
        "r": 4,
-       "pct": 7.7
+       "pct": 7.2
       },
       {
        "r": 5,
-       "pct": 6.1
+       "pct": 5.2
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 24,
-      "over": 76
+      "under": 26.2,
+      "over": 73.8
      },
      {
       "line": 2.5,
-      "under": 37.6,
-      "over": 62.4
+      "under": 40,
+      "over": 60
      },
      {
       "line": 3.5,
-      "under": 47.1,
-      "over": 52.9
+      "under": 49.2,
+      "over": 50.8
      },
      {
       "line": 4.5,
-      "under": 54.1,
-      "over": 45.9
+      "under": 55.5,
+      "over": 44.5
      }
     ],
     "composites": {
@@ -494,33 +494,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.36,
-       "f2": 2.66,
-       "delta": -2.3
+       "f1": 0.35,
+       "f2": 2.22,
+       "delta": -1.87
       },
       {
        "name": "Chin",
-       "f1": 1.18,
-       "f2": 0.9,
-       "delta": 0.27
+       "f1": 1.2,
+       "f2": 0.95,
+       "delta": 0.26
       },
       {
        "name": "Output",
-       "f1": 2.29,
-       "f2": 0.41,
-       "delta": 1.87
+       "f1": 1.86,
+       "f2": 0.23,
+       "delta": 1.63
       },
       {
        "name": "Grappling",
-       "f1": 1.98,
-       "f2": -0.26,
-       "delta": 2.23
+       "f1": 2.37,
+       "f2": -0.24,
+       "delta": 2.6
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.68,
-       "f2": 0.97,
-       "delta": -0.3
+       "f1": 0.27,
+       "f2": 0.91,
+       "delta": -0.65
       },
       {
        "name": "Cardio",
@@ -539,17 +539,17 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.77,
-      "f2": 0.57
+      "f1": 0.73,
+      "f2": 0.54
      },
      {
       "name": "Counter",
-      "f1": 0.7,
-      "f2": 0.9
+      "f1": 0.68,
+      "f2": 0.87
      },
      {
       "name": "Wrestler",
-      "f1": 0.78,
+      "f1": 0.82,
       "f2": 0.46
      },
      {
@@ -565,7 +565,7 @@
      {
       "name": "Early Vulnerability",
       "f1": 0,
-      "f2": 0.25
+      "f2": 0.24
      }
     ],
     "modifiers": [
@@ -603,37 +603,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+2.248",
+      "value": "+2.316",
       "reads": "Toward Tsarukyan"
      },
      {
       "name": "KO threat — Tsarukyan",
-      "value": "-0.889",
+      "value": "-0.944",
       "reads": "Below-avg"
      },
      {
       "name": "KO threat — Ruffy",
-      "value": "+1.664",
+      "value": "+1.192",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Tsarukyan",
-      "value": "+1.182",
+      "value": "+1.577",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Ruffy",
-      "value": "-0.631",
+      "value": "-0.365",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "33.1%",
+      "value": "39.8%",
       "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "66.9%",
+      "value": "60.2%",
       "reads": ""
      },
      {
@@ -643,7 +643,7 @@
      },
      {
       "name": "GBM P(Tsarukyan wins)",
-      "value": "58.9% calibrated  (HT 72.8%)",
+      "value": "66.3% calibrated  (HT 74.5%)",
       "reads": ""
      }
     ],
@@ -666,13 +666,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Tsarukyan 60.2% over five rounds, and the model's layers disagree sharply on the margin. The hand-tuned side is keen at 72.8%, the GBM far more measured at 58.9%, and the final number sits with the GBM. Elo is firmly with the Armenian: 2227 to 1971, a 256-point gap, with Tsarukyan's number built over 12 lightweight bouts against a 1.25 strength-of-schedule multiplier. The composites explain why he's favoured: output +2.29, grappling +1.98, chin +1.18 and wrestling defence +0.68, all at full trust over 147 minutes. His decision edge of +2.25 is one of the largest on the card.",
-     "Ruffy brings the most dangerous single number in the fight: power +2.66. Five of his six UFC wins are knockouts, the last two over Rafael Fiziev and Michael Chandler. Reach is his other physical edge (190.5cm to 182.9cm, reach +1.88), and he stops 87% of takedown attempts, a wrestling-defence composite of +0.97 that is better than Tsarukyan's. His KO threat (1.66) is the fight's best by a distance; Tsarukyan's reads -0.89. The caution is sample depth. Ruffy's trust is 0.84 on 58 minutes, but his decision trust is just 0.17, so the model has almost no evidence on how he looks in rounds three to five. And the one time he was taken down and kept there, Benoit Saint Denis submitted him in round two.",
-     "The method split is a clean style contrast. Tsarukyan wins 31.2% by decision, 18.8% by KO and 10.2% by submission (sub threat +1.18). Ruffy's 39.8% is 27.3% knockout, 11.6% decision and almost no submissions. The KO edge belongs to Ruffy, and everything longer belongs to Tsarukyan. Ruffy's window is early: round-one finishes run 17.0% and round two 15.0%, tapering to 6.1% in round five. The blended O/U puts Over 2.5 at 62.4%, Over 3.5 at 52.9% and Over 4.5 at 45.9%, and 42.8% go the distance. Tsarukyan returns from a 297-day layoff (the Dan Hooker submission last November), inside the range where the model applies no penalty."
+     "Tsarukyan 68.1% over five rounds. The model's layers still disagree on the margin, but less than before: the hand-tuned side is at 74.5%, the GBM at 66.3%. Elo is firmly with the Armenian: 2227 to 1971, a 256-point gap, with Tsarukyan's number built over 12 lightweight bouts. The composites explain why he's favoured: grappling +2.37, output +1.86 and chin +1.20, all at full trust over 147 minutes. His decision edge of +2.32 is one of the largest on the card.",
+     "Ruffy brings the most dangerous single number in the fight: power +2.22. Five of his six UFC wins are knockouts, the last two over Rafael Fiziev and Michael Chandler. Reach is his other physical edge (190.5cm to 182.9cm, reach +1.88), and he stops 87% of takedown attempts, a wrestling-defence composite of +0.91 that is well ahead of Tsarukyan's +0.27. His KO threat (1.19) is the only positive one in the fight; Tsarukyan's reads -0.94. The caution is sample depth. Ruffy's trust is 0.84 on 58 minutes, but his decision trust is just 0.17, so the model has almost no evidence on how he looks in rounds three to five. And the one time he was taken down and kept there, Benoit Saint Denis submitted him in round two.",
+     "The method split is a clean style contrast. Tsarukyan wins 33.0% by decision, 22.4% by KO and 12.7% by submission (sub threat +1.58). Ruffy's 31.9% is 22.2% knockout, 8.8% decision and almost no submissions. The knockout is Ruffy's route, and everything longer belongs to Tsarukyan. Most finishes come early: round one 19.0% and round two 15.5%, tapering to 5.2% in round five. The blended O/U puts Over 2.5 at 60.0%, Over 3.5 at 50.8% and Over 4.5 at 44.5%, and 41.8% go the distance. Tsarukyan returns from a 297-day layoff (the Dan Hooker submission last November), inside the range where the model applies no penalty."
     ],
     "synopsis": {
      "lean": "Arman Tsarukyan",
-     "body": "A pure style clash: the division's best output-and-grappling profile against the card's biggest power composite. Over five rounds the depth of Tsarukyan's game wins out, 60.2%, half of it on the cards. Ruffy's route is an early knockout (27.3%). His reach, 87% takedown defence and KO threat make that real, and the GBM rates his chances well above what the hand-tuned layer does. The longer it goes, the more the model trusts Tsarukyan, and it has almost no data on Ruffy past round two."
+     "body": "A pure style clash: an elite grappling-and-output profile against the card's biggest power composite. Over five rounds the depth of Tsarukyan's game wins out, 68.1%, nearly half of it on the cards. Ruffy's route is an early knockout (22.2%), and his reach, 87% takedown defence and KO threat make that real. The longer it goes, the more the model trusts Tsarukyan, and it has almost no data on Ruffy past round two."
     }
    }
   },
@@ -687,52 +687,52 @@
      "f1Short": "Moicano",
      "f2Short": "Nolan",
      "modelProb": {
-      "f1": 45.6,
-      "f2": 54.4
+      "f1": 42,
+      "f2": 58
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 12.3,
-       "f2": 23.9
+       "f1": 11.6,
+       "f2": 25.2
       },
       {
        "name": "Submission",
-       "f1": 11.7,
-       "f2": 7
+       "f1": 12.8,
+       "f2": 7.1
       },
       {
        "name": "Decision",
-       "f1": 21.5,
-       "f2": 23.5
+       "f1": 17.6,
+       "f2": 25.6
       }
      ],
-     "decisionPct": 45,
+     "decisionPct": 43.3,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 31.7
+       "pct": 32.6
       },
       {
        "r": 2,
-       "pct": 16.2
+       "pct": 16.7
       },
       {
        "r": 3,
-       "pct": 7.1
+       "pct": 7.4
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 39.2,
-      "over": 60.8
+      "under": 40.3,
+      "over": 59.7
      },
      {
       "line": 2.5,
-      "under": 51.3,
-      "over": 48.7
+      "under": 52.8,
+      "over": 47.2
      }
     ],
     "composites": {
@@ -740,33 +740,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.15,
-       "f2": 0.29,
-       "delta": -0.44
+       "f1": -0.22,
+       "f2": 0.07,
+       "delta": -0.28
       },
       {
        "name": "Chin",
-       "f1": -0.85,
-       "f2": -0.88,
-       "delta": 0.03
+       "f1": -0.71,
+       "f2": -0.73,
+       "delta": 0.02
       },
       {
        "name": "Output",
-       "f1": 0.7,
-       "f2": 0.83,
-       "delta": -0.13
+       "f1": -0.11,
+       "f2": 0.62,
+       "delta": -0.73
       },
       {
        "name": "Grappling",
-       "f1": 0.39,
-       "f2": -0.26,
-       "delta": 0.64
+       "f1": 0.46,
+       "f2": -0.25,
+       "delta": 0.71
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.46,
-       "f2": 0.08,
-       "delta": 0.39
+       "f1": 0,
+       "f2": -0.12,
+       "delta": 0.13
       },
       {
        "name": "Cardio",
@@ -785,17 +785,17 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.59,
-      "f2": 0.61
+      "f1": 0.49,
+      "f2": 0.59
      },
      {
       "name": "Counter",
-      "f1": 0.61,
-      "f2": 0.61
+      "f1": 0.58,
+      "f2": 0.57
      },
      {
       "name": "Wrestler",
-      "f1": 0.57,
+      "f1": 0.58,
       "f2": 0.46
      },
      {
@@ -805,13 +805,13 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.35,
-      "f2": 0.46
+      "f1": 0.34,
+      "f2": 0.43
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.54,
-      "f2": 0.95
+      "f1": 0.52,
+      "f2": 0.92
      }
     ],
     "modifiers": [
@@ -849,37 +849,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.132",
-      "reads": "Toward Moicano"
+      "value": "-0.317",
+      "reads": "Toward Nolan"
      },
      {
       "name": "KO threat — Moicano",
-      "value": "+0.619",
+      "value": "+0.407",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Nolan",
-      "value": "+1.172",
+      "value": "+0.811",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Moicano",
-      "value": "+0.421",
+      "value": "+0.694",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Nolan",
-      "value": "-0.595",
+      "value": "-0.260",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "22.6%",
+      "value": "26.8%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "77.4%",
+      "value": "73.2%",
       "reads": ""
      },
      {
@@ -889,7 +889,7 @@
      },
      {
       "name": "GBM P(Moicano wins)",
-      "value": "49.0% calibrated  (HT 50.6%)",
+      "value": "40.8% calibrated  (HT 38.5%)",
       "reads": ""
      }
     ],
@@ -912,13 +912,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Nolan 54.4%, against the Elo. Moicano holds a 184-point rating edge (2041 on 19 lightweight bouts to 1857 on 7), and both of the model's layers call it close to a coin flip: the hand-tuned side has Moicano at 50.6%, the GBM has Nolan at 51.0%. The model is pricing age and damage. Moicano is 37.3 (age factor 0.87), carries a chin-damage modifier of 0.63, and is 1-2 in his last three, including the first-round submission loss to Islam Makhachev. Nolan is 26.5, 11-1, and has won his last four.",
-     "On the composites it's close. Nolan edges output (+0.83 to +0.70) and power (+0.29 to -0.15), and the 6'3\" southpaw has 2.5cm more reach (185.4 to 182.9). Moicano has the grappling (+0.39 to -0.26) and the better wrestling defence (+0.46 to +0.08), and his sub threat (+0.42) is the only positive one in the fight; Nolan's is -0.60. Both chins are poor, -0.85 and -0.88. Nolan's trust is 0.79 on 55 minutes, so his profile is still shrunk a little toward the divisional mean.",
-     "The split favours Nolan standing: 23.9% by KO (KO threat 1.17 to 0.62) and 23.5% on the cards. Moicano's 45.6% is spread evenly: 12.3% KO, 11.7% submission, 21.5% decision. The decision edge is essentially neutral (+0.13). With two leaky chins this reads as a quick fight. The sim finishes 31.7% in round one, and the blended O/U has Over 1.5 at 60.8% and Over 2.5 at 48.7%. Only 45.0% reach the cards."
+     "Nolan 58.0%, against the Elo. Moicano holds a 184-point rating edge (2041 on 19 lightweight bouts to 1857 on 7), but both of the model's layers take Nolan: the GBM at 59.2%, the hand-tuned side at 61.5%. The model is pricing age, damage and recent form. Moicano is 37.3 (age factor 0.87), carries a chin-damage modifier of 0.63, and is 1-2 in his last three, including the first-round submission loss to Islam Makhachev. Nolan is 26.5, 11-1, and has won his last four.",
+     "Output is where the recent-form composites separate them: Nolan +0.62, Moicano -0.11, well below Moicano's career-weighted reading. Nolan also edges power (+0.07 to -0.22), and the 6'3\" southpaw has 2.5cm more reach (185.4 to 182.9). Moicano keeps the grappling (+0.46 to -0.25) and the only real submission threat in the fight (+0.69; Nolan's is -0.26). Both chins are poor, -0.71 and -0.73. Nolan's trust is 0.79 on 55 minutes, so his profile is still shrunk a little toward the divisional mean.",
+     "The split favours Nolan standing: 25.2% by KO (KO threat 0.81 to 0.41) and 25.6% on the cards. Moicano's 42.0% is spread evenly: 11.6% KO, 12.8% submission, 17.6% decision. The decision edge (-0.32) leans Nolan. With two leaky chins this reads as a quick fight. The sim finishes 32.6% in round one, and the blended O/U has Over 1.5 at 59.7% and Over 2.5 at 47.2%. Only 43.3% reach the cards."
     ],
     "synopsis": {
      "lean": "Tom Nolan",
-     "body": "A narrow model pick against the ratings. Moicano's Elo is 184 points higher, but at 37, with a 0.63 chin-damage modifier and a 1-2 run, the model slightly prefers the 26-year-old's output, reach and knockout threat: 54.4%. Moicano's path is the scramble; he is the only man in the fight with a real submission threat. With both chins poor, this is one of the likelier early finishes on the card."
+     "body": "A model pick against the ratings. Moicano's Elo is 184 points higher, but at 37, with a 0.63 chin-damage modifier, a 1-2 run and a recent-form output reading well below his career one, the model prefers the 26-year-old's volume, reach and knockout threat: 58.0%. Moicano's path is the scramble; he is the only man in the fight with a real submission threat. With both chins poor, this is one of the likelier early finishes on the card."
     }
    }
   },
@@ -933,35 +933,35 @@
      "f1Short": "Choi",
      "f2Short": "Freire",
      "modelProb": {
-      "f1": 83.9,
-      "f2": 16.1
+      "f1": 82.3,
+      "f2": 17.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 32.7,
-       "f2": 4.3
+       "f1": 30.2,
+       "f2": 5
       },
       {
        "name": "Submission",
-       "f1": 7.4,
-       "f2": 3.8
+       "f1": 8.1,
+       "f2": 4.2
       },
       {
        "name": "Decision",
-       "f1": 43.8,
-       "f2": 8
+       "f1": 44,
+       "f2": 8.5
       }
      ],
-     "decisionPct": 51.8,
+     "decisionPct": 52.5,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 24.2
+       "pct": 23.7
       },
       {
        "r": 2,
-       "pct": 15.9
+       "pct": 15.7
       },
       {
        "r": 3,
@@ -972,13 +972,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 31.6,
-      "over": 68.4
+      "under": 31,
+      "over": 69
      },
      {
       "line": 2.5,
-      "under": 44,
-      "over": 56
+      "under": 43.3,
+      "over": 56.7
      }
     ],
     "composites": {
@@ -986,33 +986,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 1.58,
-       "f2": -0.34,
-       "delta": 1.92
+       "f1": 1.05,
+       "f2": -0.31,
+       "delta": 1.37
       },
       {
        "name": "Chin",
-       "f1": -0.9,
-       "f2": -0.01,
-       "delta": -0.89
+       "f1": -0.6,
+       "f2": 0.01,
+       "delta": -0.61
       },
       {
        "name": "Output",
-       "f1": 0.53,
-       "f2": -1.2,
-       "delta": 1.73
+       "f1": 0.75,
+       "f2": -1.18,
+       "delta": 1.93
       },
       {
        "name": "Grappling",
-       "f1": 0.21,
-       "f2": -0.17,
-       "delta": 0.38
+       "f1": 0.32,
+       "f2": -0.21,
+       "delta": 0.54
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.06,
-       "f2": -0.22,
-       "delta": 0.28
+       "f1": -0.03,
+       "f2": -0.29,
+       "delta": 0.27
       },
       {
        "name": "Cardio",
@@ -1031,18 +1031,18 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.57,
+      "f1": 0.6,
       "f2": 0.35
      },
      {
       "name": "Counter",
-      "f1": 0.78,
+      "f1": 0.72,
       "f2": 0.55
      },
      {
       "name": "Wrestler",
-      "f1": 0.53,
-      "f2": 0.48
+      "f1": 0.55,
+      "f2": 0.47
      },
      {
       "name": "Finisher",
@@ -1056,7 +1056,7 @@
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.49,
+      "f1": 0.45,
       "f2": 0.15
      }
     ],
@@ -1095,37 +1095,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+2.466",
+      "value": "+2.633",
       "reads": "Toward Choi"
      },
      {
       "name": "KO threat — Choi",
-      "value": "+1.959",
+      "value": "+1.418",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Freire",
-      "value": "+0.373",
-      "reads": "Above-avg"
+      "value": "+0.100",
+      "reads": "Near avg"
      },
      {
       "name": "Sub threat — Choi",
-      "value": "+0.332",
+      "value": "+0.481",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Freire",
-      "value": "-0.206",
-      "reads": "Below-avg"
+      "value": "-0.187",
+      "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "24.5%",
+      "value": "27.2%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "75.5%",
+      "value": "72.8%",
       "reads": ""
      },
      {
@@ -1135,7 +1135,7 @@
      },
      {
       "name": "GBM P(Choi wins)",
-      "value": "82.9% calibrated  (HT 90.5%)",
+      "value": "82.4% calibrated  (HT 89.9%)",
       "reads": ""
      }
     ],
@@ -1158,13 +1158,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Choi 83.9%, one of the widest lines on the card, and every layer agrees: GBM 82.9%, hand-tuned 90.5%, Elo +306 (1831 to 1525). The Elo is a UFC number, and Freire's 1525 rests on three UFC bouts. He is 1-2, all decisions: losses to Yair Rodriguez and Aaron Pico, a win over Dan Ige. His 37-9 career, almost all of it in Bellator, reaches the model only through the pre-UFC features (an 82% pre-UFC win rate).",
-     "What the model has seen of Freire in the UFC is 45 minutes of a fighter now 39. Output -1.20, reach -2.02 (170.2cm against Choi's 177.8cm), age factor 0.82, trust 0.64, and 3.1 head strikes absorbed per minute. Choi arrives on a three-fight knockout streak (Bill Algeo, Nate Landwehr and Daniel Santos, all stopped in rounds two or three), and his power composite of +1.58 is the biggest edge in the fight. His KO threat is 1.96 to Freire's 0.37, and the decision edge (+2.47) is the largest on the card.",
-     "Choi has risks of his own: a -0.90 chin with a 0.75 chin-damage modifier, 2.9 head strikes absorbed per minute, and an age factor of 0.92 at 35.4. But Freire's finishing routes barely register (4.3% by KO, 3.8% by submission), and only 8.0% of outcomes are Freire decisions. Choi's 83.9% splits 43.8% decision and 32.7% KO. In total 51.8% go the distance; the blended O/U has Over 1.5 at 68.4% and Over 2.5 at 56.0%. One correction was made before this run: Choi's pre-UFC row was a 0-0 placeholder and now carries his real 11-1 Sherdog record (8 KO)."
+     "Choi 82.3%, one of the widest lines on the card, and every layer agrees: GBM 82.4%, hand-tuned 89.9%, Elo +306 (1831 to 1525). The Elo is a UFC number, and Freire's 1525 rests on three UFC bouts. He is 1-2, all decisions: losses to Yair Rodriguez and Aaron Pico, a win over Dan Ige. His 37-9 career, almost all of it in Bellator, reaches the model only through the pre-UFC features (an 82% pre-UFC win rate).",
+     "What the model has seen of Freire in the UFC is 45 minutes of a fighter now 39. Output -1.18, reach -2.02 (170.2cm against Choi's 177.8cm), age factor 0.82, trust 0.64, and 3.1 head strikes absorbed per minute. Choi arrives on a three-fight knockout streak (Bill Algeo, Nate Landwehr and Daniel Santos, all stopped in rounds two or three), and his power composite reads +1.05 to Freire's -0.31. His KO threat is 1.42 to Freire's 0.10, and the decision edge (+2.63) is the largest on the card.",
+     "Choi has risks of his own: a -0.60 chin with a 0.75 chin-damage modifier, 2.9 head strikes absorbed per minute, and an age factor of 0.92 at 35.4. But Freire's finishing routes barely register (5.0% by KO, 4.2% by submission), and only 8.5% of outcomes are Freire decisions. Choi's 82.3% splits 44.0% decision and 30.2% KO. In total 52.5% go the distance; the blended O/U has Over 1.5 at 69.0% and Over 2.5 at 56.7%. One correction was made before this run: Choi's pre-UFC row was a 0-0 placeholder and now carries his real 11-1 Sherdog record (8 KO)."
     ],
     "synopsis": {
      "lean": "Doo Ho Choi",
-     "body": "The model has never seen the Freire who ruled Bellator. It has seen three UFC decisions from a fighter now 39, with low output and a large reach deficit. Against a Choi on a three-fight knockout run, that makes Choi an 83.9% favourite with about a one-in-three chance of a stoppage. Freire's case rests on experience and on Choi's -0.90 chin, and the model gives him 16.1%."
+     "body": "The model has never seen the Freire who ruled Bellator. It has seen three UFC decisions from a fighter now 39, with low output and a large reach deficit. Against a Choi on a three-fight knockout run, that makes Choi an 82.3% favourite with close to a one-in-three chance of a stoppage. Freire's case rests on experience and on Choi's -0.60 chin, and the model gives him 17.7%."
     }
    }
   },
@@ -1179,31 +1179,31 @@
      "f1Short": "Baraniewski",
      "f2Short": "Menifield",
      "modelProb": {
-      "f1": 59,
-      "f2": 41
+      "f1": 57.8,
+      "f2": 42.2
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 39.4,
-       "f2": 13.4
+       "f1": 35.8,
+       "f2": 13.9
       },
       {
        "name": "Submission",
-       "f1": 3.1,
-       "f2": 8.1
+       "f1": 3.3,
+       "f2": 9.8
       },
       {
        "name": "Decision",
-       "f1": 16.4,
-       "f2": 19.5
+       "f1": 18.7,
+       "f2": 18.5
       }
      ],
-     "decisionPct": 35.9,
+     "decisionPct": 37.2,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 42
+       "pct": 40.6
       },
       {
        "r": 2,
@@ -1218,13 +1218,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 49.5,
-      "over": 50.5
+      "under": 48.1,
+      "over": 51.9
      },
      {
       "line": 2.5,
-      "under": 61,
-      "over": 39
+      "under": 59.7,
+      "over": 40.3
      }
     ],
     "composites": {
@@ -1232,33 +1232,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.58,
-       "f2": 0.42,
-       "delta": 0.16
+       "f1": 0.26,
+       "f2": 0.29,
+       "delta": -0.03
       },
       {
        "name": "Chin",
-       "f1": -0.15,
-       "f2": -1.05,
-       "delta": 0.9
+       "f1": -0.14,
+       "f2": -1.13,
+       "delta": 0.99
       },
       {
        "name": "Output",
-       "f1": 0.09,
-       "f2": 0.16,
-       "delta": -0.07
+       "f1": 0.07,
+       "f2": -0.1,
+       "delta": 0.18
       },
       {
        "name": "Grappling",
-       "f1": 0.16,
-       "f2": -0.14,
-       "delta": 0.29
+       "f1": 0.09,
+       "f2": -0.22,
+       "delta": 0.31
       },
       {
        "name": "Wrestling Def",
        "f1": 0.06,
-       "f2": 0.49,
-       "delta": -0.43
+       "f2": 0.2,
+       "delta": -0.14
       },
       {
        "name": "Cardio",
@@ -1278,17 +1278,17 @@
      {
       "name": "Pressure",
       "f1": 0.52,
-      "f2": 0.52
+      "f2": 0.48
      },
      {
       "name": "Counter",
-      "f1": 0.58,
-      "f2": 0.69
+      "f1": 0.54,
+      "f2": 0.66
      },
      {
       "name": "Wrestler",
-      "f1": 0.52,
-      "f2": 0.5
+      "f1": 0.51,
+      "f2": 0.48
      },
      {
       "name": "Finisher",
@@ -1297,8 +1297,8 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.91,
-      "f2": 0.59
+      "f1": 0.86,
+      "f2": 0.57
      },
      {
       "name": "Early Vulnerability",
@@ -1341,37 +1341,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.501",
+      "value": "-0.178",
       "reads": "Toward Menifield"
      },
      {
       "name": "KO threat — Baraniewski",
-      "value": "+1.505",
+      "value": "+1.262",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Menifield",
-      "value": "+0.787",
+      "value": "+0.641",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Baraniewski",
-      "value": "-0.189",
+      "value": "-0.043",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Menifield",
-      "value": "-0.171",
-      "reads": "Near avg"
+      "value": "-0.250",
+      "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "15.1%",
+      "value": "16.5%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "84.9%",
+      "value": "83.5%",
       "reads": ""
      },
      {
@@ -1381,7 +1381,7 @@
      },
      {
       "name": "GBM P(Baraniewski wins)",
-      "value": "58.8% calibrated  (HT 53.6%)",
+      "value": "56.0% calibrated  (HT 58.6%)",
       "reads": ""
      }
     ],
@@ -1404,13 +1404,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Baraniewski 59.0%, with an Elo asterisk: the model is taking the lower-rated man. Menifield carries a roughly 80-point Elo edge (1818 to 1735) built over 20 light heavyweight bouts, while Baraniewski's 1735 is a provisional number from four fights. Both engines still land on the Pole. The GBM has him at 58.8%, the hand-tuned layer at a more cautious 53.6%. The case rests less on what Baraniewski has shown, because the model has barely seen him, than on what Menifield has shown. His chin reads -1.05, his chin-damage modifier is 0.46 (Baraniewski's is 1.00) and his age factor is 0.83 at 38.9. Four of his six UFC losses are knockouts, most recently the first-round stoppage by Volkan Oezdemir last November.",
-     "The other side of the ledger is almost empty. Baraniewski's four tracked bouts (DWCS plus UFC wins over Ibo Aslan, Austen Lane and Junior Tafa) all ended in round one and add up to 3.7 minutes of cage time. His minutes-based trust is therefore 0.05, so almost every composite is pulled back to the divisional mean: output +0.09, grappling +0.16 and chin -0.15 mean the model doesn't know yet, and they aren't scouting. Even so, his power survives the shrinkage at +0.58, the best number in the fight, and his KO threat (1.51 against Menifield's 0.79) is about double. The data can't say anything about round two. His decision trust is 0.00, and he absorbed 7.8 head strikes per minute in that tiny sample, a number the model barely uses at this trust level.",
-     "Physically, Menifield has the tools to drag it long. The two are the same height (6'0\"), but he has 7.6cm more reach (193.0 to 185.4): a reach composite of -0.01 against Baraniewski's -1.06, plus wrestling defence of +0.49. The decision edge (-0.50) points his way and shows up in the method split. Menifield is the favourite on the cards (19.5% to 16.4%), and nearly half of his 41.0% comes by decision. Baraniewski's path is the knockout: 39.4% by KO, two-thirds of his total. The sim finishes 64.1% of fights, 42.0% in round one. The blended O/U puts Over 1.5 at a coin flip (50.5%) and Over 2.5 at 39.0%."
+     "Baraniewski 57.8%, with an Elo asterisk: the model is taking the lower-rated man. Menifield carries an 83-point Elo edge (1818 to 1735) built over 20 light heavyweight bouts, while Baraniewski's 1735 is a provisional number from four fights. Both engines still land on the Pole: the hand-tuned layer at 58.6%, the GBM at 56.0%. The case rests less on what Baraniewski has shown, because the model has barely seen him, than on what Menifield has shown. His chin reads -1.13, his chin-damage modifier is 0.46 (Baraniewski's is 1.00) and his age factor is 0.83 at 38.9. Four of his six UFC losses are knockouts, most recently the first-round stoppage by Volkan Oezdemir last November.",
+     "The other side of the ledger is almost empty. Baraniewski's four tracked bouts (DWCS plus UFC wins over Ibo Aslan, Austen Lane and Junior Tafa) all ended in round one and add up to 3.7 minutes of cage time. His minutes-based trust is therefore 0.05, so almost every composite is pulled back to the divisional mean: output +0.07, grappling +0.09, chin -0.14 and power +0.26 mean the model doesn't know yet, and they aren't scouting. What does register is the matchup. His KO threat (1.26 against Menifield's 0.64) is about double, because it is measured against Menifield's chin. The data can't say anything about round two. His decision trust is 0.00, and he absorbed 7.8 head strikes per minute in that tiny sample, a number the model barely uses at this trust level.",
+     "Physically, Menifield has the tools to drag it long. The two are the same height (6'0\"), but he has 7.6cm more reach (193.0 to 185.4): a reach composite of -0.01 against Baraniewski's -1.06, plus wrestling defence of +0.20. The decision edge (-0.18) leans his way, only slightly, and the decision outcomes are level (18.7% Baraniewski, 18.5% Menifield), which is close to half of Menifield's 42.2%. Baraniewski's path is the knockout: 35.8% by KO, well over half his total. The sim finishes 62.8% of fights, 40.6% in round one. The blended O/U puts Over 1.5 at 51.9% and Over 2.5 at 40.3%."
     ],
     "synopsis": {
      "lean": "Iwo Baraniewski",
-     "body": "The model is weighing a durability question against a sample-size question, and it trusts the durability question more. Menifield is 38.9, has been knocked out four times and carries a -1.05 chin with a 0.46 chin-damage modifier. Baraniewski is 9-0 but has fought only 3.7 minutes across four tracked bouts, so his profile is almost entirely prior. The edge comes from his power surviving that shrinkage and from everything the model knows about Menifield: 59.0%, against an 80-point Elo deficit. Menifield's live route is reach and a decision, where he is the favourite."
+     "body": "The model is weighing a durability question against a sample-size question, and it trusts the durability question more. Menifield is 38.9, has been knocked out four times and carries a -1.13 chin with a 0.46 chin-damage modifier. Baraniewski is 9-0 but has fought only 3.7 minutes across four tracked bouts, so his profile is almost entirely prior. The edge comes from what the model knows about Menifield: 57.8%, against an 83-point Elo deficit. Menifield's live route is reach and a decision."
     }
    }
   },
@@ -1425,52 +1425,52 @@
      "f1Short": "Jourdain",
      "f2Short": "Vera",
      "modelProb": {
-      "f1": 70.1,
-      "f2": 29.9
+      "f1": 70.3,
+      "f2": 29.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 11.8,
-       "f2": 10.2
+       "f1": 11.7,
+       "f2": 9.7
       },
       {
        "name": "Submission",
-       "f1": 12.3,
-       "f2": 6.7
+       "f1": 12.1,
+       "f2": 7
       },
       {
        "name": "Decision",
-       "f1": 46,
+       "f1": 46.5,
        "f2": 13
       }
      ],
-     "decisionPct": 59,
+     "decisionPct": 59.5,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 19.8
+       "pct": 19.5
       },
       {
        "r": 2,
-       "pct": 14
+       "pct": 13.9
       },
       {
        "r": 3,
-       "pct": 7.2
+       "pct": 7.1
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 26.2,
-      "over": 73.8
+      "under": 25.8,
+      "over": 74.2
      },
      {
       "line": 2.5,
-      "under": 37.1,
-      "over": 62.9
+      "under": 36.6,
+      "over": 63.4
      }
     ],
     "composites": {
@@ -1478,33 +1478,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.37,
-       "f2": 0.61,
-       "delta": -0.25
+       "f1": -0.03,
+       "f2": 0.69,
+       "delta": -0.73
       },
       {
        "name": "Chin",
-       "f1": -0.05,
-       "f2": 0.4,
-       "delta": -0.45
+       "f1": 0.06,
+       "f2": 0.23,
+       "delta": -0.17
       },
       {
        "name": "Output",
-       "f1": 1.21,
-       "f2": -0.82,
-       "delta": 2.03
+       "f1": 1.46,
+       "f2": -1.58,
+       "delta": 3.04
       },
       {
        "name": "Grappling",
-       "f1": -0.43,
-       "f2": -0.43,
-       "delta": 0
+       "f1": -0.47,
+       "f2": -0.62,
+       "delta": 0.15
       },
       {
        "name": "Wrestling Def",
-       "f1": -0.61,
-       "f2": 0.69,
-       "delta": -1.3
+       "f1": -0.92,
+       "f2": 0.63,
+       "delta": -1.55
       },
       {
        "name": "Cardio",
@@ -1523,18 +1523,18 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.66,
-      "f2": 0.41
+      "f1": 0.69,
+      "f2": 0.32
      },
      {
       "name": "Counter",
-      "f1": 0.61,
-      "f2": 0.72
+      "f1": 0.54,
+      "f2": 0.73
      },
      {
       "name": "Wrestler",
-      "f1": 0.43,
-      "f2": 0.43
+      "f1": 0.42,
+      "f2": 0.4
      },
      {
       "name": "Finisher",
@@ -1543,13 +1543,13 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.43,
-      "f2": 0.46
+      "f1": 0.37,
+      "f2": 0.47
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.23,
-      "f2": 0.09
+      "f1": 0.21,
+      "f2": 0.12
      }
     ],
     "modifiers": [
@@ -1587,37 +1587,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.847",
+      "value": "+2.557",
       "reads": "Toward Jourdain"
      },
      {
       "name": "KO threat — Jourdain",
-      "value": "-0.130",
-      "reads": "Near avg"
+      "value": "-0.357",
+      "reads": "Below-avg"
      },
      {
       "name": "KO threat — Vera",
-      "value": "+0.721",
+      "value": "+0.689",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Jourdain",
-      "value": "-1.076",
+      "value": "-1.065",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Vera",
-      "value": "-0.008",
+      "value": "+0.029",
       "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "20.6%",
+      "value": "22.6%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "79.4%",
+      "value": "77.4%",
       "reads": ""
      },
      {
@@ -1627,7 +1627,7 @@
      },
      {
       "name": "GBM P(Jourdain wins)",
-      "value": "70.4% calibrated  (HT 78.1%)",
+      "value": "69.4% calibrated  (HT 80.0%)",
       "reads": ""
      }
     ],
@@ -1650,13 +1650,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Jourdain 70.1%: GBM 70.4%, hand-tuned 78.1%, Elo +89 (1902 to 1813). The form lines run in opposite directions. Jourdain has won three straight at bantamweight (Victor Henry and Davey Grant by submission, Kyler Phillips on the cards), while Vera has lost four in a row, all decisions: Sean O'Malley, Deiveson Figueiredo, Aiemann Zahabi and David Martinez. His recent-three win rate is 0.00.",
-     "Output drives the pick: Jourdain +1.21 against Vera's -0.82, the gap that produces a +1.85 decision edge. Otherwise Vera has the better tools on paper: power +0.61 (to +0.37), chin +0.40 (to -0.05), wrestling defence +0.69 (to -0.61), and 2.5cm more reach. His KO threat (0.72) is the fight's best, and Jourdain's is slightly negative. But Vera has spent 354 UFC minutes getting out-worked lately and absorbs 3.3 head strikes per minute. Jourdain's profile pools his featherweight career (the all-fights basis).",
-     "This is one of the card's most decision-heavy fights: 59.0% reach the cards, and Jourdain takes 46.0% of all outcomes that way. Vera's 29.9% splits 10.2% KO, 6.7% submission and 13.0% decision. Jourdain's finishing is balanced (11.8% KO, 12.3% submission). The blended O/U has Over 1.5 at 73.8% and Over 2.5 at 62.9%. Vera's record was refreshed to 23-12-1 before this run."
+     "Jourdain 70.3%: GBM 69.4%, hand-tuned 80.0%, Elo +89 (1902 to 1813). The form lines run in opposite directions. Jourdain has won three straight at bantamweight (Victor Henry and Davey Grant by submission, Kyler Phillips on the cards), while Vera has lost four in a row, all decisions: Sean O'Malley, Deiveson Figueiredo, Aiemann Zahabi and David Martinez. His recent-three win rate is 0.00.",
+     "Output drives the pick, and the recent-form composites widen the gap: Jourdain +1.46 against Vera's -1.58, behind a +2.56 decision edge. Otherwise Vera has the better tools on paper: power +0.69 (to -0.03), chin +0.23 (to +0.06), wrestling defence +0.63 (to -0.92), and 2.5cm more reach. His KO threat (0.69) is the only positive one in the fight; Jourdain's reads -0.36. But Vera's last five years are the four-fight skid and the output numbers that came with it, and he absorbs 3.3 head strikes per minute over 354 UFC minutes. Jourdain's profile pools his featherweight career (the all-fights basis).",
+     "This is one of the card's most decision-heavy fights: 59.5% reach the cards, and Jourdain takes 46.5% of all outcomes that way. Vera's 29.7% splits 9.7% KO, 7.0% submission and 13.0% decision. Jourdain's finishing is balanced (11.7% KO, 12.1% submission). The blended O/U has Over 1.5 at 74.2% and Over 2.5 at 63.4%. Vera's record was refreshed to 23-12-1 before this run."
     ],
     "synopsis": {
      "lean": "Charles Jourdain",
-     "body": "Vera still has the power, the chin and the takedown defence, but he has lost four straight decisions, and the model reads that as an output problem Jourdain is built to exploit. Jourdain is 70.1%, mostly on the scorecards. Vera's path is a counter-shot knockout, where his KO threat is the fight's best; the model gives him 29.9%."
+     "body": "Vera still has the power, the chin and the takedown defence, but he has lost four straight decisions, and the model reads that as an output problem Jourdain is built to exploit. Jourdain is 70.3%, mostly on the scorecards. Vera's path is a counter-shot knockout, where his KO threat is the fight's only positive one; the model gives him 29.7%."
     }
    }
   },
@@ -1671,35 +1671,35 @@
      "f1Short": "Gandra",
      "f2Short": "Diaz",
      "modelProb": {
-      "f1": 84.3,
-      "f2": 15.7
+      "f1": 83.1,
+      "f2": 16.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 48.3,
-       "f2": 3.4
+       "f1": 46.3,
+       "f2": 4
       },
       {
        "name": "Submission",
-       "f1": 9.2,
-       "f2": 5.2
+       "f1": 9.7,
+       "f2": 5.4
       },
       {
        "name": "Decision",
-       "f1": 26.8,
-       "f2": 7.1
+       "f1": 27.2,
+       "f2": 7.5
       }
      ],
-     "decisionPct": 33.9,
+     "decisionPct": 34.7,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 36.2
+       "pct": 35.8
       },
       {
        "r": 2,
-       "pct": 20.7
+       "pct": 20.5
       },
       {
        "r": 3,
@@ -1710,13 +1710,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 45.9,
-      "over": 54.1
+      "under": 45.3,
+      "over": 54.7
      },
      {
       "line": 2.5,
-      "under": 61.4,
-      "over": 38.6
+      "under": 60.7,
+      "over": 39.3
      }
     ],
     "composites": {
@@ -1724,33 +1724,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.54,
-       "f2": -0.27,
-       "delta": 0.81
+       "f1": 0.35,
+       "f2": -0.23,
+       "delta": 0.58
       },
       {
        "name": "Chin",
        "f1": 0.04,
-       "f2": -2.13,
-       "delta": 2.17
+       "f2": -2.03,
+       "delta": 2.07
       },
       {
        "name": "Output",
-       "f1": 0.46,
+       "f1": 0.43,
        "f2": -0.47,
-       "delta": 0.93
+       "delta": 0.9
       },
       {
        "name": "Grappling",
-       "f1": 0.01,
-       "f2": -0.31,
-       "delta": 0.32
+       "f1": 0.03,
+       "f2": -0.32,
+       "delta": 0.34
       },
       {
        "name": "Wrestling Def",
        "f1": 0.09,
-       "f2": 0,
-       "delta": 0.09
+       "f2": -0.09,
+       "delta": 0.18
       },
       {
        "name": "Cardio",
@@ -1774,8 +1774,8 @@
      },
      {
       "name": "Counter",
-      "f1": 0.58,
-      "f2": 0.48
+      "f1": 0.55,
+      "f2": 0.49
      },
      {
       "name": "Wrestler",
@@ -1789,8 +1789,8 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.88,
-      "f2": 0.11
+      "f1": 0.85,
+      "f2": 0.12
      },
      {
       "name": "Early Vulnerability",
@@ -1833,37 +1833,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.904",
+      "value": "+0.912",
       "reads": "Toward Gandra"
      },
      {
       "name": "KO threat — Gandra",
-      "value": "+2.192",
+      "value": "+1.909",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Diaz",
-      "value": "+0.031",
+      "value": "+0.070",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Gandra",
-      "value": "+0.013",
+      "value": "+0.089",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Diaz",
-      "value": "-0.344",
+      "value": "-0.349",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "18.2%",
+      "value": "19.8%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "81.8%",
+      "value": "80.2%",
       "reads": ""
      },
      {
@@ -1873,7 +1873,7 @@
      },
      {
       "name": "GBM P(Gandra wins)",
-      "value": "84.0% calibrated  (HT 90.0%)",
+      "value": "84.0% calibrated  (HT 89.8%)",
       "reads": ""
      }
     ],
@@ -1896,13 +1896,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Gandra 84.3%, the card's biggest favourite. As with Baraniewski, the case rests mostly on the other man. GBM 84.0%, hand-tuned 90.0%, Elo +171 (1685 on 3 bouts to 1514 on 4). Gandra's three UFC wins are all first-round knockouts totalling 4.8 minutes, so his trust is 0.07 and his decision trust 0.00. His composites sit near the middleweight mean; power +0.54 is the one that survives the shrinkage.",
-     "Diaz's profile is the problem. His chin reads -2.13, the worst number on the card, with a 0.54 chin-damage modifier. Three of his four UFC fights ended in knockout losses (Joe Pyfer, Zhang Mingyang, and Ateba Gautier in May), and he has absorbed 5.3 head strikes per minute. At 35.8 his age factor is 0.91. His one real physical asset is reach: 200.7cm to 188.0cm (+2.11 against -0.43), which gives him a way to keep it long.",
-     "The KO threat gap is the widest on the card, 2.19 to 0.03. Gandra wins 48.3% by knockout, 9.2% by submission and 26.8% on the cards. Diaz's 15.7% is spread thin (3.4% KO, 5.2% submission, 7.1% decision). The sim finishes 66.1% of fights, 36.2% in round one. The blended O/U has Over 1.5 at 54.1% and Over 2.5 at 38.6%. Gandra's refreshed record is 10-1; the stored 8-1 was stale."
+     "Gandra 83.1%, the card's biggest favourite. As with Baraniewski, the case rests mostly on the other man. GBM 84.0%, hand-tuned 89.8%, Elo +171 (1685 on 3 bouts to 1514 on 4). Gandra's three UFC wins are all first-round knockouts totalling 4.8 minutes, so his trust is 0.07 and his decision trust 0.00. His composites sit near the middleweight mean; power (+0.35) and output (+0.43) are the only ones clearly above it.",
+     "Diaz's profile is the problem. His chin reads -2.03, the worst number on the card, with a 0.54 chin-damage modifier. Three of his four UFC fights ended in knockout losses (Joe Pyfer, Zhang Mingyang, and Ateba Gautier in May), and he has absorbed 5.3 head strikes per minute. At 35.8 his age factor is 0.91. His one real physical asset is reach: 200.7cm to 188.0cm (+2.11 against -0.43), which gives him a way to keep it long.",
+     "The KO threat gap is one of the widest on the card, 1.91 to 0.07. Gandra wins 46.3% by knockout, 9.7% by submission and 27.2% on the cards. Diaz's 16.9% is spread thin (4.0% KO, 5.4% submission, 7.5% decision). The sim finishes 65.3% of fights, 35.8% in round one. The blended O/U has Over 1.5 at 54.7% and Over 2.5 at 39.3%. Gandra's refreshed record is 10-1; the stored 8-1 was stale."
     ],
     "synopsis": {
      "lean": "Ryan Gandra",
-     "body": "The model knows little about Gandra beyond 4.8 minutes of first-round knockouts, but it knows a great deal about Diaz: a -2.13 chin, three KO losses in four UFC fights and 5.3 head strikes absorbed per minute. That makes Gandra 84.3%, with close to half of all outcomes ending in his knockout. Diaz's reach is his only real lever. If Gandra doesn't find him early, the model has no evidence on how Gandra fights past round one."
+     "body": "The model knows little about Gandra beyond 4.8 minutes of first-round knockouts, but it knows a great deal about Diaz: a -2.03 chin, three KO losses in four UFC fights and 5.3 head strikes absorbed per minute. That makes Gandra 83.1%, with close to half of all outcomes ending in his knockout. Diaz's reach is his only real lever. If Gandra doesn't find him early, the model has no evidence on how Gandra fights past round one."
     }
    }
   },
@@ -1917,52 +1917,52 @@
      "f1Short": "O'Neill",
      "f2Short": "Moura",
      "modelProb": {
-      "f1": 65,
-      "f2": 35
+      "f1": 64.9,
+      "f2": 35.1
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 15,
-       "f2": 4.3
+       "f1": 14.4,
+       "f2": 4.2
       },
       {
        "name": "Submission",
-       "f1": 7.1,
-       "f2": 14.1
+       "f1": 7.6,
+       "f2": 13.2
       },
       {
        "name": "Decision",
        "f1": 42.9,
-       "f2": 16.6
+       "f2": 17.7
       }
      ],
-     "decisionPct": 59.5,
+     "decisionPct": 60.6,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 15.2
+       "pct": 14.7
       },
       {
        "r": 2,
-       "pct": 16.4
+       "pct": 16
       },
       {
        "r": 3,
-       "pct": 8.9
+       "pct": 8.7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 22.7,
-      "over": 77.3
+      "under": 22,
+      "over": 78
      },
      {
       "line": 2.5,
-      "under": 35.7,
-      "over": 64.3
+      "under": 34.7,
+      "over": 65.3
      }
     ],
     "composites": {
@@ -1970,33 +1970,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.89,
-       "f2": -0.3,
-       "delta": 1.18
+       "f1": 0.98,
+       "f2": -0.26,
+       "delta": 1.24
       },
       {
        "name": "Chin",
-       "f1": 0.23,
-       "f2": 0.28,
-       "delta": -0.06
+       "f1": 0.1,
+       "f2": 0.29,
+       "delta": -0.19
       },
       {
        "name": "Output",
-       "f1": 1.82,
-       "f2": 0,
-       "delta": 1.81
+       "f1": 1.79,
+       "f2": 0.04,
+       "delta": 1.75
       },
       {
        "name": "Grappling",
-       "f1": 1.16,
-       "f2": 1.91,
-       "delta": -0.75
+       "f1": 0.87,
+       "f2": 2.06,
+       "delta": -1.19
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.58,
-       "f2": 0.86,
-       "delta": -0.28
+       "f1": 0.64,
+       "f2": 0.73,
+       "delta": -0.09
       },
       {
        "name": "Cardio",
@@ -2015,18 +2015,18 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.73,
-      "f2": 0.51
+      "f1": 0.72,
+      "f2": 0.52
      },
      {
       "name": "Counter",
-      "f1": 0.68,
+      "f1": 0.7,
       "f2": 0.65
      },
      {
       "name": "Wrestler",
-      "f1": 0.67,
-      "f2": 0.77
+      "f1": 0.63,
+      "f2": 0.79
      },
      {
       "name": "Finisher",
@@ -2035,12 +2035,12 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.52,
-      "f2": 0.31
+      "f1": 0.54,
+      "f2": 0.32
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.26,
+      "f1": 0.28,
       "f2": 0.11
      }
     ],
@@ -2079,37 +2079,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.094",
+      "value": "+0.822",
       "reads": "Toward O'Neill"
      },
      {
       "name": "KO threat — O'Neill",
-      "value": "+0.703",
+      "value": "+0.786",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Moura",
-      "value": "-0.717",
+      "value": "-0.557",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — O'Neill",
-      "value": "+0.554",
+      "value": "+0.358",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Moura",
-      "value": "+1.534",
+      "value": "+1.646",
       "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "38.0%",
+      "value": "39.4%",
       "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "62.0%",
+      "value": "60.6%",
       "reads": ""
      },
      {
@@ -2119,7 +2119,7 @@
      },
      {
       "name": "GBM P(O'Neill wins)",
-      "value": "64.4% calibrated  (HT 75.2%)",
+      "value": "63.3% calibrated  (HT 71.7%)",
       "reads": ""
      }
     ],
@@ -2142,13 +2142,13 @@
      }
     ],
     "matchupAnalysis": [
-     "O'Neill 65.0%: GBM 64.4%, hand-tuned 75.2%, Elo +44 (1767 to 1722). It's a clear style contrast. O'Neill's profile is striking volume with grappling depth (output +1.82, grappling +1.16, power +0.89). Moura's is a grappler's (grappling +1.91, wrestling defence +0.86, output 0.00, power -0.30).",
-     "O'Neill's edges are range and pace: 5.1cm more reach (175.3 to 170.2; reach +1.07) and a decision edge of +1.09. The cost is defence. She absorbs 4.1 head strikes per minute to Moura's 1.2, and one of her two UFC losses was a round-two submission by Ariane da Silva. That is exactly Moura's route: her sub threat is 1.53 against O'Neill's 0.55. Moura is 2-2 over her last four, all decisions, most recently a loss to Wang Cong at catchweight in February.",
-     "The sim sends 59.5% to the cards, with O'Neill winning 42.9% that way and another 15.0% by KO. Moura's 35.0% leans on the submission (14.1%) and the cards (16.6%). Rounds one and two finish at similar rates (15.2% and 16.4%), which fits a grappler needing time to find position. The blended O/U has Over 1.5 at 77.3% and Over 2.5 at 64.3%. O'Neill comes off a first-round KO of Gabriella Fernandes in March, which ended a 19-month absence."
+     "O'Neill 64.9%: GBM 63.3%, hand-tuned 71.7%, Elo +45 (1767 to 1722). It's a clear style contrast. O'Neill's profile is striking volume with power and grappling depth (output +1.79, power +0.98, grappling +0.87). Moura's is a grappler's (grappling +2.06, wrestling defence +0.73, output +0.04, power -0.26).",
+     "O'Neill's edges are range and pace: 5.1cm more reach (175.3 to 170.2; reach +1.07) and a decision edge of +0.82. The cost is defence. She absorbs 4.1 head strikes per minute to Moura's 1.2, and one of her two UFC losses was a round-two submission by Ariane da Silva. That is exactly Moura's route: her sub threat is 1.65 against O'Neill's 0.36. Moura is 2-2 over her last four, all decisions, most recently a loss to Wang Cong at catchweight in February. That bout now counts toward her composites; catchweight fights had been left out of the composite inputs before this run.",
+     "The sim sends 60.6% to the cards, with O'Neill winning 42.9% that way and another 14.4% by KO. Moura's 35.1% leans on the cards (17.7%) and the submission (13.2%). Rounds one and two finish at similar rates (14.7% and 16.0%), which fits a grappler needing time to find position. The blended O/U has Over 1.5 at 78.0% and Over 2.5 at 65.3%. O'Neill comes off a first-round KO of Gabriella Fernandes in March, which ended a 19-month absence."
     ],
     "synopsis": {
      "lean": "Casey O'Neill",
-     "body": "The model prefers O'Neill's volume, reach and all-round depth to Moura's grappling-first game: 65.0%, most of it on the cards. Moura's path is clear and specific: the takedown and the submission (14.1%), a route O'Neill's loss to Ariane da Silva shows is open. Expect a decision more often than not."
+     "body": "The model prefers O'Neill's volume, reach and all-round depth to Moura's grappling-first game: 64.9%, most of it on the cards. Moura's path is clear and specific: the takedown and the submission (13.2%), a route O'Neill's loss to Ariane da Silva shows is open. Expect a decision more often than not."
     }
    }
   },
@@ -2163,27 +2163,27 @@
      "f1Short": "Shahbazyan",
      "f2Short": "Ferreira",
      "modelProb": {
-      "f1": 69.6,
-      "f2": 30.4
+      "f1": 70.4,
+      "f2": 29.6
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 34.2,
-       "f2": 12.6
+       "f1": 34,
+       "f2": 11.7
       },
       {
        "name": "Submission",
-       "f1": 8.9,
-       "f2": 10.5
+       "f1": 10,
+       "f2": 10.7
       },
       {
        "name": "Decision",
-       "f1": 26.5,
+       "f1": 26.3,
        "f2": 7.2
       }
      ],
-     "decisionPct": 33.7,
+     "decisionPct": 33.5,
      "roundsFinish": [
       {
        "r": 1,
@@ -2195,20 +2195,20 @@
       },
       {
        "r": 3,
-       "pct": 7.6
+       "pct": 7.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 48.4,
-      "over": 51.6
+      "under": 48.3,
+      "over": 51.7
      },
      {
       "line": 2.5,
-      "under": 62.3,
-      "over": 37.7
+      "under": 62.4,
+      "over": 37.6
      }
     ],
     "composites": {
@@ -2216,33 +2216,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 1.02,
-       "f2": 0.73,
-       "delta": 0.29
+       "f1": 0.64,
+       "f2": 0.46,
+       "delta": 0.18
       },
       {
        "name": "Chin",
-       "f1": -0.37,
-       "f2": -0.55,
-       "delta": 0.17
+       "f1": -0.28,
+       "f2": -0.48,
+       "delta": 0.2
       },
       {
        "name": "Output",
-       "f1": 0.21,
-       "f2": -0.43,
-       "delta": 0.64
+       "f1": 0.35,
+       "f2": -0.46,
+       "delta": 0.81
       },
       {
        "name": "Grappling",
-       "f1": 0.02,
-       "f2": -0.77,
-       "delta": 0.79
+       "f1": -0.03,
+       "f2": -0.83,
+       "delta": 0.8
       },
       {
        "name": "Wrestling Def",
-       "f1": -0.14,
-       "f2": -0.56,
-       "delta": 0.42
+       "f1": -0.44,
+       "f2": -0.83,
+       "delta": 0.39
       },
       {
        "name": "Cardio",
@@ -2261,18 +2261,18 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.54,
-      "f2": 0.46
+      "f1": 0.56,
+      "f2": 0.45
      },
      {
       "name": "Counter",
-      "f1": 0.72,
-      "f2": 0.7
+      "f1": 0.66,
+      "f2": 0.66
      },
      {
       "name": "Wrestler",
-      "f1": 0.5,
-      "f2": 0.38
+      "f1": 0.49,
+      "f2": 0.36
      },
      {
       "name": "Finisher",
@@ -2281,13 +2281,13 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.75,
-      "f2": 0.67
+      "f1": 0.7,
+      "f2": 0.63
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.41,
-      "f2": 0.57
+      "f1": 0.4,
+      "f2": 0.56
      }
     ],
     "modifiers": [
@@ -2325,37 +2325,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.485",
+      "value": "+1.612",
       "reads": "Toward Shahbazyan"
      },
      {
       "name": "KO threat — Shahbazyan",
-      "value": "+1.896",
+      "value": "+1.445",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Ferreira",
-      "value": "+0.907",
+      "value": "+0.544",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Shahbazyan",
-      "value": "+0.382",
+      "value": "+0.501",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Ferreira",
-      "value": "-0.701",
+      "value": "-0.551",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "26.8%",
+      "value": "29.9%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "73.2%",
+      "value": "70.1%",
       "reads": ""
      },
      {
@@ -2365,7 +2365,7 @@
      },
      {
       "name": "GBM P(Shahbazyan wins)",
-      "value": "68.3% calibrated  (HT 65.6%)",
+      "value": "69.3% calibrated  (HT 65.3%)",
       "reads": ""
      }
     ],
@@ -2388,13 +2388,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Shahbazyan 69.6%: GBM 68.3%, hand-tuned 65.6%, Elo +73 (1794 to 1721). Both men finish people and both can be finished, but Shahbazyan does more of the finishing. His power composite is +1.02 to Ferreira's +0.73, his KO threat 1.90 to 0.91, and the decision edge (+1.49) is his.",
-     "The physical gap is large. Shahbazyan is 188.0cm with a 190.5cm reach; Ferreira is 177.8cm with 182.9cm (reach -1.69). Ferreira's composites are weak almost everywhere except power: output -0.43, grappling -0.77, wrestling defence -0.56. He has also dropped two straight, a first-round knockout by Gregory Rodrigues in March and a decision to Ikram Aliskerov in June. Shahbazyan's last fight was a decision loss to Brendan Allen, but before that he knocked out Andre Muniz in round one. Both chins are below average (-0.37 and -0.55), with near-identical chin-damage modifiers (0.70 and 0.71).",
-     "This is one of the card's most finish-heavy fights: only 33.7% go the distance and 39.5% end in round one. Shahbazyan's 69.6% is 34.2% KO, 8.9% submission and 26.5% decision. Ferreira's 30.4% is mostly finishes (12.6% KO, 10.5% submission). The blended O/U makes Over 1.5 a coin flip (51.6%) and puts Over 2.5 at 37.7%. Ferreira's refreshed record is 15-4; the stored 15-2 was missing both recent losses."
+     "Shahbazyan 70.4%: GBM 69.3%, hand-tuned 65.3%, Elo +73 (1794 to 1721). Both men finish people and both can be finished, but Shahbazyan does more of the finishing. His power composite is +0.64 to Ferreira's +0.46, his KO threat 1.45 to 0.54, and the decision edge (+1.61) is his.",
+     "The physical gap is large. Shahbazyan is 188.0cm with a 190.5cm reach; Ferreira is 177.8cm with 182.9cm (reach -1.69). Ferreira's composites are weak almost everywhere except power: output -0.46, grappling -0.83, wrestling defence -0.83. He has also dropped two straight, a first-round knockout by Gregory Rodrigues in March and a decision to Ikram Aliskerov in June. Shahbazyan's last fight was a decision loss to Brendan Allen, but before that he knocked out Andre Muniz in round one. Both chins are below average (-0.28 and -0.48), with near-identical chin-damage modifiers (0.70 and 0.71).",
+     "This is one of the card's most finish-heavy fights: only 33.5% go the distance and 39.5% end in round one. Shahbazyan's 70.4% is 34.0% KO, 10.0% submission and 26.3% decision. Ferreira's 29.6% is mostly finishes (11.7% KO, 10.7% submission). The blended O/U makes Over 1.5 a coin flip (51.7%) and puts Over 2.5 at 37.6%. Ferreira's refreshed record is 15-4; the stored 15-2 was missing both recent losses."
     ],
     "synopsis": {
      "lean": "Edmen Shahbazyan",
-     "body": "Two finishers with suspect chins, but Shahbazyan has the size, the reach and the cleaner power, and Ferreira arrives off two losses with thin numbers outside his punch. Shahbazyan 69.6%, with an early finish more likely than a decision. Ferreira's knockout threat keeps the upset (30.4%) live, especially early."
+     "body": "Two finishers with suspect chins, but Shahbazyan has the size, the reach and the cleaner power, and Ferreira arrives off two losses with thin numbers outside his punch. Shahbazyan 70.4%, with an early finish more likely than a decision. Ferreira's knockout threat keeps the upset (29.6%) live, especially early."
     }
    }
   },
@@ -2409,31 +2409,31 @@
      "f1Short": "Tuivasa",
      "f2Short": "Despaigne",
      "modelProb": {
-      "f1": 54.2,
-      "f2": 45.8
+      "f1": 48.9,
+      "f2": 51.1
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 34,
-       "f2": 22.1
+       "f1": 29.4,
+       "f2": 26.1
       },
       {
        "name": "Submission",
-       "f1": 4.3,
-       "f2": 4.7
+       "f1": 4.7,
+       "f2": 4.8
       },
       {
        "name": "Decision",
-       "f1": 15.8,
-       "f2": 19.1
+       "f1": 14.9,
+       "f2": 20.2
       }
      ],
-     "decisionPct": 34.9,
+     "decisionPct": 35,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 37.7
+       "pct": 37.6
       },
       {
        "r": 2,
@@ -2448,13 +2448,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 46.7,
-      "over": 53.3
+      "under": 46.6,
+      "over": 53.4
      },
      {
       "line": 2.5,
-      "under": 61.1,
-      "over": 38.9
+      "under": 60.9,
+      "over": 39.1
      }
     ],
     "composites": {
@@ -2462,33 +2462,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.68,
-       "f2": 0.22,
-       "delta": 0.47
+       "f1": 0.38,
+       "f2": 0.2,
+       "delta": 0.18
       },
       {
        "name": "Chin",
-       "f1": -0.82,
-       "f2": 0.16,
-       "delta": -0.98
+       "f1": -0.95,
+       "f2": 0.14,
+       "delta": -1.09
       },
       {
        "name": "Output",
-       "f1": -0.83,
-       "f2": -0.08,
-       "delta": -0.75
+       "f1": -1.81,
+       "f2": -0.19,
+       "delta": -1.62
       },
       {
        "name": "Grappling",
-       "f1": -0.79,
-       "f2": -0.62,
-       "delta": -0.17
+       "f1": -0.91,
+       "f2": -0.65,
+       "delta": -0.27
       },
       {
        "name": "Wrestling Def",
-       "f1": -0.18,
-       "f2": -0.25,
-       "delta": 0.08
+       "f1": -0.48,
+       "f2": -0.44,
+       "delta": -0.03
       },
       {
        "name": "Cardio",
@@ -2507,18 +2507,18 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.41,
-      "f2": 0.49
+      "f1": 0.3,
+      "f2": 0.48
      },
      {
       "name": "Counter",
-      "f1": 0.7,
-      "f2": 0.57
+      "f1": 0.64,
+      "f2": 0.56
      },
      {
       "name": "Wrestler",
-      "f1": 0.38,
-      "f2": 0.39
+      "f1": 0.36,
+      "f2": 0.38
      },
      {
       "name": "Finisher",
@@ -2527,12 +2527,12 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.76,
+      "f1": 0.71,
       "f2": 0.87
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.48,
+      "f1": 0.5,
       "f2": 0.13
      }
     ],
@@ -2571,37 +2571,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-1.155",
+      "value": "-1.910",
       "reads": "Toward Despaigne"
      },
      {
       "name": "KO threat — Tuivasa",
-      "value": "-0.043",
-      "reads": "Near avg"
+      "value": "-0.329",
+      "reads": "Below-avg"
      },
      {
       "name": "KO threat — Despaigne",
-      "value": "+1.498",
+      "value": "+1.614",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Tuivasa",
-      "value": "-0.534",
+      "value": "-0.526",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Despaigne",
-      "value": "-0.475",
+      "value": "-0.301",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "11.4%",
+      "value": "15.4%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "88.6%",
+      "value": "84.6%",
       "reads": ""
      },
      {
@@ -2611,7 +2611,7 @@
      },
      {
       "name": "GBM P(Tuivasa wins)",
-      "value": "55.4% calibrated  (HT 23.4%)",
+      "value": "42.2% calibrated  (HT 16.9%)",
       "reads": ""
      }
     ],
@@ -2634,13 +2634,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Tuivasa 54.2%, and this is the card's sharpest split between the model's two layers. The hand-tuned layer makes Despaigne a clear favourite (Tuivasa just 23.4%); the GBM flips it to 55.4% Tuivasa, and the final number follows the GBM. Elo sides with Tuivasa by 159 points (1497 to 1339), but his 1497 is the residue of six straight losses, the last four being Marcin Tybura (a round-one submission) and three decisions to Jairzinho Rozenstruik, Tallison Teixeira and Louie Sutherland. Despaigne's 1339 comes from only three UFC bouts (1-2).",
-     "The hand-tuned case for Despaigne is physical. At 6'7\" he has a 213.4cm reach to Tuivasa's 190.5cm (reach +2.23 to -0.98), a decision edge of -1.16 in his favour, and the fight's best KO threat (1.50; Tuivasa's is -0.04). Tuivasa's composites are poor outside his punch: output -0.83, grappling -0.79, chin -0.82 with a 0.66 chin-damage modifier. What pulls the GBM the other way is how little, and how long ago, Despaigne has shown anything. He has 30 minutes of UFC evidence (trust 0.43), is 38.0 (age factor 0.85), and hasn't fought since October 2024: 696 days, the only layoff on the card long enough to draw a penalty (layoff factor 0.91). His two UFC losses were both decisions, after a first-round knockout of Josh Parisian.",
-     "Both routes run through a knockout. Tuivasa wins 34.0% by KO (seven of his eight UFC wins came that way), Despaigne 22.1%. Only 34.9% go the distance and 37.7% end in round one. The blended O/U has Over 1.5 at 53.3% and Over 2.5 at 38.9%. Despaigne's record was refreshed to 6-2 before this run."
+     "Despaigne 51.1%, the closest fight on the card and the one pick that changed sides in this re-run. Both of the model's layers take Despaigne: the hand-tuned layer clearly (83.1%), the GBM more narrowly (57.8%), and the final number lands just on his side. Elo still sides with Tuivasa by 159 points (1500 to 1341), but his 1500 is the residue of six straight losses, the last four being Marcin Tybura (a round-one submission) and three decisions to Jairzinho Rozenstruik, Tallison Teixeira and Louie Sutherland. Despaigne's 1341 comes from only three UFC bouts (1-2).",
+     "What moved is Tuivasa's profile. The model now weights each fighter's last five years more heavily, and Tuivasa's last five years are the skid: his output composite reads -1.81, the worst on the card, and his power +0.38, both well down on the career-weighted readings that made him a narrow favourite. The rest is poor too: grappling -0.91, chin -0.95 with a 0.66 chin-damage modifier. Despaigne's case is physical. At 6'7\" he has a 213.4cm reach to Tuivasa's 190.5cm (reach +2.23 to -0.98), a decision edge of -1.91 in his favour, and the fight's best KO threat (1.61; Tuivasa's is -0.33). Against that sits how little, and how long ago, Despaigne has shown anything: 30 minutes of UFC evidence (trust 0.43), age 38.0 (age factor 0.85), and no fight since October 2024, 696 days, the only layoff on the card long enough to draw a penalty (layoff factor 0.91). His two UFC losses were both decisions, after a first-round knockout of Josh Parisian.",
+     "Both routes run through a knockout. Tuivasa wins 29.4% by KO (seven of his eight UFC wins came that way), Despaigne 26.1%, and Despaigne is also the likelier winner on the cards (20.2% to 14.9%). Only 35.0% go the distance and 37.6% end in round one. The blended O/U has Over 1.5 at 53.4% and Over 2.5 at 39.1%. Despaigne's record was refreshed to 6-2 before this run."
     ],
     "synopsis": {
-     "lean": "Tai Tuivasa",
-     "body": "A weak one, and the least settled pick on the card. The hand-tuned layer likes Despaigne's enormous reach and KO threat; the GBM, which drives the final number, discounts a 38-year-old coming off nearly two years out with 30 UFC minutes to his name. Tuivasa 54.2%, despite six straight losses. Expect it to be short: nearly two-thirds of simulations end inside the distance."
+     "lean": "Robelis Despaigne",
+     "body": "The thinnest lean on the card, and the one that flipped when the model moved to recent-form composites. Tuivasa's six-fight skid now weighs on his output and power, and both layers side with Despaigne's reach and KO threat, even discounted for a 38-year-old coming off nearly two years out with 30 UFC minutes to his name. Despaigne 51.1%: a coin flip with a slight lean. Expect it to be short: nearly two-thirds of simulations end inside the distance."
     }
    }
   },
@@ -2655,31 +2655,31 @@
      "f1Short": "Steveson",
      "f2Short": "Sharaf",
      "modelProb": {
-      "f1": 78.4,
-      "f2": 21.6
+      "f1": 79.3,
+      "f2": 20.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 47.6,
-       "f2": 8.9
+       "f1": 48.4,
+       "f2": 8.1
       },
       {
        "name": "Submission",
-       "f1": 6.6,
-       "f2": 4.5
+       "f1": 6.5,
+       "f2": 4.4
       },
       {
        "name": "Decision",
-       "f1": 24.3,
+       "f1": 24.5,
        "f2": 8.2
       }
      ],
-     "decisionPct": 32.4,
+     "decisionPct": 32.7,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 38.8
+       "pct": 38.6
       },
       {
        "r": 2,
@@ -2694,13 +2694,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 48.1,
-      "over": 51.9
+      "under": 47.9,
+      "over": 52.1
      },
      {
       "line": 2.5,
-      "under": 63.2,
-      "over": 36.8
+      "under": 63,
+      "over": 37
      }
     ],
     "composites": {
@@ -2709,32 +2709,32 @@
       {
        "name": "Power",
        "f1": 0.22,
-       "f2": -0.16,
-       "delta": 0.39
+       "f2": -0.18,
+       "delta": 0.4
       },
       {
        "name": "Chin",
        "f1": 0.02,
-       "f2": -1.13,
-       "delta": 1.15
+       "f2": -1.16,
+       "delta": 1.18
       },
       {
        "name": "Output",
        "f1": 0.3,
-       "f2": -0.96,
-       "delta": 1.27
+       "f2": -1.05,
+       "delta": 1.35
       },
       {
        "name": "Grappling",
        "f1": -0.01,
-       "f2": -0.01,
-       "delta": 0
+       "f2": 0,
+       "delta": -0.01
       },
       {
        "name": "Wrestling Def",
        "f1": 0.01,
-       "f2": 0.06,
-       "delta": -0.04
+       "f2": 0.03,
+       "delta": -0.02
       },
       {
        "name": "Cardio",
@@ -2754,7 +2754,7 @@
      {
       "name": "Pressure",
       "f1": 0.55,
-      "f2": 0.39
+      "f2": 0.38
      },
      {
       "name": "Counter",
@@ -2817,37 +2817,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.043",
+      "value": "+1.111",
       "reads": "Toward Steveson"
      },
      {
       "name": "KO threat — Steveson",
-      "value": "+1.192",
+      "value": "+1.220",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Sharaf",
-      "value": "+0.096",
+      "value": "+0.080",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Steveson",
-      "value": "-0.049",
+      "value": "-0.030",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Sharaf",
-      "value": "-0.019",
+      "value": "-0.008",
       "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "17.7%",
+      "value": "17.9%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "82.3%",
+      "value": "82.1%",
       "reads": ""
      },
      {
@@ -2857,7 +2857,7 @@
      },
      {
       "name": "GBM P(Steveson wins)",
-      "value": "79.6% calibrated  (HT 91.4%)",
+      "value": "80.5% calibrated  (HT 91.8%)",
       "reads": ""
      }
     ],
@@ -2880,13 +2880,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Steveson 78.4%: GBM 79.6%, hand-tuned 91.4%, Elo +324 (1586 to 1262). Most of this is about Sharaf. Both of his UFC fights ended in round-two knockout losses (Junior Tafa, then Steven Asplund last December). His chin reads -1.13 with a 0.67 chin-damage modifier, output -0.96, and in 16 UFC minutes he absorbed 13.4 head strikes per minute, the most extreme number on the card, even allowing for his thin sample (trust 0.23).",
-     "Steveson is close to a blank page for the model. One UFC fight, a first-round knockout of Elisha Ellison in 2.5 minutes, puts his trust at 0.04 and his decision trust at 0.00, so every composite sits at the heavyweight mean (grappling -0.01, wrestling defence +0.01). His Olympic freestyle wrestling pedigree is invisible to the data. The pre-UFC features carry his 3-0 regional record, all knockouts; that row was missing until this run and was scraped from Sherdog. His real measurements were also missing: ufcstats now lists 5'11\" and a 74-inch reach, which replaced a 180cm default (reach -2.86 to -1.46) and was worth about 1.4pp to him. He still gives up 7.6cm of reach to the 6'3\" Sharaf.",
-     "The KO threat gap is 1.19 to 0.10 and the decision edge +1.04. Steveson wins 47.6% by knockout, 24.3% by decision and 6.6% by submission. Sharaf's 21.6% is split across KO (8.9%), decision (8.2%) and submission (4.5%). The sim finishes 67.6% of fights, 38.8% in round one. The blended O/U has Over 1.5 at 51.9% and Over 2.5 at 36.8%. Steveson's record was refreshed to 4-0 before this run."
+     "Steveson 79.3%: GBM 80.5%, hand-tuned 91.8%, Elo +324 (1586 to 1262). Most of this is about Sharaf. Both of his UFC fights ended in round-two knockout losses (Junior Tafa, then Steven Asplund last December). His chin reads -1.16 with a 0.67 chin-damage modifier, output -1.05, and in 16 UFC minutes he absorbed 13.4 head strikes per minute, the most extreme number on the card, even allowing for his thin sample (trust 0.23).",
+     "Steveson is close to a blank page for the model. One UFC fight, a first-round knockout of Elisha Ellison in 2.5 minutes, puts his trust at 0.04 and his decision trust at 0.00, so every composite sits at the heavyweight mean (grappling -0.01, wrestling defence +0.01). His Olympic freestyle wrestling pedigree is invisible to the data. The pre-UFC features carry his 3-0 regional record, all knockouts; that row was missing until this run and was scraped from Sherdog. His real measurements were also missing: ufcstats now lists 5'11\" and a 74-inch reach, which replaced a 180cm default (reach -2.86 to -1.46). He still gives up 7.6cm of reach to the 6'3\" Sharaf.",
+     "The KO threat gap is 1.22 to 0.08 and the decision edge +1.11. Steveson wins 48.4% by knockout, 24.5% by decision and 6.5% by submission. Sharaf's 20.7% is split across KO (8.1%), decision (8.2%) and submission (4.4%). The sim finishes 67.3% of fights, the most on the card, with 38.6% in round one. The blended O/U has Over 1.5 at 52.1% and Over 2.5 at 37.0%. Steveson's record was refreshed to 4-0 before this run."
     ],
     "synopsis": {
      "lean": "Gable Steveson",
-     "body": "The model knows almost nothing about Steveson and quite a lot about Sharaf: two knockout losses in two UFC fights and a chin that reads -1.13. That is enough for 78.4%, with close to half of all outcomes a Steveson knockout. The wrestling that defines Steveson isn't in the numbers at all, so if anything the model is flying blind on his best weapon."
+     "body": "The model knows almost nothing about Steveson and quite a lot about Sharaf: two knockout losses in two UFC fights and a chin that reads -1.16. That is enough for 79.3%, with close to half of all outcomes a Steveson knockout. The wrestling that defines Steveson isn't in the numbers at all, so if anything the model is flying blind on his best weapon."
     }
    }
   },
@@ -2901,27 +2901,27 @@
      "f1Short": "Chikadze",
      "f2Short": "Brito",
      "modelProb": {
-      "f1": 24.4,
-      "f2": 75.6
+      "f1": 25.2,
+      "f2": 74.8
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 7.7,
-       "f2": 15.9
+       "f1": 7.9,
+       "f2": 16.4
       },
       {
        "name": "Submission",
-       "f1": 1,
-       "f2": 14.4
+       "f1": 1.2,
+       "f2": 13.5
       },
       {
        "name": "Decision",
-       "f1": 15.8,
-       "f2": 45.3
+       "f1": 16.1,
+       "f2": 44.9
       }
      ],
-     "decisionPct": 61.1,
+     "decisionPct": 60.9,
      "roundsFinish": [
       {
        "r": 1,
@@ -2929,24 +2929,24 @@
       },
       {
        "r": 2,
-       "pct": 13
+       "pct": 13.1
       },
       {
        "r": 3,
-       "pct": 6.9
+       "pct": 7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 24.9,
-      "over": 75.1
+      "under": 25,
+      "over": 75
      },
      {
       "line": 2.5,
-      "under": 35.2,
-      "over": 64.8
+      "under": 35.3,
+      "over": 64.7
      }
     ],
     "composites": {
@@ -2954,33 +2954,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.19,
-       "f2": -0.11,
-       "delta": 0.3
+       "f1": -0.27,
+       "f2": -0.17,
+       "delta": -0.09
       },
       {
        "name": "Chin",
-       "f1": -0.13,
-       "f2": 1.01,
-       "delta": -1.14
+       "f1": -0.29,
+       "f2": 0.93,
+       "delta": -1.22
       },
       {
        "name": "Output",
-       "f1": 0.3,
-       "f2": 0.16,
-       "delta": 0.15
+       "f1": -0.18,
+       "f2": -0.07,
+       "delta": -0.11
       },
       {
        "name": "Grappling",
-       "f1": -0.56,
-       "f2": 0.45,
-       "delta": -1.01
+       "f1": -0.8,
+       "f2": 0.23,
+       "delta": -1.02
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.4,
-       "f2": -0.22,
-       "delta": 0.61
+       "f1": 0.24,
+       "f2": -0.31,
+       "delta": 0.55
       },
       {
        "name": "Cardio",
@@ -2999,18 +2999,18 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.54,
-      "f2": 0.54
+      "f1": 0.48,
+      "f2": 0.51
      },
      {
       "name": "Counter",
-      "f1": 0.66,
-      "f2": 0.63
+      "f1": 0.59,
+      "f2": 0.62
      },
      {
       "name": "Wrestler",
-      "f1": 0.42,
-      "f2": 0.55
+      "f1": 0.38,
+      "f2": 0.52
      },
      {
       "name": "Finisher",
@@ -3019,13 +3019,13 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.37,
-      "f2": 0.47
+      "f1": 0.3,
+      "f2": 0.46
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.21,
-      "f2": 0
+      "f1": 0.23,
+      "f2": 0.01
      }
     ],
     "modifiers": [
@@ -3063,37 +3063,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.836",
+      "value": "-1.048",
       "reads": "Toward Brito"
      },
      {
       "name": "KO threat — Chikadze",
-      "value": "-0.768",
+      "value": "-1.147",
       "reads": "Below-avg"
      },
      {
       "name": "KO threat — Brito",
-      "value": "-0.225",
-      "reads": "Below-avg"
+      "value": "-0.132",
+      "reads": "Near avg"
      },
      {
       "name": "Sub threat — Chikadze",
-      "value": "-0.360",
+      "value": "-0.506",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Brito",
-      "value": "+0.208",
-      "reads": "Above-avg"
+      "value": "+0.071",
+      "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "18.9%",
+      "value": "17.8%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "81.1%",
+      "value": "82.2%",
       "reads": ""
      },
      {
@@ -3103,7 +3103,7 @@
      },
      {
       "name": "GBM P(Chikadze wins)",
-      "value": "23.9% calibrated  (HT 16.3%)",
+      "value": "24.9% calibrated  (HT 13.4%)",
       "reads": ""
      }
     ],
@@ -3126,13 +3126,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Brito 75.6%. The GBM has him at 76.1%, the hand-tuned layer at 83.7%, and Elo agrees (+174, 1854 to 1680). The pick is mostly about Chikadze's trajectory. He is 38.1 (age factor 0.85) and has lost three straight: Arnold Allen and David Onama on the cards, then a round-two knockout by Kevin Vallejos in December. He also returns from 276 days out.",
-     "Brito's profile is the sturdier one: chin +1.01 against Chikadze's -0.13 (chin-damage modifier 0.77), grappling +0.45 against -0.56. Chikadze keeps his physical advantages: 5.1cm more reach (188.0 to 182.9; reach +1.66) and the better wrestling defence (+0.40 to -0.22). His output even edges Brito's (+0.30 to +0.16). But the decision edge is Brito's (-0.84) and Chikadze's KO threat reads negative (-0.77). Brito has won two straight, most recently a first-round submission of Jordan Leavitt.",
-     "It's the card's most decision-heavy fight: 61.1% reach the cards, 45.3% with Brito's hand raised. Brito also finishes by KO (15.9%) and submission (14.4%). Chikadze's 24.4% is mostly a decision (15.8%), with 7.7% by KO. The blended O/U has Over 1.5 at 75.1% and Over 2.5 at 64.8%. Brito's record was refreshed to 19-5-1 before this run."
+     "Brito 74.8%. The GBM has him at 75.1%, the hand-tuned layer at 86.6%, and Elo agrees (+174, 1854 to 1680). The pick is mostly about Chikadze's trajectory. He is 38.1 (age factor 0.85) and has lost three straight: Arnold Allen and David Onama on the cards, then a round-two knockout by Kevin Vallejos in December. He also returns from 276 days out.",
+     "Brito's profile is the sturdier one: chin +0.93 against Chikadze's -0.29 (chin-damage modifier 0.77), grappling +0.23 against -0.80. Chikadze keeps his physical advantages: 5.1cm more reach (188.0 to 182.9; reach +1.66) and the better wrestling defence (+0.24 to -0.31). Weighted toward recent form, though, his striking numbers have slipped just below Brito's: output -0.18 to -0.07, power -0.27 to -0.17. The decision edge is Brito's (-1.05) and Chikadze's KO threat reads -1.15. Brito has won two straight, most recently a first-round submission of Jordan Leavitt.",
+     "It's the card's most decision-heavy fight: 60.9% reach the cards, 44.9% with Brito's hand raised. Brito also finishes by KO (16.4%) and submission (13.5%). Chikadze's 25.2% is mostly a decision (16.1%), with 7.9% by KO. The blended O/U has Over 1.5 at 75.0% and Over 2.5 at 64.7%. Brito's record was refreshed to 19-5-1 before this run."
     ],
     "synopsis": {
      "lean": "Joanderson Brito",
-     "body": "A 38-year-old on a three-fight skid against a durable, younger grappler in form. Chikadze's reach and takedown defence are real, but the model gives Brito 75.6%, mostly by decision, with a meaningful submission route if the fight hits the mat."
+     "body": "A 38-year-old on a three-fight skid against a durable, younger grappler in form. Chikadze's reach and takedown defence are real, but the model gives Brito 74.8%, mostly by decision, with a meaningful submission route if the fight hits the mat."
     }
    }
   },
@@ -3147,52 +3147,52 @@
      "f1Short": "Aswell",
      "f2Short": "Yoo",
      "modelProb": {
-      "f1": 47.4,
-      "f2": 52.6
+      "f1": 41.9,
+      "f2": 58.1
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 25.9,
-       "f2": 16.3
+       "f1": 21.4,
+       "f2": 18.9
       },
       {
        "name": "Submission",
-       "f1": 3.6,
-       "f2": 12.3
+       "f1": 3.8,
+       "f2": 12.5
       },
       {
        "name": "Decision",
-       "f1": 17.8,
-       "f2": 24.1
+       "f1": 16.7,
+       "f2": 26.6
       }
      ],
-     "decisionPct": 42,
+     "decisionPct": 43.3,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 34.7
+       "pct": 33.6
       },
       {
        "r": 2,
-       "pct": 16.5
+       "pct": 16.3
       },
       {
        "r": 3,
-       "pct": 6.8
+       "pct": 6.7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 42.3,
-      "over": 57.7
+      "under": 41.2,
+      "over": 58.8
      },
      {
       "line": 2.5,
-      "under": 54.5,
-      "over": 45.5
+      "under": 53.2,
+      "over": 46.8
      }
     ],
     "composites": {
@@ -3200,33 +3200,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.83,
-       "f2": 0.25,
-       "delta": 0.58
+       "f1": 0.66,
+       "f2": 0.16,
+       "delta": 0.5
       },
       {
        "name": "Chin",
-       "f1": 0.34,
-       "f2": -0.58,
-       "delta": 0.92
+       "f1": 0.3,
+       "f2": -0.54,
+       "delta": 0.84
       },
       {
        "name": "Output",
-       "f1": 0.44,
-       "f2": 0.08,
-       "delta": 0.35
+       "f1": 0.32,
+       "f2": 0.07,
+       "delta": 0.25
       },
       {
        "name": "Grappling",
-       "f1": -0.19,
+       "f1": -0.15,
        "f2": -0.08,
-       "delta": -0.11
+       "delta": -0.07
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.21,
+       "f1": 0.14,
        "f2": -0.03,
-       "delta": 0.24
+       "delta": 0.18
       },
       {
        "name": "Cardio",
@@ -3245,17 +3245,17 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.57,
+      "f1": 0.55,
       "f2": 0.52
      },
      {
       "name": "Counter",
-      "f1": 0.65,
-      "f2": 0.54
+      "f1": 0.62,
+      "f2": 0.53
      },
      {
       "name": "Wrestler",
-      "f1": 0.49,
+      "f1": 0.5,
       "f2": 0.49
      },
      {
@@ -3265,13 +3265,13 @@
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.92,
-      "f2": 0.87
+      "f1": 0.89,
+      "f2": 0.86
      },
      {
       "name": "Early Vulnerability",
       "f1": 0.1,
-      "f2": 0.76
+      "f2": 0.75
      }
     ],
     "modifiers": [
@@ -3309,37 +3309,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.021",
+      "value": "-0.125",
       "reads": "Toward Yoo"
      },
      {
       "name": "KO threat — Aswell",
-      "value": "+1.285",
+      "value": "+1.073",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Yoo",
-      "value": "+0.076",
+      "value": "+0.020",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Aswell",
-      "value": "-0.151",
+      "value": "-0.110",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Yoo",
-      "value": "-0.225",
-      "reads": "Below-avg"
+      "value": "-0.179",
+      "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "15.6%",
+      "value": "16.3%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "84.4%",
+      "value": "83.7%",
       "reads": ""
      },
      {
@@ -3349,7 +3349,7 @@
      },
      {
       "name": "GBM P(Aswell wins)",
-      "value": "45.1% calibrated  (HT 56.0%)",
+      "value": "43.6% calibrated  (HT 52.0%)",
       "reads": ""
      }
     ],
@@ -3372,13 +3372,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Yoo 52.6%, the closest fight on the card, and the model's layers point in opposite directions. The GBM leans Yoo (54.9%), the hand-tuned layer Aswell (56.0%), and the final number follows the GBM. Elo is Yoo's by 201 points (1605 to 1404), but it is thin on both sides. Yoo's featherweight rating rests on a single bout, a first-round KO of Jeka Saragih (his loss to Daniel Santos was at catchweight). Aswell's 1404 reflects a 1-4 UFC run.",
-     "Aswell's four UFC losses were all decisions, and his one win was a first-round knockout of Lucas Almeida. His profile says the same: power +0.83, chin +0.34, output +0.44, at a trust of 0.88 over 62 minutes. His KO threat (1.29) is the fight's only real one; Yoo's is 0.08. The model barely knows Yoo: two UFC fights, 5.8 minutes, trust 0.08, so his composites sit near the prior. His chin reads -0.58 after the Santos knockout, and he has been out 346 days. He has 5.1cm more reach (180.3 to 175.3).",
-     "Both men's pre-UFC rows were 0-0 placeholders before this run. They were backfilled from Sherdog (Aswell 10-2, Yoo 8-0), so both fighters' pre-UFC features now reflect real records. That matters most for Yoo, whose UFC sample is almost empty. The method split mirrors the profiles: Aswell 25.9% by KO and 17.8% by decision; Yoo 24.1% decision, 16.3% KO, 12.3% submission. 42.0% go the distance, and the blended O/U has Over 1.5 at 57.7% and Over 2.5 at 45.5%."
+     "Yoo 58.1%, and the model's layers point in opposite directions. The GBM leans Yoo (56.4%), the hand-tuned layer Aswell (52.0%), and the final number lands on Yoo's side. Elo is Yoo's by 201 points (1605 to 1404), but it is thin on both sides. Yoo's featherweight rating rests on a single bout, a first-round KO of Jeka Saragih (his loss to Daniel Santos was at catchweight). Aswell's 1404 reflects a 1-4 UFC run.",
+     "Aswell's four UFC losses were all decisions, and his one win was a first-round knockout of Lucas Almeida. His profile says the same: power +0.66, chin +0.30, output +0.32, at a trust of 0.88 over 62 minutes. His KO threat (1.07) is the fight's only real one; Yoo's is 0.02. The model barely knows Yoo: two UFC fights, 5.8 minutes, trust 0.08, so his composites sit near the prior. The Santos knockout loss now counts toward his composites (catchweight bouts had been left out of the composite inputs before this run), and his chin reads -0.54. He has been out 346 days and has 5.1cm more reach (180.3 to 175.3).",
+     "Both men's pre-UFC rows were 0-0 placeholders before this run. They were backfilled from Sherdog (Aswell 10-2, Yoo 8-0), so both fighters' pre-UFC features now reflect real records. That matters most for Yoo, whose UFC sample is almost empty. The method split mirrors the profiles: Aswell 21.4% by KO and 16.7% by decision; Yoo 26.6% decision, 18.9% KO, 12.5% submission. 43.3% go the distance, and the blended O/U has Over 1.5 at 58.8% and Over 2.5 at 46.8%."
     ],
     "synopsis": {
      "lean": "Joo Sang Yoo",
-     "body": "By the narrowest margin on the card (52.6%), so treat it as close to a pass. Aswell has the knockout power and 62 minutes of UFC evidence, but a 1-4 record. Yoo has an unbeaten regional career and almost no UFC sample. If Aswell lands, he is the likelier finisher; if not, it is a close decision either way."
+     "body": "A modest lean (58.1%) built on very little UFC evidence. Aswell has the knockout power and 62 minutes of UFC evidence, but a 1-4 record. Yoo has an unbeaten regional career and almost no UFC sample. If Aswell lands, he is the likelier finisher; if not, a Yoo decision is the single most likely result."
     }
    }
   }
