@@ -1,6 +1,6 @@
 {
  "title": "UFC 331 — Van vs. Pantoja",
- "generated": "Generated 2026-09-15  •  Model v7.0 (Moneyline + Method MC + O/U GBM; recent-form 5-yr composites)  •  50,000 sims per fight  •  all-fights mode  •  13 fights",
+ "generated": "Generated 2026-09-15  •  Model v7.0 (Moneyline + Method MC + O/U GBM; recent-form 5-yr composites)  •  50,000 sims per fight  •  all-fights mode  •  11 fights",
  "model": "v7.0 (Moneyline + Method MC + O/U GBM; recent-form 5-yr composites)",
  "cardList": [
   {
@@ -54,9 +54,9 @@
    "division": "Light Heavyweight",
    "dataMode": null,
    "f1Short": "Baraniewski",
-   "f1Pct": 58,
+   "f1Pct": 65,
    "f2Short": "Menifield",
-   "f2Pct": 42
+   "f2Pct": 35
   },
   {
    "f1": "Charles Jourdain",
@@ -114,17 +114,6 @@
    "f2Pct": 51
   },
   {
-   "f1": "Gable Steveson",
-   "f2": "Sean Sharaf",
-   "rounds": 3,
-   "division": "Heavyweight",
-   "dataMode": null,
-   "f1Short": "Steveson",
-   "f1Pct": 79,
-   "f2Short": "Sharaf",
-   "f2Pct": 21
-  },
-  {
    "f1": "Giga Chikadze",
    "f2": "Joanderson Brito",
    "rounds": 3,
@@ -134,17 +123,6 @@
    "f1Pct": 25,
    "f2Short": "Brito",
    "f2Pct": 75
-  },
-  {
-   "f1": "Michael Aswell Jr",
-   "f2": "Joo Sang Yoo",
-   "rounds": 3,
-   "division": "Featherweight",
-   "dataMode": null,
-   "f1Short": "Aswell",
-   "f1Pct": 42,
-   "f2Short": "Yoo",
-   "f2Pct": 58
   }
  ],
  "fights": [
@@ -1172,59 +1150,59 @@
    "f1": "Iwo Baraniewski",
    "f2": "Alonzo Menifield",
    "rounds": 3,
-   "division": "Light Heavyweight  •  all-fights",
+   "division": "Light Heavyweight  •  all-fights  •  Baraniewski trust 0.25 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Baraniewski",
      "f2Short": "Menifield",
      "modelProb": {
-      "f1": 57.8,
-      "f2": 42.2
+      "f1": 65.1,
+      "f2": 34.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 35.2,
-       "f2": 14.2
+       "f1": 40.2,
+       "f2": 13.4
       },
       {
        "name": "Submission",
-       "f1": 3.4,
-       "f2": 9.1
+       "f1": 3.2,
+       "f2": 8.4
       },
       {
        "name": "Decision",
-       "f1": 19.1,
-       "f2": 18.9
+       "f1": 21.6,
+       "f2": 13.1
       }
      ],
-     "decisionPct": 38.1,
+     "decisionPct": 34.7,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 40.1
+       "pct": 42.8
       },
       {
        "r": 2,
-       "pct": 15.9
+       "pct": 16.4
       },
       {
        "r": 3,
-       "pct": 5.9
+       "pct": 6.1
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 47.5,
-      "over": 52.5
+      "under": 50.4,
+      "over": 49.6
      },
      {
       "line": 2.5,
-      "under": 58.9,
-      "over": 41.1
+      "under": 62.1,
+      "over": 37.9
      }
     ],
     "composites": {
@@ -1232,33 +1210,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.26,
+       "f1": 1.22,
        "f2": 0.29,
-       "delta": -0.03
+       "delta": 0.93
       },
       {
        "name": "Chin",
-       "f1": -0.14,
+       "f1": -0.67,
        "f2": -1.13,
-       "delta": 0.99
+       "delta": 0.46
       },
       {
        "name": "Output",
-       "f1": 0.07,
+       "f1": 0.35,
        "f2": -0.1,
-       "delta": 0.18
+       "delta": 0.45
       },
       {
        "name": "Grappling",
-       "f1": 0.09,
+       "f1": 0.45,
        "f2": -0.22,
-       "delta": 0.31
+       "delta": 0.66
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.06,
+       "f1": 0.29,
        "f2": 0.2,
-       "delta": -0.14
+       "delta": 0.09
       },
       {
        "name": "Cardio",
@@ -1277,39 +1255,39 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.52,
+      "f1": 0.56,
       "f2": 0.48
      },
      {
       "name": "Counter",
-      "f1": 0.54,
+      "f1": 0.66,
       "f2": 0.66
      },
      {
       "name": "Wrestler",
-      "f1": 0.51,
+      "f1": 0.56,
       "f2": 0.48
      },
      {
       "name": "Finisher",
-      "f1": 0.51,
+      "f1": 0.55,
       "f2": 0.53
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.86,
+      "f1": 0.97,
       "f2": 0.57
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.34,
+      "f1": 0.42,
       "f2": 0.61
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.053 (3.7 min)",
+      "f1": "0.250 (3.7 min)",
       "f2": "1.000 (154.9 min)"
      },
      {
@@ -1341,37 +1319,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.178",
-      "reads": "Toward Menifield"
+      "value": "+0.386",
+      "reads": "Toward Baraniewski"
      },
      {
       "name": "KO threat — Baraniewski",
-      "value": "+1.262",
+      "value": "+2.225",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Menifield",
-      "value": "+0.641",
+      "value": "+1.171",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Baraniewski",
-      "value": "-0.043",
-      "reads": "Near avg"
+      "value": "+0.301",
+      "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Menifield",
-      "value": "-0.250",
+      "value": "-0.404",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "16.5%",
+      "value": "21.8%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "83.5%",
+      "value": "78.2%",
       "reads": ""
      },
      {
@@ -1381,7 +1359,7 @@
      },
      {
       "name": "GBM P(Baraniewski wins)",
-      "value": "56.0% calibrated  (HT 58.6%)",
+      "value": "61.7% calibrated  (HT 71.1%)",
       "reads": ""
      }
     ],
@@ -1404,13 +1382,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Baraniewski 57.8%, with an Elo asterisk: the model is taking the lower-rated man. Menifield carries an 83-point Elo edge (1818 to 1735) built over 20 light heavyweight bouts, while Baraniewski's 1735 is a provisional number from four fights. Both engines still land on the Pole: the hand-tuned layer at 58.6%, the GBM at 56.0%. The case rests less on what Baraniewski has shown, because the model has barely seen him, than on what Menifield has shown. His chin reads -1.13, his chin-damage modifier is 0.46 (Baraniewski's is 1.00) and his age factor is 0.83 at 38.9. Four of his six UFC losses are knockouts, most recently the first-round stoppage by Volkan Oezdemir last November.",
-     "The other side of the ledger is almost empty. Baraniewski's four tracked bouts (DWCS plus UFC wins over Ibo Aslan, Austen Lane and Junior Tafa) all ended in round one and add up to 3.7 minutes of cage time. His minutes-based trust is therefore 0.05, so almost every composite is pulled back to the divisional mean: output +0.07, grappling +0.09, chin -0.14 and power +0.26 mean the model doesn't know yet, and they aren't scouting. What does register is the matchup. His KO threat (1.26 against Menifield's 0.64) is about double, because it is measured against Menifield's chin. The data can't say anything about round two. His decision trust is 0.00, and he absorbed 7.8 head strikes per minute in that tiny sample, a number the model barely uses at this trust level.",
-     "Physically, Menifield has the tools to drag it long. The two are the same height (6'0\"), but he has 7.6cm more reach (193.0 to 185.4): a reach composite of -0.01 against Baraniewski's -1.06, plus wrestling defence of +0.20. The decision edge (-0.18) leans his way, only slightly, and the decision outcomes are level (19.1% Baraniewski, 18.9% Menifield), which is close to half of Menifield's 42.2%. Baraniewski's path is the knockout: 35.2% by KO, well over half his total. The sim finishes 61.9% of fights, 40.1% in round one. The blended O/U puts Over 1.5 at 52.5% and Over 2.5 at 41.1%."
+     "Baraniewski 65.1%, and this one is run on a trust override. The model's own minutes-based trust for him is 0.05: four tracked bouts, every one of them a first-round knockout, totalling 3.7 minutes of cage time, which shrinks almost every composite back to the light heavyweight mean. This run holds his trust at 0.25 instead, letting five times as much of his own record through. Elo is unmoved and still against him, Menifield 1818 over 20 light heavyweight bouts to Baraniewski's 1735 over four, but both engines take the Pole and take him harder than they did on computed trust: hand-tuned 71.1% (58.6% before), GBM 61.7% (56.0%), and the sim lands at 65.1% against 57.8%.",
+     "The override cuts both ways, which is what makes it worth seeing. His power composite rises from +0.26 to +1.22, second on the card only to Ruffy's, and his KO threat to 2.22, the highest of any fighter here. Grappling (+0.45), output (+0.35) and wrestling defence (+0.29) all step up with it. But the same four fights carry his defensive numbers too: his chin falls from -0.14 to -0.67, because he absorbed 7.8 head strikes per minute in that sample, the most on the card. What the override cannot change is the shape of the evidence. His decision trust is still 0.00 -- all four wins ended inside a single round, so the model has no information at all about how he fights past the first five minutes, and at 3.7 minutes of tape every number above is a thin read held at arm's length.",
+     "Menifield is the fully observed side: 155 UFC minutes at trust 1.00, and the profile is a durability problem. His chin reads -1.13, his chin-damage modifier 0.46 against Baraniewski's 1.00, and his age factor 0.83 at 38.9. Four of his seven losses in the data ended inside the distance (57%), most recently the first-round stoppage by Volkan Oezdemir last November, though he answered it with a first-round knockout of Zhang Mingyang in May. His assets are reach (193.0cm to 185.4cm, a reach composite of -0.01 against Baraniewski's -1.06), 78% takedown defence, and the fact that he absorbs only 2.0 head strikes per minute. With the override in, the decision edge flips to +0.39 for Baraniewski, where it read -0.18 before. The method split is lopsided: Baraniewski takes 40.2% by knockout out of his 65.1%, with 21.6% on the cards and 3.2% by submission, while Menifield's 34.9% is 13.4% KO, 13.1% decision and 8.4% submission. 42.8% of simulations end in round one and only 34.7% reach the cards. The blended O/U puts Over 1.5 at 49.6% and Over 2.5 at 37.9%."
     ],
     "synopsis": {
      "lean": "Iwo Baraniewski",
-     "body": "The model is weighing a durability question against a sample-size question, and it trusts the durability question more. Menifield is 38.9, has been knocked out four times and carries a -1.13 chin with a 0.46 chin-damage modifier. Baraniewski is 9-0 but has fought only 3.7 minutes across four tracked bouts, so his profile is almost entirely prior. The edge comes from what the model knows about Menifield: 57.8%, against an 83-point Elo deficit. Menifield's live route is reach and a decision."
+     "body": "Run with his trust held at 0.25 rather than the 0.05 his 3.7 minutes of cage time earn, which lets his four first-round knockouts speak louder: power +1.22 and the card's highest KO threat at 2.22, but also a -0.67 chin and 7.8 head strikes absorbed per minute. Against a 38.9-year-old Menifield with a -1.13 chin and a 0.46 chin-damage modifier, that makes Baraniewski 65.1%, up from 57.8% on computed trust, with a knockout the single likeliest outcome (40.2%) and more than two fights in five over inside round one. Menifield's route is his 7.6cm of reach and a fight that lasts past the round the model has never seen Baraniewski leave."
     }
    }
   },
@@ -1896,7 +1874,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Gandra 83.1%, the card's biggest favourite. As with Baraniewski, the case rests mostly on the other man. GBM 84.0%, hand-tuned 89.8%, Elo +171 (1685 on 3 bouts to 1514 on 4). Gandra's three UFC wins are all first-round knockouts totalling 4.8 minutes, so his trust is 0.07 and his decision trust 0.00. His composites sit near the middleweight mean; power (+0.35) and output (+0.43) are the only ones clearly above it.",
+     "Gandra 83.1%, the card's biggest favourite, and the case rests mostly on the other man. GBM 84.0%, hand-tuned 89.8%, Elo +171 (1685 on 3 bouts to 1514 on 4). Gandra's three UFC wins are all first-round knockouts totalling 4.8 minutes, so his trust is 0.07 and his decision trust 0.00. His composites sit near the middleweight mean; power (+0.35) and output (+0.43) are the only ones clearly above it.",
      "Diaz's profile is the problem. His chin reads -2.03, the worst number on the card, with a 0.54 chin-damage modifier. Three of his four UFC fights ended in knockout losses (Joe Pyfer, Zhang Mingyang, and Ateba Gautier in May), and he has absorbed 5.3 head strikes per minute. At 35.8 his age factor is 0.91. His one real physical asset is reach: 200.7cm to 188.0cm (+2.11 against -0.43), which gives him a way to keep it long.",
      "The KO threat gap is one of the widest on the card, 1.91 to 0.07. Gandra wins 46.6% by knockout, 9.6% by submission and 26.9% on the cards. Diaz's 16.9% is spread thin (3.9% KO, 5.5% submission, 7.5% decision). The sim finishes 65.6% of fights, 35.9% in round one. The blended O/U has Over 1.5 at 54.6% and Over 2.5 at 39.1%. Gandra's refreshed record is 10-1; the stored 8-1 was stale."
     ],
@@ -2645,252 +2623,6 @@
    }
   },
   {
-   "f1": "Gable Steveson",
-   "f2": "Sean Sharaf",
-   "rounds": 3,
-   "division": "Heavyweight  •  all-fights",
-   "dataMode": null,
-   "sections": {
-    "modelProjections": {
-     "f1Short": "Steveson",
-     "f2Short": "Sharaf",
-     "modelProb": {
-      "f1": 79.3,
-      "f2": 20.7
-     },
-     "method": [
-      {
-       "name": "KO/TKO",
-       "f1": 48.7,
-       "f2": 8.3
-      },
-      {
-       "name": "Submission",
-       "f1": 6.5,
-       "f2": 4.4
-      },
-      {
-       "name": "Decision",
-       "f1": 24.1,
-       "f2": 8
-      }
-     ],
-     "decisionPct": 32.1,
-     "roundsFinish": [
-      {
-       "r": 1,
-       "pct": 38.9
-      },
-      {
-       "r": 2,
-       "pct": 20.1
-      },
-      {
-       "r": 3,
-       "pct": 8.9
-      }
-     ]
-    },
-    "overUnder": [
-     {
-      "line": 1.5,
-      "under": 48.3,
-      "over": 51.7
-     },
-     {
-      "line": 2.5,
-      "under": 63.5,
-      "over": 36.5
-     }
-    ],
-    "composites": {
-     "note": "Positive = above weight-class avg. ±0.5 = clear edge, ±1.0 = elite/poor.",
-     "rows": [
-      {
-       "name": "Power",
-       "f1": 0.22,
-       "f2": -0.18,
-       "delta": 0.4
-      },
-      {
-       "name": "Chin",
-       "f1": 0.02,
-       "f2": -1.16,
-       "delta": 1.18
-      },
-      {
-       "name": "Output",
-       "f1": 0.3,
-       "f2": -1.05,
-       "delta": 1.35
-      },
-      {
-       "name": "Grappling",
-       "f1": -0.01,
-       "f2": 0,
-       "delta": -0.01
-      },
-      {
-       "name": "Wrestling Def",
-       "f1": 0.01,
-       "f2": 0.03,
-       "delta": -0.02
-      },
-      {
-       "name": "Cardio",
-       "f1": 0.2,
-       "f2": 0.2,
-       "delta": 0
-      },
-      {
-       "name": "Reach",
-       "f1": -1.46,
-       "f2": -0.09,
-       "delta": -1.37
-      }
-     ]
-    },
-    "styleProfiles": [
-     {
-      "name": "Pressure",
-      "f1": 0.55,
-      "f2": 0.38
-     },
-     {
-      "name": "Counter",
-      "f1": 0.52,
-      "f2": 0.47
-     },
-     {
-      "name": "Wrestler",
-      "f1": 0.5,
-      "f2": 0.5
-     },
-     {
-      "name": "Finisher",
-      "f1": 0.51,
-      "f2": 0.44
-     },
-     {
-      "name": "Early-Finish Score",
-      "f1": 0.8,
-      "f2": 0.29
-     },
-     {
-      "name": "Early Vulnerability",
-      "f1": 0.31,
-      "f2": 0.73
-     }
-    ],
-    "modifiers": [
-     {
-      "name": "Trust factor (minutes-based)",
-      "f1": "0.036 (2.5 min)",
-      "f2": "0.230 (16.1 min)"
-     },
-     {
-      "name": "Decision trust",
-      "f1": "0.000",
-      "f2": "0.000"
-     },
-     {
-      "name": "Layoff factor",
-      "f1": "1.000",
-      "f2": "1.000"
-     },
-     {
-      "name": "Age factor",
-      "f1": "0.970",
-      "f2": "0.970"
-     },
-     {
-      "name": "Chin damage factor",
-      "f1": "1.000",
-      "f2": "0.668"
-     },
-     {
-      "name": "SoS multiplier",
-      "f1": "1.254",
-      "f2": "0.930"
-     }
-    ],
-    "matchupEdges": [
-     {
-      "name": "Decision edge",
-      "value": "+1.111",
-      "reads": "Toward Steveson"
-     },
-     {
-      "name": "KO threat — Steveson",
-      "value": "+1.220",
-      "reads": "Above-avg"
-     },
-     {
-      "name": "KO threat — Sharaf",
-      "value": "+0.080",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Sub threat — Steveson",
-      "value": "-0.030",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Sub threat — Sharaf",
-      "value": "-0.008",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Ground % of fight",
-      "value": "17.9%",
-      "reads": "Mostly standing"
-     },
-     {
-      "name": "Standing % of fight",
-      "value": "82.1%",
-      "reads": ""
-     },
-     {
-      "name": "Elo (WC-specific)",
-      "value": "Steveson 1586 (1 fts) / Sharaf 1262 (2 fts)",
-      "reads": "Δ +324"
-     },
-     {
-      "name": "GBM P(Steveson wins)",
-      "value": "80.5% calibrated  (HT 91.8%)",
-      "reads": ""
-     }
-    ],
-    "profiles": [
-     {
-      "name": "Gable Steveson",
-      "lines": [
-       "26, Orthodox, 5'11\" / 74\" reach. Record 4-0-0.",
-       "Sample: 1 division fights, 2.5 minutes total. Career WR 50%. Layoff 66 days.",
-       "Recent: W vs Elisha Ellison (KO/TKO R1, 2026-07-11)"
-      ]
-     },
-     {
-      "name": "Sean Sharaf",
-      "lines": [
-       "33, Orthodox, 6'3\" / 77\" reach. Record 4-2-0.",
-       "Sample: 2 division fights, 16.1 minutes total. Career WR 50%. Layoff 276 days.",
-       "Recent: L vs Steven Asplund (KO/TKO R2, 2025-12-13) | L vs Junior Tafa (KO/TKO R2, 2024-10-12)"
-      ]
-     }
-    ],
-    "matchupAnalysis": [
-     "Steveson 79.3%: GBM 80.5%, hand-tuned 91.8%, Elo +324 (1586 to 1262). Most of this is about Sharaf. Both of his UFC fights ended in round-two knockout losses (Junior Tafa, then Steven Asplund last December). His chin reads -1.16 with a 0.67 chin-damage modifier, output -1.05, and in 16 UFC minutes he absorbed 13.4 head strikes per minute, the most extreme number on the card, even allowing for his thin sample (trust 0.23).",
-     "Steveson is close to a blank page for the model. One UFC fight, a first-round knockout of Elisha Ellison in 2.5 minutes, puts his trust at 0.04 and his decision trust at 0.00, so every composite sits at the heavyweight mean (grappling -0.01, wrestling defence +0.01). His Olympic freestyle wrestling pedigree is invisible to the data. The pre-UFC features carry his 3-0 regional record, all knockouts; that row was missing until this run and was scraped from Sherdog. His real measurements were also missing: ufcstats now lists 5'11\" and a 74-inch reach, which replaced a 180cm default (reach -2.86 to -1.46). He still gives up 7.6cm of reach to the 6'3\" Sharaf.",
-     "The KO threat gap is 1.22 to 0.08 and the decision edge +1.11. Steveson wins 48.7% by knockout, 24.1% by decision and 6.5% by submission. Sharaf's 20.7% is split across KO (8.3%), decision (8.0%) and submission (4.4%). The sim finishes 67.9% of fights, the most on the card, with 38.9% in round one. The blended O/U has Over 1.5 at 51.7% and Over 2.5 at 36.5%. Steveson's record was refreshed to 4-0 before this run."
-    ],
-    "synopsis": {
-     "lean": "Gable Steveson",
-     "body": "The model knows almost nothing about Steveson and quite a lot about Sharaf: two knockout losses in two UFC fights and a chin that reads -1.16. That is enough for 79.3%, with close to half of all outcomes a Steveson knockout. The wrestling that defines Steveson isn't in the numbers at all, so if anything the model is flying blind on his best weapon."
-    }
-   }
-  },
-  {
    "f1": "Giga Chikadze",
    "f2": "Joanderson Brito",
    "rounds": 3,
@@ -3133,252 +2865,6 @@
     "synopsis": {
      "lean": "Joanderson Brito",
      "body": "A 38-year-old on a three-fight skid against a durable, younger grappler in form. Chikadze's reach and takedown defence are real, but the model gives Brito 74.8%, mostly by decision, with a meaningful submission route if the fight hits the mat."
-    }
-   }
-  },
-  {
-   "f1": "Michael Aswell Jr",
-   "f2": "Joo Sang Yoo",
-   "rounds": 3,
-   "division": "Featherweight  •  all-fights",
-   "dataMode": null,
-   "sections": {
-    "modelProjections": {
-     "f1Short": "Aswell",
-     "f2Short": "Yoo",
-     "modelProb": {
-      "f1": 41.9,
-      "f2": 58.1
-     },
-     "method": [
-      {
-       "name": "KO/TKO",
-       "f1": 21.7,
-       "f2": 19.5
-      },
-      {
-       "name": "Submission",
-       "f1": 3.8,
-       "f2": 12.4
-      },
-      {
-       "name": "Decision",
-       "f1": 16.5,
-       "f2": 26.2
-      }
-     ],
-     "decisionPct": 42.6,
-     "roundsFinish": [
-      {
-       "r": 1,
-       "pct": 34
-      },
-      {
-       "r": 2,
-       "pct": 16.5
-      },
-      {
-       "r": 3,
-       "pct": 6.8
-      }
-     ]
-    },
-    "overUnder": [
-     {
-      "line": 1.5,
-      "under": 41.7,
-      "over": 58.3
-     },
-     {
-      "line": 2.5,
-      "under": 53.8,
-      "over": 46.2
-     }
-    ],
-    "composites": {
-     "note": "Positive = above weight-class avg. ±0.5 = clear edge, ±1.0 = elite/poor.",
-     "rows": [
-      {
-       "name": "Power",
-       "f1": 0.66,
-       "f2": 0.16,
-       "delta": 0.5
-      },
-      {
-       "name": "Chin",
-       "f1": 0.3,
-       "f2": -0.54,
-       "delta": 0.84
-      },
-      {
-       "name": "Output",
-       "f1": 0.32,
-       "f2": 0.07,
-       "delta": 0.25
-      },
-      {
-       "name": "Grappling",
-       "f1": -0.15,
-       "f2": -0.08,
-       "delta": -0.07
-      },
-      {
-       "name": "Wrestling Def",
-       "f1": 0.14,
-       "f2": -0.03,
-       "delta": 0.18
-      },
-      {
-       "name": "Cardio",
-       "f1": 0.2,
-       "f2": 0.23,
-       "delta": -0.03
-      },
-      {
-       "name": "Reach",
-       "f1": -0.73,
-       "f2": 0.17,
-       "delta": -0.89
-      }
-     ]
-    },
-    "styleProfiles": [
-     {
-      "name": "Pressure",
-      "f1": 0.55,
-      "f2": 0.52
-     },
-     {
-      "name": "Counter",
-      "f1": 0.62,
-      "f2": 0.53
-     },
-     {
-      "name": "Wrestler",
-      "f1": 0.5,
-      "f2": 0.49
-     },
-     {
-      "name": "Finisher",
-      "f1": 0.75,
-      "f2": 0.52
-     },
-     {
-      "name": "Early-Finish Score",
-      "f1": 0.89,
-      "f2": 0.86
-     },
-     {
-      "name": "Early Vulnerability",
-      "f1": 0.1,
-      "f2": 0.75
-     }
-    ],
-    "modifiers": [
-     {
-      "name": "Trust factor (minutes-based)",
-      "f1": "0.881 (61.7 min)",
-      "f2": "0.083 (5.8 min)"
-     },
-     {
-      "name": "Decision trust",
-      "f1": "0.667",
-      "f2": "0.000"
-     },
-     {
-      "name": "Layoff factor",
-      "f1": "1.000",
-      "f2": "1.000"
-     },
-     {
-      "name": "Age factor",
-      "f1": "0.970",
-      "f2": "0.985"
-     },
-     {
-      "name": "Chin damage factor",
-      "f1": "1.000",
-      "f2": "0.824"
-     },
-     {
-      "name": "SoS multiplier",
-      "f1": "1.012",
-      "f2": "0.931"
-     }
-    ],
-    "matchupEdges": [
-     {
-      "name": "Decision edge",
-      "value": "-0.125",
-      "reads": "Toward Yoo"
-     },
-     {
-      "name": "KO threat — Aswell",
-      "value": "+1.073",
-      "reads": "Above-avg"
-     },
-     {
-      "name": "KO threat — Yoo",
-      "value": "+0.020",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Sub threat — Aswell",
-      "value": "-0.110",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Sub threat — Yoo",
-      "value": "-0.179",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Ground % of fight",
-      "value": "16.3%",
-      "reads": "Mostly standing"
-     },
-     {
-      "name": "Standing % of fight",
-      "value": "83.7%",
-      "reads": ""
-     },
-     {
-      "name": "Elo (WC-specific)",
-      "value": "Aswell 1404 (5 fts) / Yoo 1605 (1 fts)",
-      "reads": "Δ -201"
-     },
-     {
-      "name": "GBM P(Aswell wins)",
-      "value": "43.6% calibrated  (HT 52.0%)",
-      "reads": ""
-     }
-    ],
-    "profiles": [
-     {
-      "name": "Michael Aswell Jr",
-      "lines": [
-       "26, Orthodox, 5'8\" / 69\" reach. Record 11-5-0.",
-       "Sample: 5 division fights, 61.7 minutes total. Career WR 20%. Layoff 87 days.",
-       "Recent: L vs Gaston Bolanos (Decision R3, 2026-06-20) | L vs Luke Riley (Decision R3, 2026-03-21) | W vs Lucas Almeida (KO/TKO R1, 2025-10-11)"
-      ]
-     },
-     {
-      "name": "Joo Sang Yoo",
-      "lines": [
-       "32, Orthodox, 5'7\" / 71\" reach. Record 9-1-0.",
-       "Sample: 2 division fights, 5.8 minutes total. Career WR 50%. Layoff 346 days.",
-       "Recent: L vs Daniel Santos (KO/TKO R2, 2025-10-04) | W vs Jeka Saragih (KO/TKO R1, 2025-06-07)"
-      ]
-     }
-    ],
-    "matchupAnalysis": [
-     "Yoo 58.1%, and the model's layers point in opposite directions. The GBM leans Yoo (56.4%), the hand-tuned layer Aswell (52.0%), and the final number lands on Yoo's side. Elo is Yoo's by 201 points (1605 to 1404), but it is thin on both sides. Yoo's featherweight rating rests on a single bout, a first-round KO of Jeka Saragih (his loss to Daniel Santos was at catchweight). Aswell's 1404 reflects a 1-4 UFC run.",
-     "Aswell's four UFC losses were all decisions, and his one win was a first-round knockout of Lucas Almeida. His profile says the same: power +0.66, chin +0.30, output +0.32, at a trust of 0.88 over 62 minutes. His KO threat (1.07) is the fight's only real one; Yoo's is 0.02. The model barely knows Yoo: two UFC fights, 5.8 minutes, trust 0.08, so his composites sit near the prior. The Santos knockout loss now counts toward his composites (catchweight bouts had been left out of the composite inputs before this run), and his chin reads -0.54. He has been out 346 days and has 5.1cm more reach (180.3 to 175.3).",
-     "Both men's pre-UFC rows were 0-0 placeholders before this run. They were backfilled from Sherdog (Aswell 10-2, Yoo 8-0), so both fighters' pre-UFC features now reflect real records. That matters most for Yoo, whose UFC sample is almost empty. The method split mirrors the profiles: Aswell 21.7% by KO and 16.5% by decision; Yoo 26.2% decision, 19.5% KO, 12.4% submission. 42.6% go the distance, and the blended O/U has Over 1.5 at 58.3% and Over 2.5 at 46.2%."
-    ],
-    "synopsis": {
-     "lean": "Joo Sang Yoo",
-     "body": "A modest lean (58.1%) built on very little UFC evidence. Aswell has the knockout power and 62 minutes of UFC evidence, but a 1-4 record. Yoo has an unbeaten regional career and almost no UFC sample. If Aswell lands, he is the likelier finisher; if not, a Yoo decision is the single most likely result."
     }
    }
   }
