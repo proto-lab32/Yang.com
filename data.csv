@@ -1,256 +1,216 @@
-# Noche UFC: Silva vs. Delgado
+# UFC 331: Van vs. Pantoja
 FightID,Market,Selection,Yang Probability,Market Probability
-F00285,Moneyline,Jean Silva,69.00%,80.00%
-F00285,Moneyline,Jose Delgado,31.00%,23.00%
-F00285,Method of Victory,Jean Silva by KO/TKO,23.40%,58.00%
-F00285,Method of Victory,Jean Silva by Submission,17.70%,10.00%
-F00285,Method of Victory,Jean Silva by Decision,27.90%,18.00%
-F00285,Method of Victory,Jose Delgado by KO/TKO,17.30%,13.00%
-F00285,Method of Victory,Jose Delgado by Submission,0.50%,6.00%
-F00285,Method of Victory,Jose Delgado by Decision,13.20%,8.00%
-F00285,Total Rounds,Over 1.5,65.00%,66.00%
-F00285,Total Rounds,Under 1.5,35.00%,34.00%
-F00285,Fight Outcome,Goes to Decision,41.10%,24.00%
-F00285,Fight Outcome,Inside the Distance,58.90%,80.00%
-F00285,Fight Outcome,KO/TKO,40.70%,68.00%
-F00285,Fight Outcome,Submission,18.20%,15.00%
-F00285,Round Betting,Round 1 Finish,24.90%,29.00%
-F00285,Round Betting,Round 2 Finish,16.20%,24.00%
-F00285,Round Betting,Round 3 Finish,8.90%,17.00%
-F00285,Round Betting,Round 4 Finish,5.50%,13.00%
-F00285,Round Betting,Round 5 Finish,3.40%,9.00%
-F00285,Fighter ITD,Jean Silva ITD,41.10%,67.00%
-F00285,Fighter ITD,Jose Delgado ITD,17.80%,16.00%
-F00285,Double Chance,Jean Silva KO/TKO or Dec,51.30%,74.00%
-F00285,Double Chance,Jose Delgado KO/TKO or Dec,30.50%,20.00%
-F00286,Moneyline,Brandon Moreno,50.00%,50.00%
-F00286,Moneyline,Joseph Morales,50.00%,53.00%
-F00286,Method of Victory,Brandon Moreno by KO/TKO,7.70%,10.00%
-F00286,Method of Victory,Brandon Moreno by Submission,2.80%,6.00%
-F00286,Method of Victory,Brandon Moreno by Decision,39.50%,37.00%
-F00286,Method of Victory,Joseph Morales by KO/TKO,4.80%,8.00%
-F00286,Method of Victory,Joseph Morales by Submission,17.10%,13.00%
-F00286,Method of Victory,Joseph Morales by Decision,28.10%,40.00%
-F00286,Total Rounds,Over 2.5,72.00%,76.00%
-F00286,Total Rounds,Under 2.5,28.00%,27.00%
-F00286,Fight Outcome,Goes to Decision,67.60%,74.00%
-F00286,Fight Outcome,Inside the Distance,32.40%,30.00%
-F00286,Fight Outcome,KO/TKO,12.40%,17.00%
-F00286,Fight Outcome,Submission,20.00%,17.00%
-F00286,Round Betting,Round 1 Finish,16.90%,13.00%
-F00286,Round Betting,Round 2 Finish,10.50%,13.00%
-F00286,Round Betting,Round 3 Finish,5.00%,9.00%
-F00286,Fighter ITD,Brandon Moreno ITD,10.50%,14.00%
-F00286,Fighter ITD,Joseph Morales ITD,21.90%,18.00%
-F00286,Double Chance,Brandon Moreno KO/TKO or Dec,47.20%,43.00%
-F00286,Double Chance,Joseph Morales KO/TKO or Dec,32.90%,47.00%
-F00287,Moneyline,Manon Fiorot,70.00%,71.00%
-F00287,Moneyline,Alexa Grasso,30.00%,33.00%
-F00287,Method of Victory,Manon Fiorot by KO/TKO,9.90%,13.00%
-F00287,Method of Victory,Manon Fiorot by Submission,2.20%,3.00%
-F00287,Method of Victory,Manon Fiorot by Decision,57.90%,60.00%
-F00287,Method of Victory,Alexa Grasso by KO/TKO,4.00%,5.00%
-F00287,Method of Victory,Alexa Grasso by Submission,9.30%,9.00%
-F00287,Method of Victory,Alexa Grasso by Decision,16.70%,22.00%
-F00287,Total Rounds,Over 2.5,79.00%,80.00%
-F00287,Total Rounds,Under 2.5,21.00%,24.00%
-F00287,Fight Outcome,Goes to Decision,74.60%,78.00%
-F00287,Fight Outcome,Inside the Distance,25.40%,27.00%
-F00287,Fight Outcome,KO/TKO,13.90%,18.00%
-F00287,Fight Outcome,Submission,11.50%,12.00%
-F00287,Round Betting,Round 1 Finish,8.30%,13.00%
-F00287,Round Betting,Round 2 Finish,11.10%,11.00%
-F00287,Round Betting,Round 3 Finish,6.00%,8.00%
-F00287,Fighter ITD,Manon Fiorot ITD,12.10%,18.00%
-F00287,Fighter ITD,Alexa Grasso ITD,13.30%,13.00%
-F00287,Double Chance,Manon Fiorot KO/TKO or Dec,67.80%,69.00%
-F00287,Double Chance,Alexa Grasso KO/TKO or Dec,20.70%,26.00%
-F00288,Moneyline,Waldo Cortes Acosta,57.00%,66.00%
-F00288,Moneyline,Curtis Blaydes,43.00%,36.00%
-F00288,Method of Victory,Waldo Cortes Acosta by KO/TKO,29.20%,36.00%
-F00288,Method of Victory,Waldo Cortes Acosta by Submission,5.20%,4.00%
-F00288,Method of Victory,Waldo Cortes Acosta by Decision,22.60%,32.00%
-F00288,Method of Victory,Curtis Blaydes by KO/TKO,7.80%,14.00%
-F00288,Method of Victory,Curtis Blaydes by Submission,2.60%,3.00%
-F00288,Method of Victory,Curtis Blaydes by Decision,32.60%,22.00%
-F00288,Total Rounds,Over 2.5,58.00%,58.00%
-F00288,Total Rounds,Under 2.5,42.00%,45.00%
-F00288,Fight Outcome,Goes to Decision,55.10%,52.00%
-F00288,Fight Outcome,Inside the Distance,44.90%,53.00%
-F00288,Fight Outcome,KO/TKO,37.10%,50.00%
-F00288,Fight Outcome,Submission,7.80%,6.00%
-F00288,Round Betting,Round 1 Finish,24.80%,25.00%
-F00288,Round Betting,Round 2 Finish,14.00%,20.00%
-F00288,Round Betting,Round 3 Finish,6.10%,14.00%
-F00288,Fighter ITD,Waldo Cortes Acosta ITD,34.40%,38.00%
-F00288,Fighter ITD,Curtis Blaydes ITD,10.50%,15.00%
-F00288,Double Chance,Waldo Cortes Acosta KO/TKO or Dec,51.80%,65.00%
-F00288,Double Chance,Curtis Blaydes KO/TKO or Dec,40.40%,33.00%
-F00289,Moneyline,Dan Ige,22.00%,22.00%
-F00289,Moneyline,David Martinez,78.00%,80.00%
-F00289,Method of Victory,Dan Ige by KO/TKO,6.10%,9.00%
-F00289,Method of Victory,Dan Ige by Submission,5.60%,4.00%
-F00289,Method of Victory,Dan Ige by Decision,10.30%,13.00%
-F00289,Method of Victory,David Martinez by KO/TKO,19.50%,28.00%
-F00289,Method of Victory,David Martinez by Submission,5.10%,5.00%
-F00289,Method of Victory,David Martinez by Decision,53.40%,52.00%
-F00289,Total Rounds,Over 2.5,67.00%,68.00%
-F00289,Total Rounds,Under 2.5,33.00%,34.00%
-F00289,Fight Outcome,Goes to Decision,63.80%,63.00%
-F00289,Fight Outcome,Inside the Distance,36.20%,40.00%
-F00289,Fight Outcome,KO/TKO,25.50%,37.00%
-F00289,Fight Outcome,Submission,10.70%,8.00%
-F00289,Round Betting,Round 1 Finish,16.90%,18.00%
-F00289,Round Betting,Round 2 Finish,12.50%,15.00%
-F00289,Round Betting,Round 3 Finish,6.80%,11.00%
-F00289,Fighter ITD,Dan Ige ITD,11.70%,12.00%
-F00289,Fighter ITD,David Martinez ITD,24.50%,31.00%
-F00289,Double Chance,Dan Ige KO/TKO or Dec,16.40%,21.00%
-F00289,Double Chance,David Martinez KO/TKO or Dec,72.90%,76.00%
-F00290,Moneyline,Tommy McMillen,70.00%,59.00%
-F00290,Moneyline,Marwan Rahiki,30.00%,41.00%
-F00290,Method of Victory,Tommy McMillen by KO/TKO,30.10%,24.00%
-F00290,Method of Victory,Tommy McMillen by Submission,3.70%,18.00%
-F00290,Method of Victory,Tommy McMillen by Decision,36.20%,24.00%
-F00290,Method of Victory,Marwan Rahiki by KO/TKO,11.20%,29.00%
-F00290,Method of Victory,Marwan Rahiki by Submission,7.90%,5.00%
-F00290,Method of Victory,Marwan Rahiki by Decision,10.90%,13.00%
-F00290,Total Rounds,Over 1.5,62.00%,63.00%
-F00290,Total Rounds,Under 1.5,38.00%,40.00%
-F00290,Fight Outcome,Goes to Decision,47.10%,34.00%
-F00290,Fight Outcome,Inside the Distance,52.90%,70.00%
-F00290,Fight Outcome,KO/TKO,41.30%,51.00%
-F00290,Fight Outcome,Submission,11.60%,21.00%
-F00290,Round Betting,Round 1 Finish,27.70%,31.00%
-F00290,Round Betting,Round 2 Finish,16.80%,25.00%
-F00290,Round Betting,Round 3 Finish,8.40%,17.00%
-F00290,Fighter ITD,Tommy McMillen ITD,33.80%,38.00%
-F00290,Fighter ITD,Marwan Rahiki ITD,19.10%,31.00%
-F00290,Double Chance,Tommy McMillen KO/TKO or Dec,66.30%,49.00%
-F00290,Double Chance,Marwan Rahiki KO/TKO or Dec,22.10%,38.00%
-F00291,Moneyline,Tim Elliott,54.00%,35.00%
-F00291,Moneyline,Edgar Chairez,46.00%,67.00%
-F00291,Method of Victory,Tim Elliott by KO/TKO,8.80%,5.00%
-F00291,Method of Victory,Tim Elliott by Submission,5.50%,15.00%
-F00291,Method of Victory,Tim Elliott by Decision,39.70%,20.00%
-F00291,Method of Victory,Edgar Chairez by KO/TKO,5.70%,13.00%
-F00291,Method of Victory,Edgar Chairez by Submission,22.40%,30.00%
-F00291,Method of Victory,Edgar Chairez by Decision,17.90%,30.00%
-F00291,Total Rounds,Over 2.5,62.00%,55.00%
-F00291,Total Rounds,Under 2.5,38.00%,48.00%
-F00291,Fight Outcome,Goes to Decision,57.60%,49.00%
-F00291,Fight Outcome,Inside the Distance,42.40%,57.00%
-F00291,Fight Outcome,KO/TKO,14.60%,17.00%
-F00291,Fight Outcome,Submission,27.80%,43.00%
-F00291,Round Betting,Round 1 Finish,20.10%,27.00%
-F00291,Round Betting,Round 2 Finish,14.90%,22.00%
-F00291,Round Betting,Round 3 Finish,7.40%,15.00%
-F00291,Fighter ITD,Tim Elliott ITD,14.30%,18.00%
-F00291,Fighter ITD,Edgar Chairez ITD,28.10%,42.00%
-F00291,Double Chance,Tim Elliott KO/TKO or Dec,48.50%,22.00%
-F00291,Double Chance,Edgar Chairez KO/TKO or Dec,23.60%,40.00%
-F00292,Moneyline,Ignacio Bahamondes,84.00%,84.00%
-F00292,Moneyline,Muslim Salikhov,16.00%,20.00%
-F00292,Method of Victory,Ignacio Bahamondes by KO/TKO,41.10%,51.00%
-F00292,Method of Victory,Ignacio Bahamondes by Submission,13.70%,15.00%
-F00292,Method of Victory,Ignacio Bahamondes by Decision,29.20%,22.00%
-F00292,Method of Victory,Muslim Salikhov by KO/TKO,7.80%,11.00%
-F00292,Method of Victory,Muslim Salikhov by Submission,0.90%,3.00%
-F00292,Method of Victory,Muslim Salikhov by Decision,7.30%,8.00%
-F00292,Total Rounds,Over 1.5,48.00%,57.00%
-F00292,Total Rounds,Under 1.5,52.00%,46.00%
-F00292,Fight Outcome,Goes to Decision,36.60%,29.00%
-F00292,Fight Outcome,Inside the Distance,63.40%,75.00%
-F00292,Fight Outcome,KO/TKO,48.90%,61.00%
-F00292,Fight Outcome,Submission,14.50%,17.00%
-F00292,Round Betting,Round 1 Finish,34.90%,36.00%
-F00292,Round Betting,Round 2 Finish,19.50%,28.00%
-F00292,Round Betting,Round 3 Finish,9.00%,17.00%
-F00292,Fighter ITD,Ignacio Bahamondes ITD,54.80%,64.00%
-F00292,Fighter ITD,Muslim Salikhov ITD,8.60%,12.00%
-F00292,Double Chance,Ignacio Bahamondes KO/TKO or Dec,70.30%,72.00%
-F00292,Double Chance,Muslim Salikhov KO/TKO or Dec,15.10%,18.00%
-F00293,Moneyline,Tommy Gantt,78.00%,80.00%
-F00293,Moneyline,Drakkar Klose,22.00%,23.00%
-F00293,Method of Victory,Tommy Gantt by KO/TKO,19.80%,38.00%
-F00293,Method of Victory,Tommy Gantt by Submission,24.50%,30.00%
-F00293,Method of Victory,Tommy Gantt by Decision,33.70%,20.00%
-F00293,Method of Victory,Drakkar Klose by KO/TKO,5.10%,8.00%
-F00293,Method of Victory,Drakkar Klose by Submission,2.80%,3.00%
-F00293,Method of Victory,Drakkar Klose by Decision,14.10%,13.00%
-F00293,Total Rounds,Over 1.5,68.00%,60.00%
-F00293,Total Rounds,Under 1.5,32.00%,42.00%
-F00293,Fight Outcome,Goes to Decision,47.80%,29.00%
-F00293,Fight Outcome,Inside the Distance,52.20%,72.00%
-F00293,Fight Outcome,KO/TKO,24.90%,45.00%
-F00293,Fight Outcome,Submission,27.30%,31.00%
-F00293,Round Betting,Round 1 Finish,27.00%,33.00%
-F00293,Round Betting,Round 2 Finish,16.90%,27.00%
-F00293,Round Betting,Round 3 Finish,8.30%,19.00%
-F00293,Fighter ITD,Tommy Gantt ITD,44.30%,65.00%
-F00293,Fighter ITD,Drakkar Klose ITD,7.90%,10.00%
-F00293,Double Chance,Tommy Gantt KO/TKO or Dec,53.50%,58.00%
-F00293,Double Chance,Drakkar Klose KO/TKO or Dec,19.20%,20.00%
-F00294,Moneyline,Rongzhu,50.00%,61.00%
-F00294,Moneyline,Rafa Garcia,50.00%,41.00%
-F00294,Method of Victory,Rongzhu by KO/TKO,13.10%,19.00%
-F00294,Method of Victory,Rongzhu by Submission,2.80%,4.00%
-F00294,Method of Victory,Rongzhu by Decision,34.10%,44.00%
-F00294,Method of Victory,Rafa Garcia by KO/TKO,9.90%,7.00%
-F00294,Method of Victory,Rafa Garcia by Submission,8.30%,13.00%
-F00294,Method of Victory,Rafa Garcia by Decision,31.80%,24.00%
-F00294,Total Rounds,Over 2.5,68.70%,70.00%
-F00294,Total Rounds,Under 2.5,31.30%,33.00%
-F00294,Fight Outcome,Goes to Decision,66.00%,67.00%
-F00294,Fight Outcome,Inside the Distance,34.00%,36.00%
-F00294,Fight Outcome,KO/TKO,23.00%,25.00%
-F00294,Fight Outcome,Submission,11.00%,15.00%
-F00294,Round Betting,Round 1 Finish,17.60%,17.00%
-F00294,Round Betting,Round 2 Finish,10.80%,15.00%
-F00294,Round Betting,Round 3 Finish,5.60%,11.00%
-F00294,Fighter ITD,Rongzhu ITD,15.90%,21.00%
-F00294,Fighter ITD,Rafa Garcia ITD,18.10%,18.00%
-F00294,Double Chance,Rongzhu KO/TKO or Dec,47.20%,60.00%
-F00294,Double Chance,Rafa Garcia KO/TKO or Dec,41.70%,30.00%
-F00295,Moneyline,JJ Aldrich,40.00%,30.00%
-F00295,Moneyline,Regina Malpica Rivera,60.00%,73.00%
-F00295,Method of Victory,JJ Aldrich by KO/TKO,7.30%,4.00%
-F00295,Method of Victory,JJ Aldrich by Submission,3.90%,4.00%
-F00295,Method of Victory,JJ Aldrich by Decision,28.80%,24.00%
-F00295,Method of Victory,Regina Malpica Rivera by KO/TKO,9.30%,18.00%
-F00295,Method of Victory,Regina Malpica Rivera by Submission,9.40%,9.00%
-F00295,Method of Victory,Regina Malpica Rivera by Decision,41.30%,53.00%
-F00295,Total Rounds,Over 2.5,74.00%,76.00%
-F00295,Total Rounds,Under 2.5,26.00%,27.00%
-F00295,Fight Outcome,Goes to Decision,70.10%,73.00%
-F00295,Fight Outcome,Inside the Distance,29.90%,30.00%
-F00295,Fight Outcome,KO/TKO,16.60%,21.00%
-F00295,Fight Outcome,Submission,13.30%,12.00%
-F00295,Round Betting,Round 1 Finish,9.60%,14.00%
-F00295,Round Betting,Round 2 Finish,13.00%,13.00%
-F00295,Round Betting,Round 3 Finish,7.30%,10.00%
-F00295,Fighter ITD,JJ Aldrich ITD,11.20%,8.00%
-F00295,Fighter ITD,Regina Malpica Rivera ITD,18.70%,27.00%
-F00295,Double Chance,JJ Aldrich KO/TKO or Dec,36.10%,27.00%
-F00295,Double Chance,Regina Malpica Rivera KO/TKO or Dec,50.60%,69.00%
-F00296,Moneyline,Yousri Belgaroui,71.20%,88.00%
-F00296,Moneyline,Djorden Santos,28.80%,15.00%
-F00296,Method of Victory,Yousri Belgaroui by KO/TKO,25.50%,56.00%
-F00296,Method of Victory,Yousri Belgaroui by Submission,5.20%,4.00%
-F00296,Method of Victory,Yousri Belgaroui by Decision,40.50%,33.00%
-F00296,Method of Victory,Djorden Santos by KO/TKO,6.30%,6.00%
-F00296,Method of Victory,Djorden Santos by Submission,4.50%,3.00%
-F00296,Method of Victory,Djorden Santos by Decision,18.10%,7.00%
-F00296,Total Rounds,Over 2.5,62.10%,45.00%
-F00296,Total Rounds,Under 2.5,37.90%,60.00%
-F00296,Fight Outcome,Goes to Decision,58.60%,38.00%
-F00296,Fight Outcome,Inside the Distance,41.40%,62.00%
-F00296,Fight Outcome,KO/TKO,31.70%,62.00%
-F00296,Fight Outcome,Submission,9.70%,7.00%
-F00296,Round Betting,Round 1 Finish,20.80%,29.00%
-F00296,Round Betting,Round 2 Finish,13.80%,24.00%
-F00296,Round Betting,Round 3 Finish,6.80%,15.00%
-F00296,Fighter ITD,Yousri Belgaroui ITD,30.70%,57.00%
-F00296,Fighter ITD,Djorden Santos ITD,10.70%,9.00%
-F00296,Double Chance,Yousri Belgaroui KO/TKO or Dec,66.00%,86.00%
-F00296,Double Chance,Djorden Santos KO/TKO or Dec,24.30%,13.00%
+F00297,Moneyline,Joshua Van,59.00%,57.00%
+F00297,Moneyline,Alexandre Pantoja,41.00%,45.00%
+F00297,Method of Victory,Joshua Van by KO/TKO,24.30%,35.00%
+F00297,Method of Victory,Joshua Van by Submission,1.80%,5.00%
+F00297,Method of Victory,Joshua Van by Decision,32.90%,21.00%
+F00297,Method of Victory,Alexandre Pantoja by KO/TKO,9.70%,8.00%
+F00297,Method of Victory,Alexandre Pantoja by Submission,14.30%,26.00%
+F00297,Method of Victory,Alexandre Pantoja by Decision,17.00%,18.00%
+F00297,Total Rounds,Over 4.5,52.00%,41.00%
+F00297,Total Rounds,Under 4.5,48.00%,63.00%
+F00297,Fight Outcome,Goes to Decision,49.90%,36.00%
+F00297,Fight Outcome,Inside the Distance,50.10%,68.00%
+F00297,Fight Outcome,KO/TKO,34.00%,42.00%
+F00297,Fight Outcome,Submission,16.10%,30.00%
+F00297,Round Betting,Round 1 Finish,15.00%,21.00%
+F00297,Round Betting,Round 2 Finish,13.10%,19.00%
+F00297,Round Betting,Round 3 Finish,10.10%,15.00%
+F00297,Round Betting,Round 4 Finish,6.90%,13.00%
+F00297,Round Betting,Round 5 Finish,5.00%,10.00%
+F00297,Fighter ITD,Joshua Van ITD,26.10%,38.00%
+F00297,Fighter ITD,Alexandre Pantoja ITD,24.00%,33.00%
+F00297,Double Chance,Joshua Van KO/TKO or Dec,57.20%,55.00%
+F00297,Double Chance,Alexandre Pantoja KO/TKO or Dec,26.70%,25.00%
+F00298,Moneyline,Arman Tsarukyan,75.00%,75.00%
+F00298,Moneyline,Mauricio Ruffy,25.00%,26.00%
+F00298,Method of Victory,Arman Tsarukyan by KO/TKO,25.10%,29.00%
+F00298,Method of Victory,Arman Tsarukyan by Submission,15.30%,30.00%
+F00298,Method of Victory,Arman Tsarukyan by Decision,34.60%,22.00%
+F00298,Method of Victory,Mauricio Ruffy by KO/TKO,17.80%,20.00%
+F00298,Method of Victory,Mauricio Ruffy by Submission,0.70%,3.00%
+F00298,Method of Victory,Mauricio Ruffy by Decision,6.50%,7.00%
+F00298,Total Rounds,Over 2.5,58.00%,53.00%
+F00298,Total Rounds,Under 2.5,42.00%,53.00%
+F00298,Fight Outcome,Goes to Decision,41.10%,29.00%
+F00298,Fight Outcome,Inside the Distance,58.90%,76.00%
+F00298,Fight Outcome,KO/TKO,42.90%,47.00%
+F00298,Fight Outcome,Submission,16.00%,32.00%
+F00298,Round Betting,Round 1 Finish,19.50%,27.00%
+F00298,Round Betting,Round 2 Finish,15.20%,23.00%
+F00298,Round Betting,Round 3 Finish,11.10%,18.00%
+F00298,Round Betting,Round 4 Finish,7.00%,12.00%
+F00298,Round Betting,Round 5 Finish,6.10%,8.00%
+F00298,Fighter ITD,Arman Tsarukyan ITD,40.40%,59.00%
+F00298,Fighter ITD,Mauricio Ruffy ITD,18.50%,22.00%
+F00298,Double Chance,Arman Tsarukyan KO/TKO or Dec,59.70%,51.00%
+F00298,Double Chance,Mauricio Ruffy KO/TKO or Dec,24.30%,26.00%
+F00299,Moneyline,Dooho Choi,73.00%,72.00%
+F00299,Moneyline,Patricio Freire,27.00%,30.00%
+F00299,Method of Victory,Dooho Choi by KO/TKO,23.70%,38.00%
+F00299,Method of Victory,Dooho Choi by Submission,6.40%,8.00%
+F00299,Method of Victory,Dooho Choi by Decision,42.90%,31.00%
+F00299,Method of Victory,Patricio Freire by KO/TKO,7.00%,10.00%
+F00299,Method of Victory,Patricio Freire by Submission,5.70%,7.00%
+F00299,Method of Victory,Patricio Freire by Decision,14.30%,17.00%
+F00299,Total Rounds,Over 2.5,61.00%,52.00%
+F00299,Total Rounds,Under 2.5,39.00%,50.00%
+F00299,Fight Outcome,Goes to Decision,57.20%,45.00%
+F00299,Fight Outcome,Inside the Distance,42.80%,57.00%
+F00299,Fight Outcome,KO/TKO,30.70%,47.00%
+F00299,Fight Outcome,Submission,12.10%,15.00%
+F00299,Round Betting,Round 1 Finish,21.20%,29.00%
+F00299,Round Betting,Round 2 Finish,14.30%,19.00%
+F00299,Round Betting,Round 3 Finish,7.30%,13.00%
+F00299,Fighter ITD,Dooho Choi ITD,30.10%,47.00%
+F00299,Fighter ITD,Patricio Freire ITD,12.70%,15.00%
+F00299,Double Chance,Dooho Choi KO/TKO or Dec,66.60%,67.00%
+F00299,Double Chance,Patricio Freire KO/TKO or Dec,21.30%,25.00%
+F00300,Moneyline,Iwo Baraniewski,65.10%,70.00%
+F00300,Moneyline,Alonzo Menifield,34.90%,32.00%
+F00300,Method of Victory,Iwo Baraniewski by KO/TKO,43.50%,57.00%
+F00300,Method of Victory,Iwo Baraniewski by Submission,3.50%,10.00%
+F00300,Method of Victory,Iwo Baraniewski by Decision,18.10%,8.00%
+F00300,Method of Victory,Alonzo Menifield by KO/TKO,14.60%,17.00%
+F00300,Method of Victory,Alonzo Menifield by Submission,9.20%,9.00%
+F00300,Method of Victory,Alonzo Menifield by Decision,11.10%,10.00%
+F00300,Total Rounds,Over 1.5,40.00%,32.00%
+F00300,Total Rounds,Under 1.5,60.00%,71.00%
+F00300,Fight Outcome,Goes to Decision,29.20%,17.00%
+F00300,Fight Outcome,Inside the Distance,70.80%,88.00%
+F00300,Fight Outcome,KO/TKO,58.10%,71.00%
+F00300,Fight Outcome,Submission,12.70%,17.00%
+F00300,Round Betting,Round 1 Finish,47.50%,61.00%
+F00300,Round Betting,Round 2 Finish,16.90%,22.00%
+F00300,Round Betting,Round 3 Finish,6.40%,7.00%
+F00300,Fighter ITD,Iwo Baraniewski ITD,47.00%,67.00%
+F00300,Fighter ITD,Alonzo Menifield ITD,23.80%,24.00%
+F00300,Double Chance,Iwo Baraniewski KO/TKO or Dec,61.60%,64.00%
+F00300,Double Chance,Alonzo Menifield KO/TKO or Dec,25.70%,27.00%
+F00301,Moneyline,Charles Jourdain,67.00%,68.00%
+F00301,Moneyline,Marlon Vera,33.00%,35.00%
+F00301,Method of Victory,Charles Jourdain by KO/TKO,9.50%,7.00%
+F00301,Method of Victory,Charles Jourdain by Submission,9.90%,13.00%
+F00301,Method of Victory,Charles Jourdain by Decision,47.60%,55.00%
+F00301,Method of Victory,Marlon Vera by KO/TKO,9.40%,15.00%
+F00301,Method of Victory,Marlon Vera by Submission,6.90%,8.00%
+F00301,Method of Victory,Marlon Vera by Decision,16.70%,15.00%
+F00301,Total Rounds,Over 2.5,68.00%,70.00%
+F00301,Total Rounds,Under 2.5,32.00%,31.00%
+F00301,Fight Outcome,Goes to Decision,64.30%,67.00%
+F00301,Fight Outcome,Inside the Distance,35.70%,37.00%
+F00301,Fight Outcome,KO/TKO,18.90%,21.00%
+F00301,Fight Outcome,Submission,16.80%,20.00%
+F00301,Round Betting,Round 1 Finish,17.90%,17.00%
+F00301,Round Betting,Round 2 Finish,11.50%,15.00%
+F00301,Round Betting,Round 3 Finish,6.30%,11.00%
+F00301,Fighter ITD,Charles Jourdain ITD,19.40%,18.00%
+F00301,Fighter ITD,Marlon Vera ITD,16.30%,22.00%
+F00301,Double Chance,Charles Jourdain KO/TKO or Dec,57.10%,61.00%
+F00301,Double Chance,Marlon Vera KO/TKO or Dec,26.10%,30.00%
+F00302,Moneyline,Ryan Gandra,76.00%,83.00%
+F00302,Moneyline,Ozzy Diaz,24.00%,19.00%
+F00302,Method of Victory,Ryan Gandra by KO/TKO,47.90%,72.00%
+F00302,Method of Victory,Ryan Gandra by Submission,9.80%,10.00%
+F00302,Method of Victory,Ryan Gandra by Decision,18.30%,7.00%
+F00302,Method of Victory,Ozzy Diaz by KO/TKO,6.50%,12.00%
+F00302,Method of Victory,Ozzy Diaz by Submission,9.10%,4.00%
+F00302,Method of Victory,Ozzy Diaz by Decision,8.40%,6.00%
+F00302,Total Rounds,Over 1.5,41.00%,33.00%
+F00302,Total Rounds,Under 1.5,59.00%,71.00%
+F00302,Fight Outcome,Goes to Decision,26.70%,14.00%
+F00302,Fight Outcome,Inside the Distance,73.30%,90.00%
+F00302,Fight Outcome,KO/TKO,54.40%,81.00%
+F00302,Fight Outcome,Submission,18.90%,11.00%
+F00302,Round Betting,Round 1 Finish,41.20%,62.00%
+F00302,Round Betting,Round 2 Finish,22.30%,23.00%
+F00302,Round Betting,Round 3 Finish,9.80%,11.00%
+F00302,Fighter ITD,Ryan Gandra ITD,57.70%,80.00%
+F00302,Fighter ITD,Ozzy Diaz ITD,15.60%,14.00%
+F00302,Double Chance,Ryan Gandra KO/TKO or Dec,66.20%,77.00%
+F00302,Double Chance,Ozzy Diaz KO/TKO or Dec,14.90%,17.00%
+F00303,Moneyline,Casey O'Neill,60.00%,69.00%
+F00303,Moneyline,Eduarda Moura,40.00%,33.00%
+F00303,Method of Victory,Casey O'Neill by KO/TKO,10.60%,18.00%
+F00303,Method of Victory,Casey O'Neill by Submission,5.90%,11.00%
+F00303,Method of Victory,Casey O'Neill by Decision,43.50%,47.00%
+F00303,Method of Victory,Eduarda Moura by KO/TKO,4.10%,6.00%
+F00303,Method of Victory,Eduarda Moura by Submission,13.00%,11.00%
+F00303,Method of Victory,Eduarda Moura by Decision,22.90%,21.00%
+F00303,Total Rounds,Over 2.5,71.00%,70.00%
+F00303,Total Rounds,Under 2.5,29.00%,33.00%
+F00303,Fight Outcome,Goes to Decision,66.40%,65.00%
+F00303,Fight Outcome,Inside the Distance,33.60%,39.00%
+F00303,Fight Outcome,KO/TKO,14.70%,22.00%
+F00303,Fight Outcome,Submission,18.90%,20.00%
+F00303,Round Betting,Round 1 Finish,12.60%,17.00%
+F00303,Round Betting,Round 2 Finish,13.80%,15.00%
+F00303,Round Betting,Round 3 Finish,7.20%,10.00%
+F00303,Fighter ITD,Casey O'Neill ITD,16.50%,27.00%
+F00303,Fighter ITD,Eduarda Moura ITD,17.10%,17.00%
+F00303,Double Chance,Casey O'Neill KO/TKO or Dec,54.10%,60.00%
+F00303,Double Chance,Eduarda Moura KO/TKO or Dec,27.00%,26.00%
+F00304,Moneyline,Edmen Shahbazyan,66.00%,63.00%
+F00304,Moneyline,Brunno Ferreira,34.00%,40.00%
+F00304,Method of Victory,Edmen Shahbazyan by KO/TKO,29.40%,38.00%
+F00304,Method of Victory,Edmen Shahbazyan by Submission,8.60%,10.00%
+F00304,Method of Victory,Edmen Shahbazyan by Decision,28.00%,20.00%
+F00304,Method of Victory,Brunno Ferreira by KO/TKO,12.80%,20.00%
+F00304,Method of Victory,Brunno Ferreira by Submission,11.60%,12.00%
+F00304,Method of Victory,Brunno Ferreira by Decision,9.60%,12.00%
+F00304,Total Rounds,Over 1.5,57.00%,58.00%
+F00304,Total Rounds,Under 1.5,43.00%,44.00%
+F00304,Fight Outcome,Goes to Decision,37.60%,32.00%
+F00304,Fight Outcome,Inside the Distance,62.40%,73.00%
+F00304,Fight Outcome,KO/TKO,42.20%,57.00%
+F00304,Fight Outcome,Submission,20.20%,21.00%
+F00304,Round Betting,Round 1 Finish,36.80%,33.00%
+F00304,Round Betting,Round 2 Finish,17.90%,27.00%
+F00304,Round Betting,Round 3 Finish,7.70%,20.00%
+F00304,Fighter ITD,Edmen Shahbazyan ITD,38.00%,44.00%
+F00304,Fighter ITD,Brunno Ferreira ITD,24.40%,32.00%
+F00304,Double Chance,Edmen Shahbazyan KO/TKO or Dec,57.40%,55.00%
+F00304,Double Chance,Brunno Ferreira KO/TKO or Dec,22.40%,31.00%
+F00305,Moneyline,Tai Tuivasa,30.00%,16.00%
+F00305,Moneyline,Robelis Despaigne,70.00%,85.00%
+F00305,Method of Victory,Tai Tuivasa by KO/TKO,23.30%,11.00%
+F00305,Method of Victory,Tai Tuivasa by Submission,4.40%,2.00%
+F00305,Method of Victory,Tai Tuivasa by Decision,2.30%,5.00%
+F00305,Method of Victory,Robelis Despaigne by KO/TKO,50.00%,78.00%
+F00305,Method of Victory,Robelis Despaigne by Submission,8.70%,3.00%
+F00305,Method of Victory,Robelis Despaigne by Decision,11.30%,8.00%
+F00305,Total Rounds,Over 1.5,36.00%,31.00%
+F00305,Total Rounds,Under 1.5,64.00%,70.00%
+F00305,Fight Outcome,Goes to Decision,13.60%,13.00%
+F00305,Fight Outcome,Inside the Distance,86.40%,91.00%
+F00305,Fight Outcome,KO/TKO,73.30%,87.00%
+F00305,Fight Outcome,Submission,13.10%,6.00%
+F00305,Round Betting,Round 1 Finish,51.40%,64.00%
+F00305,Round Betting,Round 2 Finish,25.30%,22.00%
+F00305,Round Betting,Round 3 Finish,9.70%,10.00%
+F00305,Fighter ITD,Tai Tuivasa ITD,27.70%,12.00%
+F00305,Fighter ITD,Robelis Despaigne ITD,58.70%,81.00%
+F00305,Double Chance,Tai Tuivasa KO/TKO or Dec,25.60%,15.00%
+F00305,Double Chance,Robelis Despaigne KO/TKO or Dec,61.30%,85.00%
+F00306,Moneyline,Giga Chikadze,24.00%,24.00%
+F00306,Moneyline,Joanderson Brito,76.00%,80.00%
+F00306,Method of Victory,Giga Chikadze by KO/TKO,8.10%,13.00%
+F00306,Method of Victory,Giga Chikadze by Submission,1.20%,3.00%
+F00306,Method of Victory,Giga Chikadze by Decision,14.70%,11.00%
+F00306,Method of Victory,Joanderson Brito by KO/TKO,17.90%,17.00%
+F00306,Method of Victory,Joanderson Brito by Submission,14.90%,44.00%
+F00306,Method of Victory,Joanderson Brito by Decision,43.20%,22.00%
+F00306,Total Rounds,Over 1.5,71.00%,61.00%
+F00306,Total Rounds,Under 1.5,29.00%,40.00%
+F00306,Fight Outcome,Goes to Decision,57.90%,35.00%
+F00306,Fight Outcome,Inside the Distance,42.10%,68.00%
+F00306,Fight Outcome,KO/TKO,26.10%,27.00%
+F00306,Fight Outcome,Submission,16.00%,45.00%
+F00306,Round Betting,Round 1 Finish,20.80%,31.00%
+F00306,Round Betting,Round 2 Finish,14.10%,25.00%
+F00306,Round Betting,Round 3 Finish,7.20%,18.00%
+F00306,Fighter ITD,Giga Chikadze ITD,9.30%,14.00%
+F00306,Fighter ITD,Joanderson Brito ITD,32.80%,58.00%
+F00306,Double Chance,Giga Chikadze KO/TKO or Dec,22.80%,21.00%
+F00306,Double Chance,Joanderson Brito KO/TKO or Dec,61.10%,40.00%
