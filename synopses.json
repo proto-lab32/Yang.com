@@ -21,9 +21,9 @@
    "division": "Middleweight",
    "dataMode": null,
    "f1Short": "Vieira",
-   "f1Pct": 59,
+   "f1Pct": 62,
    "f2Short": "Bryczek",
-   "f2Pct": 41
+   "f2Pct": 38
   },
   {
    "f1": "Rinya Nakamura",
@@ -54,9 +54,9 @@
    "division": "Light Heavyweight",
    "dataMode": null,
    "f1Short": "Bellato",
-   "f1Pct": 71,
+   "f1Pct": 72,
    "f2Short": "Edwards",
-   "f2Pct": 29
+   "f2Pct": 28
   },
   {
    "f1": "Montel Jackson",
@@ -383,42 +383,42 @@
    "f1": "Rodolfo Vieira",
    "f2": "Robert Bryczek",
    "rounds": 3,
-   "division": "Middleweight  •  all-fights",
+   "division": "Middleweight  •  all-fights  •  Bryczek trust 0.80 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Vieira",
      "f2Short": "Bryczek",
      "modelProb": {
-      "f1": 59.2,
-      "f2": 40.8
+      "f1": 61.7,
+      "f2": 38.3
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 11,
-       "f2": 17.3
+       "f1": 10.9,
+       "f2": 17.4
       },
       {
        "name": "Submission",
-       "f1": 18.6,
+       "f1": 19,
        "f2": 1.4
       },
       {
        "name": "Decision",
-       "f1": 29.6,
-       "f2": 22
+       "f1": 31.7,
+       "f2": 19.5
       }
      ],
-     "decisionPct": 51.6,
+     "decisionPct": 51.2,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 25
+       "pct": 25.2
       },
       {
        "r": 2,
-       "pct": 15.8
+       "pct": 16
       },
       {
        "r": 3,
@@ -429,13 +429,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 32.2,
-      "over": 67.8
+      "under": 32.5,
+      "over": 67.5
      },
      {
       "line": 2.5,
-      "under": 44.3,
-      "over": 55.7
+      "under": 44.7,
+      "over": 55.3
      }
     ],
     "composites": {
@@ -444,32 +444,32 @@
       {
        "name": "Power",
        "f1": -0.44,
-       "f2": 0.09,
-       "delta": -0.53
+       "f2": 0.12,
+       "delta": -0.56
       },
       {
        "name": "Chin",
        "f1": -0.23,
-       "f2": 0.08,
-       "delta": -0.31
+       "f2": 0.15,
+       "delta": -0.38
       },
       {
        "name": "Output",
        "f1": -0.65,
-       "f2": -0.89,
-       "delta": 0.25
+       "f2": -1.2,
+       "delta": 0.55
       },
       {
        "name": "Grappling",
        "f1": 0.54,
-       "f2": -0.7,
-       "delta": 1.24
+       "f2": -0.94,
+       "delta": 1.48
       },
       {
        "name": "Wrestling Def",
        "f1": -0.05,
-       "f2": 0.27,
-       "delta": -0.32
+       "f2": 0.36,
+       "delta": -0.41
       },
       {
        "name": "Cardio",
@@ -489,39 +489,39 @@
      {
       "name": "Pressure",
       "f1": 0.42,
-      "f2": 0.39
+      "f2": 0.36
      },
      {
       "name": "Counter",
       "f1": 0.55,
-      "f2": 0.61
+      "f2": 0.64
      },
      {
       "name": "Wrestler",
       "f1": 0.62,
-      "f2": 0.37
+      "f2": 0.33
      },
      {
       "name": "Finisher",
       "f1": 0.66,
-      "f2": 0.66
+      "f2": 0.71
      },
      {
       "name": "Early-Finish Score",
       "f1": 0.3,
-      "f2": 0.47
+      "f2": 0.48
      },
      {
       "name": "Early Vulnerability",
       "f1": 0.3,
-      "f2": 0.14
+      "f2": 0.13
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
       "f1": "1.000 (114.8 min)",
-      "f2": "0.596 (41.7 min)"
+      "f2": "0.800 (41.7 min)"
      },
      {
       "name": "Decision trust",
@@ -552,37 +552,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.108",
+      "value": "+0.366",
       "reads": "Toward Vieira"
      },
      {
       "name": "KO threat — Vieira",
-      "value": "-0.646",
+      "value": "-0.716",
       "reads": "Below-avg"
      },
      {
       "name": "KO threat — Bryczek",
-      "value": "+0.534",
+      "value": "+0.564",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Vieira",
-      "value": "+0.500",
+      "value": "+0.411",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Bryczek",
-      "value": "-0.631",
+      "value": "-0.843",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "22.2%",
+      "value": "20.8%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "77.8%",
+      "value": "79.2%",
       "reads": ""
      },
      {
@@ -592,7 +592,7 @@
      },
      {
       "name": "GBM P(Vieira wins)",
-      "value": "58.1% calibrated  (HT 51.4%)",
+      "value": "59.7% calibrated  (HT 55.7%)",
       "reads": ""
      }
     ],
@@ -615,13 +615,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Vieira 59.2%, and this is the cleanest style-contrast fight on the card: a world-class submission grappler against a man who has finished every UFC win by knockout. Vieira's finish rate is 0.833 and entirely by submission — zero KO wins in eleven UFC fights — while Bryczek's is 1.000 and entirely by knockout. The composites follow suit: Vieira leads grappling +0.54 to -0.70, Bryczek leads power +0.09 to -0.44. The sim splits the methods accordingly, giving Vieira an 18.6% submission share against Bryczek's 1.4%, and Bryczek a 17.3% KO share against Vieira's 11.0%.",
+     "Vieira 61.7%, and this is the cleanest style-contrast fight on the card: a world-class submission grappler against a man who has finished every UFC win by knockout. Vieira's finish rate is 0.833 and entirely by submission — zero KO wins in eleven UFC fights — while Bryczek's is 1.000 and entirely by knockout. The composites follow suit: Vieira leads grappling +0.54 to -0.94, Bryczek leads power +0.12 to -0.44. The sim splits the methods accordingly, giving Vieira a 19.0% submission share against Bryczek's 1.4%, and Bryczek a 17.4% KO share against Vieira's 10.9%.",
      "Two things hold Vieira back from a bigger number. The first is form: he is 1-3 in his last four, including a knockout loss to Bo Nickal and decision losses to Eric McConico and Andre Petroski, and he has been finished in 40% of his defeats. The second is that he no longer gets the fight to the mat reliably — 0.19 takedowns per minute and a strike differential of -0.84 mean he is losing exchanges on the way in. Bryczek's own record is hardly imposing (1-2 in the UFC, a decision loss to Cam Rowston in May) but he did knock out Brad Tavares, and Elo actually has him 27 points ahead on three divisional fights.",
-     "The caveat that matters most is sample. Bryczek's trust is 0.596 on 41.7 minutes of cage time, so his composites are still being pulled toward the middleweight mean and should not be read as settled — his +0.09 power and +0.08 chin are closer to 'unknown' than to 'average'. His 23-fight pre-UFC record (73.9% wins, 76.5% finishes) is doing real work in the model here. The GBM at 58.1% runs ahead of the hand-tuned 51.4%, and the fight projects as a near-even coin-flip on duration: 51.6% decisions, Over 2.5 at 55.7%."
+     "Bryczek is run here on a trust override of 0.800, up from the 0.596 his 41.7 minutes of cage time would compute, and the effect is a useful warning about what trust actually does. Letting more of his own profile through does not flatter him: his power and chin tick up slightly (+0.09 to +0.12, +0.08 to +0.15) but his output falls from -0.89 to -1.20 and his grappling from -0.70 to -0.94, because less of him is now being held up by the middleweight mean. The fight moves toward Vieira, 59.2% to 61.7%. Both engines follow (GBM 59.7%, hand-tuned 55.7%), and duration stays near-even at 51.2% decisions, Over 2.5 at 55.3%."
     ],
     "synopsis": {
      "lean": "Rodolfo Vieira",
-     "body": "59.2%, and the entire fight is a race between Vieira's submission game and Bryczek's power. Vieira has finished 83% of his wins by submission and none by knockout; Bryczek has finished 100% of his by knockout and none by submission. Whoever imposes their phase wins. The model backs Vieira on the grappling edge (+0.54 to -0.70) while flagging that he is 1-3 in his last four and taking 0.84 more strikes per minute than he lands. Bryczek is the thinner sample at 0.596 trust on three UFC fights, and Elo still has him narrowly in front — treat the 59.2% as a lean, not a conviction."
+     "body": "61.7%, and the entire fight is a race between Vieira's submission game and Bryczek's power. Vieira has finished 83% of his wins by submission and none by knockout; Bryczek has finished 100% of his by knockout and none by submission. Whoever imposes their phase wins. The model backs Vieira on the grappling edge (+0.54 to -0.94) while flagging that he is 1-3 in his last four and taking 0.84 more strikes per minute than he lands. Bryczek runs at an overridden trust of 0.800 rather than his computed 0.596, which moved the fight 2.4 points toward Vieira — more of Bryczek's own profile showing through cost him output and grappling. Elo still has him narrowly in front, so treat this as a lean."
     }
    }
   },
@@ -1121,42 +1121,42 @@
    "f1": "Rodolfo Bellato",
    "f2": "Christian Edwards",
    "rounds": 3,
-   "division": "Light Heavyweight  •  all-fights",
+   "division": "Light Heavyweight  •  all-fights  •  Bellato trust 1.00, Edwards trust 0.35 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Bellato",
      "f2Short": "Edwards",
      "modelProb": {
-      "f1": 71.1,
-      "f2": 28.9
+      "f1": 71.8,
+      "f2": 28.2
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 28,
-       "f2": 11.9
+       "f1": 28.2,
+       "f2": 11.7
       },
       {
        "name": "Submission",
-       "f1": 7.2,
-       "f2": 2.3
+       "f1": 7.3,
+       "f2": 2.2
       },
       {
        "name": "Decision",
-       "f1": 35.9,
-       "f2": 14.7
+       "f1": 36.3,
+       "f2": 14.3
       }
      ],
      "decisionPct": 50.6,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 29
+       "pct": 28.9
       },
       {
        "r": 2,
-       "pct": 14.3
+       "pct": 14.4
       },
       {
        "r": 3,
@@ -1181,33 +1181,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.87,
-       "f2": -0.24,
-       "delta": 1.11
+       "f1": 0.93,
+       "f2": -0.39,
+       "delta": 1.32
       },
       {
        "name": "Chin",
-       "f1": -0.69,
-       "f2": 0.3,
-       "delta": -0.99
+       "f1": -0.73,
+       "f2": 0.49,
+       "delta": -1.22
       },
       {
        "name": "Output",
-       "f1": -0.21,
-       "f2": 0.01,
-       "delta": -0.23
+       "f1": -0.23,
+       "f2": 0.02,
+       "delta": -0.25
       },
       {
        "name": "Grappling",
-       "f1": 0.33,
-       "f2": -0.06,
-       "delta": 0.39
+       "f1": 0.35,
+       "f2": -0.1,
+       "delta": 0.45
       },
       {
        "name": "Wrestling Def",
-       "f1": 1.13,
-       "f2": 0.05,
-       "delta": 1.08
+       "f1": 1.21,
+       "f2": 0.08,
+       "delta": 1.13
       },
       {
        "name": "Cardio",
@@ -1227,39 +1227,39 @@
      {
       "name": "Pressure",
       "f1": 0.49,
-      "f2": 0.51
+      "f2": 0.52
      },
      {
       "name": "Counter",
-      "f1": 0.72,
-      "f2": 0.5
+      "f1": 0.74,
+      "f2": 0.51
      },
      {
       "name": "Wrestler",
-      "f1": 0.52,
+      "f1": 0.53,
       "f2": 0.5
      },
      {
       "name": "Finisher",
-      "f1": 0.73,
-      "f2": 0.41
+      "f1": 0.74,
+      "f2": 0.36
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.74,
-      "f2": 0.28
+      "f1": 0.75,
+      "f2": 0.26
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.44,
-      "f2": 0.11
+      "f1": 0.45,
+      "f2": 0.08
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.933 (65.3 min)",
-      "f2": "0.214 (15.0 min)"
+      "f1": "1.000 (65.3 min)",
+      "f2": "0.350 (15.0 min)"
      },
      {
       "name": "Decision trust",
@@ -1290,37 +1290,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.514",
+      "value": "+0.540",
       "reads": "Toward Bellato"
      },
      {
       "name": "KO threat — Bellato",
-      "value": "+0.324",
-      "reads": "Above-avg"
+      "value": "+0.196",
+      "reads": "Near avg"
      },
      {
       "name": "KO threat — Edwards",
-      "value": "+0.658",
+      "value": "+0.541",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Bellato",
-      "value": "+0.263",
+      "value": "+0.262",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Edwards",
-      "value": "-0.822",
+      "value": "-0.892",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "22.2%",
+      "value": "22.1%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "77.8%",
+      "value": "77.9%",
       "reads": ""
      },
      {
@@ -1330,7 +1330,7 @@
      },
      {
       "name": "GBM P(Bellato wins)",
-      "value": "71.2% calibrated  (HT 70.0%)",
+      "value": "71.2% calibrated  (HT 70.9%)",
       "reads": ""
      }
     ],
@@ -1353,13 +1353,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Bellato 71.1%, and for once the engines are in near-perfect agreement — the calibrated GBM reads 71.2% and the hand-tuned layer 70.0%. The case is power against inexperience. Bellato's power composite is +0.87 to Edwards's -0.24, his finish rate is 1.000 and entirely by knockout, and he throws 5.37 significant strikes per minute at 52.3% head accuracy, the best accuracy figure in this batch. His takedown defence is 94.4%. The sim gives him a 28.0% knockout share against Edwards's 11.9%.",
-     "The number that should temper this is Bellato's chin: -0.69, against Edwards's +0.30. Bellato absorbs 4.53 head strikes per minute, and he has been stopped in a quarter of his losses. His recent form is genuinely mixed — a first-round knockout of Luke Fernandez in March, but before that a decision loss to Navajo Stirling, a no-contest-style 'could not continue' against Paul Craig and a decision loss to Jimmy Crute. He is 1-3 across those four. Edwards also owns a real physical advantage: 198.12cm of reach to Bellato's 190.5cm, showing as a reach composite of +0.94 to -0.47.",
-     "Two caveats about Edwards are load-bearing. His trust is 0.214 on a single UFC appearance — a decision loss to Modestas Bukauskas at catch weight — so his composites are shrunk hard toward the light-heavyweight mean. And his Elo of 1500 is the cold-start default on ZERO divisional fights, because that lone bout is not logged at light heavyweight; the +160 Elo gap in this fight is therefore a default value, not an earned rating, and should not be read as evidence. Duration is the flattest on the card at 50.6% decisions."
+     "Bellato 71.8%, and for once the engines are in near-perfect agreement — the calibrated GBM reads 71.2% and the hand-tuned layer 70.9%. The case is power against inexperience. Bellato's power composite is +0.93 to Edwards's -0.39, his finish rate is 1.000 and entirely by knockout, and he throws 5.37 significant strikes per minute at 52.3% head accuracy, the best accuracy figure in this batch. His takedown defence is 94.4%. The sim gives him a 28.2% knockout share against Edwards's 11.7%.",
+     "The number that should temper this is Bellato's chin: -0.73, against Edwards's +0.49. Bellato absorbs 4.53 head strikes per minute, and he has been stopped in a quarter of his losses. His recent form is genuinely mixed — a first-round knockout of Luke Fernandez in March, but before that a decision loss to Navajo Stirling, a no-contest-style 'could not continue' against Paul Craig and a decision loss to Jimmy Crute. He is 1-3 across those four. Edwards also owns a real physical advantage: 198.12cm of reach to Bellato's 190.5cm, showing as a reach composite of +0.94 to -0.47.",
+     "Both men carry trust overrides here: Bellato at 1.000 (from a computed 0.933) and Edwards at 0.350 (from 0.214), so both profiles are stated more assertively than their cage time alone would justify. The override cuts both ways for Edwards — his chin improves from +0.30 to +0.49 but his power drops from -0.24 to -0.39. What the override cannot fix is his Elo of 1500, the cold-start default on ZERO divisional fights, because his lone UFC bout (a decision loss to Modestas Bukauskas) is logged at catch weight; the +160 Elo gap is a placeholder, not an earned rating. Duration is the flattest on the card at 50.6% decisions."
     ],
     "synopsis": {
      "lean": "Rodolfo Bellato",
-     "body": "71.1% with both engines agreeing inside a point, which is rare on this card. Bellato finishes everything he wins by knockout, throws 5.37 per minute at the card's best head accuracy, and stuffs 94.4% of takedowns. The live risk is his own durability — a -0.69 chin, 4.53 head strikes absorbed per minute, and a 1-3 run before March's knockout of Fernandez. Read the Elo gap with care: Edwards sits at the 1500 cold-start default with zero light-heavyweight fights, so the +160 is a placeholder rather than a rating, and his 0.214 trust means most of his displayed profile is the divisional mean."
+     "body": "71.8% with both engines agreeing inside a point, which is rare on this card. Bellato finishes everything he wins by knockout, throws 5.37 per minute at the card's best head accuracy, and stuffs 94.4% of takedowns. The live risk is his own durability — a -0.73 chin, 4.53 head strikes absorbed per minute, and a 1-3 run before March's knockout of Fernandez. Both fighters run on trust overrides (Bellato 1.000, Edwards 0.350), so read both profiles as asserted rather than measured. Edwards's Elo is the 1500 cold-start default on zero light-heavyweight fights, so the +160 gap is a placeholder, not evidence."
     }
    }
   },
@@ -1845,13 +1845,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Castaneda 78.9%, driven by the largest decision edge on the card at +1.53 and a striking-volume gap that the model treats as decisive. Castaneda throws 4.95 significant strikes per minute at 41.8% head accuracy against Alatengheili's 2.81 at 25.9%, and the output composites split +0.06 to -1.52 — that -1.52 is the lowest output figure in this batch. Alatengheili's strike differential is -2.31 per minute. With a 93.0% standing projection and 66.5% decisions, this is modelled as a striking match that Castaneda wins on sheer activity.",
+     "Castaneda 78.9%, driven by a decision edge of +1.53 — the second-largest on the card behind Jauregui's +2.46 — and a striking-volume gap that the model treats as decisive. Castaneda throws 4.95 significant strikes per minute at 41.8% head accuracy against Alatengheili's 2.81 at 25.9%, and the output composites split +0.06 to -1.52 — that -1.52 is the lowest output figure in this batch. Alatengheili's strike differential is -2.31 per minute. With a 93.0% standing projection and 66.5% decisions, this is modelled as a striking match that Castaneda wins on sheer activity.",
      "The uncomfortable fact is that Castaneda is 1-3 in his last four — decision losses to Mark Vologdin, Chris Gutierrez and Daniel Marcos — and his chin reads -0.52 against Alatengheili's +0.42. Alatengheili has never been finished in nine UFC fights. So the model is backing the less durable man who has been losing, on the strength of rate statistics rather than results. Notably Elo sees this as level: 1626 to 1615, a gap of 11 points, which is as close to a dead heat as the card offers. The hand-tuned layer is more confident than the GBM here (84.3% against 79.8%).",
      "One data note that materially affects this fight. Alatengheili carried a 0-0 placeholder in the pre-UFC records — a row that exists but reads as an empty career — and was backfilled before this run to his real 12-7-1 across 21 fights, with a 57.1% win rate and 58.3% finish rate. Those are modest numbers, so the correction does not rescue him, but it is now real evidence rather than a neutral default. He is also carrying a 513-day layoff and gives up 12.7cm of reach (180.34 to 167.64), both of which the model is charging him for."
     ],
     "synopsis": {
      "lean": "John Castaneda",
-     "body": "78.9%, the card's largest decision edge at +1.53, and a projection that rests almost entirely on activity: Castaneda nearly doubles Alatengheili's striking volume at far better accuracy, against a -1.52 output composite that is the worst in this batch. Two flags. Castaneda is 1-3 in his last four with a -0.52 chin, while Alatengheili has never been finished in nine UFC fights. And Elo reads the fight as level — 1626 to 1615, an 11-point gap — so the model's confidence comes from rate statistics, not from results. Alatengheili's pre-UFC record was a placeholder before this run and has been corrected to a genuine 12-7-1; it is modest enough not to change the lean."
+     "body": "78.9%, a +1.53 decision edge second only to Jauregui's, and a projection that rests almost entirely on activity: Castaneda nearly doubles Alatengheili's striking volume at far better accuracy, against a -1.52 output composite that is the worst in this batch. Two flags. Castaneda is 1-3 in his last four with a -0.52 chin, while Alatengheili has never been finished in nine UFC fights. And Elo reads the fight as level — 1626 to 1615, an 11-point gap — so the model's confidence comes from rate statistics, not from results. Alatengheili's pre-UFC record was a placeholder before this run and has been corrected to a genuine 12-7-1; it is modest enough not to change the lean."
     }
    }
   },
@@ -2105,15 +2105,15 @@
    "f1": "Mickey Gall",
    "f2": "Sedriques Dumas",
    "rounds": 3,
-   "division": "Middleweight  •  all-fights",
+   "division": "Middleweight  •  all-fights  •  Dumas trust 1.00 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Gall",
      "f2Short": "Dumas",
      "modelProb": {
-      "f1": 52.3,
-      "f2": 47.7
+      "f1": 52.4,
+      "f2": 47.6
      },
      "method": [
       {
@@ -2166,19 +2166,19 @@
       {
        "name": "Power",
        "f1": -0.32,
-       "f2": -1.03,
-       "delta": 0.71
+       "f2": -1.04,
+       "delta": 0.72
       },
       {
        "name": "Chin",
        "f1": -1.66,
-       "f2": -0.43,
+       "f2": -0.44,
        "delta": -1.22
       },
       {
        "name": "Output",
        "f1": -0.91,
-       "f2": -0.57,
+       "f2": -0.58,
        "delta": -0.34
       },
       {
@@ -2190,8 +2190,8 @@
       {
        "name": "Wrestling Def",
        "f1": -0.34,
-       "f2": -1.39,
-       "delta": 1.06
+       "f2": -1.41,
+       "delta": 1.07
       },
       {
        "name": "Cardio",
@@ -2243,7 +2243,7 @@
      {
       "name": "Trust factor (minutes-based)",
       "f1": "1.000 (104.6 min)",
-      "f2": "0.991 (69.4 min)"
+      "f2": "1.000 (69.4 min)"
      },
      {
       "name": "Decision trust",
@@ -2274,7 +2274,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.448",
+      "value": "-0.438",
       "reads": "Toward Dumas"
      },
      {
@@ -2284,27 +2284,27 @@
      },
      {
       "name": "KO threat — Dumas",
-      "value": "+0.947",
+      "value": "+0.938",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Gall",
-      "value": "+0.789",
+      "value": "+0.800",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Dumas",
-      "value": "+0.441",
+      "value": "+0.443",
       "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "33.2%",
+      "value": "33.4%",
       "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "66.8%",
+      "value": "66.6%",
       "reads": ""
      },
      {
@@ -2314,7 +2314,7 @@
      },
      {
       "name": "GBM P(Gall wins)",
-      "value": "52.4% calibrated  (HT 67.6%)",
+      "value": "52.5% calibrated  (HT 67.7%)",
       "reads": ""
      }
     ],
@@ -2337,13 +2337,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Gall 52.3%, and no fight on this card is built on shakier ground. Both men are on four-fight losing streaks. Gall has lost to Ramiz Brahimaj (knockout), Bassil Hafez, Mike Malott (knockout) and Alex Morono; Dumas has lost to Jackson McVey and Donte Johnson by submission, Zach Reese by stoppage and Michal Oleksiejczuk by knockout. They hold the two lowest Elo ratings in the batch — 1340 and 1313 — and Gall is carrying a 674-day layoff. The model is choosing between two fighters it has watched lose repeatedly.",
-     "This fight also triggered the engine-split pull, and by the largest margin on the card. The raw moneyline GBM had Dumas in front, giving Gall just 36.8%; the hand-tuned layer had Gall at 67.6%; Elo leans Gall by 27 points. Because the GBM disagreed with both, the calibrated figure was moved halfway to hand-tuned, landing at 52.4% — a 15.6-point correction that turns a clear Dumas edge into a coin-flip. Anyone reading this fight should know the model's strongest engine, left alone, picks the other man.",
-     "The route to a result is unusually clear for such a close number. Gall's finish rate is 0.833 and entirely by submission, he attempts 0.11 submissions per minute to Dumas's 0.01, and Dumas has been finished in 83.3% of his losses — three of his last four defeats were submissions or stoppages. That produces the card's largest single method share: Gall by submission at 25.8%. Against it, Gall's chin is -1.66, the worst figure in this batch, and Dumas holds 12.7cm of reach (200.66 to 187.96) and a +1.95 reach composite. This is the card's most finish-heavy projection — decisions just 44.9%, and the only fight where Over 2.5 sits below even at 49.6%."
+     "Gall 52.4%, and no fight on this card is built on shakier ground. Both men are on four-fight losing streaks. Gall has lost to Ramiz Brahimaj (knockout), Bassil Hafez, Mike Malott (knockout) and Alex Morono; Dumas has lost to Jackson McVey and Donte Johnson by submission, Zach Reese by stoppage and Michal Oleksiejczuk by knockout. They hold the two lowest Elo ratings in the batch — 1340 and 1313 — and Gall is carrying a 674-day layoff. The model is choosing between two fighters it has watched lose repeatedly.",
+     "This fight also triggered the engine-split pull, and by the largest margin on the card. The raw moneyline GBM had Dumas in front, giving Gall just 36.8%; the hand-tuned layer had Gall at 67.6%; Elo leans Gall by 27 points. Because the GBM disagreed with both, the calibrated figure was moved halfway to hand-tuned, landing at 52.5% — a 15.7-point correction that turns a clear Dumas edge into a coin-flip. Anyone reading this fight should know the model's strongest engine, left alone, picks the other man. (Dumas is run at a trust override of 1.000 against a computed 0.991 — a rounding-level change that moved the fight 0.1 of a point.)",
+     "The route to a result is unusually clear for such a close number. Gall's finish rate is 0.833 and entirely by submission, he attempts 0.11 submissions per minute to Dumas's 0.01, and Dumas has been finished in 83.3% of his losses — three of his last four defeats were submissions or stoppages. That produces the card's largest single method share: Gall by submission at 25.8%. Against it, Gall's chin is -1.66, the second-worst figure in this batch behind Jauregui's -1.98, and Dumas holds 12.7cm of reach (200.66 to 187.96) and a +1.95 reach composite. This is the card's most finish-heavy projection — decisions just 44.9%, and the only fight where Over 2.5 sits below even at 49.6%."
     ],
     "synopsis": {
      "lean": "Mickey Gall",
-     "body": "52.3%, and it comes with the card's loudest caveat: the raw GBM picked Dumas at 36.8% for Gall, the hand-tuned layer picked Gall at 67.6%, and the engine-split pull split the difference — a 15.6-point correction, the largest on the card. Both men are on four-fight losing streaks and hold the two lowest Elo ratings in the batch; Gall adds a 674-day layoff and the worst chin here at -1.66. The one clean signal is the finishing path: Gall submits 83% of the men he beats, Dumas has been finished in 83% of his losses, and Gall-by-submission at 25.8% is the biggest single method share on the card. Most likely fight here to end early — decisions are just 44.9%."
+     "body": "52.4%, and it comes with the card's loudest caveat: the raw GBM picked Dumas at 36.8% for Gall, the hand-tuned layer picked Gall at 67.7%, and the engine-split pull split the difference — a 15.7-point correction, the largest on the card. Both men are on four-fight losing streaks and hold the two lowest Elo ratings in the batch; Gall adds a 674-day layoff and a -1.66 chin, second-worst here. The one clean signal is the finishing path: Gall submits 83% of the men he beats, Dumas has been finished in 83% of his losses, and Gall-by-submission at 25.8% is the biggest single method share on the card. Most likely fight here to end early — decisions are just 44.9%."
     }
    }
   },
@@ -2351,7 +2351,7 @@
    "f1": "Yazmin Jauregui",
    "f2": "Vanessa Demopoulos",
    "rounds": 3,
-   "division": "Women's Strawweight  •  all-fights",
+   "division": "Women's Strawweight  •  all-fights  •  Jauregui trust 0.80 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
@@ -2364,25 +2364,25 @@
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 27,
+       "f1": 27.7,
        "f2": 3.4
       },
       {
        "name": "Submission",
-       "f1": 4.5,
-       "f2": 9.2
+       "f1": 3.3,
+       "f2": 9.3
       },
       {
        "name": "Decision",
-       "f1": 49,
-       "f2": 6.9
+       "f1": 49.5,
+       "f2": 6.8
       }
      ],
-     "decisionPct": 55.9,
+     "decisionPct": 56.4,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 14.8
+       "pct": 14.4
       },
       {
        "r": 2,
@@ -2390,20 +2390,20 @@
       },
       {
        "r": 3,
-       "pct": 9.4
+       "pct": 9.5
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 24,
-      "over": 76
+      "under": 23.6,
+      "over": 76.4
      },
      {
       "line": 2.5,
-      "under": 39.2,
-      "over": 60.8
+      "under": 38.8,
+      "over": 61.2
      }
     ],
     "composites": {
@@ -2411,21 +2411,21 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.87,
+       "f1": 1.15,
        "f2": -0.21,
-       "delta": 1.08
+       "delta": 1.36
       },
       {
        "name": "Chin",
-       "f1": -1.62,
+       "f1": -1.98,
        "f2": -0.18,
-       "delta": -1.44
+       "delta": -1.81
       },
       {
        "name": "Output",
-       "f1": 0.5,
+       "f1": 0.66,
        "f2": -1.17,
-       "delta": 1.68
+       "delta": 1.84
       },
       {
        "name": "Grappling",
@@ -2435,9 +2435,9 @@
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.75,
+       "f1": 0.99,
        "f2": -0.69,
-       "delta": 1.44
+       "delta": 1.67
       },
       {
        "name": "Cardio",
@@ -2456,12 +2456,12 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.57,
+      "f1": 0.59,
       "f2": 0.36
      },
      {
       "name": "Counter",
-      "f1": 0.69,
+      "f1": 0.74,
       "f2": 0.56
      },
      {
@@ -2471,12 +2471,12 @@
      },
      {
       "name": "Finisher",
-      "f1": 0.52,
+      "f1": 0.53,
       "f2": 0.45
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.41,
+      "f1": 0.43,
       "f2": 0.2
      },
      {
@@ -2488,7 +2488,7 @@
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.607 (42.5 min)",
+      "f1": "0.800 (42.5 min)",
       "f2": "1.000 (140.9 min)"
      },
      {
@@ -2520,27 +2520,27 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+2.287",
+      "value": "+2.461",
       "reads": "Toward Jauregui"
      },
      {
       "name": "KO threat — Jauregui",
-      "value": "+1.388",
+      "value": "+1.665",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Demopoulos",
-      "value": "+1.204",
+      "value": "+1.566",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Jauregui",
-      "value": "+0.440",
+      "value": "+0.427",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Demopoulos",
-      "value": "-0.936",
+      "value": "-1.105",
       "reads": "Below-avg"
      },
      {
@@ -2583,13 +2583,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Jauregui 80.5%, and the striking gap is emphatic. Jauregui throws 6.64 significant strikes per minute — the highest volume of any fighter in this batch — against Demopoulos's 3.37, and carries a strike differential of +1.39 to Demopoulos's -2.02. The composites split power +0.87 to -0.21, output +0.50 to -1.17 and reach 0.00 to -1.71, the last built on a 12.7cm span advantage (162.56 to 149.86). Her KO share is 27.0% against Demopoulos's 3.4%, and the decision edge of +2.29 is the largest on the card.",
-     "The vulnerability is durability, and it is significant on both sides. Jauregui's chin reads -1.62, the second-worst in this batch, and her finished rate is 1.000 — both career losses came by stoppage, a first-round submission to Ketlen Souza and a first-round knockout by Denise Gomes. Demopoulos is the more durable fighter on paper (chin -0.18, finished in only 16.7% of losses) and holds the only method category she wins, a 9.2% submission share against Jauregui's 4.5%, backed by 0.03 submission attempts per minute to Jauregui's zero.",
-     "Both are cold and both profiles carry qualifications. Jauregui's layoff is 737 days and her trust is 0.607 on five UFC fights and 42.5 minutes, so her composites are still being shrunk toward the divisional mean; Demopoulos is at full trust on eleven fights but has lost three straight and is 38 to Jauregui's 27. The engines agree closely — GBM 81.2%, hand-tuned 78.9%, Elo +63 to Jauregui — so no pull fired. Duration projects long at 55.9% decisions despite the KO gap, which reflects Demopoulos's ability to absorb and survive rather than any expectation that she competes on the feet."
+     "Jauregui 80.5%, and the striking gap is emphatic. Jauregui throws 6.64 significant strikes per minute — the highest volume of any fighter in this batch — against Demopoulos's 3.37, and carries a strike differential of +1.39 to Demopoulos's -2.02. The composites split power +1.15 to -0.21, output +0.66 to -1.17 and reach 0.00 to -1.71, the last built on a 12.7cm span advantage (162.56 to 149.86). Her KO share is 27.7% against Demopoulos's 3.4%, and the decision edge of +2.46 is the largest on the card.",
+     "The vulnerability is durability, and the trust override sharpens it. Jauregui is run at 0.800 rather than the 0.607 her five UFC fights and 42.5 minutes compute, which lets more of her own profile through in both directions: her power rises +0.87 to +1.15 and output +0.50 to +0.66, but her chin falls -1.62 to -1.98 — now the worst figure on the card, displacing Mickey Gall. Her finished rate is 1.000: both career losses came by stoppage, a first-round submission to Ketlen Souza and a first-round knockout by Denise Gomes. The gains and the loss very nearly cancel — the fight sits where it did at 80.5% — but the distribution behind that number is more extreme in both tails than before.",
+     "Demopoulos is the more durable fighter on paper (chin -0.18, finished in only 16.7% of losses) and holds the only method category she wins, a 9.3% submission share against Jauregui's 3.3%, backed by 0.03 submission attempts per minute to Jauregui's zero. Both are cold: Jauregui's layoff is 737 days, and Demopoulos is at full trust on eleven fights but has lost three straight and is 38 to Jauregui's 27. The engines agree closely — GBM 81.2%, hand-tuned 78.9%, Elo +63 to Jauregui — so no pull fired. Duration projects long at 56.4% decisions despite the KO gap, reflecting Demopoulos's ability to absorb and survive rather than any expectation that she competes on the feet."
     ],
     "synopsis": {
      "lean": "Yazmin Jauregui",
-     "body": "80.5% on the card's largest decision edge (+2.29) and its highest striking volume — 6.64 per minute against 3.37, with a strike differential swing of 3.4. All three engines agree. The live risk is that Jauregui is the more fragile fighter: a -1.62 chin and a finished rate of 1.000, with both career losses coming inside the first round. Demopoulos's only winning lane is the submission (9.2% to 4.5%), and she has the durability to reach it, but she is 38, on a three-fight skid and conceding 12.7cm of reach. Note Jauregui's 737-day layoff and 0.607 trust — this is a confident number drawn from a thin, stale sample."
+     "body": "80.5% on the card's largest decision edge (+2.46) and its highest striking volume — 6.64 per minute against 3.37, with a strike differential swing of 3.4. All three engines agree. The live risk is that Jauregui is the more fragile fighter, and her trust override to 0.800 makes that plainer: it lifted her power to +1.15 but dropped her chin to -1.98, now the worst on the card, alongside a finished rate of 1.000 with both career losses coming inside the first round. The headline probability did not move, but the tails widened. Demopoulos's only winning lane is the submission (9.3% to 3.3%) and she has the durability to reach it, but she is 38, on a three-fight skid and conceding 12.7cm of reach."
     }
    }
   }
