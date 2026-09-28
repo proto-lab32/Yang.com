@@ -65,9 +65,9 @@
    "division": "Flyweight",
    "dataMode": null,
    "f1Short": "Coria",
-   "f1Pct": 58,
+   "f1Pct": 46,
    "f2Short": "Rodriguez",
-   "f2Pct": 42
+   "f2Pct": 54
   },
   {
    "f1": "Damian Pinas",
@@ -1378,46 +1378,46 @@
    "f1": "Alden Coria",
    "f2": "Imanol Rodriguez",
    "rounds": 3,
-   "division": "Flyweight  •  all-fights",
+   "division": "Flyweight  •  all-fights  •  Coria trust 0.70, Rodriguez trust 0.30 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Coria",
      "f2Short": "Rodriguez",
      "modelProb": {
-      "f1": 57.6,
-      "f2": 42.4
+      "f1": 45.9,
+      "f2": 54.1
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 13.6,
-       "f2": 18.5
+       "f1": 10.1,
+       "f2": 24.5
       },
       {
        "name": "Submission",
-       "f1": 11.6,
-       "f2": 2.6
+       "f1": 9.7,
+       "f2": 1.8
       },
       {
        "name": "Decision",
-       "f1": 32.5,
-       "f2": 21.2
+       "f1": 26.1,
+       "f2": 27.8
       }
      ],
-     "decisionPct": 53.7,
+     "decisionPct": 53.9,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 22.4
+       "pct": 22.6
       },
       {
        "r": 2,
-       "pct": 15.7
+       "pct": 15.5
       },
       {
        "r": 3,
-       "pct": 8.2
+       "pct": 8
       }
      ]
     },
@@ -1438,33 +1438,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.16,
-       "f2": 0.98,
-       "delta": -1.14
+       "f1": -0.19,
+       "f2": 1.76,
+       "delta": -1.95
       },
       {
        "name": "Chin",
-       "f1": 0.39,
-       "f2": -0.33,
-       "delta": 0.72
+       "f1": 0.47,
+       "f2": -0.59,
+       "delta": 1.06
       },
       {
        "name": "Output",
-       "f1": 0.74,
-       "f2": 0.42,
-       "delta": 0.31
+       "f1": 0.89,
+       "f2": 0.77,
+       "delta": 0.11
       },
       {
        "name": "Grappling",
-       "f1": 0.09,
-       "f2": 0.35,
-       "delta": -0.26
+       "f1": 0.11,
+       "f2": 0.64,
+       "delta": -0.52
       },
       {
        "name": "Wrestling Def",
-       "f1": -0.21,
-       "f2": 0.04,
-       "delta": -0.25
+       "f1": -0.25,
+       "f2": 0.08,
+       "delta": -0.33
       },
       {
        "name": "Cardio",
@@ -1483,40 +1483,40 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.61,
-      "f2": 0.57
+      "f1": 0.62,
+      "f2": 0.61
      },
      {
       "name": "Counter",
-      "f1": 0.52,
-      "f2": 0.65
+      "f1": 0.53,
+      "f2": 0.76
      },
      {
       "name": "Wrestler",
-      "f1": 0.51,
-      "f2": 0.55
+      "f1": 0.52,
+      "f2": 0.6
      },
      {
       "name": "Finisher",
       "f1": 0.51,
-      "f2": 0.56
+      "f2": 0.6
      },
      {
       "name": "Early-Finish Score",
       "f1": 0.24,
-      "f2": 0.8
+      "f2": 0.81
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.26,
-      "f2": 0.37
+      "f1": 0.25,
+      "f2": 0.41
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.583 (40.8 min)",
-      "f2": "0.165 (11.6 min)"
+      "f1": "0.700 (40.8 min)",
+      "f2": "0.300 (11.6 min)"
      },
      {
       "name": "Decision trust",
@@ -1547,37 +1547,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.497",
+      "value": "+0.212",
       "reads": "Toward Coria"
      },
      {
       "name": "KO threat — Coria",
-      "value": "+0.418",
+      "value": "+0.653",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Rodriguez",
-      "value": "+0.445",
+      "value": "+1.149",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Coria",
-      "value": "+0.064",
+      "value": "+0.059",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Rodriguez",
-      "value": "+0.487",
+      "value": "+0.782",
       "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "26.4%",
-      "reads": "Mostly standing"
+      "value": "31.4%",
+      "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "73.6%",
+      "value": "68.6%",
       "reads": ""
      },
      {
@@ -1587,7 +1587,7 @@
      },
      {
       "name": "GBM P(Coria wins)",
-      "value": "56.6% calibrated  (HT 68.4%)",
+      "value": "46.6% calibrated  (HT 57.9%)",
       "reads": ""
      }
     ],
@@ -1610,13 +1610,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Coria 57.6%, and here the engine-split pull does more than trim — it flips the GBM's side. The raw moneyline GBM had Rodriguez ahead at 56.1% (Coria 43.9%); the hand-tuned layer had Coria at 68.4%; Elo has Coria 86 points clear (1715 to 1630). With the GBM against both, the pull moved it halfway to hand-tuned, landing at 56.6% Coria, and the sim settles at 57.6%.",
-     "Both men are thin samples, Rodriguez drastically so. He has two UFC fights, both knockout wins, totalling 12 minutes — computed trust 0.17 — so his eye-catching numbers (strike differential +3.29, 54% head accuracy, 100% KO rate) are mostly noise, and 83% of his composite profile is the flyweight mean. He is 7-0 overall. Coria, 13-3, is 3-0 in the UFC across 41 minutes (trust 0.58): decisions over Stewart Nicoll and Luis Gurule and a third-round knockout of Alessandro Costa. He is the busier grappler, with 0.15 takedowns and 0.10 submission attempts per minute, and has a 10 cm height advantage.",
-     "The method split reflects the styles: Coria's path runs through a 11.6% submission share alongside 13.6% KO and a 32.5% decision; Rodriguez's is knockout-first at 18.5% with only 2.6% SUB. Rodriguez also returns from a 212-day layoff. Duration is balanced at 53.7% decisions, Over 2.5 at 58.0%."
+     "Rodriguez 54.1% — a narrow upset lean, and one that exists because of the trust overrides on this fight. Both men are run above their computed trust (Coria 0.70, up from 0.58; Rodriguez 0.30, up from 0.17), and letting more of Rodriguez's own profile through changes the fight: his power composite climbs from +0.98 to +1.76, the highest on the card, his output from +0.42 to +0.77 and his grappling from +0.35 to +0.64. The fight moves from 57.6% Coria to 54.1% Rodriguez. Note the cost the override also exposes — Rodriguez's chin falls from -0.33 to -0.59.",
+     "The three engines split. The raw moneyline GBM now has Rodriguez at 64.3%; the hand-tuned layer still prefers Coria at 57.9%; and Elo has Coria 86 points clear (1715 to 1630). Because the GBM's pick differs from both, the engine-split pull fired and moved it halfway back to hand-tuned, to 53.4% Rodriguez, and the sim settles at 54.1%. Treat Rodriguez's numbers with care all the same: even at 0.30 trust, 70% of his profile is still the flyweight mean, and what is his own comes from two knockout wins totalling 12 minutes of UFC cage time (7-0 overall).",
+     "Coria, 13-3, is 3-0 in the UFC across 41 minutes — decisions over Stewart Nicoll and Luis Gurule and a third-round knockout of Alessandro Costa — and is the busier wrestler (0.15 takedowns and 0.10 submission attempts per minute) with a 10 cm height advantage. The methods show the contrast: Rodriguez's path is the knockout (24.5%, KO threat 1.15 to Coria's 0.65) or a decision (27.8%); Coria's runs through a 26.1% decision, 10.1% KO and a 9.7% submission share. Rodriguez returns from a 212-day layoff. 53.9% decisions, Over 2.5 at 58.0%."
     ],
     "synopsis": {
-     "lean": "Alden Coria",
-     "body": "57.6%, with an asterisk: the raw GBM actually preferred Rodriguez (56.1%), and it was the engine-split pull — triggered because both the hand-tuned layer and Elo favour Coria — that flipped the moneyline. Rodriguez's profile rests on 12 minutes of UFC cage time and is mostly the divisional average; Coria's unbeaten UFC run and grappling threat are better measured. A lean, not a strong one."
+     "lean": "Imanol Rodriguez",
+     "body": "54.1%, and a lean that the trust overrides created: at computed trust this was 57.6% Coria. Raising Rodriguez to 0.30 lets his knockout power through (+1.76, the card's highest) and the raw GBM swings to 64.3% Rodriguez; the hand-tuned layer and Elo still favour Coria, so the engine-split pull halved it. Rodriguez's case rests on 12 minutes of UFC evidence and two knockouts; Coria's on a better-measured, unbeaten UFC run and a grappling edge. Close to a coin-flip."
     }
    }
   },
@@ -2608,7 +2608,7 @@
    "f1": "Marcus McGhee",
    "f2": "Bernardo Sopaj",
    "rounds": 3,
-   "division": "Bantamweight  •  all-fights",
+   "division": "Bantamweight  •  all-fights  •  McGhee trust 1.00, Sopaj trust 0.75 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
@@ -2621,46 +2621,46 @@
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 17.4,
-       "f2": 5.6
+       "f1": 20.1,
+       "f2": 4.9
       },
       {
        "name": "Submission",
-       "f1": 4.3,
-       "f2": 11.8
+       "f1": 3.7,
+       "f2": 12.5
       },
       {
        "name": "Decision",
-       "f1": 38.4,
-       "f2": 22.5
+       "f1": 36.4,
+       "f2": 22.4
       }
      ],
-     "decisionPct": 60.9,
+     "decisionPct": 58.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 20.2
+       "pct": 21.4
       },
       {
        "r": 2,
-       "pct": 12.7
+       "pct": 13.3
       },
       {
        "r": 3,
-       "pct": 6.3
+       "pct": 6.5
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 26,
-      "over": 74
+      "under": 27.5,
+      "over": 72.5
      },
      {
       "line": 2.5,
-      "under": 35.8,
-      "over": 64.2
+      "under": 37.7,
+      "over": 62.3
      }
     ],
     "composites": {
@@ -2668,33 +2668,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.53,
-       "f2": 0.49,
-       "delta": 0.05
+       "f1": 0.6,
+       "f2": 0.69,
+       "delta": -0.09
       },
       {
        "name": "Chin",
-       "f1": 0.42,
-       "f2": -0.81,
-       "delta": 1.23
+       "f1": 0.48,
+       "f2": -1.02,
+       "delta": 1.5
       },
       {
        "name": "Output",
-       "f1": 1.09,
-       "f2": -0.12,
-       "delta": 1.21
+       "f1": 1.22,
+       "f2": -0.17,
+       "delta": 1.38
       },
       {
        "name": "Grappling",
-       "f1": -0.38,
-       "f2": 0.94,
-       "delta": -1.33
+       "f1": -0.43,
+       "f2": 1.34,
+       "delta": -1.76
       },
       {
        "name": "Wrestling Def",
-       "f1": 1.02,
-       "f2": 0.37,
-       "delta": 0.65
+       "f1": 1.13,
+       "f2": 0.52,
+       "delta": 0.61
       },
       {
        "name": "Cardio",
@@ -2713,40 +2713,40 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.64,
-      "f2": 0.5
+      "f1": 0.65,
+      "f2": 0.49
      },
      {
       "name": "Counter",
-      "f1": 0.68,
-      "f2": 0.64
+      "f1": 0.69,
+      "f2": 0.7
      },
      {
       "name": "Wrestler",
-      "f1": 0.45,
-      "f2": 0.63
+      "f1": 0.44,
+      "f2": 0.69
      },
      {
       "name": "Finisher",
-      "f1": 0.56,
+      "f1": 0.57,
       "f2": 0.5
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.49,
-      "f2": 0.35
+      "f1": 0.5,
+      "f2": 0.38
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.09,
-      "f2": 0.48
+      "f1": 0.08,
+      "f2": 0.51
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.898 (62.9 min)",
-      "f2": "0.530 (37.1 min)"
+      "f1": "1.000 (62.9 min)",
+      "f2": "0.750 (37.1 min)"
      },
      {
       "name": "Decision trust",
@@ -2777,37 +2777,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.190",
+      "value": "+0.972",
       "reads": "Toward McGhee"
      },
      {
       "name": "KO threat — McGhee",
-      "value": "+1.623",
+      "value": "+1.896",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Sopaj",
-      "value": "-0.095",
+      "value": "+0.045",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — McGhee",
-      "value": "-0.637",
+      "value": "-0.786",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Sopaj",
-      "value": "+0.252",
+      "value": "+0.607",
       "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "16.9%",
+      "value": "21.1%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "83.1%",
+      "value": "78.9%",
       "reads": ""
      },
      {
@@ -2817,7 +2817,7 @@
      },
      {
       "name": "GBM P(McGhee wins)",
-      "value": "53.4% calibrated  (HT 83.1%)",
+      "value": "53.4% calibrated  (HT 80.2%)",
       "reads": ""
      }
     ],
@@ -2840,13 +2840,13 @@
      }
     ],
     "matchupAnalysis": [
-     "McGhee 60.2%. All three inputs agree on the side but not the size: the hand-tuned layer is at 83.1%, Elo has McGhee 198 points clear (1866 to 1669), and the GBM is far more cautious at 53.4%. Sopaj's pre-UFC record was corrected before this run — it had been stored as a 0-0 placeholder and now carries his real 11-2 (7 KO, 3 SUB) — so the GBM is seeing his full career rather than an empty one.",
-     "McGhee, 36.4, is 5-1 in the UFC — decision wins over John Yannis and Jonathan Martinez, a KO of Gaston Bolanos, and a decision loss to Petr Yan. His defence is the standout: 90% takedown defence (wrestling-defence composite +1.02), an output of +1.09 and a +1.80 strike differential to Sopaj's -0.30. Sopaj, 26, is 2-1 across 37 minutes (trust 0.53) and is the grappler: composite +0.94, 0.16 takedowns per minute, and he submitted Timmy Cuamba in May. His weakness is the chin (-0.81) — Vinicius Oliveira knocked him out in his UFC debut.",
-     "The styles set the methods: McGhee's KO share is 17.4% against Sopaj's 5.6%, and Sopaj's submission share 11.8% against McGhee's 4.3%. The fight hinges on whether Sopaj can get it down against that 90% takedown defence. 60.9% decisions, Over 2.5 at 64.2%."
+     "McGhee 60.2%. This fight is run on trust overrides — McGhee 1.00 (computed 0.90) and Sopaj 0.75 (computed 0.53) — and the headline is unchanged by them, but the profiles underneath are sharper on both sides. All three inputs agree on McGhee but not the size: hand-tuned 80.2% (down from 83.1%), Elo 198 points clear (1866 to 1669), and the GBM far more cautious at 53.4%. Sopaj's pre-UFC record was also corrected before this run — it had been stored as a 0-0 placeholder and now carries his real 11-2 (7 KO, 3 SUB).",
+     "The override makes Sopaj more of everything. His grappling composite rises from +0.94 to +1.34, the highest on the card, and his power from +0.49 to +0.69 — but his chin drops from -0.81 to -1.02, the third-worst on the card after King Green and Johnny Walker: Vinicius Oliveira knocked him out in his UFC debut. He is 26, 2-1 in the UFC, lands 0.16 takedowns per minute and submitted Timmy Cuamba in May. McGhee, 36.4 and 5-1 in the UFC (wins over John Yannis, Jonathan Martinez and Gaston Bolanos, a decision loss to Petr Yan), now reads output +1.22 and wrestling defence +1.13 on 90% takedown defence, with a +1.80 strike differential to Sopaj's -0.30.",
+     "The sharper profiles push the fight toward a finish. McGhee's KO threat is 1.90 to Sopaj's 0.04, and his KO share rises to 20.1% (from 17.4%), with a 36.4% decision path; Sopaj's best route is the submission at 12.5%, against 4.9% KO. The fight hinges on whether Sopaj can get it down against that 90% takedown defence. Decisions dip to 58.8%, Over 2.5 at 62.3%."
     ],
     "synopsis": {
      "lean": "Marcus McGhee",
-     "body": "60.2%. McGhee's takedown defence, striking volume and Elo all point his way, and Sopaj's chin has already been broken once in the UFC. The GBM (53.4%) is much less sure than the hand-tuned layer (83.1%): Sopaj is 26, a genuine grappling threat (11.8% submission), and his thin 37-minute sample leaves room for improvement the numbers cannot yet see."
+     "body": "60.2%, unchanged by the trust overrides (McGhee 1.00, Sopaj 0.75), though they sharpen the fight in both directions: Sopaj's grappling rises to the card's best (+1.34) while his chin falls to -1.02. McGhee's takedown defence, striking volume and Elo all point his way, and his knockout path grows to 20.1%. The GBM (53.4%) remains far less sure than the hand-tuned layer (80.2%) — Sopaj's submission threat (12.5%) is the live route to an upset."
     }
    }
   }
