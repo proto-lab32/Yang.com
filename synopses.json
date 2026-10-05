@@ -1,6 +1,6 @@
 {
  "title": "UFC Fight Night — Christian Leroy Duncan vs. Brendan Allen",
- "generated": "Generated 2026-10-04  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  12 fights",
+ "generated": "Generated 2026-10-05  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  12 fights",
  "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
  "cardList": [
   {
@@ -10,9 +10,9 @@
    "division": "Middleweight",
    "dataMode": null,
    "f1Short": "Allen",
-   "f1Pct": 21,
+   "f1Pct": 24,
    "f2Short": "Duncan",
-   "f2Pct": 79
+   "f2Pct": 76
   },
   {
    "f1": "Matheus Camilo",
@@ -21,9 +21,9 @@
    "division": "Lightweight",
    "dataMode": null,
    "f1Short": "Camilo",
-   "f1Pct": 49,
+   "f1Pct": 56,
    "f2Short": "Herbert",
-   "f2Pct": 51
+   "f2Pct": 44
   },
   {
    "f1": "Julius Walker",
@@ -32,9 +32,9 @@
    "division": "Middleweight",
    "dataMode": null,
    "f1Short": "Walker",
-   "f1Pct": 77,
+   "f1Pct": 80,
    "f2Short": "Meerschaert",
-   "f2Pct": 23
+   "f2Pct": 20
   },
   {
    "f1": "Loopy Godinez",
@@ -43,9 +43,9 @@
    "division": "Women's Strawweight",
    "dataMode": null,
    "f1Short": "Godinez",
-   "f1Pct": 71,
+   "f1Pct": 68,
    "f2Short": "Souza",
-   "f2Pct": 29
+   "f2Pct": 32
   },
   {
    "f1": "Malcolm Wellmaker",
@@ -54,9 +54,9 @@
    "division": "Bantamweight",
    "dataMode": null,
    "f1Short": "Wellmaker",
-   "f1Pct": 52,
+   "f1Pct": 44,
    "f2Short": "Tanzilovi",
-   "f2Pct": 48
+   "f2Pct": 56
   },
   {
    "f1": "Daria Zhelezniakova",
@@ -65,9 +65,9 @@
    "division": "Women's Bantamweight",
    "dataMode": null,
    "f1Short": "Zhelezniakova",
-   "f1Pct": 26,
+   "f1Pct": 21,
    "f2Short": "Pereira",
-   "f2Pct": 74
+   "f2Pct": 79
   },
   {
    "f1": "Ernesta Kareckaite",
@@ -76,9 +76,9 @@
    "division": "Women's Flyweight",
    "dataMode": null,
    "f1Short": "Kareckaite",
-   "f1Pct": 52,
+   "f1Pct": 55,
    "f2Short": "Gatto",
-   "f2Pct": 48
+   "f2Pct": 45
   },
   {
    "f1": "RJ Harris",
@@ -87,9 +87,9 @@
    "division": "Heavyweight",
    "dataMode": null,
    "f1Short": "Harris",
-   "f1Pct": 74,
+   "f1Pct": 67,
    "f2Short": "Frye",
-   "f2Pct": 26
+   "f2Pct": 33
   },
   {
    "f1": "Andre Fili",
@@ -98,9 +98,9 @@
    "division": "Featherweight",
    "dataMode": null,
    "f1Short": "Fili",
-   "f1Pct": 64,
+   "f1Pct": 55,
    "f2Short": "Kamaka",
-   "f2Pct": 36
+   "f2Pct": 45
   },
   {
    "f1": "Francisco Prado",
@@ -109,9 +109,9 @@
    "division": "Lightweight",
    "dataMode": null,
    "f1Short": "Prado",
-   "f1Pct": 49,
+   "f1Pct": 51,
    "f2Short": "Bonfim",
-   "f2Pct": 51
+   "f2Pct": 49
   },
   {
    "f1": "Niko Price",
@@ -120,9 +120,9 @@
    "division": "Welterweight",
    "dataMode": null,
    "f1Short": "Price",
-   "f1Pct": 43,
+   "f1Pct": 44,
    "f2Short": "Shahbazyan",
-   "f2Pct": 57
+   "f2Pct": 56
   },
   {
    "f1": "Felipe Franco",
@@ -131,9 +131,9 @@
    "division": "Light Heavyweight",
    "dataMode": null,
    "f1Short": "Franco",
-   "f1Pct": 84,
+   "f1Pct": 85,
    "f2Short": "Ribeiro",
-   "f2Pct": 16
+   "f2Pct": 15
   }
  ],
  "fights": [
@@ -148,52 +148,52 @@
      "f1Short": "Allen",
      "f2Short": "Duncan",
      "modelProb": {
-      "f1": 21.5,
-      "f2": 78.5
+      "f1": 23.5,
+      "f2": 76.5
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 3.2,
-       "f2": 35.4
+       "f1": 3.1,
+       "f2": 33
       },
       {
        "name": "Submission",
-       "f1": 8.2,
-       "f2": 1.3
+       "f1": 9.3,
+       "f2": 1.4
       },
       {
        "name": "Decision",
-       "f1": 10.1,
-       "f2": 41.7
+       "f1": 11.2,
+       "f2": 42.1
       }
      ],
-     "decisionPct": 51.8,
+     "decisionPct": 53.3,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 24.7
+       "pct": 23.8
       },
       {
        "r": 2,
-       "pct": 15.7
+       "pct": 15.3
       },
       {
        "r": 3,
-       "pct": 7.8
+       "pct": 7.6
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 32,
-      "over": 68
+      "under": 30.9,
+      "over": 69.1
      },
      {
       "line": 2.5,
-      "under": 44.2,
-      "over": 55.8
+      "under": 42.8,
+      "over": 57.2
      }
     ],
     "composites": {
@@ -350,7 +350,7 @@
      },
      {
       "name": "GBM P(Allen wins)",
-      "value": "23.3% calibrated  (HT 23.3%)",
+      "value": "22.3% calibrated  (HT 23.3%)",
       "reads": ""
      }
     ],
@@ -359,7 +359,7 @@
       "name": "Brendan Allen",
       "lines": [
        "30, Orthodox, 6'2\" / 75\" reach. Record 27-7-0.",
-       "Sample: 20 division fights, 226.4 minutes total. Career WR 80%. Layoff 120 days.",
+       "Sample: 20 division fights, 226.4 minutes total. Career WR 80%. Layoff 121 days.",
        "Recent: W vs Edmen Shahbazyan (Decision R3, 2026-06-06) | W vs Reinier de Ridder (KO/TKO R4, 2025-10-18) | W vs Marvin Vettori (Decision R3, 2025-07-19)"
       ]
      },
@@ -367,19 +367,19 @@
       "name": "Christian Leroy Duncan",
       "lines": [
        "31, Switch, 6'2\" / 79\" reach. Record 15-2-0.",
-       "Sample: 10 division fights, 105.4 minutes total. Career WR 80%. Layoff 78 days.",
+       "Sample: 10 division fights, 105.4 minutes total. Career WR 80%. Layoff 79 days.",
        "Recent: W vs Jared Cannonier (Decision R3, 2026-07-18) | W vs Roman Dolidze (Decision R3, 2026-03-21) | W vs Marco Tulio (KO/TKO R2, 2025-11-08)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Duncan 78.5% — a far stronger call than the records suggest, and the one place on the card where the ratings and the model point in opposite directions. Elo has Allen 151 points clear (2146 on 19 middleweight fights to 1994 on 10), built on a three-fight run through Edmen Shahbazyan, Marvin Vettori and a fourth-round stoppage of Reinier de Ridder. Both model engines nonetheless land on Duncan: GBM 76.7%, hand-tuned 76.7%. Because the GBM agrees with the hand-tuned layer, the engine-split pull does not fire.",
+     "Duncan 76.5% — a far stronger call than the records suggest, and the one place on the card where the ratings and the model point in opposite directions. Elo has Allen 152 points clear (2146 on 19 middleweight fights to 1994 on 10), built on a three-fight run through Edmen Shahbazyan, Marvin Vettori and a fourth-round stoppage of Reinier de Ridder. Both model engines nonetheless land on Duncan: GBM 77.7%, hand-tuned 76.7%. Because the GBM agrees with the hand-tuned layer, the engine-split pull does not fire.",
      "The composites explain the call. Duncan's striking profile is the cleanest on the card: output +1.80 (card high), chin +1.27 (card high) and reach +2.02, against Allen's -0.01 / -0.31 / -0.04. Duncan lands 4.45 significant strikes per minute while absorbing just 1.25 head strikes, for a strike differential of +2.09; Allen's is -0.04, and he absorbs 3.05 per minute. Duncan, 31.2, is 15-2 and has never been finished in the UFC; he has won five straight, most recently decisions over Jared Cannonier and Roman Dolidze.",
-     "Allen's route is the submission. Half his 16 UFC wins are submissions and his grappling composite is +0.31 to Duncan's -0.65 — but he lands only 0.10 takedowns per minute into a 57.9% takedown defence, so the model gives him a sub in just 8.2% of fights. Duncan's paths are KO 35.4% and decision 41.7%. Treat the size of the number with care: Elo-disagree fights with a favourite above 70% are the cell where the model has run overconfident out of sample. Decisions 51.8%, Over 2.5 at 55.8%."
+     "Allen's route is the submission. Half his 16 UFC wins are submissions and his grappling composite is +0.31 to Duncan's -0.65 — but he lands only 0.10 takedowns per minute into a 57.9% takedown defence, so the model gives him a sub in just 9.3% of fights. Duncan's paths are KO 33.0% and decision 42.1%. Treat the size of the number with care: Elo-disagree fights with a favourite above 70% are the cell where the model has run overconfident out of sample. Decisions 53.3%, Over 2.5 at 57.2%."
     ],
     "synopsis": {
      "lean": "Christian Leroy Duncan",
-     "body": "78.5%, with both engines at 76.7% despite Elo rating Allen 151 points higher. Duncan owns the card's best output (+1.80) and chin (+1.27) plus a big reach edge, and out-lands Allen by more than two strikes a minute. Allen's live route is a submission (8.2%) if he can get it down. This is an Elo-disagree favourite above 70%, the cell where the model has historically run hot — the direction is clear, the size of the edge less so."
+     "body": "76.5%, with both engines near 77% despite Elo rating Allen 152 points higher. Duncan owns the card's best output (+1.80) and chin (+1.27) plus a big reach edge, and out-lands Allen by more than two strikes a minute. Allen's live route is a submission (9.3%) if he can get it down. This is an Elo-disagree favourite above 70%, the cell where the model has historically run hot — the direction is clear, the size of the edge less so."
     }
    }
   },
@@ -394,52 +394,52 @@
      "f1Short": "Camilo",
      "f2Short": "Herbert",
      "modelProb": {
-      "f1": 49.3,
-      "f2": 50.7
+      "f1": 56,
+      "f2": 44
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 20.7,
-       "f2": 14.2
+       "f1": 23.8,
+       "f2": 12.3
       },
       {
        "name": "Submission",
-       "f1": 7.6,
-       "f2": 4
+       "f1": 9.1,
+       "f2": 3.4
       },
       {
        "name": "Decision",
-       "f1": 21,
-       "f2": 32.5
+       "f1": 23.1,
+       "f2": 28.3
       }
      ],
-     "decisionPct": 53.5,
+     "decisionPct": 51.5,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 25.3
+       "pct": 26.5
       },
       {
        "r": 2,
-       "pct": 14.4
+       "pct": 15.1
       },
       {
        "r": 3,
-       "pct": 6.8
+       "pct": 7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 32,
-      "over": 68
+      "under": 33.4,
+      "over": 66.6
      },
      {
       "line": 2.5,
-      "under": 43,
-      "over": 57
+      "under": 44.9,
+      "over": 55.1
      }
     ],
     "composites": {
@@ -596,7 +596,7 @@
      },
      {
       "name": "GBM P(Camilo wins)",
-      "value": "50.5% calibrated  (HT 34.8%)",
+      "value": "57.0% calibrated  (HT 34.8%)",
       "reads": ""
      }
     ],
@@ -605,7 +605,7 @@
       "name": "Matheus Camilo",
       "lines": [
        "25, Orthodox, 5'10\" / 69\" reach. Record 11-3-0.",
-       "Sample: 3 division fights, 25.2 minutes total. Career WR 67%. Layoff 99 days.",
+       "Sample: 3 division fights, 25.2 minutes total. Career WR 67%. Layoff 100 days.",
        "Recent: W vs Nazim Sadykhov (KO/TKO R1, 2026-06-27) | W vs Viacheslav Borshchev (Decision R3, 2025-11-15) | L vs Gabe Green (Submission R2, 2025-05-17)"
       ]
      },
@@ -613,19 +613,19 @@
       "name": "Jai Herbert",
       "lines": [
        "38, Orthodox, 6'1\" / 77\" reach. Record 14-6-1.",
-       "Sample: 10 division fights, 107.0 minutes total. Career WR 40%. Layoff 169 days.",
+       "Sample: 10 division fights, 107.0 minutes total. Career WR 40%. Layoff 170 days.",
        "Recent: W vs Mandel Nallo (KO/TKO R1, 2026-04-18) | L vs Chris Padilla (Decision R3, 2025-03-22) | W vs Rolando Bedoya (Decision R3, 2024-08-03)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Herbert 50.7% — a true coin-flip with the engines split. The GBM has Camilo 50.5% and Elo agrees (Camilo +103, 1737 on three fights to Herbert's 1634 on ten); the hand-tuned layer prefers Herbert, giving Camilo only 34.8%. With the GBM siding with Elo, the pull does not fire, and the sim lands a hair on Herbert's side.",
-     "Camilo is 25.8 and 2-1 in the UFC (a first-round KO of Nazim Sadykhov in June, a decision over Viacheslav Borshchev, a submission loss to Gabe Green), but only 25 minutes of cage time leaves his trust at 0.36 — most of his profile is still the lightweight mean. Herbert, 38.4, has the measurables: reach +2.96, the longest on the card, power +0.48 and wrestling defence +0.66 on 66.7% takedown defence. His chin (-0.39) is the weakness, and he has gone 2-2 in his last four.",
-     "Herbert carries the decision edge (-0.95 in his favour) and the bigger decision path, 32.5% to Camilo's 21.0%. Camilo's case is power and grappling: he leads on takedowns (0.28 per minute to 0.03) and has the larger KO share (20.7% to 14.2%). The likeliest single outcome is a Herbert decision. Decisions 53.5%, Over 2.5 at 57.0%."
+     "Camilo 56.0% — a flip from the first run, which had this at 49/51 on Herbert's side. The GBM now has Camilo at 57.0% and Elo agrees (Camilo +103, 1737 on three fights to Herbert's 1634 on ten); the hand-tuned layer still prefers Herbert, giving Camilo only 34.8%. With the GBM siding with Elo, the pull does not fire. Most of the move is the model's age and form adjustment: Herbert is 38.4 and 2-2 in his last four, Camilo 25.8.",
+     "Camilo is 2-1 in the UFC (a first-round KO of Nazim Sadykhov in June, a decision over Viacheslav Borshchev, a submission loss to Gabe Green), but only 25 minutes of cage time leaves his trust at 0.36 — most of his profile is still the lightweight mean. Herbert has the measurables: reach +2.96, the longest on the card, power +0.48 and wrestling defence +0.66 on 66.7% takedown defence. His chin (-0.39) is the weakness.",
+     "Herbert carries the decision edge (-0.95 in his favour) and the bigger decision path, 28.3% to Camilo's 23.1%. Camilo's case is power and grappling: he leads on takedowns (0.28 per minute to 0.03) and has the larger KO share (23.8% to 12.3%), which makes a Camilo knockout the likeliest single finish. Decisions 51.5%, Over 2.5 at 55.1%."
     ],
     "synopsis": {
-     "lean": "Jai Herbert",
-     "body": "50.7% — a pick'em. The GBM (50.5% Camilo) and Elo (+103) lean Camilo; the hand-tuned layer leans Herbert on his reach, power and takedown defence. Camilo's thin sample (trust 0.36) keeps his profile close to average, and his best route is a knockout (20.7%). Herbert's is the decision (32.5%). No strong view."
+     "lean": "Matheus Camilo",
+     "body": "56.0%, with the GBM (57.0%) and Elo (+103) on his side; the hand-tuned layer still likes Herbert's reach, power and takedown defence. The swing from the first run is the age/form adjustment — Herbert is 38 and 2-2 in his last four. Camilo's thin sample (trust 0.36) keeps this close; his best route is a knockout (23.8%), Herbert's the decision (28.3%)."
     }
    }
   },
@@ -640,52 +640,52 @@
      "f1Short": "Walker",
      "f2Short": "Meerschaert",
      "modelProb": {
-      "f1": 76.9,
-      "f2": 23.1
+      "f1": 79.6,
+      "f2": 20.4
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 30.5,
-       "f2": 6.1
+       "f1": 33.1,
+       "f2": 5.2
       },
       {
        "name": "Submission",
-       "f1": 2.3,
-       "f2": 10.7
+       "f1": 2.4,
+       "f2": 9.6
       },
       {
        "name": "Decision",
        "f1": 44.1,
-       "f2": 6.3
+       "f2": 5.6
       }
      ],
-     "decisionPct": 50.4,
+     "decisionPct": 49.7,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 26.3
+       "pct": 26.7
       },
       {
        "r": 2,
-       "pct": 15.5
+       "pct": 15.7
       },
       {
        "r": 3,
-       "pct": 7.8
+       "pct": 7.9
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 33.4,
-      "over": 66.6
+      "under": 33.9,
+      "over": 66.1
      },
      {
       "line": 2.5,
-      "under": 45.6,
-      "over": 54.4
+      "under": 46.2,
+      "over": 53.8
      }
     ],
     "composites": {
@@ -842,7 +842,7 @@
      },
      {
       "name": "GBM P(Walker wins)",
-      "value": "78.1% calibrated  (HT 53.9%)",
+      "value": "80.9% calibrated  (HT 53.9%)",
       "reads": ""
      }
     ],
@@ -851,7 +851,7 @@
       "name": "Julius Walker",
       "lines": [
        "27, Orthodox, 6'4\" / 78\" reach. Record 7-3-0.",
-       "Sample: 4 division fights, 36.8 minutes total. Career WR 25%. Layoff 99 days.",
+       "Sample: 4 division fights, 36.8 minutes total. Career WR 25%. Layoff 100 days.",
        "Recent: L vs Abdul Rakhman Yakhyaev (KO/TKO R1, 2026-06-27) | L vs Dustin Jacoby (KO/TKO R2, 2026-02-07) | W vs Rafael Cerqueira (Decision R3, 2025-08-09)"
       ]
      },
@@ -859,19 +859,19 @@
       "name": "Gerald Meerschaert",
       "lines": [
        "38, Southpaw, 6'1\" / 77\" reach. Record 37-22-0.",
-       "Sample: 26 division fights, 220.9 minutes total. Career WR 46%. Layoff 155 days.",
+       "Sample: 26 division fights, 220.9 minutes total. Career WR 46%. Layoff 156 days.",
        "Recent: L vs Jacob Malkoun (Decision R3, 2026-05-02) | L vs Kyle Daukaus (Submission R1, 2025-11-15) | L vs Michal Oleksiejczuk (KO/TKO R1, 2025-08-16)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Walker 76.9%, driven almost entirely by the GBM. Elo sees a dead heat — Walker 1415, Meerschaert 1413 — and the hand-tuned layer is barely past even at 53.9%, but the GBM is at 78.1%. One data note matters here: Walker has never fought at middleweight. His Elo is the cross-division fallback from four light-heavyweight bouts, and his composites are his LHW rates scored against the middleweight population.",
+     "Walker 79.6%, driven almost entirely by the GBM. Elo sees a dead heat — Walker 1415, Meerschaert 1413 — and the hand-tuned layer is barely past even at 53.9%, but the GBM is at 80.9%. One data note matters here: Walker has never fought at middleweight. His Elo is the cross-division fallback from four light-heavyweight bouts, and his composites are his LHW rates scored against the middleweight population.",
      "The GBM's confidence is mostly about Meerschaert. He is 38.8, the oldest fighter on the card, and has lost four straight: decisions to Jacob Malkoun and Brad Tavares, a first-round submission by Kyle Daukaus and a first-round KO by Michal Oleksiejczuk. His chin reads -1.25 and his wrestling defence -0.86 on 40% takedown defence. Walker, 27.2, is not on a run either — 1-3 in the UFC, knocked out in his last two — and his own chin is -1.08, but he brings grappling +1.03 and wrestling defence +0.84 (he has not been taken down in the UFC).",
-     "Walker carries a +1.88 decision edge and the ground advantage: 0.27 takedowns per minute with +0.49 control. His paths are decision 44.1% and KO 30.5%. Meerschaert's live route is the one he has always had — 92% of his UFC finishes are submissions — and the model gives him a sub in 10.7% of fights. Walker's own chin keeps Meerschaert's KO (6.1%) alive. Decisions 50.4%, Over 2.5 at 54.4%."
+     "Walker carries a +1.88 decision edge and the ground advantage: 0.27 takedowns per minute with +0.49 control. His paths are decision 44.1% and KO 33.1%. Meerschaert's live route is the one he has always had — 92% of his UFC finishes are submissions — and the model gives him a sub in 9.6% of fights. Walker's own chin keeps Meerschaert's KO (5.2%) alive. Decisions 49.7%, Over 2.5 at 53.8%."
     ],
     "synopsis": {
      "lean": "Julius Walker",
-     "body": "76.9%, almost all of it from the GBM (78.1%); Elo is level and the hand-tuned layer only 53.9%. Meerschaert is 38 and has lost four straight; Walker is coming off two knockout losses at light heavyweight and has never fought at 185, so his profile is borrowed from LHW. Walker's grappling and takedown defence are the edge; Meerschaert's submission (10.7%) is the upset path."
+     "body": "79.6%, almost all of it from the GBM (80.9%); Elo is level and the hand-tuned layer only 53.9%. Meerschaert is 38 and has lost four straight; Walker is coming off two knockout losses at light heavyweight and has never fought at 185, so his profile is borrowed from LHW. Walker's grappling and takedown defence are the edge; Meerschaert's submission (9.6%) is the upset path."
     }
    }
   },
@@ -886,52 +886,52 @@
      "f1Short": "Godinez",
      "f2Short": "Souza",
      "modelProb": {
-      "f1": 71.4,
-      "f2": 28.6
+      "f1": 68.3,
+      "f2": 31.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 6.1,
-       "f2": 7.7
+       "f1": 6.2,
+       "f2": 8.7
       },
       {
        "name": "Submission",
-       "f1": 19.7,
-       "f2": 4.5
+       "f1": 18.8,
+       "f2": 5.2
       },
       {
        "name": "Decision",
-       "f1": 45.6,
-       "f2": 16.4
+       "f1": 43.2,
+       "f2": 17.9
       }
      ],
-     "decisionPct": 62,
+     "decisionPct": 61.1,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 14
+       "pct": 14.1
       },
       {
        "r": 2,
-       "pct": 15.9
+       "pct": 16.4
       },
       {
        "r": 3,
-       "pct": 8.2
+       "pct": 8.4
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 21.2,
-      "over": 78.8
+      "under": 21.6,
+      "over": 78.4
      },
      {
       "line": 2.5,
-      "under": 33.5,
-      "over": 66.5
+      "under": 34.3,
+      "over": 65.7
      }
     ],
     "composites": {
@@ -1088,7 +1088,7 @@
      },
      {
       "name": "GBM P(Godinez wins)",
-      "value": "72.0% calibrated  (HT 74.5%)",
+      "value": "67.1% calibrated  (HT 74.5%)",
       "reads": ""
      }
     ],
@@ -1097,7 +1097,7 @@
       "name": "Loopy Godinez",
       "lines": [
        "33, Orthodox, 5'2\" / 61\" reach. Record 14-6-0.",
-       "Sample: 15 division fights, 200.3 minutes total. Career WR 60%. Layoff 176 days.",
+       "Sample: 15 division fights, 200.3 minutes total. Career WR 60%. Layoff 177 days.",
        "Recent: L vs Tatiana Suarez (Submission R2, 2026-04-11) | W vs Jessica Andrade (Decision R3, 2025-08-16) | W vs Julia Polastri (Decision R3, 2025-03-29)"
       ]
      },
@@ -1105,19 +1105,19 @@
       "name": "Ketlen Souza",
       "lines": [
        "32, Orthodox, 5'3\" / 63\" reach. Record 17-6-0.",
-       "Sample: 7 division fights, 66.3 minutes total. Career WR 57%. Layoff 120 days.",
+       "Sample: 7 division fights, 66.3 minutes total. Career WR 57%. Layoff 121 days.",
        "Recent: W vs Ariane Carnelossi (KO/TKO R1, 2026-06-06) | W vs Bruna Brasil (Decision R3, 2026-02-07) | L vs Piera Rodriguez (Decision R3, 2025-08-02)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Godinez 71.4%, with the engines in close agreement: GBM 72.0%, hand-tuned 74.5%, and Elo 43 points her way (1731 on 13 strawweight fights to 1688 on seven). Godinez, 33.1, is 15 UFC fights deep (trust 1.00) and her losses have come against the top of the division — Tatiana Suarez in April, Mackenzie Dern — with decision wins over Jessica Andrade and Julia Polastri in between.",
+     "Godinez 68.3%, with the engines in close agreement: GBM 67.1%, hand-tuned 74.5%, and Elo 43 points her way (1731 on 13 strawweight fights to 1688 on seven). Godinez, 33.1, is 15 UFC fights deep (trust 1.00) and her losses have come against the top of the division — Tatiana Suarez in April, Mackenzie Dern — with decision wins over Jessica Andrade and Julia Polastri in between.",
      "This is a grappler against a striker. Godinez leads on grappling (+0.74 to -0.40) and wrestling defence (+0.62 to -0.57), lands 0.20 takedowns per minute to Souza's 0.03 and defends 76.6% of takedowns against her. She also out-works Souza on the feet (4.43 significant strikes per minute to 4.11, output +0.35 to +0.16). Souza's weapon is power — +1.18, third-highest on the card — and she knocked out Ariane Carnelossi in June. She is 2-2 in her last four.",
-     "Godinez's sub threat is 1.19 to Souza's -0.85, and her paths split decision 45.6%, submission 19.7%. Souza's best route is the knockout at 7.7%, against a Godinez chin of +0.41. This projects as one of the more decision-heavy fights on the card: 62.0% decisions, Over 2.5 at 66.5%."
+     "Godinez's sub threat is 1.19 to Souza's -0.85, and her paths split decision 43.2%, submission 18.8%. Souza's best route is the knockout at 8.7%, against a Godinez chin of +0.41. This projects as one of the more decision-heavy fights on the card: 61.1% decisions, Over 2.5 at 65.7%."
     ],
     "synopsis": {
      "lean": "Loopy Godinez",
-     "body": "71.4%, with GBM (72.0%), hand-tuned (74.5%) and Elo all agreeing. Godinez's takedowns and control should dictate where this fight happens, and she is the busier striker too. Souza's power (+1.18) gives her a puncher's chance (KO 7.7%), but the model expects Godinez to grind out a decision or find a submission (19.7%)."
+     "body": "68.3%, with GBM (67.1%), hand-tuned (74.5%) and Elo all agreeing. Godinez's takedowns and control should dictate where this fight happens, and she is the busier striker too. Souza's power (+1.18) gives her a puncher's chance (KO 8.7%), but the model expects Godinez to grind out a decision or find a submission (18.8%)."
     }
    }
   },
@@ -1132,52 +1132,52 @@
      "f1Short": "Wellmaker",
      "f2Short": "Tanzilovi",
      "modelProb": {
-      "f1": 51.9,
-      "f2": 48.1
+      "f1": 44,
+      "f2": 56
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 23.1,
-       "f2": 9.4
+       "f1": 24,
+       "f2": 15.7
       },
       {
        "name": "Submission",
-       "f1": 4.5,
-       "f2": 9.7
+       "f1": 5.3,
+       "f2": 16.3
       },
       {
        "name": "Decision",
-       "f1": 24.2,
-       "f2": 29
+       "f1": 14.7,
+       "f2": 24.1
       }
      ],
-     "decisionPct": 53.3,
+     "decisionPct": 38.7,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 23
+       "pct": 30
       },
       {
        "r": 2,
-       "pct": 15.9
+       "pct": 20.9
       },
       {
        "r": 3,
-       "pct": 7.9
+       "pct": 10.3
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 30.3,
-      "over": 69.7
+      "under": 39.6,
+      "over": 60.4
      },
      {
       "line": 2.5,
-      "under": 42.6,
-      "over": 57.4
+      "under": 55.8,
+      "over": 44.2
      }
     ],
     "composites": {
@@ -1334,7 +1334,7 @@
      },
      {
       "name": "GBM P(Wellmaker wins)",
-      "value": "52.4% calibrated  (HT 48.2%)",
+      "value": "41.8% calibrated  (HT 48.2%)",
       "reads": ""
      }
     ],
@@ -1343,7 +1343,7 @@
       "name": "Malcolm Wellmaker",
       "lines": [
        "32, Switch, 5'10\" / 71\" reach. Record 10-2-0.",
-       "Sample: 5 division fights, 31.2 minutes total. Career WR 60%. Layoff 141 days.",
+       "Sample: 5 division fights, 31.2 minutes total. Career WR 60%. Layoff 142 days.",
        "Recent: L vs Juan Diaz (Submission R2, 2026-05-16) | L vs Ethyn Ewing (Decision R3, 2025-11-15) | W vs Kris Moutinho (KO/TKO R1, 2025-06-14)"
       ]
      },
@@ -1351,19 +1351,19 @@
       "name": "Otari Tanzilovi",
       "lines": [
        "28, Orthodox, 5'10\" / 70\" reach. Record 10-2-0.",
-       "Sample: 2 division fights, 30.0 minutes total. Career WR 50%. Layoff 106 days.",
+       "Sample: 2 division fights, 30.0 minutes total. Career WR 50%. Layoff 107 days.",
        "Recent: L vs Shane Collins (Decision R3, 2026-06-20) | L vs Josias Musasa (Decision R3, 2024-09-10)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Wellmaker 51.9% — close to a coin-flip. The GBM leans Wellmaker at 52.4% and Elo agrees (+139, 1501 to 1362), while the hand-tuned layer tilts to Tanzilovi (48.2% Wellmaker). Neither man has much UFC tape: Wellmaker has 31 minutes (trust 0.45), Tanzilovi 30 (trust 0.43), so both profiles sit near the bantamweight mean.",
+     "Tanzilovi 56.0% — a flip from the first run (Wellmaker 51.9%). The GBM now leans Tanzilovi (41.8% Wellmaker) and the hand-tuned layer agrees (48.2% Wellmaker); Elo is the dissenter at +139 for Wellmaker (1501 to 1362). Because the GBM sides with the hand-tuned layer, the pull does not fire. Neither man has much UFC tape: Wellmaker has 31 minutes (trust 0.45), Tanzilovi 30 (trust 0.43), so both profiles sit near the bantamweight mean.",
      "Wellmaker is the puncher. His power composite is +1.24 and every one of his UFC wins has been a first-round knockout (Kris Moutinho, Cameron Saaiman), but he has dropped his last two — a decision to Ethyn Ewing and a second-round submission by Juan Diaz. Tanzilovi, 28.5, is 0-2 in the UFC on two decisions (Josias Musasa, Shane Collins) and is the cleaner technician: 59% head accuracy to Wellmaker's 42%, 0.30 takedowns per minute to 0.00, and 85.7% takedown defence.",
-     "The paths are mirror images. Wellmaker wins by KO in 23.1% of fights; Tanzilovi's finish routes are split KO 9.4% / sub 9.7%, and he has the larger decision path (29.0% to 24.2%). Wellmaker's takedown defence (46.7%) is the opening for Tanzilovi's wrestling — the same door Juan Diaz walked through. Decisions 53.3%, Over 2.5 at 57.4%."
+     "Both men have three or fewer UFC fights, and the model now expects fights like this to end early far more often: decisions 38.7% (down from 53.3%), Over 2.5 at 44.2%. Wellmaker wins by KO in 24.0% of fights; Tanzilovi's routes are KO 15.7%, sub 16.3% and decision 24.1%. Wellmaker's takedown defence (46.7%) is the opening for Tanzilovi's wrestling — the same door Juan Diaz walked through."
     ],
     "synopsis": {
-     "lean": "Malcolm Wellmaker",
-     "body": "51.9% — effectively a toss-up. Wellmaker has the power (+1.24, all UFC wins by first-round KO) and the Elo edge; Tanzilovi has the accuracy, the wrestling and the bigger decision path. Both have thin samples and both have lost two straight. Wellmaker's knockout (23.1%) against Tanzilovi's ability to take him down and out-point him."
+     "lean": "Otari Tanzilovi",
+     "body": "56.0%, with the GBM and hand-tuned layer on his side and only Elo backing Wellmaker. Tanzilovi has the accuracy, the wrestling and a real submission route (16.3%) into Wellmaker's leaky takedown defence; Wellmaker has the power (+1.24, all UFC wins by first-round KO, KO 24.0%). Two thin samples, both on two-fight skids — expect a finish more often than not (decisions 38.7%)."
     }
    }
   },
@@ -1378,52 +1378,52 @@
      "f1Short": "Zhelezniakova",
      "f2Short": "Pereira",
      "modelProb": {
-      "f1": 25.6,
-      "f2": 74.4
+      "f1": 20.6,
+      "f2": 79.4
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 7.6,
-       "f2": 23.5
+       "f1": 7.9,
+       "f2": 31.5
       },
       {
        "name": "Submission",
-       "f1": 2.8,
-       "f2": 10.9
+       "f1": 3.7,
+       "f2": 16.6
       },
       {
        "name": "Decision",
-       "f1": 15.1,
-       "f2": 40.1
+       "f1": 9,
+       "f2": 31.3
       }
      ],
-     "decisionPct": 55.2,
+     "decisionPct": 40.3,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 16.8
+       "pct": 22.4
       },
       {
        "r": 2,
-       "pct": 13.8
+       "pct": 18.6
       },
       {
        "r": 3,
-       "pct": 14.2
+       "pct": 18.7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 23.2,
-      "over": 76.8
+      "under": 30.9,
+      "over": 69.1
      },
      {
       "line": 2.5,
-      "under": 37.5,
-      "over": 62.5
+      "under": 50,
+      "over": 50
      }
     ],
     "composites": {
@@ -1580,7 +1580,7 @@
      },
      {
       "name": "GBM P(Zhelezniakova wins)",
-      "value": "26.0% calibrated  (HT 28.1%)",
+      "value": "21.4% calibrated  (HT 28.1%)",
       "reads": ""
      }
     ],
@@ -1589,7 +1589,7 @@
       "name": "Daria Zhelezniakova",
       "lines": [
        "30, Orthodox, 5'9\" / 68\" reach. Record 10-3-0.",
-       "Sample: 4 division fights, 48.9 minutes total. Career WR 50%. Layoff 169 days.",
+       "Sample: 4 division fights, 48.9 minutes total. Career WR 50%. Layoff 170 days.",
        "Recent: L vs Melissa Croden (Decision R3, 2026-04-18) | W vs Melissa Mullins (Decision R3, 2025-06-21) | L vs Ailin Perez (Submission R1, 2024-09-28)"
       ]
      },
@@ -1597,19 +1597,19 @@
       "name": "Alice Pereira",
       "lines": [
        "20, Orthodox, 5'8\" / 71\" reach. Record 7-1-0.",
-       "Sample: 2 division fights, 24.4 minutes total. Career WR 50%. Layoff 183 days.",
+       "Sample: 2 division fights, 24.4 minutes total. Career WR 50%. Layoff 184 days.",
        "Recent: W vs Hailey Cowan (KO/TKO R2, 2026-04-04) | L vs Montse Rendon (Decision R3, 2025-09-13)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Pereira 74.4%, and both engines agree (GBM 74.0%, hand-tuned 71.9%) even though Elo leans the other way — Zhelezniakova by 55 points (1573 on four fights to 1519 on two). Pereira is 20.8, the youngest fighter on the card, 1-1 in the UFC: a decision loss to Montse Rendon and a second-round KO of Hailey Cowan in April. With 24 minutes of tape her trust is 0.35.",
-     "Zhelezniakova's pre-UFC record was corrected before this run: it had been stored as a 0-0 placeholder and now carries her real 8-1 (five knockouts). She is 2-2 in the UFC, all four fights going the distance or ending on the mat (submitted by Ailin Perez), and is the busier striker — 4.13 significant strikes per minute to Pereira's 2.83, strike differential +0.76 to -0.29. But her grappling (-0.87) and wrestling defence (-1.02) sit well below the division mean, and her power is -0.65.",
-     "Pereira brings power +0.67 and reach +1.55, and the model gives her KO 23.5% and submission 10.9% on top of a 40.1% decision path. Zhelezniakova's route is volume over three rounds (decision 15.1%). Notably flat round-by-round finish odds (16.8% / 13.8% / 14.2%) — Pereira's finish threat holds into the third. Decisions 55.2%, Over 2.5 at 62.5%."
+     "Pereira 79.4%, and both engines agree (GBM 78.6%, hand-tuned 71.9%) even though Elo leans the other way — Zhelezniakova by 54 points (1573 on four fights to 1519 on two). Pereira is 20.8, the youngest fighter on the card, 1-1 in the UFC: a decision loss to Montse Rendon and a second-round KO of Hailey Cowan in April. With 24 minutes of tape her trust is 0.35.",
+     "Zhelezniakova's pre-UFC record was corrected before the first run: it had been stored as a 0-0 placeholder and now carries her real 8-1 (five knockouts). She is 2-2 in the UFC, all four fights going the distance or ending on the mat (submitted by Ailin Perez), and is the busier striker — 4.13 significant strikes per minute to Pereira's 2.83, strike differential +0.76 to -0.29. But her grappling (-0.87) and wrestling defence (-1.02) sit well below the division mean, and her power is -0.65.",
+     "Pereira brings power +0.67 and reach +1.55, and the model gives her KO 31.5% and submission 16.6% on top of a 31.3% decision path. Zhelezniakova's route is volume over three rounds (decision 9.0%). With Pereira on two UFC fights, the low-experience adjustment pulls the decision rate down to 40.3%, and the round-by-round finish odds stay flat (22.4% / 18.6% / 18.7%) — Pereira's finish threat holds into the third. Over 2.5 at 50.0%."
     ],
     "synopsis": {
      "lean": "Alice Pereira",
-     "body": "74.4%, with both engines in line despite Elo slightly favouring Zhelezniakova. Pereira, 20, brings the power and reach; Zhelezniakova brings volume but the weakest grappling and wrestling defence in the fight. Pereira's sample is thin (trust 0.35), which caps how much of her profile is real, but her finish paths (KO 23.5%, sub 10.9%) carry the call."
+     "body": "79.4%, with both engines in line despite Elo slightly favouring Zhelezniakova. Pereira, 20, brings the power and reach; Zhelezniakova brings volume but the weakest grappling and wrestling defence in the fight. Pereira's sample is thin (trust 0.35), which caps how much of her profile is real, but her finish paths (KO 31.5%, sub 16.6%) carry the call."
     }
    }
   },
@@ -1624,52 +1624,52 @@
      "f1Short": "Kareckaite",
      "f2Short": "Gatto",
      "modelProb": {
-      "f1": 52.3,
-      "f2": 47.7
+      "f1": 55.3,
+      "f2": 44.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 7,
-       "f2": 14
+       "f1": 8.4,
+       "f2": 13.7
       },
       {
        "name": "Submission",
-       "f1": 4.5,
-       "f2": 8.1
+       "f1": 4.8,
+       "f2": 7.2
       },
       {
        "name": "Decision",
-       "f1": 40.8,
-       "f2": 25.6
+       "f1": 42.1,
+       "f2": 23.7
       }
      ],
-     "decisionPct": 66.3,
+     "decisionPct": 65.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 10.7
+       "pct": 10.8
       },
       {
        "r": 2,
-       "pct": 14.8
+       "pct": 15.1
       },
       {
        "r": 3,
-       "pct": 8.2
+       "pct": 8.3
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 17.6,
-      "over": 82.4
+      "under": 17.7,
+      "over": 82.3
      },
      {
       "line": 2.5,
-      "under": 29.4,
-      "over": 70.6
+      "under": 29.9,
+      "over": 70.1
      }
     ],
     "composites": {
@@ -1826,7 +1826,7 @@
      },
      {
       "name": "GBM P(Kareckaite wins)",
-      "value": "51.8% calibrated  (HT 56.5%)",
+      "value": "56.6% calibrated  (HT 56.5%)",
       "reads": ""
      }
     ],
@@ -1835,7 +1835,7 @@
       "name": "Ernesta Kareckaite",
       "lines": [
        "28, Orthodox, 5'9\" / 71\" reach. Record 6-2-1.",
-       "Sample: 4 division fights, 60.0 minutes total. Career WR 50%. Layoff 218 days.",
+       "Sample: 4 division fights, 60.0 minutes total. Career WR 50%. Layoff 219 days.",
        "Recent: L vs Regina Malpica Rivera (Decision R3, 2026-02-28) | W vs Nicolle Caliari (Decision R3, 2025-01-11) | L vs Dione Barbosa (Decision R3, 2024-05-04)"
       ]
      },
@@ -1843,19 +1843,19 @@
       "name": "Melissa Gatto",
       "lines": [
        "30, Orthodox, 5'5\" / 69\" reach. Record 9-3-2.",
-       "Sample: 6 division fights, 76.4 minutes total. Career WR 50%. Layoff 183 days.",
+       "Sample: 6 division fights, 76.4 minutes total. Career WR 50%. Layoff 184 days.",
        "Recent: L vs Dione Barbosa (Decision R3, 2026-04-04) | W vs Tamires Vidal (KO/TKO R3, 2024-05-18) | L vs Ariane da Silva (Decision R3, 2023-07-01)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Kareckaite 52.3% — close, with the engines on the same side: GBM 51.8%, hand-tuned 56.5%, Elo +12 (1543 to 1530). It is a pure contrast of styles: Kareckaite throws 7.28 significant strikes per minute, the highest volume on the card, while Gatto lands 3.47 but hits far harder.",
+     "Kareckaite 55.3% — and one of the card's two engine-split pulls. The raw GBM had Gatto a hair ahead (Kareckaite 49.9%), but the hand-tuned layer has Kareckaite at 56.5% and Elo rates her 13 points higher (1543 to 1530). When the GBM disagrees with both, the model pulls it toward the hand-tuned number, which lands the GBM at 56.6% Kareckaite. It is a pure contrast of styles: Kareckaite throws 7.28 significant strikes per minute, the highest volume on the card, while Gatto lands 3.47 but hits far harder.",
      "Gatto's power composite of +1.37 is the highest on the card and her chin (+0.82) is sturdy; she absorbs only 1.35 head strikes per minute to Kareckaite's 3.65. Kareckaite has the reach (+1.99) and the takedown defence (81.3%, wrestling defence +0.60), and her output (+0.60) edges Gatto's +0.55. Both are coming off decision losses — Kareckaite to Regina Malpica Rivera (Tarin), Gatto to Dione Barbosa, who also beat Kareckaite in 2024. Gatto has fought just four times since 2022.",
-     "Kareckaite has never finished anyone in the UFC and has never been finished; her paths are almost all decision (40.8%). Gatto's finish routes are the bigger share — KO 14.0%, sub 8.1% — on top of a 25.6% decision. This is the most decision-heavy fight on the card at 66.3%, with Over 2.5 at 70.6%."
+     "Kareckaite has never finished anyone in the UFC and has never been finished; her paths are almost all decision (42.1%). Gatto's finish routes are the bigger share — KO 13.7%, sub 7.2% — on top of a 23.7% decision. This is the most decision-heavy fight on the card at 65.8%, with Over 2.5 at 70.1%."
     ],
     "synopsis": {
      "lean": "Ernesta Kareckaite",
-     "body": "52.3% — a near coin-flip between the card's busiest striker and its hardest hitter. Kareckaite's volume, reach and takedown defence give her the decision path (40.8%); Gatto's power (+1.37) gives her the better finishing odds (KO 14.0%). The model's most decision-heavy fight on the card (66.3%)."
+     "body": "55.3% — close, and produced by the engine-split pull: the raw GBM leaned Gatto (49.9% Kareckaite), the hand-tuned layer (56.5%) and Elo leaned Kareckaite. The card's busiest striker against its hardest hitter: Kareckaite's volume, reach and takedown defence give her the decision path (42.1%); Gatto's power (+1.37) gives her the better finishing odds (KO 13.7%). The model's most decision-heavy fight on the card (65.8%)."
     }
    }
   },
@@ -1870,52 +1870,52 @@
      "f1Short": "Harris",
      "f2Short": "Frye",
      "modelProb": {
-      "f1": 73.5,
-      "f2": 26.5
+      "f1": 67.3,
+      "f2": 32.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 37.4,
-       "f2": 11.1
+       "f1": 38.9,
+       "f2": 15.9
       },
       {
        "name": "Submission",
-       "f1": 6.5,
-       "f2": 2.9
+       "f1": 8.2,
+       "f2": 5.2
       },
       {
        "name": "Decision",
-       "f1": 29.6,
-       "f2": 12.4
+       "f1": 20.2,
+       "f2": 11.6
       }
      ],
-     "decisionPct": 42.1,
+     "decisionPct": 31.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 29.4
+       "pct": 35
       },
       {
        "r": 2,
-       "pct": 19.1
+       "pct": 22.2
       },
       {
        "r": 3,
-       "pct": 9.4
+       "pct": 11
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 38.3,
-      "over": 61.7
+      "under": 45.3,
+      "over": 54.7
      },
      {
       "line": 2.5,
-      "under": 53.3,
-      "over": 46.7
+      "under": 62.7,
+      "over": 37.3
      }
     ],
     "composites": {
@@ -2072,7 +2072,7 @@
      },
      {
       "name": "GBM P(Harris wins)",
-      "value": "72.9% calibrated  (HT 68.4%)",
+      "value": "66.9% calibrated  (HT 68.4%)",
       "reads": ""
      }
     ],
@@ -2081,7 +2081,7 @@
       "name": "RJ Harris",
       "lines": [
        "28, Orthodox, 6'3\" / 78\" reach. Record 6-0-0.",
-       "Sample: 1 division fights, 1.7 minutes total. Career WR 50%. Layoff 78 days.",
+       "Sample: 1 division fights, 1.7 minutes total. Career WR 50%. Layoff 79 days.",
        "Recent: W vs Alvin Hines (KO/TKO R1, 2026-07-18)"
       ]
      },
@@ -2089,19 +2089,19 @@
       "name": "Allen Frye Jr.",
       "lines": [
        "28, Orthodox, 6'5\" / 80\" reach. Record 6-1-0.",
-       "Sample: 1 division fights, 15.0 minutes total. Career WR 50%. Layoff 295 days.",
+       "Sample: 1 division fights, 15.0 minutes total. Career WR 50%. Layoff 296 days.",
        "Recent: L vs Guilherme Pat (Decision R3, 2025-12-13)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Harris 73.5%, with the engines close: GBM 72.9%, hand-tuned 68.4%. Elo rates Harris 233 points higher (1617 to 1383), but both ratings rest on a single UFC fight each — Harris's first-round KO of Alvin Hines in July, Frye's decision loss to Guilherme Pat in December. Read this one as a prior-driven projection: Harris has 2 minutes of UFC tape (trust 0.02, the thinnest on the card) and Frye 15 (trust 0.21), so their composites sit almost exactly at the heavyweight mean.",
+     "Harris 67.3%, with the engines close: GBM 66.9%, hand-tuned 68.4%. Elo rates Harris 234 points higher (1617 to 1383), but both ratings rest on a single UFC fight each — Harris's first-round KO of Alvin Hines in July, Frye's decision loss to Guilherme Pat in December. Read this one as a prior-driven projection: Harris has 2 minutes of UFC tape (trust 0.02, the thinnest on the card) and Frye 15 (trust 0.21), so their composites sit almost exactly at the heavyweight mean. The number is six points lower than the first run, mostly the model's age and form adjustment discounting a one-fight win streak.",
      "Three data fixes went into this fight. Both men's pre-UFC records had been 0-0 placeholders and now carry their real ones — Harris 5-0 (1 KO, 3 SUB, 1 DEC), Frye 6-0 (all six by knockout). Harris's height and reach were also missing and would have defaulted to 180 cm; they now read 6'3\" and 78 inches. Frye still has the longer reach composite (+0.76 to +0.22).",
-     "What separates them is UFC results and recency. Harris won his debut in a blitz; Frye lost his on a -2.07 strike differential while absorbing 3.53 head strikes per minute, and returns from a 295-day layoff, the longest on the card. Harris's paths are KO 37.4% and decision 29.6%; Frye's best is the knockout at 11.1%. A heavyweight fight with two finishers: decisions only 42.1%, Over 2.5 at 46.7%."
+     "What separates them is UFC results and recency. Harris won his debut in a blitz; Frye lost his on a -2.07 strike differential while absorbing 3.53 head strikes per minute, and returns from a 295-day layoff, the longest on the card. Harris's paths are KO 38.9% and decision 20.2%; Frye's best is the knockout at 15.9%. Two heavyweights on one UFC fight each: decisions only 31.8%, Over 2.5 at 37.3%."
     ],
     "synopsis": {
      "lean": "RJ Harris",
-     "body": "73.5%, but on almost no UFC evidence — two minutes of Harris tape and fifteen of Frye. Harris won his debut by first-round KO, Frye lost his on the scorecards, and that plus their (now corrected) unbeaten regional records is most of the call. Frye's six regional KOs keep his knockout path (11.1%) live. Expect a finish more often than not."
+     "body": "67.3%, but on almost no UFC evidence — two minutes of Harris tape and fifteen of Frye. Harris won his debut by first-round KO, Frye lost his on the scorecards, and that plus their (now corrected) unbeaten regional records is most of the call. Frye's six regional KOs keep his knockout path (15.9%) live. Expect a finish: decisions only 31.8%."
     }
    }
   },
@@ -2116,31 +2116,31 @@
      "f1Short": "Fili",
      "f2Short": "Kamaka",
      "modelProb": {
-      "f1": 64.4,
-      "f2": 35.6
+      "f1": 55.3,
+      "f2": 44.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 21,
-       "f2": 7.9
+       "f1": 18,
+       "f2": 10.5
       },
       {
        "name": "Submission",
-       "f1": 4.3,
-       "f2": 5.1
+       "f1": 3.7,
+       "f2": 6
       },
       {
        "name": "Decision",
-       "f1": 39.1,
-       "f2": 22.6
+       "f1": 33.5,
+       "f2": 28.3
       }
      ],
-     "decisionPct": 61.7,
+     "decisionPct": 61.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 18.5
+       "pct": 18.4
       },
       {
        "r": 2,
@@ -2155,13 +2155,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 24.5,
-      "over": 75.5
+      "under": 24.4,
+      "over": 75.6
      },
      {
       "line": 2.5,
-      "under": 34.8,
-      "over": 65.2
+      "under": 34.7,
+      "over": 65.3
      }
     ],
     "composites": {
@@ -2318,7 +2318,7 @@
      },
      {
       "name": "GBM P(Fili wins)",
-      "value": "64.4% calibrated  (HT 46.7%)",
+      "value": "59.1% calibrated  (HT 46.7%)",
       "reads": ""
      }
     ],
@@ -2327,7 +2327,7 @@
       "name": "Andre Fili",
       "lines": [
        "36, Orthodox, 5'11\" / 74\" reach. Record 25-14-0.",
-       "Sample: 27 division fights, 288.5 minutes total. Career WR 48%. Layoff 106 days.",
+       "Sample: 27 division fights, 288.5 minutes total. Career WR 48%. Layoff 107 days.",
        "Recent: L vs Vinicius Oliveira (KO/TKO R2, 2026-06-20) | L vs Jose Delgado (Decision R3, 2026-03-14) | W vs Christian Rodriguez (Decision R3, 2025-08-09)"
       ]
      },
@@ -2335,19 +2335,19 @@
       "name": "Kai Kamaka",
       "lines": [
        "31, Orthodox, 5'7\" / 69\" reach. Record 18-8-1.",
-       "Sample: 6 division fights, 72.5 minutes total. Career WR 33%. Layoff 85 days.",
+       "Sample: 6 division fights, 72.5 minutes total. Career WR 33%. Layoff 86 days.",
        "Recent: L vs Luke Riley (KO/TKO R1, 2026-07-11) | W vs Dakota Hope (Decision R3, 2026-04-04) | L vs Danny Chavez (Decision R3, 2021-07-31)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Fili 64.4%, carried by the GBM (64.4%) and Elo (Fili +190, 1566 on 26 featherweight fights to Kamaka's 1376 on six). The hand-tuned layer narrowly prefers Kamaka (46.7% Fili); because the GBM sides with Elo the pull does not fire.",
-     "Neither man arrives in form. Fili, 36.3, is 1-3 in his last four — knocked out by Vinicius Oliveira in June, out-pointed by Jose Delgado, submitted by Melquizael Costa — and his chin reads -1.09 with output -1.15. Kamaka, 31.7, returned to the UFC this year after a nearly five-year gap, beat Dakota Hope and was then knocked out in the first round by Luke Riley in July; his chin is -0.98. Fili's assets are experience (27 UFC fights), reach (+1.78) and wrestling defence (+0.79 on 72% takedown defence).",
-     "Kamaka is the busier striker — 5.49 significant strikes per minute to Fili's 3.89 — but absorbs 3.70 a minute himself. Fili's KO threat (1.06 to 0.26) and reach make his knockout path the largest finish route in the fight (21.0%), alongside a 39.1% decision. Kamaka's best is the decision at 22.6%. Decisions 61.7%, Over 2.5 at 65.2%."
+     "Fili 55.3% — down nine points from the first run. The GBM still has Fili at 59.1% and Elo agrees (Fili +190, 1566 on 26 featherweight fights to Kamaka's 1376 on six); the hand-tuned layer narrowly prefers Kamaka (46.7% Fili). Because the GBM sides with Elo the pull does not fire. The drop is the model's age adjustment: Fili is 36.3, Kamaka 31.7.",
+     "Neither man arrives in form. Fili is 1-3 in his last four — knocked out by Vinicius Oliveira in June, out-pointed by Jose Delgado, submitted by Melquizael Costa — and his chin reads -1.09 with output -1.15. Kamaka, 31.7, returned to the UFC this year after a nearly five-year gap, beat Dakota Hope and was then knocked out in the first round by Luke Riley in July; his chin is -0.98. Fili's assets are experience (27 UFC fights), reach (+1.78) and wrestling defence (+0.79 on 72% takedown defence).",
+     "Kamaka is the busier striker — 5.49 significant strikes per minute to Fili's 3.89 — but absorbs 3.70 a minute himself. Fili's KO threat (1.06 to 0.26) and reach make his knockout path the largest finish route in the fight (18.0%), alongside a 33.5% decision. Kamaka's best is the decision at 28.3%. Decisions 61.8%, Over 2.5 at 65.3%."
     ],
     "synopsis": {
      "lean": "Andre Fili",
-     "body": "64.4%, from the GBM and a 190-point Elo edge; the hand-tuned layer narrowly prefers Kamaka's volume. Two shaky chins, both coming off knockout losses. Fili's reach, wrestling defence and KO threat (21.0%) are the difference; Kamaka's path is out-working him over three rounds."
+     "body": "55.3%, from the GBM (59.1%) and a 190-point Elo edge; the hand-tuned layer narrowly prefers Kamaka's volume, and the model's age adjustment trims Fili's edge. Two shaky chins, both coming off knockout losses. Fili's reach, wrestling defence and KO threat (18.0%) are the difference; Kamaka's path is out-working him over three rounds (decision 28.3%)."
     }
    }
   },
@@ -2362,52 +2362,52 @@
      "f1Short": "Prado",
      "f2Short": "Bonfim",
      "modelProb": {
-      "f1": 49,
-      "f2": 51
+      "f1": 51.3,
+      "f2": 48.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 24.1,
-       "f2": 15.5
+       "f1": 26.3,
+       "f2": 15.7
       },
       {
        "name": "Submission",
-       "f1": 9.4,
-       "f2": 1.4
+       "f1": 9.7,
+       "f2": 1.5
       },
       {
        "name": "Decision",
-       "f1": 15.5,
-       "f2": 34.2
+       "f1": 15.4,
+       "f2": 31.5
       }
      ],
-     "decisionPct": 49.7,
+     "decisionPct": 46.9,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 27.4
+       "pct": 29
       },
       {
        "r": 2,
-       "pct": 15.7
+       "pct": 16.5
       },
       {
        "r": 3,
-       "pct": 7.2
+       "pct": 7.6
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 34.7,
-      "over": 65.3
+      "under": 36.6,
+      "over": 63.4
      },
      {
       "line": 2.5,
-      "under": 46.6,
-      "over": 53.4
+      "under": 49.2,
+      "over": 50.8
      }
     ],
     "composites": {
@@ -2564,7 +2564,7 @@
      },
      {
       "name": "GBM P(Prado wins)",
-      "value": "48.8% calibrated  (HT 40.8%)",
+      "value": "51.8% calibrated  (HT 40.8%)",
       "reads": ""
      }
     ],
@@ -2573,7 +2573,7 @@
       "name": "Francisco Prado",
       "lines": [
        "24, Orthodox, 5'10\" / 69\" reach. Record 12-5-0.",
-       "Sample: 6 division fights, 79.1 minutes total. Career WR 17%. Layoff 176 days.",
+       "Sample: 6 division fights, 79.1 minutes total. Career WR 17%. Layoff 177 days.",
        "Recent: L vs Charles Radtke (Decision R3, 2026-04-11) | L vs Nikolay Veretennikov (Decision R3, 2025-07-19) | L vs Jake Matthews (Decision R3, 2025-02-08)"
       ]
      },
@@ -2581,19 +2581,19 @@
       "name": "Ismael Bonfim",
       "lines": [
        "30, Orthodox, 5'8\" / 71\" reach. Record 20-7-0.",
-       "Sample: 7 division fights, 61.3 minutes total. Career WR 43%. Layoff 71 days.",
+       "Sample: 7 division fights, 61.3 minutes total. Career WR 43%. Layoff 72 days.",
        "Recent: L vs Axel Sola (Submission R1, 2026-07-25) | L vs Chris Padilla (KO/TKO R2, 2025-11-08) | L vs Nazim Sadykhov (TKO - Doctor's Stoppage R1, 2025-02-15)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Bonfim 51.0% — and this is the card's one engine-split pull. The raw GBM had Prado at 56.8%, but the hand-tuned layer has Prado at only 40.8% and Elo rates Bonfim 67 points higher (1459 to 1391). When the GBM disagrees with both, the model pulls it halfway to the hand-tuned number, which brings it to 48.8% Prado and flips the sim favourite to Bonfim. Treat it as a pick'em.",
+     "Prado 51.3% — a pick'em, and the card's other engine-split pull. The raw GBM had Prado at 55.8%, but the hand-tuned layer has Prado at only 40.8% and Elo rates Bonfim 68 points higher (1459 to 1391). When the GBM disagrees with both, the model pulls it toward the hand-tuned number, which lands it at 51.8% Prado — still on Prado's side this time, where the first run had flipped it to Bonfim.",
      "Both men are on losing streaks. Prado, 24.3, has lost four straight, all by decision (Charles Radtke, Nikolay Veretennikov, Jake Matthews, Daniel Zellhuber) — never finished in the UFC, chin +0.73. Bonfim, 30.8, has lost three straight, all inside the distance (submitted by Axel Sola in July, stopped by Chris Padilla and Nazim Sadykhov), and his chin reads -0.60. On the feet Bonfim is clearly the better striker: output +0.86 to -0.52, 5.10 significant strikes per minute to 3.68, strike differential +1.14 to -0.63.",
-     "That split defines the paths. Bonfim carries a -1.43 decision edge and a 34.2% decision route. Prado's case is durability against a fragile chin: KO threat 0.88 to -0.17, KO 24.1%, sub 9.4% — nearly all his win equity is finishes. Decisions 49.7%, Over 2.5 at 53.4%."
+     "That split defines the paths. Bonfim carries a -1.43 decision edge and a 31.5% decision route. Prado's case is durability against a fragile chin: KO threat 0.88 to -0.17, KO 26.3%, sub 9.7% — most of his win equity is finishes. Decisions 46.9%, Over 2.5 at 50.8%."
     ],
     "synopsis": {
-     "lean": "Ismael Bonfim",
-     "body": "51.0% — a coin-flip produced by the engine-split pull: the raw GBM liked Prado (56.8%), the hand-tuned layer (40.8% Prado) and Elo liked Bonfim, so the model met halfway. Bonfim out-strikes Prado comfortably but has been finished three times in a row; Prado has lost four but has never been stopped. Bonfim on points (34.2%) or Prado by knockout (24.1%)."
+     "lean": "Francisco Prado",
+     "body": "51.3% — a coin-flip shaped by the engine-split pull: the raw GBM liked Prado (55.8%), the hand-tuned layer (40.8% Prado) and Elo liked Bonfim, so the model met close to halfway. Bonfim out-strikes Prado comfortably but has been finished three times in a row; Prado has lost four but has never been stopped. Prado by knockout (26.3%) or Bonfim on points (31.5%). No strong view."
     }
    }
   },
@@ -2608,52 +2608,52 @@
      "f1Short": "Price",
      "f2Short": "Shahbazyan",
      "modelProb": {
-      "f1": 42.8,
-      "f2": 57.2
+      "f1": 44.1,
+      "f2": 55.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 13.2,
-       "f2": 23.4
+       "f1": 18.6,
+       "f2": 31.9
       },
       {
        "name": "Submission",
-       "f1": 17.4,
-       "f2": 7.3
+       "f1": 18.1,
+       "f2": 8.6
       },
       {
        "name": "Decision",
-       "f1": 12.2,
-       "f2": 26.5
+       "f1": 7.5,
+       "f2": 15.3
       }
      ],
-     "decisionPct": 38.7,
+     "decisionPct": 22.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 33.3
+       "pct": 42
       },
       {
        "r": 2,
-       "pct": 19.4
+       "pct": 24.4
       },
       {
        "r": 3,
-       "pct": 8.6
+       "pct": 10.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 42.1,
-      "over": 57.9
+      "under": 53.2,
+      "over": 46.8
      },
      {
       "line": 2.5,
-      "under": 56.6,
-      "over": 43.4
+      "under": 71.4,
+      "over": 28.6
      }
     ],
     "composites": {
@@ -2810,7 +2810,7 @@
      },
      {
       "name": "GBM P(Price wins)",
-      "value": "44.5% calibrated  (HT 35.4%)",
+      "value": "45.6% calibrated  (HT 35.4%)",
       "reads": ""
      }
     ],
@@ -2819,7 +2819,7 @@
       "name": "Niko Price",
       "lines": [
        "37, Orthodox, 6'0\" / 76\" reach. Record 16-11-0.",
-       "Sample: 21 division fights, 170.3 minutes total. Career WR 38%. Layoff 190 days.",
+       "Sample: 21 division fights, 170.3 minutes total. Career WR 38%. Layoff 191 days.",
        "Recent: L vs Michael Chiesa (Submission R1, 2026-03-28) | L vs Nikolay Veretennikov (KO/TKO R1, 2026-02-07) | L vs Jacobe Smith (Submission R2, 2025-06-28)"
       ]
      },
@@ -2827,19 +2827,19 @@
       "name": "Leon Shahbazyan",
       "lines": [
        "30, Orthodox, 6'4\" / 74\" reach. Record 12-5-0.",
-       "Sample: 2 division fights, 10.7 minutes total. Career WR 50%. Layoff 106 days.",
+       "Sample: 2 division fights, 10.7 minutes total. Career WR 50%. Layoff 107 days.",
        "Recent: L vs Levan Chokheli (KO/TKO R1, 2026-06-20) | L vs Phil Rowe (KO/TKO R3, 2019-08-20)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Shahbazyan 57.2%, with the GBM (55.5% Shahbazyan) and the hand-tuned layer (64.6% Shahbazyan) agreeing, and Elo the dissenter — Price +91 (1423 on 19 welterweight fights to 1332 on two). Shahbazyan's record was refreshed before this run from a stale 7-2 to 12-5. He is 0-2 in the UFC, knocked out by Phil Rowe in 2019 and by Levan Chokheli in June, and has only 11 minutes of UFC tape (trust 0.15), so his composites are mostly the welterweight mean.",
+     "Shahbazyan 55.9%, with the GBM (54.4% Shahbazyan) and the hand-tuned layer (64.6% Shahbazyan) agreeing, and Elo the dissenter — Price +91 (1423 on 19 welterweight fights to 1332 on two). Shahbazyan's record was refreshed before the first run from a stale 7-2 to 12-5. He is 0-2 in the UFC, knocked out by Phil Rowe in 2019 and by Levan Chokheli in June, and has only 11 minutes of UFC tape (trust 0.15), so his composites are mostly the welterweight mean.",
      "The call is largely about Price. He is 37.0, has lost four straight — submitted by Michael Chiesa in March, knocked out by Nikolay Veretennikov in February, submitted by Jacobe Smith — and carries the worst chin on the card (-1.81) plus wrestling defence of -1.85. He absorbs 3.81 head strikes per minute. Shahbazyan's own UFC defence is worse on paper (6.57 absorbed per minute), but that rate rests on 11 minutes and is heavily shrunk.",
-     "Both men are finishers who get finished, and this projects as the card's second-most finish-heavy fight: decisions only 38.7%, Over 2.5 at 43.4%. Shahbazyan's sub threat (1.33) runs into Price's weak wrestling defence; his paths are KO 23.4%, sub 7.3%, decision 26.5%. Price still owns a real sub route (17.4%) and KO 13.2% — almost none of his equity is on the cards."
+     "Both men are finishers who get finished, and with Shahbazyan on two UFC fights this is now the card's most finish-heavy fight: decisions only 22.8%, Over 2.5 at 28.6%, Over 1.5 at 46.8%, and a 42.0% chance it ends in round one. Shahbazyan's paths are KO 31.9%, sub 8.6%, decision 15.3% — his sub threat (1.33) runs into Price's weak wrestling defence. Price owns real finishing routes of his own: KO 18.6% and sub 18.1%."
     ],
     "synopsis": {
      "lean": "Leon Shahbazyan",
-     "body": "57.2%, with both model engines on his side and Elo on Price's. It is less a vote for Shahbazyan (0-2 in the UFC, 11 minutes of tape) than against Price, who is 37, has lost four straight and has the worst chin on the card. Expect a finish: decisions only 38.7%, and Price's submission (17.4%) is a live upset route."
+     "body": "55.9%, with both model engines on his side and Elo on Price's. It is less a vote for Shahbazyan (0-2 in the UFC, 11 minutes of tape) than against Price, who is 37, has lost four straight and has the worst chin on the card. The card's most finish-heavy fight (decisions 22.8%); Price's KO (18.6%) and submission (18.1%) keep the upset live."
     }
    }
   },
@@ -2854,52 +2854,52 @@
      "f1Short": "Franco",
      "f2Short": "Ribeiro",
      "modelProb": {
-      "f1": 83.7,
-      "f2": 16.3
+      "f1": 85,
+      "f2": 15
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 50.5,
-       "f2": 3.9
+       "f1": 50.1,
+       "f2": 3.5
       },
       {
        "name": "Submission",
-       "f1": 3.1,
-       "f2": 8.5
+       "f1": 3.2,
+       "f2": 7.8
       },
       {
        "name": "Decision",
-       "f1": 30.1,
-       "f2": 3.8
+       "f1": 31.7,
+       "f2": 3.7
       }
      ],
-     "decisionPct": 33.9,
+     "decisionPct": 35.4,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 44.2
+       "pct": 43.2
       },
       {
        "r": 2,
-       "pct": 15.9
+       "pct": 15.6
       },
       {
        "r": 3,
-       "pct": 6
+       "pct": 5.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 51.6,
-      "over": 48.4
+      "under": 50.5,
+      "over": 49.5
      },
      {
       "line": 2.5,
-      "under": 63,
-      "over": 37
+      "under": 61.6,
+      "over": 38.4
      }
     ],
     "composites": {
@@ -3065,7 +3065,7 @@
       "name": "Felipe Franco",
       "lines": [
        "25, Orthodox, 6'1\" / 76\" reach. Record 11-2-0.",
-       "Sample: 3 division fights, 36.5 minutes total. Career WR 33%. Layoff 78 days.",
+       "Sample: 3 division fights, 36.5 minutes total. Career WR 33%. Layoff 79 days.",
        "Recent: W vs Levi Rodrigues Jr. (KO/TKO R2, 2026-07-18) | L vs Mario Pinto (Decision R3, 2026-03-21) | L vs Freddy Vidal (Submission R3, 2025-09-09)"
       ]
      },
@@ -3073,19 +3073,19 @@
       "name": "Brendson Ribeiro",
       "lines": [
        "30, Orthodox, 6'3\" / 81\" reach. Record 17-11-0.",
-       "Sample: 9 division fights, 67.9 minutes total. Career WR 33%. Layoff 71 days.",
+       "Sample: 9 division fights, 67.9 minutes total. Career WR 33%. Layoff 72 days.",
        "Recent: L vs Magomed Tuchalov (Decision R3, 2026-07-25) | L vs Abdul Rakhman Yakhyaev (Submission R1, 2026-04-04) | L vs Oumar Sy (KO/TKO R1, 2025-09-06)"
       ]
      }
     ],
     "matchupAnalysis": [
-     "Franco 83.7%, the biggest favourite on the card. The GBM is even higher at 84.7%, the hand-tuned layer more measured at 70.7%, and Elo has Franco 268 points clear (1613 to 1345) — the largest Elo gap on the card. Franco, 25.7, is 1-2 in UFC-promoted fights (a DWCS submission loss and a heavyweight decision loss to Mario Pinto) but knocked out Levi Rodrigues Jr. in July and was 10-0 before the Contender Series. With 36 minutes of tape his trust is 0.52.",
+     "Franco 85.0%, the biggest favourite on the card. The GBM is in line at 84.7%, the hand-tuned layer more measured at 70.7%, and Elo has Franco 268 points clear (1613 to 1345) — the largest Elo gap on the card. Franco, 25.7, is 1-2 in UFC-promoted fights (a DWCS submission loss and a heavyweight decision loss to Mario Pinto) but knocked out Levi Rodrigues Jr. in July and was 10-0 before the Contender Series. With 36 minutes of tape his trust is 0.52.",
      "Ribeiro's form is the other half of the number. He has lost four straight, three by first-round stoppage (Abdul Rakhman Yakhyaev, Oumar Sy, Azamat Murzakanov) and the latest a decision to Magomed Tuchalov. His grappling (-1.15) and wrestling defence (-1.79, on 32% takedown defence) are among the weakest on the card. Franco brings takedowns (0.25 per minute), 87.5% takedown defence, 51% head accuracy and a chin of +0.68.",
-     "Franco carries the card's largest decision edge (+2.43) and a sub threat of 1.41 to Ribeiro's -1.49. His paths are KO 50.5% and decision 30.1%. Ribeiro's reach (+2.12) is his one standout measurable; his best route is a submission at 8.5%. The most finish-heavy fight on the card: decisions 33.9%, the only fight with Over 1.5 below 50% (48.4%), and a 44.2% chance it ends in round one."
+     "Franco carries the card's largest decision edge (+2.43) and a sub threat of 1.41 to Ribeiro's -1.49. His paths are KO 50.1% and decision 31.7%. Ribeiro's reach (+2.12) is his one standout measurable; his best route is a submission at 7.8%. A finish-heavy fight: decisions 35.4%, Over 1.5 at 49.5%, and a 43.2% chance it ends in round one — the highest on the card."
     ],
     "synopsis": {
      "lean": "Felipe Franco",
-     "body": "83.7%, the card's biggest favourite, with the GBM (84.7%), the hand-tuned layer (70.7%) and the card's largest Elo gap all agreeing. Ribeiro has lost four straight, three by first-round stoppage, and can't stop takedowns. Franco by knockout (50.5%) is the likeliest outcome, and the model makes this the most likely fight on the card to end early (44.2% in round one)."
+     "body": "85.0%, the card's biggest favourite, with the GBM (84.7%), the hand-tuned layer (70.7%) and the card's largest Elo gap all agreeing. Ribeiro has lost four straight, three by first-round stoppage, and can't stop takedowns. Franco by knockout (50.1%) is the likeliest outcome, and the model makes this the most likely fight on the card to end in round one (43.2%)."
     }
    }
   }
