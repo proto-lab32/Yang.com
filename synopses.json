@@ -54,9 +54,9 @@
    "division": "Bantamweight",
    "dataMode": null,
    "f1Short": "Jourdain",
-   "f1Pct": 55,
+   "f1Pct": 60,
    "f2Short": "Cuamba",
-   "f2Pct": 45
+   "f2Pct": 40
   },
   {
    "f1": "Mandel Nallo",
@@ -65,9 +65,9 @@
    "division": "Lightweight",
    "dataMode": null,
    "f1Short": "Nallo",
-   "f1Pct": 61,
+   "f1Pct": 64,
    "f2Short": "Landwehr",
-   "f2Pct": 39
+   "f2Pct": 36
   },
   {
    "f1": "Tanner Boser",
@@ -98,9 +98,9 @@
    "division": "Bantamweight",
    "dataMode": null,
    "f1Short": "Anheliger",
-   "f1Pct": 15,
+   "f1Pct": 32,
    "f2Short": "Koslow",
-   "f2Pct": 85
+   "f2Pct": 68
   },
   {
    "f1": "Melissa Croden",
@@ -109,9 +109,9 @@
    "division": "Women's Bantamweight",
    "dataMode": null,
    "f1Short": "Croden",
-   "f1Pct": 73,
+   "f1Pct": 75,
    "f2Short": "Chandler",
-   "f2Pct": 27
+   "f2Pct": 25
   },
   {
    "f1": "Soo Young Yoo",
@@ -626,7 +626,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Blanchfield 83.7% — one of the three biggest favourites on the card, and every signal agrees. GBM 83.1%, hand-tuned 72.0%, and Elo has Blanchfield 197 points clear (2107 on 9 flyweight fights to 1910 on 13). Her only UFC loss is a five-round decision to Manon Fiorot. She has since beaten Rose Namajunas and submitted Tracy Cortez last November, though that is now a 331-day layoff.",
+     "Blanchfield 83.7% — the biggest favourite on the card, and every signal agrees. GBM 83.1%, hand-tuned 72.0%, and Elo has Blanchfield 197 points clear (2107 on 9 flyweight fights to 1910 on 13). Her only UFC loss is a five-round decision to Manon Fiorot. She has since beaten Rose Namajunas and submitted Tracy Cortez last November, though that is now a 331-day layoff.",
      "This is the card's grappling fight: Jasudavicius has the best grappling composite on the card (+2.37), and Blanchfield is close behind at +1.60. The difference is everywhere else. Blanchfield has the chin (+0.47 to -0.28), output (+0.61 to +0.00) and wrestling defence (+1.18), and lands 5.24 strikes per minute to Jasudavicius's 3.47. Age matters too: Jasudavicius is 37.6 to Blanchfield's 27.4, and was stopped in the first round by Fiorot a year ago.",
      "Blanchfield's routes: decision 50.9%, submission 24.2%, KO 8.5%. Jasudavicius wins mainly on the cards (12.5% of her 16.3%). This is the most decision-heavy fight on the card: 63.4% go the distance, Over 2.5 at 67.8%."
     ],
@@ -1132,59 +1132,59 @@
    "f1": "Louis Jourdain",
    "f2": "Timmy Cuamba",
    "rounds": 3,
-   "division": "Bantamweight  •  all-fights",
+   "division": "Bantamweight  •  all-fights  •  Jourdain trust 0.40 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Jourdain",
      "f2Short": "Cuamba",
      "modelProb": {
-      "f1": 55.3,
-      "f2": 44.7
+      "f1": 60.1,
+      "f2": 39.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 7.7,
-       "f2": 21.8
+       "f1": 9.4,
+       "f2": 21.4
       },
       {
        "name": "Submission",
-       "f1": 26.1,
-       "f2": 3.1
+       "f1": 27,
+       "f2": 2.2
       },
       {
        "name": "Decision",
-       "f1": 21.5,
-       "f2": 19.8
+       "f1": 23.7,
+       "f2": 16.2
       }
      ],
-     "decisionPct": 41.3,
+     "decisionPct": 40,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 28.5
+       "pct": 29.1
       },
       {
        "r": 2,
-       "pct": 19.8
+       "pct": 20.3
       },
       {
        "r": 3,
-       "pct": 10.4
+       "pct": 10.7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 37.5,
-      "over": 62.5
+      "under": 38.3,
+      "over": 61.7
      },
      {
       "line": 2.5,
-      "under": 53,
-      "over": 47
+      "under": 54.2,
+      "over": 45.8
      }
     ],
     "composites": {
@@ -1192,33 +1192,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.12,
+       "f1": 0.32,
        "f2": -0.14,
-       "delta": 0.27
+       "delta": 0.47
       },
       {
        "name": "Chin",
-       "f1": 0.1,
+       "f1": 0.27,
        "f2": 0.2,
-       "delta": -0.1
+       "delta": 0.07
       },
       {
        "name": "Output",
-       "f1": 0.42,
+       "f1": 1.09,
        "f2": -0.52,
-       "delta": 0.94
+       "delta": 1.62
       },
       {
        "name": "Grappling",
-       "f1": 0,
+       "f1": -0.01,
        "f2": -0.27,
        "delta": 0.26
       },
       {
        "name": "Wrestling Def",
-       "f1": -0.03,
+       "f1": -0.08,
        "f2": 0.29,
-       "delta": -0.32
+       "delta": -0.37
       },
       {
        "name": "Cardio",
@@ -1237,12 +1237,12 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.57,
+      "f1": 0.65,
       "f2": 0.45
      },
      {
       "name": "Counter",
-      "f1": 0.52,
+      "f1": 0.55,
       "f2": 0.61
      },
      {
@@ -1252,24 +1252,24 @@
      },
      {
       "name": "Finisher",
-      "f1": 0.52,
+      "f1": 0.56,
       "f2": 0.45
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.31,
+      "f1": 0.34,
       "f2": 0.26
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.3,
+      "f1": 0.28,
       "f2": 0.2
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.152 (10.7 min)",
+      "f1": "0.400 (10.7 min)",
       "f2": "1.000 (76.3 min)"
      },
      {
@@ -1301,37 +1301,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.774",
+      "value": "+1.345",
       "reads": "Toward Jourdain"
      },
      {
       "name": "KO threat — Jourdain",
-      "value": "-0.228",
-      "reads": "Below-avg"
-     },
-     {
-      "name": "KO threat — Cuamba",
-      "value": "-0.158",
+      "value": "-0.029",
       "reads": "Near avg"
      },
      {
+      "name": "KO threat — Cuamba",
+      "value": "-0.325",
+      "reads": "Below-avg"
+     },
+     {
       "name": "Sub threat — Jourdain",
-      "value": "-0.215",
+      "value": "-0.230",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Cuamba",
-      "value": "-0.219",
-      "reads": "Below-avg"
+      "value": "-0.187",
+      "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "14.5%",
+      "value": "15.2%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "85.5%",
+      "value": "84.8%",
       "reads": ""
      },
      {
@@ -1341,7 +1341,7 @@
      },
      {
       "name": "GBM P(Jourdain wins)",
-      "value": "56.0% calibrated  (HT 80.4%)",
+      "value": "59.3% calibrated  (HT 86.5%)",
       "reads": ""
      }
     ],
@@ -1364,13 +1364,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Jourdain 55.3% — a narrow edge in a fight where the engines are far apart. The hand-tuned layer loves Jourdain (80.4%), but the GBM is much cooler at 56.0%. Elo leans Jourdain by 79 points, mostly the bump from his one Contender Series win (1550 on 1 fight to Cuamba's 1471 on 6). Because the GBM still picks Jourdain, no pull fires.",
-     "The gap between the engines is a sample-size story. Jourdain has 11 minutes of UFC-system tape, a third-round submission of Magno Dias on DWCS a year ago. That leaves his trust at 0.15, and he has been out 377 days. He is 9-3 overall. Cuamba (trust 1.00, 6 UFC fights) is a known quantity: chin +0.20, reach +0.73, but low output (-0.52, 2.88 strikes per minute). He is 3-3 in the UFC and was submitted by Benardo Sopaj in May.",
-     "Jourdain's routes: submission 26.1%, decision 21.5%, KO 7.7%. Cuamba's: KO 21.8%, decision 19.8%. With a fighter on one UFC-system fight, the model's low-experience adjustment pushes toward finishes: decisions 41.3%, Over 2.5 47.0%."
+     "Jourdain 60.1%, run with a trust override of 0.40 on Jourdain (computed trust 0.15). Cuamba stays on his computed 1.00. The engines are far apart: the hand-tuned layer has Jourdain at 86.5%, while the GBM is much cooler at 59.3%. Elo leans Jourdain by 79 points, mostly the bump from his one Contender Series win (1550 on 1 fight to Cuamba's 1471 on 6). Because the GBM still picks Jourdain, no pull fires.",
+     "Jourdain has only 11 minutes of UFC-system tape, a third-round submission of Magno Dias on DWCS a year ago, and has been out 377 days. The override lets more of that tape through, and it cuts both ways. His output rises from +0.42 to +1.09 (7.32 strikes per minute), with power +0.32 and chin +0.27. Those figures still rest on one fight. Cuamba (6 UFC fights) is a known quantity: chin +0.20, reach +0.73, but low output (-0.52, 2.88 strikes per minute). He is 3-3 in the UFC and was submitted by Benardo Sopaj in May. The decision edge widens to +1.34.",
+     "Jourdain's routes: submission 27.0%, decision 23.7%, KO 9.4%. Cuamba's: KO 21.4%, decision 16.2%. With a fighter on one UFC-system fight, the model's low-experience adjustment pushes toward finishes: decisions 40.0%, Over 2.5 45.8%."
     ],
     "synopsis": {
      "lean": "Louis Jourdain",
-     "body": "55.3%. The hand-tuned layer has him at 80%, but the GBM trims that to 56% because 11 minutes of tape (trust 0.15) and a year out leave plenty unknown. Cuamba is the steadier, more measured fighter with the reach. Jourdain's best route is a submission (26.1%). Lean, not lock."
+     "body": "60.1% with his trust overridden to 0.40. That lets his one DWCS performance count for more: output +1.09 against Cuamba's -0.52. The hand-tuned layer has him at 87%, but the GBM holds near 59% because one fight and a year out leave plenty unknown. Cuamba has the reach and the steadier record. Jourdain's best route is a submission (27.0%)."
     }
    }
   },
@@ -1378,59 +1378,59 @@
    "f1": "Mandel Nallo",
    "f2": "Nate Landwehr",
    "rounds": 3,
-   "division": "Lightweight  •  all-fights",
+   "division": "Lightweight  •  all-fights  •  Nallo trust 0.30 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Nallo",
      "f2Short": "Landwehr",
      "modelProb": {
-      "f1": 61.2,
-      "f2": 38.8
+      "f1": 63.8,
+      "f2": 36.2
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 38.6,
-       "f2": 10
+       "f1": 42.5,
+       "f2": 10.6
       },
       {
        "name": "Submission",
-       "f1": 1.9,
-       "f2": 21.8
+       "f1": 1.4,
+       "f2": 20.1
       },
       {
        "name": "Decision",
-       "f1": 20.7,
-       "f2": 7
+       "f1": 19.8,
+       "f2": 5.5
       }
      ],
-     "decisionPct": 27.7,
+     "decisionPct": 25.3,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 43.7
+       "pct": 46
       },
       {
        "r": 2,
-       "pct": 20.3
+       "pct": 20.9
       },
       {
        "r": 3,
-       "pct": 8.2
+       "pct": 7.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 53.1,
-      "over": 46.9
+      "under": 55.6,
+      "over": 44.4
      },
      {
       "line": 2.5,
-      "under": 67.9,
-      "over": 32.1
+      "under": 70.6,
+      "over": 29.4
      }
     ],
     "composites": {
@@ -1438,33 +1438,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.42,
+       "f1": 1.43,
        "f2": -0.35,
-       "delta": 0.77
+       "delta": 1.77
       },
       {
        "name": "Chin",
-       "f1": -0.72,
+       "f1": -1.49,
        "f2": -2.66,
-       "delta": 1.94
+       "delta": 1.17
       },
       {
        "name": "Output",
-       "f1": 0.15,
+       "f1": 0.58,
        "f2": -0.33,
-       "delta": 0.48
+       "delta": 0.91
       },
       {
        "name": "Grappling",
-       "f1": -0.01,
+       "f1": -0.04,
        "f2": -0.31,
-       "delta": 0.29
+       "delta": 0.26
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.1,
+       "f1": 0.39,
        "f2": 0.33,
-       "delta": -0.22
+       "delta": 0.06
       },
       {
        "name": "Cardio",
@@ -1483,39 +1483,39 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.52,
+      "f1": 0.57,
       "f2": 0.46
      },
      {
       "name": "Counter",
-      "f1": 0.57,
+      "f1": 0.71,
       "f2": 0.53
      },
      {
       "name": "Wrestler",
-      "f1": 0.5,
+      "f1": 0.49,
       "f2": 0.46
      },
      {
       "name": "Finisher",
-      "f1": 0.52,
+      "f1": 0.56,
       "f2": 0.59
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.8,
+      "f1": 0.88,
       "f2": 0.26
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.89,
+      "f1": 0.93,
       "f2": 0.71
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.080 (5.6 min)",
+      "f1": "0.300 (5.6 min)",
       "f2": "1.000 (102.8 min)"
      },
      {
@@ -1547,37 +1547,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.956",
+      "value": "+1.440",
       "reads": "Toward Nallo"
      },
      {
       "name": "KO threat — Nallo",
-      "value": "+3.195",
+      "value": "+4.199",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Landwehr",
-      "value": "+0.139",
-      "reads": "Near avg"
+      "value": "+0.907",
+      "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Nallo",
-      "value": "-0.238",
+      "value": "-0.261",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Landwehr",
-      "value": "-0.431",
+      "value": "-0.660",
       "reads": "Below-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "12.9%",
+      "value": "12.5%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "87.1%",
+      "value": "87.5%",
       "reads": ""
      },
      {
@@ -1587,7 +1587,7 @@
      },
      {
       "name": "GBM P(Nallo wins)",
-      "value": "61.4% calibrated  (HT 72.3%)",
+      "value": "65.9% calibrated  (HT 74.6%)",
       "reads": ""
      }
     ],
@@ -1610,13 +1610,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Nallo 61.2%, despite Elo backing Landwehr by 91 points. Both engines pick Nallo: GBM 61.4%, hand-tuned 72.3%. Two caveats on that Elo number. Landwehr has never fought at lightweight: his 1502 is borrowed from 11 featherweight bouts, and his composites are FW rates scored against the LW population. Nallo's 1411 rests on just two UFC fights.",
-     "The case for Nallo is Landwehr's chin: -2.66, the worst on the card by a wide margin. Landwehr has been stopped in each of his last three: Dooho Choi and Morgan Charriere in round three, and Cub Swanson in the first round in April. He is 38.3. Nallo, a 14-4 veteran, throws 8.26 strikes per minute at 52% accuracy and has a KO threat of 3.19, the highest on the card. But he is 37.2 with only 6 minutes of UFC time (trust 0.08), and he was himself KO'd in the first round by Jai Herbert in April (chin -0.72).",
-     "Nallo's route is the KO: 38.6% of his 61.2%. Landwehr's best route is a submission (21.8%). The two chins make this the card's likeliest round-one finish: 43.7% in R1, decisions only 27.7%, Over 1.5 46.9% (the lowest on the card)."
+     "Nallo 63.8%, run with a trust override of 0.30 on Nallo (computed trust 0.08 on just 6 UFC minutes), despite Elo backing Landwehr by 91 points. Both engines pick Nallo: GBM 65.9%, hand-tuned 74.6%. Two caveats on that Elo number. Landwehr has never fought at lightweight: his 1502 is borrowed from 11 featherweight bouts, and his composites are FW rates scored against the LW population. Nallo's 1411 rests on just two UFC fights.",
+     "The case for Nallo is Landwehr's chin: -2.66, the worst on the card by a wide margin. He has been stopped in each of his last three: Dooho Choi and Morgan Charriere in round three, and Cub Swanson in the first round in April. He is 38.3. The override lets more of Nallo's two fights show through, and it cuts both ways. His power jumps from +0.42 to +1.43 (the card high) and his KO threat to 4.20 (also the card high), on 8.26 strikes per minute at 52% accuracy. But his chin falls from -0.72 to -1.49: Jai Herbert KO'd him in the first round in April, and he absorbs 4.13 head strikes a minute. He is 37.2.",
+     "Nallo's route is the KO: 42.5% of his 63.8%. Landwehr's best route is a submission (20.1%). The two chins make this the card's likeliest round-one finish: 46.0% in R1, decisions only 25.3%, Over 1.5 44.4% (the lowest on the card)."
     ],
     "synopsis": {
      "lean": "Mandel Nallo",
-     "body": "61.2%, even though Elo backs Landwehr (an Elo borrowed from featherweight). Landwehr's chin (-2.66, card worst) has failed three straight times, and Nallo brings the card's highest KO threat. Nallo's own sample is tiny (6 UFC minutes) and he was KO'd last time out. Most likely ends early: the card's highest round-one finish rate (43.7%), Over 1.5 at 46.9%."
+     "body": "63.8% with his trust overridden to 0.30, even though Elo backs Landwehr (an Elo borrowed from featherweight). Landwehr's chin (-2.66, card worst) has failed three straight times, and the override lifts Nallo's power to a card-high +1.43. It also exposes Nallo's own chin (-1.49). Most likely ends early: the card's highest round-one finish rate (46.0%), Over 1.5 at 44.4%."
     }
    }
   },
@@ -2116,59 +2116,59 @@
    "f1": "Chad Anheliger",
    "f2": "Steven Koslow",
    "rounds": 3,
-   "division": "Bantamweight  •  all-fights",
+   "division": "Bantamweight  •  all-fights  •  Koslow trust 0.80 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Anheliger",
      "f2Short": "Koslow",
      "modelProb": {
-      "f1": 15.3,
-      "f2": 84.7
+      "f1": 32.2,
+      "f2": 67.8
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 7.5,
-       "f2": 17.7
+       "f1": 15.5,
+       "f2": 11
       },
       {
        "name": "Submission",
-       "f1": 1.9,
-       "f2": 27.8
+       "f1": 2.3,
+       "f2": 24.7
       },
       {
        "name": "Decision",
-       "f1": 5.9,
-       "f2": 39.2
+       "f1": 14.4,
+       "f2": 32.1
       }
      ],
-     "decisionPct": 45.1,
+     "decisionPct": 46.5,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 26.4
+       "pct": 25.7
       },
       {
        "r": 2,
-       "pct": 18.4
+       "pct": 17.9
       },
       {
        "r": 3,
-       "pct": 10.1
+       "pct": 9.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 34.8,
-      "over": 65.2
+      "under": 33.8,
+      "over": 66.2
      },
      {
       "line": 2.5,
-      "under": 49.4,
-      "over": 50.6
+      "under": 48.1,
+      "over": 51.9
      }
     ],
     "composites": {
@@ -2177,32 +2177,32 @@
       {
        "name": "Power",
        "f1": 0.19,
-       "f2": -0.13,
-       "delta": 0.32
+       "f2": -0.53,
+       "delta": 0.72
       },
       {
        "name": "Chin",
        "f1": 0.35,
-       "f2": -0.38,
-       "delta": 0.73
+       "f2": -0.62,
+       "delta": 0.97
       },
       {
        "name": "Output",
        "f1": 0.16,
-       "f2": -0.35,
-       "delta": 0.52
+       "f2": -1.38,
+       "delta": 1.55
       },
       {
        "name": "Grappling",
        "f1": -0.54,
-       "f2": 0.01,
-       "delta": -0.56
+       "f2": 0.05,
+       "delta": -0.6
       },
       {
        "name": "Wrestling Def",
        "f1": -1.03,
-       "f2": 0.04,
-       "delta": -1.07
+       "f2": 0.15,
+       "delta": -1.18
       },
       {
        "name": "Cardio",
@@ -2222,39 +2222,39 @@
      {
       "name": "Pressure",
       "f1": 0.52,
-      "f2": 0.47
+      "f2": 0.35
      },
      {
       "name": "Counter",
       "f1": 0.59,
-      "f2": 0.51
+      "f2": 0.56
      },
      {
       "name": "Wrestler",
       "f1": 0.4,
-      "f2": 0.5
+      "f2": 0.49
      },
      {
       "name": "Finisher",
       "f1": 0.47,
-      "f2": 0.48
+      "f2": 0.43
      },
      {
       "name": "Early-Finish Score",
       "f1": 0.26,
-      "f2": 0.3
+      "f2": 0.24
      },
      {
       "name": "Early Vulnerability",
       "f1": 0.1,
-      "f2": 0.43
+      "f2": 0.47
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
       "f1": "1.000 (88.4 min)",
-      "f2": "0.203 (14.2 min)"
+      "f2": "0.800 (14.2 min)"
      },
      {
       "name": "Decision trust",
@@ -2285,37 +2285,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.645",
+      "value": "-0.074",
       "reads": "Toward Koslow"
      },
      {
       "name": "KO threat — Anheliger",
-      "value": "+0.373",
+      "value": "+0.612",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Koslow",
-      "value": "-0.150",
-      "reads": "Near avg"
+      "value": "-0.546",
+      "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Anheliger",
-      "value": "-0.543",
+      "value": "-0.618",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Koslow",
-      "value": "+0.750",
+      "value": "+0.835",
       "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "33.7%",
+      "value": "34.3%",
       "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "66.3%",
+      "value": "65.7%",
       "reads": ""
      },
      {
@@ -2325,7 +2325,7 @@
      },
      {
       "name": "GBM P(Anheliger wins)",
-      "value": "15.9% calibrated  (HT 34.2%)",
+      "value": "32.8% calibrated  (HT 52.1%)",
       "reads": ""
      }
     ],
@@ -2348,13 +2348,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Koslow 84.7% — the biggest favourite on the card, and an unusual one. Koslow has one UFC fight, a third-round KO loss to Cameron Saaiman in December 2022, and has not fought anywhere since: 1,402 days. Elo is level (Anheliger +21). Both engines still pick Koslow: GBM 84.1%, hand-tuned 65.8%.",
-     "The call is mostly about Anheliger. He is 39.9, the oldest fighter on the card, and has been out 709 days himself. He is 1-3 in his last four, and his measurables are poor for the division: reach -1.65 and wrestling defence -1.03 on 38% takedown defence. The model's age adjustment marks him down hard. Koslow, 29.7 and 6-0 before the UFC, has only 14 minutes of tape (trust 0.20). His composites are near average, and what tape there is shows a wrestler (0.35 takedowns per minute) with low striking volume.",
-     "Koslow's routes: decision 39.2%, submission 27.8%, KO 17.7%. His submission threat (0.75) meets Anheliger's weak wrestling defence. Anheliger's best route is a KO (7.5%). Decisions 45.1%, Over 2.5 50.6%. Treat the size with care: the GBM sits 18 points above the hand-tuned layer, and Koslow's own form is close to four years old."
+     "Koslow 67.8%, run with a trust override of 0.80 on Koslow (computed trust 0.20). This is one of two fights on the card where the engine-split pull fired. The raw GBM had Koslow at 72.8%, but the hand-tuned layer now picks Anheliger (52.1%) and Elo leans the same way, if barely (+21). The GBM disagreed with both, so the model pulled it halfway toward the hand-tuned number, to 67.2% Koslow. Koslow stays the favourite, but well short of the 84.7% he carried on computed trust.",
+     "The override is what flipped the hand-tuned layer. Koslow has one UFC fight, a third-round KO loss to Cameron Saaiman in December 2022, and has not fought anywhere since: 1,402 days. At 0.80 trust that fight counts for far more, and it was a poor one: 0.77 strikes per minute, so his output falls to -1.38, with power -0.53 and chin -0.62. What survives is a wrestler's profile (0.35 takedowns per minute) and a submission threat of 0.83. The GBM's case for Koslow is mostly about Anheliger. He is 39.9, the oldest fighter on the card, has been out 709 days himself, and is 1-3 in his last four. His measurables are poor for the division: reach -1.65 and wrestling defence -1.03 on 38% takedown defence. Anheliger is the better striker on paper (power +0.19, chin +0.35, output +0.16).",
+     "Koslow's routes: decision 32.1%, submission 24.7%, KO 11.0%. His submission threat meets Anheliger's weak wrestling defence. Anheliger's routes: KO 15.5% (KO threat 0.61), decision 14.4%. Decisions 46.5%, Over 2.5 51.9%."
     ],
     "synopsis": {
      "lean": "Steven Koslow",
-     "body": "84.7%, the card's biggest number, built mainly on Anheliger's profile: 39.9 years old, nearly two years out, 1-3 in his last four, with short reach and weak takedown defence. Koslow hasn't fought since 2022 and lost his only UFC bout, so the hand-tuned 66% is the saner anchor. Koslow by decision or submission on the mat is the likeliest picture."
+     "body": "67.8% with his trust overridden to 0.80, after the model pulled the raw GBM (72.8%) halfway toward the hand-tuned layer, which now picks Anheliger, as Elo narrowly does. More weight on Koslow's lone, low-output 2022 fight drags his striking down, so the case rests on Anheliger: 39.9 years old, nearly two years out, 1-3 in his last four, with short reach and weak takedown defence. Koslow by decision or submission on the mat is the likeliest picture; the engines genuinely disagree."
     }
    }
   },
@@ -2362,59 +2362,59 @@
    "f1": "Melissa Croden",
    "f2": "Chelsea Chandler",
    "rounds": 3,
-   "division": "Women's Bantamweight  •  all-fights",
+   "division": "Women's Bantamweight  •  all-fights  •  Croden trust 0.80, Chandler trust 1.00 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Croden",
      "f2Short": "Chandler",
      "modelProb": {
-      "f1": 73,
-      "f2": 27
+      "f1": 74.7,
+      "f2": 25.3
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 26.9,
-       "f2": 7
+       "f1": 29.3,
+       "f2": 6.5
       },
       {
        "name": "Submission",
-       "f1": 7.8,
-       "f2": 8.9
+       "f1": 7.1,
+       "f2": 8.8
       },
       {
        "name": "Decision",
        "f1": 38.3,
-       "f2": 11.1
+       "f2": 10
       }
      ],
-     "decisionPct": 49.4,
+     "decisionPct": 48.3,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 19
+       "pct": 19.6
       },
       {
        "r": 2,
-       "pct": 15.5
+       "pct": 15.6
       },
       {
        "r": 3,
-       "pct": 16.2
+       "pct": 16.4
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 26.1,
-      "over": 73.9
+      "under": 26.8,
+      "over": 73.2
      },
      {
       "line": 2.5,
-      "under": 42.2,
-      "over": 57.8
+      "under": 43.2,
+      "over": 56.8
      }
     ],
     "composites": {
@@ -2422,33 +2422,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": 0.75,
-       "f2": 0.47,
-       "delta": 0.28
+       "f1": 0.94,
+       "f2": 0.59,
+       "delta": 0.35
       },
       {
        "name": "Chin",
-       "f1": 0.41,
-       "f2": -0.87,
-       "delta": 1.27
+       "f1": 0.54,
+       "f2": -0.98,
+       "delta": 1.52
       },
       {
        "name": "Output",
-       "f1": 1.18,
-       "f2": -0.53,
-       "delta": 1.71
+       "f1": 1.49,
+       "f2": -0.67,
+       "delta": 2.16
       },
       {
        "name": "Grappling",
-       "f1": 0.26,
-       "f2": 0.08,
-       "delta": 0.18
+       "f1": 0.33,
+       "f2": 0.1,
+       "delta": 0.23
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.08,
-       "f2": -0.7,
-       "delta": 0.79
+       "f1": 0.11,
+       "f2": -0.89,
+       "delta": 0.99
       },
       {
        "name": "Cardio",
@@ -2467,40 +2467,40 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.65,
-      "f2": 0.44
+      "f1": 0.68,
+      "f2": 0.42
      },
      {
       "name": "Counter",
-      "f1": 0.68,
-      "f2": 0.64
+      "f1": 0.73,
+      "f2": 0.68
      },
      {
       "name": "Wrestler",
-      "f1": 0.53,
+      "f1": 0.54,
       "f2": 0.52
      },
      {
       "name": "Finisher",
-      "f1": 0.56,
-      "f2": 0.59
+      "f1": 0.57,
+      "f2": 0.62
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.37,
-      "f2": 0.53
+      "f1": 0.4,
+      "f2": 0.55
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.09,
-      "f2": 0.49
+      "f1": 0.07,
+      "f2": 0.5
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.636 (44.5 min)",
-      "f2": "0.792 (55.5 min)"
+      "f1": "0.800 (44.5 min)",
+      "f2": "1.000 (55.5 min)"
      },
      {
       "name": "Decision trust",
@@ -2531,37 +2531,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.694",
+      "value": "+2.031",
       "reads": "Toward Croden"
      },
      {
       "name": "KO threat — Croden",
-      "value": "+1.593",
+      "value": "+1.904",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Chandler",
-      "value": "+0.033",
+      "value": "+0.023",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Croden",
-      "value": "+0.706",
+      "value": "+0.875",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Chandler",
-      "value": "+0.021",
+      "value": "+0.026",
       "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "32.5%",
+      "value": "36.2%",
       "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "67.5%",
+      "value": "63.8%",
       "reads": ""
      },
      {
@@ -2571,7 +2571,7 @@
      },
      {
       "name": "GBM P(Croden wins)",
-      "value": "70.0% calibrated  (HT 84.3%)",
+      "value": "72.5% calibrated  (HT 84.0%)",
       "reads": ""
      }
     ],
@@ -2594,13 +2594,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Croden 73.0%, with all three signals agreeing. GBM 70.0%, hand-tuned 84.3%, and Elo has Croden 199 points clear (1712 on 3 bantamweight fights to 1513 on 5). Her decision edge of +1.69 is the card's largest.",
-     "Croden has the card's best output (+1.18) and power (+0.75). She lands 43% of her head strikes and absorbs only 1.32 per minute, with a solid chin (+0.41). She is 2-1 in the UFC: a decision over Daria Zhelezniakova in April and a third-round TKO of Tainara Lisboa, with the loss a decision to Luana Santos. Chandler (35.9, now 7-4) submitted Priscila Cachoeira in the first round in June, but her profile is weaker: chin -0.87, output -0.53, and wrestling defence -0.70 on 25% takedown defence. She was KO'd in round one by Joselyne Edwards in 2025.",
-     "Croden's routes: decision 38.3%, KO 26.9% (KO threat 1.59). Chandler is split evenly: decision 11.1%, submission 8.9%, KO 7.0%. Decisions 49.4%; finishes are spread through all three rounds (R3 16.2%, almost level with R1). Over 2.5 at 57.8%."
+     "Croden 74.7%, run with trust overrides on both fighters: Croden 0.80 (computed 0.64) and Chandler 1.00 (computed 0.79). All three signals agree. GBM 72.5%, hand-tuned 84.0%, and Elo has Croden 199 points clear (1712 on 3 bantamweight fights to 1513 on 5). Her decision edge of +2.03 is the card's largest.",
+     "Raising both trusts lets each fighter's tape count for more, which widens the gap. Croden's output rises to +1.49 (card high), with power +0.94 and chin +0.54. She lands 43% of her head strikes and absorbs only 1.32 per minute. She is 2-1 in the UFC: a decision over Daria Zhelezniakova in April and a third-round TKO of Tainara Lisboa, with the loss a decision to Luana Santos. Chandler (35.9, now 7-4) submitted Priscila Cachoeira in the first round in June. But at full trust her weaknesses show more: chin -0.98, output -0.67, and wrestling defence -0.89 on 25% takedown defence. She was KO'd in round one by Joselyne Edwards in 2025.",
+     "Croden's routes: decision 38.3%, KO 29.3% (KO threat 1.90). Chandler is split evenly: decision 10.0%, submission 8.8%, KO 6.5%. Decisions 48.3%; finishes are spread through all three rounds (R3 16.4%, close to R1's 19.6%). Over 2.5 at 56.8%."
     ],
     "synopsis": {
      "lean": "Melissa Croden",
-     "body": "73.0%, with the GBM, hand-tuned layer and Elo (+199) all agreeing. Croden brings the card's best output and power behind a sound chin. Chandler's chin (-0.87) and takedown defence are the soft spots. Croden by decision (38.3%) or KO (26.9%); Chandler's best shot is the submission that beat Cachoeira."
+     "body": "74.7% with trust overridden on both fighters (Croden 0.80, Chandler 1.00). The GBM, hand-tuned layer and Elo (+199) all agree. Croden brings the card's best output (+1.49) behind a sound chin, while Chandler's chin (-0.98) and takedown defence are the soft spots. Croden by decision (38.3%) or KO (29.3%); Chandler's best shot is the submission that beat Cachoeira."
     }
    }
   },
@@ -2840,7 +2840,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Chovancek 64.4% — and the one fight on the card where the engine-split pull fired. The raw GBM had Yoo at only 31.0%, but the hand-tuned layer favours Yoo at 53.5% and Elo backs him by 91 points (1641 on 6 bantamweight fights to Chovancek's 1550 on 1). The GBM disagreed with both, so the model pulled it halfway toward the hand-tuned number, to 35.3% Yoo. Chovancek stays the favourite, by a smaller margin.",
+     "Chovancek 64.4% — one of two fights on the card where the engine-split pull fired. The raw GBM had Yoo at only 31.0%, but the hand-tuned layer favours Yoo at 53.5% and Elo backs him by 91 points (1641 on 6 bantamweight fights to Chovancek's 1550 on 1). The GBM disagreed with both, so the model pulled it halfway toward the hand-tuned number, to 35.3% Yoo. Chovancek stays the favourite, by a smaller margin.",
      "(Yoo is billed here as Soo Young Yoo; ufcstats and Sherdog list him as Su Young You.) He is 16-4 and went 5-0 through Road to UFC and his first three UFC fights, all decisions, before Elijah Smith submitted him in March. His composites are steady: chin +0.51 (card best), grappling +0.50. But he has short reach (-1.33), below-average power (-0.47) and zero finishes in the UFC. Chovancek is 9-0, with a third-round KO of Raphael Uchegbu on DWCS, but only 10 minutes of tape (trust 0.15) and 391 days out. The GBM leans on the unbeaten record and his power (+0.47).",
      "Chovancek's routes: KO 25.4%, decision 25.0%, submission 13.9%. Yoo's: decision 16.6%, KO 12.5%, submission 6.5%. Decisions 41.6%, Over 2.5 at 46.5%."
     ],
