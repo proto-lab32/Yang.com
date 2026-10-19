@@ -1,6 +1,6 @@
 {
  "title": "UFC 333 — Volkanovski vs. Evloev",
- "generated": "Generated 2026-10-19  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  13 fights",
+ "generated": "Generated 2026-10-19  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  12 fights",
  "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
  "cardList": [
   {
@@ -54,9 +54,9 @@
    "division": "Featherweight",
    "dataMode": null,
    "f1Short": "Pico",
-   "f1Pct": 41,
+   "f1Pct": 50,
    "f2Short": "Keita",
-   "f2Pct": 59
+   "f2Pct": 50
   },
   {
    "f1": "Dominick Reyes",
@@ -87,9 +87,9 @@
    "division": "Light Heavyweight",
    "dataMode": null,
    "f1Short": "Krylov",
-   "f1Pct": 23,
+   "f1Pct": 17,
    "f2Short": "Yakhyaev",
-   "f2Pct": 77
+   "f2Pct": 83
   },
   {
    "f1": "Grant Dawson",
@@ -109,9 +109,9 @@
    "division": "Middleweight",
    "dataMode": null,
    "f1Short": "Malkoun",
-   "f1Pct": 79,
+   "f1Pct": 73,
    "f2Short": "Vagaev",
-   "f2Pct": 21
+   "f2Pct": 27
   },
   {
    "f1": "Daniel Santos",
@@ -134,17 +134,6 @@
    "f1Pct": 67,
    "f2Short": "Caliari",
    "f2Pct": 33
-  },
-  {
-   "f1": "Noah Gugnon",
-   "f2": "Kody Steele",
-   "rounds": 3,
-   "division": "Lightweight",
-   "dataMode": null,
-   "f1Short": "Gugnon",
-   "f1Pct": 52,
-   "f2Short": "Steele",
-   "f2Pct": 48
   }
  ],
  "fights": [
@@ -1172,38 +1161,38 @@
    "f1": "Aaron Pico",
    "f2": "Losene Keita",
    "rounds": 3,
-   "division": "Featherweight  •  all-fights",
+   "division": "Featherweight  •  all-fights  •  Pico trust 1.00, Keita trust 0.50 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Pico",
      "f2Short": "Keita",
      "modelProb": {
-      "f1": 41.1,
-      "f2": 58.9
+      "f1": 49.8,
+      "f2": 50.2
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 15.8,
-       "f2": 35.4
+       "f1": 16.5,
+       "f2": 34.3
       },
       {
        "name": "Submission",
-       "f1": 8.7,
-       "f2": 7.5
+       "f1": 10.7,
+       "f2": 6.6
       },
       {
        "name": "Decision",
-       "f1": 16.6,
-       "f2": 16
+       "f1": 22.6,
+       "f2": 9.3
       }
      ],
-     "decisionPct": 32.6,
+     "decisionPct": 31.9,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 36.2
+       "pct": 36.7
       },
       {
        "r": 2,
@@ -1211,20 +1200,20 @@
       },
       {
        "r": 3,
-       "pct": 9.8
+       "pct": 9.9
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 46.1,
-      "over": 53.9
+      "under": 46.7,
+      "over": 53.3
      },
      {
       "line": 2.5,
-      "under": 62.4,
-      "over": 37.6
+      "under": 63,
+      "over": 37
      }
     ],
     "composites": {
@@ -1232,33 +1221,33 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.12,
-       "f2": 0.47,
-       "delta": -0.59
+       "f1": -0.46,
+       "f2": 0.92,
+       "delta": -1.38
       },
       {
        "name": "Chin",
-       "f1": -0.58,
-       "f2": 0.25,
-       "delta": -0.83
+       "f1": -1.37,
+       "f2": 0.48,
+       "delta": -1.85
       },
       {
        "name": "Output",
-       "f1": 0.69,
-       "f2": -0.02,
-       "delta": 0.71
+       "f1": 2.62,
+       "f2": -0.04,
+       "delta": 2.66
       },
       {
        "name": "Grappling",
-       "f1": 0.52,
-       "f2": -0.04,
-       "delta": 0.55
+       "f1": 1.97,
+       "f2": -0.08,
+       "delta": 2.04
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.01,
-       "f2": 0.49,
-       "delta": -0.48
+       "f1": 0.03,
+       "f2": 0.95,
+       "delta": -0.92
       },
       {
        "name": "Cardio",
@@ -1277,40 +1266,40 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.6,
+      "f1": 0.8,
       "f2": 0.51
      },
      {
       "name": "Counter",
       "f1": 0.5,
-      "f2": 0.62
+      "f2": 0.73
      },
      {
       "name": "Wrestler",
-      "f1": 0.59,
-      "f2": 0.5
+      "f1": 0.79,
+      "f2": 0.49
      },
      {
       "name": "Finisher",
-      "f1": 0.41,
-      "f2": 0.6
+      "f1": 0.2,
+      "f2": 0.68
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.13,
-      "f2": 0.82
+      "f1": 0.08,
+      "f2": 0.89
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.83,
-      "f2": 0.11
+      "f1": 0.89,
+      "f2": 0.08
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.262 (18.4 min)",
-      "f2": "0.256 (17.9 min)"
+      "f1": "1.000 (18.4 min)",
+      "f2": "0.500 (17.9 min)"
      },
      {
       "name": "Decision trust",
@@ -1341,37 +1330,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.410",
+      "value": "+2.370",
       "reads": "Toward Pico"
      },
      {
       "name": "KO threat — Pico",
-      "value": "-0.568",
+      "value": "-1.146",
       "reads": "Below-avg"
      },
      {
       "name": "KO threat — Keita",
-      "value": "+1.216",
+      "value": "+2.451",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Pico",
-      "value": "+0.167",
-      "reads": "Near avg"
+      "value": "+1.086",
+      "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Keita",
-      "value": "-0.043",
+      "value": "-0.090",
       "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "18.4%",
-      "reads": "Mostly standing"
+      "value": "33.2%",
+      "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "81.6%",
+      "value": "66.8%",
       "reads": ""
      },
      {
@@ -1381,7 +1370,7 @@
      },
      {
       "name": "GBM P(Pico wins)",
-      "value": "39.6% calibrated  (HT 52.4%)",
+      "value": "48.0% calibrated  (HT 60.6%)",
       "reads": ""
      }
     ],
@@ -1404,13 +1393,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Keita 58.9%. Both men have two UFC fights, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number. It has Keita at 60.4% (the main GBM had 61.5%), and Elo agrees (+25, 1699 to 1673, two featherweight fights each). The hand-tuned layer leans Pico at 52.4%.",
-     "Both men are 1-1 in the UFC with 18 minutes of tape each (trust 0.26), so the composites are heavily shrunk. Pico was KO'd by Lerone Murphy in round one on debut, then out-pointed Patricio Freire. His output (+0.69, 6.16 strikes per minute) and grappling (+0.52) lead. Keita lost a decision to Nathaniel Wood, then KO'd Muhammad Naimov in round one in September. He has more power (+0.47), a sturdier chin (+0.25 to Pico's -0.58) and more reach (+0.80). He also brings a 17-2 overall record. Keita's KO threat (1.22) is well above Pico's.",
-     "This projects as a short fight. Keita's win is mostly the KO (35.4%), with decision 16.0% and submission 7.5%. Pico's routes are spread evenly: decision 16.6%, KO 15.8%, submission 8.7%. With both men at two or fewer UFC fights, the model's low-experience adjustment pushes decisions down to 32.6%. Round one carries 36.2% of the finish risk. O/U: Over 1.5 53.9%, Over 2.5 37.6%."
+     "Keita 50.2%, a coin flip. Both men have two UFC fights, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number. It has Keita at 52.0%, and Elo agrees narrowly (+25, 1699 to 1673, two featherweight fights each). The hand-tuned layer leans Pico at 60.6%. Trust is set by override here: Pico 1.0 and Keita 0.5, against computed values of 0.26 each, so both men's composites are taken far closer to face value.",
+     "At full trust Pico's tape reads big: output +2.62 (6.16 strikes per minute) and grappling +1.97, the profile that out-pointed Patricio Freire. The weakness is the chin (-1.37): Lerone Murphy KO'd him in round one on debut, and his power is only -0.46. Keita, who lost a decision to Nathaniel Wood and then KO'd Muhammad Naimov in round one in September, has the power (+0.92), the sturdier chin (+0.48), wrestling defence +0.95 and more reach (+0.80). He brings a 17-2 overall record. His KO threat (2.45) is the biggest number in the fight.",
+     "Two clear scripts. Keita's win is almost all KO (34.3% of his 50.2%), with decision 9.3% and submission 6.6%. Pico's is mostly the cards: decision 22.6%, KO 16.5%, submission 10.7%. With both men at two or fewer UFC fights, the low-experience adjustment holds decisions to 31.9%. Round one carries 36.7% of the finish risk. O/U: Over 1.5 53.3%, Over 2.5 37.0%."
     ],
     "synopsis": {
      "lean": "Losene Keita",
-     "body": "58.9%. The low-experience GBM and Elo back Keita's power, reach and chin over Pico's volume. Pico was knocked out on his UFC debut; the hand-tuned layer still slightly prefers him. Both have just 18 UFC minutes. Expect a finish: Keita by KO is the single likeliest outcome (35.4%), with only 32.6% decisions."
+     "body": "50.2%, a coin flip. With trust overrides (Pico 1.0, Keita 0.5), Pico's output and grappling count in full, and the hand-tuned layer prefers him (61%). The low-experience GBM and Elo narrowly back Keita's power and chin against a Pico who was knocked out on debut. Keita by KO (34.3%) and Pico on the cards (22.6%) are the two likeliest outcomes; only 31.9% decisions."
     }
    }
   },
@@ -1910,42 +1899,42 @@
    "f1": "Nikita Krylov",
    "f2": "Abdul Rakhman Yakhyaev",
    "rounds": 3,
-   "division": "Light Heavyweight  •  all-fights",
+   "division": "Light Heavyweight  •  all-fights  •  Yakhyaev trust 0.15 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Krylov",
      "f2Short": "Yakhyaev",
      "modelProb": {
-      "f1": 23.3,
-      "f2": 76.7
+      "f1": 16.9,
+      "f2": 83.1
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 7.9,
-       "f2": 45.5
+       "f1": 6.2,
+       "f2": 47.1
       },
       {
        "name": "Submission",
-       "f1": 6.5,
-       "f2": 13.6
+       "f1": 4.9,
+       "f2": 16.5
       },
       {
        "name": "Decision",
-       "f1": 8.9,
-       "f2": 17.6
+       "f1": 5.7,
+       "f2": 19.5
       }
      ],
-     "decisionPct": 26.5,
+     "decisionPct": 25.2,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 47.8
+       "pct": 48.8
       },
       {
        "r": 2,
-       "pct": 18.8
+       "pct": 19.1
       },
       {
        "r": 3,
@@ -1956,13 +1945,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 56.4,
-      "over": 43.6
+      "under": 57.6,
+      "over": 42.4
      },
      {
       "line": 2.5,
-      "under": 69.8,
-      "over": 30.2
+      "under": 71.1,
+      "over": 28.9
      }
     ],
     "composites": {
@@ -1971,32 +1960,32 @@
       {
        "name": "Power",
        "f1": 0.13,
-       "f2": 0.33,
-       "delta": -0.2
+       "f2": 0.85,
+       "delta": -0.73
       },
       {
        "name": "Chin",
        "f1": -0.91,
-       "f2": 0.07,
-       "delta": -0.98
+       "f2": 0.18,
+       "delta": -1.09
       },
       {
        "name": "Output",
        "f1": 1.09,
-       "f2": 0.2,
-       "delta": 0.89
+       "f2": 0.51,
+       "delta": 0.57
       },
       {
        "name": "Grappling",
        "f1": 1.1,
-       "f2": 0.33,
-       "delta": 0.77
+       "f2": 0.85,
+       "delta": 0.25
       },
       {
        "name": "Wrestling Def",
        "f1": -1.06,
-       "f2": 0.07,
-       "delta": -1.13
+       "f2": 0.19,
+       "delta": -1.24
       },
       {
        "name": "Cardio",
@@ -2016,39 +2005,39 @@
      {
       "name": "Pressure",
       "f1": 0.64,
-      "f2": 0.54
+      "f2": 0.58
      },
      {
       "name": "Counter",
       "f1": 0.57,
-      "f2": 0.55
+      "f2": 0.63
      },
      {
       "name": "Wrestler",
       "f1": 0.68,
-      "f2": 0.55
+      "f2": 0.62
      },
      {
       "name": "Finisher",
       "f1": 0.66,
-      "f2": 0.51
+      "f2": 0.53
      },
      {
       "name": "Early-Finish Score",
       "f1": 0.53,
-      "f2": 0.77
+      "f2": 0.84
      },
      {
       "name": "Early Vulnerability",
       "f1": 0.61,
-      "f2": 0.31
+      "f2": 0.29
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
       "f1": "1.000 (157.3 min)",
-      "f2": "0.058 (4.0 min)"
+      "f2": "0.150 (4.0 min)"
      },
      {
       "name": "Decision trust",
@@ -2079,37 +2068,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.383",
-      "reads": "Toward Krylov"
+      "value": "-0.224",
+      "reads": "Toward Yakhyaev"
      },
      {
       "name": "KO threat — Krylov",
-      "value": "-0.036",
+      "value": "-0.144",
       "reads": "Near avg"
      },
      {
       "name": "KO threat — Yakhyaev",
-      "value": "+1.240",
+      "value": "+1.765",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Krylov",
-      "value": "+1.238",
+      "value": "+1.142",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Yakhyaev",
-      "value": "+1.078",
+      "value": "+1.635",
       "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "38.7%",
+      "value": "46.5%",
       "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "61.3%",
+      "value": "53.5%",
       "reads": ""
      },
      {
@@ -2119,7 +2108,7 @@
      },
      {
       "name": "GBM P(Krylov wins)",
-      "value": "22.3% calibrated  (HT 45.6%)",
+      "value": "17.0% calibrated  (HT 29.2%)",
       "reads": ""
      }
     ],
@@ -2142,13 +2131,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Yakhyaev 76.7%, the card's second-biggest favourite, built on just 4 minutes of tape. All four of his UFC-system fights ended in round one: KOs of Alik Lorenz (Contender Series) and Julius Walker, and submissions of Rafael Cerqueira and Brendson Ribeiro. With trust at 0.06, his composites are pulled almost to the divisional mean (power +0.33, chin +0.07). The GBM (77.7%) is reading the 10-0 record, his age (25.8 to Krylov's 34.6), a 7-0 pre-UFC record (corrected this week from an empty placeholder row), and Krylov's chin. The hand-tuned layer is far cooler at 54.4%, and Elo prefers Krylov by 69 (1789 on 21 to 1721 on 4). This is an Elo-disagree fight.",
-     "Krylov's chin (-0.91) is the crux. He has been KO'd in three of his last four: by Dominick Reyes and Bogdan Guskov in round one, and by Robert Whittaker in round three in July. His one win in that run was a third-round KO of Modestas Bukauskas. His output (+1.09) and grappling (+1.10) are real, but his wrestling defence is -1.06. Yakhyaev's raw rates over those 4 minutes (8.6 strikes per minute, 67% head accuracy) would be extraordinary if they held, which is exactly why the model trusts them so little.",
-     "The card's most finish-heavy fight: decisions only 26.5%, and the likeliest round-one finish at 47.8%. Yakhyaev's routes: KO 45.5%, decision 17.6%, submission 13.6%. Krylov's: decision 8.9%, KO 7.9%, submission 6.5%. O/U: Over 1.5 43.6% (lowest on the card), Over 2.5 30.2%."
+     "Yakhyaev 83.1%, the card's biggest favourite, built on just 4 minutes of tape. All four of his UFC-system fights ended in round one: KOs of Alik Lorenz (Contender Series) and Julius Walker, and submissions of Rafael Cerqueira and Brendson Ribeiro. His trust is set by override to 0.15 (computed 0.06), so his composites move further off the divisional mean: power +0.85, grappling +0.85, output +0.51, chin +0.18. The GBM (83.0%) is reading the 10-0 record, his age (25.8 to Krylov's 34.6), a 7-0 pre-UFC record (corrected this week from an empty placeholder row), and Krylov's chin. The hand-tuned layer is cooler at 70.8%, and Elo prefers Krylov by 69 (1789 on 21 to 1721 on 4). This is an Elo-disagree fight.",
+     "Krylov's chin (-0.91) is the crux. He has been KO'd in three of his last four: by Dominick Reyes and Bogdan Guskov in round one, and by Robert Whittaker in round three in July. His one win in that run was a third-round KO of Modestas Bukauskas. His output (+1.09) and grappling (+1.10) are real, but his wrestling defence is -1.06. Yakhyaev's raw rates over those 4 minutes (8.6 strikes per minute, 67% head accuracy) would be extraordinary if they held, which is why even the override keeps most of the shrinkage in place.",
+     "The card's most finish-heavy fight: decisions only 25.2%, and the likeliest round-one finish at 48.8%. Yakhyaev's routes: KO 47.1%, decision 19.5%, submission 16.5%. Krylov's: KO 6.2%, decision 5.7%, submission 4.9%. O/U: Over 1.5 42.4% (lowest on the card), Over 2.5 28.9%."
     ],
     "synopsis": {
      "lean": "Abdul Rakhman Yakhyaev",
-     "body": "76.7%. The GBM backs the unbeaten 25-year-old (four first-round finishes) against a Krylov who has been KO'd in three of his last four. Elo and the hand-tuned layer are far less sure, and Yakhyaev has just 4 minutes of tape. The card's most finish-heavy fight: Yakhyaev KO 45.5%, a round-one finish 47.8%."
+     "body": "83.1%, the card's biggest favourite. The GBM backs the unbeaten 25-year-old (four first-round finishes) against a Krylov who has been KO'd in three of his last four. Elo still prefers Krylov, and Yakhyaev has just 4 minutes of tape (trust set to 0.15). The card's most finish-heavy fight: Yakhyaev KO 47.1%, a round-one finish 48.8%."
     }
    }
   },
@@ -2409,52 +2398,52 @@
      "f1Short": "Malkoun",
      "f2Short": "Vagaev",
      "modelProb": {
-      "f1": 79.3,
-      "f2": 20.7
+      "f1": 73.3,
+      "f2": 26.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 10.6,
-       "f2": 7
+       "f1": 17.2,
+       "f2": 11.7
       },
       {
        "name": "Submission",
-       "f1": 36.7,
-       "f2": 3.1
+       "f1": 18.7,
+       "f2": 5.2
       },
       {
        "name": "Decision",
-       "f1": 32,
-       "f2": 10.6
+       "f1": 37.3,
+       "f2": 9.8
       }
      ],
-     "decisionPct": 42.6,
+     "decisionPct": 47.1,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 25.8
+       "pct": 23.8
       },
       {
        "r": 2,
-       "pct": 20.6
+       "pct": 19
       },
       {
        "r": 3,
-       "pct": 11
+       "pct": 10.1
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 35.2,
-      "over": 64.8
+      "under": 32.4,
+      "over": 67.6
      },
      {
       "line": 2.5,
-      "under": 51.5,
-      "over": 48.5
+      "under": 47.4,
+      "over": 52.6
      }
     ],
     "composites": {
@@ -2634,13 +2623,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Malkoun 79.3%, the card's biggest favourite. Vagaev has one UFC fight, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number: it has Malkoun at 75.1% (the main GBM had 70.8%). The hand-tuned layer is at 91.2%, and Elo +202 (1810 on 9 middleweight fights). Vagaev's 1608 is a cross-division fallback from his single welterweight fight; he moves up to middleweight here.",
-     "Vagaev is 25-4 but has only 15 UFC minutes (trust 0.21): a July decision over Saygid Izagakhmaev at welterweight. His composites sit near the mean (output -0.06, grappling +0.19). Malkoun has two straight decisions, over Torrez Finney and Gerald Meerschaert, and grades +2.24 in grappling and +1.66 in output, landing 55% of head strikes. His chin is +0.41. That gives him the card's largest decision edge (+3.16) and a sub threat of 2.09. His reach is short (-1.10).",
-     "Malkoun's routes: submission 36.7%, decision 32.0%, KO 10.6%. Vagaev's: decision 10.6%, KO 7.0%, submission 3.1%. The low-experience adjustment applies (Vagaev has one UFC fight), and decisions sit at 42.6%. O/U: Over 1.5 64.8%, Over 2.5 48.5%."
+     "Malkoun 73.3%. Vagaev has one UFC fight, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number: it has Malkoun at 75.1%. The hand-tuned layer is at 91.2%, and Elo +202 (1810 on 9 middleweight fights). Vagaev's 1608 is a cross-division fallback from his single welterweight fight; he moves up to middleweight here.",
+     "Vagaev is 25-4 but has only 15 UFC minutes (trust 0.21): a July decision over Saygid Izagakhmaev at welterweight. Before that he was a two-time ACA welterweight champion, and 19 of his 24 pre-UFC wins came on the cards. He has never been submitted (losses: 3 KO, 1 decision). His composites sit near the mean (output -0.06, grappling +0.19). Malkoun has two straight decisions, over Torrez Finney and Gerald Meerschaert, and grades +2.24 in grappling and +1.66 in output, landing 55% of head strikes. That grappling is takedowns, control and ground strikes rather than submissions: he has no submission wins in his pro career. It gives him the card's largest decision edge (+3.16). His chin is +0.41 and his reach is short (-1.10).",
+     "Malkoun's routes: decision 37.3%, submission 18.7%, KO 17.2%. Vagaev's: KO 11.7%, decision 9.8%, submission 5.2%. Because Vagaev is moving up, the model trims the KO chances against him, and with one UFC fight the low-experience adjustment applies: decisions sit at 47.1%. O/U: Over 1.5 67.6%, Over 2.5 52.6%."
     ],
     "synopsis": {
      "lean": "Jacob Malkoun",
-     "body": "79.3%, the card's biggest favourite. Malkoun's grappling and output lead clearly, and all three engines agree. Vagaev is 25-4 but has one UFC fight, at welterweight, and is moving up. Malkoun's likeliest route is a submission (36.7%), with the decision close behind (32.0%)."
+     "body": "73.3%. Malkoun's grappling and output lead clearly, and all three engines agree. Vagaev is 25-4, has never been submitted, and is moving up from welterweight with one UFC fight. Malkoun's likeliest route is a decision (37.3%); his finishes split evenly between submission (18.7%) and KO (17.2%)."
     }
    }
   },
@@ -3133,252 +3122,6 @@
     "synopsis": {
      "lean": "Iasmin Lucindo",
      "body": "66.9%. All three engines agree. Lucindo's chin and steadier striking face a Caliari who absorbs 4.35 head strikes per minute. Lucindo has been out 436 days. Caliari's live route is the submission (16.8%); otherwise this most likely ends in a Lucindo decision (47.7%)."
-    }
-   }
-  },
-  {
-   "f1": "Noah Gugnon",
-   "f2": "Kody Steele",
-   "rounds": 3,
-   "division": "Lightweight  •  all-fights",
-   "dataMode": null,
-   "sections": {
-    "modelProjections": {
-     "f1Short": "Gugnon",
-     "f2Short": "Steele",
-     "modelProb": {
-      "f1": 51.5,
-      "f2": 48.5
-     },
-     "method": [
-      {
-       "name": "KO/TKO",
-       "f1": 16.5,
-       "f2": 17.3
-      },
-      {
-       "name": "Submission",
-       "f1": 15.8,
-       "f2": 14.7
-      },
-      {
-       "name": "Decision",
-       "f1": 19.1,
-       "f2": 16.6
-      }
-     ],
-     "decisionPct": 35.7,
-     "roundsFinish": [
-      {
-       "r": 1,
-       "pct": 33.1
-      },
-      {
-       "r": 2,
-       "pct": 21.1
-      },
-      {
-       "r": 3,
-       "pct": 10.1
-      }
-     ]
-    },
-    "overUnder": [
-     {
-      "line": 1.5,
-      "under": 42.7,
-      "over": 57.3
-     },
-     {
-      "line": 2.5,
-      "under": 58.9,
-      "over": 41.1
-     }
-    ],
-    "composites": {
-     "note": "Positive = above weight-class avg. ±0.5 = clear edge, ±1.0 = elite/poor.",
-     "rows": [
-      {
-       "name": "Power",
-       "f1": -0.02,
-       "f2": -0.01,
-       "delta": -0.01
-      },
-      {
-       "name": "Chin",
-       "f1": 0.01,
-       "f2": -0.09,
-       "delta": 0.1
-      },
-      {
-       "name": "Output",
-       "f1": -0.01,
-       "f2": -0.55,
-       "delta": 0.54
-      },
-      {
-       "name": "Grappling",
-       "f1": 0.01,
-       "f2": -0.1,
-       "delta": 0.11
-      },
-      {
-       "name": "Wrestling Def",
-       "f1": 0,
-       "f2": 0.5,
-       "delta": -0.5
-      },
-      {
-       "name": "Cardio",
-       "f1": 0.2,
-       "f2": 0.25,
-       "delta": -0.05
-      },
-      {
-       "name": "Reach",
-       "f1": -0.21,
-       "f2": -0.23,
-       "delta": 0.01
-      }
-     ]
-    },
-    "styleProfiles": [
-     {
-      "name": "Pressure",
-      "f1": 0.51,
-      "f2": 0.45
-     },
-     {
-      "name": "Counter",
-      "f1": 0.5,
-      "f2": 0.56
-     },
-     {
-      "name": "Wrestler",
-      "f1": 0.5,
-      "f2": 0.49
-     },
-     {
-      "name": "Finisher",
-      "f1": 0.5,
-      "f2": 0.59
-     },
-     {
-      "name": "Early-Finish Score",
-      "f1": 0.6,
-      "f2": 0.53
-     },
-     {
-      "name": "Early Vulnerability",
-      "f1": 0.32,
-      "f2": 0.16
-     }
-    ],
-    "modifiers": [
-     {
-      "name": "Trust factor (minutes-based)",
-      "f1": "0.019 (1.4 min)",
-      "f2": "0.401 (28.1 min)"
-     },
-     {
-      "name": "Decision trust",
-      "f1": "0.000",
-      "f2": "0.167"
-     },
-     {
-      "name": "Layoff factor",
-      "f1": "1.000",
-      "f2": "1.000"
-     },
-     {
-      "name": "Age factor",
-      "f1": "0.970",
-      "f2": "1.000"
-     },
-     {
-      "name": "Chin damage factor",
-      "f1": "1.000",
-      "f2": "0.985"
-     },
-     {
-      "name": "SoS multiplier",
-      "f1": "0.763",
-      "f2": "0.817"
-     }
-    ],
-    "matchupEdges": [
-     {
-      "name": "Decision edge",
-      "value": "+0.119",
-      "reads": "Toward Gugnon"
-     },
-     {
-      "name": "KO threat — Gugnon",
-      "value": "+0.093",
-      "reads": "Near avg"
-     },
-     {
-      "name": "KO threat — Steele",
-      "value": "+0.002",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Sub threat — Gugnon",
-      "value": "-0.346",
-      "reads": "Below-avg"
-     },
-     {
-      "name": "Sub threat — Steele",
-      "value": "-0.103",
-      "reads": "Near avg"
-     },
-     {
-      "name": "Ground % of fight",
-      "value": "16.5%",
-      "reads": "Mostly standing"
-     },
-     {
-      "name": "Standing % of fight",
-      "value": "83.5%",
-      "reads": ""
-     },
-     {
-      "name": "Elo (WC-specific)",
-      "value": "Gugnon 1638 (1 fts) / Steele 1657 (3 fts)",
-      "reads": "Δ -20"
-     },
-     {
-      "name": "GBM P(Gugnon wins)",
-      "value": "51.6% calibrated  (HT 49.3%)",
-      "reads": ""
-     }
-    ],
-    "profiles": [
-     {
-      "name": "Noah Gugnon",
-      "lines": [
-       "26, Orthodox, 5'11\" / 71\" reach. Record 10-2-0.",
-       "Sample: 1 division fights, 1.4 minutes total. Career WR 50%. Layoff 79 days.",
-       "Recent: W vs Milos Janicic (Submission R1, 2026-08-01)"
-      ]
-     },
-     {
-      "name": "Kody Steele",
-      "lines": [
-       "31, Orthodox, 5'9\" / 71\" reach. Record 8-1-0.",
-       "Sample: 3 division fights, 28.1 minutes total. Career WR 67%. Layoff 170 days.",
-       "Recent: W vs Dom Mar Fan (Submission R1, 2026-05-02) | L vs Rongzhu (Decision R3, 2025-02-08) | W vs Chasen Blair (KO/TKO R2, 2024-10-08)"
-      ]
-     }
-    ],
-    "matchupAnalysis": [
-     "Gugnon 51.5%, close to a coin flip and built on very little data. Gugnon has 1 minute of UFC tape, a first-round submission of Milos Janicic in August. His trust is 0.02 (the card's thinnest sample), so his composites are essentially zero. The hand-tuned layer leans Steele (50.7%), and so does Elo by 20 points (1657 on 3 to 1638 on 1). Because Gugnon has one UFC fight, the moneyline comes from the low-experience GBM, which does not use the hand-tuned number and never applies the engine-split pull. It has Gugnon 51.6% (the main GBM, after its age-and-form adjustment for the 26-year-old over the 31.5-year-old, had 52.6%).",
-     "Steele (trust 0.40, 28 minutes) is 2-1 in the UFC: a first-round submission of Dom Mar Fan in May, a second-round KO of Chasen Blair, and a decision loss to Rongzhu. His output is -0.55, and he absorbs 5.24 head strikes per minute, the most on the card, though on a small sample. Gugnon is 10-2 overall (9-2 before the UFC).",
-     "Finish-leaning, with every route open. Gugnon: decision 19.1%, KO 16.5%, submission 15.8%. Steele: KO 17.3%, decision 16.6%, submission 14.7%. The low-experience adjustment applies, and decisions are only 35.7%. Round one carries 33.1% of the finish risk. O/U: Over 1.5 57.3%, Over 2.5 41.1%."
-    ],
-    "synopsis": {
-     "lean": "Noah Gugnon",
-     "body": "51.5%, a coin flip on almost no data: Gugnon has 1 UFC minute. The hand-tuned layer and Elo lean Steele; the low-experience GBM, which leaves the hand-tuned number out, has Gugnon by a hair. Expect a finish (only 35.7% decisions), with KO and submission about equally likely for both sides."
     }
    }
   }
