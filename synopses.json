@@ -10,9 +10,9 @@
    "division": "Featherweight",
    "dataMode": null,
    "f1Short": "Volkanovski",
-   "f1Pct": 54,
+   "f1Pct": 49,
    "f2Short": "Evloev",
-   "f2Pct": 46
+   "f2Pct": 51
   },
   {
    "f1": "Merab Dvalishvili",
@@ -21,9 +21,9 @@
    "division": "Bantamweight",
    "dataMode": null,
    "f1Short": "Dvalishvili",
-   "f1Pct": 56,
+   "f1Pct": 62,
    "f2Short": "Yan",
-   "f2Pct": 44
+   "f2Pct": 38
   },
   {
    "f1": "Lone'er Kavanagh",
@@ -32,9 +32,9 @@
    "division": "Flyweight",
    "dataMode": null,
    "f1Short": "Kavanagh",
-   "f1Pct": 42,
+   "f1Pct": 40,
    "f2Short": "Temirov",
-   "f2Pct": 58
+   "f2Pct": 60
   },
   {
    "f1": "Alexander Volkov",
@@ -43,9 +43,9 @@
    "division": "Heavyweight",
    "dataMode": null,
    "f1Short": "Volkov",
-   "f1Pct": 56,
+   "f1Pct": 60,
    "f2Short": "Kuniev",
-   "f2Pct": 44
+   "f2Pct": 40
   },
   {
    "f1": "Aaron Pico",
@@ -65,9 +65,9 @@
    "division": "Light Heavyweight",
    "dataMode": null,
    "f1Short": "Reyes",
-   "f1Pct": 56,
+   "f1Pct": 53,
    "f2Short": "Murzakanov",
-   "f2Pct": 44
+   "f2Pct": 47
   },
   {
    "f1": "Abus Magomedov",
@@ -76,9 +76,9 @@
    "division": "Middleweight",
    "dataMode": null,
    "f1Short": "Magomedov",
-   "f1Pct": 28,
+   "f1Pct": 26,
    "f2Short": "Rowston",
-   "f2Pct": 72
+   "f2Pct": 74
   },
   {
    "f1": "Nikita Krylov",
@@ -98,9 +98,9 @@
    "division": "Lightweight",
    "dataMode": null,
    "f1Short": "Dawson",
-   "f1Pct": 49,
+   "f1Pct": 61,
    "f2Short": "Aliev",
-   "f2Pct": 51
+   "f2Pct": 39
   },
   {
    "f1": "Jacob Malkoun",
@@ -120,9 +120,9 @@
    "division": "Featherweight",
    "dataMode": null,
    "f1Short": "Santos",
-   "f1Pct": 49,
+   "f1Pct": 51,
    "f2Short": "Oki",
-   "f2Pct": 51
+   "f2Pct": 49
   },
   {
    "f1": "Iasmin Lucindo",
@@ -131,9 +131,9 @@
    "division": "Women's Strawweight",
    "dataMode": null,
    "f1Short": "Lucindo",
-   "f1Pct": 67,
+   "f1Pct": 66,
    "f2Short": "Caliari",
-   "f2Pct": 33
+   "f2Pct": 34
   }
  ],
  "fights": [
@@ -148,70 +148,70 @@
      "f1Short": "Volkanovski",
      "f2Short": "Evloev",
      "modelProb": {
-      "f1": 54.1,
-      "f2": 45.9
+      "f1": 48.7,
+      "f2": 51.3
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 15.2,
-       "f2": 11.3
+       "f1": 14.3,
+       "f2": 12.4
       },
       {
        "name": "Submission",
-       "f1": 5.5,
-       "f2": 5.5
+       "f1": 5,
+       "f2": 5.8
       },
       {
        "name": "Decision",
-       "f1": 33.4,
-       "f2": 29.1
+       "f1": 29.4,
+       "f2": 33.1
       }
      ],
      "decisionPct": 62.5,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 10.4
+       "pct": 9.6
       },
       {
        "r": 2,
-       "pct": 9.7
+       "pct": 9.4
       },
       {
        "r": 3,
-       "pct": 7.6
+       "pct": 7.8
       },
       {
        "r": 4,
-       "pct": 5.3
+       "pct": 5.8
       },
       {
        "r": 5,
-       "pct": 4.4
+       "pct": 5
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 14.9,
-      "over": 85.1
+      "under": 13.9,
+      "over": 86.1
      },
      {
       "line": 2.5,
-      "under": 23.7,
-      "over": 76.3
+      "under": 22.6,
+      "over": 77.4
      },
      {
       "line": 3.5,
-      "under": 30.3,
-      "over": 69.7
+      "under": 29.4,
+      "over": 70.6
      },
      {
       "line": 4.5,
-      "under": 35.2,
-      "over": 64.8
+      "under": 34.9,
+      "over": 65.1
      }
     ],
     "composites": {
@@ -249,9 +249,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0,
-       "f2": 0.22,
-       "delta": -0.23
+       "f1": 0.79,
+       "f2": 1.59,
+       "delta": -0.8
       },
       {
        "name": "Reach",
@@ -264,8 +264,8 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.73,
-      "f2": 0.6
+      "f1": 0.77,
+      "f2": 0.68
      },
      {
       "name": "Counter",
@@ -328,7 +328,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.306",
+      "value": "+0.134",
       "reads": "Toward Volkanovski"
      },
      {
@@ -368,7 +368,7 @@
      },
      {
       "name": "GBM P(Volkanovski wins)",
-      "value": "53.5% calibrated  (HT 63.4%)",
+      "value": "48.0% calibrated  (HT 57.5%)",
       "reads": ""
      }
     ],
@@ -391,13 +391,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Volkanovski 54.1%. This is one of the card's two engine-split pull fights. The raw GBM had Evloev, putting Volkanovski at only 45.8%. The hand-tuned layer has Volkanovski at 63.4%, and Elo agrees with it by a slim 22 points (2252 on 17 featherweight fights to 2230 on 9). With the GBM against both, the model pulls it halfway toward the hand-tuned number. After the age adjustment, which marks down the 38-year-old, the final GBM is 53.5% Volkanovski.",
+     "Evloev 51.3%, and one of the card's three engine-split pull fights. The raw GBM backs Evloev clearly, putting Volkanovski at only 41.3%. The hand-tuned layer has Volkanovski at 57.5%, and Elo agrees with it by a slim 22 points (2252 on 17 featherweight fights to 2230 on 9). With the GBM against both, the model pulls it halfway toward the hand-tuned number. After the age adjustment, which marks down the 38-year-old, the final GBM is 48.0% Volkanovski. Cardio is what tipped it: the model now reads late-round output, and Evloev grades +1.59 to Volkanovski's +0.79.",
      "The composites explain the split. Volkanovski has the card's best output at +2.01: 5.99 strikes per minute, landing 51% of head strikes while absorbing just 1.99. Evloev is the better grappler (+1.82 to +0.58) and has the far sturdier chin (+0.92 to -0.78). Volkanovski's chin number carries the back-to-back KO losses to Islam Makhachev and Ilia Topuria. He has since won two five-round decisions over Diego Lopes. Evloev is 20-0 and 10-0 in the UFC, but his power reads -0.58. His last four wins are all decisions: Lerone Murphy over five rounds, then Aljamain Sterling, Arnold Allen and Lopes.",
-     "Evloev's record says decision, and so does the sim: 62.5% go the distance. Volkanovski's routes are decision 33.4%, KO 15.2% and submission 5.5%. Evloev's are decision 29.1%, KO 11.3% and submission 5.5%. His KO share comes almost entirely from Volkanovski's chin, not his own power. Finish risk is low and evenly spread: 10.4% in round one, falling to 4.4% in round five. O/U: Over 2.5 76.3%, Over 3.5 69.7%, Over 4.5 64.8%."
+     "Evloev's record says decision, and so does the sim: 62.5% go the distance. Evloev's routes are decision 33.1%, KO 12.4% and submission 5.8%. Volkanovski's are decision 29.4%, KO 14.3% and submission 5.0%. Evloev's KO share comes almost entirely from Volkanovski's chin, not his own power. Finish risk is low and evenly spread: 9.6% in round one, falling to 5.0% in round five. O/U: Over 2.5 77.4%, Over 3.5 70.6%, Over 4.5 65.1%."
     ],
     "synopsis": {
-     "lean": "Alexander Volkanovski",
-     "body": "54.1% after an engine-split pull. The raw GBM had Evloev, but the hand-tuned layer (63%) and Elo both pick Volkanovski, so the model met them halfway. Volkanovski brings the card's best output and accuracy. Evloev brings the better grappling and a far sturdier chin against a 38-year-old who was stopped twice in 2023-24. It is likely a five-round decision (62.5%)."
+     "lean": "Movsar Evloev",
+     "body": "51.3% after an engine-split pull. The raw GBM backs Evloev firmly; the hand-tuned layer (58%) and Elo pick Volkanovski, so the model met them halfway, leaving a coin flip that tilts to Evloev. The unbeaten 32-year-old brings the better grappling, a far sturdier chin and the stronger late-round cardio against a 38-year-old who was stopped twice in 2023-24. Volkanovski still has the card's best output. It is likely a five-round decision (62.5%)."
     }
    }
   },
@@ -412,70 +412,70 @@
      "f1Short": "Dvalishvili",
      "f2Short": "Yan",
      "modelProb": {
-      "f1": 56.3,
-      "f2": 43.7
+      "f1": 61.5,
+      "f2": 38.5
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 8.2,
-       "f2": 14.4
+       "f1": 8.9,
+       "f2": 12.6
       },
       {
        "name": "Submission",
-       "f1": 4.9,
-       "f2": 5.9
+       "f1": 5.6,
+       "f2": 5.6
       },
       {
        "name": "Decision",
-       "f1": 43.1,
-       "f2": 23.5
+       "f1": 47,
+       "f2": 20.3
       }
      ],
-     "decisionPct": 66.6,
+     "decisionPct": 67.3,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 9.4
+       "pct": 9.1
       },
       {
        "r": 2,
-       "pct": 8.5
+       "pct": 8.3
       },
       {
        "r": 3,
-       "pct": 6.7
+       "pct": 6.6
       },
       {
        "r": 4,
-       "pct": 4.9
+       "pct": 4.8
       },
       {
        "r": 5,
-       "pct": 3.9
+       "pct": 3.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 13.3,
-      "over": 86.7
+      "under": 13,
+      "over": 87
      },
      {
       "line": 2.5,
-      "under": 21,
-      "over": 79
+      "under": 20.5,
+      "over": 79.5
      },
      {
       "line": 3.5,
-      "under": 26.9,
-      "over": 73.1
+      "under": 26.3,
+      "over": 73.7
      },
      {
       "line": 4.5,
-      "under": 31.3,
-      "over": 68.7
+      "under": 30.7,
+      "over": 69.3
      }
     ],
     "composites": {
@@ -513,9 +513,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.09,
-       "f2": 0.18,
-       "delta": -0.09
+       "f1": 1.93,
+       "f2": 0.89,
+       "delta": 1.04
       },
       {
        "name": "Reach",
@@ -528,8 +528,8 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.66,
-      "f2": 0.54
+      "f1": 0.76,
+      "f2": 0.59
      },
      {
       "name": "Counter",
@@ -592,7 +592,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.376",
+      "value": "+1.714",
       "reads": "Toward Dvalishvili"
      },
      {
@@ -632,7 +632,7 @@
      },
      {
       "name": "GBM P(Dvalishvili wins)",
-      "value": "58.4% calibrated  (HT 76.0%)",
+      "value": "62.3% calibrated  (HT 76.6%)",
       "reads": ""
      }
     ],
@@ -655,13 +655,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Dvalishvili 56.3% in the rematch of Yan's five-round decision win last December. The engines disagree on the margin. The hand-tuned layer has Dvalishvili at 76.0%, the GBM at 58.4%, while Elo has Yan ahead by 7 points, the residue of that win (2273 to 2266, 16 bantamweight fights each). Both engines pick Dvalishvili, so no pull fires; this is an Elo-disagree fight.",
-     "The composites read as before. Dvalishvili's grappling (+1.91) and output (+1.32) dominate, with chin +0.79 and wrestling defence +0.88, giving him a decision edge of +1.38. His power is the weak spot (-0.81), and he lands only 34% of head strikes. Yan is the cleaner striker: 47% accuracy, power +0.26, and 86% takedown defence. That defence is how he beat Dvalishvili last time, and it backed a four-fight win streak over Song Yadong, Deiveson Figueiredo and Marcus McGhee. Before that loss, Dvalishvili had beaten Umar Nurmagomedov, Sean O'Malley (submission) and Cory Sandhagen.",
-     "This is the card's most decision-heavy fight: 66.6% go the distance. Dvalishvili's win is overwhelmingly a decision (43.1% of his 56.3%). Yan carries more of the finishing threat: KO 14.4%, submission 5.9%, decision 23.5%. Per-round finish risk peaks at 9.4% in round one. O/U: Over 2.5 79.0%, Over 3.5 73.1%, Over 4.5 68.7%. Both men are 317 days out, from that same night."
+     "Dvalishvili 61.5% in the rematch of Yan's five-round decision win last December. The engines disagree on the margin. The hand-tuned layer has Dvalishvili at 76.6%, the GBM at 62.3%, while Elo has Yan ahead by 7 points, the residue of that win (2273 to 2266, 16 bantamweight fights each). Both engines pick Dvalishvili, so no pull fires; this is an Elo-disagree fight.",
+     "Dvalishvili's grappling (+1.91) and output (+1.32) dominate, with chin +0.79, wrestling defence +0.88 and cardio +1.93, near the top of the card: his round-three output (45 total strikes a round) is in the top 5% of the UFC, and he stays close to it in rounds four and five. That gives him a decision edge of +1.71. His power is the weak spot (-0.81), and he lands only 34% of head strikes. Yan is the cleaner striker: 47% accuracy, power +0.26, cardio +0.89, and 86% takedown defence. That defence is how he beat Dvalishvili last time, and it backed a four-fight win streak over Song Yadong, Deiveson Figueiredo and Marcus McGhee. Before that loss, Dvalishvili had beaten Umar Nurmagomedov, Sean O'Malley (submission) and Cory Sandhagen.",
+     "This is the card's most decision-heavy fight: 67.3% go the distance. Dvalishvili's win is overwhelmingly a decision (47.0% of his 61.5%). Yan carries more of the finishing threat: KO 12.6%, submission 5.6%, decision 20.3%. Per-round finish risk peaks at 9.1% in round one. O/U: Over 2.5 79.5%, Over 3.5 73.7%, Over 4.5 69.3%. Both men are 317 days out, from that same night."
     ],
     "synopsis": {
      "lean": "Merab Dvalishvili",
-     "body": "56.3% for the rematch. Elo still credits Yan's December win (+7), but the GBM (58%) and the hand-tuned layer (76%) both prefer Dvalishvili's grappling and output volume. Yan is the more accurate striker with 86% takedown defence and the likelier finisher (KO 14.4%). The card's most decision-heavy fight: 66.6% go five rounds."
+     "body": "61.5% for the rematch. Elo still credits Yan's December win (+7), but the GBM (62%) and the hand-tuned layer (77%) both prefer Dvalishvili's grappling, output volume and elite late-round cardio (+1.93). Yan is the more accurate striker with 86% takedown defence and the likelier finisher (KO 12.6%). The card's most decision-heavy fight: 67.3% go five rounds."
     }
    }
   },
@@ -676,52 +676,52 @@
      "f1Short": "Kavanagh",
      "f2Short": "Temirov",
      "modelProb": {
-      "f1": 41.9,
-      "f2": 58.1
+      "f1": 39.8,
+      "f2": 60.2
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 11.2,
-       "f2": 21.3
+       "f1": 11.4,
+       "f2": 21.7
       },
       {
        "name": "Submission",
-       "f1": 4.4,
-       "f2": 5.2
+       "f1": 4.8,
+       "f2": 5.3
       },
       {
        "name": "Decision",
-       "f1": 26.4,
-       "f2": 31.6
+       "f1": 23.7,
+       "f2": 33.2
       }
      ],
-     "decisionPct": 57.9,
+     "decisionPct": 56.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 21.7
+       "pct": 22.1
       },
       {
        "r": 2,
-       "pct": 13.7
+       "pct": 14.1
       },
       {
        "r": 3,
-       "pct": 6.7
+       "pct": 7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 28,
-      "over": 72
+      "under": 28.6,
+      "over": 71.4
      },
      {
       "line": 2.5,
-      "under": 38.6,
-      "over": 61.4
+      "under": 39.6,
+      "over": 60.4
      }
     ],
     "composites": {
@@ -759,9 +759,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.2,
+       "f1": -1.14,
        "f2": 0.25,
-       "delta": -0.05
+       "delta": -1.39
       },
       {
        "name": "Reach",
@@ -774,7 +774,7 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.53,
+      "f1": 0.45,
       "f2": 0.55
      },
      {
@@ -838,7 +838,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.319",
+      "value": "-0.720",
       "reads": "Toward Temirov"
      },
      {
@@ -878,7 +878,7 @@
      },
      {
       "name": "GBM P(Kavanagh wins)",
-      "value": "41.5% calibrated  (HT 29.3%)",
+      "value": "40.2% calibrated  (HT 19.2%)",
       "reads": ""
      }
     ],
@@ -901,13 +901,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Temirov 58.1%. All three signals agree: GBM 58.5%, hand-tuned 70.7%, and Elo 264 points to Temirov (1938 on 3 flyweight fights to Kavanagh's 1674 on 6). Temirov is 3-0 in the UFC with first-round KOs of CJ Vergara and Steve Erceg. His 17-3 pre-UFC record (10 KOs) was corrected this week from an empty placeholder row before the sims ran.",
-     "The sample is thin: Temirov has 22 UFC minutes (trust 0.32), so his composites are heavily shrunk. Even so, power reads +0.92, with chin +0.26 and wrestling defence +0.55. His big weakness is reach (-1.90). Kavanagh has the fuller tape and grades close to average everywhere: power +0.06, output +0.17, chin -0.45, wrestling defence +0.77. There is a common opponent. Temirov out-pointed Charles Johnson; Johnson KO'd Kavanagh in round two. Kavanagh is 1-1 since, beating Brandon Moreno over five and being submitted by Brandon Royval in July.",
-     "Temirov's routes: decision 31.6%, KO 21.3%, submission 5.2%. Kavanagh's: decision 26.4%, KO 11.2%. Decisions 57.9%, with round one the main finish window (21.7%). O/U: Over 1.5 72.0%, Over 2.5 61.4%."
+     "Temirov 60.2%. All three signals agree: GBM 59.8%, hand-tuned 80.8%, and Elo 264 points to Temirov (1938 on 3 flyweight fights to Kavanagh's 1674 on 6). Temirov is 3-0 in the UFC with first-round KOs of CJ Vergara and Steve Erceg. His 17-3 pre-UFC record (10 KOs) was corrected this week from an empty placeholder row before the sims ran.",
+     "The sample is thin: Temirov has 22 UFC minutes (trust 0.32), so his composites are heavily shrunk. Even so, power reads +0.92, with chin +0.26 and wrestling defence +0.55. His big weakness is reach (-1.90). Kavanagh has the fuller tape and grades close to average almost everywhere: power +0.06, output +0.17, chin -0.45, wrestling defence +0.77. The exception is cardio, the card's lowest at -1.14: his output drops by about a third from round one to round three. There is a common opponent. Temirov out-pointed Charles Johnson; Johnson KO'd Kavanagh in round two. Kavanagh is 1-1 since, beating Brandon Moreno over five and being submitted by Brandon Royval in July.",
+     "Temirov's routes: decision 33.2%, KO 21.7%, submission 5.3%. Kavanagh's: decision 23.7%, KO 11.4%. Decisions 56.8%, with round one the main finish window (22.1%). O/U: Over 1.5 71.4%, Over 2.5 60.4%."
     ],
     "synopsis": {
      "lean": "Ramazan Temirov",
-     "body": "58.1%. The GBM, the hand-tuned layer (71%) and Elo (+264) all agree. Temirov is 3-0 in the UFC with two first-round KOs, behind a 17-3 record restored this week, and he beat Charles Johnson, who KO'd Kavanagh. With only 22 UFC minutes, the GBM keeps it modest. KO is his best finishing route (21.3%)."
+     "body": "60.2%. The GBM, the hand-tuned layer (81%) and Elo (+264) all agree. Temirov is 3-0 in the UFC with two first-round KOs, behind a 17-3 record restored this week, and he beat Charles Johnson, who KO'd Kavanagh. Kavanagh's output fades late (the card's lowest cardio). With only 22 UFC minutes, the GBM keeps it modest. KO is Temirov's best finishing route (21.7%)."
     }
    }
   },
@@ -922,35 +922,35 @@
      "f1Short": "Volkov",
      "f2Short": "Kuniev",
      "modelProb": {
-      "f1": 56.3,
-      "f2": 43.7
+      "f1": 60.1,
+      "f2": 39.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 15.1,
-       "f2": 16.4
+       "f1": 16,
+       "f2": 14.8
       },
       {
        "name": "Submission",
-       "f1": 5.7,
-       "f2": 1.9
+       "f1": 6.5,
+       "f2": 2
       },
       {
        "name": "Decision",
-       "f1": 35.5,
-       "f2": 25.4
+       "f1": 37.6,
+       "f2": 23.1
       }
      ],
-     "decisionPct": 60.9,
+     "decisionPct": 60.7,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 20.3
+       "pct": 20.4
       },
       {
        "r": 2,
-       "pct": 12.6
+       "pct": 12.7
       },
       {
        "r": 3,
@@ -961,13 +961,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 26.2,
-      "over": 73.8
+      "under": 26.3,
+      "over": 73.7
      },
      {
       "line": 2.5,
-      "under": 36,
-      "over": 64
+      "under": 36.2,
+      "over": 63.8
      }
     ],
     "composites": {
@@ -1005,9 +1005,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0,
-       "f2": 0.14,
-       "delta": -0.14
+       "f1": -0.28,
+       "f2": -0.56,
+       "delta": 0.29
       },
       {
        "name": "Reach",
@@ -1020,8 +1020,8 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.64,
-      "f2": 0.61
+      "f1": 0.62,
+      "f2": 0.57
      },
      {
       "name": "Counter",
@@ -1084,7 +1084,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.112",
+      "value": "+0.240",
       "reads": "Toward Volkov"
      },
      {
@@ -1124,7 +1124,7 @@
      },
      {
       "name": "GBM P(Volkov wins)",
-      "value": "55.8% calibrated  (HT 46.2%)",
+      "value": "59.9% calibrated  (HT 49.1%)",
       "reads": ""
      }
     ],
@@ -1147,13 +1147,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Volkov 56.3%. Elo shows the card's largest gap, 410 points (2213 on 19 heavyweight fights to Kuniev's 1803 on 5), but the composites are much closer. The hand-tuned layer actually leans Kuniev (53.8%). The GBM sides with Elo at 55.8% Volkov, so no pull fires.",
-     "Volkov is 38.0 and has won two straight decisions, over Waldo Cortes Acosta and Jailton Almeida, after a decision loss to Ciryl Gane. His case is distance striking: output +1.12, reach +1.23, 48% head accuracy, and only 1.71 head strikes absorbed per minute. His grappling is -0.54. Kuniev (trust 0.82) grades well across the board: power +0.32, chin +0.79, output +0.82, wrestling defence +0.99 (94% takedown defence). That profile is why the hand-tuned layer likes him. He also beat Almeida by decision, then KO'd Tyrell Fortune in round three in July.",
-     "The KO split is close (Volkov 15.1%, Kuniev 16.4%); the difference is the decision. Volkov wins on the cards in 35.5% to Kuniev's 25.4%, and adds a 5.7% submission. Decisions 60.9% (third among 3-round fights, after Malkoun/Vagaev and Lucindo/Caliari). Round one carries 20.3% of the finish risk. O/U: Over 1.5 73.8%, Over 2.5 64.0%."
+     "Volkov 60.1%. Elo shows the card's largest gap, 410 points (2213 on 19 heavyweight fights to Kuniev's 1803 on 5), but the composites are much closer. The hand-tuned layer leans Kuniev by a hair (50.9%). The GBM sides with Elo at 59.9% Volkov, so no pull fires.",
+     "Volkov is 38.0 and has won two straight decisions, over Waldo Cortes Acosta and Jailton Almeida, after a decision loss to Ciryl Gane. His case is distance striking: output +1.12, reach +1.23, 48% head accuracy, and only 1.71 head strikes absorbed per minute. His grappling is -0.54. Kuniev (trust 0.82) grades well across the board: power +0.32, chin +0.79, output +0.82, wrestling defence +0.99 (94% takedown defence). That profile is why the hand-tuned layer likes him. He also beat Almeida by decision, then KO'd Tyrell Fortune in round three in July. Neither man is a late-round engine (cardio Volkov -0.28, Kuniev -0.56).",
+     "The KO split is close (Volkov 16.0%, Kuniev 14.8%); the difference is the decision. Volkov wins on the cards in 37.6% to Kuniev's 23.1%, and adds a 6.5% submission. Decisions 60.7% (third among 3-round fights, after Malkoun/Vagaev and Lucindo/Caliari). Round one carries 20.4% of the finish risk. O/U: Over 1.5 73.7%, Over 2.5 63.8%."
     ],
     "synopsis": {
      "lean": "Alexander Volkov",
-     "body": "56.3%. The GBM and a huge Elo edge (+410) back the 38-year-old's distance striking: output, reach and accuracy. The hand-tuned layer slightly prefers Kuniev, who has the better chin and 94% takedown defence. KO chances are close (15-16%), so Volkov's edge is on the scorecards. 60.9% decisions."
+     "body": "60.1%. The GBM and a huge Elo edge (+410) back the 38-year-old's distance striking: output, reach and accuracy. The hand-tuned layer is split almost evenly, leaning Kuniev, who has the better chin and 94% takedown defence. KO chances are close (15-16%), so Volkov's edge is on the scorecards. 60.7% decisions."
     }
    }
   },
@@ -1168,52 +1168,52 @@
      "f1Short": "Pico",
      "f2Short": "Keita",
      "modelProb": {
-      "f1": 49.8,
-      "f2": 50.2
+      "f1": 49.6,
+      "f2": 50.4
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 25.8,
-       "f2": 37.5
+       "f1": 26.1,
+       "f2": 38.2
       },
       {
        "name": "Submission",
-       "f1": 7.1,
-       "f2": 4.5
+       "f1": 6.9,
+       "f2": 4.4
       },
       {
        "name": "Decision",
-       "f1": 16.9,
-       "f2": 8.1
+       "f1": 16.6,
+       "f2": 7.9
       }
      ],
-     "decisionPct": 25,
+     "decisionPct": 24.4,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 40.4
+       "pct": 40.8
       },
       {
        "r": 2,
-       "pct": 23.4
+       "pct": 23.6
       },
       {
        "r": 3,
-       "pct": 11.1
+       "pct": 11.2
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 51.4,
-      "over": 48.6
+      "under": 51.8,
+      "over": 48.2
      },
      {
       "line": 2.5,
-      "under": 69.4,
-      "over": 30.6
+      "under": 69.9,
+      "over": 30.1
      }
     ],
     "composites": {
@@ -1370,7 +1370,7 @@
      },
      {
       "name": "GBM P(Pico wins)",
-      "value": "48.0% calibrated  (HT 60.6%)",
+      "value": "47.9% calibrated  (HT 60.6%)",
       "reads": ""
      }
     ],
@@ -1393,13 +1393,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Keita 50.2%, a coin flip. Both men have two UFC fights, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number. It has Keita at 52.0%, and Elo agrees narrowly (+25, 1699 to 1673, two featherweight fights each). The hand-tuned layer leans Pico at 60.6%. Trust is set by override here: Pico 1.0 and Keita 0.5, against computed values of 0.26 each, so both men's composites are taken far closer to face value.",
+     "Keita 50.4%, a coin flip. Both men have two UFC fights, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number. It has Keita at 52.1%, and Elo agrees narrowly (+25, 1699 to 1673, two featherweight fights each). The hand-tuned layer leans Pico at 60.6%. Trust is set by override here: Pico 1.0 and Keita 0.5, against computed values of 0.26 each, so both men's composites are taken far closer to face value.",
      "At full trust Pico's tape reads big: output +2.62 (6.16 strikes per minute) and grappling +1.97, the profile that out-pointed Patricio Freire. The weakness is the chin (-1.37): Lerone Murphy KO'd him in round one on debut, and his power is only -0.46. Keita, who lost a decision to Nathaniel Wood and then KO'd Muhammad Naimov in round one in September, has the power (+0.92), the sturdier chin (+0.48), wrestling defence +0.95 and more reach (+0.80). He brings a 17-2 overall record. His KO threat (2.45) is the biggest number in the fight. Both men's pre-UFC records lean on the finish, and with two UFC fights each those records now feed the method split. Pico was 13-4 before the UFC with 9 KOs, 2 submissions and 2 decisions. Keita was 16-1 with 10 KOs and 6 decisions, and has been stopped once, by KO.",
-     "Keita's win is mostly KO (37.5% of his 50.2%), with decision 8.1% and submission 4.5%. Pico's KO is now his likeliest route: KO 25.8%, decision 16.9%, submission 7.1%. With both men at two or fewer UFC fights, the low-experience adjustment also applies, and decisions fall to 25.0%, the fewest on the card. Round-one finish 40.4%. O/U: Over 1.5 48.6%, Over 2.5 30.6%."
+     "Keita's win is mostly KO (38.2% of his 50.4%), with decision 7.9% and submission 4.4%. Pico's KO is his likeliest route: KO 26.1%, decision 16.6%, submission 6.9%. With both men at two or fewer UFC fights, the low-experience adjustment also applies, and decisions fall to 24.4%, the fewest on the card. Round-one finish 40.8%. O/U: Over 1.5 48.2%, Over 2.5 30.1%."
     ],
     "synopsis": {
      "lean": "Losene Keita",
-     "body": "50.2%, a coin flip. With trust overrides (Pico 1.0, Keita 0.5), Pico's output and grappling count in full, and the hand-tuned layer prefers him (61%). The low-experience GBM and Elo narrowly back Keita's power and chin against a Pico who was knocked out on debut. Both men finished most of their pre-UFC wins: Keita by KO (37.5%) and Pico by KO (25.8%) are the two likeliest outcomes; only 25.0% decisions, the fewest on the card."
+     "body": "50.4%, the card's closest fight. With trust overrides (Pico 1.0, Keita 0.5), Pico's output and grappling count in full, and the hand-tuned layer prefers him (61%). The low-experience GBM and Elo narrowly back Keita's power and chin against a Pico who was knocked out on debut. Both men finished most of their pre-UFC wins: Keita by KO (38.2%) and Pico by KO (26.1%) are the two likeliest outcomes; only 24.4% decisions, the fewest on the card."
     }
    }
   },
@@ -1414,52 +1414,52 @@
      "f1Short": "Reyes",
      "f2Short": "Murzakanov",
      "modelProb": {
-      "f1": 55.9,
-      "f2": 44.1
+      "f1": 53.3,
+      "f2": 46.7
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 23.9,
-       "f2": 32.9
+       "f1": 23.1,
+       "f2": 34
       },
       {
        "name": "Submission",
        "f1": 4.6,
-       "f2": 1.4
+       "f2": 1.6
       },
       {
        "name": "Decision",
-       "f1": 27.4,
-       "f2": 9.8
+       "f1": 25.6,
+       "f2": 11
       }
      ],
-     "decisionPct": 37.2,
+     "decisionPct": 36.6,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 44.8
+       "pct": 45.1
       },
       {
        "r": 2,
-       "pct": 13.6
+       "pct": 13.8
       },
       {
        "r": 3,
-       "pct": 4.4
+       "pct": 4.5
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 51.1,
-      "over": 48.9
+      "under": 51.5,
+      "over": 48.5
      },
      {
       "line": 2.5,
-      "under": 60.6,
-      "over": 39.4
+      "under": 61.1,
+      "over": 38.9
      }
     ],
     "composites": {
@@ -1497,9 +1497,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.05,
-       "f2": 0.02,
-       "delta": 0.03
+       "f1": -1.01,
+       "f2": 0.15,
+       "delta": -1.15
       },
       {
        "name": "Reach",
@@ -1512,8 +1512,8 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.68,
-      "f2": 0.6
+      "f1": 0.62,
+      "f2": 0.61
      },
      {
       "name": "Counter",
@@ -1576,7 +1576,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.258",
+      "value": "+0.903",
       "reads": "Toward Reyes"
      },
      {
@@ -1616,7 +1616,7 @@
      },
      {
       "name": "GBM P(Reyes wins)",
-      "value": "56.9% calibrated  (HT 50.7%)",
+      "value": "53.6% calibrated  (HT 49.3%)",
       "reads": ""
      }
     ],
@@ -1639,13 +1639,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Reyes 55.9%. GBM 56.9%, hand-tuned 50.7% and Elo +57 (1983 on 15 light-heavyweight fights to 1926 on 8) all pick Reyes, but none by much.",
-     "Two hitters with questionable chins. Reyes leads on output (+1.51), wrestling defence (+1.06) and reach (+0.47), with power +0.67. His chin is -1.32, the second-worst on the card. He went 3-1 over his last four: first-round KOs of Nikita Krylov and Anthony Smith (round two), a decision over Johnny Walker, but also KO'd by Carlos Ulberg in round one. Murzakanov has the card's best power (+1.14). Six of his seven UFC wins are KOs, including first-round stoppages of Aleksandar Rakic and Brendson Ribeiro. But his reach is the card's shortest (-2.30), his chin is -0.56, and Paulo Costa KO'd him in April. KO threats: Reyes 1.75, Murzakanov 2.09.",
-     "Murzakanov's path is the KO (32.9% of his 44.1%), with decision 9.8%. Reyes has more ways to win: decision 27.4%, KO 23.9%, submission 4.6%. The card's second-likeliest round-one finish: 44.8%. Decisions only 37.2%. O/U: Over 1.5 48.9% (one of three fights below even), Over 2.5 39.4%."
+     "Reyes 53.3%. The GBM (53.6%) and Elo (+57: 1983 on 15 light-heavyweight fights to 1926 on 8) pick Reyes; the hand-tuned layer now leans Murzakanov by a hair (50.7%). None of them by much, and with the GBM agreeing with Elo no pull fires.",
+     "Two hitters with questionable chins. Reyes leads on output (+1.51), wrestling defence (+1.06) and reach (+0.47), with power +0.67. His chin is -1.32, the second-worst on the card, and his cardio is among the card's lowest (-1.01): his late-round volume is well below the division's. He went 3-1 over his last four: first-round KOs of Nikita Krylov and Anthony Smith (round two), a decision over Johnny Walker, but also KO'd by Carlos Ulberg in round one. Murzakanov has the card's best power (+1.14). Six of his seven UFC wins are KOs, including first-round stoppages of Aleksandar Rakic and Brendson Ribeiro. But his reach is the card's shortest (-2.30), his chin is -0.56, and Paulo Costa KO'd him in April. KO threats: Reyes 1.75, Murzakanov 2.09.",
+     "Murzakanov's path is the KO (34.0% of his 46.7%), with decision 11.0%. Reyes has more ways to win: decision 25.6%, KO 23.1%, submission 4.6%. The card's second-likeliest round-one finish: 45.1%. Decisions only 36.6%. O/U: Over 1.5 48.5% (one of three fights below even), Over 2.5 38.9%."
     ],
     "synopsis": {
      "lean": "Dominick Reyes",
-     "body": "55.9%. All three engines agree, narrowly. Reyes has the output, reach and decision path. Murzakanov has the card's best power, but the shortest reach, and Costa stopped him in April. Both chins are suspect, so this is a likely early finish (44.8% in round one). Murzakanov by KO (32.9%) is the single likeliest result."
+     "body": "53.3%. The GBM and Elo pick Reyes narrowly; the hand-tuned layer is a coin flip leaning Murzakanov. Reyes has the output, reach and decision path, but grades poorly on late-round cardio. Murzakanov has the card's best power, but the shortest reach, and Costa stopped him in April. Both chins are suspect, so this is a likely early finish (45.1% in round one). Murzakanov by KO (34.0%) is the single likeliest result."
     }
    }
   },
@@ -1660,52 +1660,52 @@
      "f1Short": "Magomedov",
      "f2Short": "Rowston",
      "modelProb": {
-      "f1": 28.3,
-      "f2": 71.7
+      "f1": 26.5,
+      "f2": 73.5
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 4.3,
-       "f2": 31.3
+       "f1": 4.2,
+       "f2": 29.9
       },
       {
        "name": "Submission",
-       "f1": 9.5,
-       "f2": 8.2
+       "f1": 9.8,
+       "f2": 7.9
       },
       {
        "name": "Decision",
-       "f1": 14.4,
-       "f2": 32.3
+       "f1": 12.5,
+       "f2": 35.7
       }
      ],
-     "decisionPct": 46.7,
+     "decisionPct": 48.2,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 27.8
+       "pct": 27.1
       },
       {
        "r": 2,
-       "pct": 17.2
+       "pct": 16.7
       },
       {
        "r": 3,
-       "pct": 8.3
+       "pct": 8.1
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 35.8,
-      "over": 64.2
+      "under": 34.7,
+      "over": 65.3
      },
      {
       "line": 2.5,
-      "under": 49,
-      "over": 51
+      "under": 47.6,
+      "over": 52.4
      }
     ],
     "composites": {
@@ -1743,9 +1743,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.08,
-       "f2": 0.25,
-       "delta": -0.17
+       "f1": 0.1,
+       "f2": 1.58,
+       "delta": -1.48
       },
       {
        "name": "Reach",
@@ -1759,7 +1759,7 @@
      {
       "name": "Pressure",
       "f1": 0.47,
-      "f2": 0.67
+      "f2": 0.74
      },
      {
       "name": "Counter",
@@ -1822,7 +1822,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.445",
+      "value": "-0.837",
       "reads": "Toward Rowston"
      },
      {
@@ -1862,7 +1862,7 @@
      },
      {
       "name": "GBM P(Magomedov wins)",
-      "value": "27.1% calibrated  (HT 30.0%)",
+      "value": "28.5% calibrated  (HT 26.0%)",
       "reads": ""
      }
     ],
@@ -1885,13 +1885,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Rowston 71.7%. The GBM (72.9%) and hand-tuned layer (70.0%) agree closely, while Elo narrowly prefers Magomedov (+28: 1835 on 8 middleweight fights to 1807 on 5). That makes this an Elo-disagree fight.",
-     "Rowston (trust 0.64, 45 UFC minutes) has won four straight. Three were stoppages (Brandon Holmes and Andre Petroski in round one, Cody Brundage in round two), followed by a decision over Robert Bryczek. He grades well almost everywhere: output +1.32, grappling +1.10, chin +0.77, power +0.52, reach +1.46. The hole is wrestling defence (-0.83, 33% takedown defence). Magomedov, 36, is a submission threat (grappling +0.63, sub threat 1.36). He won by submission in June over Michal Oleksiejczuk, but Joe Pyfer submitted him before that. His output is below average (-0.26, 3.06 strikes per minute), as is his chin (-0.35).",
-     "Rowston's routes: decision 32.3%, KO 31.3%, submission 8.2%. Magomedov's best path is the submission (9.5%), with decision 14.4% and KO just 4.3%. Decisions 46.7%. O/U: Over 1.5 64.2%, Over 2.5 51.0%."
+     "Rowston 73.5%. The GBM (71.5%) and hand-tuned layer (74.0%) agree closely, while Elo narrowly prefers Magomedov (+28: 1835 on 8 middleweight fights to 1807 on 5). That makes this an Elo-disagree fight.",
+     "Rowston (trust 0.64, 45 UFC minutes) has won four straight. Three were stoppages (Brandon Holmes and Andre Petroski in round one, Cody Brundage in round two), followed by a decision over Robert Bryczek. He grades well almost everywhere: output +1.32, grappling +1.10, chin +0.77, power +0.52, reach +1.46, and cardio +1.58: his output more than doubles from round one to round three. The hole is wrestling defence (-0.83, 33% takedown defence). Magomedov, 36, is a submission threat (grappling +0.63, sub threat 1.36). He won by submission in June over Michal Oleksiejczuk, but Joe Pyfer submitted him before that. His output is below average (-0.26, 3.06 strikes per minute), as is his chin (-0.35).",
+     "Rowston's routes: decision 35.7%, KO 29.9%, submission 7.9%. Magomedov's best path is the submission (9.8%), with decision 12.5% and KO just 4.2%. Decisions 48.2%. O/U: Over 1.5 65.3%, Over 2.5 52.4%."
     ],
     "synopsis": {
      "lean": "Cam Rowston",
-     "body": "71.7%. The GBM and the hand-tuned layer agree; Elo's narrow Magomedov lean (+28) is the only dissent. Rowston is on a four-fight streak and grades positively in output, chin, power and grappling. His weak takedown defence is Magomedov's only real route, a submission (9.5%). Rowston is about as likely to win by KO (31.3%) as on the cards."
+     "body": "73.5%. The GBM and the hand-tuned layer agree; Elo's narrow Magomedov lean (+28) is the only dissent. Rowston is on a four-fight streak and grades positively in output, chin, power, grappling and cardio. His weak takedown defence is Magomedov's only real route, a submission (9.8%). Rowston is a little likelier to win on the cards (35.7%) than by KO (29.9%)."
     }
    }
   },
@@ -1906,52 +1906,52 @@
      "f1Short": "Krylov",
      "f2Short": "Yakhyaev",
      "modelProb": {
-      "f1": 16.9,
-      "f2": 83.1
+      "f1": 17.1,
+      "f2": 82.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 6.2,
-       "f2": 47.1
+       "f1": 6,
+       "f2": 47.2
       },
       {
        "name": "Submission",
-       "f1": 4.9,
+       "f1": 4.7,
        "f2": 16.5
       },
       {
        "name": "Decision",
-       "f1": 5.7,
-       "f2": 19.5
+       "f1": 6.4,
+       "f2": 19.1
       }
      ],
-     "decisionPct": 25.2,
+     "decisionPct": 25.5,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 48.8
+       "pct": 48.7
       },
       {
        "r": 2,
-       "pct": 19.1
+       "pct": 19
       },
       {
        "r": 3,
-       "pct": 6.9
+       "pct": 6.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 57.6,
-      "over": 42.4
+      "under": 57.4,
+      "over": 42.6
      },
      {
       "line": 2.5,
-      "under": 71.1,
-      "over": 28.9
+      "under": 70.9,
+      "over": 29.1
      }
     ],
     "composites": {
@@ -1989,9 +1989,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.14,
+       "f1": 0.78,
        "f2": 0.2,
-       "delta": -0.06
+       "delta": 0.58
       },
       {
        "name": "Reach",
@@ -2004,7 +2004,7 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.64,
+      "f1": 0.68,
       "f2": 0.58
      },
      {
@@ -2068,7 +2068,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.224",
+      "value": "-0.031",
       "reads": "Toward Yakhyaev"
      },
      {
@@ -2108,7 +2108,7 @@
      },
      {
       "name": "GBM P(Krylov wins)",
-      "value": "17.0% calibrated  (HT 29.2%)",
+      "value": "17.0% calibrated  (HT 31.8%)",
       "reads": ""
      }
     ],
@@ -2131,13 +2131,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Yakhyaev 83.1%, the card's biggest favourite, built on just 4 minutes of tape. All four of his UFC-system fights ended in round one: KOs of Alik Lorenz (Contender Series) and Julius Walker, and submissions of Rafael Cerqueira and Brendson Ribeiro. His trust is set by override to 0.15 (computed 0.06), so his composites move further off the divisional mean: power +0.85, grappling +0.85, output +0.51, chin +0.18. The GBM (83.0%) is reading the 10-0 record, his age (25.8 to Krylov's 34.6), a 7-0 pre-UFC record (corrected this week from an empty placeholder row), and Krylov's chin. The hand-tuned layer is cooler at 70.8%, and Elo prefers Krylov by 69 (1789 on 21 to 1721 on 4). This is an Elo-disagree fight.",
-     "Krylov's chin (-0.91) is the crux. He has been KO'd in three of his last four: by Dominick Reyes and Bogdan Guskov in round one, and by Robert Whittaker in round three in July. His one win in that run was a third-round KO of Modestas Bukauskas. His output (+1.09) and grappling (+1.10) are real, but his wrestling defence is -1.06. Yakhyaev's raw rates over those 4 minutes (8.6 strikes per minute, 67% head accuracy) would be extraordinary if they held, which is why even the override keeps most of the shrinkage in place.",
-     "Decisions only 25.2% (only Pico/Keita, at 25.0%, is lower), and the card's likeliest round-one finish at 48.8%. Yakhyaev's routes: KO 47.1%, decision 19.5%, submission 16.5%. Krylov's: KO 6.2%, decision 5.7%, submission 4.9%. O/U: Over 1.5 42.4% (lowest on the card), Over 2.5 28.9%."
+     "Yakhyaev 82.9%, the card's biggest favourite, built on just 4 minutes of tape. All four of his UFC-system fights ended in round one: KOs of Alik Lorenz (Contender Series) and Julius Walker, and submissions of Rafael Cerqueira and Brendson Ribeiro. His trust is set by override to 0.15 (computed 0.06), so his composites move further off the divisional mean: power +0.85, grappling +0.85, output +0.51, chin +0.18. The GBM (83.0%) is reading the 10-0 record, his age (25.8 to Krylov's 34.6), a 7-0 pre-UFC record (corrected this week from an empty placeholder row), and Krylov's chin. The hand-tuned layer is cooler at 68.2%, and Elo prefers Krylov by 69 (1789 on 21 to 1721 on 4). This is an Elo-disagree fight.",
+     "Krylov's chin (-0.91) is the crux. He has been KO'd in three of his last four: by Dominick Reyes and Bogdan Guskov in round one, and by Robert Whittaker in round three in July. His one win in that run was a third-round KO of Modestas Bukauskas. His output (+1.09), grappling (+1.10) and cardio (+0.78) are real, but his wrestling defence is -1.06. Yakhyaev's raw rates over those 4 minutes (8.6 strikes per minute, 67% head accuracy) would be extraordinary if they held, which is why even the override keeps most of the shrinkage in place.",
+     "Decisions only 25.5% (only Pico/Keita, at 24.4%, is lower), and the card's likeliest round-one finish at 48.7%. Yakhyaev's routes: KO 47.2%, decision 19.1%, submission 16.5%. Krylov's: KO 6.0%, decision 6.4%, submission 4.7%. O/U: Over 1.5 42.6% (lowest on the card), Over 2.5 29.1%."
     ],
     "synopsis": {
      "lean": "Abdul Rakhman Yakhyaev",
-     "body": "83.1%, the card's biggest favourite. The GBM backs the unbeaten 25-year-old (four first-round finishes) against a Krylov who has been KO'd in three of his last four. Elo still prefers Krylov, and Yakhyaev has just 4 minutes of tape (trust set to 0.15). The card's likeliest early finish: Yakhyaev KO 47.1%, a round-one finish 48.8%."
+     "body": "82.9%, the card's biggest favourite. The GBM backs the unbeaten 25-year-old (four first-round finishes) against a Krylov who has been KO'd in three of his last four. Elo still prefers Krylov, and Yakhyaev has just 4 minutes of tape (trust set to 0.15). The card's likeliest early finish: Yakhyaev KO 47.2%, a round-one finish 48.7%."
     }
    }
   },
@@ -2152,27 +2152,27 @@
      "f1Short": "Dawson",
      "f2Short": "Aliev",
      "modelProb": {
-      "f1": 48.5,
-      "f2": 51.5
+      "f1": 60.8,
+      "f2": 39.2
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 5.2,
-       "f2": 20.6
+       "f1": 6.4,
+       "f2": 16.5
       },
       {
        "name": "Submission",
-       "f1": 13.2,
-       "f2": 2.8
+       "f1": 17.2,
+       "f2": 2
       },
       {
        "name": "Decision",
-       "f1": 30.2,
-       "f2": 28
+       "f1": 37.2,
+       "f2": 20.7
       }
      ],
-     "decisionPct": 58.2,
+     "decisionPct": 57.9,
      "roundsFinish": [
       {
        "r": 1,
@@ -2180,11 +2180,11 @@
       },
       {
        "r": 2,
-       "pct": 14.3
+       "pct": 14.6
       },
       {
        "r": 3,
-       "pct": 7.6
+       "pct": 7.7
       }
      ]
     },
@@ -2196,8 +2196,8 @@
      },
      {
       "line": 2.5,
-      "under": 37.8,
-      "over": 62.2
+      "under": 38,
+      "over": 62
      }
     ],
     "composites": {
@@ -2235,9 +2235,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.22,
-       "f2": 0.2,
-       "delta": 0.02
+       "f1": 1.04,
+       "f2": 0.01,
+       "delta": 1.03
       },
       {
        "name": "Reach",
@@ -2250,8 +2250,8 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.6,
-      "f2": 0.57
+      "f1": 0.65,
+      "f2": 0.56
      },
      {
       "name": "Counter",
@@ -2314,7 +2314,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.987",
+      "value": "+1.290",
       "reads": "Toward Dawson"
      },
      {
@@ -2354,7 +2354,7 @@
      },
      {
       "name": "GBM P(Dawson wins)",
-      "value": "47.2% calibrated  (HT 75.3%)",
+      "value": "60.8% calibrated  (HT 77.0%)",
       "reads": ""
      }
     ],
@@ -2377,13 +2377,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Aliev 51.5%, a near coin flip with the engines pulling hard in opposite directions. The hand-tuned layer has Dawson at 75.3%, and Elo agrees (+57: 1928 on 15 lightweight fights to 1871 on 5). Before the age-and-form adjustment, the GBM also had Dawson at 50% or better, so the engine-split pull never applied. That adjustment then marks down the older fighter (Dawson 32.7, Aliev 25.9) and tips the final GBM to Aliev 52.8%.",
+     "Dawson 60.8%, now one of the card's three engine-split pull fights. The raw GBM narrowly had Aliev, putting Dawson at 49.7%. The hand-tuned layer has Dawson at 77.0%, and Elo agrees (+57: 1928 on 15 lightweight fights to 1871 on 5), so the model pulls the GBM halfway toward the hand-tuned number. After the age-and-form adjustment, which marks down the older fighter (Dawson 32.7, Aliev 25.9), the final GBM is 60.8% Dawson. The new cardio signal is what moved the raw GBM toward Dawson: his late-round work grades +1.04 to Aliev's +0.01.",
      "Two grapplers. Dawson has the card's best grappling (+2.94) and largest sub threat (3.25), with output +0.70 and wrestling defence +0.89. His recent run: a third-round submission of Mateusz Rebecki, after a first-round KO loss to Manuel Torres. His chin is -0.65. Aliev is 12-0 with the card's best chin (+1.03), absorbing only 0.68 head strikes per minute, plus grappling of +2.00 and 80% takedown defence. His power is -0.44, and his last four wins are all decisions (Mike Davis, Shem Rock, Joe Solecki, Rafael Alves).",
-     "Dawson's routes: decision 30.2%, submission 13.2%, KO 5.2%. Aliev's: decision 28.0%, KO 20.6% (largely Dawson's chin), submission 2.8%. Decisions 58.2%. O/U: Over 1.5 73.5%, Over 2.5 62.2%."
+     "Dawson's routes: decision 37.2%, submission 17.2%, KO 6.4%. Aliev's: decision 20.7%, KO 16.5% (largely Dawson's chin), submission 2.0%. Decisions 57.9%. O/U: Over 1.5 73.5%, Over 2.5 62.0%."
     ],
     "synopsis": {
-     "lean": "Nurullo Aliev",
-     "body": "51.5%, a coin flip. The hand-tuned layer (75%) and Elo back Dawson's card-best grappling and submission threat. The GBM's age-and-form adjustment tips it to the unbeaten 25-year-old with the card's best chin. Dawson wins by submission (13.2%) or on the cards. Aliev's KO chance (20.6%) is mostly about Dawson's chin."
+     "lean": "Grant Dawson",
+     "body": "60.8% after an engine-split pull. The raw GBM narrowly had the unbeaten 25-year-old Aliev; the hand-tuned layer (77%) and Elo back Dawson's card-best grappling and submission threat, so the model met them halfway, and Dawson's late-round cardio (+1.04) does the rest. Dawson wins on the cards (37.2%) or by submission (17.2%). Aliev's KO chance (16.5%) is mostly about Dawson's chin."
     }
    }
   },
@@ -2398,13 +2398,13 @@
      "f1Short": "Malkoun",
      "f2Short": "Vagaev",
      "modelProb": {
-      "f1": 73.3,
-      "f2": 26.7
+      "f1": 73.4,
+      "f2": 26.6
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 20.7,
+       "f1": 20.8,
        "f2": 5.9
       },
       {
@@ -2414,8 +2414,8 @@
       },
       {
        "name": "Decision",
-       "f1": 45.6,
-       "f2": 19
+       "f1": 45.7,
+       "f2": 18.9
       }
      ],
      "decisionPct": 64.6,
@@ -2481,9 +2481,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.25,
+       "f1": 1.95,
        "f2": 0.19,
-       "delta": 0.06
+       "delta": 1.76
       },
       {
        "name": "Reach",
@@ -2496,7 +2496,7 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.71,
+      "f1": 0.79,
       "f2": 0.5
      },
      {
@@ -2560,7 +2560,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+3.164",
+      "value": "+3.675",
       "reads": "Toward Malkoun"
      },
      {
@@ -2600,7 +2600,7 @@
      },
      {
       "name": "GBM P(Malkoun wins)",
-      "value": "75.1% calibrated  (HT 91.2%)",
+      "value": "74.0% calibrated  (HT 91.2%)",
       "reads": ""
      }
     ],
@@ -2623,13 +2623,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Malkoun 73.3%. Vagaev has one UFC fight, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number: it has Malkoun at 75.1%. The hand-tuned layer is at 91.2%, and Elo +202 (1810 on 9 middleweight fights). Vagaev's 1608 is a cross-division fallback from his single welterweight fight; he moves up to middleweight here.",
-     "Vagaev is 25-4 but has only 15 UFC minutes (trust 0.21): a July decision over Saygid Izagakhmaev at welterweight. Before that he was a two-time ACA welterweight champion, and 19 of his 24 pre-UFC wins came on the cards. He has never been submitted (losses: 3 KO, 1 decision). His composites sit near the mean (output -0.06, grappling +0.19). Malkoun has two straight decisions, over Torrez Finney and Gerald Meerschaert, and grades +2.24 in grappling and +1.66 in output, landing 55% of head strikes. That grappling is takedowns, control and ground strikes rather than submissions: he has no submission wins in his pro career. It gives him the card's largest decision edge (+3.16). His chin is +0.41 and his reach is short (-1.10).",
-     "With Vagaev at one UFC fight, this fight falls under our limited-data rule: the model's method split was more than 15 points off the betting market (29 on the widest cell), so the split comes from the market's prices, kept on the model's 73.3% moneyline. The books agree with his record: submissions at 5% each way, and a fight that usually goes the distance. Malkoun's routes: decision 45.6%, KO 20.7%, submission 6.9%. Vagaev's: decision 19.0%, KO 5.9%, submission 1.8%. Decisions 64.6%, the most of any 3-round fight on the card. O/U: Over 1.5 77.7%, Over 2.5 68.0%."
+     "Malkoun 73.4%. Vagaev has one UFC fight, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number: it has Malkoun at 74.0%. The hand-tuned layer is at 91.2%, and Elo +202 (1810 on 9 middleweight fights). Vagaev's 1608 is a cross-division fallback from his single welterweight fight; he moves up to middleweight here.",
+     "Vagaev is 25-4 but has only 15 UFC minutes (trust 0.21): a July decision over Saygid Izagakhmaev at welterweight. Before that he was a two-time ACA welterweight champion, and 19 of his 24 pre-UFC wins came on the cards. He has never been submitted (losses: 3 KO, 1 decision). His composites sit near the mean (output -0.06, grappling +0.19). Malkoun has two straight decisions, over Torrez Finney and Gerald Meerschaert, and grades +2.24 in grappling, +1.66 in output and +1.95 in cardio (the card's highest), landing 55% of head strikes. That grappling is takedowns, control and ground strikes rather than submissions: he has no submission wins in his pro career. It gives him the card's largest decision edge (+3.67). His chin is +0.41 and his reach is short (-1.10).",
+     "With Vagaev at one UFC fight, this fight falls under our limited-data rule: the model's method split was more than 15 points off the betting market (29 on the widest cell), so the split comes from the market's prices, kept on the model's 73.4% moneyline. The books agree with his record: submissions at 5% each way, and a fight that usually goes the distance. Malkoun's routes: decision 45.7%, KO 20.8%, submission 6.9%. Vagaev's: decision 18.9%, KO 5.9%, submission 1.8%. Decisions 64.6%, the most of any 3-round fight on the card. O/U: Over 1.5 77.7%, Over 2.5 68.0%."
     ],
     "synopsis": {
      "lean": "Jacob Malkoun",
-     "body": "73.3%. Malkoun's grappling and output lead clearly, and all three engines agree. Vagaev is 25-4, has never been submitted, and is moving up from welterweight with one UFC fight. Under the limited-data rule the method split follows the market: Malkoun's likeliest route is a decision (45.6%), then a KO (20.7%); a Malkoun submission is only 6.9%. 64.6% decisions."
+     "body": "73.4%. Malkoun's grappling, output and cardio lead clearly, and all three engines agree. Vagaev is 25-4, has never been submitted, and is moving up from welterweight with one UFC fight. Under the limited-data rule the method split follows the market: Malkoun's likeliest route is a decision (45.7%), then a KO (20.8%); a Malkoun submission is only 6.9%. 64.6% decisions."
     }
    }
   },
@@ -2644,52 +2644,52 @@
      "f1Short": "Santos",
      "f2Short": "Oki",
      "modelProb": {
-      "f1": 48.6,
-      "f2": 51.4
+      "f1": 50.9,
+      "f2": 49.1
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 16.7,
-       "f2": 17.4
+       "f1": 16.9,
+       "f2": 17.8
       },
       {
        "name": "Submission",
-       "f1": 6.6,
+       "f1": 6.5,
        "f2": 4.2
       },
       {
        "name": "Decision",
-       "f1": 25.3,
-       "f2": 29.8
+       "f1": 27.5,
+       "f2": 27.1
       }
      ],
-     "decisionPct": 55.1,
+     "decisionPct": 54.6,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 24.4
+       "pct": 24.7
       },
       {
        "r": 2,
-       "pct": 14
+       "pct": 14.2
       },
       {
        "r": 3,
-       "pct": 6.5
+       "pct": 6.6
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 30.9,
-      "over": 69.1
+      "under": 31.2,
+      "over": 68.8
      },
      {
       "line": 2.5,
-      "under": 41.5,
-      "over": 58.5
+      "under": 42,
+      "over": 58
      }
     ],
     "composites": {
@@ -2727,9 +2727,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.25,
-       "f2": 0.25,
-       "delta": 0
+       "f1": 0.68,
+       "f2": -0.35,
+       "delta": 1.02
       },
       {
        "name": "Reach",
@@ -2742,8 +2742,8 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.49,
-      "f2": 0.61
+      "f1": 0.52,
+      "f2": 0.58
      },
      {
       "name": "Counter",
@@ -2806,7 +2806,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.023",
+      "value": "+0.331",
       "reads": "Toward Santos"
      },
      {
@@ -2846,7 +2846,7 @@
      },
      {
       "name": "GBM P(Santos wins)",
-      "value": "48.8% calibrated  (HT 56.9%)",
+      "value": "54.5% calibrated  (HT 67.0%)",
       "reads": ""
      }
     ],
@@ -2869,13 +2869,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Oki 51.4%, the card's closest fight. This is the second engine-split pull fight, though the net effect is small. The raw GBM had Oki, putting Santos at 49.1%. The hand-tuned layer (56.9%) and Elo (+234) both prefer Santos, so the model pulled the GBM halfway toward the hand-tuned number, to about 53%. The age-and-form adjustment then moved it back to 48.8% Santos.",
-     "Elo needs a caveat. Oki moves down from lightweight, so his 1392 is a cross-division fallback from six lightweight fights, three of them losses. Santos has 1626 on 4 featherweight fights. Oki has been KO'd in his last two (Mason Jones, Manoel Sousa), and his chin (-1.39) is the worst on the card. Against that, he brings volume (output +0.81, 6.42 strikes per minute) and reach (+1.21). Santos was KO'd by Dooho Choi in May. He grades +1.08 in grappling, with chin -0.73 and the third-shortest reach on the card (-1.57). Both absorb about 3.8 head strikes per minute.",
-     "Evenly split routes. Oki: decision 29.8%, KO 17.4%, submission 4.2%. Santos: decision 25.3%, KO 16.7%, submission 6.6%. Decisions 55.1%. O/U: Over 1.5 69.1%, Over 2.5 58.5%."
+     "Santos 50.9%, one of the card's closest fights and the third engine-split pull fight. The raw GBM had Oki by a hair, putting Santos at 49.8%. The hand-tuned layer (67.0%) and Elo (+234) both prefer Santos, so the model pulled the GBM halfway toward the hand-tuned number. After the age-and-form adjustment the final GBM is 54.5% Santos, and the sim lands at 50.9%.",
+     "Elo needs a caveat. Oki moves down from lightweight, so his 1392 is a cross-division fallback from six lightweight fights, three of them losses. Santos has 1626 on 4 featherweight fights. Oki has been KO'd in his last two (Mason Jones, Manoel Sousa), and his chin (-1.39) is the worst on the card. Against that, he brings volume (output +0.81, 6.42 strikes per minute) and reach (+1.21), though his cardio is below average (-0.35). Santos was KO'd by Dooho Choi in May. He grades +1.08 in grappling and +0.68 in cardio, with chin -0.73 and the third-shortest reach on the card (-1.57). Both absorb about 3.8 head strikes per minute.",
+     "Evenly split routes. Santos: decision 27.5%, KO 16.9%, submission 6.5%. Oki: decision 27.1%, KO 17.8%, submission 4.2%. Decisions 54.6%. O/U: Over 1.5 68.8%, Over 2.5 58.0%."
     ],
     "synopsis": {
-     "lean": "Bolaji Oki",
-     "body": "51.4%, the card's closest fight. The engine-split pull fired, but the age-and-form adjustment cancelled it out. Santos has the grappling and a big Elo lead, partly an artifact of Oki's move down from lightweight. Oki has volume and reach but the card's worst chin, and two straight KO losses. Treat it as a pick'em."
+     "lean": "Daniel Santos",
+     "body": "50.9%, a near pick'em. The raw GBM had Oki by a hair; the hand-tuned layer (67%) and a big Elo lead, partly an artifact of Oki's move down from lightweight, back Santos, so the engine-split pull tips it his way. Oki has volume and reach but the card's worst chin, and two straight KO losses. Treat it as a pick'em."
     }
    }
   },
@@ -2890,27 +2890,27 @@
      "f1Short": "Lucindo",
      "f2Short": "Caliari",
      "modelProb": {
-      "f1": 66.9,
-      "f2": 33.1
+      "f1": 65.9,
+      "f2": 34.1
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 13,
-       "f2": 2.8
+       "f1": 12.1,
+       "f2": 3
       },
       {
        "name": "Submission",
-       "f1": 6.1,
-       "f2": 16.8
+       "f1": 5.9,
+       "f2": 17.6
       },
       {
        "name": "Decision",
-       "f1": 47.7,
+       "f1": 47.9,
        "f2": 13.5
       }
      ],
-     "decisionPct": 61.2,
+     "decisionPct": 61.4,
      "roundsFinish": [
       {
        "r": 1,
@@ -2918,11 +2918,11 @@
       },
       {
        "r": 2,
-       "pct": 16.1
+       "pct": 16
       },
       {
        "r": 3,
-       "pct": 8.2
+       "pct": 8.1
       }
      ]
     },
@@ -2934,8 +2934,8 @@
      },
      {
       "line": 2.5,
-      "under": 34.3,
-      "over": 65.7
+      "under": 34.2,
+      "over": 65.8
      }
     ],
     "composites": {
@@ -2973,9 +2973,9 @@
       },
       {
        "name": "Cardio",
-       "f1": 0.2,
-       "f2": 0.25,
-       "delta": -0.05
+       "f1": -0.06,
+       "f2": 0.49,
+       "delta": -0.55
       },
       {
        "name": "Reach",
@@ -2988,8 +2988,8 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.55,
-      "f2": 0.4
+      "f1": 0.53,
+      "f2": 0.41
      },
      {
       "name": "Counter",
@@ -3052,7 +3052,7 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+1.517",
+      "value": "+1.367",
       "reads": "Toward Lucindo"
      },
      {
@@ -3092,7 +3092,7 @@
      },
      {
       "name": "GBM P(Lucindo wins)",
-      "value": "64.4% calibrated  (HT 67.7%)",
+      "value": "69.2% calibrated  (HT 67.5%)",
       "reads": ""
      }
     ],
@@ -3115,13 +3115,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Lucindo 66.9%. GBM 64.4%, hand-tuned 67.7%, Elo +296 (1767 on 7 strawweight fights to 1471 on 4). All three agree.",
+     "Lucindo 65.9%. GBM 69.2%, hand-tuned 67.5%, Elo +296 (1767 on 7 strawweight fights to 1471 on 4). All three agree.",
      "Lucindo, 24.8, returns after the card's longest layoff (436 days). She is 3-1 over her last four, all decisions: wins over Karolina Kowalkiewicz, Marina Rodriguez and Angela Hill, and a loss to Amanda Lemos. Her profile is solid rather than spectacular: chin +0.62, reach +0.75, grappling +0.38, output +0.28, power -0.39. Caliari's chin (-1.03) and output (-0.95) are weak, and she absorbs 4.35 head strikes per minute. Her UFC wins are both submissions (Corinne Laframboise in round one, Shauna Bannon in round three). Her losses are a decision to Ernesta Kareckaite and a third-round KO by Carli Judice.",
-     "Lucindo wins mostly on the cards (47.7% decision, KO 13.0%, submission 6.1%). Caliari's path is the submission (16.8% of her 33.1%), with decision 13.5%. Decisions 61.2%, second among 3-round fights to Malkoun/Vagaev. O/U: Over 1.5 78.2%, Over 2.5 65.7%."
+     "Lucindo wins mostly on the cards (47.9% decision, KO 12.1%, submission 5.9%). Caliari's path is the submission (17.6% of her 34.1%), with decision 13.5%. Decisions 61.4%, second among 3-round fights to Malkoun/Vagaev. O/U: Over 1.5 78.2%, Over 2.5 65.8%."
     ],
     "synopsis": {
      "lean": "Iasmin Lucindo",
-     "body": "66.9%. All three engines agree. Lucindo's chin and steadier striking face a Caliari who absorbs 4.35 head strikes per minute. Lucindo has been out 436 days. Caliari's live route is the submission (16.8%); otherwise this most likely ends in a Lucindo decision (47.7%)."
+     "body": "65.9%. All three engines agree. Lucindo's chin and steadier striking face a Caliari who absorbs 4.35 head strikes per minute. Lucindo has been out 436 days. Caliari's live route is the submission (17.6%); otherwise this most likely ends in a Lucindo decision (47.9%)."
     }
    }
   }
