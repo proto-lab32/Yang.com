@@ -1,6 +1,6 @@
 {
  "title": "UFC 333 — Volkanovski vs. Evloev",
- "generated": "Generated 2026-10-19  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  12 fights",
+ "generated": "Generated 2026-10-20  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  12 fights",
  "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
  "cardList": [
   {
@@ -377,7 +377,7 @@
       "name": "Alexander Volkanovski",
       "lines": [
        "38, Orthodox, 5'6\" / 71\" reach. Record 28-4-0.",
-       "Sample: 18 division fights, 303.0 minutes total. Career WR 83%. Layoff 261 days.",
+       "Sample: 18 division fights, 303.0 minutes total. Career WR 83%. Layoff 262 days.",
        "Recent: W vs Diego Lopes (Decision R5, 2026-01-31) | W vs Diego Lopes (Decision R5, 2025-04-12) | L vs Ilia Topuria (KO/TKO R2, 2024-02-17)"
       ]
      },
@@ -385,7 +385,7 @@
       "name": "Movsar Evloev",
       "lines": [
        "32, Orthodox, 5'7\" / 72\" reach. Record 20-0-0.",
-       "Sample: 10 division fights, 160.0 minutes total. Career WR 100%. Layoff 212 days.",
+       "Sample: 10 division fights, 160.0 minutes total. Career WR 100%. Layoff 213 days.",
        "Recent: W vs Lerone Murphy (Decision R5, 2026-03-21) | W vs Aljamain Sterling (Decision R3, 2024-12-07) | W vs Arnold Allen (Decision R3, 2024-01-20)"
       ]
      }
@@ -641,7 +641,7 @@
       "name": "Merab Dvalishvili",
       "lines": [
        "35, Orthodox, 5'6\" / 68\" reach. Record 21-5-0.",
-       "Sample: 17 division fights, 299.1 minutes total. Career WR 82%. Layoff 317 days.",
+       "Sample: 17 division fights, 299.1 minutes total. Career WR 82%. Layoff 318 days.",
        "Recent: L vs Petr Yan (Decision R5, 2025-12-06) | W vs Cory Sandhagen (Decision R5, 2025-10-04) | W vs Sean O'Malley (Submission R3, 2025-06-07)"
       ]
      },
@@ -649,7 +649,7 @@
       "name": "Petr Yan",
       "lines": [
        "33, Switch, 5'7\" / 67\" reach. Record 20-5-0.",
-       "Sample: 16 division fights, 282.1 minutes total. Career WR 75%. Layoff 317 days.",
+       "Sample: 16 division fights, 282.1 minutes total. Career WR 75%. Layoff 318 days.",
        "Recent: W vs Merab Dvalishvili (Decision R5, 2025-12-06) | W vs Marcus McGhee (Decision R3, 2025-07-26) | W vs Deiveson Figueiredo (Decision R5, 2024-11-23)"
       ]
      }
@@ -887,7 +887,7 @@
       "name": "Lone'er Kavanagh",
       "lines": [
        "27, Orthodox, 5'6\" / 67\" reach. Record 10-2-0.",
-       "Sample: 6 division fights, 80.7 minutes total. Career WR 67%. Layoff 100 days.",
+       "Sample: 6 division fights, 80.7 minutes total. Career WR 67%. Layoff 101 days.",
        "Recent: L vs Brandon Royval (Submission R3, 2026-07-11) | W vs Brandon Moreno (Decision R5, 2026-02-28) | L vs Charles Johnson (KO/TKO R2, 2025-08-23)"
       ]
      },
@@ -895,7 +895,7 @@
       "name": "Ramazan Temirov",
       "lines": [
        "29, Orthodox, 5'4\" / 63\" reach. Record 20-3-0.",
-       "Sample: 3 division fights, 22.2 minutes total. Career WR 100%. Layoff 86 days.",
+       "Sample: 3 division fights, 22.2 minutes total. Career WR 100%. Layoff 87 days.",
        "Recent: W vs Steve Erceg (KO/TKO R1, 2026-07-25) | W vs Charles Johnson (Decision R3, 2025-03-01) | W vs CJ Vergara (KO/TKO R1, 2024-10-12)"
       ]
      }
@@ -1133,7 +1133,7 @@
       "name": "Alexander Volkov",
       "lines": [
        "38, Orthodox, 6'7\" / 80\" reach. Record 40-11-0.",
-       "Sample: 19 division fights, 246.1 minutes total. Career WR 74%. Layoff 163 days.",
+       "Sample: 19 division fights, 246.1 minutes total. Career WR 74%. Layoff 164 days.",
        "Recent: W vs Waldo Cortes Acosta (Decision R3, 2026-05-09) | W vs Jailton Almeida (Decision R3, 2025-10-25) | L vs Ciryl Gane (Decision R3, 2024-12-07)"
       ]
      },
@@ -1141,7 +1141,7 @@
       "name": "Rizvan Kuniev",
       "lines": [
        "34, Orthodox, 6'4\" / 76\" reach. Record 14-3-1.",
-       "Sample: 5 division fights, 57.2 minutes total. Career WR 80%. Layoff 86 days.",
+       "Sample: 5 division fights, 57.2 minutes total. Career WR 80%. Layoff 87 days.",
        "Recent: W vs Tyrell Fortune (KO/TKO R3, 2026-07-25) | W vs Jailton Almeida (Decision R3, 2026-02-07) | L vs Curtis Blaydes (Decision R3, 2025-06-21)"
       ]
      }
@@ -1174,46 +1174,46 @@
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 16.5,
-       "f2": 34.3
+       "f1": 25.8,
+       "f2": 37.5
       },
       {
        "name": "Submission",
-       "f1": 10.7,
-       "f2": 6.6
+       "f1": 7.1,
+       "f2": 4.5
       },
       {
        "name": "Decision",
-       "f1": 22.6,
-       "f2": 9.3
+       "f1": 16.9,
+       "f2": 8.1
       }
      ],
-     "decisionPct": 31.9,
+     "decisionPct": 25,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 36.7
+       "pct": 40.4
       },
       {
        "r": 2,
-       "pct": 21.5
+       "pct": 23.4
       },
       {
        "r": 3,
-       "pct": 9.9
+       "pct": 11.1
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 46.7,
-      "over": 53.3
+      "under": 51.4,
+      "over": 48.6
      },
      {
       "line": 2.5,
-      "under": 63,
-      "over": 37
+      "under": 69.4,
+      "over": 30.6
      }
     ],
     "composites": {
@@ -1379,7 +1379,7 @@
       "name": "Aaron Pico",
       "lines": [
        "30, Orthodox, 5'8\" / 70\" reach. Record 14-5-0.",
-       "Sample: 2 division fights, 18.4 minutes total. Career WR 50%. Layoff 191 days.",
+       "Sample: 2 division fights, 18.4 minutes total. Career WR 50%. Layoff 192 days.",
        "Recent: W vs Patricio Freire (Decision R3, 2026-04-11) | L vs Lerone Murphy (KO/TKO R1, 2025-08-16)"
       ]
      },
@@ -1387,19 +1387,19 @@
       "name": "Losene Keita",
       "lines": [
        "28, Orthodox, 5'8\" / 72\" reach. Record 17-2-0.",
-       "Sample: 2 division fights, 17.9 minutes total. Career WR 50%. Layoff 44 days.",
+       "Sample: 2 division fights, 17.9 minutes total. Career WR 50%. Layoff 45 days.",
        "Recent: W vs Muhammad Naimov (KO/TKO R1, 2026-09-05) | L vs Nathaniel Wood (Decision R3, 2026-03-21)"
       ]
      }
     ],
     "matchupAnalysis": [
      "Keita 50.2%, a coin flip. Both men have two UFC fights, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number. It has Keita at 52.0%, and Elo agrees narrowly (+25, 1699 to 1673, two featherweight fights each). The hand-tuned layer leans Pico at 60.6%. Trust is set by override here: Pico 1.0 and Keita 0.5, against computed values of 0.26 each, so both men's composites are taken far closer to face value.",
-     "At full trust Pico's tape reads big: output +2.62 (6.16 strikes per minute) and grappling +1.97, the profile that out-pointed Patricio Freire. The weakness is the chin (-1.37): Lerone Murphy KO'd him in round one on debut, and his power is only -0.46. Keita, who lost a decision to Nathaniel Wood and then KO'd Muhammad Naimov in round one in September, has the power (+0.92), the sturdier chin (+0.48), wrestling defence +0.95 and more reach (+0.80). He brings a 17-2 overall record. His KO threat (2.45) is the biggest number in the fight.",
-     "Two clear scripts. Keita's win is almost all KO (34.3% of his 50.2%), with decision 9.3% and submission 6.6%. Pico's is mostly the cards: decision 22.6%, KO 16.5%, submission 10.7%. With both men at two or fewer UFC fights, the low-experience adjustment holds decisions to 31.9%. Round one carries 36.7% of the finish risk. O/U: Over 1.5 53.3%, Over 2.5 37.0%."
+     "At full trust Pico's tape reads big: output +2.62 (6.16 strikes per minute) and grappling +1.97, the profile that out-pointed Patricio Freire. The weakness is the chin (-1.37): Lerone Murphy KO'd him in round one on debut, and his power is only -0.46. Keita, who lost a decision to Nathaniel Wood and then KO'd Muhammad Naimov in round one in September, has the power (+0.92), the sturdier chin (+0.48), wrestling defence +0.95 and more reach (+0.80). He brings a 17-2 overall record. His KO threat (2.45) is the biggest number in the fight. Both men's pre-UFC records lean on the finish, and with two UFC fights each those records now feed the method split. Pico was 13-4 before the UFC with 9 KOs, 2 submissions and 2 decisions. Keita was 16-1 with 10 KOs and 6 decisions, and has been stopped once, by KO.",
+     "Keita's win is mostly KO (37.5% of his 50.2%), with decision 8.1% and submission 4.5%. Pico's KO is now his likeliest route: KO 25.8%, decision 16.9%, submission 7.1%. With both men at two or fewer UFC fights, the low-experience adjustment also applies, and decisions fall to 25.0%, the fewest on the card. Round-one finish 40.4%. O/U: Over 1.5 48.6%, Over 2.5 30.6%."
     ],
     "synopsis": {
      "lean": "Losene Keita",
-     "body": "50.2%, a coin flip. With trust overrides (Pico 1.0, Keita 0.5), Pico's output and grappling count in full, and the hand-tuned layer prefers him (61%). The low-experience GBM and Elo narrowly back Keita's power and chin against a Pico who was knocked out on debut. Keita by KO (34.3%) and Pico on the cards (22.6%) are the two likeliest outcomes; only 31.9% decisions."
+     "body": "50.2%, a coin flip. With trust overrides (Pico 1.0, Keita 0.5), Pico's output and grappling count in full, and the hand-tuned layer prefers him (61%). The low-experience GBM and Elo narrowly back Keita's power and chin against a Pico who was knocked out on debut. Both men finished most of their pre-UFC wins: Keita by KO (37.5%) and Pico by KO (25.8%) are the two likeliest outcomes; only 25.0% decisions, the fewest on the card."
     }
    }
   },
@@ -1625,7 +1625,7 @@
       "name": "Dominick Reyes",
       "lines": [
        "36, Southpaw, 6'4\" / 77\" reach. Record 16-5-0.",
-       "Sample: 15 division fights, 117.8 minutes total. Career WR 67%. Layoff 191 days.",
+       "Sample: 15 division fights, 117.8 minutes total. Career WR 67%. Layoff 192 days.",
        "Recent: W vs Johnny Walker (Decision R3, 2026-04-11) | L vs Carlos Ulberg (KO/TKO R1, 2025-09-27) | W vs Nikita Krylov (KO/TKO R1, 2025-04-12)"
       ]
      },
@@ -1633,7 +1633,7 @@
       "name": "Azamat Murzakanov",
       "lines": [
        "37, Southpaw, 5'10\" / 71\" reach. Record 16-1-0.",
-       "Sample: 8 division fights, 66.3 minutes total. Career WR 88%. Layoff 191 days.",
+       "Sample: 8 division fights, 66.3 minutes total. Career WR 88%. Layoff 192 days.",
        "Recent: L vs Paulo Costa (KO/TKO R3, 2026-04-11) | W vs Aleksandar Rakic (KO/TKO R1, 2025-10-25) | W vs Brendson Ribeiro (KO/TKO R1, 2025-06-07)"
       ]
      }
@@ -1641,7 +1641,7 @@
     "matchupAnalysis": [
      "Reyes 55.9%. GBM 56.9%, hand-tuned 50.7% and Elo +57 (1983 on 15 light-heavyweight fights to 1926 on 8) all pick Reyes, but none by much.",
      "Two hitters with questionable chins. Reyes leads on output (+1.51), wrestling defence (+1.06) and reach (+0.47), with power +0.67. His chin is -1.32, the second-worst on the card. He went 3-1 over his last four: first-round KOs of Nikita Krylov and Anthony Smith (round two), a decision over Johnny Walker, but also KO'd by Carlos Ulberg in round one. Murzakanov has the card's best power (+1.14). Six of his seven UFC wins are KOs, including first-round stoppages of Aleksandar Rakic and Brendson Ribeiro. But his reach is the card's shortest (-2.30), his chin is -0.56, and Paulo Costa KO'd him in April. KO threats: Reyes 1.75, Murzakanov 2.09.",
-     "Murzakanov's path is the KO (32.9% of his 44.1%), with decision 9.8%. Reyes has more ways to win: decision 27.4%, KO 23.9%, submission 4.6%. The card's second-likeliest round-one finish: 44.8%. Decisions only 37.2%. O/U: Over 1.5 48.9% (one of two fights below even), Over 2.5 39.4%."
+     "Murzakanov's path is the KO (32.9% of his 44.1%), with decision 9.8%. Reyes has more ways to win: decision 27.4%, KO 23.9%, submission 4.6%. The card's second-likeliest round-one finish: 44.8%. Decisions only 37.2%. O/U: Over 1.5 48.9% (one of three fights below even), Over 2.5 39.4%."
     ],
     "synopsis": {
      "lean": "Dominick Reyes",
@@ -1684,7 +1684,7 @@
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 27.9
+       "pct": 27.8
       },
       {
        "r": 2,
@@ -1731,7 +1731,7 @@
       },
       {
        "name": "Grappling",
-       "f1": 0.63,
+       "f1": 0.64,
        "f2": 1.1,
        "delta": -0.46
       },
@@ -1822,12 +1822,12 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.446",
+      "value": "-0.445",
       "reads": "Toward Rowston"
      },
      {
       "name": "KO threat — Magomedov",
-      "value": "-1.206",
+      "value": "-1.205",
       "reads": "Below-avg"
      },
      {
@@ -1837,12 +1837,12 @@
      },
      {
       "name": "Sub threat — Magomedov",
-      "value": "+1.358",
+      "value": "+1.359",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Rowston",
-      "value": "+0.034",
+      "value": "+0.033",
       "reads": "Near avg"
      },
      {
@@ -1871,7 +1871,7 @@
       "name": "Abus Magomedov",
       "lines": [
        "36, Orthodox, 6'2\" / 78\" reach. Record 29-7-1.",
-       "Sample: 8 division fights, 78.1 minutes total. Career WR 62%. Layoff 114 days.",
+       "Sample: 8 division fights, 78.1 minutes total. Career WR 62%. Layoff 115 days.",
        "Recent: W vs Michal Oleksiejczuk (Submission R1, 2026-06-27) | L vs Joe Pyfer (Submission R2, 2025-10-04) | W vs Michel Pereira (Decision R3, 2025-04-26)"
       ]
      },
@@ -1879,7 +1879,7 @@
       "name": "Cam Rowston",
       "lines": [
        "31, Orthodox, 6'3\" / 78\" reach. Record 15-3-0.",
-       "Sample: 5 division fights, 44.8 minutes total. Career WR 80%. Layoff 170 days.",
+       "Sample: 5 division fights, 44.8 minutes total. Career WR 80%. Layoff 171 days.",
        "Recent: W vs Robert Bryczek (Decision R3, 2026-05-02) | W vs Cody Brundage (KO/TKO R2, 2026-01-31) | W vs Andre Petroski (KO/TKO R1, 2025-09-27)"
       ]
      }
@@ -2117,7 +2117,7 @@
       "name": "Nikita Krylov",
       "lines": [
        "34, Orthodox, 6'3\" / 77\" reach. Record 31-12-0.",
-       "Sample: 22 division fights, 157.3 minutes total. Career WR 55%. Layoff 100 days.",
+       "Sample: 22 division fights, 157.3 minutes total. Career WR 55%. Layoff 101 days.",
        "Recent: L vs Robert Whittaker (KO/TKO R3, 2026-07-11) | W vs Modestas Bukauskas (KO/TKO R3, 2026-01-24) | L vs Bogdan Guskov (KO/TKO R1, 2025-07-26)"
       ]
      },
@@ -2125,7 +2125,7 @@
       "name": "Abdul Rakhman Yakhyaev",
       "lines": [
        "25, Orthodox, 6'2\" / 78\" reach. Record 10-0-0.",
-       "Sample: 4 division fights, 4.0 minutes total. Career WR 100%. Layoff 114 days.",
+       "Sample: 4 division fights, 4.0 minutes total. Career WR 100%. Layoff 115 days.",
        "Recent: W vs Julius Walker (KO/TKO R1, 2026-06-27) | W vs Brendson Ribeiro (Submission R1, 2026-04-04) | W vs Rafael Cerqueira (Submission R1, 2025-11-22)"
       ]
      }
@@ -2133,11 +2133,11 @@
     "matchupAnalysis": [
      "Yakhyaev 83.1%, the card's biggest favourite, built on just 4 minutes of tape. All four of his UFC-system fights ended in round one: KOs of Alik Lorenz (Contender Series) and Julius Walker, and submissions of Rafael Cerqueira and Brendson Ribeiro. His trust is set by override to 0.15 (computed 0.06), so his composites move further off the divisional mean: power +0.85, grappling +0.85, output +0.51, chin +0.18. The GBM (83.0%) is reading the 10-0 record, his age (25.8 to Krylov's 34.6), a 7-0 pre-UFC record (corrected this week from an empty placeholder row), and Krylov's chin. The hand-tuned layer is cooler at 70.8%, and Elo prefers Krylov by 69 (1789 on 21 to 1721 on 4). This is an Elo-disagree fight.",
      "Krylov's chin (-0.91) is the crux. He has been KO'd in three of his last four: by Dominick Reyes and Bogdan Guskov in round one, and by Robert Whittaker in round three in July. His one win in that run was a third-round KO of Modestas Bukauskas. His output (+1.09) and grappling (+1.10) are real, but his wrestling defence is -1.06. Yakhyaev's raw rates over those 4 minutes (8.6 strikes per minute, 67% head accuracy) would be extraordinary if they held, which is why even the override keeps most of the shrinkage in place.",
-     "The card's most finish-heavy fight: decisions only 25.2%, and the likeliest round-one finish at 48.8%. Yakhyaev's routes: KO 47.1%, decision 19.5%, submission 16.5%. Krylov's: KO 6.2%, decision 5.7%, submission 4.9%. O/U: Over 1.5 42.4% (lowest on the card), Over 2.5 28.9%."
+     "Decisions only 25.2% (only Pico/Keita, at 25.0%, is lower), and the card's likeliest round-one finish at 48.8%. Yakhyaev's routes: KO 47.1%, decision 19.5%, submission 16.5%. Krylov's: KO 6.2%, decision 5.7%, submission 4.9%. O/U: Over 1.5 42.4% (lowest on the card), Over 2.5 28.9%."
     ],
     "synopsis": {
      "lean": "Abdul Rakhman Yakhyaev",
-     "body": "83.1%, the card's biggest favourite. The GBM backs the unbeaten 25-year-old (four first-round finishes) against a Krylov who has been KO'd in three of his last four. Elo still prefers Krylov, and Yakhyaev has just 4 minutes of tape (trust set to 0.15). The card's most finish-heavy fight: Yakhyaev KO 47.1%, a round-one finish 48.8%."
+     "body": "83.1%, the card's biggest favourite. The GBM backs the unbeaten 25-year-old (four first-round finishes) against a Krylov who has been KO'd in three of his last four. Elo still prefers Krylov, and Yakhyaev has just 4 minutes of tape (trust set to 0.15). The card's likeliest early finish: Yakhyaev KO 47.1%, a round-one finish 48.8%."
     }
    }
   },
@@ -2363,7 +2363,7 @@
       "name": "Grant Dawson",
       "lines": [
        "32, Switch, 5'10\" / 72\" reach. Record 24-3-1.",
-       "Sample: 16 division fights, 175.9 minutes total. Career WR 81%. Layoff 163 days.",
+       "Sample: 16 division fights, 175.9 minutes total. Career WR 81%. Layoff 164 days.",
        "Recent: W vs Mateusz Rebecki (Submission R3, 2026-05-09) | L vs Manuel Torres (KO/TKO R1, 2025-12-06) | W vs Diego Ferreira (Decision R3, 2025-01-18)"
       ]
      },
@@ -2371,7 +2371,7 @@
       "name": "Nurullo Aliev",
       "lines": [
        "25, Orthodox, 5'10\" / 72\" reach. Record 12-0-0.",
-       "Sample: 5 division fights, 64.6 minutes total. Career WR 100%. Layoff 86 days.",
+       "Sample: 5 division fights, 64.6 minutes total. Career WR 100%. Layoff 87 days.",
        "Recent: W vs Mike Davis (Decision R3, 2026-07-25) | W vs Shem Rock (Decision R3, 2025-11-22) | W vs Joe Solecki (Decision R3, 2025-01-11)"
       ]
      }
@@ -2404,46 +2404,46 @@
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 17.2,
-       "f2": 11.7
+       "f1": 21.9,
+       "f2": 10.5
       },
       {
        "name": "Submission",
-       "f1": 18.7,
-       "f2": 5.2
+       "f1": 14.6,
+       "f2": 4.4
       },
       {
        "name": "Decision",
-       "f1": 37.3,
-       "f2": 9.8
+       "f1": 36.8,
+       "f2": 11.9
       }
      ],
-     "decisionPct": 47.1,
+     "decisionPct": 48.7,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 23.8
+       "pct": 23.2
       },
       {
        "r": 2,
-       "pct": 19
+       "pct": 18.4
       },
       {
        "r": 3,
-       "pct": 10.1
+       "pct": 9.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 32.4,
-      "over": 67.6
+      "under": 31.6,
+      "over": 68.4
      },
      {
       "line": 2.5,
-      "under": 47.4,
-      "over": 52.6
+      "under": 46.1,
+      "over": 53.9
      }
     ],
     "composites": {
@@ -2565,7 +2565,7 @@
      },
      {
       "name": "KO threat — Malkoun",
-      "value": "-0.075",
+      "value": "-0.074",
       "reads": "Near avg"
      },
      {
@@ -2609,7 +2609,7 @@
       "name": "Jacob Malkoun",
       "lines": [
        "31, Orthodox, 5'9\" / 73\" reach. Record 10-3-0.",
-       "Sample: 9 division fights, 100.2 minutes total. Career WR 67%. Layoff 170 days.",
+       "Sample: 9 division fights, 100.2 minutes total. Career WR 67%. Layoff 171 days.",
        "Recent: W vs Gerald Meerschaert (Decision R3, 2026-05-02) | W vs Torrez Finney (Decision R3, 2026-01-31) | W vs Andre Petroski (KO/TKO R2, 2024-03-30)"
       ]
      },
@@ -2617,7 +2617,7 @@
       "name": "Abubakar Vagaev",
       "lines": [
        "33, Orthodox, 5'11\" / 73\" reach. Record 25-4-0.",
-       "Sample: 1 division fights, 15.0 minutes total. Career WR 50%. Layoff 86 days.",
+       "Sample: 1 division fights, 15.0 minutes total. Career WR 50%. Layoff 87 days.",
        "Recent: W vs Saygid Izagakhmaev (Decision R3, 2026-07-25)"
       ]
      }
@@ -2625,11 +2625,11 @@
     "matchupAnalysis": [
      "Malkoun 73.3%. Vagaev has one UFC fight, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number: it has Malkoun at 75.1%. The hand-tuned layer is at 91.2%, and Elo +202 (1810 on 9 middleweight fights). Vagaev's 1608 is a cross-division fallback from his single welterweight fight; he moves up to middleweight here.",
      "Vagaev is 25-4 but has only 15 UFC minutes (trust 0.21): a July decision over Saygid Izagakhmaev at welterweight. Before that he was a two-time ACA welterweight champion, and 19 of his 24 pre-UFC wins came on the cards. He has never been submitted (losses: 3 KO, 1 decision). His composites sit near the mean (output -0.06, grappling +0.19). Malkoun has two straight decisions, over Torrez Finney and Gerald Meerschaert, and grades +2.24 in grappling and +1.66 in output, landing 55% of head strikes. That grappling is takedowns, control and ground strikes rather than submissions: he has no submission wins in his pro career. It gives him the card's largest decision edge (+3.16). His chin is +0.41 and his reach is short (-1.10).",
-     "Malkoun's routes: decision 37.3%, submission 18.7%, KO 17.2%. Vagaev's: KO 11.7%, decision 9.8%, submission 5.2%. Because Vagaev is moving up, the model trims the KO chances against him, and with one UFC fight the low-experience adjustment applies: decisions sit at 47.1%. O/U: Over 1.5 67.6%, Over 2.5 52.6%."
+     "Vagaev's record now feeds the method split. Because he has one UFC fight, the model leans on his pre-UFC wins (mostly decisions) for his own routes, and on how he has lost (three KOs, never a submission) for Malkoun's. Malkoun's routes: decision 36.8%, KO 21.9%, submission 14.6%. Vagaev's: decision 11.9%, KO 10.5%, submission 4.4%. Because Vagaev is moving up, the model trims the KO chances against him, and with one UFC fight the low-experience adjustment applies: decisions sit at 48.7%. O/U: Over 1.5 68.4%, Over 2.5 53.9%."
     ],
     "synopsis": {
      "lean": "Jacob Malkoun",
-     "body": "73.3%. Malkoun's grappling and output lead clearly, and all three engines agree. Vagaev is 25-4, has never been submitted, and is moving up from welterweight with one UFC fight. Malkoun's likeliest route is a decision (37.3%); his finishes split evenly between submission (18.7%) and KO (17.2%)."
+     "body": "73.3%. Malkoun's grappling and output lead clearly, and all three engines agree. Vagaev is 25-4, has never been submitted, and is moving up from welterweight with one UFC fight. Malkoun's likeliest route is a decision (36.8%); Vagaev's three KO losses make a Malkoun KO (21.9%) likelier than a submission (14.6%)."
     }
    }
   },
@@ -2855,7 +2855,7 @@
       "name": "Daniel Santos",
       "lines": [
        "31, Orthodox, 5'7\" / 67\" reach. Record 14-3-0.",
-       "Sample: 6 division fights, 69.3 minutes total. Career WR 67%. Layoff 156 days.",
+       "Sample: 6 division fights, 69.3 minutes total. Career WR 67%. Layoff 157 days.",
        "Recent: L vs Dooho Choi (KO/TKO R2, 2026-05-16) | W vs JooSang Yoo (KO/TKO R2, 2025-10-04) | W vs JeongYeong Lee (Decision R3, 2025-05-10)"
       ]
      },
@@ -2863,7 +2863,7 @@
       "name": "Bolaji Oki",
       "lines": [
        "30, Orthodox, 5'10\" / 73\" reach. Record 10-4-0.",
-       "Sample: 6 division fights, 58.8 minutes total. Career WR 50%. Layoff 219 days.",
+       "Sample: 6 division fights, 58.8 minutes total. Career WR 50%. Layoff 220 days.",
        "Recent: L vs Manoel Sousa (KO/TKO R3, 2026-03-14) | L vs Mason Jones (KO/TKO R2, 2025-09-06) | W vs Michael Aswell Jr. (Decision R3, 2025-05-31)"
       ]
      }
@@ -3030,7 +3030,7 @@
      },
      {
       "name": "Layoff factor",
-      "f1": "0.981",
+      "f1": "0.980",
       "f2": "1.000"
      },
      {
@@ -3067,12 +3067,12 @@
      },
      {
       "name": "Sub threat — Lucindo",
-      "value": "+0.293",
+      "value": "+0.292",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Caliari",
-      "value": "+0.194",
+      "value": "+0.192",
       "reads": "Near avg"
      },
      {
@@ -3101,7 +3101,7 @@
       "name": "Iasmin Lucindo",
       "lines": [
        "24, Orthodox, 5'3\" / 66\" reach. Record 18-6-0.",
-       "Sample: 7 division fights, 98.7 minutes total. Career WR 71%. Layoff 436 days.",
+       "Sample: 7 division fights, 98.7 minutes total. Career WR 71%. Layoff 437 days.",
        "Recent: W vs Angela Hill (Decision R3, 2025-08-09) | L vs Amanda Lemos (Decision R3, 2025-03-08) | W vs Marina Rodriguez (Decision R3, 2024-10-05)"
       ]
      },
@@ -3109,7 +3109,7 @@
       "name": "Nicolle Caliari",
       "lines": [
        "29, Orthodox, 5'3\" / 62\" reach. Record 9-4-0.",
-       "Sample: 4 division fights, 44.4 minutes total. Career WR 50%. Layoff 156 days.",
+       "Sample: 4 division fights, 44.4 minutes total. Career WR 50%. Layoff 157 days.",
        "Recent: W vs Shauna Bannon (Submission R3, 2026-05-16) | L vs Carli Judice (KO/TKO R3, 2025-07-19) | L vs Ernesta Kareckaite (Decision R3, 2025-01-11)"
       ]
      }
