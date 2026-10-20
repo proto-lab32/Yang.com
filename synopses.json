@@ -1149,7 +1149,7 @@
     "matchupAnalysis": [
      "Volkov 56.3%. Elo shows the card's largest gap, 410 points (2213 on 19 heavyweight fights to Kuniev's 1803 on 5), but the composites are much closer. The hand-tuned layer actually leans Kuniev (53.8%). The GBM sides with Elo at 55.8% Volkov, so no pull fires.",
      "Volkov is 38.0 and has won two straight decisions, over Waldo Cortes Acosta and Jailton Almeida, after a decision loss to Ciryl Gane. His case is distance striking: output +1.12, reach +1.23, 48% head accuracy, and only 1.71 head strikes absorbed per minute. His grappling is -0.54. Kuniev (trust 0.82) grades well across the board: power +0.32, chin +0.79, output +0.82, wrestling defence +0.99 (94% takedown defence). That profile is why the hand-tuned layer likes him. He also beat Almeida by decision, then KO'd Tyrell Fortune in round three in July.",
-     "The KO split is close (Volkov 15.1%, Kuniev 16.4%); the difference is the decision. Volkov wins on the cards in 35.5% to Kuniev's 25.4%, and adds a 5.7% submission. Decisions 60.9% (second only to Lucindo/Caliari among 3-round fights). Round one carries 20.3% of the finish risk. O/U: Over 1.5 73.8%, Over 2.5 64.0%."
+     "The KO split is close (Volkov 15.1%, Kuniev 16.4%); the difference is the decision. Volkov wins on the cards in 35.5% to Kuniev's 25.4%, and adds a 5.7% submission. Decisions 60.9% (third among 3-round fights, after Malkoun/Vagaev and Lucindo/Caliari). Round one carries 20.3% of the finish risk. O/U: Over 1.5 73.8%, Over 2.5 64.0%."
     ],
     "synopsis": {
      "lean": "Alexander Volkov",
@@ -2404,46 +2404,46 @@
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 21.9,
-       "f2": 10.5
+       "f1": 20.7,
+       "f2": 5.9
       },
       {
        "name": "Submission",
-       "f1": 14.6,
-       "f2": 4.4
+       "f1": 6.9,
+       "f2": 1.8
       },
       {
        "name": "Decision",
-       "f1": 36.8,
-       "f2": 11.9
+       "f1": 45.6,
+       "f2": 19
       }
      ],
-     "decisionPct": 48.7,
+     "decisionPct": 64.6,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 23.2
+       "pct": 16
       },
       {
        "r": 2,
-       "pct": 18.4
+       "pct": 12.7
       },
       {
        "r": 3,
-       "pct": 9.8
+       "pct": 6.7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 31.6,
-      "over": 68.4
+      "under": 22.3,
+      "over": 77.7
      },
      {
       "line": 2.5,
-      "under": 46.1,
-      "over": 53.9
+      "under": 32,
+      "over": 68
      }
     ],
     "composites": {
@@ -2625,11 +2625,11 @@
     "matchupAnalysis": [
      "Malkoun 73.3%. Vagaev has one UFC fight, so the moneyline comes from the low-experience GBM, which does not use the hand-tuned number: it has Malkoun at 75.1%. The hand-tuned layer is at 91.2%, and Elo +202 (1810 on 9 middleweight fights). Vagaev's 1608 is a cross-division fallback from his single welterweight fight; he moves up to middleweight here.",
      "Vagaev is 25-4 but has only 15 UFC minutes (trust 0.21): a July decision over Saygid Izagakhmaev at welterweight. Before that he was a two-time ACA welterweight champion, and 19 of his 24 pre-UFC wins came on the cards. He has never been submitted (losses: 3 KO, 1 decision). His composites sit near the mean (output -0.06, grappling +0.19). Malkoun has two straight decisions, over Torrez Finney and Gerald Meerschaert, and grades +2.24 in grappling and +1.66 in output, landing 55% of head strikes. That grappling is takedowns, control and ground strikes rather than submissions: he has no submission wins in his pro career. It gives him the card's largest decision edge (+3.16). His chin is +0.41 and his reach is short (-1.10).",
-     "Vagaev's record now feeds the method split. Because he has one UFC fight, the model leans on his pre-UFC wins (mostly decisions) for his own routes, and on how he has lost (three KOs, never a submission) for Malkoun's. Malkoun's routes: decision 36.8%, KO 21.9%, submission 14.6%. Vagaev's: decision 11.9%, KO 10.5%, submission 4.4%. Because Vagaev is moving up, the model trims the KO chances against him, and with one UFC fight the low-experience adjustment applies: decisions sit at 48.7%. O/U: Over 1.5 68.4%, Over 2.5 53.9%."
+     "With Vagaev at one UFC fight, this fight falls under our limited-data rule: the model's method split was more than 15 points off the betting market (29 on the widest cell), so the split comes from the market's prices, kept on the model's 73.3% moneyline. The books agree with his record: submissions at 5% each way, and a fight that usually goes the distance. Malkoun's routes: decision 45.6%, KO 20.7%, submission 6.9%. Vagaev's: decision 19.0%, KO 5.9%, submission 1.8%. Decisions 64.6%, the most of any 3-round fight on the card. O/U: Over 1.5 77.7%, Over 2.5 68.0%."
     ],
     "synopsis": {
      "lean": "Jacob Malkoun",
-     "body": "73.3%. Malkoun's grappling and output lead clearly, and all three engines agree. Vagaev is 25-4, has never been submitted, and is moving up from welterweight with one UFC fight. Malkoun's likeliest route is a decision (36.8%); Vagaev's three KO losses make a Malkoun KO (21.9%) likelier than a submission (14.6%)."
+     "body": "73.3%. Malkoun's grappling and output lead clearly, and all three engines agree. Vagaev is 25-4, has never been submitted, and is moving up from welterweight with one UFC fight. Under the limited-data rule the method split follows the market: Malkoun's likeliest route is a decision (45.6%), then a KO (20.7%); a Malkoun submission is only 6.9%. 64.6% decisions."
     }
    }
   },
@@ -3117,7 +3117,7 @@
     "matchupAnalysis": [
      "Lucindo 66.9%. GBM 64.4%, hand-tuned 67.7%, Elo +296 (1767 on 7 strawweight fights to 1471 on 4). All three agree.",
      "Lucindo, 24.8, returns after the card's longest layoff (436 days). She is 3-1 over her last four, all decisions: wins over Karolina Kowalkiewicz, Marina Rodriguez and Angela Hill, and a loss to Amanda Lemos. Her profile is solid rather than spectacular: chin +0.62, reach +0.75, grappling +0.38, output +0.28, power -0.39. Caliari's chin (-1.03) and output (-0.95) are weak, and she absorbs 4.35 head strikes per minute. Her UFC wins are both submissions (Corinne Laframboise in round one, Shauna Bannon in round three). Her losses are a decision to Ernesta Kareckaite and a third-round KO by Carli Judice.",
-     "Lucindo wins mostly on the cards (47.7% decision, KO 13.0%, submission 6.1%). Caliari's path is the submission (16.8% of her 33.1%), with decision 13.5%. Decisions 61.2%, the most of any 3-round fight on the card. O/U: Over 1.5 78.2%, Over 2.5 65.7%."
+     "Lucindo wins mostly on the cards (47.7% decision, KO 13.0%, submission 6.1%). Caliari's path is the submission (16.8% of her 33.1%), with decision 13.5%. Decisions 61.2%, second among 3-round fights to Malkoun/Vagaev. O/U: Over 1.5 78.2%, Over 2.5 65.7%."
     ],
     "synopsis": {
      "lean": "Iasmin Lucindo",
