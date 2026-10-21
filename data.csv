@@ -1,235 +1,258 @@
-# UFC Edmonton: Malott vs. Buckley
+# UFC 333: Volkanovski vs. Evloev
 FightID,Market,Selection,Yang Probability,Market Probability
-F00340,Moneyline,Mike Malott,53.00%,56.00%
-F00340,Moneyline,Joaquin Buckley,47.00%,47.00%
-F00340,Method of Victory,Mike Malott by KO/TKO,26.00%,21.00%
-F00340,Method of Victory,Mike Malott by Submission,10.80%,14.00%
-F00340,Method of Victory,Mike Malott by Decision,16.20%,27.00%
-F00340,Method of Victory,Joaquin Buckley by KO/TKO,34.50%,30.00%
-F00340,Method of Victory,Joaquin Buckley by Submission,1.20%,5.00%
-F00340,Method of Victory,Joaquin Buckley by Decision,11.30%,16.00%
-F00340,Total Rounds,Over 3.5,44.00%,51.00%
-F00340,Total Rounds,Under 3.5,56.00%,48.00%
-F00340,Fight Outcome,Goes to Decision,27.60%,38.00%
-F00340,Fight Outcome,Inside the Distance,72.40%,65.00%
-F00340,Fight Outcome,KO/TKO,60.50%,50.00%
-F00340,Fight Outcome,Submission,11.90%,17.00%
-F00340,Round Betting,Round 1 Finish,21.70%,
-F00340,Round Betting,Round 2 Finish,18.30%,18.00%
-F00340,Round Betting,Round 3 Finish,14.10%,14.00%
-F00340,Round Betting,Round 4 Finish,9.90%,12.00%
-F00340,Round Betting,Round 5 Finish,8.40%,9.00%
-F00340,Fighter ITD,Mike Malott ITD,36.80%,33.00%
-F00340,Fighter ITD,Joaquin Buckley ITD,35.60%,33.00%
-F00340,Double Chance,Mike Malott KO/TKO or Dec,42.20%,47.00%
-F00340,Double Chance,Joaquin Buckley KO/TKO or Dec,45.80%,45.00%
-F00341,Moneyline,Erin Blanchfield,74.00%,76.00%
-F00341,Moneyline,Jasmine Jasudavicius,26.00%,27.00%
-F00341,Method of Victory,Erin Blanchfield by KO/TKO,6.70%,9.00%
-F00341,Method of Victory,Erin Blanchfield by Submission,19.00%,15.00%
-F00341,Method of Victory,Erin Blanchfield by Decision,48.30%,58.00%
-F00341,Method of Victory,Jasmine Jasudavicius by KO/TKO,2.60%,3.00%
-F00341,Method of Victory,Jasmine Jasudavicius by Submission,2.60%,6.00%
-F00341,Method of Victory,Jasmine Jasudavicius by Decision,20.80%,20.00%
-F00341,Total Rounds,Over 2.5,74.00%,80.00%
-F00341,Total Rounds,Under 2.5,26.00%,24.00%
-F00341,Fight Outcome,Goes to Decision,69.00%,77.00%
-F00341,Fight Outcome,Inside the Distance,31.00%,27.00%
-F00341,Fight Outcome,KO/TKO,9.40%,11.00%
-F00341,Fight Outcome,Submission,21.60%,19.00%
-F00341,Round Betting,Round 1 Finish,12.10%,13.00%
-F00341,Round Betting,Round 2 Finish,12.20%,11.00%
-F00341,Round Betting,Round 3 Finish,6.70%,9.00%
-F00341,Fighter ITD,Erin Blanchfield ITD,25.70%,22.00%
-F00341,Fighter ITD,Jasmine Jasudavicius ITD,5.30%,8.00%
-F00341,Double Chance,Erin Blanchfield KO/TKO or Dec,55.00%,66.00%
-F00341,Double Chance,Jasmine Jasudavicius KO/TKO or Dec,23.40%,24.00%
-F00342,Moneyline,Cristian Perez,73.00%,77.00%
-F00342,Moneyline,Kyle Nelson,27.00%,26.00%
-F00342,Method of Victory,Cristian Perez by KO/TKO,43.60%,45.00%
-F00342,Method of Victory,Cristian Perez by Submission,9.70%,24.00%
-F00342,Method of Victory,Cristian Perez by Decision,19.70%,13.00%
-F00342,Method of Victory,Kyle Nelson by KO/TKO,12.00%,18.00%
-F00342,Method of Victory,Kyle Nelson by Submission,5.10%,4.00%
-F00342,Method of Victory,Kyle Nelson by Decision,9.90%,8.00%
-F00342,Total Rounds,Over 1.5,47.00%,47.00%
-F00342,Total Rounds,Under 1.5,53.00%,56.00%
-F00342,Fight Outcome,Goes to Decision,29.60%,20.00%
-F00342,Fight Outcome,Inside the Distance,70.40%,85.00%
-F00342,Fight Outcome,KO/TKO,55.60%,62.00%
-F00342,Fight Outcome,Submission,14.80%,26.00%
-F00342,Round Betting,Round 1 Finish,42.30%,44.00%
-F00342,Round Betting,Round 2 Finish,20.30%,29.00%
-F00342,Round Betting,Round 3 Finish,7.80%,15.00%
-F00342,Fighter ITD,Cristian Perez ITD,53.30%,67.00%
-F00342,Fighter ITD,Kyle Nelson ITD,17.10%,20.00%
-F00342,Double Chance,Cristian Perez KO/TKO or Dec,63.30%,60.00%
-F00342,Double Chance,Kyle Nelson KO/TKO or Dec,21.90%,23.00%
-F00343,Moneyline,Marc-Andre Barriault,32.00%,37.00%
-F00343,Moneyline,Kyle Daukaus,68.00%,65.00%
-F00343,Method of Victory,Marc-Andre Barriault by KO/TKO,20.00%,20.00%
-F00343,Method of Victory,Marc-Andre Barriault by Submission,2.50%,4.00%
-F00343,Method of Victory,Marc-Andre Barriault by Decision,9.50%,18.00%
-F00343,Method of Victory,Kyle Daukaus by KO/TKO,19.00%,26.00%
-F00343,Method of Victory,Kyle Daukaus by Submission,20.30%,27.00%
-F00343,Method of Victory,Kyle Daukaus by Decision,28.70%,19.00%
-F00343,Total Rounds,Over 2.5,42.00%,41.00%
-F00343,Total Rounds,Under 2.5,58.00%,62.00%
-F00343,Fight Outcome,Goes to Decision,38.10%,34.00%
-F00343,Fight Outcome,Inside the Distance,61.90%,69.00%
-F00343,Fight Outcome,KO/TKO,39.00%,44.00%
-F00343,Fight Outcome,Submission,22.90%,30.00%
-F00343,Round Betting,Round 1 Finish,33.50%,33.00%
-F00343,Round Betting,Round 2 Finish,19.30%,27.00%
-F00343,Round Betting,Round 3 Finish,9.10%,15.00%
-F00343,Fighter ITD,Marc-Andre Barriault ITD,22.50%,22.00%
-F00343,Fighter ITD,Kyle Daukaus ITD,39.40%,50.00%
-F00343,Double Chance,Marc-Andre Barriault KO/TKO or Dec,29.50%,36.00%
-F00343,Double Chance,Kyle Daukaus KO/TKO or Dec,47.70%,43.00%
-F00344,Moneyline,Louis Jourdain,56.00%,62.00%
-F00344,Moneyline,Timmy Cuamba,44.00%,40.00%
-F00344,Method of Victory,Louis Jourdain by KO/TKO,21.70%,28.00%
-F00344,Method of Victory,Louis Jourdain by Submission,9.70%,12.00%
-F00344,Method of Victory,Louis Jourdain by Decision,24.60%,31.00%
-F00344,Method of Victory,Timmy Cuamba by KO/TKO,13.40%,13.00%
-F00344,Method of Victory,Timmy Cuamba by Submission,7.70%,7.00%
-F00344,Method of Victory,Timmy Cuamba by Decision,22.90%,23.00%
-F00344,Total Rounds,Over 2.5,51.90%,58.00%
-F00344,Total Rounds,Under 2.5,48.10%,44.00%
-F00344,Fight Outcome,Goes to Decision,47.60%,53.00%
-F00344,Fight Outcome,Inside the Distance,52.40%,52.00%
-F00344,Fight Outcome,KO/TKO,35.00%,40.00%
-F00344,Fight Outcome,Submission,17.40%,17.00%
-F00344,Round Betting,Round 1 Finish,26.20%,23.00%
-F00344,Round Betting,Round 2 Finish,17.60%,20.00%
-F00344,Round Betting,Round 3 Finish,8.60%,14.00%
-F00344,Fighter ITD,Louis Jourdain ITD,31.40%,36.00%
-F00344,Fighter ITD,Timmy Cuamba ITD,21.00%,18.00%
-F00344,Double Chance,Louis Jourdain KO/TKO or Dec,46.30%,58.00%
-F00344,Double Chance,Timmy Cuamba KO/TKO or Dec,36.30%,36.00%
-F00345,Moneyline,Mandel Nallo,71.00%,73.00%
-F00345,Moneyline,Nate Landwehr,29.00%,30.00%
-F00345,Method of Victory,Mandel Nallo by KO/TKO,51.10%,57.00%
-F00345,Method of Victory,Mandel Nallo by Submission,13.00%,14.00%
-F00345,Method of Victory,Mandel Nallo by Decision,6.90%,8.00%
-F00345,Method of Victory,Nate Landwehr by KO/TKO,13.70%,17.00%
-F00345,Method of Victory,Nate Landwehr by Submission,9.20%,11.00%
-F00345,Method of Victory,Nate Landwehr by Decision,6.10%,6.00%
-F00345,Total Rounds,Over 1.5,34.80%,33.00%
-F00345,Total Rounds,Under 1.5,65.20%,69.00%
-F00345,Fight Outcome,Goes to Decision,13.00%,14.00%
-F00345,Fight Outcome,Inside the Distance,87.00%,91.00%
-F00345,Fight Outcome,KO/TKO,64.80%,71.00%
-F00345,Fight Outcome,Submission,22.20%,24.00%
-F00345,Round Betting,Round 1 Finish,52.90%,57.00%
-F00345,Round Betting,Round 2 Finish,24.60%,25.00%
-F00345,Round Betting,Round 3 Finish,9.50%,11.00%
-F00345,Fighter ITD,Mandel Nallo ITD,64.10%,69.00%
-F00345,Fighter ITD,Nate Landwehr ITD,22.90%,25.00%
-F00345,Double Chance,Mandel Nallo KO/TKO or Dec,58.00%,64.00%
-F00345,Double Chance,Nate Landwehr KO/TKO or Dec,19.80%,21.00%
-F00346,Moneyline,Tanner Boser,36.00%,34.00%
-F00346,Moneyline,Jhonata Diniz,64.00%,69.00%
-F00346,Method of Victory,Tanner Boser by KO/TKO,14.90%,13.00%
-F00346,Method of Victory,Tanner Boser by Submission,2.40%,4.00%
-F00346,Method of Victory,Tanner Boser by Decision,18.70%,19.00%
-F00346,Method of Victory,Jhonata Diniz by KO/TKO,34.50%,49.00%
-F00346,Method of Victory,Jhonata Diniz by Submission,6.70%,4.00%
-F00346,Method of Victory,Jhonata Diniz by Decision,22.80%,22.00%
-F00346,Total Rounds,Over 2.5,44.00%,46.00%
-F00346,Total Rounds,Under 2.5,56.00%,55.00%
-F00346,Fight Outcome,Goes to Decision,41.50%,39.00%
-F00346,Fight Outcome,Inside the Distance,58.50%,62.00%
-F00346,Fight Outcome,KO/TKO,49.40%,60.00%
-F00346,Fight Outcome,Submission,9.10%,7.00%
-F00346,Round Betting,Round 1 Finish,33.90%,32.00%
-F00346,Round Betting,Round 2 Finish,17.30%,22.00%
-F00346,Round Betting,Round 3 Finish,7.30%,13.00%
-F00346,Fighter ITD,Tanner Boser ITD,17.30%,14.00%
-F00346,Fighter ITD,Jhonata Diniz ITD,41.20%,50.00%
-F00346,Double Chance,Tanner Boser KO/TKO or Dec,33.60%,32.00%
-F00346,Double Chance,Jhonata Diniz KO/TKO or Dec,57.30%,69.00%
-F00347,Moneyline,Julien Leblanc,18.00%,17.00%
-F00347,Moneyline,Nicholas Galanti,82.00%,87.00%
-F00347,Method of Victory,Julien Leblanc by KO/TKO,8.60%,8.00%
-F00347,Method of Victory,Julien Leblanc by Submission,3.10%,4.00%
-F00347,Method of Victory,Julien Leblanc by Decision,6.30%,7.00%
-F00347,Method of Victory,Nicholas Galanti by KO/TKO,19.90%,22.00%
-F00347,Method of Victory,Nicholas Galanti by Submission,49.70%,57.00%
-F00347,Method of Victory,Nicholas Galanti by Decision,12.40%,13.00%
-F00347,Total Rounds,Over 1.5,42.60%,36.00%
-F00347,Total Rounds,Under 1.5,57.40%,64.00%
-F00347,Fight Outcome,Goes to Decision,18.70%,18.00%
-F00347,Fight Outcome,Inside the Distance,81.30%,85.00%
-F00347,Fight Outcome,KO/TKO,28.50%,30.00%
-F00347,Fight Outcome,Submission,52.80%,61.00%
-F00347,Round Betting,Round 1 Finish,45.40%,55.00%
-F00347,Round Betting,Round 2 Finish,24.10%,22.00%
-F00347,Round Betting,Round 3 Finish,11.80%,12.00%
-F00347,Fighter ITD,Julien Leblanc ITD,11.70%,11.00%
-F00347,Fighter ITD,Nicholas Galanti ITD,69.60%,77.00%
-F00347,Double Chance,Julien Leblanc KO/TKO or Dec,14.90%,15.00%
-F00347,Double Chance,Nicholas Galanti KO/TKO or Dec,32.30%,33.00%
-F00348,Moneyline,Chad Anheliger,33.00%,41.00%
-F00348,Moneyline,Steven Koslow,67.00%,62.00%
-F00348,Method of Victory,Chad Anheliger by KO/TKO,16.80%,15.00%
-F00348,Method of Victory,Chad Anheliger by Submission,2.50%,8.00%
-F00348,Method of Victory,Chad Anheliger by Decision,13.70%,24.00%
-F00348,Method of Victory,Steven Koslow by KO/TKO,11.60%,10.00%
-F00348,Method of Victory,Steven Koslow by Submission,25.80%,37.00%
-F00348,Method of Victory,Steven Koslow by Decision,29.60%,17.00%
-F00348,Total Rounds,Over 2.5,48.00%,47.00%
-F00348,Total Rounds,Under 2.5,52.00%,58.00%
-F00348,Fight Outcome,Goes to Decision,43.30%,39.00%
-F00348,Fight Outcome,Inside the Distance,56.70%,63.00%
-F00348,Fight Outcome,KO/TKO,28.40%,24.00%
-F00348,Fight Outcome,Submission,28.30%,44.00%
-F00348,Round Betting,Round 1 Finish,27.90%,29.00%
-F00348,Round Betting,Round 2 Finish,18.70%,24.00%
-F00348,Round Betting,Round 3 Finish,10.10%,15.00%
-F00348,Fighter ITD,Chad Anheliger ITD,19.30%,20.00%
-F00348,Fighter ITD,Steven Koslow ITD,37.40%,44.00%
-F00348,Double Chance,Chad Anheliger KO/TKO or Dec,30.50%,38.00%
-F00348,Double Chance,Steven Koslow KO/TKO or Dec,41.20%,26.00%
-F00350,Moneyline,SuYoung You,40.00%,46.00%
-F00350,Moneyline,Cody Chovancek,60.00%,56.00%
-F00350,Method of Victory,SuYoung You by KO/TKO,10.80%,8.00%
-F00350,Method of Victory,SuYoung You by Submission,5.70%,15.00%
-F00350,Method of Victory,SuYoung You by Decision,23.50%,28.00%
-F00350,Method of Victory,Cody Chovancek by KO/TKO,19.00%,21.00%
-F00350,Method of Victory,Cody Chovancek by Submission,10.30%,10.00%
-F00350,Method of Victory,Cody Chovancek by Decision,30.70%,31.00%
-F00350,Total Rounds,Over 2.5,60.00%,62.00%
-F00350,Total Rounds,Under 2.5,40.00%,40.00%
-F00350,Fight Outcome,Goes to Decision,54.20%,57.00%
-F00350,Fight Outcome,Inside the Distance,45.80%,47.00%
-F00350,Fight Outcome,KO/TKO,29.80%,27.00%
-F00350,Fight Outcome,Submission,16.00%,22.00%
-F00350,Round Betting,Round 1 Finish,23.70%,22.00%
-F00350,Round Betting,Round 2 Finish,14.80%,17.00%
-F00350,Round Betting,Round 3 Finish,7.30%,13.00%
-F00350,Fighter ITD,SuYoung You ITD,16.50%,20.00%
-F00350,Fighter ITD,Cody Chovancek ITD,29.30%,29.00%
-F00350,Double Chance,SuYoung You KO/TKO or Dec,34.30%,33.00%
-F00350,Double Chance,Cody Chovancek KO/TKO or Dec,49.70%,50.00%
-F00349,Moneyline,Melissa Croden,74.00%,76.00%
-F00349,Moneyline,Chelsea Chandler,26.00%,27.00%
-F00349,Method of Victory,Melissa Croden by KO/TKO,27.30%,23.00%
-F00349,Method of Victory,Melissa Croden by Submission,6.60%,13.00%
-F00349,Method of Victory,Melissa Croden by Decision,40.10%,43.00%
-F00349,Method of Victory,Chelsea Chandler by KO/TKO,6.40%,9.00%
-F00349,Method of Victory,Chelsea Chandler by Submission,8.60%,7.00%
-F00349,Method of Victory,Chelsea Chandler by Decision,11.00%,17.00%
-F00349,Total Rounds,Over 2.5,58.00%,62.00%
-F00349,Total Rounds,Under 2.5,42.00%,40.00%
-F00349,Fight Outcome,Goes to Decision,51.10%,57.00%
-F00349,Fight Outcome,Inside the Distance,48.90%,49.00%
-F00349,Fight Outcome,KO/TKO,33.70%,31.00%
-F00349,Fight Outcome,Submission,15.20%,20.00%
-F00349,Round Betting,Round 1 Finish,19.30%,20.00%
-F00349,Round Betting,Round 2 Finish,15.10%,18.00%
-F00349,Round Betting,Round 3 Finish,14.50%,14.00%
-F00349,Fighter ITD,Melissa Croden ITD,33.90%,36.00%
-F00349,Fighter ITD,Chelsea Chandler ITD,15.00%,13.00%
-F00349,Double Chance,Melissa Croden KO/TKO or Dec,67.40%,64.00%
-F00349,Double Chance,Chelsea Chandler KO/TKO or Dec,17.40%,25.00%
+F00351,Moneyline,Alexander Volkanovski,48.00%,51.00%
+F00351,Moneyline,Movsar Evloev,52.00%,50.00%
+F00351,Method of Victory,Alexander Volkanovski by KO/TKO,13.30%,18.00%
+F00351,Method of Victory,Alexander Volkanovski by Submission,4.70%,4.00%
+F00351,Method of Victory,Alexander Volkanovski by Decision,30.00%,33.00%
+F00351,Method of Victory,Movsar Evloev by KO/TKO,12.70%,10.00%
+F00351,Method of Victory,Movsar Evloev by Submission,6.00%,7.00%
+F00351,Method of Victory,Movsar Evloev by Decision,33.30%,33.00%
+F00351,Total Rounds,Over 4.5,66.00%,72.00%
+F00351,Total Rounds,Under 4.5,34.00%,30.00%
+F00351,Fight Outcome,Goes to Decision,63.40%,69.00%
+F00351,Fight Outcome,Inside the Distance,36.60%,34.00%
+F00351,Fight Outcome,KO/TKO,26.00%,27.00%
+F00351,Fight Outcome,Submission,10.60%,11.00%
+F00351,Round Betting,Round 1 Finish,9.50%,9.00%
+F00351,Round Betting,Round 2 Finish,9.20%,8.00%
+F00351,Round Betting,Round 3 Finish,7.50%,8.00%
+F00351,Round Betting,Round 4 Finish,5.70%,8.00%
+F00351,Round Betting,Round 5 Finish,4.70%,7.00%
+F00351,Fighter ITD,Alexander Volkanovski ITD,18.00%,19.00%
+F00351,Fighter ITD,Movsar Evloev ITD,18.60%,15.00%
+F00351,Double Chance,Alexander Volkanovski KO/TKO or Dec,43.30%,49.00%
+F00351,Double Chance,Movsar Evloev KO/TKO or Dec,46.00%,44.00%
+F00352,Moneyline,Merab Dvalishvili,54.00%,42.00%
+F00352,Moneyline,Petr Yan,46.00%,60.00%
+F00352,Method of Victory,Merab Dvalishvili by KO/TKO,7.10%,6.00%
+F00352,Method of Victory,Merab Dvalishvili by Submission,4.60%,5.00%
+F00352,Method of Victory,Merab Dvalishvili by Decision,42.30%,32.00%
+F00352,Method of Victory,Petr Yan by KO/TKO,13.80%,15.00%
+F00352,Method of Victory,Petr Yan by Submission,6.50%,3.00%
+F00352,Method of Victory,Petr Yan by Decision,25.70%,43.00%
+F00352,Total Rounds,Over 4.5,70.00%,74.00%
+F00352,Total Rounds,Under 4.5,30.00%,29.00%
+F00352,Fight Outcome,Goes to Decision,67.90%,73.00%
+F00352,Fight Outcome,Inside the Distance,32.10%,31.00%
+F00352,Fight Outcome,KO/TKO,20.90%,23.00%
+F00352,Fight Outcome,Submission,11.20%,7.00%
+F00352,Round Betting,Round 1 Finish,8.90%,10.00%
+F00352,Round Betting,Round 2 Finish,8.10%,8.00%
+F00352,Round Betting,Round 3 Finish,6.50%,7.00%
+F00352,Round Betting,Round 4 Finish,4.80%,6.00%
+F00352,Round Betting,Round 5 Finish,3.80%,6.00%
+F00352,Fighter ITD,Merab Dvalishvili ITD,11.70%,11.00%
+F00352,Fighter ITD,Petr Yan ITD,20.40%,22.00%
+F00352,Double Chance,Merab Dvalishvili KO/TKO or Dec,49.40%,40.00%
+F00352,Double Chance,Petr Yan KO/TKO or Dec,39.50%,57.00%
+F00353,Moneyline,Lone'er Kavanagh,48.00%,52.00%
+F00353,Moneyline,Ramazan Temirov,52.00%,50.00%
+F00353,Method of Victory,Lone'er Kavanagh by KO/TKO,14.60%,18.00%
+F00353,Method of Victory,Lone'er Kavanagh by Submission,6.30%,5.00%
+F00353,Method of Victory,Lone'er Kavanagh by Decision,27.10%,27.00%
+F00353,Method of Victory,Ramazan Temirov by KO/TKO,21.10%,33.00%
+F00353,Method of Victory,Ramazan Temirov by Submission,5.20%,5.00%
+F00353,Method of Victory,Ramazan Temirov by Decision,25.70%,18.00%
+F00353,Total Rounds,Over 2.5,56.00%,49.00%
+F00353,Total Rounds,Under 2.5,44.00%,52.00%
+F00353,Fight Outcome,Goes to Decision,52.70%,43.00%
+F00353,Fight Outcome,Inside the Distance,47.30%,59.00%
+F00353,Fight Outcome,KO/TKO,35.70%,51.00%
+F00353,Fight Outcome,Submission,11.60%,9.00%
+F00353,Round Betting,Round 1 Finish,24.10%,27.00%
+F00353,Round Betting,Round 2 Finish,15.30%,22.00%
+F00353,Round Betting,Round 3 Finish,7.90%,14.00%
+F00353,Fighter ITD,Lone'er Kavanagh ITD,20.90%,27.00%
+F00353,Fighter ITD,Ramazan Temirov ITD,26.40%,36.00%
+F00353,Double Chance,Lone'er Kavanagh KO/TKO or Dec,41.70%,47.00%
+F00353,Double Chance,Ramazan Temirov KO/TKO or Dec,46.80%,48.00%
+F00354,Moneyline,Alexander Volkov,53.00%,55.00%
+F00354,Moneyline,Rizvan Kuniev,47.00%,49.00%
+F00354,Method of Victory,Alexander Volkov by KO/TKO,13.80%,20.00%
+F00354,Method of Victory,Alexander Volkov by Submission,5.20%,4.00%
+F00354,Method of Victory,Alexander Volkov by Decision,34.00%,36.00%
+F00354,Method of Victory,Rizvan Kuniev by KO/TKO,18.10%,14.00%
+F00354,Method of Victory,Rizvan Kuniev by Submission,2.10%,4.00%
+F00354,Method of Victory,Rizvan Kuniev by Decision,26.80%,33.00%
+F00354,Total Rounds,Over 2.5,64.00%,70.00%
+F00354,Total Rounds,Under 2.5,36.00%,33.00%
+F00354,Fight Outcome,Goes to Decision,60.80%,66.00%
+F00354,Fight Outcome,Inside the Distance,39.20%,38.00%
+F00354,Fight Outcome,KO/TKO,31.80%,33.00%
+F00354,Fight Outcome,Submission,7.40%,7.00%
+F00354,Round Betting,Round 1 Finish,20.30%,17.00%
+F00354,Round Betting,Round 2 Finish,12.60%,14.00%
+F00354,Round Betting,Round 3 Finish,6.30%,11.00%
+F00354,Fighter ITD,Alexander Volkov ITD,19.00%,23.00%
+F00354,Fighter ITD,Rizvan Kuniev ITD,20.20%,18.00%
+F00354,Double Chance,Alexander Volkov KO/TKO or Dec,47.80%,50.00%
+F00354,Double Chance,Rizvan Kuniev KO/TKO or Dec,44.90%,45.00%
+F00355,Moneyline,Aaron Pico,59.00%,56.00%
+F00355,Moneyline,Losene Keita,41.00%,47.00%
+F00355,Method of Victory,Aaron Pico by KO/TKO,28.50%,21.00%
+F00355,Method of Victory,Aaron Pico by Submission,7.70%,10.00%
+F00355,Method of Victory,Aaron Pico by Decision,22.80%,23.00%
+F00355,Method of Victory,Losene Keita by KO/TKO,29.80%,31.00%
+F00355,Method of Victory,Losene Keita by Submission,3.50%,3.00%
+F00355,Method of Victory,Losene Keita by Decision,7.70%,17.00%
+F00355,Total Rounds,Over 1.5,60.00%,63.00%
+F00355,Total Rounds,Under 1.5,40.00%,39.00%
+F00355,Fight Outcome,Goes to Decision,30.50%,38.00%
+F00355,Fight Outcome,Inside the Distance,69.50%,66.00%
+F00355,Fight Outcome,KO/TKO,58.30%,59.00%
+F00355,Fight Outcome,Submission,11.20%,12.00%
+F00355,Round Betting,Round 1 Finish,37.50%,31.00%
+F00355,Round Betting,Round 2 Finish,21.70%,25.00%
+F00355,Round Betting,Round 3 Finish,10.30%,17.00%
+F00355,Fighter ITD,Aaron Pico ITD,36.20%,31.00%
+F00355,Fighter ITD,Losene Keita ITD,33.30%,33.00%
+F00355,Double Chance,Aaron Pico KO/TKO or Dec,51.30%,52.00%
+F00355,Double Chance,Losene Keita KO/TKO or Dec,37.50%,47.00%
+F00356,Moneyline,Dominick Reyes,43.00%,36.00%
+F00356,Moneyline,Azamat Murzakanov,57.00%,67.00%
+F00356,Method of Victory,Dominick Reyes by KO/TKO,15.90%,24.00%
+F00356,Method of Victory,Dominick Reyes by Submission,3.10%,5.00%
+F00356,Method of Victory,Dominick Reyes by Decision,24.00%,11.00%
+F00356,Method of Victory,Azamat Murzakanov by KO/TKO,39.50%,55.00%
+F00356,Method of Victory,Azamat Murzakanov by Submission,2.00%,5.00%
+F00356,Method of Victory,Azamat Murzakanov by Decision,15.50%,15.00%
+F00356,Total Rounds,Over 1.5,52.00%,47.00%
+F00356,Total Rounds,Under 1.5,48.00%,55.00%
+F00356,Fight Outcome,Goes to Decision,39.40%,24.00%
+F00356,Fight Outcome,Inside the Distance,60.60%,80.00%
+F00356,Fight Outcome,KO/TKO,55.40%,75.00%
+F00356,Fight Outcome,Submission,5.20%,8.00%
+F00356,Round Betting,Round 1 Finish,43.10%,45.00%
+F00356,Round Betting,Round 2 Finish,13.20%,27.00%
+F00356,Round Betting,Round 3 Finish,4.30%,14.00%
+F00356,Fighter ITD,Dominick Reyes ITD,19.00%,27.00%
+F00356,Fighter ITD,Azamat Murzakanov ITD,41.60%,57.00%
+F00356,Double Chance,Dominick Reyes KO/TKO or Dec,39.90%,33.00%
+F00356,Double Chance,Azamat Murzakanov KO/TKO or Dec,55.00%,67.00%
+F00357,Moneyline,Abus Magomedov,57.00%,55.00%
+F00357,Moneyline,Cam Rowston,43.00%,48.00%
+F00357,Method of Victory,Abus Magomedov by KO/TKO,8.90%,23.00%
+F00357,Method of Victory,Abus Magomedov by Submission,20.50%,16.00%
+F00357,Method of Victory,Abus Magomedov by Decision,27.60%,22.00%
+F00357,Method of Victory,Cam Rowston by KO/TKO,18.10%,19.00%
+F00357,Method of Victory,Cam Rowston by Submission,4.70%,10.00%
+F00357,Method of Victory,Cam Rowston by Decision,20.20%,19.00%
+F00357,Total Rounds,Over 1.5,65.00%,64.00%
+F00357,Total Rounds,Under 1.5,35.00%,39.00%
+F00357,Fight Outcome,Goes to Decision,47.70%,39.00%
+F00357,Fight Outcome,Inside the Distance,52.30%,66.00%
+F00357,Fight Outcome,KO/TKO,27.00%,41.00%
+F00357,Fight Outcome,Submission,25.30%,29.00%
+F00357,Round Betting,Round 1 Finish,27.30%,31.00%
+F00357,Round Betting,Round 2 Finish,16.90%,26.00%
+F00357,Round Betting,Round 3 Finish,8.10%,17.00%
+F00357,Fighter ITD,Abus Magomedov ITD,29.40%,36.00%
+F00357,Fighter ITD,Cam Rowston ITD,22.90%,32.00%
+F00357,Double Chance,Abus Magomedov KO/TKO or Dec,36.50%,44.00%
+F00357,Double Chance,Cam Rowston KO/TKO or Dec,38.30%,37.00%
+F00358,Moneyline,Nikita Krylov,24.00%,20.00%
+F00358,Moneyline,Abdul Rakhman Yakhyaev,76.00%,83.00%
+F00358,Method of Victory,Nikita Krylov by KO/TKO,10.20%,12.00%
+F00358,Method of Victory,Nikita Krylov by Submission,7.70%,7.00%
+F00358,Method of Victory,Nikita Krylov by Decision,6.10%,6.00%
+F00358,Method of Victory,Abdul Rakhman Yakhyaev by KO/TKO,46.90%,55.00%
+F00358,Method of Victory,Abdul Rakhman Yakhyaev by Submission,17.30%,26.00%
+F00358,Method of Victory,Abdul Rakhman Yakhyaev by Decision,11.80%,8.00%
+F00358,Total Rounds,Over 1.5,30.00%,31.00%
+F00358,Total Rounds,Under 1.5,70.00%,71.00%
+F00358,Fight Outcome,Goes to Decision,17.90%,14.00%
+F00358,Fight Outcome,Inside the Distance,82.10%,91.00%
+F00358,Fight Outcome,KO/TKO,57.10%,65.00%
+F00358,Fight Outcome,Submission,25.00%,32.00%
+F00358,Round Betting,Round 1 Finish,53.60%,65.00%
+F00358,Round Betting,Round 2 Finish,21.00%,22.00%
+F00358,Round Betting,Round 3 Finish,7.50%,10.00%
+F00358,Fighter ITD,Nikita Krylov ITD,17.90%,17.00%
+F00358,Fighter ITD,Abdul Rakhman Yakhyaev ITD,64.20%,80.00%
+F00358,Double Chance,Nikita Krylov KO/TKO or Dec,16.30%,15.00%
+F00358,Double Chance,Abdul Rakhman Yakhyaev KO/TKO or Dec,58.70%,62.00%
+F00359,Moneyline,Grant Dawson,58.00%,52.00%
+F00359,Moneyline,Nurullo Aliev,42.00%,50.00%
+F00359,Method of Victory,Grant Dawson by KO/TKO,6.40%,9.00%
+F00359,Method of Victory,Grant Dawson by Submission,16.00%,17.00%
+F00359,Method of Victory,Grant Dawson by Decision,35.60%,36.00%
+F00359,Method of Victory,Nurullo Aliev by KO/TKO,18.30%,18.00%
+F00359,Method of Victory,Nurullo Aliev by Submission,2.30%,5.00%
+F00359,Method of Victory,Nurullo Aliev by Decision,21.40%,34.00%
+F00359,Total Rounds,Over 2.5,61.00%,71.00%
+F00359,Total Rounds,Under 2.5,39.00%,33.00%
+F00359,Fight Outcome,Goes to Decision,57.00%,64.00%
+F00359,Fight Outcome,Inside the Distance,43.00%,40.00%
+F00359,Fight Outcome,KO/TKO,24.70%,25.00%
+F00359,Fight Outcome,Submission,18.30%,20.00%
+F00359,Round Betting,Round 1 Finish,20.40%,17.00%
+F00359,Round Betting,Round 2 Finish,14.70%,15.00%
+F00359,Round Betting,Round 3 Finish,7.90%,12.00%
+F00359,Fighter ITD,Grant Dawson ITD,22.40%,22.00%
+F00359,Fighter ITD,Nurullo Aliev ITD,20.60%,20.00%
+F00359,Double Chance,Grant Dawson KO/TKO or Dec,42.00%,43.00%
+F00359,Double Chance,Nurullo Aliev KO/TKO or Dec,39.70%,48.00%
+F00360,Moneyline,Jacob Malkoun,46.00%,42.00%
+F00360,Moneyline,Abubakar Vagaev,54.00%,60.00%
+F00360,Method of Victory,Jacob Malkoun by KO/TKO,12.80%,14.00%
+F00360,Method of Victory,Jacob Malkoun by Submission,4.30%,5.00%
+F00360,Method of Victory,Jacob Malkoun by Decision,28.90%,29.00%
+F00360,Method of Victory,Abubakar Vagaev by KO/TKO,11.70%,15.00%
+F00360,Method of Victory,Abubakar Vagaev by Submission,3.70%,5.00%
+F00360,Method of Victory,Abubakar Vagaev by Decision,38.60%,50.00%
+F00360,Total Rounds,Over 2.5,71.00%,76.00%
+F00360,Total Rounds,Under 2.5,29.00%,27.00%
+F00360,Fight Outcome,Goes to Decision,67.50%,71.00%
+F00360,Fight Outcome,Inside the Distance,32.50%,34.00%
+F00360,Fight Outcome,KO/TKO,24.60%,28.00%
+F00360,Fight Outcome,Submission,7.90%,9.00%
+F00360,Round Betting,Round 1 Finish,14.60%,15.00%
+F00360,Round Betting,Round 2 Finish,11.60%,13.00%
+F00360,Round Betting,Round 3 Finish,6.30%,10.00%
+F00360,Fighter ITD,Jacob Malkoun ITD,17.10%,17.00%
+F00360,Fighter ITD,Abubakar Vagaev ITD,15.40%,18.00%
+F00360,Double Chance,Jacob Malkoun KO/TKO or Dec,41.70%,38.00%
+F00360,Double Chance,Abubakar Vagaev KO/TKO or Dec,50.30%,60.00%
+F00361,Moneyline,Daniel Santos,49.00%,53.00%
+F00361,Moneyline,Bolaji Oki,51.00%,49.00%
+F00361,Method of Victory,Daniel Santos by KO/TKO,18.70%,23.00%
+F00361,Method of Victory,Daniel Santos by Submission,7.20%,18.00%
+F00361,Method of Victory,Daniel Santos by Decision,23.10%,26.00%
+F00361,Method of Victory,Bolaji Oki by KO/TKO,20.40%,29.00%
+F00361,Method of Victory,Bolaji Oki by Submission,4.80%,3.00%
+F00361,Method of Victory,Bolaji Oki by Decision,25.80%,22.00%
+F00361,Total Rounds,Over 2.5,52.00%,42.00%
+F00361,Total Rounds,Under 2.5,48.00%,62.00%
+F00361,Fight Outcome,Goes to Decision,48.90%,37.00%
+F00361,Fight Outcome,Inside the Distance,51.10%,68.00%
+F00361,Fight Outcome,KO/TKO,39.10%,57.00%
+F00361,Fight Outcome,Submission,12.00%,19.00%
+F00361,Round Betting,Round 1 Finish,27.70%,
+F00361,Round Betting,Round 2 Finish,15.90%,
+F00361,Round Betting,Round 3 Finish,7.50%,
+F00361,Fighter ITD,Daniel Santos ITD,25.90%,44.00%
+F00361,Fighter ITD,Bolaji Oki ITD,25.20%,31.00%
+F00361,Double Chance,Daniel Santos KO/TKO or Dec,41.80%,40.00%
+F00361,Double Chance,Bolaji Oki KO/TKO or Dec,46.20%,44.00%
+F00362,Moneyline,Iasmin Lucindo,69.00%,78.00%
+F00362,Moneyline,Nicolle Caliari,31.00%,24.00%
+F00362,Method of Victory,Iasmin Lucindo by KO/TKO,11.90%,17.00%
+F00362,Method of Victory,Iasmin Lucindo by Submission,6.00%,11.00%
+F00362,Method of Victory,Iasmin Lucindo by Decision,51.10%,61.00%
+F00362,Method of Victory,Nicolle Caliari by KO/TKO,2.50%,6.00%
+F00362,Method of Victory,Nicolle Caliari by Submission,15.10%,7.00%
+F00362,Method of Victory,Nicolle Caliari by Decision,13.40%,20.00%
+F00362,Total Rounds,Over 2.5,69.00%,73.00%
+F00362,Total Rounds,Under 2.5,31.00%,30.00%
+F00362,Fight Outcome,Goes to Decision,64.50%,71.00%
+F00362,Fight Outcome,Inside the Distance,35.50%,34.00%
+F00362,Fight Outcome,KO/TKO,14.40%,21.00%
+F00362,Fight Outcome,Submission,21.10%,21.00%
+F00362,Round Betting,Round 1 Finish,13.40%,
+F00362,Round Betting,Round 2 Finish,14.70%,
+F00362,Round Betting,Round 3 Finish,7.40%,
+F00362,Fighter ITD,Iasmin Lucindo ITD,17.90%,29.00%
+F00362,Fighter ITD,Nicolle Caliari ITD,17.60%,13.00%
+F00362,Double Chance,Iasmin Lucindo KO/TKO or Dec,63.00%,71.00%
+F00362,Double Chance,Nicolle Caliari KO/TKO or Dec,15.90%,22.00%
