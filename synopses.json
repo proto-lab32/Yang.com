@@ -32,9 +32,9 @@
    "division": "Bantamweight",
    "dataMode": null,
    "f1Short": "Grant",
-   "f1Pct": 31,
+   "f1Pct": 26,
    "f2Short": "Smith",
-   "f2Pct": 69
+   "f2Pct": 74
   },
   {
    "f1": "Seokhyeon Ko",
@@ -43,9 +43,9 @@
    "division": "Welterweight",
    "dataMode": null,
    "f1Short": "Ko",
-   "f1Pct": 71,
+   "f1Pct": 73,
    "f2Short": "Turman",
-   "f2Pct": 29
+   "f2Pct": 27
   },
   {
    "f1": "Billy Elekana",
@@ -131,9 +131,9 @@
    "division": "Flyweight",
    "dataMode": null,
    "f1Short": "Raposo",
-   "f1Pct": 43,
+   "f1Pct": 40,
    "f2Short": "Degli",
-   "f2Pct": 57
+   "f2Pct": 60
   },
   {
    "f1": "Thomas Petersen",
@@ -662,59 +662,59 @@
    "f1": "Davey Grant",
    "f2": "Elijah Smith",
    "rounds": 3,
-   "division": "Bantamweight  •  all-fights",
+   "division": "Bantamweight  •  all-fights  •  Smith trust 0.80 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Grant",
      "f2Short": "Smith",
      "modelProb": {
-      "f1": 30.8,
-      "f2": 69.2
+      "f1": 26,
+      "f2": 74
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 6.9,
-       "f2": 13.1
+       "f1": 6,
+       "f2": 13.9
       },
       {
        "name": "Submission",
        "f1": 2.2,
-       "f2": 20.3
+       "f2": 20.7
       },
       {
        "name": "Decision",
-       "f1": 21.7,
-       "f2": 35.9
+       "f1": 17.8,
+       "f2": 39.4
       }
      ],
-     "decisionPct": 57.5,
+     "decisionPct": 57.1,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 20.6
+       "pct": 20.8
       },
       {
        "r": 2,
-       "pct": 14.6
+       "pct": 14.8
       },
       {
        "r": 3,
-       "pct": 7.2
+       "pct": 7.3
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 27.2,
-      "over": 72.8
+      "under": 27.5,
+      "over": 72.5
      },
      {
       "line": 2.5,
-      "under": 38.5,
-      "over": 61.5
+      "under": 38.9,
+      "over": 61.1
      }
     ],
     "composites": {
@@ -723,32 +723,32 @@
       {
        "name": "Power",
        "f1": -0.27,
-       "f2": 0.12,
-       "delta": -0.39
+       "f2": 0.17,
+       "delta": -0.44
       },
       {
        "name": "Chin",
        "f1": 0.11,
-       "f2": 0.36,
-       "delta": -0.25
+       "f2": 0.51,
+       "delta": -0.4
       },
       {
        "name": "Output",
        "f1": 1.45,
-       "f2": 0.45,
-       "delta": 1
+       "f2": 0.63,
+       "delta": 0.82
       },
       {
        "name": "Grappling",
        "f1": -0.55,
-       "f2": 0.55,
-       "delta": -1.1
+       "f2": 0.76,
+       "delta": -1.31
       },
       {
        "name": "Wrestling Def",
        "f1": 0.22,
-       "f2": -0.47,
-       "delta": 0.7
+       "f2": -0.66,
+       "delta": 0.88
       },
       {
        "name": "Cardio",
@@ -768,39 +768,39 @@
      {
       "name": "Pressure",
       "f1": 0.67,
-      "f2": 0.57
+      "f2": 0.59
      },
      {
       "name": "Counter",
       "f1": 0.54,
-      "f2": 0.55
+      "f2": 0.57
      },
      {
       "name": "Wrestler",
       "f1": 0.42,
-      "f2": 0.58
+      "f2": 0.61
      },
      {
       "name": "Finisher",
       "f1": 0.49,
-      "f2": 0.53
+      "f2": 0.54
      },
      {
       "name": "Early-Finish Score",
       "f1": 0.23,
-      "f2": 0.38
+      "f2": 0.39
      },
      {
       "name": "Early Vulnerability",
       "f1": 0.3,
-      "f2": 0.26
+      "f2": 0.24
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
       "f1": "1.000 (190.4 min)",
-      "f2": "0.575 (40.2 min)"
+      "f2": "0.800 (40.2 min)"
      },
      {
       "name": "Decision trust",
@@ -831,37 +831,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.352",
+      "value": "+0.035",
       "reads": "Toward Grant"
      },
      {
       "name": "KO threat — Grant",
-      "value": "-0.783",
+      "value": "-0.926",
       "reads": "Below-avg"
      },
      {
       "name": "KO threat — Smith",
-      "value": "+0.097",
+      "value": "+0.143",
       "reads": "Near avg"
      },
      {
       "name": "Sub threat — Grant",
-      "value": "-0.207",
-      "reads": "Below-avg"
+      "value": "-0.085",
+      "reads": "Near avg"
      },
      {
       "name": "Sub threat — Smith",
-      "value": "+0.406",
+      "value": "+0.635",
       "reads": "Above-avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "22.9%",
+      "value": "26.1%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "77.1%",
+      "value": "73.9%",
       "reads": ""
      },
      {
@@ -871,7 +871,7 @@
      },
      {
       "name": "GBM P(Grant wins)",
-      "value": "31.3% calibrated  (HT 56.2%)",
+      "value": "26.9% calibrated  (HT 44.2%)",
       "reads": ""
      }
     ],
@@ -894,13 +894,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Smith 69.2%. The engines split. The GBM has Smith at 68.7%, but the hand-tuned layer picks Grant at 56.2%. Elo sides with the GBM by just 7 points (1762 on 4 bantamweight fights to 1756 on 16). The split pull only fires when the GBM disagrees with both the hand-tuned layer and Elo, so it does not fire here. Age drives much of the gap. Grant is 40.9, the oldest fighter on the card, against a 24-year-old, and the GBM's age/form layer marks the older fighter down.",
-     "Grant has the card's best output (+1.45) and a +1.54 strike differential, which is why the hand-tuned layer likes him. Smith is ahead on grappling (+0.55 to -0.55), reach (+0.72 to -0.02), chin (+0.36 to +0.11) and power (+0.12 to -0.27). His wrestling defence (-0.47) is his one soft spot. Smith is 10-1 and 4-0 in the UFC, with a second-round submission of SuYoung You in March, a first-round KO of Toshiomi Kazama and decisions over Vince Morales and Aaron Tau. He has 40 UFC minutes (trust 0.57), so some shrinkage still applies. Grant won his last fight on the cards but was submitted in the first round by Charles Jourdain before that.",
-     "Smith's routes are decision 35.9%, submission 20.3% and KO 13.1%. Grant's are decision 21.7%, KO 6.9% and submission 2.2%. The fight goes the distance 57.5% of the time, and round one carries 20.6% finish risk. O/U: Over 1.5 72.8%, Over 2.5 61.5%."
+     "Smith 74.0%. Smith's trust is set to 0.8 by override (computed 0.57 from 40 UFC minutes). With it, all three signals agree. The GBM has Smith at 73.1%, the hand-tuned layer at 55.8%, and Elo by just 7 points (1762 on 4 bantamweight fights to 1756 on 16). Without the override the hand-tuned layer picked Grant. Age is a large part of the GBM's margin. Grant is 40.9, the oldest fighter on the card, against a 24-year-old.",
+     "Grant has the card's best output (+1.45) and a +1.54 strike differential. Smith is ahead on grappling (+0.76 to -0.55), reach (+0.72 to -0.02), chin (+0.51 to +0.11) and power (+0.17 to -0.27), and his output is +0.63. His wrestling defence (-0.66) is his one soft spot. Smith is 10-1 and 4-0 in the UFC, with a second-round submission of SuYoung You in March, a first-round KO of Toshiomi Kazama and decisions over Vince Morales and Aaron Tau. Grant won his last fight on the cards but was submitted in the first round by Charles Jourdain before that.",
+     "Smith's routes are decision 39.4%, submission 20.7% and KO 13.9%. Grant's are decision 17.8%, KO 6.0% and submission 2.2%. The fight goes the distance 57.1% of the time, and round one carries 20.8% finish risk. O/U: Over 1.5 72.5%, Over 2.5 61.1%."
     ],
     "synopsis": {
      "lean": "Elijah Smith",
-     "body": "69.2%. The hand-tuned layer leans Grant on his card-best output, but the GBM and Elo both side with the unbeaten-in-the-UFC 24-year-old against a 40-year-old. Smith's grappling is the difference, and his submission (20.3%) is a real second route behind the decision (35.9%)."
+     "body": "74.0%. With Smith's trust at 0.8, the GBM, the hand-tuned layer and Elo all side with the 4-0-in-the-UFC 24-year-old over a 40-year-old. Grant has the card's best output; Smith's grappling is the difference. Expect a Smith decision (39.4%), with his submission (20.7%) a real second route."
     }
    }
   },
@@ -908,59 +908,59 @@
    "f1": "Seokhyeon Ko",
    "f2": "Wellington Turman",
    "rounds": 3,
-   "division": "Welterweight  •  all-fights",
+   "division": "Welterweight  •  all-fights  •  Ko trust 1.00 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Ko",
      "f2Short": "Turman",
      "modelProb": {
-      "f1": 71.4,
-      "f2": 28.6
+      "f1": 73.1,
+      "f2": 26.9
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 13.4,
-       "f2": 5.1
+       "f1": 13.8,
+       "f2": 4.7
       },
       {
        "name": "Submission",
-       "f1": 8.5,
-       "f2": 12
+       "f1": 8.8,
+       "f2": 11.6
       },
       {
        "name": "Decision",
-       "f1": 49.5,
-       "f2": 11.5
+       "f1": 50.6,
+       "f2": 10.7
       }
      ],
-     "decisionPct": 61,
+     "decisionPct": 61.2,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 17.2
+       "pct": 17
       },
       {
        "r": 2,
-       "pct": 13.9
+       "pct": 14
       },
       {
        "r": 3,
-       "pct": 7.9
+       "pct": 7.7
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 23.5,
-      "over": 76.5
+      "under": 23.4,
+      "over": 76.6
      },
      {
       "line": 2.5,
-      "under": 34.6,
-      "over": 65.4
+      "under": 34.5,
+      "over": 65.5
      }
     ],
     "composites": {
@@ -968,39 +968,39 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.56,
+       "f1": -0.66,
        "f2": -0.59,
-       "delta": 0.03
+       "delta": -0.06
       },
       {
        "name": "Chin",
-       "f1": 1.02,
+       "f1": 1.21,
        "f2": -0.13,
-       "delta": 1.15
+       "delta": 1.33
       },
       {
        "name": "Output",
-       "f1": 0.94,
+       "f1": 1.09,
        "f2": -0.66,
-       "delta": 1.6
+       "delta": 1.76
       },
       {
        "name": "Grappling",
-       "f1": 1.44,
+       "f1": 1.67,
        "f2": -0.25,
-       "delta": 1.68
+       "delta": 1.92
       },
       {
        "name": "Wrestling Def",
-       "f1": -0.42,
+       "f1": -0.49,
        "f2": -1.33,
-       "delta": 0.91
+       "delta": 0.84
       },
       {
        "name": "Cardio",
-       "f1": 0.7,
+       "f1": 0.78,
        "f2": -0.01,
-       "delta": 0.7
+       "delta": 0.79
       },
       {
        "name": "Reach",
@@ -1013,7 +1013,7 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.66,
+      "f1": 0.68,
       "f2": 0.42
      },
      {
@@ -1023,17 +1023,17 @@
      },
      {
       "name": "Wrestler",
-      "f1": 0.73,
+      "f1": 0.76,
       "f2": 0.46
      },
      {
       "name": "Finisher",
-      "f1": 0.25,
+      "f1": 0.22,
       "f2": 0.43
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.07,
+      "f1": 0.05,
       "f2": 0.16
      },
      {
@@ -1045,7 +1045,7 @@
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.857 (60.0 min)",
+      "f1": "1.000 (60.0 min)",
       "f2": "1.000 (96.7 min)"
      },
      {
@@ -1077,37 +1077,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+3.069",
+      "value": "+3.390",
       "reads": "Toward Ko"
      },
      {
       "name": "KO threat — Ko",
-      "value": "-0.480",
+      "value": "-0.574",
       "reads": "Below-avg"
      },
      {
       "name": "KO threat — Turman",
-      "value": "-1.422",
+      "value": "-1.603",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Ko",
-      "value": "+2.119",
+      "value": "+2.287",
       "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Turman",
-      "value": "+0.049",
+      "value": "+0.102",
       "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "59.5%",
+      "value": "63.1%",
       "reads": "Ground-heavy"
      },
      {
       "name": "Standing % of fight",
-      "value": "40.5%",
+      "value": "36.9%",
       "reads": ""
      },
      {
@@ -1117,7 +1117,7 @@
      },
      {
       "name": "GBM P(Ko wins)",
-      "value": "71.9% calibrated  (HT 78.0%)",
+      "value": "73.3% calibrated  (HT 77.7%)",
       "reads": ""
      }
     ],
@@ -1140,13 +1140,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Ko 71.4%. All three signals agree. The GBM has Ko at 71.9%, the hand-tuned layer at 78.0%, and Elo shows the card's largest gap, 326 points (1732 on 4 welterweight fights to 1406 on 9). Turman returns from 1,066 days out, the second-longest layoff on the card, on three straight losses: a submission by Jared Gooden and decisions to Randy Brown and Andre Petroski.",
-     "Ko leads almost everywhere: grappling +1.44 to -0.25, chin +1.02 to -0.13, output +0.94 to -0.66, cardio +0.70 to -0.01. His one clear deficit is reach, where he has the card's second-shortest (-1.34). Turman's wrestling defence is -1.33, and that matchup produces the card's largest decision edge (+3.07). Ko is 13-3 and 3-1 in the UFC, and all four UFC fights went to decisions (wins over Igor Cavalcanti, Oban Elliott and Phil Rowe; a loss to Jean-Paul Lebosnoyani in July). His pre-UFC record was missing from the data until this week. It is now corrected to 11-2.",
-     "Ko's routes are decision 49.5%, KO 13.4% and submission 8.5%. Turman's are submission 12.0%, decision 11.5% and KO 5.1%. The fight goes the distance 61.0% of the time, the second-most decision-heavy fight on the card. O/U: Over 1.5 76.5%, Over 2.5 65.4%."
+     "Ko 73.1%. Ko's trust is set to 1.0 by override (computed 0.86). All three signals agree. The GBM has Ko at 73.3%, the hand-tuned layer at 77.7%, and Elo shows the card's largest gap, 326 points (1732 on 4 welterweight fights to 1406 on 9). Turman returns from 1,066 days out, the second-longest layoff on the card, on three straight losses: a submission by Jared Gooden and decisions to Randy Brown and Andre Petroski.",
+     "Ko leads almost everywhere: grappling +1.67 to -0.25, chin +1.21 to -0.13, output +1.09 to -0.66, cardio +0.78 to -0.01. His one clear deficit is reach, where he has the card's second-shortest (-1.34). Turman's wrestling defence is -1.33, and that matchup produces the card's largest decision edge (+3.39). Ko is 13-3 and 3-1 in the UFC, and all four UFC fights went to decisions (wins over Igor Cavalcanti, Oban Elliott and Phil Rowe; a loss to Jean-Paul Lebosnoyani in July). His pre-UFC record was missing from the data until this week. It is now corrected to 11-2.",
+     "Ko's routes are decision 50.6%, KO 13.8% and submission 8.8%. Turman's are submission 11.6%, decision 10.7% and KO 4.7%. The fight goes the distance 61.2% of the time, the second-most decision-heavy fight on the card. O/U: Over 1.5 76.6%, Over 2.5 65.5%."
     ],
     "synopsis": {
      "lean": "Seokhyeon Ko",
-     "body": "71.4%. Ko has the card's largest Elo gap and largest decision edge against an opponent coming off three losses and nearly three years out. Turman's submission (12.0%) is his realistic path. Otherwise this looks like another Ko decision (49.5%)."
+     "body": "73.1%. Ko has the card's largest Elo gap and largest decision edge against an opponent coming off three losses and nearly three years out. Turman's submission (11.6%) is his realistic path. Otherwise this looks like another Ko decision (50.6%)."
     }
    }
   },
@@ -1892,7 +1892,7 @@
    "f1": "Jose Henrique Souza",
    "f2": "Jonny Parsons",
    "rounds": 3,
-   "division": "Welterweight  •  all-fights",
+   "division": "Welterweight  •  all-fights  •  Souza trust 0.50, Parsons trust 0.50 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
@@ -1905,46 +1905,46 @@
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 41.7,
-       "f2": 11.6
+       "f1": 41.8,
+       "f2": 11.9
       },
       {
        "name": "Submission",
-       "f1": 9.8,
-       "f2": 2.3
+       "f1": 10.3,
+       "f2": 2.2
       },
       {
        "name": "Decision",
-       "f1": 28.8,
-       "f2": 5.7
+       "f1": 28.3,
+       "f2": 5.6
       }
      ],
-     "decisionPct": 34.5,
+     "decisionPct": 33.8,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 32
+       "pct": 32.4
       },
       {
        "r": 2,
-       "pct": 21.8
+       "pct": 22.1
       },
       {
        "r": 3,
-       "pct": 11.7
+       "pct": 11.8
       }
      ]
     },
     "overUnder": [
      {
       "line": 1.5,
-      "under": 42.1,
-      "over": 57.9
+      "under": 42.6,
+      "over": 57.4
      },
      {
       "line": 2.5,
-      "under": 59.5,
-      "over": 40.5
+      "under": 60.2,
+      "over": 39.8
      }
     ],
     "composites": {
@@ -1952,39 +1952,39 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.15,
-       "f2": 0.23,
-       "delta": -0.38
+       "f1": -0.21,
+       "f2": 0.32,
+       "delta": -0.53
       },
       {
        "name": "Chin",
-       "f1": -0.49,
-       "f2": -0.07,
-       "delta": -0.42
+       "f1": -0.56,
+       "f2": -0.06,
+       "delta": -0.51
       },
       {
        "name": "Output",
-       "f1": -0.12,
-       "f2": -0.06,
-       "delta": -0.06
+       "f1": -0.16,
+       "f2": -0.08,
+       "delta": -0.08
       },
       {
        "name": "Grappling",
-       "f1": -0.14,
-       "f2": -0.09,
-       "delta": -0.05
+       "f1": -0.19,
+       "f2": -0.13,
+       "delta": -0.06
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.02,
-       "f2": 0.08,
-       "delta": -0.05
+       "f1": 0.03,
+       "f2": 0.11,
+       "delta": -0.07
       },
       {
        "name": "Cardio",
-       "f1": 0.07,
+       "f1": 0.02,
        "f2": 0.12,
-       "delta": -0.05
+       "delta": -0.1
       },
       {
        "name": "Reach",
@@ -1997,13 +1997,13 @@
     "styleProfiles": [
      {
       "name": "Pressure",
-      "f1": 0.49,
+      "f1": 0.48,
       "f2": 0.5
      },
      {
       "name": "Counter",
       "f1": 0.5,
-      "f2": 0.56
+      "f2": 0.58
      },
      {
       "name": "Wrestler",
@@ -2012,25 +2012,25 @@
      },
      {
       "name": "Finisher",
-      "f1": 0.43,
-      "f2": 0.5
+      "f1": 0.4,
+      "f2": 0.49
      },
      {
       "name": "Early-Finish Score",
-      "f1": 0.13,
-      "f2": 0.37
+      "f1": 0.12,
+      "f2": 0.38
      },
      {
       "name": "Early Vulnerability",
-      "f1": 0.57,
+      "f1": 0.58,
       "f2": 0.33
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.367 (25.7 min)",
-      "f2": "0.356 (24.9 min)"
+      "f1": "0.500 (25.7 min)",
+      "f2": "0.500 (24.9 min)"
      },
      {
       "name": "Decision trust",
@@ -2061,37 +2061,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "+0.243",
+      "value": "+0.212",
       "reads": "Toward Souza"
      },
      {
       "name": "KO threat — Souza",
-      "value": "+0.450",
+      "value": "+0.381",
       "reads": "Above-avg"
      },
      {
       "name": "KO threat — Parsons",
-      "value": "+0.185",
-      "reads": "Near avg"
+      "value": "+0.345",
+      "reads": "Above-avg"
      },
      {
       "name": "Sub threat — Souza",
-      "value": "-0.186",
-      "reads": "Near avg"
+      "value": "-0.252",
+      "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Parsons",
-      "value": "-0.106",
+      "value": "-0.145",
       "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "16.2%",
+      "value": "15.5%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "83.8%",
+      "value": "84.5%",
       "reads": ""
      },
      {
@@ -2101,7 +2101,7 @@
      },
      {
       "name": "GBM P(Souza wins)",
-      "value": "81.4% calibrated  (HT 48.1%)",
+      "value": "81.4% calibrated  (HT 46.2%)",
       "reads": ""
      }
     ],
@@ -2124,13 +2124,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Souza 80.4%. The fight goes through the low-experience route (two UFC/DWCS fights each). The no-hand-tuned GBM has Souza at 81.4%. Neither of the other engines agrees: the hand-tuned layer is close to even (Souza 48.1%) and Elo prefers Parsons by 150 points (1691 to 1541, two welterweight fights each). In a veteran fight a split like this would trigger the split pull; the low-experience route has no pull, so the number is the GBM's alone. Read it with that in mind.",
-     "The composites barely separate them. Both men have about 25 UFC minutes (trust 0.37 and 0.36), so most values sit near the mean. Reach is the exception: Souza is 6'3\" with a 79\" reach (+1.66), Parsons 5'9\" with 69\" (-1.68, the card's shortest). Souza's chin is -0.49; his one loss is a third-round TKO by Yusaku Kinoshita on the Contender Series. The GBM's gap comes from inputs outside the composites: Souza is 24, 8-1 before the UFC with six KOs, and won a split decision over Meng Ding in May. Parsons is 35, 8-3 before the UFC, and returns from 1,199 days out, the card's longest layoff, after a TKO of Danny Roberts in July 2023.",
-     "Souza's routes are KO 41.7%, decision 28.8% and submission 9.8%. Parsons's paths are KO 11.6%, decision 5.7% and submission 2.3%. The fight goes the distance 34.5% of the time. O/U: Over 1.5 57.9%, Over 2.5 40.5%. Souza's pre-UFC record was corrected this week (the data had matched a different Jose Henrique, 1-0), which moves his number."
+     "Souza 80.4%. The fight goes through the low-experience route (two UFC/DWCS fights each). The no-hand-tuned GBM has Souza at 81.4%. Neither of the other engines agrees: the hand-tuned layer is close to even (Souza 46.2%) and Elo prefers Parsons by 150 points (1691 to 1541, two welterweight fights each). In a veteran fight a split like this would trigger the split pull; the low-experience route has no pull, so the number is the GBM's alone. Read it with that in mind.",
+     "Both men's trust is set to 0.5 by override (computed 0.37 and 0.36 from about 25 UFC minutes each). The override did not move the number: the routed GBM still says 81.4%. The composites barely separate them, and most values sit near the mean. Reach is the exception: Souza is 6'3\" with a 79\" reach (+1.66), Parsons 5'9\" with 69\" (-1.68, the card's shortest). Souza's chin is -0.56; his one loss is a third-round TKO by Yusaku Kinoshita on the Contender Series. The GBM's gap comes from inputs outside the composites: Souza is 24, 8-1 before the UFC with six KOs, and won a split decision over Meng Ding in May. Parsons is 35, 8-3 before the UFC, and returns from 1,199 days out, the card's longest layoff, after a TKO of Danny Roberts in July 2023.",
+     "Souza's routes are KO 41.8%, decision 28.3% and submission 10.3%. Parsons's paths are KO 11.9%, decision 5.6% and submission 2.2%. The fight goes the distance 33.8% of the time. O/U: Over 1.5 57.4%, Over 2.5 39.8%. Souza's pre-UFC record was corrected this week (the data had matched a different Jose Henrique, 1-0), which moves his number."
     ],
     "synopsis": {
      "lean": "Jose Henrique Souza",
-     "body": "80.4%. This rests on the low-experience GBM alone: the hand-tuned layer is close to even and Elo prefers Parsons. The case for Souza is youth (24 v 35), ten inches of reach and Parsons's three-plus years out. Expect a Souza KO (41.7%) or decision (28.8%)."
+     "body": "80.4%. This rests on the low-experience GBM alone: the hand-tuned layer is close to even and Elo prefers Parsons. The case for Souza is youth (24 v 35), ten inches of reach and Parsons's three-plus years out. Expect a Souza KO (41.8%) or decision (28.3%)."
     }
    }
   },
@@ -2876,42 +2876,42 @@
    "f1": "Mitch Raposo",
    "f2": "Marcos Degli",
    "rounds": 3,
-   "division": "Flyweight  •  all-fights",
+   "division": "Flyweight  •  all-fights  •  Raposo trust 1.00, Degli trust 0.40 (override)",
    "dataMode": null,
    "sections": {
     "modelProjections": {
      "f1Short": "Raposo",
      "f2Short": "Degli",
      "modelProb": {
-      "f1": 43.3,
-      "f2": 56.7
+      "f1": 39.8,
+      "f2": 60.2
      },
      "method": [
       {
        "name": "KO/TKO",
-       "f1": 15.9,
-       "f2": 18.9
+       "f1": 14,
+       "f2": 19.7
       },
       {
        "name": "Submission",
        "f1": 3.2,
-       "f2": 22.4
+       "f2": 23.9
       },
       {
        "name": "Decision",
-       "f1": 24.1,
-       "f2": 15.4
+       "f1": 22.6,
+       "f2": 16.6
       }
      ],
-     "decisionPct": 39.6,
+     "decisionPct": 39.2,
      "roundsFinish": [
       {
        "r": 1,
-       "pct": 27.9
+       "pct": 28
       },
       {
        "r": 2,
-       "pct": 21
+       "pct": 21.3
       },
       {
        "r": 3,
@@ -2922,13 +2922,13 @@
     "overUnder": [
      {
       "line": 1.5,
-      "under": 37.5,
-      "over": 62.5
+      "under": 37.7,
+      "over": 62.3
      },
      {
       "line": 2.5,
-      "under": 54.2,
-      "over": 45.8
+      "under": 54.6,
+      "over": 45.4
      }
     ],
     "composites": {
@@ -2936,39 +2936,39 @@
      "rows": [
       {
        "name": "Power",
-       "f1": -0.66,
-       "f2": -0.02,
-       "delta": -0.64
+       "f1": -0.67,
+       "f2": -0.05,
+       "delta": -0.63
       },
       {
        "name": "Chin",
-       "f1": 0.55,
-       "f2": 0.11,
-       "delta": 0.45
+       "f1": 0.57,
+       "f2": 0.31,
+       "delta": 0.26
       },
       {
        "name": "Output",
-       "f1": -0.75,
-       "f2": 0.12,
-       "delta": -0.87
+       "f1": -0.77,
+       "f2": 0.35,
+       "delta": -1.12
       },
       {
        "name": "Grappling",
-       "f1": -0.42,
-       "f2": 0.08,
-       "delta": -0.5
+       "f1": -0.43,
+       "f2": 0.24,
+       "delta": -0.66
       },
       {
        "name": "Wrestling Def",
-       "f1": 0.26,
-       "f2": -0.16,
-       "delta": 0.42
+       "f1": 0.27,
+       "f2": -0.45,
+       "delta": 0.71
       },
       {
        "name": "Cardio",
-       "f1": -0.29,
+       "f1": -0.3,
        "f2": 0.2,
-       "delta": -0.49
+       "delta": -0.5
       },
       {
        "name": "Reach",
@@ -2982,22 +2982,22 @@
      {
       "name": "Pressure",
       "f1": 0.39,
-      "f2": 0.53
+      "f2": 0.56
      },
      {
       "name": "Counter",
       "f1": 0.58,
-      "f2": 0.51
+      "f2": 0.53
      },
      {
       "name": "Wrestler",
       "f1": 0.44,
-      "f2": 0.51
+      "f2": 0.53
      },
      {
       "name": "Finisher",
       "f1": 0.27,
-      "f2": 0.52
+      "f2": 0.56
      },
      {
       "name": "Early-Finish Score",
@@ -3007,14 +3007,14 @@
      {
       "name": "Early Vulnerability",
       "f1": 0.14,
-      "f2": 0.3
+      "f2": 0.27
      }
     ],
     "modifiers": [
      {
       "name": "Trust factor (minutes-based)",
-      "f1": "0.974 (68.2 min)",
-      "f2": "0.140 (9.8 min)"
+      "f1": "1.000 (68.2 min)",
+      "f2": "0.400 (9.8 min)"
      },
      {
       "name": "Decision trust",
@@ -3045,37 +3045,37 @@
     "matchupEdges": [
      {
       "name": "Decision edge",
-      "value": "-0.709",
+      "value": "-0.848",
       "reads": "Toward Degli"
      },
      {
       "name": "KO threat — Raposo",
-      "value": "-0.909",
+      "value": "-1.130",
       "reads": "Below-avg"
      },
      {
       "name": "KO threat — Degli",
-      "value": "-0.322",
+      "value": "-0.368",
       "reads": "Below-avg"
      },
      {
       "name": "Sub threat — Raposo",
-      "value": "-0.266",
-      "reads": "Below-avg"
+      "value": "-0.098",
+      "reads": "Near avg"
      },
      {
       "name": "Sub threat — Degli",
-      "value": "-0.103",
+      "value": "+0.053",
       "reads": "Near avg"
      },
      {
       "name": "Ground % of fight",
-      "value": "15.3%",
+      "value": "18.3%",
       "reads": "Mostly standing"
      },
      {
       "name": "Standing % of fight",
-      "value": "84.7%",
+      "value": "81.7%",
       "reads": ""
      },
      {
@@ -3085,7 +3085,7 @@
      },
      {
       "name": "GBM P(Raposo wins)",
-      "value": "44.1% calibrated  (HT 16.8%)",
+      "value": "41.0% calibrated  (HT 14.4%)",
       "reads": ""
      }
     ],
@@ -3108,13 +3108,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Degli 56.7%. The fight goes through the low-experience route (Degli has one UFC fight). The no-hand-tuned GBM has Degli at 55.9%, Elo agrees by 29 points (1550 on 1 flyweight fight to 1521 on 5), and the hand-tuned layer is far more confident at 83.2% (reference only). The routed model is much closer to even, because Degli's 10 UFC minutes (trust 0.14) are shrunk hard to the mean.",
-     "Degli is 15-3 and submitted Paris Moran in round two in September. He takes the fight down (0.31 takedowns per minute) and attempts submissions at the same rate. His pre-UFC record (9 KOs, 5 submissions) was added to the data this week. Raposo is 11-3, and his last four all went to decisions: wins over Allan Nascimento and Azat Maksum, losses to Sumudaerji and Andre Lima. He has a reliable chin (+0.55), but his power (-0.66), output (-0.75) and reach (-1.27) are all below average.",
-     "Degli's routes are submission 22.4%, KO 18.9% and decision 15.4%. Raposo's are decision 24.1%, KO 15.9% and submission 3.2%. The fight goes the distance 39.6% of the time, with 27.9% finish risk in round one. O/U: Over 1.5 62.5%, Over 2.5 45.8%."
+     "Degli 60.2%. Trust is set by override: Degli 0.4 (computed 0.14 from 10 UFC minutes) and Raposo 1.0 (computed 0.97). The fight goes through the low-experience route (Degli has one UFC fight). The no-hand-tuned GBM has Degli at 59.0%, Elo agrees by 29 points (1550 on 1 flyweight fight to 1521 on 5), and the hand-tuned layer is far more confident at 85.6% (reference only). Even at 0.4 trust, Degli's composites are still shrunk most of the way to the mean, so the routed model stays much closer to even.",
+     "Degli is 15-3 and submitted Paris Moran in round two in September. He takes the fight down (0.31 takedowns per minute) and attempts submissions at the same rate. His pre-UFC record (9 KOs, 5 submissions) was added to the data this week. Raposo is 11-3, and his last four all went to decisions: wins over Allan Nascimento and Azat Maksum, losses to Sumudaerji and Andre Lima. He has a reliable chin (+0.57), but his power (-0.67), output (-0.77) and reach (-1.27) are all below average.",
+     "Degli's routes are submission 23.9%, KO 19.7% and decision 16.6%. Raposo's are decision 22.6%, KO 14.0% and submission 3.2%. The fight goes the distance 39.2% of the time, with 28.0% finish risk in round one. O/U: Over 1.5 62.3%, Over 2.5 45.4%."
     ],
     "synopsis": {
      "lean": "Marcos Degli",
-     "body": "56.7%. Degli's finishing record makes him the pick, but the routed model shrinks his one UFC fight heavily and lands far below the hand-tuned 83.2%. Raposo's best route is the decision (24.1%). Degli's is the submission (22.4%)."
+     "body": "60.2%. Degli's finishing record makes him the pick. With his trust raised to 0.4 the routed model moves toward him, but it still lands far below the hand-tuned 85.6%. Raposo's best route is the decision (22.6%). Degli's is the submission (23.9%)."
     }
    }
   },
