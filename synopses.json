@@ -1,6 +1,6 @@
 {
  "title": "UFC Fight Night — Prochazka vs. Stirling",
- "generated": "Generated 2026-11-16  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  10 fights",
+ "generated": "Generated 2026-11-17  •  Model v7.0 (Moneyline + Method MC + O/U GBM)  •  50,000 sims per fight  •  all-fights mode  •  10 fights",
  "model": "v7.0 (Moneyline + Method MC + O/U GBM)",
  "cardList": [
   {
@@ -369,7 +369,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Stirling 75.7% in the five-round main event. Both engines agree: the GBM has Stirling at 75.0% and the hand-tuned layer at 80.8%. Elo disagrees: Prochazka is 2120 on 9 light heavyweight fights to Stirling's 1983 on 7, a 138-point edge built on his title run. No split pull applies because the two engines agree. Stirling is 29.0 and 11-0; Prochazka is 34.1.",
+     "Stirling 75.7% in the five-round main event. Both engines agree: the GBM, which sets the final number, has Stirling at 75.7% and the hand-tuned layer at 80.8%. Elo disagrees: Prochazka is 2120 on 9 light heavyweight fights to Stirling's 1983 on 7, a 138-point edge built on his title run. No split pull applies because the two engines agree. Stirling is 29.0 and 11-0; Prochazka is 34.1.",
      "The fight turns on Prochazka's chin. At -2.06 it is the worst on the card, and every one of his nine UFC fights has ended in a finish, either way. Stirling brings the card's best output (+2.60) and best chin (+1.28), absorbing 1.47 head strikes per minute to Prochazka's 3.93, and his KO threat is 2.08. Prochazka keeps real weapons: power +0.86, cardio +1.86 (best on the card) and reach +1.96. Stirling has stopped Jan Blachowicz in round one, Ion Cutelaba and Bruno Lopes in round two this year. Prochazka was knocked out by Carlos Ulberg in round one in April after stopping Khalil Rountree and Jamahal Hill.",
      "Stirling by KO is 61.5%, the single likeliest method on the card. Then Prochazka by KO 14.3%, Stirling by decision 12.9% and Prochazka by submission 6.6%. Only 16.3% go the full 25 minutes. Finish risk by round: 26.8%, 22.1%, 15.9%, 10.5%, 8.4%. O/U: Over 1.5 62.8%, Over 2.5 43.1%, Over 3.5 30.0%, Over 4.5 20.5%."
     ],
@@ -615,7 +615,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Sterling 52.5% at featherweight. The engines agree on the side but not the size: the GBM has Sterling at 52.8%, the hand-tuned layer at 68.2%. Elo is firmly with Sterling, 2157 on 21 fights to 1919 on 6, a 238-point gap. Sterling is 37.3; Vallejos is 24.9, and that 12-year age gap is the kind of input the moneyline's residual layer marks down for the older fighter.",
+     "Sterling 52.5% at featherweight. The engines agree on the side but not the size: the GBM, which sets the final number, has Sterling at 52.5%, the hand-tuned layer at 68.2%. Elo is firmly with Sterling, 2157 on 21 fights to 1919 on 6, a 238-point gap. Sterling is 37.3; Vallejos is 24.9, and that 12-year age gap is the kind of input the moneyline's residual layer marks down for the older fighter.",
      "Sterling's case is control: grappling +1.37, output +1.25, a +0.93 decision edge and a sub threat of 0.85. He has won two five-round decisions in a row, over Youssef Zalal and Brian Ortega. Vallejos is 18-1 with power +0.95, chin +0.45 and wrestling defence +0.79 (84.6% takedown defence), but reach -1.42 and trust 0.65 on 46 minutes. He knocked out Josh Emmett in round one in March and Giga Chikadze in round two before that.",
      "Sterling by decision is the likeliest result at 36.4%, then Vallejos by KO 24.0% and Vallejos by decision 22.6%. Sterling by submission is 9.6%. 58.9% go the distance, the most decision-heavy fight on the card. Finish risk by round: 20.5%, 13.8%, 6.8%. O/U: Over 1.5 73.2%, Over 2.5 62.5%."
     ],
@@ -861,7 +861,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Ortega 53.4% at lightweight. The engines split: the GBM has Ortega at 53.2%, the hand-tuned layer has Hooker at 64.4%. Elo sides with the GBM, so no split pull applies. Elo has Ortega 2013 to Hooker's 1745, a 269-point gap, the largest on the card, but Ortega's number is inherited from featherweight (he has no lightweight fights), so it is a cross-division comparison rather than a like-for-like edge.",
+     "Ortega 53.4% at lightweight. The engines split: the GBM, which sets the final number, has Ortega at 53.4%, the hand-tuned layer has Hooker at 64.4%. Elo sides with the GBM, so no split pull applies. Elo has Ortega 2013 to Hooker's 1745, a 269-point gap, the largest on the card, but Ortega's number is inherited from featherweight (he has no lightweight fights), so it is a cross-division comparison rather than a like-for-like edge.",
      "Hooker arrives on three straight losses: knocked out by Salahdine Parnasse in round one in September, by Benoit Saint Denis in round two in January, and submitted by Arman Tsarukyan last November. His chin reads -1.59. He still has the better striking profile here: power +0.34, cardio +1.21, reach +1.91 and a +1.52 decision edge. Ortega's output is -2.20, the lowest on the card, and he returns after 450 days, off decision losses to Aljamain Sterling and Diego Lopes. His route is the submission: 50% of his UFC wins came that way.",
      "Hooker by decision leads at 37.5%, but Ortega's finishes add up: submission 20.0% (second-likeliest on the card) and KO 15.5%, plus a 17.8% decision. Hooker by KO is 7.1%. 55.4% go the distance. Finish risk by round: 23.9%, 14.2%, 6.6%. O/U: Over 1.5 69.7%, Over 2.5 58.9%."
     ],
@@ -1107,7 +1107,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Almabayev 73.4% at flyweight. Everything agrees: the GBM has Almabayev at 71.7% and the hand-tuned layer at 69.6%. Elo is nearly level, 1917 on 8 fights to Horiguchi's 1905 on 11. Horiguchi is 36.1 to Almabayev's 32.8.",
+     "Almabayev 73.4% at flyweight. The GBM, which sets the final number, has Almabayev at 73.4% and the hand-tuned layer at 69.6%. Elo is nearly level, 1917 on 8 fights to Horiguchi's 1905 on 11, so it adds almost nothing. Inside the GBM the largest single push is the hand-tuned view (Almabayev's grappling), followed by age: Horiguchi is 36.1 to Almabayev's 32.8, and his 33 pre-UFC fights read as extra mileage. The decision edge and takedown matchup add smaller pushes to Almabayev.",
      "This is a grappling fight. Almabayev's grappling is +2.06, the best on the card, with 0.32 takedowns and 0.10 submission attempts per minute; his sub threat (2.15) is also the card's largest. He has submitted Charles Johnson and Alex Perez in round three in his last three fights. Horiguchi has the better striking: output +1.45, power +0.39, 1.15 head strikes absorbed per minute. But his reach is -1.65 (shortest on the card) and his cardio -0.46. Both were knocked out by Manel Kape in round three: Horiguchi in June, Almabayev in March 2025.",
      "Almabayev by decision is 44.4% and by submission 23.9%, the likeliest submission on the card. Horiguchi's best routes are decision 13.6% and KO 11.1%. 58.0% go the distance. Finish risk by round: 22.3%, 13.4%, 6.3%. O/U: Over 1.5 71.7%, Over 2.5 61.5%."
     ],
@@ -1353,7 +1353,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Aliskerov 83.8% at middleweight, the biggest favourite on the card. The GBM has 83.3%, the hand-tuned layer 87.7%, and Elo agrees: 1985 on 7 fights to Cannonier's 1837 on 21. Cannonier is 42.7, the oldest fighter on the card; Aliskerov is 33.9.",
+     "Aliskerov 83.8% at middleweight, the biggest favourite on the card. The GBM, which sets the final number, has 83.8%, the hand-tuned layer 87.7%, and Elo agrees: 1985 on 7 fights to Cannonier's 1837 on 21. Cannonier is 42.7, the oldest fighter on the card; Aliskerov is 33.9.",
      "Aliskerov is good almost everywhere: grappling +1.25, wrestling defence +1.10 (he has never been taken down in the UFC), cardio +1.31, output +0.88 and power +0.54, with a +2.32 decision edge. His weak spot is the chin, -0.66, after Robert Whittaker knocked him out in round one in 2024. Trust is 0.62 on 43 minutes. Cannonier has lost three of his last four, including decisions to Christian Leroy Duncan in July and Michael Page last year; his chin is -0.90 and his output -0.37. His reach (+1.06) and wrestling defence (+0.50) are his best assets.",
      "Aliskerov by KO 36.5%, by decision 31.2% and by submission 16.1%. Cannonier's best route is KO at 9.2%. Only 37.2% go the distance. Finish risk by round: 35.2%, 19.0%, 8.5%. O/U: Over 1.5 56.0%, Over 2.5 41.6%."
     ],
@@ -1599,13 +1599,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Luna 68.1% at bantamweight. Both fighters are thin samples, so this fight is scored by the low-experience no-HT moneyline model: it has Luna at 69.1%. The hand-tuned layer (shown for reference, not an input) has him at 59.2%. Elo prefers Topuria, 1734 on 2 fights to 1619 on 3, but those are three- and two-fight ratings. Luna is 22.3, the youngest on the card; Topuria is 30.8.",
-     "Trust is low on both sides: Luna 0.47 on 33 minutes, Topuria 0.43 on 30. Luna has the more dangerous profile: power +0.59, output +0.64, chin +0.36 and reach +2.00. He was submitted by Bryce Mitchell in round three in June, after a decision over Angel Pacheco and a first-round KO of Quang Le. Topuria has won both UFC fights by decision (Bekzat Almakhan, Colby Thicknesse), with wrestling defence +0.80, chin +0.45 and a reach of -0.54. He returns after 359 days.",
+     "Luna 68.1% at bantamweight. Both fighters are thin samples, so this fight is scored by the low-experience no-HT moneyline model, which sets the final number. The hand-tuned layer (shown for reference, not an input) has Luna at 59.2%. Elo prefers Topuria, 1734 on 2 fights to 1619 on 3, and that is the largest push against Luna inside the model. The largest push toward him is age: Luna is 22.3, the youngest on the card, and Topuria is 30.8. That 8.5-year gap outweighs everything else, both inside the GBM and in the residual layer that marks down older fighters. Luna's better pre-UFC win rate, his decision edge and his reach add smaller pushes.",
+     "Trust is low on both sides: Luna 0.47 on 33 minutes, Topuria 0.43 on 30. On the composites Luna has power +0.59, output +0.64, chin +0.36 and reach +2.00, though power itself barely moves the moneyline. He was submitted by Bryce Mitchell in round three in June, after a decision over Angel Pacheco and a first-round KO of Quang Le. Topuria has won both UFC fights by decision (Bekzat Almakhan, Colby Thicknesse), with wrestling defence +0.80, chin +0.45 and a reach of -0.54. He returns after 359 days.",
      "Luna by decision 31.4% and by KO 28.4%, then Topuria by decision 12.7%, Topuria by KO 11.2%, Luna by submission 8.3% and Topuria by submission 8.1%. 44.1% go the distance. Finish risk by round: 27.4%, 18.7%, 9.8%. O/U: Over 1.5 64.0%, Over 2.5 49.2%."
     ],
     "synopsis": {
      "lean": "Santiago Luna",
-     "body": "68.1%. Two short samples; the low-experience model prefers the 22-year-old's power and reach over Topuria's two decision wins, while Elo leans Topuria. Luna wins about equally by decision (31.4%) or KO (28.4%)."
+     "body": "68.1%. Two short samples; the low-experience model's biggest reason is age (22 against 30), then Luna's pre-UFC record and reach, while Elo leans Topuria. Luna wins about equally by decision (31.4%) or KO (28.4%)."
     }
    }
   },
@@ -1845,13 +1845,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Teixeira 79.7% at heavyweight. Both engines lean Teixeira: the GBM at 82.5%, the hand-tuned layer at 72.8%. Elo is effectively level (Gaziev 1709 on 8 fights, Teixeira 1701 on 5). Gaziev is 36.8 to Teixeira's 26.9.",
-     "Both chins are poor. Gaziev's is -1.67 after KO losses to Waldo Cortes Acosta and Brando Pericic, before he knocked out Kennedy Nzechukwu in round one in August. Teixeira's is -1.00: Derrick Lewis and Sergei Pavlovich both stopped him in round one. The difference is everything else. Teixeira's reach is +2.31, the longest on the card, and his KO threat (2.27) is the card's largest; Gaziev's output is -1.31 and his cardio -0.53. Teixeira's trust is only 0.27 on 19 minutes, so his composites are pulled hard toward the division average.",
+     "Teixeira 79.7% at heavyweight. Both engines lean Teixeira: the GBM, which sets the final number, at 79.7%, the hand-tuned layer at 72.8%. Elo is effectively level (Gaziev 1709 on 8 fights, Teixeira 1701 on 5). The biggest single driver is age: Gaziev is 36.8 to Teixeira's 26.9, and that ten-year gap counts against him both inside the GBM and in the residual layer that marks down older fighters. The hand-tuned view is the second push, then smaller ones from striking defence and the decision edge.",
+     "Both chins are poor. Gaziev's is -1.67 after KO losses to Waldo Cortes Acosta and Brando Pericic, before he knocked out Kennedy Nzechukwu in round one in August. Teixeira's is -1.00: Derrick Lewis and Sergei Pavlovich both stopped him in round one. The hand-tuned view favours Teixeira on output (Gaziev -1.31) and the decision edge. Teixeira's reach (+2.31, longest on the card) and KO threat (2.27, the card's largest) shape how the fight ends more than who wins it; reach barely moves the moneyline. Note how thin Teixeira's sample is: 19 minutes, trust 0.27, so the confidence rests mainly on age, not on a long record.",
      "Teixeira by KO is 58.4% and by decision 18.1%. Gaziev's best route is KO at 10.8%. Only 22.6% go the distance, the most finish-heavy three-rounder on the card, and 48.4% end in round one, the card's highest. Finish risk by round: 48.4%, 20.9%, 8.1%. O/U: Over 1.5 41.8%, Over 2.5 26.6%."
     ],
     "synopsis": {
      "lean": "Tallison Teixeira",
-     "body": "79.7%. Two shaky chins, but Teixeira has the reach, youth and output. Expect it to end early: Teixeira by KO is 58.4%, and 48.4% finish in round one, the highest on the card."
+     "body": "79.7%. Two shaky chins; the model's main reason is age (26.9 against 36.8), backed by the hand-tuned view of Gaziev's low output. Expect it to end early: Teixeira by KO is 58.4%, and 48.4% finish in round one, the highest on the card."
     }
    }
   },
@@ -2091,13 +2091,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Costa 51.5% at flyweight, the closest fight on the card. The layers disagree: the GBM has Albazi at 50.2%, the hand-tuned layer has Costa at 73.9%, and Elo has Albazi 1766 on 7 fights to Costa's 1619 on 8 (+146). The GBM agrees with Elo, so no split pull applies; the method and simulation layers then move the final number 1.7 points, just across 50% to Costa. Treat it as a coin flip.",
+     "Costa 51.5% at flyweight, the closest fight on the card. The GBM, which sets the final number, has Costa at 51.5%. The hand-tuned layer has Costa at 73.9%, and Elo has Albazi 1766 on 7 fights to Costa's 1619 on 8 (+146). Inside the GBM those two pull in opposite directions and roughly cancel; Costa's decision edge and Albazi's older age (33.1 to 30.8) tip it slightly to Costa. Treat it as a coin flip.",
      "This is a rematch: Albazi knocked Costa out in round three in December 2022. Since then Costa has won three straight this year (Stewart Nicoll and Matt Schnell by KO, Cody Durden by submission). Costa brings power +0.78 and wrestling defence +0.99, against a chin of -0.85. Albazi has the sturdier chin (+0.47) and better grappling (+0.40), but his output is -1.38. He has lost two straight decisions, to Kyoji Horiguchi in February and Brandon Moreno in 2024, and returns after 282 days.",
      "Costa by decision 36.6%, Albazi by decision 21.6%, Albazi by KO 14.9%, Albazi by submission 12.1% and Costa by KO 11.3%. 58.2% go the distance. Finish risk by round: 21.0%, 13.8%, 6.9%. O/U: Over 1.5 72.6%, Over 2.5 61.9%."
     ],
     "synopsis": {
      "lean": "Alessandro Costa",
-     "body": "51.5%. The closest fight on the card. The GBM and Elo slightly prefer Albazi; the hand-tuned layer likes Costa's form and power. Costa's likeliest win is a decision (36.6%); Albazi's finishes (26.9% combined) keep it level."
+     "body": "51.5%. The closest fight on the card. Elo prefers Albazi and the hand-tuned layer likes Costa's form and power; in the GBM they nearly cancel. Costa's likeliest win is a decision (36.6%); Albazi's finishes (26.9% combined) keep it level."
     }
    }
   },
@@ -2337,13 +2337,13 @@
      }
     ],
     "matchupAnalysis": [
-     "Abdullayev 55.7% at welterweight. Abdullayev has one UFC fight, so this fight is scored by the low-experience no-HT moneyline model, which has him at 55.6%. The hand-tuned layer (for reference, not an input) has Matthews at 64.3%, and Elo has Matthews 1842 on 24 fights to 1638 on 1 (+205). No split pull applies to routed fights. Matthews is 32.2; Abdullayev is 29.8.",
-     "Abdullayev has the thinnest sample on the card: 14 minutes, trust 0.21. His composites are close to the division average (all within +-0.25) because there is so little UFC data, so the routed model leans on what it has. That includes a 19-3 pre-UFC record with 17 finishes (10 KO, 7 submission), added to the data before this run. He knocked out Jefferson Nascimento in round three in June. Matthews is a known quantity: output +0.55, chin +0.23, power -0.43, and 38% of his UFC wins by submission. He beat Carlston Harris by decision in May after a submission loss to Neil Magny.",
+     "Abdullayev 55.7% at welterweight. Abdullayev has one UFC fight, so this fight is scored by the low-experience no-HT moneyline model. On its own that model has Matthews at 52.0%, helped by Elo (1842 on 24 fights to 1638 on 1, +205) and the decision edge, against Abdullayev's younger age (29.8 to 32.2) and the takedown matchup. The hand-tuned layer (for reference, not an input) has Matthews at 64.3%. No split pull applies to routed fights.",
+     "What flips the fight is the residual layer, the post-model correction that marks down fighters with a recent win streak, an up-and-down record or more age. It moves the fight from Matthews 52.0% to Abdullayev 55.7%. Matthews has won four of his last five and has a mixed career record; Abdullayev's one UFC fight leaves him at the neutral recent-form default and zero volatility, so most of the markdown lands on Matthews. Abdullayev's 19-3 pre-UFC record (added before this run) does not drive the pick. He has the thinnest sample on the card: 14 minutes, trust 0.21, composites all within +-0.25 of the division average. He knocked out Jefferson Nascimento in round three in June. Matthews is a known quantity: output +0.55, chin +0.23, power -0.43, and 38% of his UFC wins by submission. He beat Carlston Harris by decision in May after a submission loss to Neil Magny.",
      "Abdullayev by KO 27.6% is the likeliest result, then Matthews by decision 24.0%, Abdullayev by decision 14.3%, Abdullayev by submission 13.7%, Matthews by submission 11.0% and Matthews by KO 9.4%. 38.3% go the distance. Finish risk by round: 31.4%, 20.3%, 10.0%. O/U: Over 1.5 59.3%, Over 2.5 43.6%."
     ],
     "synopsis": {
      "lean": "Tahir Abdullayev",
-     "body": "55.7%. A thin-sample call: the low-experience model backs Abdullayev's 19-3 pre-UFC record, while the hand-tuned layer (64.3%) and Elo prefer Matthews. Abdullayev by KO (27.6%) is the single likeliest result."
+     "body": "55.7%. A thin-sample call: the low-experience model has Matthews at 52.0%, and the residual layer's markdown of Matthews' recent streak and uneven record tips it to Abdullayev. The hand-tuned layer (64.3%) and Elo prefer Matthews. Abdullayev by KO (27.6%) is the single likeliest result."
     }
    }
   },
@@ -2583,7 +2583,7 @@
      }
     ],
     "matchupAnalysis": [
-     "Fan 77.5% at lightweight. Both engines lean Fan: the GBM at 77.9%, the hand-tuned layer at 71.2%. Elo slightly prefers Motta, 1596 on 7 fights to 1560 on 4. Motta is 33.8 and returns after 513 days, the longest layoff on the card; Fan is 26.7.",
+     "Fan 77.5% at lightweight. Both engines lean Fan: the GBM, which sets the final number, at 77.5%, the hand-tuned layer at 71.2%. Elo slightly prefers Motta, 1596 on 7 fights to 1560 on 4. Motta is 33.8 and returns after 513 days, the longest layoff on the card; Fan is 26.7.",
      "Motta has the best power on the card (+1.21) and wrestling defence +1.55, but his chin is -1.69 and his cardio -1.21. He was knocked out by Nazim Sadykhov in round two in June 2025. Fan has never finished anyone in the UFC (three decision wins, then a first-round submission loss to Kody Steele in May), so his KO route comes mostly from Motta's chin rather than his own power (-0.16). His edges are chin +0.49, output +0.38, cardio +0.52 and reach +1.15.",
      "Fan by decision 37.2% and by KO 33.6%, then Motta by KO 10.1% and by decision 9.2%. 46.4% go the distance. Finish risk by round: 28.5%, 17.0%, 8.1%. O/U: Over 1.5 63.5%, Over 2.5 50.5%."
     ],
